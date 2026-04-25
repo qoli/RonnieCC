@@ -114,7 +114,8 @@ letter-spacing: 0.035em;
 - 第二屏可以使用 SVG 幾何圖形，但只能作為結構符號。
 - SVG 使用 `currentColor`，由 Kami token 控制。
 - 卡片不是主要語言；除非是重複項目的必要容器，否則避免卡片。
-- 頁面 section 用 border、間距和排版分層，不用厚重背景和陰影。
+- 頁面 section 優先用留白、空白和親密性原則分層；border 只保留給少量真正需要結構錨點的位置。
+- 重複項目之間不要濫用分割線，應靠間距、對齊和文字層級建立閱讀節奏。
 
 ## 頁面規則
 
@@ -130,15 +131,17 @@ letter-spacing: 0.035em;
 - 是 project index，不是 app store grid。
 - 每個 project 用編號、幾何標記、名稱、type、summary、capability、tags 組成。
 - 幾何標記必須按 project 的性質設計，不能使用同一套模板圖形。
-- 例如 media runtime 可以用播放器/節點語義，AI reading 可以用 index/orbit，UX audit 可以用流程和診斷節點。
+- 幾何標記要保持高抽象度，不能變成 app icon、功能圖示或插畫；每個符號最好只用 2-3 個幾何動作。
+- 例如 media runtime 可以抽象成連接節點，AI reading 可以抽象成 concentric index，UX audit 可以抽象成層級線與診斷曲線。
 - 主要品質來自字距、行距和信息節奏，不來自卡片裝飾。
+- Project 之間靠大留白分組，不靠 row divider。
 
 ### Project Detail
 
 - Detail 是長文排版頁。
 - Detail hero 可以保留對應 project 的幾何標記，作為識別符號而不是插畫。
 - Aside 只放 metadata，不做卡片組。
-- Narrative / System / Proof 用大間距、細線和清楚標題分層。
+- Narrative / System / Proof 用大間距和清楚標題分層，避免 notes、table rows、proof items 全部畫線。
 
 ### Resume
 

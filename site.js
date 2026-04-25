@@ -7,71 +7,47 @@ const categoryLabels = {
 
 const projectGlyphs = {
   syncnext: `
-    <rect x="20" y="26" width="80" height="68"></rect>
-    <path d="M42 42l28 18-28 18Z"></path>
-    <path d="M22 104h76"></path>
-    <circle cx="96" cy="22" r="8"></circle>
-    <circle cx="24" cy="98" r="8"></circle>
+    <circle cx="36" cy="60" r="18"></circle>
+    <circle cx="84" cy="60" r="18"></circle>
+    <path d="M54 60h12"></path>
   `,
   "eison-ai": `
     <circle cx="60" cy="60" r="42"></circle>
-    <circle cx="60" cy="60" r="16"></circle>
-    <path d="M24 60h72M60 24v72"></path>
-    <path d="M36 36 84 84M84 36 36 84"></path>
+    <circle cx="60" cy="60" r="18"></circle>
+    <path d="M60 18v84"></path>
   `,
   "trackly-reborn": `
-    <path d="M24 94 46 70l18 10 34-52"></path>
-    <circle cx="24" cy="94" r="7"></circle>
-    <circle cx="46" cy="70" r="7"></circle>
-    <circle cx="64" cy="80" r="7"></circle>
-    <circle cx="98" cy="28" r="7"></circle>
-    <path d="M24 28h46M24 46h30"></path>
+    <path d="M24 86 48 58l20 16 28-40"></path>
+    <path d="M24 34h72"></path>
   `,
   adict: `
-    <path d="M24 26h30c8 0 14 6 14 14v54H38c-8 0-14-6-14-14Z"></path>
-    <path d="M68 40c0-8 6-14 14-14h14v68H68"></path>
-    <path d="M38 48h16M38 64h16M82 48h14"></path>
-    <circle cx="84" cy="76" r="10"></circle>
-    <path d="M92 84l12 12"></path>
+    <path d="M28 26h28c8 0 14 6 14 14v54H42c-8 0-14-6-14-14Z"></path>
+    <path d="M70 40c0-8 6-14 14-14h8v68H70"></path>
   `,
   "hln-machine": `
-    <rect x="18" y="24" width="26" height="26"></rect>
-    <rect x="76" y="24" width="26" height="26"></rect>
-    <rect x="47" y="72" width="26" height="26"></rect>
-    <path d="M44 37h32M89 50 73 72M31 50l16 22"></path>
-    <path d="M56 82l10 5-10 5Z"></path>
+    <path d="M26 30h24v24H26ZM70 30h24v24H70ZM48 74h24v24H48Z"></path>
+    <path d="M50 42h20M38 54l16 20M82 54 66 74"></path>
   `,
   "enterprise-web-design": `
-    <rect x="18" y="24" width="84" height="72"></rect>
-    <path d="M18 42h84M38 24v72"></path>
-    <path d="M50 56h38M50 72h28M50 84h46"></path>
-    <circle cx="28" cy="33" r="3"></circle>
+    <rect x="22" y="28" width="76" height="64"></rect>
+    <path d="M22 50h76M46 28v64"></path>
   `,
   "mobile-ui-qa-wallet": `
-    <rect x="34" y="18" width="52" height="84" rx="10"></rect>
-    <path d="M48 34h24M48 48h18M48 76h18"></path>
-    <path d="M47 62l7 7 17-18"></path>
-    <circle cx="60" cy="90" r="3"></circle>
+    <rect x="38" y="20" width="44" height="80" rx="10"></rect>
+    <path d="M48 62l10 10 18-26"></path>
   `,
   "consumer-app-design": `
-    <rect x="18" y="24" width="30" height="30"></rect>
-    <rect x="72" y="24" width="30" height="30"></rect>
-    <rect x="45" y="72" width="30" height="30"></rect>
-    <path d="M48 39h24M87 54 75 72M33 54l12 18"></path>
-    <path d="M56 84h8"></path>
+    <path d="M28 32h26v26H28ZM66 32h26v26H66ZM47 72h26v26H47Z"></path>
+    <path d="M54 45h12M79 58l-13 14M41 58l13 14"></path>
   `,
   "brand-visual-identity": `
-    <circle cx="42" cy="42" r="22"></circle>
-    <circle cx="78" cy="42" r="22"></circle>
-    <path d="M30 82h60M42 68v28M78 68v28"></path>
-    <rect x="34" y="76" width="52" height="20"></rect>
+    <circle cx="48" cy="48" r="24"></circle>
+    <circle cx="72" cy="48" r="24"></circle>
+    <path d="M36 86h48"></path>
   `,
   "ux-audit-product-system": `
-    <path d="M18 32h84M18 60h84M18 88h84"></path>
-    <circle cx="34" cy="32" r="8"></circle>
-    <circle cx="72" cy="60" r="8"></circle>
-    <circle cx="48" cy="88" r="8"></circle>
-    <path d="M42 32c18 0 12 28 22 28M64 60c-16 0-8 28-16 28"></path>
+    <path d="M24 34h72M24 60h72M24 86h72"></path>
+    <path d="M42 34c24 0 12 52 36 52"></path>
   `,
 };
 
