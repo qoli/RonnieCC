@@ -867,7 +867,7 @@ html[data-theme="dark"] .theme-toggle span::after {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.12em;
-  line-height: 1;
+  line-height: 1.52;
 }
 
 .project-body {
@@ -886,6 +886,7 @@ html[data-theme="dark"] .theme-toggle span::after {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
+  line-height: 1.52;
   text-transform: uppercase;
 }
 
