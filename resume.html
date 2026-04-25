@@ -13,6 +13,7 @@
       document.documentElement.dataset.theme =
         localStorage.getItem("theme") ||
         (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.language = localStorage.getItem("site-language") || "mix";
     </script>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -26,6 +27,7 @@
         <a href="projects.html">Projects</a>
         <a aria-current="page" href="resume.html">Resume</a>
       </nav>
+      <button class="language-toggle" type="button" aria-label="Switch language" data-language-toggle>EN</button>
       <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" data-theme-toggle>
         <span aria-hidden="true"></span>
       </button>

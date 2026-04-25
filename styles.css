@@ -177,6 +177,7 @@ p {
 }
 
 .site-header a,
+.language-toggle,
 .theme-toggle {
   text-decoration: none;
 }
@@ -216,8 +217,25 @@ p {
   font-weight: 700;
 }
 
-.theme-toggle {
+.language-toggle {
   margin-left: auto;
+}
+
+.language-toggle {
+  border: 0;
+  background: transparent;
+  color: var(--stone);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.language-toggle:hover {
+  color: var(--brand);
 }
 
 .theme-toggle {
@@ -527,7 +545,7 @@ html[data-theme="dark"] .theme-toggle span::after {
   margin: 0 0 16px;
   color: var(--stone);
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.12em;
   line-height: 1.35;
   text-transform: uppercase;

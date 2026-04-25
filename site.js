@@ -5,6 +5,60 @@ const categoryLabels = {
   history: "歷史的 Project",
 };
 
+const languageKey = "site-language";
+let activeLanguage = localStorage.getItem(languageKey) === "en" ? "en" : "mix";
+let sourceProjects = [];
+let activeFilter = "all";
+
+const uiCopy = {
+  mix: {
+    htmlLang: "zh-Hant",
+    languageButton: "EN",
+    languageLabel: "Switch to English",
+    categoryLabels,
+    filters: {
+      all: "All",
+      current: "現在",
+      exploration: "探索",
+      history: "歷史",
+    },
+    projectsIntro: "這裡按生命週期整理：現在的 Project、探索、歷史的 Project。Tag 用來說明能力、平台、形態和資料狀態。",
+    notFoundBody: "這個 project id 不在目前的資料源裡。請回到 Projects 頁重新選擇。",
+    allProjects: "All Projects",
+    detailHeadings: {
+      narrative: "設計與工程判斷",
+      system: "組件和資料可見性",
+      surface: "可閱讀的工作面",
+      practice: "Practice",
+    },
+  },
+  en: {
+    htmlLang: "en",
+    languageButton: "Mixed",
+    languageLabel: "Switch to mixed Chinese and English",
+    categoryLabels: {
+      current: "Current Projects",
+      exploration: "Explorations",
+      history: "Historical Projects",
+    },
+    filters: {
+      all: "All",
+      current: "Current",
+      exploration: "Explorations",
+      history: "History",
+    },
+    projectsIntro: "Projects are organized by lifecycle: current systems, explorations, and historical work. Tags describe capability, platform, format, and source status.",
+    notFoundBody: "This project id is not available in the current data source. Return to Projects and choose another item.",
+    allProjects: "All Projects",
+    detailHeadings: {
+      narrative: "Design and engineering judgement",
+      system: "Components and visibility",
+      surface: "Readable surfaces",
+      practice: "Practice",
+    },
+  },
+};
+
 const projectGlyphs = {
   syncnext: `
     <circle cx="36" cy="60" r="18"></circle>
@@ -56,6 +110,191 @@ const fallbackGlyph = `
   <path d="M30 60h60M60 30v60"></path>
 `;
 
+const projectCopyEn = {
+  syncnext: {
+    categoryLabel: "Current Project",
+    summary: "A tvOS media runtime ecosystem shaped around long-running playback, content sources, plugin/API boundaries, networking rules, and support documentation.",
+    capability: "Uses the real constraints of Apple TV as a product boundary, organizing playback, external sources, plugin references, and support tooling into a maintainable system.",
+    detail: {
+      thesis: "Syncnext is not just a player. It is a media runtime built around playback reliability and flexible content sources. The design question is where each boundary belongs: native app, external source, plugin, or documentation.",
+      sections: [
+        { title: "Product frame", body: "The system has to handle real devices, real playback sessions, and real maintenance cost. Playback stability, Apple TV focus, subscriptions, FAQ, release cadence, and support all belong to the product surface." },
+        { title: "Engineering frame", body: "The main app keeps playback and interaction stable, while the API, plugin reference, networking helper, and predecessor projects absorb volatility around external content sources." },
+        { title: "Design frame", body: "The public story should present a small product ecosystem: not a feature checklist, but a maintained system with clear boundaries and explanations." },
+      ],
+      components: [
+        { role: "Playback experience, Apple TV interaction, and product entry point." },
+        { role: "Owns metadata and external integration boundaries." },
+        { role: "Describes the plugin protocol and extension model." },
+        { role: "Keeps the product evolution readable." },
+      ],
+    },
+  },
+  "eison-ai": {
+    categoryLabel: "Current Project",
+    summary: "A local-first AI reading product across iOS, macOS, iPadOS, and Safari Extension, using Cognitive Index to reorganize reading and saving.",
+    capability: "Places AI inside reading, saving, indexing, and retrieval workflows so model capability becomes part of interface and data structure.",
+    detail: {
+      thesis: "eisonAI is not centered on chat. It places AI between capture, indexing, context, and retrieval, so saved material remains understandable after it leaves the original page.",
+      sections: [
+        { title: "Product frame", body: "The product works on reading friction: long-document routing, saving, context recovery, and privacy-aware AI use without turning the experience into a chatbot." },
+        { title: "Engineering frame", body: "The system combines app surfaces, Safari Extension, Cognitive Index, local data management, and CloudKit sync into one reading workflow." },
+        { title: "Design frame", body: "The interface story is structure before content: make the shape of information visible first, then make reading and retrieval easier." },
+      ],
+      components: [
+        { role: "Core experience for reading, saving, indexing, and retrieval." },
+        { role: "Connects web reading to capture and indexing." },
+        { role: "Generates structure and usage context around content." },
+        { role: "Readable entry point for Apple platform implementation." },
+      ],
+    },
+  },
+  "trackly-reborn": {
+    name: "TracklyReborn",
+    categoryLabel: "Current Project",
+    summary: "A rebuild of a life and spending log product, combining AI prompts, Shortcuts, Action Button, multi-image capture, and a local database into a high-frequency iOS workflow.",
+    capability: "Designs logging as a low-friction system where entry points, data model, AI assistance, and local storage all shape the product feel.",
+    detail: {
+      thesis: "TracklyReborn remodels life logging around the moment of capture. The work is less about forms and more about quickly saving material that can be structured, reviewed, and assisted by AI later.",
+      sections: [
+        { title: "Product frame", body: "The hard part of logging products is sustained use. Shortcuts, Action Button, multi-image capture, and AI assistance all reduce the cost of each entry." },
+        { title: "Engineering frame", body: "The main app owns local data and visual experience, system entry points handle frequent capture, and prompt/VLM settings bridge fuzzy input with structured records." },
+        { title: "Design frame", body: "The project is about merging native iOS workflow surfaces with AI, instead of adding AI as a separate conversation layer." },
+      ],
+      components: [
+        { role: "Local data, capture flow, and core product experience." },
+        { role: "Public testing and actual usage entry." },
+        { role: "Reduces friction for frequent capture." },
+        { role: "Internal rules for AI-assisted input." },
+      ],
+    },
+  },
+  adict: {
+    categoryLabel: "Current Project",
+    summary: "A dictionary and reading-tool ecosystem across iOS and macOS, including rewrite work, protocol boundaries, changelogs, dictionary lists, and usage documentation.",
+    capability: "Maintains a tool product over time: lookup experience, data sources, cross-platform consistency, and product documentation all contribute to quality.",
+    detail: {
+      thesis: "aDict is long-term maintenance work around reading tools. The value is not only the lookup interface, but also dictionary data, platform consistency, update rhythm, and documentation.",
+      sections: [
+        { title: "Product frame", body: "A dictionary product has to be stable, fast, and predictable. Users feel whether lookup, reading context, data updates, and platform behavior are reliable." },
+        { title: "Engineering frame", body: "The rewrite, legacy app, macOS app, protocol layer, and Notion product page together form an evolving reading-tool system." },
+        { title: "Design frame", body: "The public story should focus on lookup workflow, reading context, and maintenance craft, not just a single app screenshot." },
+      ],
+      components: [
+        { role: "Product entry point, usage documentation, and public narrative." },
+        { role: "Current engineering direction and data-structure evolution." },
+        { role: "Part of the multi-platform experience." },
+        { role: "Internal protocol and shared boundary." },
+      ],
+    },
+  },
+  "hln-machine": {
+    categoryLabel: "Exploration",
+    summary: "A local AI short-video pipeline that turns a news seed into an observable, restartable, partially rerunnable generation workflow.",
+    capability: "Treats generative AI as engineering work: IR, checkpoints, dependency hashes, review points, and failure recovery matter more than a single prompt.",
+    detail: {
+      thesis: "HLN Machine explores a local AI video factory. It is not about one generated result, but about splitting generation into a white-box pipeline that can be inspected, rerun, and repaired.",
+      sections: [
+        { title: "Product frame", body: "Short-video generation looks like media automation, but the real work is workflow design: each intermediate state has to be understandable for the system to keep improving." },
+        { title: "Engineering frame", body: "The pipeline is organized around IR.json, checkpoints, dependency hashes, partial reruns, and human-reviewable intermediate states, so failures can be located instead of hidden." },
+        { title: "Design frame", body: "This is a lab for AI engineering judgement: transparent, diagnosable, and recoverable rather than packaged as a finished product." },
+      ],
+      components: [
+        { role: "Turns news or ideas into processable video seeds." },
+        { role: "Generates reviewable short-video text structure." },
+        { role: "Connects script structure to visual material." },
+        { role: "Supports restart, diagnosis, and partial repair." },
+      ],
+    },
+  },
+  "enterprise-web-design": {
+    categoryLabel: "Historical Project",
+    summary: "Historical website design work for enterprise, landmark, and brand sites, covering homepage direction, information hierarchy, visual proposals, and presentation.",
+    capability: "Handles large website work from a designer's perspective: hero narrative, visual order, information density, and client communication have to work together.",
+    detail: {
+      thesis: "This archive organizes early UI/UX design work around large website proposals. The focus is how brand, content hierarchy, and first-screen expression become a presentable direction.",
+      sections: [
+        { title: "Design frame", body: "Enterprise websites are not single visuals. They require information architecture, homepage rhythm, brand tone, page extensibility, and proposal quality." },
+        { title: "Source treatment", body: "Original Keynote files remain internal source material. Public pages should use redacted partial exports and remove client-sensitive information." },
+      ],
+      components: [
+        { name: "SGIT web design", role: "Enterprise website visual direction and homepage structure." },
+        { name: "Pearl Tower design", role: "Visual narrative for a landmark website." },
+        { name: "Moozy web", role: "Brand website and presentation rhythm." },
+      ],
+    },
+  },
+  "mobile-ui-qa-wallet": {
+    categoryLabel: "Historical Project",
+    summary: "Historical design work around mobile UI QA, wallet flows, dark interfaces, media kits, and issue templates.",
+    capability: "Moves design delivery toward reviewable quality: states, errors, flows, copy, and detail consistency all enter the scope.",
+    detail: {
+      thesis: "This archive focuses on app UI review and product communication. It moves design from screens to states, flows, and delivery quality.",
+      sections: [
+        { title: "Design frame", body: "Wallet products contain many states and risk contexts. UI QA has to cover dark mode, guidance copy, flow breaks, error states, and external materials." },
+        { title: "Source treatment", body: "Wallet-related work material needs redaction. Public material should keep the method, partial visuals, and QA approach." },
+      ],
+      components: [
+        { name: "BitzenWallet UI Test", role: "Mobile UI QA and issue annotation." },
+        { name: "Wallet flow notes", role: "State, risk, and flow organization." },
+      ],
+    },
+  },
+  "consumer-app-design": {
+    categoryLabel: "Historical Project",
+    summary: "Historical product design material for mini programs, cashback, expense logging, and consumer app scenarios, covering flow, interface, and business explanation.",
+    capability: "Turns consumer scenarios into clear product paths where user tasks, merchant needs, visual hierarchy, and presentation support one another.",
+    detail: {
+      thesis: "This archive collects early consumer-product design methods. It includes interface work, but also business flows, user paths, and product framing.",
+      sections: [
+        { title: "Design frame", body: "Cashback, ordering, membership, and expense logging products require business rules to become low-cost user flows. Interface is the final layer." },
+        { title: "Source treatment", body: "Public case studies should select high-quality partial Keynote pages and rewrite the material without exposing client information." },
+      ],
+      components: [
+        { name: "HotCashback", role: "Consumer product and merchant-side flow." },
+        { name: "Yuanqi mini program", role: "Membership, ordering, and points flows." },
+        { name: "Two-second expense log", role: "Early expense-logging interface and flow." },
+      ],
+    },
+  },
+  "brand-visual-identity": {
+    categoryLabel: "Historical Project",
+    summary: "Historical brand, VI, logo, application, and presentation work, focused on visual systems and brand expression.",
+    capability: "Turns abstract brand feeling into a usable visual system where symbols, color, typography, application, and proposal tone support one another.",
+    detail: {
+      thesis: "This archive is about brand visual systems and presentation. It is not a logo collection, but a set of materials showing how brand judgement moves into application contexts.",
+      sections: [
+        { title: "Design frame", body: "Brand work needs one tone across symbols, typography, color, layout, application, and external presentation." },
+        { title: "System frame", body: "The value is in rules and application, not isolated visuals. Public material should show how a visual system extends into pages, objects, and product contexts." },
+        { title: "Source treatment", body: "Public material should use redacted partial visuals, redrawn structures, and method notes without exposing client or former-employer material." },
+      ],
+      components: [
+        { name: "VI case collection", role: "Collection of brand and VI outputs." },
+        { name: "Brand application pages", role: "Use of brand rules in pages, materials, and product contexts." },
+        { name: "Visual system notes", role: "Judgement behind visual direction." },
+      ],
+    },
+  },
+  "ux-audit-product-system": {
+    categoryLabel: "Historical Project",
+    summary: "UX audit, government/enterprise systems, admin flows, and product-structure notes, focused on diagnosing and organizing complex systems.",
+    capability: "Reads complex product systems, separates roles, flows, states, information architecture, and interface issues, then turns them into actionable design documents.",
+    detail: {
+      thesis: "This archive focuses on product diagnosis and system design. It is not visual display work; it is the organization that follows understanding complex flows, roles, and back-office structures.",
+      sections: [
+        { title: "Design frame", body: "UX audit turns vague friction into specific problems: information architecture, flow, state, error handling, role comprehension, and interface burden." },
+        { title: "System frame", body: "The material includes experience reports, government/judicial systems, hardware control software, and back-office products that can become product-system case studies." },
+        { title: "Source treatment", body: "Former-employer and client material needs strong redaction. Public pages should keep method, structure, and selectively redrawn flows." },
+      ],
+      components: [
+        { name: "Authing.cn user experience report", role: "Experience diagnosis and improvement direction." },
+        { name: "Fengqiao judicial system", role: "Government/judicial workflow and interface structure." },
+        { name: "Hardware control / CMS notes", role: "Complex systems, roles, and back-office flow organization." },
+      ],
+    },
+  },
+};
+
 function setupThemeToggle() {
   const button = document.querySelector("[data-theme-toggle]");
   if (!button) return;
@@ -72,6 +311,77 @@ function setupThemeToggle() {
     document.documentElement.dataset.theme = nextTheme;
     localStorage.setItem("theme", nextTheme);
     sync();
+  });
+}
+
+function activeUi() {
+  return uiCopy[activeLanguage] || uiCopy.mix;
+}
+
+function setupLanguageToggle() {
+  const button = document.querySelector("[data-language-toggle]");
+  if (!button) return;
+
+  const sync = () => {
+    const ui = activeUi();
+    document.documentElement.lang = ui.htmlLang;
+    document.documentElement.dataset.language = activeLanguage;
+    button.textContent = ui.languageButton;
+    button.setAttribute("aria-label", ui.languageLabel);
+  };
+
+  sync();
+  button.addEventListener("click", () => {
+    activeLanguage = activeLanguage === "en" ? "mix" : "en";
+    localStorage.setItem(languageKey, activeLanguage);
+    sync();
+    renderAll();
+  });
+}
+
+function mergeListByIndex(baseItems, overrideItems) {
+  if (!overrideItems) return baseItems;
+  return baseItems.map((item, index) => ({ ...item, ...(overrideItems[index] || {}) }));
+}
+
+function localizedProject(project) {
+  if (activeLanguage !== "en") return project;
+  const copy = projectCopyEn[project.id];
+  if (!copy) return { ...project, categoryLabel: activeUi().categoryLabels[project.category] };
+
+  return {
+    ...project,
+    ...copy,
+    categoryLabel: copy.categoryLabel || activeUi().categoryLabels[project.category],
+    detail: {
+      ...project.detail,
+      ...(copy.detail || {}),
+      sections: mergeListByIndex(project.detail.sections, copy.detail?.sections),
+      components: mergeListByIndex(project.detail.components, copy.detail?.components),
+    },
+  };
+}
+
+function localizedProjects() {
+  return sourceProjects.map(localizedProject);
+}
+
+function setText(selector, text) {
+  const element = document.querySelector(selector);
+  if (element && text) element.textContent = text;
+}
+
+function applyStaticCopy() {
+  const ui = activeUi();
+  document.documentElement.lang = ui.htmlLang;
+  document.documentElement.dataset.language = activeLanguage;
+
+  if (document.body.dataset.page === "projects") {
+    setText(".page-hero p:not(.eyebrow)", ui.projectsIntro);
+  }
+
+  document.querySelectorAll("[data-filter]").forEach((button) => {
+    button.textContent = ui.filters[button.dataset.filter] || button.textContent;
   });
 }
 
@@ -131,6 +441,7 @@ function renderHome(projects) {
 
 function groupedMarkup(projects, filter = "all") {
   const visible = filter === "all" ? projects : projects.filter((project) => project.category === filter);
+  const ui = activeUi();
 
   return categoryOrder
     .map((category) => {
@@ -141,7 +452,7 @@ function groupedMarkup(projects, filter = "all") {
         <section class="project-group" id="${category === "history" ? "history" : category}">
           <div class="section-header">
             <p class="eyebrow">${category}</p>
-            <h2>${categoryLabels[category]}</h2>
+            <h2>${ui.categoryLabels[category]}</h2>
           </div>
           <div class="project-grid">
             ${items.map(projectCard).join("")}
@@ -157,13 +468,14 @@ function renderProjects(projects) {
   if (!mount) return;
 
   const filters = [...document.querySelectorAll("[data-filter]")];
-  mount.innerHTML = groupedMarkup(projects);
+  mount.innerHTML = groupedMarkup(projects, activeFilter);
 
   filters.forEach((button) => {
-    button.addEventListener("click", () => {
-      filters.forEach((item) => item.classList.toggle("is-active", item === button));
-      mount.innerHTML = groupedMarkup(projects, button.dataset.filter);
-    });
+    button.classList.toggle("is-active", button.dataset.filter === activeFilter);
+    button.onclick = () => {
+      activeFilter = button.dataset.filter;
+      renderProjects(localizedProjects());
+    };
   });
 }
 
@@ -204,14 +516,15 @@ function renderProjectDetail(projects) {
   const project = projects.find((item) => item.id === id);
 
   if (!project) {
+    const ui = activeUi();
     document.title = "Project not found · Ronnie Wong";
     mount.innerHTML = `
       <section class="page-hero compact">
         <p class="eyebrow">Project detail</p>
         <h1>Project not found</h1>
-        <p>這個 project id 不在目前的資料源裡。請回到 Projects 頁重新選擇。</p>
+        <p>${ui.notFoundBody}</p>
         <div class="hero-actions">
-          <a class="button primary" href="projects.html">All Projects</a>
+          <a class="button primary" href="projects.html">${ui.allProjects}</a>
         </div>
       </section>
     `;
@@ -219,6 +532,7 @@ function renderProjectDetail(projects) {
   }
 
   document.title = `${project.name} · Ronnie Wong`;
+  const ui = activeUi();
   const projectIndex = projects.findIndex((item) => item.id === project.id);
   mount.innerHTML = `
     <section class="page-hero compact detail-hero" aria-labelledby="detail-title">
@@ -244,11 +558,11 @@ function renderProjectDetail(projects) {
           <strong>${project.categoryLabel}</strong>
         </div>
         <div class="detail-aside-block">
-          <span>Practice</span>
+          <span>${ui.detailHeadings.practice}</span>
           <p>${project.capability}</p>
         </div>
         <div class="project-links vertical">
-          <a href="projects.html">All Projects</a>
+          <a href="projects.html">${ui.allProjects}</a>
           ${project.links.map((link) => `<a href="${link.href}">${link.label}</a>`).join("")}
         </div>
       </aside>
@@ -257,7 +571,7 @@ function renderProjectDetail(projects) {
         <section class="detail-section">
           <div class="section-header">
             <p class="eyebrow">Narrative</p>
-            <h2>設計與工程判斷</h2>
+            <h2>${ui.detailHeadings.narrative}</h2>
           </div>
           <div class="detail-notes">
             ${detailSections(project.detail.sections)}
@@ -267,7 +581,7 @@ function renderProjectDetail(projects) {
         <section class="detail-section">
           <div class="section-header">
             <p class="eyebrow">System</p>
-            <h2>組件和資料可見性</h2>
+            <h2>${ui.detailHeadings.system}</h2>
           </div>
           <div class="table-wrap">
             <table class="kami-table">
@@ -287,7 +601,7 @@ function renderProjectDetail(projects) {
         <section class="detail-section">
           <div class="section-header">
             <p class="eyebrow">Surface</p>
-            <h2>可閱讀的工作面</h2>
+            <h2>${ui.detailHeadings.surface}</h2>
           </div>
           <ul class="proof-list">
             ${project.detail.proof.map((item) => `<li>${item}</li>`).join("")}
@@ -298,15 +612,20 @@ function renderProjectDetail(projects) {
   `;
 }
 
-async function boot() {
-  setupThemeToggle();
-
-  const response = await fetch("content/projects.seed.json", { cache: "no-store" });
-  const projects = await response.json();
-
+function renderAll() {
+  applyStaticCopy();
+  const projects = localizedProjects();
   renderHome(projects);
   renderProjects(projects);
   renderProjectDetail(projects);
+}
+
+async function boot() {
+  setupThemeToggle();
+  setupLanguageToggle();
+  const response = await fetch("content/projects.seed.json", { cache: "no-store" });
+  sourceProjects = await response.json();
+  renderAll();
 }
 
 boot().catch(() => {
