@@ -1,138 +1,166 @@
 # RonnieCC Website 視覺方向
 
-這份文件用來記錄網站視覺方向。它不是公開文案，而是前端設計和實作時的中間約束。
+這份文件是 RonnieCC 的內部設計約束，用來避免之後再被舊方向誤導。它不是公開文案。
 
-## 參考來源
+## 已確定的組合
 
-- `tw93/kami`: https://github.com/tw93/kami
-- Kami design spec: https://github.com/tw93/kami/blob/main/references/design.md
+RonnieCC 目前採用三個來源，但每個來源只負責一件事：
 
-Kami 的價值不在某個具體組件，而在「少量、穩定、可反覆執行的視覺約束」。這點適合 RonnieCC：網站要呈現能力、作品脈絡和判斷力，而不是把 app 排成商店貨架。
+1. **Kami 提供色彩 token**
+   - 使用暖紙色、warm gray、ink-blue。
+   - 不使用 Kami 的字體語氣、卡片模板或 PDF document 外觀。
+2. **5mlstudio 提供排版布局方法**
+   - 大留白、低裝飾、文字居主要地位。
+   - 幾何 SVG 只能作為克制的結構標記。
+   - 5mlstudio 是過去對外宣傳品牌，不是 RonnieCC 的復刻目標。
+3. **Typography 是主要表達**
+   - 網站要靠字重、行距、字距、行長、換行和空氣感建立品質。
+   - 裝飾、卡片、圖形都必須服從文字層級。
 
-## 轉化原則
+## 色彩規則
 
-### 1. 從 app catalog 轉成 editorial portfolio
-
-網站應該像一份可瀏覽的作品集和能力說明，而不是 app 列表。
-
-- 首屏展示「現在正在做什麼」和「我怎麼思考產品」。
-- Projects 頁展示三類項目：現在的 Project、探索、歷史的 Project。
-- 每個 Project 不是只有卡片，而要有一句清楚的判斷：它證明了什麼能力。
-- Resume 是獨立頁，不要和 app 支持頁混在一起。
-
-### 2. 借用 Kami 的約束，而不是照搬 Kami 的外觀
-
-Kami 的關鍵約束可以轉化為：
-
-- 暖紙張背景作為網站基底，但避免整站只有米色和墨藍。
-- 墨藍作為主要 focus color，用在 CTA、分隔線、當前狀態和少量數字。
-- 暖灰作為文字、邊框和節奏層，不使用冷灰 dashboard 感。
-- 字體層級以內容為主，不靠大面積漸變或裝飾圖形。
-- 陰影要輕，讓內容像紙張略微浮起，而不是 SaaS 卡片堆疊。
-
-前端需要比 PDF 更有層次，所以可以用項目截圖、Keynote 輸出、產品畫面和少量狀態色來補充視覺豐富度；UI 本身保持克制。
-
-### 3. 色彩策略
-
-建議建立一套 RonnieCC token：
+只使用 Kami 色彩系統作為外層 UI token。
 
 ```css
---paper: #f5f4ed;
---paper-raised: #faf9f5;
---ink: #141413;
---ink-muted: #5e5d59;
---line: #e0ddd2;
---accent: #1b365d;
---accent-soft: #e4ecf5;
---charcoal: #30302e;
+--parchment: #f5f4ed;
+--ivory: #faf9f5;
+--warm-sand: #e8e6dc;
+--deep-dark: #141413;
+--near-black: #141413;
+--dark-warm: #3d3d3a;
+--olive: #504e49;
+--stone: #6b6a64;
+--border: #e8e6dc;
+--border-soft: #e5e3d8;
+--brand: #1b365d;
+--brand-light: #2d5a8a;
+--tag-blue: #eef2f7;
 ```
 
-使用規則：
+Dark mode 不能機械沿用 light mode 的深藍，因為 `#1b365d` 在深色背景上對比和層級都不成立。Dark mode 的 accent 必須服從 typography 層級：
 
-- `--accent` 面積要小，承擔方向感，不做大色塊背景。
-- Projects 的差異不要依靠四五種鮮豔 app 色，而是靠分類、截圖、文案和結構。
-- 歷史作品可以允許原始設計稿的顏色出現，但外層 UI 保持統一。
-- 探索類項目可以使用更輕的紙張/草稿感，但不要做成灰色 placeholder。
+```css
+--parchment: #141413;
+--near-black: #f3efe4;
+--dark-warm: #ded6c6;
+--olive: #bdb6a7;
+--stone: #8d887d;
+--brand: #ded6c6;
+--brand-light: #f3efe4;
+```
 
-### 4. 字體和排版
+規則：
 
-網站主語言是繁體中文，夾雜英文產品名和技術詞。
+- Light mode 可以用 ink-blue 作少量 focus。
+- Dark mode 的 highlight 不能比正文暗，也不能用亮藍搶過文字。
+- 5mlstudio 的淡藍 `#b1e8f4` 禁止作為 RonnieCC UI token。
+- 不使用彩色光斑、漸變、玻璃擬態或 app-style 多色分類。
 
-- 中文正文用系統 sans，確保閱讀穩定。
-- 大標題可以嘗試 Songti / serif fallback，製造作品集感。
-- 英文產品名和 metadata 使用 sans，偏工具性。
-- 不使用斜體。
-- 不使用過重字重；標題以 500/600 為主，正文 400。
-- 行高：標題 1.1-1.25，正文 1.5 左右，列表/metadata 1.35-1.45。
+## 字體規則
 
-### 5. 組件語言
+主字體使用 **Montserrat**，自託管，授權為 SIL Open Font License 1.1。
 
-#### Section header
+- Light display text: `font-weight: 200`
+- Emphasis text: `font-weight: 700`
+- Utility / metadata: `400` 或 `700`
+- 不使用 `Thin 100`，目前已改為 `200` 以提高可讀性。
+- 不使用 TsangerJinKai02；它在這個網站上會形成幼稚和錯誤的視覺語氣。
+- 不使用 Circe；它曾帶來版權風險。
+- 不使用 Manrope；目前已被 Montserrat 取代。
 
-每個主要段落使用 editorial header：
+字體 fallback 可以包含 Apple / CJK system fonts，以避免中文缺字：
 
-- 小型 eyebrow
-- 一條暖灰橫線或墨藍左線
-- 清楚的 serif/sans 標題
-- 不用大卡片包住整個 section
+```css
+"Montserrat", -apple-system, BlinkMacSystemFont, "SF Pro Display",
+"SF Pro Text", "PingFang TC", "PingFang SC", "Hiragino Sans GB",
+"Microsoft YaHei", "Noto Sans CJK TC", "Noto Sans CJK SC", sans-serif
+```
 
-#### Project card
+## Typography 規則
 
-Project card 應該像作品集條目，不像 app store tile：
+Typography 是本網站的核心設計能力展示。
 
-- 顯示分類：現在 / 探索 / 歷史
-- 顯示 tags：能力、平台、形態、資料狀態
-- 顯示一句 capability statement
-- 如果有視覺材料，優先放截圖或 Keynote preview
-- 私有 repo、Notion、Drive 只作內部來源，不直接暴露
+- 優先調整行距、字距、行長、斷行和空白，而不是增加裝飾。
+- 不使用負字距。
+- 大標題必須有明確的手工斷行；不能依靠瀏覽器隨機換行。
+- 首屏主句需要形成強左軸。
+- 空氣感比信息密度重要，但不能犧牲語義清晰。
+- Highlight 必須在視覺上高於或至少不低於普通正文；不能只是顏色不同。
 
-#### Tags
+目前 index 主句的規則：
 
-Tags 用 solid hex，不用半透明背景：
+```css
+font-size: clamp(36px, 5.15vw, 74px);
+font-weight: 200;
+line-height: 1.18;
+letter-spacing: 0.006em;
+```
 
-- 能力 tag：`--accent-soft`
-- 狀態 tag：暖灰底
-- Needs Redaction / Source Incomplete：低飽和紅棕，不刺眼
+輔助文案：
 
-#### Resume
+```css
+font-size: clamp(13px, 1.25vw, 16px);
+font-weight: 400;
+letter-spacing: 0.035em;
+```
 
-Resume 頁可以最接近 Kami：
+## Layout 規則
 
-- 像一份排版良好的網頁版簡歷
-- 可打印
-- 少裝飾，多信息密度
-- 內容從 Google Drive resume 來源整理，不直接嵌入原文件
+5mlstudio 提供的是布局方法，不是顏色或品牌復刻。
 
-## 對目前網站的修正方向
+- 大留白。
+- 左對齊閱讀軸。
+- 內容靠 typography 建立節奏。
+- 第二屏可以使用 SVG 幾何圖形，但只能作為結構符號。
+- SVG 使用 `currentColor`，由 Kami token 控制。
+- 卡片不是主要語言；除非是重複項目的必要容器，否則避免卡片。
+- 頁面 section 用 border、間距和排版分層，不用厚重背景和陰影。
 
-目前首頁仍然太像 app catalog，應該改成：
+## 頁面規則
 
-1. 首屏：Ronnie Wong / 能力定位 / 目前正在做的幾個 project。
-2. 第二屏：Featured Projects，展示 Syncnext、eisonAI、TracklyReborn、aDict。
-3. 第三屏：Explorations，展示 HLN Machine 這類探索。
-4. 第四屏：Selected Historical Work，展示從 Keynote 舊作品中整理出的高質量案例。
-5. Footer：GitHub、Resume、Email/Contact。
+### Index
 
-導航應該固定為：
+- 第一屏：typographic statement。
+- 第二屏：少量幾何 SVG + 文字，表達核心能力判斷。
+- 不放 project cards。
+- 不做 marketing hero。
 
-- Index
-- Projects
-- Resume
+### Projects
 
-## 不採用的方向
+- 是 project index，不是 app store grid。
+- 每個 project 用編號、幾何標記、名稱、type、summary、capability、tags 組成。
+- 主要品質來自字距、行距和信息節奏，不來自卡片裝飾。
 
-- 不做 App Store 式 app grid 作為主體。
-- 不用大面積漸變、玻璃擬態、彩色光斑。
-- 不把 ChatGPT folder 的思考內容原文公開。
-- 不把舊公司/客戶資料直接展示；歷史作品必須先選稿、脫敏、重寫。
-- 不完全套用 Kami 的「單一墨藍」到所有內容，因為網站需要容納產品截圖和歷史設計輸出。
+### Project Detail
 
-## 下一步
+- Detail 是長文排版頁。
+- Aside 只放 metadata，不做卡片組。
+- Narrative / System / Proof 用大間距、細線和清楚標題分層。
 
-前端改版可以按這個順序推進：
+### Resume
 
-1. 先把首頁 IA 改成個人能力站。
-2. 建立 Projects 資料結構，支持 category 和 tags。
-3. 重寫 CSS token 和 section/card 視覺規則。
-4. 製作 Resume 頁。
-5. 從 Keynote export 中挑 3-5 個歷史案例，補入 Projects。
+- Resume 是 typographic resume page，不是 Kami PDF 模板。
+- 不使用紙張卡片、左色條或 resume sheet 裝飾。
+- 信息需要清晰，但外觀仍服從整站 typography 規則。
+
+## 禁止方向
+
+- 禁止 TsangerJinKai02。
+- 禁止 Circe。
+- 禁止 Manrope。
+- 禁止 5mlstudio 淡藍作為 RonnieCC token。
+- 禁止背景網格。
+- 禁止大卡片牆作為首頁。
+- 禁止 App Store 式 app grid。
+- 禁止用亮藍在 dark mode 中搶過文字。
+- 禁止把 Kami 當成外觀模板照搬。
+- 禁止把 5mlstudio 當成 RonnieCC 復刻目標。
+
+## 目前設計狀態
+
+截至目前：
+
+- Index 已採用 Montserrat + Kami color + 5mlstudio layout method。
+- Projects / Detail / Resume 已從卡片模板改向 typographic layout。
+- Dark mode 的 brand/highlight 已改成 typography-compatible warm text token。
+- 字體資產位於 `assets/fonts/montserrat/`，包含 Montserrat 200 / 400 / 700 與 OFL license。

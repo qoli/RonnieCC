@@ -29,14 +29,11 @@ function projectVisual(project, index) {
 
   return `
     <div class="project-visual" aria-hidden="true">
-      <span class="visual-label">${project.type}</span>
-      <strong>${project.name}</strong>
-      <div class="visual-lines">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
       <span class="project-index">${number}</span>
+      <svg class="project-mark" viewBox="0 0 120 120" focusable="false">
+        <circle cx="60" cy="60" r="42"></circle>
+        <path d="M30 60h60M60 30v60"></path>
+      </svg>
     </div>
   `;
 }
@@ -59,6 +56,7 @@ function projectCard(project, index) {
           <span>${project.status}</span>
         </div>
         <h3>${project.name}</h3>
+        <p class="project-type">${project.type}</p>
         <p>${project.summary}</p>
         <blockquote>${project.capability}</blockquote>
         <div class="tags">${tagList(project.tags)}</div>
