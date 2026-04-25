@@ -168,7 +168,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 20;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 24px;
   padding: 14px max(24px, calc((100vw - var(--page)) / 2));
   border-bottom: 1px solid var(--border);
@@ -214,6 +214,10 @@ p {
   color: var(--stone);
   font-size: 15px;
   font-weight: 700;
+}
+
+.theme-toggle {
+  margin-left: auto;
 }
 
 .theme-toggle {
