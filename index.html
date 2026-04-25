@@ -3,138 +3,118 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ronnie Apps</title>
+    <title>Ronnie Wong</title>
     <meta
       name="description"
-      content="Ronnie Apps collects independent apps, product notes, release logs, and engineering writing."
+      content="Ronnie Wong 的個人能力網站，整理 AI productization、Apple platform apps、local-first systems 和 UI/UX design work."
     >
     <link rel="canonical" href="https://ronniewong.cc/">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body data-page="home">
     <header class="site-header">
-      <a class="brand" href="/" aria-label="Ronnie Apps home">
-        <span class="brand-mark">RA</span>
-        <span>Ronnie Apps</span>
+      <a class="brand" href="index.html" aria-label="Ronnie Wong home">
+        <span class="brand-mark">RW</span>
+        <span>Ronnie Wong</span>
       </a>
       <nav class="nav" aria-label="Primary">
-        <a href="#apps">Apps</a>
-        <a href="#notes">Notes</a>
-        <a href="#support">Support</a>
+        <a aria-current="page" href="index.html">Index</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
       </nav>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Independent apps and product notes</p>
-          <h1 id="hero-title">Small apps, maintained with care.</h1>
+          <p class="eyebrow">AI product builder · Apple platforms · UI/UX designer</p>
+          <h1 id="hero-title">Ronnie Wong</h1>
           <p class="hero-text">
-            Ronnie Apps is a public home for media tools, AI life logging, dictionaries,
-            and AI reading products. Each product keeps its own docs, policies, updates, and support path.
+            我把 AI、Apple 平台工程、local-first 資料系統和 UI/UX 設計能力，收束成能被真實使用、維護和解釋的個人產品。
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#apps">View apps</a>
-            <a class="button secondary" href="https://github.com/qoli">GitHub</a>
+            <a class="button primary" href="projects.html">View Projects</a>
+            <a class="button secondary" href="resume.html">Resume</a>
           </div>
         </div>
 
-        <aside class="hero-panel" aria-label="Ronnie Apps overview">
-          <div class="panel-header">
-            <span class="window-dot"></span>
-            <span class="window-dot"></span>
-            <span class="window-dot"></span>
-            <span class="panel-title">Ronnie Apps</span>
-          </div>
-          <div class="featured-app">
-            <span class="product-icon syncnext">S</span>
-            <div>
-              <p class="status">Active</p>
-              <h2>Syncnext</h2>
-              <p>聚合媒體播放器，整理播放來源、訂閱、FAQ 和更新日誌。</p>
+        <figure class="hero-artefact" aria-label="Project method preview">
+          <div class="paper-sheet">
+            <span class="sheet-kicker">Current work</span>
+            <strong>Products as small ecosystems</strong>
+            <p>App / API / plugin / docs / support tooling / writing</p>
+            <div class="method-lines">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
-          <div class="mini-grid">
-            <div>
-              <span class="product-icon adict">aD</span>
-              <strong>aDict</strong>
-              <small>Dictionary</small>
-            </div>
-            <div>
-              <span class="product-icon trackly">T</span>
-              <strong>Trackly</strong>
-              <small>TestFlight</small>
-            </div>
-            <div>
-              <span class="product-icon eison">E</span>
-              <strong>eisonAI</strong>
-              <small>Cognitive Index</small>
-            </div>
+          <div class="artefact-row">
+            <span>AI Productization</span>
+            <span>Local-first Systems</span>
+            <span>Visual Presentation</span>
           </div>
-          <div class="panel-metric">
-            <span>4 apps available</span>
-            <span>iOS, macOS, tvOS</span>
-          </div>
-        </aside>
+        </figure>
       </section>
 
-      <section class="section apps-section" id="apps" aria-labelledby="apps-title">
-        <div class="section-heading">
+      <section class="section intro-section" aria-labelledby="intro-title">
+        <div class="section-header">
+          <p class="eyebrow">Positioning</p>
+          <h2 id="intro-title">這不是 app catalog，而是能力索引。</h2>
+        </div>
+        <div class="statement-grid">
+          <article>
+            <span>01</span>
+            <h3>把產品做成生態</h3>
+            <p>Syncnext、aDict、TracklyReborn 都不只是單一 app，它們包含 docs、更新、workflow、API 或周邊工具。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>把 AI 放進日常工作流</h3>
+            <p>我關心 AI 如何成為可維護產品，而不是只停在 demo：local-first、可診斷、可重啟、可解釋。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>用設計背景提高工程品質</h3>
+            <p>早期 UI/UX Designer 的輸出會被整理成歷史案例，支撐視覺表達、QA 和產品敘事能力。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="featured-title">
+        <div class="section-header split">
           <div>
-            <p class="eyebrow">Catalog</p>
-            <h2 id="apps-title">Apps</h2>
+            <p class="eyebrow">Selected Projects</p>
+            <h2 id="featured-title">現在的 Project 和探索。</h2>
           </div>
-          <div class="filters" aria-label="App filters">
-            <button class="filter is-active" type="button" data-filter="all">All</button>
-            <button class="filter" type="button" data-filter="active">Active</button>
-            <button class="filter" type="button" data-filter="testflight">TestFlight</button>
-          </div>
+          <a class="text-link" href="projects.html">全部 Projects</a>
         </div>
-        <div class="app-grid" id="app-grid" aria-live="polite">
-          <article class="app-card">
-            <div class="card-top">
-              <div class="app-icon">S</div>
-              <span class="status">Active</span>
-            </div>
-            <h3>Syncnext</h3>
-            <p>聚合媒體播放器，提供播放來源、訂閱、進階文檔、FAQ 和更新日誌。</p>
-          </article>
-        </div>
+        <div class="project-grid featured-projects" id="home-projects" aria-live="polite"></div>
       </section>
 
-      <section class="section editorial" id="notes" aria-labelledby="notes-title">
-        <div>
-          <p class="eyebrow">Notes</p>
-          <h2 id="notes-title">Release logs and engineering writing.</h2>
+      <section class="section dark-band" aria-labelledby="archive-title">
+        <div class="section-header">
+          <p class="eyebrow">Design Archive</p>
+          <h2 id="archive-title">歷史作品會變成經過篩選的 case study。</h2>
         </div>
-        <div class="note-list">
-          <article>
-            <span>Product updates</span>
-            <p>aDict and Syncnext already have living changelog pages in Notion.</p>
-          </article>
-          <article>
-            <span>Engineering notes</span>
-            <p>tvOS playback, focus behavior, persistence, and app rewrite notes should become first-class posts.</p>
-          </article>
-          <article>
-            <span>Support docs</span>
-            <p>FAQs, terms, privacy, and feedback links stay attached to the app they belong to.</p>
-          </article>
+        <div class="archive-layout">
+          <div class="archive-copy">
+            <p>
+              Keynote 舊檔不會原樣公開。它們會先被挑選、脫敏、重新敘事，再作為 UI/UX Designer 背景和產品表達能力的證據。
+            </p>
+            <a class="button inverse" href="projects.html#history">查看歷史分類</a>
+          </div>
+          <div class="archive-preview" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-      </section>
-
-      <section class="section support" id="support" aria-labelledby="support-title">
-        <p class="eyebrow">Support</p>
-        <h2 id="support-title">Find the right document from the right app.</h2>
-        <p>
-          This site is the index. Product-specific docs continue to live close to the products:
-          setup guides, policy pages, issue feedback, and release notes stay visible on each app card.
-        </p>
       </section>
     </main>
 
     <footer class="footer">
-      <span>Ronnie Apps</span>
+      <span>Ronnie Wong</span>
       <a href="https://github.com/qoli/RonnieCC">Source</a>
     </footer>
 

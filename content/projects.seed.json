@@ -1,0 +1,268 @@
+[
+  {
+    "id": "syncnext",
+    "name": "Syncnext",
+    "category": "current",
+    "categoryLabel": "現在的 Project",
+    "type": "Media runtime ecosystem",
+    "summary": "tvOS 長時間媒體 runtime，從播放器、訂閱、API、plugin 到 support tooling，圍繞真實用戶場景持續維護。",
+    "capability": "證明我能把 Apple 平台產品、媒體播放 runtime、API/plugin ecosystem 和支持文檔組成一個可維護的小型生態。",
+    "tags": ["Apple Platforms", "Media Runtime", "Plugin/API", "Independent Product"],
+    "status": "Active",
+    "detail": {
+      "thesis": "Syncnext 應被理解為一個媒體 runtime 生態，而不是單一播放器。它的價值在於把播放體驗、內容來源、plugin、API、網路規則和支援文檔放在同一個可維護系統裡。",
+      "sections": [
+        {
+          "title": "What it proves",
+          "body": "這個 project 展示的是長時間使用場景下的產品工程能力：播放穩定性、Apple TV 互動、訂閱來源、FAQ、更新節奏和用戶支持都必須一起成立。"
+        },
+        {
+          "title": "System shape",
+          "body": "主 app 承擔使用體驗，API 和 plugin reference 承擔生態擴展，networking / userscript helper 解決實際使用中的周邊問題。"
+        },
+        {
+          "title": "Narrative angle",
+          "body": "公開頁面不應只展示 app，而應展示一個獨立產品如何通過 docs、tooling 和 ecosystem design 長期被維護。"
+        }
+      ],
+      "components": [
+        {"name": "Syncnext main app", "type": "tvOS / iOS app", "visibility": "Private source", "role": "核心播放體驗和產品入口。"},
+        {"name": "syncnext-api", "type": "API support repo", "visibility": "Public", "role": "支撐內容 metadata 和 ecosystem 證據。"},
+        {"name": "syncnextPlugin", "type": "Plugin reference", "visibility": "Public", "role": "展示 plugin protocol 和擴展方式。"},
+        {"name": "SyncPlaylist", "type": "Predecessor", "visibility": "Archived", "role": "作為 Syncnext 演進歷史。"}
+      ],
+      "proof": ["長時間媒體 runtime", "tvOS product delivery", "API / plugin ecosystem", "support docs and changelog"]
+    },
+    "links": [
+      {"label": "Notion", "href": "https://www.notion.so/821b80378be241149fa5e9a1bbf6cfdc"},
+      {"label": "Changelog", "href": "https://www.notion.so/2e3c1b36c4018098babae678943c8d20"}
+    ]
+  },
+  {
+    "id": "eison-ai",
+    "name": "eisonAI",
+    "category": "current",
+    "categoryLabel": "現在的 Project",
+    "type": "Local-first AI reading product",
+    "summary": "跨 iOS / macOS / iPadOS / Safari Extension 的 AI reading product，用 Cognitive Index 幫內容建立用途和脈絡。",
+    "capability": "證明我能把 AI 能力收束成隱私友好、local-first、可被日常使用的閱讀和資料整理產品。",
+    "tags": ["AI Productization", "Local-first", "Knowledge Tools", "Swift"],
+    "status": "Active",
+    "detail": {
+      "thesis": "eisonAI 的重點不是把 AI 包裝成聊天入口，而是把 AI 放進閱讀、保存、整理和找回資料的日常流程。",
+      "sections": [
+        {
+          "title": "What it proves",
+          "body": "它證明我能把 AI productization 做成真實工具：跨 Apple 平台、local-first、重視內容脈絡，而不是只展示模型能力。"
+        },
+        {
+          "title": "System shape",
+          "body": "產品由 app、Safari Extension、Cognitive Index 和本地資料管理組成，核心是讓資料在被保存後仍然能被理解和重新使用。"
+        },
+        {
+          "title": "Narrative angle",
+          "body": "公開敘事應聚焦在 privacy-aware AI、knowledge workflow 和 Apple platform implementation。"
+        }
+      ],
+      "components": [
+        {"name": "eisonAI app", "type": "AI reading product", "visibility": "Public product", "role": "使用者入口和核心產品體驗。"},
+        {"name": "Safari Extension", "type": "Capture surface", "visibility": "Product feature", "role": "把網頁閱讀和保存動作接入產品。"},
+        {"name": "Cognitive Index", "type": "AI indexing concept", "visibility": "Public narrative", "role": "用 AI 建立內容用途和脈絡。"},
+        {"name": "Swift codebase", "type": "GitHub repo", "visibility": "Public", "role": "工程實作證據。"}
+      ],
+      "proof": ["local-first AI workflow", "Apple platform implementation", "knowledge and reading tools", "public repo and App Store presence"]
+    },
+    "links": [
+      {"label": "App Store", "href": "https://apps.apple.com/us/app/eison-ai/id6484502399"},
+      {"label": "GitHub", "href": "https://github.com/qoli/eisonAI"}
+    ]
+  },
+  {
+    "id": "trackly-reborn",
+    "name": "TracklyReborn 得意記",
+    "category": "current",
+    "categoryLabel": "現在的 Project",
+    "type": "AI life logging ecosystem",
+    "summary": "以 AI、捷徑、Action Button、多圖片紀錄和本地資料庫重寫的生活/消費紀錄產品。",
+    "capability": "證明我能把 iOS 系統能力、AI prompt、VLM、多模態輸入和本地資料模型整合成高頻生活 workflow。",
+    "tags": ["AI Productization", "iOS", "Shortcuts", "Local Data"],
+    "status": "Public TestFlight",
+    "detail": {
+      "thesis": "TracklyReborn 是一次把生活記錄、消費記錄、AI prompt、捷徑和 Action Button 串成高頻 workflow 的重寫。",
+      "sections": [
+        {
+          "title": "What it proves",
+          "body": "它證明我能從舊產品出發，重新設計資料模型、輸入方式和 AI 協助流程，讓記錄行為更低摩擦。"
+        },
+        {
+          "title": "System shape",
+          "body": "主 app 負責本地資料和視覺體驗，捷徑和 Action Button 負責快速入口，多圖片和 VLM 設定負責降低手動輸入成本。"
+        },
+        {
+          "title": "Narrative angle",
+          "body": "這個 project 適合展示 AI 如何落入 iOS 原生 workflow，而不是把 AI 當成獨立聊天功能。"
+        }
+      ],
+      "components": [
+        {"name": "TracklyReborn app", "type": "iOS app", "visibility": "Private source", "role": "核心產品和本地資料庫。"},
+        {"name": "Public TestFlight", "type": "Distribution", "visibility": "Public", "role": "公開測試和用戶入口。"},
+        {"name": "Shortcuts / Action Button", "type": "Workflow surface", "visibility": "Product feature", "role": "高頻記錄入口。"},
+        {"name": "TracklyPrompt", "type": "Prompt material", "visibility": "Private source", "role": "AI workflow 內部證據。"}
+      ],
+      "proof": ["AI-assisted life logging", "multimodal record capture", "iOS workflow integration", "public TestFlight"]
+    },
+    "links": [
+      {"label": "TestFlight", "href": "https://testflight.apple.com/join/aQ64Cnfv"},
+      {"label": "Start", "href": "https://www.notion.so/267c1b36c40180ec9489d4f84ef1c079"}
+    ]
+  },
+  {
+    "id": "adict",
+    "name": "aDict",
+    "category": "current",
+    "categoryLabel": "現在的 Project",
+    "type": "Dictionary / reading ecosystem",
+    "summary": "跨 iOS / macOS 的詞典與閱讀工具生態，包含 rewrite、protocol、更新日誌、詞典列表和使用文章。",
+    "capability": "證明我能長期維護一個閱讀工具，處理多平台體驗、資料來源、更新節奏和產品文檔。",
+    "tags": ["Apple Platforms", "Reading Tools", "macOS", "Product Docs"],
+    "status": "Active",
+    "detail": {
+      "thesis": "aDict 是一個閱讀和查詞工具生態，價值在於長期維護、多平台一致性、詞典資料和產品文檔，而不是單一查詢界面。",
+      "sections": [
+        {
+          "title": "What it proves",
+          "body": "它證明我能維護工具型產品，處理 iOS / macOS 之間的體驗、資料、更新日誌和使用文章。"
+        },
+        {
+          "title": "System shape",
+          "body": "目前的 rewrite、legacy app、macOS app、protocol 和 Notion product page 共同構成 aDict 的實作和敘事來源。"
+        },
+        {
+          "title": "Narrative angle",
+          "body": "公開內容應展示 reading workflow、lookup experience 和 Apple platform product maintenance。"
+        }
+      ],
+      "components": [
+        {"name": "aDict product", "type": "Dictionary app", "visibility": "Public product", "role": "產品入口和使用說明。"},
+        {"name": "aDictRewrite", "type": "Current rewrite", "visibility": "Private source", "role": "目前工程演進。"},
+        {"name": "aDictMac", "type": "macOS app", "visibility": "Private source", "role": "多平台證據。"},
+        {"name": "aDictProtocol", "type": "Internal dependency", "visibility": "Private source", "role": "內部協議和依賴。"}
+      ],
+      "proof": ["reading and lookup workflow", "multi-platform Swift ecosystem", "product docs and changelog", "long-term product maintenance"]
+    },
+    "links": [
+      {"label": "Product", "href": "https://qoli.notion.site/aDict-app-a647f1ed9f604892895b8e71a65f1d70"},
+      {"label": "Changelog", "href": "https://www.notion.so/98075976818745c9bc3657e1088fdf7b"}
+    ]
+  },
+  {
+    "id": "hln-machine",
+    "name": "HLN Machine",
+    "category": "exploration",
+    "categoryLabel": "探索",
+    "type": "Local AI video factory",
+    "summary": "本地 AI 短影片工廠，把新聞 seed 轉成可觀測、可重啟、可診斷的 Shorts pipeline。",
+    "capability": "證明我能設計 white-box AI pipeline，讓生成式流程具備 checkpoint、字幕、B-Roll、診斷和恢復能力。",
+    "tags": ["AI Pipeline", "Local-first", "Media Automation", "White-box Engineering"],
+    "status": "Exploration",
+    "detail": {
+      "thesis": "HLN Machine 是 local AI video factory 的探索：它把新聞 seed 轉成短影片，但真正重點是 white-box pipeline，而不是黑盒生成。",
+      "sections": [
+        {
+          "title": "What it proves",
+          "body": "這個探索證明我能把生成式 AI 工作流拆成可觀測、可重啟、可診斷的階段，而不是把失敗藏在單次 prompt 裡。"
+        },
+        {
+          "title": "System shape",
+          "body": "pipeline 需要處理素材、腳本、字幕、B-Roll、checkpoint、錯誤恢復和最終輸出，每一層都要能被單獨檢查。"
+        },
+        {
+          "title": "Narrative angle",
+          "body": "這不應被包裝成成熟產品，而應是展示 AI engineering judgment 的 case study。"
+        }
+      ],
+      "components": [
+        {"name": "Seed intake", "type": "Input stage", "visibility": "Internal", "role": "從新聞或想法建立 video seed。"},
+        {"name": "Script / subtitle pipeline", "type": "Generation stage", "visibility": "Internal", "role": "生成可檢查的短片文本結構。"},
+        {"name": "B-Roll assembly", "type": "Media stage", "visibility": "Internal", "role": "把文字輸出連接到可視素材。"},
+        {"name": "Checkpoint system", "type": "Observability", "visibility": "Internal", "role": "支援重啟、診斷和局部修復。"}
+      ],
+      "proof": ["white-box AI pipeline", "checkpoint and restart design", "media automation", "local-first experimentation"]
+    },
+    "links": []
+  },
+  {
+    "id": "enterprise-web-design",
+    "name": "Enterprise Web Design Series",
+    "category": "history",
+    "categoryLabel": "歷史的 Project",
+    "type": "Design archive / web portfolio",
+    "summary": "舊職 UI/UX Designer 時期的企業、城市地標與品牌網站設計輸出，包含高保真視覺提案和頁面敘事。",
+    "capability": "證明我在成為獨立開發者之前，已經能處理企業級網站的視覺方向、信息架構和 presentation。",
+    "tags": ["UI/UX Design", "Web", "Visual Presentation", "Needs Redaction"],
+    "status": "Internal Source",
+    "detail": {
+      "thesis": "這組歷史作品用來證明 UI/UX Designer 背景和大型網站 presentation 能力，但必須先經過脫敏和重新敘事。",
+      "sections": [
+        {"title": "What it proves", "body": "能處理企業網站的視覺方向、信息架構、首屏表達和高保真提案。"},
+        {"title": "Source treatment", "body": "Keynote 原件只作內部來源；公開頁面應只展示重新導出的局部畫面和不涉及客戶敏感資料的描述。"}
+      ],
+      "components": [
+        {"name": "SGIT web design", "type": "Keynote export", "visibility": "Needs Redaction", "role": "企業網站視覺提案。"},
+        {"name": "Pearl Tower design", "type": "Keynote export", "visibility": "Needs Redaction", "role": "城市地標網站表達。"},
+        {"name": "Moozy web", "type": "Keynote export", "visibility": "Needs Redaction", "role": "品牌網站和視覺風格。"}
+      ],
+      "proof": ["UI/UX design", "web portfolio", "visual presentation", "historical design archive"]
+    },
+    "links": []
+  },
+  {
+    "id": "mobile-ui-qa-wallet",
+    "name": "Mobile App UI QA & Wallet Design",
+    "category": "history",
+    "categoryLabel": "歷史的 Project",
+    "type": "Design archive / app QA",
+    "summary": "Wallet flow、暗色系 app UI、media kit、issue template 和移動端界面 QA 的歷史輸出。",
+    "capability": "證明我能用設計師視角做界面 QA、狀態梳理和細節驗收，這直接影響後來的 app 工程品質。",
+    "tags": ["UI/UX Design", "Design QA", "Mobile App", "Needs Redaction"],
+    "status": "Internal Source",
+    "detail": {
+      "thesis": "這組作品展示的是設計 QA 和 app 細節驗收能力，適合連接到現在的 Apple platform engineering quality。",
+      "sections": [
+        {"title": "What it proves", "body": "能把界面狀態、錯誤、暗色模式、media kit 和 issue template 變成可溝通的交付物。"},
+        {"title": "Source treatment", "body": "舊職與 wallet 相關材料需要先脫敏，只保留設計方法和局部視覺證據。"}
+      ],
+      "components": [
+        {"name": "BitzenWallet UI Test", "type": "Keynote export", "visibility": "Needs Redaction", "role": "移動端 UI QA 和問題標註。"},
+        {"name": "Wallet flow notes", "type": "Design document", "visibility": "Needs Redaction", "role": "狀態和流程梳理。"}
+      ],
+      "proof": ["Design QA", "mobile interface review", "state and flow thinking", "historical design archive"]
+    },
+    "links": []
+  },
+  {
+    "id": "consumer-app-design",
+    "name": "Mini Program & Consumer App Design",
+    "category": "history",
+    "categoryLabel": "歷史的 Project",
+    "type": "Design archive / consumer product",
+    "summary": "小程序、返利、記帳和消費場景 app 的設計與產品推導，適合整理成早期產品設計案例。",
+    "capability": "證明我不只畫界面，也能把業務流程、用戶動線和產品說法整理成可交付的設計文檔。",
+    "tags": ["UI/UX Design", "Product Storytelling", "Consumer App", "Needs Redaction"],
+    "status": "Internal Source",
+    "detail": {
+      "thesis": "這組歷史作品展示消費產品設計、用戶流程、業務說明和高保真界面的綜合能力。",
+      "sections": [
+        {"title": "What it proves", "body": "能把返利、記帳、小程序和消費場景轉成清楚的產品動線、界面和 presentation。"},
+        {"title": "Source treatment", "body": "這些案例應從 Keynote 中挑選局部高質量頁面，重寫成不暴露客戶資料的公開 case study。"}
+      ],
+      "components": [
+        {"name": "HotCashback", "type": "Keynote export", "visibility": "Needs Redaction", "role": "消費類產品推導和界面。"},
+        {"name": "元の氣小程序", "type": "Keynote export", "visibility": "Needs Redaction", "role": "小程序界面和流程。"},
+        {"name": "兩秒記賬", "type": "Keynote export", "visibility": "Needs Redaction", "role": "記帳產品早期設計。"}
+      ],
+      "proof": ["consumer app design", "product storytelling", "mini program UI", "historical design archive"]
+    },
+    "links": []
+  }
+]

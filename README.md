@@ -1,10 +1,16 @@
-# Ronnie Apps
+# RonnieCC
 
-Personal app website for Ronnie Apps, prepared for GitHub Pages.
+Personal capability website for Ronnie Wong, prepared for GitHub Pages.
+
+The site presents current projects, explorations, historical design work, and a web resume. It is not an app catalog.
 
 ## Local Preview
 
-This is a static site. Open `index.html` directly, or serve the folder with any static server.
+This is a static site. Serve the folder with any static server:
+
+```sh
+python3 -m http.server 4173 --bind 127.0.0.1
+```
 
 ## Hosting
 

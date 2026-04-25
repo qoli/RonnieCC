@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects · Ronnie Wong</title>
+    <meta
+      name="description"
+      content="Ronnie Wong 的 Projects：現在的 Project、探索和歷史 Project。"
+    >
+    <link rel="canonical" href="https://ronniewong.cc/projects.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="projects">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ronnie Wong home">
+        <span class="brand-mark">RW</span>
+        <span>Ronnie Wong</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Index</a>
+        <a aria-current="page" href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero compact" aria-labelledby="projects-title">
+        <p class="eyebrow">Project ecosystems</p>
+        <h1 id="projects-title">Projects</h1>
+        <p>
+          這裡按生命週期整理：現在的 Project、探索、歷史的 Project。Tag 用來說明能力、平台、形態和資料狀態。
+        </p>
+      </section>
+
+      <section class="section project-board" aria-label="Project filters">
+        <div class="filters">
+          <button class="filter is-active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="current">現在</button>
+          <button class="filter" type="button" data-filter="exploration">探索</button>
+          <button class="filter" type="button" data-filter="history">歷史</button>
+        </div>
+        <div class="grouped-projects" id="project-groups" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Ronnie Wong</span>
+      <a href="https://github.com/qoli/RonnieCC">Source</a>
+    </footer>
+
+    <script src="site.js" defer></script>
+  </body>
+</html>
