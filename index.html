@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ronnie Apps</title>
+    <meta
+      name="description"
+      content="Ronnie Apps is a catalog of independent apps, documents, release notes, and engineering writing."
+    >
+    <link rel="canonical" href="https://ronnie.cc/">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Ronnie Apps home">
+        <span class="brand-mark">R</span>
+        <span>Ronnie Apps</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#apps">Apps</a>
+        <a href="#writing">Writing</a>
+        <a href="#support">Support</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent Apple ecosystem apps</p>
+          <h1 id="hero-title">Ronnie Apps</h1>
+          <p class="hero-text">
+            A living home for apps, documentation, release notes, and engineering notes across media,
+            dictionaries, file playback, and personal knowledge tools.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#apps">Browse apps</a>
+            <a class="button secondary" href="https://github.com/qoli">GitHub</a>
+          </div>
+        </div>
+        <div class="product-stage" aria-label="Featured app preview">
+          <div class="device">
+            <div class="device-topbar"></div>
+            <div class="app-stack">
+              <span class="app-pill media">Syncnext</span>
+              <span class="app-pill dict">aDict</span>
+              <span class="app-pill files">Nomad Drive</span>
+              <span class="app-pill ai">eisonAI</span>
+            </div>
+            <div class="signal-grid">
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="apps" aria-labelledby="apps-title">
+        <div class="section-heading">
+          <p class="eyebrow">Catalog</p>
+          <h2 id="apps-title">Apps</h2>
+        </div>
+        <div class="filters" aria-label="App filters">
+          <button class="filter is-active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="active">Active</button>
+          <button class="filter" type="button" data-filter="testflight">TestFlight</button>
+          <button class="filter" type="button" data-filter="archived">Archive</button>
+        </div>
+        <div class="app-grid" id="app-grid" aria-live="polite">
+          <article class="app-card">
+            <div class="app-icon">S</div>
+            <div>
+              <p class="status">Active</p>
+              <h3>Syncnext</h3>
+              <p>聚合媒體播放器，提供播放來源、訂閱、進階文檔、FAQ 和更新日誌。</p>
+            </div>
+          </article>
+          <article class="app-card">
+            <div class="app-icon">aD</div>
+            <div>
+              <p class="status">Active</p>
+              <h3>aDict</h3>
+              <p>簡單美觀的詞典/字典查詢工具，支持 iOS 與 macOS。</p>
+            </div>
+          </article>
+          <article class="app-card">
+            <div class="app-icon">N</div>
+            <div>
+              <p class="status">TestFlight</p>
+              <h3>Nomad Drive</h3>
+              <p>跨 Apple 設備的網盤與播放體驗，支持第三方播放器與 iCloud 同步。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="writing" aria-labelledby="writing-title">
+        <div>
+          <p class="eyebrow">Notes</p>
+          <h2 id="writing-title">Engineering writing</h2>
+        </div>
+        <p>
+          Product pages and release notes are currently collected from Notion. The first content pass
+          should prioritize tvOS playback engineering notes, app rewrite notes, and release logs.
+        </p>
+      </section>
+
+      <section class="section split" id="support" aria-labelledby="support-title">
+        <div>
+          <p class="eyebrow">Help</p>
+          <h2 id="support-title">Support and policies</h2>
+        </div>
+        <p>
+          Each app keeps its own documentation, feedback, privacy, and terms links. This site will
+          surface those links per app instead of hiding them in a generic footer.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Ronnie Apps</span>
+      <a href="https://github.com/qoli/RonnieCC">Source</a>
+    </footer>
+
+    <script src="site.js" defer></script>
+  </body>
+</html>

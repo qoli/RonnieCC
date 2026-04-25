@@ -1,0 +1,103 @@
+[
+  {
+    "id": "syncnext",
+    "name": "Syncnext",
+    "tagline": "聚合媒體播放器",
+    "description": "提供播放來源、訂閱、進階文檔、FAQ 和更新日誌的媒體播放器。",
+    "status": "active",
+    "platforms": ["iOS", "tvOS"],
+    "sourceUrl": "https://www.notion.so/821b80378be241149fa5e9a1bbf6cfdc",
+    "sections": [
+      {
+        "label": "更新日誌",
+        "href": "https://www.notion.so/2e3c1b36c4018098babae678943c8d20"
+      },
+      {
+        "label": "隱私協議",
+        "href": "https://www.notion.so/4709fb2b81db4d21a98f83d38488204a"
+      }
+    ]
+  },
+  {
+    "id": "adict",
+    "name": "aDict",
+    "tagline": "簡單美觀的詞典查詢工具",
+    "description": "一個簡單美觀的詞典/字典查詢工具，包含多平台更新日誌、詞典列表、使用文章與反饋入口。",
+    "status": "active",
+    "platforms": ["iOS", "macOS"],
+    "sourceUrl": "https://www.notion.so/a647f1ed9f604892895b8e71a65f1d70",
+    "externalUrl": "https://qoli.notion.site/aDict-app-a647f1ed9f604892895b8e71a65f1d70",
+    "sections": [
+      {
+        "label": "多平台更新日誌",
+        "href": "https://www.notion.so/98075976818745c9bc3657e1088fdf7b"
+      },
+      {
+        "label": "隱私協議",
+        "href": "https://www.notion.so/e83a7752e7ee491196d0f71bb4f9a75f"
+      }
+    ]
+  },
+  {
+    "id": "nomad-drive",
+    "name": "Nomad Drive",
+    "tagline": "跨 Apple 設備的網盤與播放體驗",
+    "description": "支持第三方播放器、多帳號與 iCloud 同步，可在 Apple TV 播放，採用原生 SwiftUI 視覺風格。",
+    "status": "testflight",
+    "platforms": ["macOS", "iOS", "tvOS"],
+    "sourceUrl": "https://www.notion.so/16f781c9681a487696bceeb7dd2bffbe"
+  },
+  {
+    "id": "eison-ai",
+    "name": "eisonAI",
+    "tagline": "你的資料小助手",
+    "description": "幫助保存、整理、找回資料的小助手，以 Cognitive Index 幫內容建立用途與脈絡。",
+    "status": "active",
+    "platforms": ["iOS"],
+    "sourceUrl": "https://www.notion.so/4851d5718dd64908a7d4c2ada0fd8592",
+    "externalUrl": "https://github.com/qoli/eisonAI",
+    "primaryCta": {
+      "label": "App Store",
+      "href": "https://apps.apple.com/us/app/eison-ai/id6484502399"
+    }
+  },
+  {
+    "id": "daily-bible",
+    "name": "每日聖經 App",
+    "tagline": "每日聖經內容 app",
+    "description": "Notion 條目目前沒有正文，資料庫顯示正在上架並連到 GitHub。",
+    "status": "active",
+    "platforms": ["iOS"],
+    "sourceUrl": "https://www.notion.so/2bad2546af2345f6958a50f486ddbcc3",
+    "externalUrl": "https://github.com/qoli/dailyVerse"
+  },
+  {
+    "id": "games-price",
+    "name": "Games Price app",
+    "tagline": "已下架的 iOS app",
+    "description": "Notion 條目目前沒有正文，資料庫顯示已下架。",
+    "status": "archived",
+    "platforms": ["iOS"],
+    "sourceUrl": "https://www.notion.so/cc23db6adcd447388d10bc4d9da9f422",
+    "externalUrl": "https://qoli.notion.site/Games-Price-app-fb9f8d6a004e462f838dc1c4e1c753b2"
+  },
+  {
+    "id": "uspace",
+    "name": "uSpace 发送文件",
+    "tagline": "局域網文件傳送",
+    "description": "簡單的局域網文件傳送工具；Notion 資料庫顯示已下架。",
+    "status": "archived",
+    "platforms": ["Flutter"],
+    "sourceUrl": "https://www.notion.so/083de2bc99884d2ea026469f9ff3bb20",
+    "externalUrl": "https://github.com/qoli/uSpace"
+  },
+  {
+    "id": "syncplaylist",
+    "name": "SyncPlaylist",
+    "tagline": "Syncnext 的舊版前身",
+    "description": "已停止維護，頁面建議轉向新版 Syncnext。",
+    "status": "archived",
+    "platforms": ["tvOS"],
+    "sourceUrl": "https://www.notion.so/56ba1d46bdf74bceba7e0efcc607cf94"
+  }
+]
