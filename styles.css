@@ -98,6 +98,9 @@ body {
 
 a {
   color: inherit;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
 a:focus-visible,
@@ -174,13 +177,21 @@ p {
 }
 
 .brand,
+.theme-toggle {
+  text-decoration: none;
+}
+
 .nav a,
 .footer a,
 .project-links a,
 .text-link,
 .button,
-.resume-meta a {
-  text-decoration: none;
+.resume-meta a,
+.next-links a,
+.filter {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
 }
 
 .brand {
@@ -467,7 +478,6 @@ html[data-theme="dark"] .theme-toggle span::after {
   grid-template-columns: minmax(42px, 0.12fr) minmax(138px, 0.28fr) minmax(0, 0.6fr);
   gap: clamp(18px, 4vw, 56px);
   align-items: baseline;
-  text-decoration: none;
 }
 
 .next-links span {
@@ -513,7 +523,7 @@ html[data-theme="dark"] .theme-toggle span::after {
 .eyebrow {
   margin: 0 0 16px;
   color: var(--stone);
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.12em;
   line-height: 1.35;
