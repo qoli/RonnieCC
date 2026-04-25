@@ -8,8 +8,17 @@ const statusLabels = {
   not_started: "Not started",
 };
 
-function iconLabel(name) {
-  return name
+const preferredLabels = {
+  "eison-ai": "E",
+  "nomad-drive": "N",
+  syncnext: "S",
+  adict: "aD",
+};
+
+function iconLabel(app) {
+  if (preferredLabels[app.id]) return preferredLabels[app.id];
+
+  return app.name
     .split(/\s+/)
     .map((part) => part[0])
     .join("")
@@ -23,19 +32,19 @@ function renderApps(apps, filter = "all") {
     .map(
       (app) => `
         <article class="app-card">
-          <div class="app-icon">${iconLabel(app.name)}</div>
-          <div>
-            <p class="status">${statusLabels[app.status] || app.status}</p>
-            <h3>${app.name}</h3>
-            <p>${app.description}</p>
-            <div class="platforms">
-              ${app.platforms.map((platform) => `<span>${platform}</span>`).join("")}
-            </div>
-            <div class="card-actions">
-              ${app.primaryCta ? `<a href="${app.primaryCta.href}">${app.primaryCta.label}</a>` : ""}
-              ${app.externalUrl ? `<a href="${app.externalUrl}">Link</a>` : ""}
-              <a href="${app.sourceUrl}">Notion</a>
-            </div>
+          <div class="card-top">
+            <div class="app-icon theme-${app.id}">${iconLabel(app)}</div>
+            <span class="status">${statusLabels[app.status] || app.status}</span>
+          </div>
+          <h3>${app.name}</h3>
+          <p>${app.description}</p>
+          <div class="platforms">
+            ${app.platforms.map((platform) => `<span>${platform}</span>`).join("")}
+          </div>
+          <div class="card-actions">
+            ${app.primaryCta ? `<a href="${app.primaryCta.href}">${app.primaryCta.label}</a>` : ""}
+            ${app.externalUrl ? `<a href="${app.externalUrl}">Link</a>` : ""}
+            <a href="${app.sourceUrl}">Notion</a>
           </div>
         </article>
       `

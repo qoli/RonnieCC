@@ -9,5 +9,5 @@ This is a static site. Open `index.html` directly, or serve the folder with any 
 ## Hosting
 
 - GitHub Pages source: `main` branch, repository root.
-- Custom domain: `ronnie.cc`.
+- Custom domain: `ronniewong.cc`.
 - DNS is managed in Cloudflare.

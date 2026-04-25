@@ -4,16 +4,16 @@
 
 - Repository: https://github.com/qoli/RonnieCC
 - Source: `main` branch, `/` root
-- Custom domain: `ronnie.cc`
+- Custom domain: `ronniewong.cc`
 - CNAME file: `/CNAME`
 
 GitHub Pages has been configured through the GitHub API. The page currently redirects the default
-`qoli.github.io/RonnieCC` URL to `ronnie.cc`, so the live domain must have correct DNS before the
+`qoli.github.io/RonnieCC` URL to `ronniewong.cc`, so the live domain must have correct DNS before the
 site is reachable through the custom domain.
 
 ## DNS Target
 
-For `ronnie.cc` as an apex domain, configure these DNS records:
+For `ronniewong.cc` as an apex domain, configure these DNS records:
 
 | Type | Name | Value | Proxy |
 | --- | --- | --- | --- |
@@ -27,16 +27,16 @@ For `ronnie.cc` as an apex domain, configure these DNS records:
 | AAAA | `@` | `2606:50c0:8003::153` | DNS only |
 | CNAME | `www` | `qoli.github.io` | DNS only |
 
-## Current Blocker
+## Current Cloudflare Zone
 
-As of 2026-04-25, public DNS for `ronnie.cc` is still on Namecheap nameservers:
+The Cloudflare API account available to Codex has the `ronniewong.cc` zone:
 
-- `dns1.registrar-servers.com`
-- `dns2.registrar-servers.com`
+- Zone ID: `f12f78e4030fd73750c0eb1264ad6b31`
+- Nameservers: `duke.ns.cloudflare.com`, `fay.ns.cloudflare.com`
 
-The Cloudflare API account available to Codex currently has the `ronniewong.cc` zone but not
-`ronnie.cc`, and its token does not have permission to create a new Cloudflare zone. To finish the
-Cloudflare setup, add `ronnie.cc` to Cloudflare with an API token/account that has zone creation
-rights, then update the domain's nameservers at Namecheap to the nameservers Cloudflare assigns.
+The GitHub Pages DNS records above were added to Cloudflare on 2026-04-25 with proxy disabled.
+Public DNS should resolve to GitHub Pages for both `ronniewong.cc` and `www.ronniewong.cc`.
 
-After DNS resolves to GitHub Pages, enable HTTPS enforcement in GitHub Pages settings.
+HTTPS enforcement is not enabled yet because GitHub has not finished provisioning the Pages
+certificate. After GitHub reports the certificate is available, enable HTTPS enforcement in the
+repository's Pages settings or through the Pages API.
