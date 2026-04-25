@@ -244,7 +244,7 @@ function renderProjectDetail(projects) {
           <strong>${project.categoryLabel}</strong>
         </div>
         <div class="detail-aside-block">
-          <span>Capability</span>
+          <span>Practice</span>
           <p>${project.capability}</p>
         </div>
         <div class="project-links vertical">
@@ -257,7 +257,7 @@ function renderProjectDetail(projects) {
         <section class="detail-section">
           <div class="section-header">
             <p class="eyebrow">Narrative</p>
-            <h2>這個 project 要說明什麼</h2>
+            <h2>設計與工程判斷</h2>
           </div>
           <div class="detail-notes">
             ${detailSections(project.detail.sections)}
@@ -286,8 +286,8 @@ function renderProjectDetail(projects) {
 
         <section class="detail-section">
           <div class="section-header">
-            <p class="eyebrow">Proof</p>
-            <h2>可以支撐的能力證據</h2>
+            <p class="eyebrow">Surface</p>
+            <h2>可閱讀的工作面</h2>
           </div>
           <ul class="proof-list">
             ${project.detail.proof.map((item) => `<li>${item}</li>`).join("")}
