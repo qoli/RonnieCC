@@ -145,23 +145,18 @@ p {
 }
 
 .brand {
-  gap: 10px;
   color: var(--near-black);
   font-size: 18px;
   font-weight: 500;
 }
 
 .brand-mark {
-  display: inline-grid;
-  width: 34px;
-  height: 34px;
-  place-items: center;
-  border-radius: 6px;
-  background: var(--deep-dark);
-  color: var(--ivory);
-  font-size: 12px;
-  font-family: var(--mono);
-  font-weight: 600;
+  display: inline-block;
+  color: var(--brand);
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1;
   letter-spacing: 0;
 }
 
