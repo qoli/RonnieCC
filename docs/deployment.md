@@ -35,8 +35,6 @@ The Cloudflare API account available to Codex has the `ronniewong.cc` zone:
 - Nameservers: `duke.ns.cloudflare.com`, `fay.ns.cloudflare.com`
 
 The GitHub Pages DNS records above were added to Cloudflare on 2026-04-25 with proxy disabled.
-Public DNS should resolve to GitHub Pages for both `ronniewong.cc` and `www.ronniewong.cc`.
+Public DNS resolves to GitHub Pages for both `ronniewong.cc` and `www.ronniewong.cc`.
 
-HTTPS enforcement is not enabled yet because GitHub has not finished provisioning the Pages
-certificate. After GitHub reports the certificate is available, enable HTTPS enforcement in the
-repository's Pages settings or through the Pages API.
+HTTPS enforcement is enabled in GitHub Pages.
