@@ -39,13 +39,28 @@
     ]
   },
   {
-    "id": "nomad-drive",
-    "name": "Nomad Drive",
-    "tagline": "跨 Apple 設備的網盤與播放體驗",
-    "description": "支持第三方播放器、多帳號與 iCloud 同步，可在 Apple TV 播放，採用原生 SwiftUI 視覺風格。",
+    "id": "trackly-reborn",
+    "name": "TracklyReborn 得意記",
+    "tagline": "你的生活，你的紀錄",
+    "description": "以 AI、捷徑、Action Button 和多圖片紀錄重寫的生活/消費紀錄工具，公開 TestFlight 測試中。",
     "status": "testflight",
-    "platforms": ["macOS", "iOS", "tvOS"],
-    "sourceUrl": "https://www.notion.so/16f781c9681a487696bceeb7dd2bffbe"
+    "platforms": ["iOS"],
+    "sourceUrl": "https://www.notion.so/1a0c1b36c4018065a4adf53d5dd41fbe",
+    "externalUrl": "https://www.notion.so/267c1b36c40180ec9489d4f84ef1c079",
+    "primaryCta": {
+      "label": "TestFlight",
+      "href": "https://testflight.apple.com/join/aQ64Cnfv"
+    },
+    "sections": [
+      {
+        "label": "開始使用",
+        "href": "https://www.notion.so/267c1b36c40180ec9489d4f84ef1c079"
+      },
+      {
+        "label": "更新日誌",
+        "href": "https://www.notion.so/1a8c1b36c40180f1bb11ee6cecbc60ef"
+      }
+    ]
   },
   {
     "id": "eison-ai",
@@ -60,44 +75,5 @@
       "label": "App Store",
       "href": "https://apps.apple.com/us/app/eison-ai/id6484502399"
     }
-  },
-  {
-    "id": "daily-bible",
-    "name": "每日聖經 App",
-    "tagline": "每日聖經內容 app",
-    "description": "Notion 條目目前沒有正文，資料庫顯示正在上架並連到 GitHub。",
-    "status": "active",
-    "platforms": ["iOS"],
-    "sourceUrl": "https://www.notion.so/2bad2546af2345f6958a50f486ddbcc3",
-    "externalUrl": "https://github.com/qoli/dailyVerse"
-  },
-  {
-    "id": "games-price",
-    "name": "Games Price app",
-    "tagline": "已下架的 iOS app",
-    "description": "Notion 條目目前沒有正文，資料庫顯示已下架。",
-    "status": "archived",
-    "platforms": ["iOS"],
-    "sourceUrl": "https://www.notion.so/cc23db6adcd447388d10bc4d9da9f422",
-    "externalUrl": "https://qoli.notion.site/Games-Price-app-fb9f8d6a004e462f838dc1c4e1c753b2"
-  },
-  {
-    "id": "uspace",
-    "name": "uSpace 发送文件",
-    "tagline": "局域網文件傳送",
-    "description": "簡單的局域網文件傳送工具；Notion 資料庫顯示已下架。",
-    "status": "archived",
-    "platforms": ["Flutter"],
-    "sourceUrl": "https://www.notion.so/083de2bc99884d2ea026469f9ff3bb20",
-    "externalUrl": "https://github.com/qoli/uSpace"
-  },
-  {
-    "id": "syncplaylist",
-    "name": "SyncPlaylist",
-    "tagline": "Syncnext 的舊版前身",
-    "description": "已停止維護，頁面建議轉向新版 Syncnext。",
-    "status": "archived",
-    "platforms": ["tvOS"],
-    "sourceUrl": "https://www.notion.so/56ba1d46bdf74bceba7e0efcc607cf94"
   }
 ]

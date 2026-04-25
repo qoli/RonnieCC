@@ -4,13 +4,12 @@ const filters = [...document.querySelectorAll("[data-filter]")];
 const statusLabels = {
   active: "Active",
   testflight: "TestFlight",
-  archived: "Archived",
   not_started: "Not started",
 };
 
 const preferredLabels = {
   "eison-ai": "E",
-  "nomad-drive": "N",
+  "trackly-reborn": "T",
   syncnext: "S",
   adict: "aD",
 };
@@ -54,7 +53,7 @@ function renderApps(apps, filter = "all") {
 
 async function boot() {
   const response = await fetch("content/apps.seed.json");
-  const apps = await response.json();
+  const apps = (await response.json()).filter((app) => app.status !== "archived");
   renderApps(apps);
 
   filters.forEach((button) => {
