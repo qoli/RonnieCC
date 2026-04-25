@@ -363,7 +363,12 @@
         "local-first experimentation"
       ]
     },
-    "links": []
+    "links": [
+      {
+        "label": "Notion",
+        "href": "https://www.notion.so/2c2c1b36c401806a909dd06baad8815a"
+      }
+    ]
   },
   {
     "id": "enterprise-web-design",
