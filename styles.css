@@ -846,6 +846,19 @@ html[data-theme="dark"] .theme-toggle span::after {
   vector-effect: non-scaling-stroke;
 }
 
+.project-visual--detail {
+  justify-self: end;
+  min-width: clamp(140px, 18vw, 220px);
+}
+
+.project-visual--detail .project-mark {
+  width: clamp(132px, 18vw, 220px);
+}
+
+.project-visual--detail .project-index {
+  font-size: 13px;
+}
+
 .project-index {
   color: var(--stone);
   font-family: var(--mono);
@@ -960,6 +973,13 @@ blockquote {
 
 .detail-hero {
   border-bottom: 1px solid var(--border);
+}
+
+.detail-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(160px, 0.28fr);
+  gap: clamp(38px, 8vw, 118px);
+  align-items: start;
 }
 
 .detail-tags {
@@ -1365,6 +1385,7 @@ blockquote {
 
   .site-header,
   .section-header.split,
+  .detail-hero-grid,
   .resume-head,
   .two-column,
   .detail-aside,
@@ -1495,8 +1516,17 @@ blockquote {
     align-items: center;
   }
 
+  .project-visual--detail {
+    justify-self: start;
+    min-width: 0;
+  }
+
   .project-mark {
     width: 58px;
+  }
+
+  .project-visual--detail .project-mark {
+    width: 72px;
   }
 
   .artefact-row {

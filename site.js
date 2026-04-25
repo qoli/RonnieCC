@@ -5,6 +5,81 @@ const categoryLabels = {
   history: "歷史的 Project",
 };
 
+const projectGlyphs = {
+  syncnext: `
+    <rect x="20" y="26" width="80" height="68"></rect>
+    <path d="M42 42l28 18-28 18Z"></path>
+    <path d="M22 104h76"></path>
+    <circle cx="96" cy="22" r="8"></circle>
+    <circle cx="24" cy="98" r="8"></circle>
+  `,
+  "eison-ai": `
+    <circle cx="60" cy="60" r="42"></circle>
+    <circle cx="60" cy="60" r="16"></circle>
+    <path d="M24 60h72M60 24v72"></path>
+    <path d="M36 36 84 84M84 36 36 84"></path>
+  `,
+  "trackly-reborn": `
+    <path d="M24 94 46 70l18 10 34-52"></path>
+    <circle cx="24" cy="94" r="7"></circle>
+    <circle cx="46" cy="70" r="7"></circle>
+    <circle cx="64" cy="80" r="7"></circle>
+    <circle cx="98" cy="28" r="7"></circle>
+    <path d="M24 28h46M24 46h30"></path>
+  `,
+  adict: `
+    <path d="M24 26h30c8 0 14 6 14 14v54H38c-8 0-14-6-14-14Z"></path>
+    <path d="M68 40c0-8 6-14 14-14h14v68H68"></path>
+    <path d="M38 48h16M38 64h16M82 48h14"></path>
+    <circle cx="84" cy="76" r="10"></circle>
+    <path d="M92 84l12 12"></path>
+  `,
+  "hln-machine": `
+    <rect x="18" y="24" width="26" height="26"></rect>
+    <rect x="76" y="24" width="26" height="26"></rect>
+    <rect x="47" y="72" width="26" height="26"></rect>
+    <path d="M44 37h32M89 50 73 72M31 50l16 22"></path>
+    <path d="M56 82l10 5-10 5Z"></path>
+  `,
+  "enterprise-web-design": `
+    <rect x="18" y="24" width="84" height="72"></rect>
+    <path d="M18 42h84M38 24v72"></path>
+    <path d="M50 56h38M50 72h28M50 84h46"></path>
+    <circle cx="28" cy="33" r="3"></circle>
+  `,
+  "mobile-ui-qa-wallet": `
+    <rect x="34" y="18" width="52" height="84" rx="10"></rect>
+    <path d="M48 34h24M48 48h18M48 76h18"></path>
+    <path d="M47 62l7 7 17-18"></path>
+    <circle cx="60" cy="90" r="3"></circle>
+  `,
+  "consumer-app-design": `
+    <rect x="18" y="24" width="30" height="30"></rect>
+    <rect x="72" y="24" width="30" height="30"></rect>
+    <rect x="45" y="72" width="30" height="30"></rect>
+    <path d="M48 39h24M87 54 75 72M33 54l12 18"></path>
+    <path d="M56 84h8"></path>
+  `,
+  "brand-visual-identity": `
+    <circle cx="42" cy="42" r="22"></circle>
+    <circle cx="78" cy="42" r="22"></circle>
+    <path d="M30 82h60M42 68v28M78 68v28"></path>
+    <rect x="34" y="76" width="52" height="20"></rect>
+  `,
+  "ux-audit-product-system": `
+    <path d="M18 32h84M18 60h84M18 88h84"></path>
+    <circle cx="34" cy="32" r="8"></circle>
+    <circle cx="72" cy="60" r="8"></circle>
+    <circle cx="48" cy="88" r="8"></circle>
+    <path d="M42 32c18 0 12 28 22 28M64 60c-16 0-8 28-16 28"></path>
+  `,
+};
+
+const fallbackGlyph = `
+  <circle cx="60" cy="60" r="42"></circle>
+  <path d="M30 60h60M60 30v60"></path>
+`;
+
 function setupThemeToggle() {
   const button = document.querySelector("[data-theme-toggle]");
   if (!button) return;
@@ -24,15 +99,16 @@ function setupThemeToggle() {
   });
 }
 
-function projectVisual(project, index) {
+function projectVisual(project, index, variant = "card") {
   const number = String(index + 1).padStart(2, "0");
+  const modifier = variant === "detail" ? " project-visual--detail" : "";
+  const glyph = projectGlyphs[project.id] || fallbackGlyph;
 
   return `
-    <div class="project-visual" aria-hidden="true">
+    <div class="project-visual${modifier}" aria-hidden="true">
       <span class="project-index">${number}</span>
       <svg class="project-mark" viewBox="0 0 120 120" focusable="false">
-        <circle cx="60" cy="60" r="42"></circle>
-        <path d="M30 60h60M60 30v60"></path>
+        ${glyph}
       </svg>
     </div>
   `;
@@ -167,12 +243,18 @@ function renderProjectDetail(projects) {
   }
 
   document.title = `${project.name} · Ronnie Wong`;
+  const projectIndex = projects.findIndex((item) => item.id === project.id);
   mount.innerHTML = `
     <section class="page-hero compact detail-hero" aria-labelledby="detail-title">
-      <p class="eyebrow">${project.categoryLabel} · ${project.type}</p>
-      <h1 id="detail-title">${project.name}</h1>
-      <p>${project.detail.thesis}</p>
-      <div class="tags detail-tags">${tagList(project.tags)}</div>
+      <div class="detail-hero-grid">
+        <div>
+          <p class="eyebrow">${project.categoryLabel} · ${project.type}</p>
+          <h1 id="detail-title">${project.name}</h1>
+          <p>${project.detail.thesis}</p>
+          <div class="tags detail-tags">${tagList(project.tags)}</div>
+        </div>
+        ${projectVisual(project, projectIndex, "detail")}
+      </div>
     </section>
 
     <section class="section detail-layout">
@@ -243,7 +325,7 @@ function renderProjectDetail(projects) {
 async function boot() {
   setupThemeToggle();
 
-  const response = await fetch("content/projects.seed.json");
+  const response = await fetch("content/projects.seed.json", { cache: "no-store" });
   const projects = await response.json();
 
   renderHome(projects);

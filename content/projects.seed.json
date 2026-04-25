@@ -264,5 +264,75 @@
       "proof": ["consumer app design", "product storytelling", "mini program UI", "historical design archive"]
     },
     "links": []
+  },
+  {
+    "id": "brand-visual-identity",
+    "name": "Brand & Visual Identity Archive",
+    "category": "history",
+    "categoryLabel": "歷史的 Project",
+    "type": "Design archive / visual identity",
+    "summary": "品牌、VI、logo、應用場景和 presentation 的歷史輸出集合，適合作為視覺判斷與品牌系統能力的證據。",
+    "capability": "證明我能把抽象品牌感受轉成可落地的 visual system，並用高質量 presentation 說清楚方向。",
+    "tags": ["UI/UX Design", "Brand System", "Visual Presentation", "Needs Redaction"],
+    "status": "Internal Source",
+    "detail": {
+      "thesis": "這組歷史作品展示的是品牌視覺系統和 presentation 能力，不應直接公開原始 Keynote，而應抽取不敏感的局部視覺與方法。",
+      "sections": [
+        {
+          "title": "What it proves",
+          "body": "能把 logo、字體、色彩、版式、應用場景和對外展示放進同一套 visual identity 敘事裡。"
+        },
+        {
+          "title": "System shape",
+          "body": "這類 project 的價值不是單張 logo，而是從品牌核心、視覺規則、介面應用到 presentation 交付的完整性。"
+        },
+        {
+          "title": "Source treatment",
+          "body": "公開版本應只使用可脫敏的局部畫面、重繪的幾何結構和方法說明，避免暴露客戶或舊職資料。"
+        }
+      ],
+      "components": [
+        {"name": "VI 案例合訂", "type": "Keynote export", "visibility": "Needs Redaction", "role": "品牌和 VI 輸出集合。"},
+        {"name": "Brand application pages", "type": "Presentation material", "visibility": "Needs Redaction", "role": "展示品牌規則如何進入頁面、物料和產品語境。"},
+        {"name": "Visual system notes", "type": "Design rationale", "visibility": "Internal", "role": "支撐視覺方向背後的判斷。"}
+      ],
+      "proof": ["brand identity", "visual system design", "presentation quality", "historical design archive"]
+    },
+    "links": []
+  },
+  {
+    "id": "ux-audit-product-system",
+    "name": "UX Audit & Product System Notes",
+    "category": "history",
+    "categoryLabel": "歷史的 Project",
+    "type": "Design archive / UX audit",
+    "summary": "UX audit、政務/企業系統、後台流程和產品結構筆記，展示從問題診斷到系統化改進的設計能力。",
+    "capability": "證明我能閱讀複雜產品系統，指出體驗問題，並把流程、角色、狀態和介面改進轉成可執行文檔。",
+    "tags": ["UI/UX Design", "UX Audit", "Product System", "Needs Redaction"],
+    "status": "Internal Source",
+    "detail": {
+      "thesis": "這組歷史作品補足的是產品診斷和系統設計能力：不是只做視覺，而是能理解複雜流程、角色和後台結構。",
+      "sections": [
+        {
+          "title": "What it proves",
+          "body": "能對既有產品進行 UX audit，拆出信息架構、流程、狀態、錯誤和用戶理解成本，並提出可交付的改進方向。"
+        },
+        {
+          "title": "System shape",
+          "body": "材料包含用戶體驗報告、政務/司法系統、硬件控制軟件和後台產品，適合抽象成 product system case。"
+        },
+        {
+          "title": "Source treatment",
+          "body": "舊職和客戶材料需要高度脫敏；公開頁面只保留方法、結構和局部重新繪製的流程圖。"
+        }
+      ],
+      "components": [
+        {"name": "Authing.cn 用户体验报告", "type": "UX audit", "visibility": "Needs Redaction", "role": "體驗問題診斷和改進建議。"},
+        {"name": "楓橋式智慧司法系統", "type": "System design", "visibility": "Needs Redaction", "role": "政務/司法系統流程和界面設計。"},
+        {"name": "Hardware control / CMS notes", "type": "Product system", "visibility": "Internal", "role": "複雜系統、角色和後台流程整理。"}
+      ],
+      "proof": ["UX audit", "product system thinking", "complex workflow design", "historical design archive"]
+    },
+    "links": []
   }
 ]

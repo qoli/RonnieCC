@@ -129,11 +129,14 @@ letter-spacing: 0.035em;
 
 - 是 project index，不是 app store grid。
 - 每個 project 用編號、幾何標記、名稱、type、summary、capability、tags 組成。
+- 幾何標記必須按 project 的性質設計，不能使用同一套模板圖形。
+- 例如 media runtime 可以用播放器/節點語義，AI reading 可以用 index/orbit，UX audit 可以用流程和診斷節點。
 - 主要品質來自字距、行距和信息節奏，不來自卡片裝飾。
 
 ### Project Detail
 
 - Detail 是長文排版頁。
+- Detail hero 可以保留對應 project 的幾何標記，作為識別符號而不是插畫。
 - Aside 只放 metadata，不做卡片組。
 - Narrative / System / Proof 用大間距、細線和清楚標題分層。
 
