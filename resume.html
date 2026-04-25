@@ -9,6 +9,11 @@
       content="Ronnie Wong 的網頁版 Resume，整理 AI productization、Apple platform engineering 和 UI/UX design 經驗。"
     >
     <link rel="canonical" href="https://ronniewong.cc/resume.html">
+    <script>
+      document.documentElement.dataset.theme =
+        localStorage.getItem("theme") ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    </script>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body data-page="resume">
@@ -21,6 +26,9 @@
         <a href="projects.html">Projects</a>
         <a aria-current="page" href="resume.html">Resume</a>
       </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" data-theme-toggle>
+        <span aria-hidden="true"></span>
+      </button>
     </header>
 
     <main class="resume-page">

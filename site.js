@@ -5,6 +5,25 @@ const categoryLabels = {
   history: "歷史的 Project",
 };
 
+function setupThemeToggle() {
+  const button = document.querySelector("[data-theme-toggle]");
+  if (!button) return;
+
+  const sync = () => {
+    const isDark = document.documentElement.dataset.theme === "dark";
+    button.setAttribute("aria-pressed", String(isDark));
+    button.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+  };
+
+  sync();
+  button.addEventListener("click", () => {
+    const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = nextTheme;
+    localStorage.setItem("theme", nextTheme);
+    sync();
+  });
+}
+
 function projectVisual(project, index) {
   const number = String(index + 1).padStart(2, "0");
 
@@ -224,6 +243,8 @@ function renderProjectDetail(projects) {
 }
 
 async function boot() {
+  setupThemeToggle();
+
   const response = await fetch("content/projects.seed.json");
   const projects = await response.json();
 
