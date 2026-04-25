@@ -916,8 +916,8 @@ html[data-theme="dark"] .theme-toggle span::after {
   line-height: 1.1;
 }
 
-.project-type {
-  margin-top: 18px;
+.project-card .project-type {
+  margin: 0 0 18px;
   color: var(--near-black);
   font-size: clamp(17px, 1.8vw, 22px);
   font-weight: 700;
@@ -931,6 +931,10 @@ html[data-theme="dark"] .theme-toggle span::after {
   font-size: clamp(16px, 1.6vw, 19px);
   font-weight: 400;
   line-height: 1.68;
+}
+
+.project-card .project-type + p {
+  margin-top: 0;
 }
 
 blockquote {
