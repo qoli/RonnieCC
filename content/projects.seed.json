@@ -74,6 +74,18 @@
           "kind": "Release notes",
           "href": "https://www.notion.so/2e3c1b36c4018098babae678943c8d20",
           "role": "Shows the maintenance rhythm and product evolution behind the media runtime."
+        },
+        {
+          "label": "Syncnext redesign log",
+          "kind": "Writing",
+          "href": "https://www.notion.so/qoli/Syncnext-c01c1b36c4018342857901a47c12e0af?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+          "role": "Detailed 2021 redesign note for the tvOS player, covering product constraints, SwiftUI implementation, UI decisions, and Notion-backed data."
+        },
+        {
+          "label": "SyncPlaylist archive",
+          "kind": "Historical product",
+          "href": "https://www.notion.so/qoli/SyncPlaylist-56ba1d46bdf74bceba7e0efcc607cf94?source=copy_link",
+          "role": "Predecessor product archive that keeps the earlier media-player direction readable alongside Syncnext."
         }
       ]
     },
