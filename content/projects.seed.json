@@ -150,6 +150,88 @@
     ]
   },
   {
+    "id": "threadbridge",
+    "name": "threadBridge",
+    "category": "current",
+    "categoryLabel": "現在的 Project",
+    "type": "Workspace-first Codex runtime",
+    "summary": "macOS desktop owner、Telegram adapter 和本地管理界面組成的 agent runtime，把真實 workspace 綁定到可延續的 Codex session。",
+    "capability": "把 agent 使用從單次 terminal session 推進成可管理的 runtime：workspace binding、session continuity、Telegram thread、local TUI 和狀態修復需要一起設計。",
+    "tags": [
+      "Agent Runtime",
+      "Rust",
+      "Telegram",
+      "Local-first"
+    ],
+    "status": "Active / Public RC",
+    "detail": {
+      "thesis": "threadBridge 是 workspace-first 的 Codex runtime。它把 macOS desktop process 作為 owner，Telegram 只是 adapter；真正重要的是讓 workspace、session、local TUI 和遠端訊息都能回到同一條可維護的工作連續性。",
+      "sections": [
+        {
+          "title": "Product frame",
+          "body": "這個 project 處理的是 agent 使用中的真實摩擦：人在 Telegram 裡提出需求，在本地 workspace 裡執行工作，還需要知道 session 是否可延續、workspace 是否 busy、什麼時候可以修復或切回本地。"
+        },
+        {
+          "title": "Engineering frame",
+          "body": "系統由 Rust desktop runtime owner、local management API、Telegram adapter、app-server observer、workspace runtime surface 和受管 hcodex entrypoint 組成。重點是 session bind/new/repair、workspace execution mode、TUI mirror 和 Telegram routing。"
+        },
+        {
+          "title": "Design frame",
+          "body": "這不是聊天 bot 包裝，而是 agent runtime 的操作界面設計：setup、launch、reconnect、archive、repair、approval、plan mode 和 final reply 都需要清楚、可恢復、可被使用者理解。"
+        }
+      ],
+      "components": [
+        {
+          "name": "threadbridge_desktop",
+          "type": "macOS runtime owner",
+          "visibility": "Public repo",
+          "role": "持有 local management API、tray menu 和 runtime reconcile flow。"
+        },
+        {
+          "name": "Telegram adapter",
+          "type": "Remote interaction surface",
+          "visibility": "Public repo",
+          "role": "把 workspace thread 的文字、圖片、問題 flow 和 plan/default mode 連回保存的 Codex session。"
+        },
+        {
+          "name": "Local management UI",
+          "type": "Browser / API surface",
+          "visibility": "Public repo",
+          "role": "處理 setup、launch、reconnect、archive/restore、runtime repair 和 transcript inspection。"
+        },
+        {
+          "name": ".threadbridge / hcodex",
+          "type": "Workspace runtime surface",
+          "visibility": "Public repo",
+          "role": "在真實 workspace 裡安裝受管入口、狀態文件和 local TUI continuation。"
+        },
+        {
+          "name": "Release pipeline",
+          "type": "macOS distribution",
+          "visibility": "Public release",
+          "role": "建立 universal app bundle、簽名、notarize、DMG 和 release candidate。"
+        }
+      ],
+      "proof": [
+        "public Rust implementation",
+        "desktop-owned runtime architecture",
+        "Telegram-to-Codex session continuity",
+        "local management UI and repair flows",
+        "macOS release candidate pipeline"
+      ]
+    },
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/qoli/threadBridge"
+      },
+      {
+        "label": "Release",
+        "href": "https://github.com/qoli/threadBridge/releases"
+      }
+    ]
+  },
+  {
     "id": "trackly-reborn",
     "name": "TracklyReborn 得意記",
     "category": "current",
@@ -371,6 +453,78 @@
     ]
   },
   {
+    "id": "chatgpt-history",
+    "name": "chatgpt-history",
+    "category": "exploration",
+    "categoryLabel": "探索",
+    "type": "Conversation history as project memory",
+    "summary": "把長期 ChatGPT 對話歷史轉成 structured reports、timeline 和 knowledge artifacts 的本地分析 pipeline。",
+    "capability": "把 AI 對話從搜尋式 archive 變成可讀的 project memory：session summary、turn-pair evidence、theme clustering、timeline 和 report rendering 需要被拆成可追溯的資料流程。",
+    "tags": [
+      "Knowledge Systems",
+      "AI Workflow",
+      "Python",
+      "Project Memory"
+    ],
+    "status": "Exploration / Public repo",
+    "detail": {
+      "thesis": "chatgpt-history 探索的是一個很實際的問題：當項目的思考散落在大量 ChatGPT 對話裡，如何把它們重建成可閱讀、可回溯、可再次使用的 project memory，而不是只保存聊天記錄。",
+      "sections": [
+        {
+          "title": "Product frame",
+          "body": "這個 project 關心的不是 transcript export，而是回到一個項目時能否重新理解它的概念、架構轉向、工程決策、反覆出現的模式和仍未解決的問題。"
+        },
+        {
+          "title": "Engineering frame",
+          "body": "pipeline 以 exported ChatGPT markdown 為輸入，先做 session-level summary，再用 turn-pair chunks 作為 evidence layer，經過 embedding、clustering、knowledge synthesis 和 timeline generation，最後生成 deterministic project_report。"
+        },
+        {
+          "title": "Design frame",
+          "body": "這是一個知識整理界面的設計問題：報告不能只是摘要，而要像 technical retrospective，讓讀者看到項目如何形成、哪些判斷反覆出現，以及證據來自哪些對話。"
+        }
+      ],
+      "components": [
+        {
+          "name": "ChatGPT markdown corpus",
+          "type": "Input corpus",
+          "visibility": "Local/private data",
+          "role": "保存一個 project 下分散的對話文本和 metadata，作為只讀分析來源。"
+        },
+        {
+          "name": "Session analysis",
+          "type": "Topic layer",
+          "visibility": "Public implementation",
+          "role": "把每段 conversation 轉成 structured summary，作為主要 topic discovery 層。"
+        },
+        {
+          "name": "Turn-pair chunks",
+          "type": "Evidence layer",
+          "visibility": "Public implementation",
+          "role": "用 User -> Assistant chunk 補足細粒度概念、問題模式和 traceability。"
+        },
+        {
+          "name": "Project report renderer",
+          "type": "Knowledge artifact",
+          "visibility": "Public implementation",
+          "role": "把 project_knowledge、timeline 和 cluster records 渲染成可閱讀的 project_report.md / PDF。"
+        }
+      ],
+      "proof": [
+        "public Python pipeline",
+        "session-first analysis model",
+        "turn-pair evidence clustering",
+        "traceable project reports",
+        "local LLM / embedding workflow"
+      ]
+    },
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/qoli/chatgpt-history"
+      }
+    ]
+  },
+  {
     "id": "enterprise-web-design",
     "name": "Enterprise Web Design Series",
     "category": "history",
@@ -425,6 +579,82 @@
       ]
     },
     "links": []
+  },
+  {
+    "id": "nomad-drive",
+    "name": "Nomad Drive",
+    "category": "history",
+    "categoryLabel": "歷史的 Project",
+    "type": "Cross-platform Apple media/file app",
+    "summary": "已下架的 Apple 平台 media/file app，圍繞第三方播放器、多帳號、iCloud 同步、Apple TV 播放和 SwiftUI 跨平台復用展開。",
+    "capability": "早期把 iOS、macOS、tvOS 放到同一套產品和工程約束裡：文件列表、遠程下載、播放核心、第三方播放器、焦點/導航差異和 SwiftUI 復用都需要被處理。",
+    "tags": [
+      "Apple Platforms",
+      "SwiftUI",
+      "tvOS",
+      "Historical Product"
+    ],
+    "status": "Delisted / Historical",
+    "detail": {
+      "thesis": "Nomad Drive 是一個已下架但值得保留的歷史 project。它展示了早期用 SwiftUI 嘗試復用 iOS、macOS 和 tvOS 代碼時，產品能力、播放核心、文件管理和平台差異如何互相拉扯。",
+      "sections": [
+        {
+          "title": "Product frame",
+          "body": "Nomad Drive 面向的是跨設備媒體和文件使用：第三方播放器、多帳號、iCloud 同步、Apple TV 播放和遠程下載都屬於同一個使用場景。"
+        },
+        {
+          "title": "Engineering frame",
+          "body": "Notion 進度記錄裡能看到播放器、字幕、音軌、文件操作、回收站、網路代理、緩存和 tvOS 遙控器焦點等大量工程細節；SwiftUI 文章則記錄了多平台共用入口、#if os 分支、NavigationView 差異和 toolbar 限制。"
+        },
+        {
+          "title": "Design frame",
+          "body": "這個 project 適合作為歷史案例保留：它不再作為當前產品展示，但能說明早期 Apple platform product engineering 如何面對真實平台差異，而不是只依靠框架承諾。"
+        }
+      ],
+      "components": [
+        {
+          "name": "Nomad Drive product page",
+          "type": "Notion product archive",
+          "visibility": "Public Notion",
+          "role": "保存產品視覺、功能說明、測試入口、計畫和支持材料。"
+        },
+        {
+          "name": "SwiftUI article",
+          "type": "Engineering writing · 2021",
+          "visibility": "Public Notion",
+          "role": "記錄用 SwiftUI 開發 iOS / macOS / tvOS 多平台 app 時遇到的實際問題。"
+        },
+        {
+          "name": "Playback core",
+          "type": "Media runtime",
+          "visibility": "Historical source",
+          "role": "處理 VLC / AVPlayer、字幕、音軌、進度、tvOS 遙控器和第三方播放器調用。"
+        },
+        {
+          "name": "File and account workflow",
+          "type": "Product system",
+          "visibility": "Historical source",
+          "role": "支援多帳號、iCloud 同步、文件列表、遠程下載和基礎文件操作。"
+        }
+      ],
+      "proof": [
+        "cross-platform SwiftUI product",
+        "iOS / macOS / tvOS implementation notes",
+        "Apple TV playback and focus work",
+        "file-management and media-runtime backlog",
+        "2021 engineering article"
+      ]
+    },
+    "links": [
+      {
+        "label": "Notion",
+        "href": "https://www.notion.so/16f781c9681a487696bceeb7dd2bffbe"
+      },
+      {
+        "label": "SwiftUI Article · 2021",
+        "href": "https://www.notion.so/qoli/SwiftUI-2ebc1b36c40182038b6501766f1e94d5?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
+      }
+    ]
   },
   {
     "id": "mobile-ui-qa-wallet",

@@ -70,6 +70,11 @@ const projectGlyphs = {
     <circle cx="60" cy="60" r="18"></circle>
     <path d="M60 18v84"></path>
   `,
+  threadbridge: `
+    <path d="M26 34h68v52H26Z"></path>
+    <path d="M26 52h68M44 34v52"></path>
+    <path d="M44 68h32"></path>
+  `,
   "trackly-reborn": `
     <path d="M24 86 48 58l20 16 28-40"></path>
     <path d="M24 34h72"></path>
@@ -82,9 +87,18 @@ const projectGlyphs = {
     <path d="M26 30h24v24H26ZM70 30h24v24H70ZM48 74h24v24H48Z"></path>
     <path d="M50 42h20M38 54l16 20M82 54 66 74"></path>
   `,
+  "chatgpt-history": `
+    <path d="M28 30h64M28 50h42M28 70h64M28 90h42"></path>
+    <path d="M76 48l16 16-16 16"></path>
+  `,
   "enterprise-web-design": `
     <rect x="22" y="28" width="76" height="64"></rect>
     <path d="M22 50h76M46 28v64"></path>
+  `,
+  "nomad-drive": `
+    <path d="M24 82h72"></path>
+    <path d="M36 38h48l12 44H24Z"></path>
+    <path d="M46 60h28"></path>
   `,
   "mobile-ui-qa-wallet": `
     <rect x="38" y="20" width="44" height="80" rx="10"></rect>
@@ -149,6 +163,26 @@ const projectCopyEn = {
       ],
     },
   },
+  threadbridge: {
+    categoryLabel: "Current Project",
+    summary: "A workspace-first Codex runtime made from a macOS desktop owner, Telegram adapter, and local management surface, binding real workspaces to continuous Codex sessions.",
+    capability: "Turns agent use from one-off terminal sessions into a managed runtime: workspace binding, session continuity, Telegram threads, local TUI, and repair flows have to work as one system.",
+    detail: {
+      thesis: "threadBridge is a workspace-first Codex runtime. The macOS desktop process is the owner, Telegram is an adapter, and the important work is keeping workspace, session, local TUI, and remote messages on the same maintainable continuity path.",
+      sections: [
+        { title: "Product frame", body: "The project handles real friction in agent use: starting work from Telegram, running it in a local workspace, knowing whether the session can continue, and recovering when runtime state drifts." },
+        { title: "Engineering frame", body: "The system combines a Rust desktop runtime owner, local management API, Telegram adapter, app-server observer, workspace runtime surface, and managed hcodex entrypoint." },
+        { title: "Design frame", body: "This is not a chatbot wrapper. It is interaction design for an agent runtime: setup, launch, reconnect, archive, repair, approval, plan mode, and final replies need to be legible and recoverable." },
+      ],
+      components: [
+        { role: "Owns the local management API, tray menu, and runtime reconcile flow." },
+        { role: "Routes workspace-thread text, images, questions, and mode switches back to the saved Codex session." },
+        { role: "Handles setup, launch, reconnect, archive/restore, runtime repair, and transcript inspection." },
+        { role: "Installs managed entrypoints, state files, and local TUI continuation into real workspaces." },
+        { role: "Builds the universal app bundle, signing, notarization, DMG, and release candidates." },
+      ],
+    },
+  },
   "trackly-reborn": {
     name: "TracklyReborn",
     categoryLabel: "Current Project",
@@ -207,6 +241,25 @@ const projectCopyEn = {
       ],
     },
   },
+  "chatgpt-history": {
+    categoryLabel: "Exploration",
+    summary: "A local analysis pipeline that turns long ChatGPT conversation history into structured reports, timelines, and knowledge artifacts.",
+    capability: "Turns AI conversations from searchable archives into legible project memory: session summaries, turn-pair evidence, theme clustering, timelines, and report rendering become one traceable data flow.",
+    detail: {
+      thesis: "chatgpt-history explores a practical problem: when project thinking is scattered across many ChatGPT sessions, how can it be rebuilt into readable, traceable, reusable project memory instead of preserved as raw chat logs?",
+      sections: [
+        { title: "Product frame", body: "The project is not about transcript export. It is about returning to a project and recovering its concepts, architecture shifts, engineering decisions, recurring patterns, and unresolved questions." },
+        { title: "Engineering frame", body: "The pipeline reads exported ChatGPT markdown, creates session-level summaries, uses turn-pair chunks as evidence, then runs embedding, clustering, knowledge synthesis, timeline generation, and deterministic report rendering." },
+        { title: "Design frame", body: "This is knowledge-interface design: the output should read like a technical retrospective, showing how a project formed and which conversations support each theme." },
+      ],
+      components: [
+        { role: "Keeps project conversations and metadata as read-only local analysis input." },
+        { role: "Turns each conversation into a structured summary for topic discovery." },
+        { role: "Adds fine-grained evidence, recurring concepts, and traceability." },
+        { role: "Renders project_knowledge, timeline, and cluster records into readable Markdown/PDF reports." },
+      ],
+    },
+  },
   "enterprise-web-design": {
     categoryLabel: "Historical Project",
     summary: "Historical website design work for enterprise, landmark, and brand sites, covering homepage direction, information hierarchy, visual proposals, and presentation.",
@@ -221,6 +274,25 @@ const projectCopyEn = {
         { name: "SGIT web design", role: "Enterprise website visual direction and homepage structure." },
         { name: "Pearl Tower design", role: "Visual narrative for a landmark website." },
         { name: "Moozy web", role: "Brand website and presentation rhythm." },
+      ],
+    },
+  },
+  "nomad-drive": {
+    categoryLabel: "Historical Project",
+    summary: "A delisted Apple media/file app shaped around third-party players, multiple accounts, iCloud sync, Apple TV playback, and SwiftUI cross-platform reuse.",
+    capability: "An early attempt to hold iOS, macOS, and tvOS inside one product and engineering system, where file lists, remote downloads, playback, focus behavior, and SwiftUI reuse all had to be handled.",
+    detail: {
+      thesis: "Nomad Drive is a historical project worth keeping visible. It shows what happened when a real Apple-platform media/file product tried to share SwiftUI code across iOS, macOS, and tvOS while still dealing with playback, file management, and platform-specific behavior.",
+      sections: [
+        { title: "Product frame", body: "The product sat around cross-device media and file use: third-party players, multiple accounts, iCloud sync, Apple TV playback, and remote download belonged to the same scenario." },
+        { title: "Engineering frame", body: "The Notion archive records playback, subtitles, audio tracks, file operations, recycle bin behavior, network proxy, cache, and tvOS remote/focus work. The SwiftUI article records shared entry points, #if os branches, NavigationView differences, and toolbar limitations." },
+        { title: "Design frame", body: "This belongs in the historical category: not a current product claim, but evidence of Apple platform product engineering under real framework and device constraints." },
+      ],
+      components: [
+        { role: "Stores the visual/product archive, feature explanation, testing entry, roadmap, and support material." },
+        { role: "Documents practical issues when building one SwiftUI app across iOS, macOS, and tvOS." },
+        { role: "Handles VLC / AVPlayer, subtitles, audio tracks, progress, Apple TV remote behavior, and third-party player handoff." },
+        { role: "Covers multiple accounts, iCloud sync, file lists, remote downloads, and basic file operations." },
       ],
     },
   },
