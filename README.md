@@ -1,8 +1,8 @@
 # RonnieCC
 
-Personal capability website for Ronnie Wong.
+Public index for Ronnie Wong.
 
-This repository powers [ronniewong.cc](https://ronniewong.cc), a static personal website about product work, interface design, Apple platforms, AI workflows, and long-running personal systems. It is not an app catalog: the site is organized around projects, explorations, writing, historical design work, and a web resume.
+This repository powers [ronniewong.cc](https://ronniewong.cc), a static public index of my projects, writings, experiments, and external traces across the web. It is not an app catalog: the site is organized around projects, explorations, writing, historical design work, and a web resume.
 
 ## Site Structure
 
