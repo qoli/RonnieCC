@@ -761,6 +761,74 @@ html[data-theme="dark"] .theme-toggle span::after {
   padding-top: clamp(42px, 6vw, 72px);
 }
 
+.blog-board {
+  padding-top: clamp(32px, 5vw, 68px);
+}
+
+.blog-list {
+  display: grid;
+  gap: clamp(64px, 9vw, 112px);
+}
+
+.blog-year {
+  display: grid;
+  grid-template-columns: minmax(72px, 0.16fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 72px);
+}
+
+.blog-year h3 {
+  color: var(--stone);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.52;
+}
+
+.blog-items {
+  display: grid;
+  gap: clamp(34px, 5vw, 58px);
+}
+
+.blog-item a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(20px, 4vw, 48px);
+  align-items: baseline;
+  text-decoration: none;
+}
+
+.blog-title {
+  color: var(--near-black);
+  font-size: clamp(28px, 4vw, 56px);
+  font-weight: 200;
+  line-height: 1.14;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.blog-meta {
+  color: var(--stone);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.52;
+  text-transform: uppercase;
+}
+
+.blog-item a:hover .blog-title {
+  color: var(--brand);
+}
+
+.blog-empty {
+  color: var(--olive);
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 200;
+  line-height: 1.6;
+}
+
 .section-header {
   margin-bottom: clamp(44px, 7vw, 84px);
 }
@@ -1568,6 +1636,23 @@ blockquote {
 
   .next-links em {
     max-width: 100%;
+  }
+
+  .blog-year,
+  .blog-item a {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-year {
+    gap: 24px;
+  }
+
+  .blog-items {
+    gap: 42px;
+  }
+
+  .blog-title {
+    font-size: clamp(27px, 9vw, 42px);
   }
 
   .page-hero.compact {

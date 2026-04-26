@@ -8,6 +8,7 @@ const categoryLabels = {
 const languageKey = "site-language";
 let activeLanguage = localStorage.getItem(languageKey) === "en" ? "en" : "mix";
 let sourceProjects = [];
+let sourceBlogPosts = [];
 let activeFilter = "all";
 
 const uiCopy = {
@@ -23,6 +24,9 @@ const uiCopy = {
       history: "歷史",
     },
     projectsIntro: "這裡按生命週期整理：現在的 Project、探索、歷史的 Project。Tag 用來說明能力、平台、形態和資料狀態。",
+    blogIntro: "一組公開筆記，用來保留產品工程、Apple 平台、AI workflow 和設計判斷的上下文。",
+    blogHeading: "Published notes",
+    blogEmpty: "目前沒有公開文章。",
     notFoundBody: "這個 project id 不在目前的資料源裡。請回到 Projects 頁重新選擇。",
     allProjects: "All Projects",
     detailHeadings: {
@@ -48,6 +52,9 @@ const uiCopy = {
       history: "History",
     },
     projectsIntro: "Projects are organized by lifecycle: current systems, explorations, and historical work. Tags describe capability, platform, format, and source status.",
+    blogIntro: "Public notes that keep context around product engineering, Apple platforms, AI workflows, and design judgement.",
+    blogHeading: "Published notes",
+    blogEmpty: "No public notes are available yet.",
     notFoundBody: "This project id is not available in the current data source. Return to Projects and choose another item.",
     allProjects: "All Projects",
     detailHeadings: {
@@ -483,6 +490,11 @@ function applyStaticCopy() {
     setText(".page-hero p:not(.eyebrow)", ui.projectsIntro);
   }
 
+  if (document.body.dataset.page === "blog") {
+    setText(".page-hero p:not(.eyebrow)", ui.blogIntro);
+    setText("#blog-list-title", ui.blogHeading);
+  }
+
   document.querySelectorAll("[data-filter]").forEach((button) => {
     button.textContent = ui.filters[button.dataset.filter] || button.textContent;
   });
@@ -715,19 +727,66 @@ function renderProjectDetail(projects) {
   `;
 }
 
+function renderBlog() {
+  const mount = document.querySelector("#blog-list");
+  if (!mount) return;
+
+  const ui = activeUi();
+  const posts = sourceBlogPosts.filter((post) => post.public !== false);
+
+  if (!posts.length) {
+    mount.innerHTML = `<p class="blog-empty">${ui.blogEmpty}</p>`;
+    return;
+  }
+
+  const years = [...new Set(posts.map((post) => post.year || "Notes"))];
+  mount.innerHTML = years
+    .map((year) => {
+      const items = posts.filter((post) => (post.year || "Notes") === year);
+      return `
+        <section class="blog-year" aria-labelledby="blog-year-${year}">
+          <h3 id="blog-year-${year}">${year}</h3>
+          <div class="blog-items">
+            ${items
+              .map(
+                (post) => `
+                  <article class="blog-item">
+                    <a href="${post.notionUrl}" target="_blank" rel="noreferrer">
+                      <span class="blog-title">${post.title}</span>
+                      <span class="blog-meta">${post.tag || "Note"}</span>
+                    </a>
+                  </article>
+                `
+              )
+              .join("")}
+          </div>
+        </section>
+      `;
+    })
+    .join("");
+}
+
 function renderAll() {
   applyStaticCopy();
   const projects = localizedProjects();
   renderHome(projects);
   renderProjects(projects);
   renderProjectDetail(projects);
+  renderBlog();
 }
 
 async function boot() {
   setupThemeToggle();
   setupLanguageToggle();
-  const response = await fetch("content/projects.seed.json", { cache: "no-store" });
-  sourceProjects = await response.json();
+  const [projectsResponse, blogResponse] = await Promise.all([
+    fetch("content/projects.seed.json", { cache: "no-store" }),
+    fetch("content/blog.seed.json", { cache: "no-store" }),
+  ]);
+  sourceProjects = await projectsResponse.json();
+  if (blogResponse.ok) {
+    const blogData = await blogResponse.json();
+    sourceBlogPosts = blogData.posts || [];
+  }
   renderAll();
 }
 

@@ -448,6 +448,40 @@ type ProjectComponent = {
 - 本地 Keynote 設計檔案只作內部證據和素材來源，不直接公開原檔；涉及舊職、客戶或商業資料時需要先脫敏和人工確認。
 - 截圖、圖片、PDF、demo 影片等素材，production 前最好拷到本地 repo 或穩定 public asset host。
 
+## Blog 資料源
+
+Blog 入口使用 Notion database 作為上游資料源，但網站只讀取同步後的靜態 JSON。
+
+| 項目 | 值 |
+| --- | --- |
+| Notion database | https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link |
+| Database title | 📔 日誌 |
+| Parent page | Ronnie Blogs |
+| Collection id | `0bdc1b36c401828b875a87505f6c4363` |
+| View id | `e90c1b36c401831d99bf08f10dcbae9b` |
+| Generated file | `content/blog.seed.json` |
+| Sync script | `scripts/sync-blog.mjs` |
+| GitHub Action | `.github/workflows/sync-blog.yml` |
+
+### Notion schema
+
+| 字段 | 類型 | 網站用途 |
+| --- | --- | --- |
+| `Name` | title | 文章標題 |
+| `Tag` | select | 類別標記；目前有 `Skecth`、`VSCode`、`Serverless`、`SwiftUI` |
+| `公開` | checkbox | 發布開關；只有 true / `__YES__` 可以進入網站 |
+| `年份` | text | 顯示與分組年份；優先於 created time |
+
+### Blog 同步規則
+
+- 第一階段只建立 Blog index，文章連結外跳 Notion。
+- 不在第一階段渲染 Notion detail page，因為 Notion 圖片 URL 可能是短期簽名 URL，直接靜態化後會失效。
+- GitHub Actions 每天同步一次即可，並保留 `workflow_dispatch` 供手動更新。
+- 公開 Notion database 不需要 `NOTION_TOKEN`；如果日後改為私有頁面，GitHub repo 再設定 `NOTION_TOKEN` 或 `NOTION_TOKEN_V2` secret，值為 Notion `token_v2`。
+- 同步器只寫入 `content/blog.seed.json`，不改動手寫 HTML/CSS/JS。
+- `公開` 是唯一發布門檻；Notion view 本身不代表公開狀態。
+- `年份` 是人工策展字段，不應自動覆蓋；缺失時才 fallback 到 created time。
+
 ## 目前本地資料狀態
 
 `content/apps.seed.json` 目前只保留可見 app：
@@ -460,6 +494,7 @@ type ProjectComponent = {
 這份資料還不是 project ecosystem 結構。下一步應該把它擴展或替換為：
 
 - `content/projects.seed.json`
+- `content/blog.seed.json`
 - `content/project-components.seed.json`
 - `content/project-tags.seed.json`，如果 tag 需要集中管理
 

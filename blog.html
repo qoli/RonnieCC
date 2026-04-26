@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project · Ronnie Wong</title>
+    <title>Blog · Ronnie Wong</title>
     <meta
       name="description"
-      content="Ronnie Wong 的 Project detail，說明每個系統背後的產品思考、工程取捨、介面判斷和可驗證的實作證據。"
+      content="Ronnie Wong 的 Blog，整理產品工程、Apple 平台、AI workflow 和設計判斷的公開筆記。"
     >
-    <link rel="canonical" href="https://ronniewong.cc/project.html">
+    <link rel="canonical" href="https://ronniewong.cc/blog.html">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <script>
@@ -24,15 +24,15 @@
     </script>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body data-page="project-detail">
+  <body data-page="blog">
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Ronnie Wong home">
         <span class="brand-mark">RW</span>
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="index.html">Index</a>
-        <a aria-current="page" href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
+        <a href="projects.html">Projects</a>
+        <a aria-current="page" href="blog.html">Blog</a>
         <a href="resume.html">Resume</a>
       </nav>
       <button class="language-toggle" type="button" aria-label="Switch language" data-language-toggle>EN</button>
@@ -41,11 +41,21 @@
       </button>
     </header>
 
-    <main id="project-detail" aria-live="polite">
-      <section class="page-hero compact">
-        <p class="eyebrow">Project detail</p>
-        <h1>Loading</h1>
-        <p>Loading project data.</p>
+    <main>
+      <section class="page-hero compact" aria-labelledby="blog-title">
+        <p class="eyebrow">Writing index</p>
+        <h1 id="blog-title">Blog</h1>
+        <p>
+          一組公開筆記，用來保留產品工程、Apple 平台、AI workflow 和設計判斷的上下文。
+        </p>
+      </section>
+
+      <section class="section blog-board" aria-labelledby="blog-list-title">
+        <div class="section-header">
+          <p class="eyebrow">Notion source</p>
+          <h2 id="blog-list-title">Published notes</h2>
+        </div>
+        <div class="blog-list" id="blog-list" aria-live="polite"></div>
       </section>
     </main>
 
@@ -53,7 +63,7 @@
       <span>Ronnie Wong</span>
       <a href="https://x.com/llqoli">X</a>
       <a href="https://mastodon.social/@ronniew">Mastodon</a>
-      <a href="projects.html">All Projects</a>
+      <a href="https://github.com/qoli/RonnieCC">Source</a>
     </footer>
 
     <script src="site.js" defer></script>
