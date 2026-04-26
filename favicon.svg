@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="RW">
+  <rect width="64" height="64" rx="10" fill="#141413"/>
+  <path d="M14 13h36" fill="none" stroke="#e8e6dc" stroke-width="2" stroke-linecap="square" opacity=".34"/>
+  <path d="M14 51h36" fill="none" stroke="#e8e6dc" stroke-width="2" stroke-linecap="square" opacity=".34"/>
+  <text
+    x="32"
+    y="39"
+    fill="#f5f4ed"
+    font-family="Montserrat, Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+    letter-spacing="-1"
+    text-anchor="middle"
+  >RW</text>
+</svg>

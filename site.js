@@ -299,18 +299,49 @@ function setupThemeToggle() {
   const button = document.querySelector("[data-theme-toggle]");
   if (!button) return;
 
+  const modes = ["auto", "light", "dark"];
+  const labels = {
+    auto: "Auto",
+    light: "Light",
+    dark: "Dark",
+  };
+  const nextLabels = {
+    auto: "light mode",
+    light: "dark mode",
+    dark: "auto mode",
+  };
+  const systemPreference = window.matchMedia("(prefers-color-scheme: dark)");
+
+  const storedMode = () => {
+    const value = localStorage.getItem("theme");
+    return modes.includes(value) ? value : "auto";
+  };
+
+  const resolvedTheme = (mode) => (mode === "auto" ? (systemPreference.matches ? "dark" : "light") : mode);
+
+  const applyMode = (mode) => {
+    document.documentElement.dataset.themeMode = mode;
+    document.documentElement.dataset.theme = resolvedTheme(mode);
+  };
+
   const sync = () => {
-    const isDark = document.documentElement.dataset.theme === "dark";
-    button.setAttribute("aria-pressed", String(isDark));
-    button.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+    const mode = storedMode();
+    applyMode(mode);
+    button.dataset.themeMode = mode;
+    button.setAttribute("aria-label", `Color mode: ${labels[mode]}. Switch to ${nextLabels[mode]}.`);
+    button.setAttribute("title", `Color mode: ${labels[mode]}`);
   };
 
   sync();
   button.addEventListener("click", () => {
-    const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-    document.documentElement.dataset.theme = nextTheme;
-    localStorage.setItem("theme", nextTheme);
+    const mode = storedMode();
+    const nextMode = modes[(modes.indexOf(mode) + 1) % modes.length];
+    localStorage.setItem("theme", nextMode);
     sync();
+  });
+
+  systemPreference.addEventListener("change", () => {
+    if (storedMode() === "auto") sync();
   });
 }
 

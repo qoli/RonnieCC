@@ -6,13 +6,20 @@
     <title>Ronnie Wong</title>
     <meta
       name="description"
-      content="Ronnie Wong 的個人能力網站，整理 AI productization、Apple platform apps、local-first systems 和 UI/UX design work."
+      content="Ronnie Wong 的個人網站，介紹他如何把設計判斷、Apple 平台工程、local-first 思維和 AI workflow 做成可使用的產品。"
     >
     <link rel="canonical" href="https://ronniewong.cc/">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <script>
+      const themeMode = ["auto", "light", "dark"].includes(localStorage.getItem("theme"))
+        ? localStorage.getItem("theme")
+        : "auto";
+      document.documentElement.dataset.themeMode = themeMode;
       document.documentElement.dataset.theme =
-        localStorage.getItem("theme") ||
-        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        themeMode === "auto"
+          ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+          : themeMode;
       document.documentElement.dataset.language = localStorage.getItem("site-language") || "mix";
     </script>
     <link rel="stylesheet" href="styles.css">
@@ -28,7 +35,7 @@
         <a href="resume.html">Resume</a>
       </nav>
       <button class="language-toggle" type="button" aria-label="Switch language" data-language-toggle>EN</button>
-      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" data-theme-toggle>
+      <button class="theme-toggle" type="button" aria-label="Change color mode" data-theme-toggle>
         <span aria-hidden="true"></span>
       </button>
     </header>
