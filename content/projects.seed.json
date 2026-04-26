@@ -175,6 +175,12 @@
           "kind": "Source",
           "href": "https://github.com/qoli/eisonAI",
           "role": "Readable implementation surface for Apple platforms, local AI workflow, and app structure."
+        },
+        {
+          "label": "YouTube demo",
+          "kind": "Media",
+          "href": "https://www.youtube.com/watch?v=B-NtdpZH9_o",
+          "role": "Public video surface for seeing the AI reading workflow and product behavior."
         }
       ]
     },
@@ -271,6 +277,12 @@
           "kind": "Distribution",
           "href": "https://github.com/qoli/threadBridge/releases",
           "role": "Release surface for macOS builds, candidates, and distribution state."
+        },
+        {
+          "label": "YouTube demo",
+          "kind": "Media",
+          "href": "https://www.youtube.com/watch?v=hFYOWsMSA3Y",
+          "role": "Public video surface for seeing the runtime and interaction model in motion."
         }
       ]
     },
@@ -360,6 +372,12 @@
           "kind": "Notion",
           "href": "https://www.notion.so/267c1b36c40180ec9489d4f84ef1c079",
           "role": "Usage-facing documentation for the current app experience."
+        },
+        {
+          "label": "YouTube demo",
+          "kind": "Media",
+          "href": "https://www.youtube.com/watch?v=B6Jo3VA2l-g",
+          "role": "Public video surface for seeing the AI-assisted logging workflow and interaction model."
         }
       ]
     },
@@ -532,6 +550,12 @@
           "kind": "Exploration",
           "href": "https://www.notion.so/2c2c1b36c401806a909dd06baad8815a",
           "role": "Public exploration notes for the local AI video pipeline and white-box generation workflow."
+        },
+        {
+          "label": "YouTube demo",
+          "kind": "Media",
+          "href": "https://www.youtube.com/watch?v=XnTwzDOpApc&t=11s",
+          "role": "Public video surface for seeing the local AI video pipeline and generated output in context."
         }
       ]
     },
@@ -646,14 +670,20 @@
         },
         {
           "title": "Source treatment",
-          "body": "Keynote 原件只作內部來源；公開頁面應重新導出局部畫面，並移除客戶敏感資料。"
+          "body": "已公開的 Behance 頁面可以作為歷史截面；Keynote 原件只作內部來源，公開頁面應重新導出局部畫面，並移除客戶敏感資料。"
         }
       ],
       "components": [
         {
+          "name": "Landing Page For Dev Studio",
+          "type": "Behance case · 2020",
+          "visibility": "Public Behance",
+          "role": "開發工作室 landing page 的首屏敘事、桌面/移動端延展和視覺表達。"
+        },
+        {
           "name": "SGIT web design",
-          "type": "Keynote export",
-          "visibility": "Needs Redaction",
+          "type": "Behance case · 2020",
+          "visibility": "Public Behance",
           "role": "企業網站視覺方向和首頁組織。"
         },
         {
@@ -671,19 +701,41 @@
       ],
       "proof": [
         "web design direction",
+        "landing page typography",
         "information hierarchy",
         "visual presentation",
         "historical design archive"
       ],
       "surfaces": [
         {
+          "label": "Landing Page For Dev Studio · 2020",
+          "kind": "Behance",
+          "href": "https://www.behance.net/gallery/94536671/Landing-Page-For-Dev-Studio",
+          "role": "Public historical case for a dev studio landing page, with desktop and mobile presentation."
+        },
+        {
+          "label": "SGIT Web Design · 2020",
+          "kind": "Behance",
+          "href": "https://www.behance.net/gallery/94541877/SGIT-Web-Desgin",
+          "role": "Public historical case for enterprise website layout, visual direction, and desktop web design."
+        },
+        {
           "label": "Public excerpt pending",
           "kind": "Internal archive",
-          "role": "Original Keynote files need redaction before this design archive can expose stable public URLs."
+          "role": "Additional Keynote files still need redaction before this design archive can expose more stable public URLs."
         }
       ]
     },
-    "links": []
+    "links": [
+      {
+        "label": "Dev Studio Behance · 2020",
+        "href": "https://www.behance.net/gallery/94536671/Landing-Page-For-Dev-Studio"
+      },
+      {
+        "label": "SGIT Behance · 2020",
+        "href": "https://www.behance.net/gallery/94541877/SGIT-Web-Desgin"
+      }
+    ]
   },
   {
     "id": "nomad-drive",
@@ -856,10 +908,16 @@
         },
         {
           "title": "Source treatment",
-          "body": "公開版本應從 Keynote 中挑選局部高質量頁面，重寫成不暴露客戶資料的 case study。"
+          "body": "已公開的 Behance 和 Notion 頁面可以作為歷史截面；其他 Keynote 材料應挑選局部高質量頁面，重寫成不暴露客戶資料的 case study。"
         }
       ],
       "components": [
+        {
+          "name": "Fanfan IM App",
+          "type": "Behance case · 2020",
+          "visibility": "Public Behance",
+          "role": "IM / chat app 的移動端界面、朋友關係、語音和對話場景設計。"
+        },
         {
           "name": "HotCashback",
           "type": "Keynote export",
@@ -867,10 +925,10 @@
           "role": "消費類產品和商戶側流程。"
         },
         {
-          "name": "元の氣小程序",
-          "type": "Keynote export",
-          "visibility": "Needs Redaction",
-          "role": "小程序會員、點單和積分流程。"
+          "name": "元の氣 Bread",
+          "type": "Notion case · 2020",
+          "visibility": "Public Notion",
+          "role": "餐飲小程序的 UI/UX 設計、會員卡、點單、購物車、WEUI 和微信 API 使用。"
         },
         {
           "name": "兩秒記賬",
@@ -880,6 +938,8 @@
         }
       ],
       "proof": [
+        "mobile IM app design",
+        "WeChat mini program design",
         "consumer app design",
         "product storytelling",
         "mini program UI",
@@ -887,13 +947,34 @@
       ],
       "surfaces": [
         {
+          "label": "Fanfan IM App · 2020",
+          "kind": "Behance",
+          "href": "https://www.behance.net/gallery/94601295/Fanfan-IM-App",
+          "role": "Public historical case for consumer IM app interface, chat, friends, and voice interaction design."
+        },
+        {
+          "label": "元の氣 Bread · 2020",
+          "kind": "Notion",
+          "href": "https://qoli.notion.site/Bread-9bfc1b36c401826091bf0128823fe89f",
+          "role": "Public historical case for a food WeChat mini program, covering UI proposal, delivery iterations, WEUI components, membership, cart, and developer handoff."
+        },
+        {
           "label": "Public excerpt pending",
           "kind": "Internal archive",
-          "role": "Consumer app Keynote material should be curated into public excerpts before links are exposed."
+          "role": "Additional consumer app Keynote material should be curated into public excerpts before more links are exposed."
         }
       ]
     },
-    "links": []
+    "links": [
+      {
+        "label": "Fanfan Behance · 2020",
+        "href": "https://www.behance.net/gallery/94601295/Fanfan-IM-App"
+      },
+      {
+        "label": "Bread Notion · 2020",
+        "href": "https://qoli.notion.site/Bread-9bfc1b36c401826091bf0128823fe89f"
+      }
+    ]
   },
   {
     "id": "brand-visual-identity",

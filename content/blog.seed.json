@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-26T06:20:47.488Z",
+  "generatedAt": "2026-04-26T06:57:26.862Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -96,6 +96,17 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z"
     },
     {
+      "id": "34ec1b36c401810e8405df7510cfde52",
+      "slug": "用流式下載避免-avplayer-播放時的內存爆炸-34ec1b36",
+      "title": "用流式下載避免 AVPlayer 播放時的內存爆炸",
+      "tag": "iOS,Swift,AVFoundation,Player",
+      "year": "2023",
+      "public": true,
+      "notionUrl": "https://www.notion.so/qoli/%E7%94%A8%E6%B5%81%E5%BC%8F%E4%B8%8B%E8%BC%89%E9%81%BF%E5%85%8D-avplayer-%E6%92%AD%E6%94%BE%E6%99%82%E7%9A%84%E5%85%A7%E5%AD%98%E7%88%86%E7%82%B8-34ec1b36c401810e8405df7510cfde52?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-04-26T06:54:22.446Z",
+      "lastEditedTime": "2026-04-26T06:55:47.814Z"
+    },
+    {
       "id": "2b1d8abfaff84d15ab4bb3a113b3eb6a",
       "slug": "fuck-swiftui-的筆記-2b1d8abf",
       "title": "Fuck SwiftUI 的筆記",
@@ -160,6 +171,17 @@
       "notionUrl": "https://www.notion.so/qoli/vscode-%E7%BE%8E%E5%8C%96%E6%94%BB%E7%95%A5-7f9c1b36c401826e94df01608533fd43?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-04-26T05:06:41.016Z",
       "lastEditedTime": "2026-04-26T06:01:50.892Z"
+    },
+    {
+      "id": "9bfc1b36c401826091bf0128823fe89f",
+      "slug": "元-氣-bread-9bfc1b36",
+      "title": "元の氣 Bread",
+      "tag": "Design,WeChat,Mini Program,Food",
+      "year": "2020",
+      "public": true,
+      "notionUrl": "https://www.notion.so/qoli/%E5%85%83-%E6%B0%A3-bread-9bfc1b36c401826091bf0128823fe89f?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-04-26T05:06:40.732Z",
+      "lastEditedTime": "2026-04-26T06:48:35.462Z"
     }
   ]
 }
