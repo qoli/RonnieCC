@@ -1,8 +1,8 @@
 const categoryOrder = ["current", "exploration", "history"];
 const categoryLabels = {
-  current: "現在的 Project",
+  current: "現在",
   exploration: "探索",
-  history: "歷史的 Project",
+  history: "歷史",
 };
 
 const languageKey = "site-language";
@@ -23,7 +23,7 @@ const uiCopy = {
       exploration: "探索",
       history: "歷史",
     },
-    projectsIntro: "這裡按生命週期整理：現在的 Project、探索、歷史的 Project。Tag 用來說明能力、平台、形態和資料狀態。",
+    projectsIntro: "這裡按生命週期整理：現在、探索、歷史。Tag 用來說明能力、平台、形態和資料狀態。",
     blogIntro: "一組公開筆記，用來保留產品工程、Apple 平台、AI workflow 和設計判斷的上下文。",
     blogHeading: "Published notes",
     blogEmpty: "目前沒有公開文章。",
