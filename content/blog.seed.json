@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-26T06:57:26.862Z",
+  "generatedAt": "2026-04-26T18:23:35.375Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -7,6 +7,17 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "34ec1b36c4018133ba41c6d9a03cbe2f",
+      "slug": "adict-的演化歷史-從順眼的查詞工具到本地詞典架構-34ec1b36",
+      "title": "aDict 的演化歷史：從順眼的查詞工具到本地詞典架構",
+      "tag": "aDict,iOS,macOS,Swift,Dictionary,Product",
+      "year": "2026",
+      "public": true,
+      "notionUrl": "https://www.notion.so/qoli/adict-%E7%9A%84%E6%BC%94%E5%8C%96%E6%AD%B7%E5%8F%B2-%E5%BE%9E%E9%A0%86%E7%9C%BC%E7%9A%84%E6%9F%A5%E8%A9%9E%E5%B7%A5%E5%85%B7%E5%88%B0%E6%9C%AC%E5%9C%B0%E8%A9%9E%E5%85%B8%E6%9E%B6%E6%A7%8B-34ec1b36c4018133ba41c6d9a03cbe2f?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-04-26T07:45:33.380Z",
+      "lastEditedTime": "2026-04-26T09:14:41.193Z"
+    },
     {
       "id": "34ec1b36c401815bbe3ecc741f8a6a55",
       "slug": "從魔法按鈕到白盒工廠-hln-machine-的工程實錄-34ec1b36",
@@ -53,25 +64,14 @@
     },
     {
       "id": "2b6c1b36c4018072816fd0e513d0903b",
-      "slug": "使用-semantic-entropy-語義熵-方案解決長文翻譯的名詞飄移問題-2b6c1b36",
-      "title": "使用 Semantic Entropy（語義熵）方案解決長文翻譯的名詞飄移問題",
+      "slug": "用-semantic-entropy-降低長文翻譯中的名詞飄移-2b6c1b36",
+      "title": "用 Semantic Entropy 降低長文翻譯中的名詞飄移",
       "tag": "AI,LLM,Translation",
       "year": "2025",
       "public": true,
-      "notionUrl": "https://www.notion.so/qoli/%E4%BD%BF%E7%94%A8-semantic-entropy-%E8%AA%9E%E7%BE%A9%E7%86%B5-%E6%96%B9%E6%A1%88%E8%A7%A3%E6%B1%BA%E9%95%B7%E6%96%87%E7%BF%BB%E8%AD%AF%E7%9A%84%E5%90%8D%E8%A9%9E%E9%A3%84%E7%A7%BB%E5%95%8F%E9%A1%8C-2b6c1b36c4018072816fd0e513d0903b?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "notionUrl": "https://www.notion.so/qoli/%E7%94%A8-semantic-entropy-%E9%99%8D%E4%BD%8E%E9%95%B7%E6%96%87%E7%BF%BB%E8%AD%AF%E4%B8%AD%E7%9A%84%E5%90%8D%E8%A9%9E%E9%A3%84%E7%A7%BB-2b6c1b36c4018072816fd0e513d0903b?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2025-11-25T18:57:01.296Z",
-      "lastEditedTime": "2026-04-26T06:01:28.365Z"
-    },
-    {
-      "id": "264c1b36c40180f08846f3c1ca754f9d",
-      "slug": "m2-ultra-comfyui-入門日誌-264c1b36",
-      "title": "M2 Ultra - ComfyUI 入門日誌",
-      "tag": "ComfyUI,AI",
-      "year": "2025",
-      "public": true,
-      "notionUrl": "https://www.notion.so/qoli/m2-ultra-comfyui-%E5%85%A5%E9%96%80%E6%97%A5%E8%AA%8C-264c1b36c40180f08846f3c1ca754f9d?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
-      "createdTime": "2025-09-04T05:38:14.740Z",
-      "lastEditedTime": "2026-04-26T06:01:20.205Z"
+      "lastEditedTime": "2026-04-26T09:30:54.153Z"
     },
     {
       "id": "10fc1b36c40180e8a6cbd9b2f729427e",
