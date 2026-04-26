@@ -95,6 +95,10 @@ export function notionValue(value, type) {
     return notionText(value);
   }
 
+  if (type === "date") {
+    return value[0]?.[1]?.find?.((item) => item[0] === "d")?.[1]?.start_date || "";
+  }
+
   if (type === "select" || type === "url" || type === "email" || type === "phone_number") {
     return value[0]?.[0] || "";
   }

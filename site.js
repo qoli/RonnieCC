@@ -32,7 +32,7 @@ const uiCopy = {
     detailHeadings: {
       narrative: "設計與工程判斷",
       system: "組件和資料可見性",
-      surface: "可閱讀的工作面",
+      surface: "公開工作面",
       practice: "Practice",
     },
   },
@@ -60,7 +60,7 @@ const uiCopy = {
     detailHeadings: {
       narrative: "Design and engineering judgement",
       system: "Components and visibility",
-      surface: "Readable surfaces",
+      surface: "Public surfaces",
       practice: "Practice",
     },
   },
@@ -622,6 +622,36 @@ function detailSections(sections) {
     .join("");
 }
 
+function publicSurfaceItems(project) {
+  if (project.detail.surfaces?.length) return project.detail.surfaces;
+
+  return project.links.map((link) => ({
+    label: link.label,
+    kind: "Public URL",
+    href: link.href,
+    role: "Public entry connected to this project.",
+  }));
+}
+
+function surfaceMarkup(surface) {
+  const content = `
+    <span class="surface-kind">${surface.kind || "Public URL"}</span>
+    <strong>${surface.label}</strong>
+    <p>${surface.role || ""}</p>
+  `;
+
+  if (!surface.href) {
+    return `<article class="surface-item is-pending">${content}</article>`;
+  }
+
+  return `
+    <a class="surface-item" href="${surface.href}" target="_blank" rel="noreferrer">
+      ${content}
+      <span class="surface-url">${surface.href.replace(/^https?:\/\//, "")}</span>
+    </a>
+  `;
+}
+
 function renderProjectDetail(projects) {
   const mount = document.querySelector("#project-detail");
   if (!mount) return;
@@ -649,6 +679,7 @@ function renderProjectDetail(projects) {
   document.title = `${project.name} · Ronnie Wong`;
   const ui = activeUi();
   const projectIndex = projects.findIndex((item) => item.id === project.id);
+  const surfaces = publicSurfaceItems(project);
   mount.innerHTML = `
     <section class="page-hero compact detail-hero" aria-labelledby="detail-title">
       <div class="detail-hero-grid">
@@ -715,12 +746,12 @@ function renderProjectDetail(projects) {
 
         <section class="detail-section">
           <div class="section-header">
-            <p class="eyebrow">Surface</p>
+            <p class="eyebrow">Public URLs</p>
             <h2>${ui.detailHeadings.surface}</h2>
           </div>
-          <ul class="proof-list">
-            ${project.detail.proof.map((item) => `<li>${item}</li>`).join("")}
-          </ul>
+          <div class="surface-list">
+            ${surfaces.map(surfaceMarkup).join("")}
+          </div>
         </section>
       </div>
     </section>

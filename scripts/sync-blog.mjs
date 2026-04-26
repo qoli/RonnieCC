@@ -39,7 +39,8 @@ function isPublic(row) {
 }
 
 function normalizePost(row) {
-  const year = String(row["年份"] || "").trim() || (row.createdTime ? String(new Date(row.createdTime).getFullYear()) : "");
+  const writtenYear = row["編寫日期"] ? String(new Date(row["編寫日期"]).getFullYear()) : "";
+  const year = writtenYear || String(row["年份"] || "").trim() || (row.createdTime ? String(new Date(row.createdTime).getFullYear()) : "");
   return {
     id: compactId(row.id),
     slug: postSlug(row),

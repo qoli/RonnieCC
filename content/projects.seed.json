@@ -61,6 +61,20 @@
         "native playback boundary",
         "API / plugin ecosystem",
         "support docs and changelog"
+      ],
+      "surfaces": [
+        {
+          "label": "Product documentation",
+          "kind": "Notion",
+          "href": "https://www.notion.so/821b80378be241149fa5e9a1bbf6cfdc",
+          "role": "Public entry for product positioning, support material, FAQ, and the maintained app surface."
+        },
+        {
+          "label": "Changelog",
+          "kind": "Release notes",
+          "href": "https://www.notion.so/2e3c1b36c4018098babae678943c8d20",
+          "role": "Shows the maintenance rhythm and product evolution behind the media runtime."
+        }
       ]
     },
     "links": [
@@ -136,6 +150,20 @@
         "Apple platform implementation",
         "reading and knowledge tooling",
         "public repo and App Store surface"
+      ],
+      "surfaces": [
+        {
+          "label": "App Store",
+          "kind": "Product",
+          "href": "https://apps.apple.com/us/app/eison-ai/id6484502399",
+          "role": "Public product surface for the local-first AI reading app."
+        },
+        {
+          "label": "GitHub",
+          "kind": "Source",
+          "href": "https://github.com/qoli/eisonAI",
+          "role": "Readable implementation surface for Apple platforms, local AI workflow, and app structure."
+        }
       ]
     },
     "links": [
@@ -218,6 +246,20 @@
         "Telegram-to-Codex session continuity",
         "local management UI and repair flows",
         "macOS release candidate pipeline"
+      ],
+      "surfaces": [
+        {
+          "label": "GitHub",
+          "kind": "Source",
+          "href": "https://github.com/qoli/threadBridge",
+          "role": "Public implementation for the workspace-first Codex runtime, desktop owner, and Telegram adapter."
+        },
+        {
+          "label": "Releases",
+          "kind": "Distribution",
+          "href": "https://github.com/qoli/threadBridge/releases",
+          "role": "Release surface for macOS builds, candidates, and distribution state."
+        }
       ]
     },
     "links": [
@@ -293,6 +335,20 @@
         "multimodal capture",
         "iOS workflow integration",
         "public TestFlight surface"
+      ],
+      "surfaces": [
+        {
+          "label": "TestFlight",
+          "kind": "Product test",
+          "href": "https://testflight.apple.com/join/aQ64Cnfv",
+          "role": "Public testing entry for the AI-assisted life logging workflow."
+        },
+        {
+          "label": "Getting started",
+          "kind": "Notion",
+          "href": "https://www.notion.so/267c1b36c40180ec9489d4f84ef1c079",
+          "role": "Usage-facing documentation for the current app experience."
+        }
       ]
     },
     "links": [
@@ -368,6 +424,20 @@
         "multi-platform Swift ecosystem",
         "product docs and changelog",
         "long-term product maintenance"
+      ],
+      "surfaces": [
+        {
+          "label": "Product page",
+          "kind": "Notion",
+          "href": "https://qoli.notion.site/aDict-app-a647f1ed9f604892895b8e71a65f1d70",
+          "role": "Public product entry for the dictionary and reading-tool ecosystem."
+        },
+        {
+          "label": "Changelog",
+          "kind": "Release notes",
+          "href": "https://www.notion.so/98075976818745c9bc3657e1088fdf7b",
+          "role": "Maintenance record for multi-platform updates and product iteration."
+        }
       ]
     },
     "links": [
@@ -443,6 +513,14 @@
         "checkpoint and restart design",
         "media automation",
         "local-first experimentation"
+      ],
+      "surfaces": [
+        {
+          "label": "Notion notes",
+          "kind": "Exploration",
+          "href": "https://www.notion.so/2c2c1b36c401806a909dd06baad8815a",
+          "role": "Public exploration notes for the local AI video pipeline and white-box generation workflow."
+        }
       ]
     },
     "links": [
@@ -515,6 +593,14 @@
         "turn-pair evidence clustering",
         "traceable project reports",
         "local LLM / embedding workflow"
+      ],
+      "surfaces": [
+        {
+          "label": "GitHub",
+          "kind": "Source",
+          "href": "https://github.com/qoli/chatgpt-history",
+          "role": "Public Python pipeline for turning ChatGPT exports into traceable project memory."
+        }
       ]
     },
     "links": [
@@ -576,6 +662,13 @@
         "information hierarchy",
         "visual presentation",
         "historical design archive"
+      ],
+      "surfaces": [
+        {
+          "label": "Public excerpt pending",
+          "kind": "Internal archive",
+          "role": "Original Keynote files need redaction before this design archive can expose stable public URLs."
+        }
       ]
     },
     "links": []
@@ -643,6 +736,20 @@
         "Apple TV playback and focus work",
         "file-management and media-runtime backlog",
         "2021 engineering article"
+      ],
+      "surfaces": [
+        {
+          "label": "Product archive",
+          "kind": "Notion",
+          "href": "https://www.notion.so/16f781c9681a487696bceeb7dd2bffbe",
+          "role": "Historical product page for the removed app, preserving feature scope, roadmap, and support context."
+        },
+        {
+          "label": "SwiftUI article · 2021",
+          "kind": "Writing",
+          "href": "https://www.notion.so/qoli/SwiftUI-2ebc1b36c40182038b6501766f1e94d5?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+          "role": "Engineering note about sharing SwiftUI code across iOS, macOS, and tvOS."
+        }
       ]
     },
     "links": [
@@ -702,6 +809,13 @@
         "mobile interface review",
         "state and flow thinking",
         "historical design archive"
+      ],
+      "surfaces": [
+        {
+          "label": "Public excerpt pending",
+          "kind": "Internal archive",
+          "role": "Wallet and former-employer material needs redaction before stable public URLs can be listed."
+        }
       ]
     },
     "links": []
@@ -758,6 +872,13 @@
         "product storytelling",
         "mini program UI",
         "historical design archive"
+      ],
+      "surfaces": [
+        {
+          "label": "Public excerpt pending",
+          "kind": "Internal archive",
+          "role": "Consumer app Keynote material should be curated into public excerpts before links are exposed."
+        }
       ]
     },
     "links": []
@@ -818,6 +939,13 @@
         "visual system design",
         "presentation quality",
         "historical design archive"
+      ],
+      "surfaces": [
+        {
+          "label": "Public excerpt pending",
+          "kind": "Internal archive",
+          "role": "Brand and visual identity material needs selective redrawing and redaction before public URLs exist."
+        }
       ]
     },
     "links": []
@@ -878,6 +1006,13 @@
         "product system thinking",
         "complex workflow design",
         "historical design archive"
+      ],
+      "surfaces": [
+        {
+          "label": "Public excerpt pending",
+          "kind": "Internal archive",
+          "role": "UX audit and system notes contain client or former-employer context; public excerpts are pending."
+        }
       ]
     },
     "links": []
