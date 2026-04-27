@@ -1,5 +1,16 @@
 import { mkdir, rm, copyFile, readdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
+import {
+  applySeo,
+  breadcrumbJsonLd,
+  canonicalUrl,
+  collectionPageJsonLd,
+  creativeWorkJsonLd,
+  personJsonLd,
+  profilePageJsonLd,
+  siteUrl,
+  websiteJsonLd,
+} from "./seo";
 
 type ProjectCategory = "current" | "exploration" | "history";
 type Language = "mix" | "en";
@@ -71,7 +82,6 @@ type BlogPost = {
 
 const root = process.cwd();
 const outDir = join(root, "dist");
-const siteUrl = "https://ronniewong.cc";
 const categoryOrder: ProjectCategory[] = ["current", "exploration", "history"];
 const categoryLabelsMix: Record<ProjectCategory, string> = {
   current: "現在",
@@ -237,14 +247,8 @@ function projectPath(project: Project, prefix = ""): string {
   return `${prefix}projects/${encodeURIComponent(project.id)}/`;
 }
 
-function pageUrl(path: string, language: Language): string {
-  const prefix = language === "en" ? "/en/" : "/";
-  if (!path) return `${siteUrl}${prefix}`;
-  return `${siteUrl}${prefix}${path}`;
-}
-
 function projectCanonical(project: Project, language: Language): string {
-  return pageUrl(`projects/${encodeURIComponent(project.id)}/`, language);
+  return canonicalUrl(`projects/${encodeURIComponent(project.id)}/`, language);
 }
 
 function truncate(value: string, max = 160): string {
@@ -259,39 +263,6 @@ function withStaticMode(html: string, locale: Locale): string {
       'document.documentElement.dataset.language = localStorage.getItem("site-language") || "mix";',
       `document.documentElement.dataset.language = "${locale.language}";`
     );
-}
-
-function setHeadMeta(html: string, title: string, description: string, canonical: string): string {
-  return html
-    .replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(title)}</title>`)
-    .replace(
-      /<meta\s+name="description"\s+content="[\s\S]*?"\s*>/,
-      `<meta\n      name="description"\n      content="${escapeAttr(description)}"\n    >`
-    )
-    .replace(/<link rel="canonical" href="[^"]+">/, `<link rel="canonical" href="${escapeAttr(canonical)}">`);
-}
-
-function injectHead(html: string, content: string): string {
-  return html.replace("</head>", `${content}\n  </head>`);
-}
-
-function alternateLinks(path: string, language: Language): string {
-  return [
-    `    <link rel="alternate" hreflang="zh-Hant" href="${pageUrl(path, "mix")}">`,
-    `    <link rel="alternate" hreflang="en" href="${pageUrl(path, "en")}">`,
-    `    <link rel="alternate" hreflang="x-default" href="${pageUrl(path, "mix")}">`,
-  ]
-    .filter((line) => (language === "mix" ? true : true))
-    .join("\n");
-}
-
-function injectAlternateLinks(html: string, path: string, language: Language): string {
-  return injectHead(html, alternateLinks(path, language));
-}
-
-function jsonLd(data: unknown): string {
-  const json = JSON.stringify(data).replaceAll("</script", "<\\/script");
-  return `    <script type="application/ld+json">${json}</script>`;
 }
 
 function extractConstObject(source: string, name: string): string {
@@ -620,24 +591,6 @@ function relativizeProjectDetail(html: string, navPrefix: string, assetPrefix: s
     .replaceAll('src="site.js"', `src="${assetPrefix}site.js"`);
 }
 
-function projectJsonLd(project: Project, language: Language): string {
-  return jsonLd({
-    "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    name: project.name,
-    description: project.summary,
-    url: projectCanonical(project, language),
-    creator: {
-      "@type": "Person",
-      name: "Ronnie Wong",
-      url: siteUrl,
-    },
-    keywords: project.tags,
-    about: project.type,
-    sameAs: publicSurfaceItems(project).map((surface) => surface.href).filter(Boolean),
-  });
-}
-
 async function readJson<T>(path: string): Promise<T> {
   return JSON.parse(await readFile(join(root, path), "utf8")) as T;
 }
@@ -664,7 +617,7 @@ async function copyDirectory(source: string, target: string): Promise<void> {
 async function copyStaticAssets(): Promise<void> {
   await copyDirectory(join(root, "assets"), join(outDir, "assets"));
   await copyDirectory(join(root, "content"), join(outDir, "content"));
-  for (const file of ["styles.css", "site.js", "favicon.ico", "favicon.svg", "CNAME", ".nojekyll"]) {
+  for (const file of ["styles.css", "site.js", "favicon.ico", "favicon.svg", "og-image.png", "og-image.svg", "CNAME", ".nojekyll"]) {
     await copyFile(join(root, file), join(outDir, file));
   }
 }
@@ -705,22 +658,30 @@ function renderProjectsPage(source: string, projects: Project[], locale: Locale)
     `<div class="grouped-projects" id="project-groups" aria-live="polite">${groupedProjects(projects, locale.language)}</div>`
   );
 
-  html = setHeadMeta(html, "Projects · Ronnie Wong", "Projects in Ronnie Wong's public index, collecting current work, experiments, historical design work, and external traces across the web.", pageUrl("projects.html", locale.language));
-  html = injectAlternateLinks(html, "projects.html", locale.language);
-  return injectHead(
-    html,
-    jsonLd({
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      name: "Ronnie Wong Projects",
-      itemListElement: projects.map((project, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: project.name,
-        url: projectCanonical(project, locale.language),
-      })),
-    })
-  );
+  const description = "Projects in Ronnie Wong's public index, connecting active systems, experiments, historical design work, and public traces across the web.";
+  return applySeo(html, {
+    language: locale.language,
+    path: "projects.html",
+    title: "Projects · Ronnie Wong",
+    description,
+    jsonLd: [
+      personJsonLd(locale.language),
+      collectionPageJsonLd({
+        language: locale.language,
+        path: "projects.html",
+        name: "Ronnie Wong Projects",
+        description,
+        items: projects.map((project) => ({
+          name: project.name,
+          url: projectCanonical(project, locale.language),
+        })),
+      }),
+      breadcrumbJsonLd([
+        { name: "Ronnie Wong", url: canonicalUrl("", locale.language) },
+        { name: "Projects", url: canonicalUrl("projects.html", locale.language) },
+      ]),
+    ],
+  });
 }
 
 function renderBlogPage(source: string, posts: BlogPost[], locale: Locale): string {
@@ -737,22 +698,30 @@ function renderBlogPage(source: string, posts: BlogPost[], locale: Locale): stri
     `<div class="blog-list" id="blog-list" aria-live="polite">${blogList(visiblePosts, locale.language)}</div>`
   );
 
-  html = setHeadMeta(html, "Blog · Ronnie Wong", "Writing in Ronnie Wong's public index, collected from public notes about engineering, design, Apple platforms, AI workflows, and product systems.", pageUrl("blog.html", locale.language));
-  html = injectAlternateLinks(html, "blog.html", locale.language);
-  return injectHead(
-    html,
-    jsonLd({
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      name: "Ronnie Wong Writing Index",
-      itemListElement: visiblePosts.map((post, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: post.title,
-        url: post.notionUrl,
-      })),
-    })
-  );
+  const description = "Writing in Ronnie Wong's public index, collected from public notes about engineering, design, Apple platforms, AI workflows, and product systems.";
+  return applySeo(html, {
+    language: locale.language,
+    path: "blog.html",
+    title: "Blog · Ronnie Wong",
+    description,
+    jsonLd: [
+      personJsonLd(locale.language),
+      collectionPageJsonLd({
+        language: locale.language,
+        path: "blog.html",
+        name: "Ronnie Wong Writing Index",
+        description,
+        items: visiblePosts.map((post) => ({
+          name: post.title,
+          url: post.notionUrl,
+        })),
+      }),
+      breadcrumbJsonLd([
+        { name: "Ronnie Wong", url: canonicalUrl("", locale.language) },
+        { name: "Blog", url: canonicalUrl("blog.html", locale.language) },
+      ]),
+    ],
+  });
 }
 
 function renderProjectPage(source: string, project: Project, projects: Project[], locale: Locale): string {
@@ -766,19 +735,57 @@ function renderProjectPage(source: string, project: Project, projects: Project[]
     .replace(/<main id="project-detail" aria-live="polite">[\s\S]*?<\/main>/, projectDetailMain(project, projects, locale.language, "../../projects.html"));
 
   html = setLanguageToggle(html, locale.language, locale.language === "en" ? `../../../projects/${encodeURIComponent(project.id)}/` : `../../en/projects/${encodeURIComponent(project.id)}/`);
-  html = setHeadMeta(html, `${project.name} · Ronnie Wong`, truncate(project.summary), projectCanonical(project, locale.language));
-  html = injectAlternateLinks(html, path, locale.language);
-  html = injectHead(html, projectJsonLd(project, locale.language));
+  html = applySeo(html, {
+    language: locale.language,
+    path,
+    title: `${project.name} · Ronnie Wong`,
+    description: truncate(project.summary),
+    type: "article",
+    jsonLd: [
+      personJsonLd(locale.language),
+      creativeWorkJsonLd({
+        language: locale.language,
+        path,
+        name: project.name,
+        description: project.summary,
+        keywords: project.tags,
+        about: project.type,
+        sameAs: publicSurfaceItems(project).map((surface) => surface.href).filter((href): href is string => Boolean(href)),
+      }),
+      breadcrumbJsonLd([
+        { name: "Ronnie Wong", url: canonicalUrl("", locale.language) },
+        { name: "Projects", url: canonicalUrl("projects.html", locale.language) },
+        { name: project.name, url: projectCanonical(project, locale.language) },
+      ]),
+    ],
+  });
   return relativizeProjectDetail(html, "../../", rootPath);
 }
 
 function renderSimplePage(source: string, locale: Locale, path: string, altUrl: string, title: string, description: string): string {
   let html = preparePage(source, locale, altUrl, locale.rootPath);
-  html = setHeadMeta(html, title, description, pageUrl(path, locale.language));
-  return injectAlternateLinks(html, path, locale.language);
+  const isResume = path === "resume.html";
+  return applySeo(html, {
+    language: locale.language,
+    path,
+    title,
+    description,
+    type: isResume ? "profile" : "website",
+    jsonLd: isResume
+      ? [
+          personJsonLd(locale.language),
+          profilePageJsonLd(locale.language, path, description),
+          breadcrumbJsonLd([
+            { name: "Ronnie Wong", url: canonicalUrl("", locale.language) },
+            { name: "Resume", url: canonicalUrl(path, locale.language) },
+          ]),
+        ]
+      : [personJsonLd(locale.language), websiteJsonLd(locale.language)],
+  });
 }
 
 function renderSitemap(projects: Project[]): string {
+  const lastmod = new Date().toISOString().slice(0, 10);
   const urls = [
     `${siteUrl}/`,
     `${siteUrl}/projects.html`,
@@ -792,7 +799,7 @@ function renderSitemap(projects: Project[]): string {
   ];
 
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
-    .map((url) => `  <url><loc>${escapeHtml(url)}</loc></url>`)
+    .map((url) => `  <url><loc>${escapeHtml(url)}</loc><lastmod>${lastmod}</lastmod></url>`)
     .join("\n")}\n</urlset>\n`;
 }
 

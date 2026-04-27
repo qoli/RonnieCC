@@ -10,6 +10,8 @@ This repository powers [ronniewong.cc](https://ronniewong.cc), a static public i
 - `projects.html` lists current, exploration, and historical projects.
 - `project.html` remains the legacy dynamic project detail fallback.
 - `src/build.ts` generates static HTML into `dist/`, including clean project URLs such as `/projects/syncnext/`.
+- `src/seo.ts` centralizes canonical URLs, `hreflang`, Open Graph, Twitter metadata, identity links, and JSON-LD.
+- `og-image.svg` and `og-image.png` provide the default social preview image.
 - `blog.html` renders public writing synced from Notion.
 - `resume.html` presents the public resume.
 
@@ -44,7 +46,7 @@ The generated `dist/` folder contains static HTML for:
 - `robots.txt`
 
 The default language is the mixed Chinese/English site. English pages live under `/en/`.
-Both language versions use their own canonical URLs and reciprocal `hreflang` links.
+Both language versions use their own canonical URLs and reciprocal `hreflang` links. The generated pages also include Open Graph, Twitter card metadata, `Person`/`WebSite`/`CollectionPage`/`CreativeWork` JSON-LD, and a sitemap with `lastmod`.
 
 ## Local Preview
 

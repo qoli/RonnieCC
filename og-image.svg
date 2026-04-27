@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f4efe4"/>
+  <path d="M96 114h1008M96 516h1008" fill="none" stroke="#2d2923" stroke-width="2" opacity=".22"/>
+  <g fill="none" stroke="#2d2923" stroke-width="2.5" opacity=".34">
+    <circle cx="990" cy="192" r="58"/>
+    <path d="M932 192h116M990 134v116"/>
+  </g>
+  <text x="96" y="196" fill="#11100e" font-family="Montserrat, Arial, sans-serif" font-size="38" font-weight="600" letter-spacing="10">RONNIE WONG</text>
+  <text x="96" y="312" fill="#11100e" font-family="Montserrat, Arial, sans-serif" font-size="70" font-weight="300" letter-spacing="-1">Public index</text>
+  <text x="96" y="396" fill="#11100e" font-family="Montserrat, Arial, sans-serif" font-size="70" font-weight="300" letter-spacing="-1">for useful systems.</text>
+  <text x="96" y="470" fill="#4f493f" font-family="Montserrat, Arial, sans-serif" font-size="26" font-weight="400">Projects / Writings / Experiments / External traces</text>
+</svg>
