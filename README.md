@@ -75,10 +75,10 @@ sh scripts/update-blog.sh
 
 ## Hosting
 
-- GitHub Pages source: `main` branch, repository root.
+- GitHub Pages source: GitHub Actions.
+- `.github/workflows/deploy-pages.yml` builds the site with Bun and deploys the generated `dist/` artifact.
 - Custom domain: `ronniewong.cc`.
 - DNS is managed in Cloudflare.
-- The static generator currently builds to `dist/`; switching GitHub Pages deployment to the generated artifact is the next deployment step.
 
 ## Repository Metadata
 
