@@ -520,6 +520,11 @@ function tagList(tags) {
 }
 
 function projectUrl(project) {
+  if (document.documentElement.dataset.staticProjectUrls === "true") {
+    const rootPath = document.body?.dataset.rootPath || "";
+    return `${rootPath}projects/${encodeURIComponent(project.id)}/`;
+  }
+
   return `project.html?id=${encodeURIComponent(project.id)}`;
 }
 
@@ -657,7 +662,7 @@ function renderProjectDetail(projects) {
   if (!mount) return;
 
   const params = new URLSearchParams(window.location.search);
-  const id = params.get("id");
+  const id = document.body.dataset.projectId || params.get("id");
   const project = projects.find((item) => item.id === id);
 
   if (!project) {
@@ -809,9 +814,10 @@ function renderAll() {
 async function boot() {
   setupThemeToggle();
   setupLanguageToggle();
+  const rootPath = document.body?.dataset.rootPath || "";
   const [projectsResponse, blogResponse] = await Promise.all([
-    fetch("content/projects.seed.json", { cache: "no-store" }),
-    fetch("content/blog.seed.json", { cache: "no-store" }),
+    fetch(`${rootPath}content/projects.seed.json`, { cache: "no-store" }),
+    fetch(`${rootPath}content/blog.seed.json`, { cache: "no-store" }),
   ]);
   sourceProjects = await projectsResponse.json();
   if (blogResponse.ok) {

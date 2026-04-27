@@ -8,7 +8,8 @@ This repository powers [ronniewong.cc](https://ronniewong.cc), a static public i
 
 - `index.html` presents the primary statement and selected capability signals.
 - `projects.html` lists current, exploration, and historical projects.
-- `project.html` renders project detail pages from `content/projects.seed.json`.
+- `project.html` remains the legacy dynamic project detail fallback.
+- `src/build.ts` generates static HTML into `dist/`, including clean project URLs such as `/projects/syncnext/`.
 - `blog.html` renders public writing synced from Notion.
 - `resume.html` presents the public resume.
 
@@ -19,19 +20,40 @@ This repository powers [ronniewong.cc](https://ronniewong.cc), a static public i
 - `docs/data-sources.md` records the working content model and source decisions.
 - `docs/visual-direction.md` records the current design direction.
 
-## Local Preview
+## Static Build
 
-This is a static site. Serve the folder with any static server:
+The production direction is a small Bun-powered static index generator, without an application framework.
 
 ```sh
-python3 -m http.server 4173 --bind 127.0.0.1
+bun run build
+```
+
+The generated `dist/` folder contains static HTML for:
+
+- `index.html`
+- `projects.html`
+- `blog.html`
+- `resume.html`
+- every project detail page under `projects/<project-id>/`
+- `sitemap.xml`
+- `robots.txt`
+
+## Local Preview
+
+Build and serve `dist/`:
+
+```sh
+bun run build
+bun run preview:dist
 ```
 
 Then open:
 
 ```text
-http://127.0.0.1:4173/
+http://127.0.0.1:4180/
 ```
+
+The source HTML files can still be served directly for development fallback, but SEO-facing checks should use `dist/`.
 
 ## Blog Sync
 
@@ -46,6 +68,7 @@ sh scripts/update-blog.sh
 - GitHub Pages source: `main` branch, repository root.
 - Custom domain: `ronniewong.cc`.
 - DNS is managed in Cloudflare.
+- The static generator currently builds to `dist/`; switching GitHub Pages deployment to the generated artifact is the next deployment step.
 
 ## Repository Metadata
 
