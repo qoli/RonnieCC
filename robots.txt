@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://ronniewong.cc/sitemap.xml
+Sitemap: https://ronniewong.cc/sitemap-gsc.xml
