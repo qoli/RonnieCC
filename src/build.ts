@@ -798,7 +798,7 @@ function renderSitemap(projects: Project[]): string {
     ...projects.flatMap((project) => [projectCanonical(project, "mix"), projectCanonical(project, "en")]),
   ];
 
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
     .map(
       (url) => `  <url>
     <loc>${escapeHtml(url)}</loc>
@@ -806,140 +806,6 @@ function renderSitemap(projects: Project[]): string {
   </url>`
     )
     .join("\n")}\n</urlset>\n`;
-}
-
-function renderSitemapStylesheet(): string {
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <xsl:output method="html" encoding="UTF-8" indent="yes"/>
-  <xsl:template match="/">
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Ronnie Wong Sitemap</title>
-        <style>
-          body {
-            margin: 0;
-            padding: 48px;
-            background: #f7f3ea;
-            color: #11110f;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-          }
-          main {
-            max-width: 920px;
-            margin: 0 auto;
-          }
-          h1 {
-            margin: 0 0 12px;
-            font-size: clamp(32px, 6vw, 64px);
-            font-weight: 300;
-            letter-spacing: 0;
-          }
-          p {
-            margin: 0 0 40px;
-            color: #6e695f;
-            font-size: 16px;
-            line-height: 1.7;
-          }
-          table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 14px;
-          }
-          th {
-            color: #6e695f;
-            font-size: 12px;
-            letter-spacing: .08em;
-            text-transform: uppercase;
-            text-align: left;
-          }
-          th, td {
-            padding: 14px 0;
-            border-bottom: 1px solid #ded7ca;
-            vertical-align: top;
-          }
-          a {
-            color: inherit;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-          }
-          .date {
-            color: #6e695f;
-            white-space: nowrap;
-          }
-          @media (prefers-color-scheme: dark) {
-            body {
-              background: #11110f;
-              color: #e8e1d5;
-            }
-            p, th, .date {
-              color: #928c82;
-            }
-            th, td {
-              border-bottom-color: #2d2a25;
-            }
-          }
-          @media (max-width: 640px) {
-            body {
-              padding: 32px 20px;
-            }
-            table, tbody, tr, td {
-              display: block;
-            }
-            thead {
-              display: none;
-            }
-            td {
-              padding: 10px 0;
-              border-bottom: 0;
-              overflow-wrap: anywhere;
-            }
-            tr {
-              padding: 12px 0;
-              border-bottom: 1px solid #ded7ca;
-            }
-            @media (prefers-color-scheme: dark) {
-              tr {
-                border-bottom-color: #2d2a25;
-              }
-            }
-          }
-        </style>
-      </head>
-      <body>
-        <main>
-          <h1>Sitemap</h1>
-          <p>This is the XML sitemap for ronniewong.cc. Search engines read the XML source; this view is only for easier human inspection.</p>
-          <table>
-            <thead>
-              <tr>
-                <th>URL</th>
-                <th>Last modified</th>
-              </tr>
-            </thead>
-            <tbody>
-              <xsl:for-each select="sitemap:urlset/sitemap:url">
-                <tr>
-                  <td>
-                    <a>
-                      <xsl:attribute name="href"><xsl:value-of select="sitemap:loc"/></xsl:attribute>
-                      <xsl:value-of select="sitemap:loc"/>
-                    </a>
-                  </td>
-                  <td class="date"><xsl:value-of select="sitemap:lastmod"/></td>
-                </tr>
-              </xsl:for-each>
-            </tbody>
-          </table>
-        </main>
-      </body>
-    </html>
-  </xsl:template>
-</xsl:stylesheet>
-`;
 }
 
 async function build(): Promise<void> {
@@ -979,7 +845,6 @@ async function build(): Promise<void> {
   }
 
   await writeOutput("sitemap.xml", renderSitemap(projects));
-  await writeOutput("sitemap.xsl", renderSitemapStylesheet());
   await writeOutput("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`);
 
   console.log(`Built dist with ${projects.length} projects and ${blogData.posts.length} blog posts.`);
