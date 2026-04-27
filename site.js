@@ -442,6 +442,12 @@ function setupLanguageToggle() {
 
   sync();
   button.addEventListener("click", () => {
+    if (button.dataset.altLanguageUrl) {
+      localStorage.setItem(languageKey, activeLanguage === "en" ? "mix" : "en");
+      window.location.href = button.dataset.altLanguageUrl;
+      return;
+    }
+
     activeLanguage = activeLanguage === "en" ? "mix" : "en";
     localStorage.setItem(languageKey, activeLanguage);
     sync();
@@ -522,7 +528,8 @@ function tagList(tags) {
 function projectUrl(project) {
   if (document.documentElement.dataset.staticProjectUrls === "true") {
     const rootPath = document.body?.dataset.rootPath || "";
-    return `${rootPath}projects/${encodeURIComponent(project.id)}/`;
+    const projectUrlPrefix = document.body?.dataset.projectUrlPrefix ?? rootPath;
+    return `${projectUrlPrefix}projects/${encodeURIComponent(project.id)}/`;
   }
 
   return `project.html?id=${encodeURIComponent(project.id)}`;
@@ -812,6 +819,9 @@ function renderAll() {
 }
 
 async function boot() {
+  if (document.body?.dataset.staticLanguage) {
+    activeLanguage = document.body.dataset.staticLanguage === "en" ? "en" : "mix";
+  }
   setupThemeToggle();
   setupLanguageToggle();
   const rootPath = document.body?.dataset.rootPath || "";

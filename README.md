@@ -31,12 +31,20 @@ bun run build
 The generated `dist/` folder contains static HTML for:
 
 - `index.html`
+- `en/index.html`
 - `projects.html`
+- `en/projects.html`
 - `blog.html`
+- `en/blog.html`
 - `resume.html`
+- `en/resume.html`
 - every project detail page under `projects/<project-id>/`
+- every English project detail page under `en/projects/<project-id>/`
 - `sitemap.xml`
 - `robots.txt`
+
+The default language is the mixed Chinese/English site. English pages live under `/en/`.
+Both language versions use their own canonical URLs and reciprocal `hreflang` links.
 
 ## Local Preview
 

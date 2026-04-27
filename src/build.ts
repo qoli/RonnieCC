@@ -2,6 +2,14 @@ import { mkdir, rm, copyFile, readdir, readFile, writeFile } from "node:fs/promi
 import { dirname, join } from "node:path";
 
 type ProjectCategory = "current" | "exploration" | "history";
+type Language = "mix" | "en";
+
+type Locale = {
+  language: Language;
+  htmlLang: string;
+  outputPrefix: string;
+  rootPath: string;
+};
 
 type ProjectLink = {
   label: string;
@@ -47,6 +55,10 @@ type Project = {
   links: ProjectLink[];
 };
 
+type ProjectCopy = Partial<Project> & {
+  detail?: Partial<Project["detail"]>;
+};
+
 type BlogPost = {
   id: string;
   slug: string;
@@ -61,11 +73,83 @@ const root = process.cwd();
 const outDir = join(root, "dist");
 const siteUrl = "https://ronniewong.cc";
 const categoryOrder: ProjectCategory[] = ["current", "exploration", "history"];
-const categoryLabels: Record<ProjectCategory, string> = {
+const categoryLabelsMix: Record<ProjectCategory, string> = {
   current: "現在",
   exploration: "探索",
   history: "歷史",
 };
+const categoryLabelsEn: Record<ProjectCategory, string> = {
+  current: "Current Projects",
+  exploration: "Explorations",
+  history: "Historical Projects",
+};
+
+const locales: Record<Language, Locale> = {
+  mix: {
+    language: "mix",
+    htmlLang: "zh-Hant",
+    outputPrefix: "",
+    rootPath: "",
+  },
+  en: {
+    language: "en",
+    htmlLang: "en",
+    outputPrefix: "en/",
+    rootPath: "../",
+  },
+};
+
+const localeCopy = {
+  mix: {
+    projectsIntro: "這裡按生命週期整理：現在、探索、歷史。Tag 用來說明能力、平台、形態和資料狀態。",
+    blogIntro: "一組公開筆記，用來保留產品工程、Apple 平台、AI workflow 和設計判斷的上下文。",
+    blogHeading: "Published notes",
+    blogEmpty: "目前沒有公開文章。",
+    allProjects: "All Projects",
+    detailHeadings: {
+      narrative: "設計與工程判斷",
+      system: "組件和資料可見性",
+      surface: "公開工作面",
+      practice: "Practice",
+    },
+    categoryLabels: categoryLabelsMix,
+    filters: {
+      all: "All",
+      current: "現在",
+      exploration: "探索",
+      history: "歷史",
+    },
+  },
+  en: {
+    projectsIntro: "Projects are organized by lifecycle: current systems, explorations, and historical work. Tags describe capability, platform, format, and source status.",
+    blogIntro: "Public notes that keep context around product engineering, Apple platforms, AI workflows, and design judgement.",
+    blogHeading: "Published notes",
+    blogEmpty: "No public notes are available yet.",
+    allProjects: "All Projects",
+    detailHeadings: {
+      narrative: "Design and engineering judgement",
+      system: "Components and visibility",
+      surface: "Public surfaces",
+      practice: "Practice",
+    },
+    categoryLabels: categoryLabelsEn,
+    filters: {
+      all: "All",
+      current: "Current",
+      exploration: "Explorations",
+      history: "History",
+    },
+  },
+} satisfies Record<Language, {
+  projectsIntro: string;
+  blogIntro: string;
+  blogHeading: string;
+  blogEmpty: string;
+  allProjects: string;
+  detailHeadings: Record<"narrative" | "system" | "surface" | "practice", string>;
+  categoryLabels: Record<ProjectCategory, string>;
+  filters: Record<"all" | ProjectCategory, string>;
+}>;
 
 const projectGlyphs: Record<string, string> = {
   syncnext: `
@@ -153,8 +237,14 @@ function projectPath(project: Project, prefix = ""): string {
   return `${prefix}projects/${encodeURIComponent(project.id)}/`;
 }
 
-function projectCanonical(project: Project): string {
-  return `${siteUrl}/projects/${encodeURIComponent(project.id)}/`;
+function pageUrl(path: string, language: Language): string {
+  const prefix = language === "en" ? "/en/" : "/";
+  if (!path) return `${siteUrl}${prefix}`;
+  return `${siteUrl}${prefix}${path}`;
+}
+
+function projectCanonical(project: Project, language: Language): string {
+  return pageUrl(`projects/${encodeURIComponent(project.id)}/`, language);
 }
 
 function truncate(value: string, max = 160): string {
@@ -162,8 +252,13 @@ function truncate(value: string, max = 160): string {
   return text.length <= max ? text : `${text.slice(0, max - 1).trim()}…`;
 }
 
-function withStaticMode(html: string): string {
-  return html.replace("<html lang=\"zh-Hant\">", "<html lang=\"zh-Hant\" data-static-project-urls=\"true\">");
+function withStaticMode(html: string, locale: Locale): string {
+  return html
+    .replace("<html lang=\"zh-Hant\">", `<html lang="${locale.htmlLang}" data-static-project-urls="true">`)
+    .replace(
+      'document.documentElement.dataset.language = localStorage.getItem("site-language") || "mix";',
+      `document.documentElement.dataset.language = "${locale.language}";`
+    );
 }
 
 function setHeadMeta(html: string, title: string, description: string, canonical: string): string {
@@ -180,9 +275,93 @@ function injectHead(html: string, content: string): string {
   return html.replace("</head>", `${content}\n  </head>`);
 }
 
+function alternateLinks(path: string, language: Language): string {
+  return [
+    `    <link rel="alternate" hreflang="zh-Hant" href="${pageUrl(path, "mix")}">`,
+    `    <link rel="alternate" hreflang="en" href="${pageUrl(path, "en")}">`,
+    `    <link rel="alternate" hreflang="x-default" href="${pageUrl(path, "mix")}">`,
+  ]
+    .filter((line) => (language === "mix" ? true : true))
+    .join("\n");
+}
+
+function injectAlternateLinks(html: string, path: string, language: Language): string {
+  return injectHead(html, alternateLinks(path, language));
+}
+
 function jsonLd(data: unknown): string {
   const json = JSON.stringify(data).replaceAll("</script", "<\\/script");
   return `    <script type="application/ld+json">${json}</script>`;
+}
+
+function extractConstObject(source: string, name: string): string {
+  const startMarker = `const ${name} = `;
+  const start = source.indexOf(startMarker);
+  if (start === -1) throw new Error(`Cannot find ${name} in site.js`);
+
+  const objectStart = source.indexOf("{", start + startMarker.length);
+  let depth = 0;
+  let quote: string | null = null;
+  let escaped = false;
+
+  for (let index = objectStart; index < source.length; index += 1) {
+    const char = source[index];
+
+    if (quote) {
+      if (escaped) {
+        escaped = false;
+      } else if (char === "\\") {
+        escaped = true;
+      } else if (char === quote) {
+        quote = null;
+      }
+      continue;
+    }
+
+    if (char === '"' || char === "'" || char === "`") {
+      quote = char;
+      continue;
+    }
+
+    if (char === "{") depth += 1;
+    if (char === "}") depth -= 1;
+    if (depth === 0) return source.slice(objectStart, index + 1);
+  }
+
+  throw new Error(`Cannot parse ${name} from site.js`);
+}
+
+async function readProjectCopyEn(): Promise<Record<string, ProjectCopy>> {
+  const source = await readFile(join(root, "site.js"), "utf8");
+  const objectLiteral = extractConstObject(source, "projectCopyEn");
+  return Function(`"use strict"; return (${objectLiteral});`)() as Record<string, ProjectCopy>;
+}
+
+function mergeListByIndex<T extends Record<string, unknown>>(baseItems: T[], overrideItems?: Partial<T>[]): T[] {
+  if (!overrideItems) return baseItems;
+  return baseItems.map((item, index) => ({ ...item, ...(overrideItems[index] || {}) }) as T);
+}
+
+function localizedProject(project: Project, language: Language, copyEn: Record<string, ProjectCopy>): Project {
+  if (language !== "en") return project;
+  const copy = copyEn[project.id];
+  if (!copy) return { ...project, categoryLabel: categoryLabelsEn[project.category] };
+
+  return {
+    ...project,
+    ...copy,
+    categoryLabel: copy.categoryLabel || categoryLabelsEn[project.category],
+    detail: {
+      ...project.detail,
+      ...(copy.detail || {}),
+      sections: mergeListByIndex(project.detail.sections, copy.detail?.sections),
+      components: mergeListByIndex(project.detail.components, copy.detail?.components),
+    },
+  };
+}
+
+function localizedProjects(projects: Project[], language: Language, copyEn: Record<string, ProjectCopy>): Project[] {
+  return projects.map((project) => localizedProject(project, language, copyEn));
 }
 
 function projectVisual(project: Project, index: number, variant: "card" | "detail" = "card"): string {
@@ -227,7 +406,8 @@ function projectCard(project: Project, index: number, prefix = ""): string {
   `;
 }
 
-function groupedProjects(projects: Project[], prefix = ""): string {
+function groupedProjects(projects: Project[], language: Language, prefix = ""): string {
+  const ui = localeCopy[language];
   return categoryOrder
     .map((category) => {
       const items = projects.filter((project) => project.category === category);
@@ -237,7 +417,7 @@ function groupedProjects(projects: Project[], prefix = ""): string {
         <section class="project-group" id="${category === "history" ? "history" : category}">
           <div class="section-header">
             <p class="eyebrow">${escapeHtml(category)}</p>
-            <h2>${escapeHtml(categoryLabels[category])}</h2>
+            <h2>${escapeHtml(ui.categoryLabels[category])}</h2>
           </div>
           <div class="project-grid">
             ${items.map((project, index) => projectCard(project, index, prefix)).join("")}
@@ -306,9 +486,10 @@ function surfaceMarkup(surface: ProjectSurface): string {
   `;
 }
 
-function projectDetailMain(project: Project, projects: Project[]): string {
+function projectDetailMain(project: Project, projects: Project[], language: Language, allProjectsHref: string): string {
   const projectIndex = projects.findIndex((item) => item.id === project.id);
   const surfaces = publicSurfaceItems(project);
+  const ui = localeCopy[language];
 
   return `<main id="project-detail" aria-live="polite">
     <section class="page-hero compact detail-hero" aria-labelledby="detail-title">
@@ -334,11 +515,11 @@ function projectDetailMain(project: Project, projects: Project[]): string {
           <strong>${escapeHtml(project.categoryLabel)}</strong>
         </div>
         <div class="detail-aside-block">
-          <span>Practice</span>
+          <span>${escapeHtml(ui.detailHeadings.practice)}</span>
           <p>${escapeHtml(project.capability)}</p>
         </div>
         <div class="project-links vertical">
-          <a href="../../projects.html">All Projects</a>
+          <a href="${escapeAttr(allProjectsHref)}">${escapeHtml(ui.allProjects)}</a>
           ${project.links.map((link) => `<a href="${escapeAttr(link.href)}">${escapeHtml(link.label)}</a>`).join("")}
         </div>
       </aside>
@@ -347,7 +528,7 @@ function projectDetailMain(project: Project, projects: Project[]): string {
         <section class="detail-section">
           <div class="section-header">
             <p class="eyebrow">Narrative</p>
-            <h2>設計與工程判斷</h2>
+            <h2>${escapeHtml(ui.detailHeadings.narrative)}</h2>
           </div>
           <div class="detail-notes">
             ${detailSections(project.detail.sections)}
@@ -357,7 +538,7 @@ function projectDetailMain(project: Project, projects: Project[]): string {
         <section class="detail-section">
           <div class="section-header">
             <p class="eyebrow">System</p>
-            <h2>組件和資料可見性</h2>
+            <h2>${escapeHtml(ui.detailHeadings.system)}</h2>
           </div>
           <div class="table-wrap">
             <table class="kami-table">
@@ -377,7 +558,7 @@ function projectDetailMain(project: Project, projects: Project[]): string {
         <section class="detail-section">
           <div class="section-header">
             <p class="eyebrow">Public URLs</p>
-            <h2>公開工作面</h2>
+            <h2>${escapeHtml(ui.detailHeadings.surface)}</h2>
           </div>
           <div class="surface-list">
             ${surfaces.map(surfaceMarkup).join("")}
@@ -388,9 +569,9 @@ function projectDetailMain(project: Project, projects: Project[]): string {
   </main>`;
 }
 
-function blogList(posts: BlogPost[]): string {
+function blogList(posts: BlogPost[], language: Language): string {
   const visiblePosts = posts.filter((post) => post.public !== false);
-  if (!visiblePosts.length) return `<p class="blog-empty">目前沒有公開文章。</p>`;
+  if (!visiblePosts.length) return `<p class="blog-empty">${escapeHtml(localeCopy[language].blogEmpty)}</p>`;
 
   const years = [...new Set(visiblePosts.map((post) => post.year || "Notes"))];
   return years
@@ -419,25 +600,33 @@ function blogList(posts: BlogPost[]): string {
     .join("");
 }
 
-function relativizeProjectDetail(html: string): string {
+function relativizeAssets(html: string, prefix: string): string {
   return html
-    .replaceAll('href="index.html"', 'href="../../index.html"')
-    .replaceAll('href="projects.html"', 'href="../../projects.html"')
-    .replaceAll('href="blog.html"', 'href="../../blog.html"')
-    .replaceAll('href="resume.html"', 'href="../../resume.html"')
-    .replaceAll('href="styles.css"', 'href="../../styles.css"')
-    .replaceAll('href="favicon.ico"', 'href="../../favicon.ico"')
-    .replaceAll('href="favicon.svg"', 'href="../../favicon.svg"')
-    .replaceAll('src="site.js"', 'src="../../site.js"');
+    .replaceAll('href="styles.css"', `href="${prefix}styles.css"`)
+    .replaceAll('href="favicon.ico"', `href="${prefix}favicon.ico"`)
+    .replaceAll('href="favicon.svg"', `href="${prefix}favicon.svg"`)
+    .replaceAll('src="site.js"', `src="${prefix}site.js"`);
 }
 
-function projectJsonLd(project: Project): string {
+function relativizeProjectDetail(html: string, navPrefix: string, assetPrefix: string): string {
+  return html
+    .replaceAll('href="index.html"', `href="${navPrefix}index.html"`)
+    .replaceAll('href="projects.html"', `href="${navPrefix}projects.html"`)
+    .replaceAll('href="blog.html"', `href="${navPrefix}blog.html"`)
+    .replaceAll('href="resume.html"', `href="${navPrefix}resume.html"`)
+    .replaceAll('href="styles.css"', `href="${assetPrefix}styles.css"`)
+    .replaceAll('href="favicon.ico"', `href="${assetPrefix}favicon.ico"`)
+    .replaceAll('href="favicon.svg"', `href="${assetPrefix}favicon.svg"`)
+    .replaceAll('src="site.js"', `src="${assetPrefix}site.js"`);
+}
+
+function projectJsonLd(project: Project, language: Language): string {
   return jsonLd({
     "@context": "https://schema.org",
     "@type": "CreativeWork",
     name: project.name,
     description: project.summary,
-    url: projectCanonical(project),
+    url: projectCanonical(project, language),
     creator: {
       "@type": "Person",
       name: "Ronnie Wong",
@@ -480,12 +669,44 @@ async function copyStaticAssets(): Promise<void> {
   }
 }
 
-function renderProjectsPage(source: string, projects: Project[]): string {
-  const html = withStaticMode(source).replace(
+function withStaticBody(html: string, locale: Locale): string {
+  return html.replace(
+    /<body data-page="([^"]+)">/,
+    `<body data-page="$1" data-static-language="${locale.language}" data-root-path="${locale.rootPath}" data-project-url-prefix="">`
+  );
+}
+
+function setLanguageToggle(html: string, language: Language, altUrl: string): string {
+  const label = language === "en" ? "Switch to mixed Chinese and English" : "Switch to English";
+  const text = language === "en" ? "Mixed" : "EN";
+  return html.replace(
+    /<button class="language-toggle" type="button" aria-label="[^"]+" data-language-toggle>[^<]*<\/button>/,
+    `<button class="language-toggle" type="button" aria-label="${label}" data-language-toggle data-alt-language-url="${escapeAttr(altUrl)}">${text}</button>`
+  );
+}
+
+function preparePage(html: string, locale: Locale, altUrl: string, assetPrefix = ""): string {
+  return setLanguageToggle(relativizeAssets(withStaticBody(withStaticMode(html, locale), locale), assetPrefix), locale.language, altUrl);
+}
+
+function renderProjectsPage(source: string, projects: Project[], locale: Locale): string {
+  const ui = localeCopy[locale.language];
+  let html = preparePage(source, locale, locale.language === "en" ? "../projects.html" : "en/projects.html", locale.rootPath)
+    .replace(
+      /<p>\s*這裡按生命週期整理：現在、探索、歷史。Tag 用來說明能力、平台、形態和資料狀態。\s*<\/p>/,
+      `<p>\n          ${escapeHtml(ui.projectsIntro)}\n        </p>`
+    )
+    .replace(/<button class="filter is-active" type="button" data-filter="all">[^<]+<\/button>/, `<button class="filter is-active" type="button" data-filter="all">${escapeHtml(ui.filters.all)}</button>`)
+    .replace(/<button class="filter" type="button" data-filter="current">[^<]+<\/button>/, `<button class="filter" type="button" data-filter="current">${escapeHtml(ui.filters.current)}</button>`)
+    .replace(/<button class="filter" type="button" data-filter="exploration">[^<]+<\/button>/, `<button class="filter" type="button" data-filter="exploration">${escapeHtml(ui.filters.exploration)}</button>`)
+    .replace(/<button class="filter" type="button" data-filter="history">[^<]+<\/button>/, `<button class="filter" type="button" data-filter="history">${escapeHtml(ui.filters.history)}</button>`)
+    .replace(
     '<div class="grouped-projects" id="project-groups" aria-live="polite"></div>',
-    `<div class="grouped-projects" id="project-groups" aria-live="polite">${groupedProjects(projects)}</div>`
+    `<div class="grouped-projects" id="project-groups" aria-live="polite">${groupedProjects(projects, locale.language)}</div>`
   );
 
+  html = setHeadMeta(html, "Projects · Ronnie Wong", "Projects in Ronnie Wong's public index, collecting current work, experiments, historical design work, and external traces across the web.", pageUrl("projects.html", locale.language));
+  html = injectAlternateLinks(html, "projects.html", locale.language);
   return injectHead(
     html,
     jsonLd({
@@ -496,19 +717,28 @@ function renderProjectsPage(source: string, projects: Project[]): string {
         "@type": "ListItem",
         position: index + 1,
         name: project.name,
-        url: projectCanonical(project),
+        url: projectCanonical(project, locale.language),
       })),
     })
   );
 }
 
-function renderBlogPage(source: string, posts: BlogPost[]): string {
+function renderBlogPage(source: string, posts: BlogPost[], locale: Locale): string {
+  const ui = localeCopy[locale.language];
   const visiblePosts = posts.filter((post) => post.public !== false);
-  const html = withStaticMode(source).replace(
+  let html = preparePage(source, locale, locale.language === "en" ? "../blog.html" : "en/blog.html", locale.rootPath)
+    .replace(
+      /<p>\s*一組公開筆記，用來保留產品工程、Apple 平台、AI workflow 和設計判斷的上下文。\s*<\/p>/,
+      `<p>\n          ${escapeHtml(ui.blogIntro)}\n        </p>`
+    )
+    .replace(/<h2 id="blog-list-title">[^<]+<\/h2>/, `<h2 id="blog-list-title">${escapeHtml(ui.blogHeading)}</h2>`)
+    .replace(
     '<div class="blog-list" id="blog-list" aria-live="polite"></div>',
-    `<div class="blog-list" id="blog-list" aria-live="polite">${blogList(visiblePosts)}</div>`
+    `<div class="blog-list" id="blog-list" aria-live="polite">${blogList(visiblePosts, locale.language)}</div>`
   );
 
+  html = setHeadMeta(html, "Blog · Ronnie Wong", "Writing in Ronnie Wong's public index, collected from public notes about engineering, design, Apple platforms, AI workflows, and product systems.", pageUrl("blog.html", locale.language));
+  html = injectAlternateLinks(html, "blog.html", locale.language);
   return injectHead(
     html,
     jsonLd({
@@ -525,17 +755,27 @@ function renderBlogPage(source: string, posts: BlogPost[]): string {
   );
 }
 
-function renderProjectPage(source: string, project: Project, projects: Project[]): string {
-  let html = withStaticMode(source)
+function renderProjectPage(source: string, project: Project, projects: Project[], locale: Locale): string {
+  const path = `projects/${encodeURIComponent(project.id)}/`;
+  const rootPath = locale.language === "en" ? "../../../" : "../../";
+  let html = withStaticMode(source, locale)
     .replace(
       '<body data-page="project-detail">',
-      `<body data-page="project-detail" data-project-id="${escapeAttr(project.id)}" data-root-path="../../">`
+      `<body data-page="project-detail" data-project-id="${escapeAttr(project.id)}" data-static-language="${locale.language}" data-root-path="${rootPath}">`
     )
-    .replace(/<main id="project-detail" aria-live="polite">[\s\S]*?<\/main>/, projectDetailMain(project, projects));
+    .replace(/<main id="project-detail" aria-live="polite">[\s\S]*?<\/main>/, projectDetailMain(project, projects, locale.language, "../../projects.html"));
 
-  html = setHeadMeta(html, `${project.name} · Ronnie Wong`, truncate(project.summary), projectCanonical(project));
-  html = injectHead(html, projectJsonLd(project));
-  return relativizeProjectDetail(html);
+  html = setLanguageToggle(html, locale.language, locale.language === "en" ? `../../../projects/${encodeURIComponent(project.id)}/` : `../../en/projects/${encodeURIComponent(project.id)}/`);
+  html = setHeadMeta(html, `${project.name} · Ronnie Wong`, truncate(project.summary), projectCanonical(project, locale.language));
+  html = injectAlternateLinks(html, path, locale.language);
+  html = injectHead(html, projectJsonLd(project, locale.language));
+  return relativizeProjectDetail(html, "../../", rootPath);
+}
+
+function renderSimplePage(source: string, locale: Locale, path: string, altUrl: string, title: string, description: string): string {
+  let html = preparePage(source, locale, altUrl, locale.rootPath);
+  html = setHeadMeta(html, title, description, pageUrl(path, locale.language));
+  return injectAlternateLinks(html, path, locale.language);
 }
 
 function renderSitemap(projects: Project[]): string {
@@ -544,7 +784,11 @@ function renderSitemap(projects: Project[]): string {
     `${siteUrl}/projects.html`,
     `${siteUrl}/blog.html`,
     `${siteUrl}/resume.html`,
-    ...projects.map(projectCanonical),
+    `${siteUrl}/en/`,
+    `${siteUrl}/en/projects.html`,
+    `${siteUrl}/en/blog.html`,
+    `${siteUrl}/en/resume.html`,
+    ...projects.flatMap((project) => [projectCanonical(project, "mix"), projectCanonical(project, "en")]),
   ];
 
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
@@ -555,25 +799,37 @@ function renderSitemap(projects: Project[]): string {
 async function build(): Promise<void> {
   const projects = await readJson<Project[]>("content/projects.seed.json");
   const blogData = await readJson<{ posts: BlogPost[] }>("content/blog.seed.json");
+  const projectCopyEn = await readProjectCopyEn();
 
   await rm(outDir, { recursive: true, force: true });
   await mkdir(outDir, { recursive: true });
   await copyStaticAssets();
 
-  const indexHtml = withStaticMode(await readFile(join(root, "index.html"), "utf8"));
+  const indexHtml = await readFile(join(root, "index.html"), "utf8");
   const projectsHtml = await readFile(join(root, "projects.html"), "utf8");
   const projectHtml = await readFile(join(root, "project.html"), "utf8");
   const blogHtml = await readFile(join(root, "blog.html"), "utf8");
-  const resumeHtml = withStaticMode(await readFile(join(root, "resume.html"), "utf8"));
+  const resumeHtml = await readFile(join(root, "resume.html"), "utf8");
 
-  await writeOutput("index.html", indexHtml);
-  await writeOutput("projects.html", renderProjectsPage(projectsHtml, projects));
-  await writeOutput("project.html", withStaticMode(projectHtml));
-  await writeOutput("blog.html", renderBlogPage(blogHtml, blogData.posts));
-  await writeOutput("resume.html", resumeHtml);
+  const indexDescription = "This site is a public index of my projects, writings, experiments, and external traces across the web.";
+  const resumeDescription = "Resume page in Ronnie Wong's public index, summarizing the background behind the projects, writings, experiments, and external traces across the web.";
 
-  for (const project of projects) {
-    await writeOutput(`projects/${project.id}/index.html`, renderProjectPage(projectHtml, project, projects));
+  for (const language of Object.keys(locales) as Language[]) {
+    const locale = locales[language];
+    const projectsForLocale = localizedProjects(projects, language, projectCopyEn);
+
+    await writeOutput(`${locale.outputPrefix}index.html`, renderSimplePage(indexHtml, locale, "", language === "en" ? "../" : "en/", "Ronnie Wong", indexDescription));
+    await writeOutput(`${locale.outputPrefix}projects.html`, renderProjectsPage(projectsHtml, projectsForLocale, locale));
+    await writeOutput(`${locale.outputPrefix}blog.html`, renderBlogPage(blogHtml, blogData.posts, locale));
+    await writeOutput(`${locale.outputPrefix}resume.html`, renderSimplePage(resumeHtml, locale, "resume.html", language === "en" ? "../resume.html" : "en/resume.html", "Resume · Ronnie Wong", resumeDescription));
+
+    if (language === "mix") {
+      await writeOutput("project.html", preparePage(projectHtml, locale, "en/projects.html", ""));
+    }
+
+    for (const project of projectsForLocale) {
+      await writeOutput(`${locale.outputPrefix}projects/${project.id}/index.html`, renderProjectPage(projectHtml, project, projectsForLocale, locale));
+    }
   }
 
   await writeOutput("sitemap.xml", renderSitemap(projects));
