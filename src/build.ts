@@ -617,7 +617,7 @@ async function copyDirectory(source: string, target: string): Promise<void> {
 async function copyStaticAssets(): Promise<void> {
   await copyDirectory(join(root, "assets"), join(outDir, "assets"));
   await copyDirectory(join(root, "content"), join(outDir, "content"));
-  for (const file of ["styles.css", "site.js", "favicon.ico", "favicon.svg", "og-image.png", "og-image.svg", "CNAME", ".nojekyll"]) {
+  for (const file of ["styles.css", "site.js", "favicon.ico", "favicon.svg", "og-image.png", "og-image.svg", "google2a0cacaa0b72e2c3.html", "CNAME", ".nojekyll"]) {
     await copyFile(join(root, file), join(outDir, file));
   }
 }
