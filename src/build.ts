@@ -844,7 +844,9 @@ async function build(): Promise<void> {
     }
   }
 
-  await writeOutput("sitemap.xml", renderSitemap(projects));
+  const sitemap = renderSitemap(projects);
+  await writeOutput("sitemap.xml", sitemap);
+  await writeOutput("sitemap-gsc.xml", sitemap);
   await writeOutput("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`);
 
   console.log(`Built dist with ${projects.length} projects and ${blogData.posts.length} blog posts.`);
