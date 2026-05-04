@@ -12,6 +12,8 @@ import {
   websiteJsonLd,
 } from "./seo";
 
+const workerSitemapUrl = "https://ronniewong-sitemaps.ronnie.workers.dev/ronniecc.xml";
+
 type ProjectCategory = "current" | "exploration" | "history";
 type Language = "mix" | "en";
 
@@ -847,7 +849,7 @@ async function build(): Promise<void> {
   const sitemap = renderSitemap(projects);
   await writeOutput("sitemap.xml", sitemap);
   await writeOutput("sitemap-gsc.xml", sitemap);
-  await writeOutput("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\nSitemap: ${siteUrl}/sitemap-gsc.xml\n`);
+  await writeOutput("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${workerSitemapUrl}\n`);
 
   console.log(`Built dist with ${projects.length} projects and ${blogData.posts.length} blog posts.`);
 }

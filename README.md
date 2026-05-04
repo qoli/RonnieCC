@@ -46,7 +46,7 @@ The generated `dist/` folder contains static HTML for:
 - `robots.txt`
 
 The default language is the mixed Chinese/English site. English pages live under `/en/`.
-Both language versions use their own canonical URLs and reciprocal `hreflang` links. The generated pages also include Open Graph, Twitter card metadata, `Person`/`WebSite`/`CollectionPage`/`CreativeWork` JSON-LD, and a sitemap with `lastmod`.
+Both language versions use their own canonical URLs and reciprocal `hreflang` links. The generated pages also include Open Graph, Twitter card metadata, `Person`/`WebSite`/`CollectionPage`/`CreativeWork` JSON-LD, and a sitemap with `lastmod`. `robots.txt` points Googlebot to the Worker-hosted RonnieCC sitemap at `https://ronniewong-sitemaps.ronnie.workers.dev/ronniecc.xml`.
 
 ## Local Preview
 

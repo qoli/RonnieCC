@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ronniewong.cc/sitemap.xml
-Sitemap: https://ronniewong.cc/sitemap-gsc.xml
+Sitemap: https://ronniewong-sitemaps.ronnie.workers.dev/ronniecc.xml
