@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T18:27:21.273Z",
+  "generatedAt": "2026-05-04T18:43:38.817Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -7,6 +7,17 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "356c1b36c401814ba27fde6af0a8df3a",
+      "slug": "github-pages-search-console-與一個-sitemap-黑箱問題-356c1b36",
+      "title": "GitHub Pages、Search Console 與一個 sitemap 黑箱問題",
+      "tag": "aDict,Ops,Serverless,Product,Notes",
+      "year": "2026",
+      "public": true,
+      "notionUrl": "https://www.notion.so/qoli/github-pages-search-console-%E8%88%87%E4%B8%80%E5%80%8B-sitemap-%E9%BB%91%E7%AE%B1%E5%95%8F%E9%A1%8C-356c1b36c401814ba27fde6af0a8df3a?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-05-04T18:02:48.467Z",
+      "lastEditedTime": "2026-05-04T18:04:07.421Z"
+    },
     {
       "id": "34ec1b36c4018133ba41c6d9a03cbe2f",
       "slug": "adict-的演化歷史-從順眼的查詞工具到本地詞典架構-34ec1b36",
