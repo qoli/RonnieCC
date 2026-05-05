@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T09:05:58.427Z",
+  "generatedAt": "2026-05-05T18:43:22.172Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -7,6 +7,584 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "357c1b36c4018169b545de9cc29a7934",
+      "slug": "vlm-不等於-visual-first-qwen3-5-在圖片記帳任務裡暴露的提示詞陷阱-357c1b36",
+      "title": "VLM 不等於 Visual-first：Qwen3.5 在圖片記帳任務裡暴露的提示詞陷阱",
+      "tag": "AI,Local AI,Product,Notes",
+      "year": "2026",
+      "public": true,
+      "notionUrl": "https://www.notion.so/qoli/vlm-%E4%B8%8D%E7%AD%89%E6%96%BC-visual-first-qwen3-5-%E5%9C%A8%E5%9C%96%E7%89%87%E8%A8%98%E5%B8%B3%E4%BB%BB%E5%8B%99%E8%A3%A1%E6%9A%B4%E9%9C%B2%E7%9A%84%E6%8F%90%E7%A4%BA%E8%A9%9E%E9%99%B7%E9%98%B1-357c1b36c4018169b545de9cc29a7934?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-05-05T10:20:49.698Z",
+      "lastEditedTime": "2026-05-05T10:22:06.786Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-05-05T18:42:19.047Z",
+        "blocks": [
+          {
+            "id": "357c1b36c401818ca5f4e668d4e79996",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我原本以為這次 Trackly 記帳提示詞優化已經接近收尾。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我原本以為這次 Trackly 記帳提示詞優化已經接近收尾。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c40181928ab1e970cbacd2bb",
+            "type": "text",
+            "richText": [
+              {
+                "text": "前面用 Qwen3.5-122B-A10B-5bit 跑完一輪圖片記帳驗收後，主要工作看起來只是清理錯例：哪些是真的 prompt/model failure，哪些是測試資料庫裡的 gold 本身錯。後面確實整理出了幾筆有價值的 case，但真正值得寫下來的不是某一張很糟糕的 UI，而是更早暴露的一個基礎問題：VLM 收到圖片，不代表它會主動把圖片當作主要證據。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "前面用 Qwen3.5-122B-A10B-5bit 跑完一輪圖片記帳驗收後，主要工作看起來只是清理錯例：哪些是真的 prompt/model failure，哪些是測試資料庫裡的 gold 本身錯。後面確實整理出了幾筆有價值的 case，但真正值得寫下來的不是某一張很糟糕的 UI，而是更早暴露的一個基礎問題：VLM 收到圖片，不代表它會主動把圖片當作主要證據。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c40181febe27d0285fa49362",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "問題：圖片有送進去，但模型仍像只看 OCR",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "問題：圖片有送進去，但模型仍像只看 OCR",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c4018184b8d3c548878e399e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這次任務的輸入其實很明確：資料庫裡有 OCR text，也有原始圖片 blob；測試腳本會把圖片轉成 JPEG，用 OpenAI-compatible 的 image_url 形式送給本地 oMLX server。從 log 看，request 裡有 request_image_count=1，也有 JPEG hash。也就是說，這不是 OCR-only 任務。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這次任務的輸入其實很明確：資料庫裡有 OCR text，也有原始圖片 blob；測試腳本會把圖片轉成 JPEG，用 OpenAI-compatible 的 image_url 形式送給本地 oMLX server。從 log 看，request 裡有 request_image_count=1，也有 JPEG hash。也就是說，這不是 OCR-only 任務。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c4018101a664d785f7bff1ee",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但 Qwen3.5 的第一輪行為仍然非常像只看 OCR。典型例子是 54347F52-1913-4D75-847E-1A447922E3C5：模型首輪判成 pending，理由是缺少最終實際支付金額。可是當我在後續單筆對話裡追問「你看不到圖片嗎？」同一張圖、同一段資料，它又能重新判斷出正確金額 33.7。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但 Qwen3.5 的第一輪行為仍然非常像只看 OCR。典型例子是 54347F52-1913-4D75-847E-1A447922E3C5：模型首輪判成 pending，理由是缺少最終實際支付金額。可是當我在後續單筆對話裡追問「你看不到圖片嗎？」同一張圖、同一段資料，它又能重新判斷出正確金額 33.7。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c401818a9ee7d7931509f44d",
+            "type": "quote",
+            "richText": [
+              {
+                "text": "問題不是圖片沒有傳到，而是模型沒有把圖片當作主要判斷來源。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "問題不是圖片沒有傳到，而是模型沒有把圖片當作主要判斷來源。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c401818aaf65dbc19b24e3f6",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "第一個重要觀察：VLM 不必然 visual-first",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第一個重要觀察：VLM 不必然 visual-first",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c40181a6896edb4239cec448",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我以前對 VLM 任務有一個隱含假設：只要 messages 裡同時有 text 和 image，模型就會自然使用視覺能力。這次被打破了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我以前對 VLM 任務有一個隱含假設：只要 messages 裡同時有 text 和 image，模型就會自然使用視覺能力。這次被打破了。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c401814d9163f1db29c059cc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "對 Qwen3.5 這類中等規模 VLM 來說，圖片更像是一個可用但不一定主動使用的證據源。如果 prompt 沒有明確建立證據優先級，它會退回最容易解析的 OCR 文字，然後沿著 OCR 的缺口做決策。OCR 裡沒有看到明確的「實付」或「合計」，它就傾向 pending；OCR 裡有一個醒目的「合計」，它就傾向停在那個文字上。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "對 Qwen3.5 這類中等規模 VLM 來說，圖片更像是一個可用但不一定主動使用的證據源。如果 prompt 沒有明確建立證據優先級，它會退回最容易解析的 OCR 文字，然後沿著 OCR 的缺口做決策。OCR 裡沒有看到明確的「實付」或「合計」，它就傾向 pending；OCR 裡有一個醒目的「合計」，它就傾向停在那個文字上。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c401810a8a68fbe123fc8575",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這也是為什麼單筆追問能改變答案：模型不是完全不能看圖，而是第一輪任務沒有被迫把圖像結構放到判斷流程的最前面。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這也是為什麼單筆追問能改變答案：模型不是完全不能看圖，而是第一輪任務沒有被迫把圖像結構放到判斷流程的最前面。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c4018157acf0e1431ca5a37a",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "錯誤方向：把 image_url 當成足夠的證據",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "錯誤方向：把 image_url 當成足夠的證據",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c40181798f62d599674c1948",
+            "type": "text",
+            "richText": [
+              {
+                "text": "一開始我檢查的是工程鏈路：是不是沒有把圖片送出去？是不是 oMLX server 沒收到 image_url？是不是 JPEG 轉換失敗？這些方向都必須查，因為沒有先排除 transport 問題，就不能談 prompt 問題。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "一開始我檢查的是工程鏈路：是不是沒有把圖片送出去？是不是 oMLX server 沒收到 image_url？是不是 JPEG 轉換失敗？這些方向都必須查，因為沒有先排除 transport 問題，就不能談 prompt 問題。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c40181918c76c65479958fdb",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但 log 反而把問題縮小了：圖片確實送了，request metadata 也有 image count、JPEG bytes、hash。真正的未知變成：模型為什麼在有圖的情況下，仍然按 OCR 文字的缺口做 pending 判斷？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但 log 反而把問題縮小了：圖片確實送了，request metadata 也有 image count、JPEG bytes、hash。真正的未知變成：模型為什麼在有圖的情況下，仍然按 OCR 文字的缺口做 pending 判斷？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c4018180bececbb66e8c721b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這一步讓我意識到，VLM prompt 不能只描述輸入類型，還要描述證據使用順序。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這一步讓我意識到，VLM prompt 不能只描述輸入類型，還要描述證據使用順序。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c4018167afa7dba24d9138f4",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "有效方向：把視覺證據優先級寫清楚",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "有效方向：把視覺證據優先級寫清楚",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c401810cb35ccbd34fa73679",
+            "type": "text",
+            "richText": [
+              {
+                "text": "後來有效的修改不是告訴模型某張圖的答案，也不是加入某家店或某個外賣平台的特化規則。真正有效的是把視覺證據的優先級寫清楚：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "後來有效的修改不是告訴模型某張圖的答案，也不是加入某家店或某個外賣平台的特化規則。真正有效的是把視覺證據的優先級寫清楚：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c40181d2abbec2e1d93be29a",
+            "type": "code",
+            "richText": [
+              {
+                "text": "必須先讀圖片視覺內容，再用 OCR 輔助校對。\n只有圖片和 OCR 都無法支持金額或對象時才 pending。\nOCR 破碎或缺少「實付/合計」字樣時，不能直接 pending。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "必須先讀圖片視覺內容，再用 OCR 輔助校對。\n只有圖片和 OCR 都無法支持金額或對象時才 pending。\nOCR 破碎或缺少「實付/合計」字樣時，不能直接 pending。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c401816f8bc4fe80d2430e90",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這幾句改變的是模型的工作順序：先看圖，再用 OCR 校對；不是先讀 OCR，再把圖片當成可選補充。對圖片記帳這種任務來說，這個順序差很多。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這幾句改變的是模型的工作順序：先看圖，再用 OCR 校對；不是先讀 OCR，再把圖片當成可選補充。對圖片記帳這種任務來說，這個順序差很多。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c401811f92bcdc080f311659",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "後續特例：UI reasoning 是第二層問題",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "後續特例：UI reasoning 是第二層問題",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c4018120b780ce8b2e9d6e76",
+            "type": "text",
+            "richText": [
+              {
+                "text": "後面又出現一筆高價值 case：879AD927-9F8A-4AA7-A595-C6608A629887。那張圖的 UI 本身非常糟糕，同一張訂單裡有主商品結算區，也有隨單購買區。正確金額是 3 + 14.9 = 17.9，但這對人類也有誤導性。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "後面又出現一筆高價值 case：879AD927-9F8A-4AA7-A595-C6608A629887。那張圖的 UI 本身非常糟糕，同一張訂單裡有主商品結算區，也有隨單購買區。正確金額是 3 + 14.9 = 17.9，但這對人類也有誤導性。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c401813b9afec88bc9bed266",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這筆很有價值，但它不是文章的主軸。它屬於第二層問題：當模型已經願意看圖後，還要理解畫面分區、優惠、配送費、附加購買與同一訂單的合併關係。這是 UI reasoning，不是最早那個「模型不主動關心圖片」的問題。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這筆很有價值，但它不是文章的主軸。它屬於第二層問題：當模型已經願意看圖後，還要理解畫面分區、優惠、配送費、附加購買與同一訂單的合併關係。這是 UI reasoning，不是最早那個「模型不主動關心圖片」的問題。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c401812daba1eb1a53f58904",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這也解釋了另一個觀察：app 原始 RecordPromptProvider 對更強的 VLM 可能足夠，但對 Qwen3.5-122B-A10B-5bit 這個本地模型，在這類畫面上不夠穩。若要讓 Qwen 穩定通過，就需要把 UI 金額合併規則寫得更明確；但那已經是針對中等模型能力邊界做的 prompt 適配。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這也解釋了另一個觀察：app 原始 RecordPromptProvider 對更強的 VLM 可能足夠，但對 Qwen3.5-122B-A10B-5bit 這個本地模型，在這類畫面上不夠穩。若要讓 Qwen 穩定通過，就需要把 UI 金額合併規則寫得更明確；但那已經是針對中等模型能力邊界做的 prompt 適配。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c4018100b306e0f05f94b7ef",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "這次留下的排查準則",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這次留下的排查準則",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c40181f1af3de97cb0a34ac7",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "不要把 image_url 存在視為模型已正確使用圖片。先檢查 request metadata，再檢查模型是否真的基於視覺證據做判斷。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "不要把 image_url 存在視為模型已正確使用圖片。先檢查 request metadata，再檢查模型是否真的基於視覺證據做判斷。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c40181799d59c21534fff90d",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "VLM prompt 要明確指定證據優先級：圖片版面、金額區、刪除線、優惠位置，應先於 OCR 文字缺口。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "VLM prompt 要明確指定證據優先級：圖片版面、金額區、刪除線、優惠位置，應先於 OCR 文字缺口。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c40181afb24bf45eefa1ee64",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "OCR 是輔助校對，不應默認成主證據。OCR 缺少「實付」兩個字，不等於圖片裡沒有可判斷金額。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "OCR 是輔助校對，不應默認成主證據。OCR 缺少「實付」兩個字，不等於圖片裡沒有可判斷金額。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c40181388e9be49f0450869c",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "把 transport 問題、prompt 問題、模型能力問題分開。這次能收斂，是因為 request image hash、temperature、prompt 版本、run log 都被記錄下來。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "把 transport 問題、prompt 問題、模型能力問題分開。這次能收斂，是因為 request image hash、temperature、prompt 版本、run log 都被記錄下來。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c40181c6a525ddbb50a5e36f",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "高價值錯例要升級成 regression case。54347F52 用來測 visual-first，879AD927 用來測多付費區塊 UI reasoning。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "高價值錯例要升級成 regression case。54347F52 用來測 visual-first，879AD927 用來測多付費區塊 UI reasoning。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c40181a1ae16c8c95da40d46",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "結論",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "結論",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c40181d5b7b8c7b1f24cbe61",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這次最重要的結論不是「Qwen3.5 不行」，而是更具體：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這次最重要的結論不是「Qwen3.5 不行」，而是更具體：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c401811ab652d4f38cd7e64b",
+            "type": "quote",
+            "richText": [
+              {
+                "text": "Qwen3.5 在沒有明確提示視覺優先時，即使收到圖片，也可能只沿著 OCR 中最容易解析的文字做決策。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Qwen3.5 在沒有明確提示視覺優先時，即使收到圖片，也可能只沿著 OCR 中最容易解析的文字做決策。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c401814caaeee0edd7f52f5c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "對產品級圖片記帳來說，這是一個很實用的邊界。強 VLM 可能能自己補上這層理解，但中等規模本地 VLM 需要更清楚的任務流程：先看圖片，理解版面，再用 OCR 校對。否則，VLM 只是名義上有視覺輸入，實際決策仍可能停在文字抽取器的層級。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "對產品級圖片記帳來說，這是一個很實用的邊界。強 VLM 可能能自己補上這層理解，但中等規模本地 VLM 需要更清楚的任務流程：先看圖片，理解版面，再用 OCR 校對。否則，VLM 只是名義上有視覺輸入，實際決策仍可能停在文字抽取器的層級。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "357c1b36c401818ab472e950f6562d00",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這件事值得記下來，因為它提醒我：做 AI 產品驗收時，不能只問資料有沒有送到模型，還要問模型是否按我們期待的證據順序在工作。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這件事值得記下來，因為它提醒我：做 AI 產品驗收時，不能只問資料有沒有送到模型，還要問模型是否按我們期待的證據順序在工作。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "356c1b36c401814ba27fde6af0a8df3a",
       "slug": "github-pages-search-console-與一個-sitemap-黑箱問題-356c1b36",
@@ -19,7 +597,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:02:53.000Z",
+        "syncedAt": "2026-05-05T18:42:19.245Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -631,7 +1209,7 @@
       "lastEditedTime": "2026-04-26T09:14:41.193Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:02:53.498Z",
+        "syncedAt": "2026-05-05T18:42:19.400Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -1554,7 +2132,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:03:08.388Z",
+        "syncedAt": "2026-05-05T18:42:23.755Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -2133,7 +2711,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:03:08.918Z",
+        "syncedAt": "2026-05-05T18:42:23.923Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -2830,7 +3408,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:03:10.102Z",
+        "syncedAt": "2026-05-05T18:42:24.144Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -3989,7 +4567,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:03:11.676Z",
+        "syncedAt": "2026-05-05T18:42:24.393Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -6130,7 +6708,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:03:13.694Z",
+        "syncedAt": "2026-05-05T18:42:24.732Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -7619,7 +8197,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:03:15.558Z",
+        "syncedAt": "2026-05-05T18:42:25.020Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -8149,7 +8727,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:03:22.330Z",
+        "syncedAt": "2026-05-05T18:42:27.023Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -8644,7 +9222,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:03:33.379Z",
+        "syncedAt": "2026-05-05T18:42:29.355Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -9257,7 +9835,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:03:34.283Z",
+        "syncedAt": "2026-05-05T18:42:29.564Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -9767,7 +10345,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:03:34.707Z",
+        "syncedAt": "2026-05-05T18:42:29.778Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -10664,7 +11242,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:03:43.372Z",
+        "syncedAt": "2026-05-05T18:42:32.776Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -10965,7 +11543,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:03:46.905Z",
+        "syncedAt": "2026-05-05T18:42:33.773Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -12316,7 +12894,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:05:03.522Z",
+        "syncedAt": "2026-05-05T18:42:46.762Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -12491,7 +13069,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:05:09.824Z",
+        "syncedAt": "2026-05-05T18:42:47.892Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -13091,7 +13669,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-05T09:05:18.268Z",
+        "syncedAt": "2026-05-05T18:42:49.952Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
