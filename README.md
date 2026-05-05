@@ -12,13 +12,13 @@ This repository powers [ronniewong.cc](https://ronniewong.cc), a static public i
 - `src/build.ts` generates static HTML into `dist/`, including clean project URLs such as `/projects/syncnext/`.
 - `src/seo.ts` centralizes canonical URLs, `hreflang`, Open Graph, Twitter metadata, identity links, and JSON-LD.
 - `og-image.svg` and `og-image.png` provide the default social preview image.
-- `blog.html` renders public writing synced from Notion.
+- `blog.html` renders the writing index, and each public note is generated as an internal static page under `/blog/<slug>/`.
 - `resume.html` presents the public resume.
 
 ## Content Sources
 
 - `content/projects.seed.json` is the canonical project index used by the project list and detail pages.
-- `content/blog.seed.json` is generated from the public Notion blog database.
+- `content/blog.seed.json` is generated from the public Notion blog database and includes article metadata plus a build-time block snapshot. Synced Notion images are downloaded under `content/blog-assets/`.
 - `docs/data-sources.md` records the working content model and source decisions.
 - `docs/visual-direction.md` records the current design direction.
 
@@ -38,6 +38,8 @@ The generated `dist/` folder contains static HTML for:
 - `en/projects.html`
 - `blog.html`
 - `en/blog.html`
+- every blog article page under `blog/<post-slug>/`
+- every English blog article page under `en/blog/<post-slug>/`
 - `resume.html`
 - `en/resume.html`
 - every project detail page under `projects/<project-id>/`
@@ -67,7 +69,7 @@ The source HTML files can still be served directly for development fallback, but
 
 ## Blog Sync
 
-The blog list is generated from a public Notion database. No `NOTION_TOKEN` is required for the current public sync path.
+The blog index and article pages are generated from a public Notion database. No `NOTION_TOKEN` is required for the current public sync path.
 
 ```sh
 sh scripts/update-blog.sh

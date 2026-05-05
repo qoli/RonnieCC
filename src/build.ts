@@ -80,6 +80,31 @@ type BlogPost = {
   year?: string;
   public?: boolean;
   notionUrl: string;
+  createdTime?: string;
+  lastEditedTime?: string;
+  content?: {
+    source: string;
+    syncedAt: string;
+    blocks: BlogBlock[];
+  };
+};
+
+type BlogRichText = {
+  text: string;
+  annotations?: string[];
+  href?: string;
+};
+
+type BlogBlock = {
+  id: string;
+  type: string;
+  richText?: BlogRichText[];
+  plainText?: string;
+  caption?: BlogRichText[];
+  language?: string;
+  source?: string;
+  assetPath?: string;
+  children?: BlogBlock[];
 };
 
 const root = process.cwd();
@@ -251,6 +276,14 @@ function projectPath(project: Project, prefix = ""): string {
 
 function projectCanonical(project: Project, language: Language): string {
   return canonicalUrl(`projects/${encodeURIComponent(project.id)}/`, language);
+}
+
+function blogPostPath(post: BlogPost, prefix = ""): string {
+  return `${prefix}blog/${encodeURIComponent(post.slug)}/`;
+}
+
+function blogPostCanonical(post: BlogPost, language: Language): string {
+  return canonicalUrl(`blog/${encodeURIComponent(post.slug)}/`, language);
 }
 
 function truncate(value: string, max = 160): string {
@@ -558,7 +591,7 @@ function blogList(posts: BlogPost[], language: Language): string {
               .map(
                 (post) => `
                   <article class="blog-item">
-                    <a href="${escapeAttr(post.notionUrl)}" target="_blank" rel="noreferrer">
+                    <a href="${escapeAttr(blogPostPath(post))}">
                       <span class="blog-title">${escapeHtml(post.title)}</span>
                       <span class="blog-meta">${escapeHtml(post.tag || "Note")}</span>
                     </a>
@@ -571,6 +604,120 @@ function blogList(posts: BlogPost[], language: Language): string {
       `;
     })
     .join("");
+}
+
+function renderRichText(segments: BlogRichText[] = []): string {
+  return segments
+    .map((segment) => {
+      let text = escapeHtml(segment.text).replaceAll("\n", "<br>");
+      const annotations = segment.annotations || [];
+      if (annotations.includes("c")) text = `<code>${text}</code>`;
+      if (annotations.includes("b")) text = `<strong>${text}</strong>`;
+      if (annotations.includes("i")) text = `<em>${text}</em>`;
+      if (annotations.includes("s")) text = `<s>${text}</s>`;
+      if (segment.href) text = `<a href="${escapeAttr(segment.href)}" target="_blank" rel="noreferrer">${text}</a>`;
+      return text;
+    })
+    .join("");
+}
+
+function blockText(block: BlogBlock): string {
+  return renderRichText(block.richText);
+}
+
+function renderBlogChildren(block: BlogBlock, rootPath: string): string {
+  if (!block.children?.length) return "";
+  return `<div class="blog-block-children">${renderBlogBlocks(block.children, rootPath)}</div>`;
+}
+
+function renderMediaFallback(block: BlogBlock, label: string, rootPath: string): string {
+  const caption = renderRichText(block.caption);
+  const source = block.source ? `<code>${escapeHtml(block.source)}</code>` : "";
+  if (block.assetPath) {
+    return `
+      <figure class="blog-media">
+        <img src="${escapeAttr(`${rootPath}${block.assetPath}`)}" alt="${escapeAttr(block.plainText || block.caption?.map((segment) => segment.text).join("") || label)}" loading="lazy">
+        ${caption ? `<figcaption>${caption}</figcaption>` : ""}
+      </figure>
+    `;
+  }
+
+  return `
+    <figure class="blog-media-fallback">
+      <div>${escapeHtml(label)}</div>
+      ${caption ? `<figcaption>${caption}</figcaption>` : ""}
+      ${source ? `<p>${source}</p>` : ""}
+    </figure>
+  `;
+}
+
+function renderBlogBlock(block: BlogBlock, rootPath: string): string {
+  const text = blockText(block);
+  const children = renderBlogChildren(block, rootPath);
+
+  switch (block.type) {
+    case "header":
+      return text ? `<h2>${text}</h2>${children}` : children;
+    case "sub_header":
+      return text ? `<h3>${text}</h3>${children}` : children;
+    case "sub_sub_header":
+      return text ? `<h4>${text}</h4>${children}` : children;
+    case "quote":
+      return text ? `<blockquote>${text}</blockquote>${children}` : children;
+    case "code": {
+      const language = block.language ? ` data-language="${escapeAttr(block.language)}"` : "";
+      return text ? `<pre${language}><code>${escapeHtml(block.plainText || "")}</code></pre>${children}` : children;
+    }
+    case "divider":
+      return "<hr>";
+    case "image":
+      return renderMediaFallback(block, "Image from the original Notion note", rootPath);
+    case "video":
+      return renderMediaFallback(block, "Video from the original Notion note", rootPath);
+    case "file":
+    case "external_object_instance":
+      return renderMediaFallback(block, "Attachment from the original Notion note", rootPath);
+    case "page":
+    case "collection_view_page":
+      return "";
+    case "text":
+    default:
+      return text ? `<p>${text}</p>${children}` : children;
+  }
+}
+
+function renderListRun(blocks: BlogBlock[], tag: "ul" | "ol", rootPath: string): string {
+  const items = blocks
+    .map((block) => `<li>${blockText(block)}${renderBlogChildren(block, rootPath)}</li>`)
+    .join("");
+  return `<${tag}>${items}</${tag}>`;
+}
+
+function renderBlogBlocks(blocks: BlogBlock[] = [], rootPath = ""): string {
+  const rendered: string[] = [];
+
+  for (let index = 0; index < blocks.length; index += 1) {
+    const block = blocks[index];
+    if (block.type === "bulleted_list" || block.type === "numbered_list") {
+      const type = block.type;
+      const run: BlogBlock[] = [];
+      while (blocks[index]?.type === type) {
+        run.push(blocks[index]);
+        index += 1;
+      }
+      index -= 1;
+      rendered.push(renderListRun(run, type === "bulleted_list" ? "ul" : "ol", rootPath));
+    } else {
+      rendered.push(renderBlogBlock(block, rootPath));
+    }
+  }
+
+  return rendered.join("");
+}
+
+function blogArticleDescription(post: BlogPost): string {
+  const firstText = post.content?.blocks.find((block) => block.plainText && ["text", "quote"].includes(block.type))?.plainText || post.title;
+  return truncate(firstText);
 }
 
 function relativizeAssets(html: string, prefix: string): string {
@@ -715,7 +862,7 @@ function renderBlogPage(source: string, posts: BlogPost[], locale: Locale): stri
         description,
         items: visiblePosts.map((post) => ({
           name: post.title,
-          url: post.notionUrl,
+          url: blogPostCanonical(post, locale.language),
         })),
       }),
       breadcrumbJsonLd([
@@ -724,6 +871,72 @@ function renderBlogPage(source: string, posts: BlogPost[], locale: Locale): stri
       ]),
     ],
   });
+}
+
+function blogArticleMain(post: BlogPost, language: Language, rootPath: string): string {
+  const date = post.createdTime ? new Date(post.createdTime).toISOString().slice(0, 10) : post.year || "";
+  const edited = post.lastEditedTime ? new Date(post.lastEditedTime).toISOString().slice(0, 10) : "";
+  const body = post.content?.blocks?.length
+    ? renderBlogBlocks(post.content.blocks, rootPath)
+    : `<p>${escapeHtml(localeCopy[language].blogEmpty)}</p>`;
+
+  return `
+  <main>
+    <article class="blog-article">
+      <header class="page-hero compact blog-article-hero">
+        <p class="eyebrow">Writing</p>
+        <h1>${escapeHtml(post.title)}</h1>
+        <p>${escapeHtml(post.tag || "Note")}${date ? ` · ${escapeHtml(date)}` : ""}${edited && edited !== date ? ` · Updated ${escapeHtml(edited)}` : ""}</p>
+      </header>
+
+      <div class="section blog-prose">
+        ${body}
+        <footer class="blog-source">
+          <a href="${escapeAttr(post.notionUrl)}" target="_blank" rel="noreferrer">Original Notion note</a>
+        </footer>
+      </div>
+    </article>
+  </main>`;
+}
+
+function renderBlogPostPage(source: string, post: BlogPost, locale: Locale): string {
+  const path = `blog/${encodeURIComponent(post.slug)}/`;
+  const rootPath = locale.language === "en" ? "../../../" : "../../";
+  const altUrl = locale.language === "en" ? `../../../blog/${encodeURIComponent(post.slug)}/` : `../../en/blog/${encodeURIComponent(post.slug)}/`;
+  const description = blogArticleDescription(post);
+  let html = withStaticMode(source, locale)
+    .replace(
+      '<body data-page="blog">',
+      `<body data-page="blog-article" data-static-language="${locale.language}" data-root-path="${rootPath}">`
+    )
+    .replace(/<main>[\s\S]*?<\/main>/, blogArticleMain(post, locale.language, rootPath));
+
+  html = setLanguageToggle(html, locale.language, altUrl);
+  html = applySeo(html, {
+    language: locale.language,
+    path,
+    title: `${post.title} · Ronnie Wong`,
+    description,
+    type: "article",
+    jsonLd: [
+      personJsonLd(locale.language),
+      creativeWorkJsonLd({
+        language: locale.language,
+        path,
+        name: post.title,
+        description,
+        keywords: post.tag ? post.tag.split(",").map((tag) => tag.trim()).filter(Boolean) : [],
+        about: "Blog post",
+        sameAs: [post.notionUrl],
+      }),
+      breadcrumbJsonLd([
+        { name: "Ronnie Wong", url: canonicalUrl("", locale.language) },
+        { name: "Blog", url: canonicalUrl("blog.html", locale.language) },
+        { name: post.title, url: blogPostCanonical(post, locale.language) },
+      ]),
+    ],
+  });
+  return relativizeProjectDetail(html, rootPath, rootPath);
 }
 
 function renderProjectPage(source: string, project: Project, projects: Project[], locale: Locale): string {
@@ -786,8 +999,9 @@ function renderSimplePage(source: string, locale: Locale, path: string, altUrl: 
   });
 }
 
-function renderSitemap(projects: Project[]): string {
+function renderSitemap(projects: Project[], posts: BlogPost[]): string {
   const lastmod = new Date().toISOString().slice(0, 10);
+  const visiblePosts = posts.filter((post) => post.public !== false);
   const urls = [
     `${siteUrl}/`,
     `${siteUrl}/projects.html`,
@@ -798,6 +1012,7 @@ function renderSitemap(projects: Project[]): string {
     `${siteUrl}/en/blog.html`,
     `${siteUrl}/en/resume.html`,
     ...projects.flatMap((project) => [projectCanonical(project, "mix"), projectCanonical(project, "en")]),
+    ...visiblePosts.flatMap((post) => [blogPostCanonical(post, "mix"), blogPostCanonical(post, "en")]),
   ];
 
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
@@ -844,9 +1059,13 @@ async function build(): Promise<void> {
     for (const project of projectsForLocale) {
       await writeOutput(`${locale.outputPrefix}projects/${project.id}/index.html`, renderProjectPage(projectHtml, project, projectsForLocale, locale));
     }
+
+    for (const post of blogData.posts.filter((item) => item.public !== false)) {
+      await writeOutput(`${locale.outputPrefix}blog/${post.slug}/index.html`, renderBlogPostPage(blogHtml, post, locale));
+    }
   }
 
-  const sitemap = renderSitemap(projects);
+  const sitemap = renderSitemap(projects, blogData.posts);
   await writeOutput("sitemap.xml", sitemap);
   await writeOutput("sitemap-gsc.xml", sitemap);
   await writeOutput("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${workerSitemapUrl}\n`);

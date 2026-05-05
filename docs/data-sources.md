@@ -472,7 +472,7 @@ type PublicSurface = {
 
 ## Blog 資料源
 
-Blog 入口使用 Notion database 作為上游資料源，但網站只讀取同步後的靜態 JSON。
+Blog 入口使用 Notion database 作為上游資料源，但網站只讀取同步後的靜態 JSON。Notion 仍然是編輯器，RonnieCC 是公開閱讀入口。
 
 | 項目 | 值 |
 | --- | --- |
@@ -497,8 +497,11 @@ Blog 入口使用 Notion database 作為上游資料源，但網站只讀取同�
 
 ### Blog 同步規則
 
-- 第一階段只建立 Blog index，文章連結外跳 Notion。
-- 不在第一階段渲染 Notion detail page，因為 Notion 圖片 URL 可能是短期簽名 URL，直接靜態化後會失效。
+- Blog index 連到 RonnieCC 站內文章頁，不再直接外跳 Notion。
+- 同步器會抓取公開頁面的 Notion v3 block snapshot，`src/build.ts` 在 build time 生成 `/blog/<slug>/` 和 `/en/blog/<slug>/`。
+- 文章頁 canonical、Open Graph URL、CollectionPage item URL 和 sitemap 都指向 RonnieCC 站內 URL。
+- Notion 圖片在同步階段透過 `getSignedFileUrls` 下載到 `content/blog-assets/<post-id>/`，文章 JSON 只保留站內 `assetPath` 給 build 使用。
+- 如果圖片下載失敗，文章頁仍會顯示 block caption / source fallback，避免靜態 build 產生壞掉的 `<img>`。
 - GitHub Actions 每天同步一次即可，並保留 `workflow_dispatch` 供手動更新。
 - 公開 Notion database 不需要 `NOTION_TOKEN`；如果日後改為私有頁面，GitHub repo 再設定 `NOTION_TOKEN` 或 `NOTION_TOKEN_V2` secret，值為 Notion `token_v2`。
 - 同步器只寫入 `content/blog.seed.json`，不改動手寫 HTML/CSS/JS。

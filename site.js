@@ -775,6 +775,8 @@ function renderBlog() {
   if (!mount) return;
 
   const ui = activeUi();
+  const rootPath = document.body?.dataset.rootPath || "";
+  const blogPath = document.body?.dataset.staticLanguage === "en" ? "blog/" : `${rootPath}blog/`;
   const posts = sourceBlogPosts.filter((post) => post.public !== false);
 
   if (!posts.length) {
@@ -794,7 +796,7 @@ function renderBlog() {
               .map(
                 (post) => `
                   <article class="blog-item">
-                    <a href="${post.notionUrl}" target="_blank" rel="noreferrer">
+                    <a href="${blogPath}${encodeURIComponent(post.slug)}/">
                       <span class="blog-title">${post.title}</span>
                       <span class="blog-meta">${post.tag || "Note"}</span>
                     </a>
@@ -824,6 +826,9 @@ async function boot() {
   }
   setupThemeToggle();
   setupLanguageToggle();
+  if (document.body?.dataset.page === "blog-article") {
+    return;
+  }
   const rootPath = document.body?.dataset.rootPath || "";
   const [projectsResponse, blogResponse] = await Promise.all([
     fetch(`${rootPath}content/projects.seed.json`, { cache: "no-store" }),
