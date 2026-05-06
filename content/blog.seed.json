@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T18:45:52.998Z",
+  "generatedAt": "2026-05-06T21:55:24.739Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -7,6 +7,760 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "358c1b36c4018154aa7def62ab498f05",
+      "slug": "用歷史資料改提示詞-trackly-圖片記帳抽取器的證據帳本-358c1b36",
+      "title": "用歷史資料改提示詞：Trackly 圖片記帳抽取器的證據帳本",
+      "tag": "AI,Local AI,Product,Notes",
+      "year": "2026",
+      "public": true,
+      "notionUrl": "https://www.notion.so/qoli/%E7%94%A8%E6%AD%B7%E5%8F%B2%E8%B3%87%E6%96%99%E6%94%B9%E6%8F%90%E7%A4%BA%E8%A9%9E-trackly-%E5%9C%96%E7%89%87%E8%A8%98%E5%B8%B3%E6%8A%BD%E5%8F%96%E5%99%A8%E7%9A%84%E8%AD%89%E6%93%9A%E5%B8%B3%E6%9C%AC-358c1b36c4018154aa7def62ab498f05?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-05-06T21:45:00.975Z",
+      "lastEditedTime": "2026-05-06T21:52:30.201Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-05-06T21:53:46.495Z",
+        "blocks": [
+          {
+            "id": "487f5e5774514e7199909c83e8fc38b4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這次 Trackly 圖片記帳提示詞優化，不是從抽象原則開始，而是從一批歷史記帳資料裡反覆追問同一件事：這筆失敗到底是 prompt 錯、gold 錯，還是驗收規則錯？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這次 Trackly 圖片記帳提示詞優化，不是從抽象原則開始，而是從一批歷史記帳資料裡反覆追問同一件事：這筆失敗到底是 prompt 錯、gold 錯，還是驗收規則錯？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "c080d286624d4b96b51fa3961b168a67",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我最後採用的工作方式，是把每個失敗都整理成一條證據鏈：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我最後採用的工作方式，是把每個失敗都整理成一條證據鏈：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "3286c809fcc9416d8936514e03cd5fea",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "證據一：完成訂單不一定有「實付」標籤",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "證據一：完成訂單不一定有「實付」標籤",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "ab9cf909c68f457995470e77f1e898e9",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第一條真正改變 prompt 的證據，是「已完成訂單被判成 pending」。有些訂單頁沒有明確寫出「實付」或「合計」，但畫面已經能看到商品價格、服務費、配送費、打包費，以及哪些項目是免收或折扣。模型當時的錯誤不是算錯，而是拒絕記帳。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第一條真正改變 prompt 的證據，是「已完成訂單被判成 pending」。有些訂單頁沒有明確寫出「實付」或「合計」，但畫面已經能看到商品價格、服務費、配送費、打包費，以及哪些項目是免收或折扣。模型當時的錯誤不是算錯，而是拒絕記帳。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "ccf43b397d824f76920ea65233979652",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這導致 prompt 裡加入更強的 completed 判斷：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這導致 prompt 裡加入更強的 completed 判斷：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "e981860b93104b5aa7511f255f4c2e22",
+            "type": "quote",
+            "richText": [
+              {
+                "text": "已下單/已支付/交易詳情頁能由可見價格與必付費用合計時，必須 completed，不得因缺少實付標籤 pending。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "已下單/已支付/交易詳情頁能由可見價格與必付費用合計時，必須 completed，不得因缺少實付標籤 pending。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "c70d72af8cc648008da54ddbc8745a77",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這不是某一筆樣本補丁，而是把「可見金額證據」提升到 task-level decision。改完後，該類 targeted repeat 過了 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "3/3",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，再跑相鄰 small sample 也維持 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "20/20",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這不是某一筆樣本補丁，而是把「可見金額證據」提升到 task-level decision。改完後，該類 targeted repeat 過了 3/3，再跑相鄰 small sample 也維持 20/20。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "d98b5c051be34e47bac99fea9596e128",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "證據二：同一訂單裡的附加購買要合併",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "證據二：同一訂單裡的附加購買要合併",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "06dd94ca8e6f4ae2b5c38663a08fb491",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第二條證據來自美團「隨單購買」。其中一筆截圖顯示：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第二條證據來自美團「隨單購買」。其中一筆截圖顯示：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "34d6b774bf3949f485e7b1eeb8bf6650",
+            "type": "code",
+            "richText": [
+              {
+                "text": "已優惠7.5元 ¥17.5\n隨單購買\n神券包 合計 ¥9.9",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "已優惠7.5元 ¥17.5\n隨單購買\n神券包 合計 ¥9.9",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "33d24383d77f4cb7bc1f6021a6920417",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如果只取 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "17.5",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，就漏掉同一訂單內的附加購買。正確記帳金額是：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果只取 17.5，就漏掉同一訂單內的附加購買。正確記帳金額是：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "83a10e8d046146e6acb15c3646a335a6",
+            "type": "code",
+            "richText": [
+              {
+                "text": "17.5 + 9.9 = 27.4",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "17.5 + 9.9 = 27.4",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "fc285343b7bf4d6ea4b311a4587c9c0e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這條證據支持 prompt 裡的合併規則：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這條證據支持 prompt 裡的合併規則：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "498c13d15fb3435a8ace3e5af3538057",
+            "type": "quote",
+            "richText": [
+              {
+                "text": "同一訂單內同時有主商品結算小計和隨單購買/附加購買合計，兩者都屬本次支出，需相加。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "同一訂單內同時有主商品結算小計和隨單購買/附加購買合計，兩者都屬本次支出，需相加。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "7acb00607df14c279665c37513309568",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "證據三：有些錯誤應該改 gold，不該改 prompt",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "證據三：有些錯誤應該改 gold，不該改 prompt",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "d5824ce19c664afeb8cb5b34b47cdc59",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第三條證據更重要，因為它沒有改 prompt，而是改 gold。另一筆美團資料顯示三種可能解讀：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第三條證據更重要，因為它沒有改 prompt，而是改 gold。另一筆美團資料顯示三種可能解讀：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "c339418d84a946e6bb3099b10f4688f7",
+            "type": "code",
+            "richText": [
+              {
+                "text": "main order only: 1.3\nwith-order purchase only: 22.9\nmain order + with-order purchase: 1.3 + 22.9 = 24.2",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "main order only: 1.3\nwith-order purchase only: 22.9\nmain order + with-order purchase: 1.3 + 22.9 = 24.2",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "12cdee607fc84907842c8d995f79eba2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "候選 prompt 穩定輸出 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "24.2",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。DB gold 是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "1.3",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，legacy prompt rerun 則輸出 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "22.9",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。人工回看原始消費紀錄後，確認 Trackly 應該記的是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "24.2",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。所以這不是 prompt failure，而是 gold defect。處理方式是加入 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "gold-overrides.json",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，而不是把 prompt 改到迎合錯誤 DB gold。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "候選 prompt 穩定輸出 24.2。DB gold 是 1.3，legacy prompt rerun 則輸出 22.9。人工回看原始消費紀錄後，確認 Trackly 應該記的是 24.2。所以這不是 prompt failure，而是 gold defect。處理方式是加入 gold-overrides.json，而不是把 prompt 改到迎合錯誤 DB gold。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "12461ed686fe4a659f538491e0bfa021",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "證據四：證據不足時，不要硬補",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "證據四：證據不足時，不要硬補",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "70dd239a5a5a481b80e677d65b14c377",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第四條證據則反過來約束我們不要過度修 prompt。酸辣粉那筆資料裡，畫面可見：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第四條證據則反過來約束我們不要過度修 prompt。酸辣粉那筆資料裡，畫面可見：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "55a1e81f046a4ab7a9e7d5b50edf06ac",
+            "type": "code",
+            "richText": [
+              {
+                "text": "酸辣粉豪華單人餐 42.7\n打包費 1.5\n42.7 + 1.5 = 44.2",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "酸辣粉豪華單人餐 42.7\n打包費 1.5\n42.7 + 1.5 = 44.2",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "86e3a55e9b004af0b27934308e95207a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但畫面底部被裁切，又露出一行紅包抵扣片段：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但畫面底部被裁切，又露出一行紅包抵扣片段：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "23126eb89b1b42d68a829707edad0dc3",
+            "type": "code",
+            "richText": [
+              {
+                "text": "已用1張美團紅包\n-¥13",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "已用1張美團紅包\n-¥13",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "753b0230ee48487b9eaa71680d690b75",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這代表 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "44.2",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 很可能只是折扣前小計，不是 final paid。資料庫裡也找不到第二張圖、訊息上下文或更完整 OCR。這種情況下，不能為了讓驗收變漂亮而推導一個 final amount，也不能改 prompt 讓它強行 completed。正確處理是標成 unverifiable / probable gold defect，等待外部證據。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這代表 44.2 很可能只是折扣前小計，不是 final paid。資料庫裡也找不到第二張圖、訊息上下文或更完整 OCR。這種情況下，不能為了讓驗收變漂亮而推導一個 final amount，也不能改 prompt 讓它強行 completed。正確處理是標成 unverifiable / probable gold defect，等待外部證據。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "76e24dabf58e4a6ca1d605354a00cdc0",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "證據五：低 token 不能犧牲產品欄位",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "證據五：低 token 不能犧牲產品欄位",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "d8d81e37d82749778ff8d7602795fb16",
+            "type": "text",
+            "richText": [
+              {
+                "text": "最後一組證據是產品欄位退化。幾個候選版本在金額上沒問題，但輸出品質變差：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "最後一組證據是產品欄位退化。幾個候選版本在金額上沒問題，但輸出品質變差：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "1c62f28abd7942c8bf8fb3cd560e9b21",
+            "type": "code",
+            "richText": [
+              {
+                "text": "titleEmoji: 固定 💰\ndescription: 空字串\ntitle: 混入地址或付款資訊\nproducts: 缺失",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "titleEmoji: 固定 💰\ndescription: 空字串\ntitle: 混入地址或付款資訊\nproducts: 缺失",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "4bde42dde149423dbe76f05ab42d313d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這些不是裝飾欄位。Trackly 的記帳結果需要可讀、可掃描、可回顧。因此 prompt 補回這些規則：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這些不是裝飾欄位。Trackly 的記帳結果需要可讀、可掃描、可回顧。因此 prompt 補回這些規則：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "e14d90c47d4d48edb25937bf47fa4ba8",
+            "type": "code",
+            "richText": [
+              {
+                "text": "title 用交易/商品/服務短標題，不放地址、長編號、帳號或冗長明細；\ndescription 收納地址、口味、規格、店名或備註；\ntitleEmoji 依 title、products 或消費內容選貼切 emoji；\ncompleted 支出不要用 💰 兜底；\n有清楚主品、附帶品或免費品時輸出 products/product。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "title 用交易/商品/服務短標題，不放地址、長編號、帳號或冗長明細；\ndescription 收納地址、口味、規格、店名或備註；\ntitleEmoji 依 title、products 或消費內容選貼切 emoji；\ncompleted 支出不要用 💰 兜底；\n有清楚主品、附帶品或免費品時輸出 products/product。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "7f7868806c064aee902aa7e12daf0832",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "最後形成的處理規則",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "最後形成的處理規則",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "0895cf6e2218439c839eb1c006d5a646",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這次優化最後留下的，不只是一份 prompt，而是一套判斷規則：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這次優化最後留下的，不只是一份 prompt，而是一套判斷規則：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "ddcf621395614feab124d2ef66a8274c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "所以這次真正的工程結論是：歷史資料不能直接當標準答案，但可以當證據來源。每一筆失敗都必須先分類，只有能被原始畫面支持、能泛化、且能改善產品行為的證據，才有資格改 prompt。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "所以這次真正的工程結論是：歷史資料不能直接當標準答案，但可以當證據來源。每一筆失敗都必須先分類，只有能被原始畫面支持、能泛化、且能改善產品行為的證據，才有資格改 prompt。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "0d0381e168fe4ede89475e73b4e2314c",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "最終成績",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "最終成績",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "1a791b50cf8247179f1a766f183f6a71",
+            "type": "text",
+            "richText": [
+              {
+                "text": "最後候選 prompt 通過了 1200 筆 functional gate：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "最後候選 prompt 通過了 1200 筆 functional gate：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "f387bdc2be0348e3b33a6639c44a9d84",
+            "type": "text",
+            "richText": [
+              {
+                "text": "成本也明顯下降：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "成本也明顯下降：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "78fba78c94124ecbb8dacd6e34d615e2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個結果可以比較精確地表述為：功能驗收通過，token 成本顯著下降，wall-clock 有改善但沒有宣稱通過 strict 10% elapsed certification。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個結果可以比較精確地表述為：功能驗收通過，token 成本顯著下降，wall-clock 有改善但沒有宣稱通過 strict 10% elapsed certification。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          },
+          {
+            "id": "8550adf820c447558cb1fbafb6c6482b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "真正有價值的不是單一分數，而是這次建立了一套可重複使用的證據帳本：什麼改 prompt，什麼改 gold，什麼改驗收規則，什麼不該動。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "真正有價值的不是單一分數，而是這次建立了一套可重複使用的證據帳本：什麼改 prompt，什麼改 gold，什麼改驗收規則，什麼不該動。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "357c1b36c4018169b545de9cc29a7934",
       "slug": "vlm-不等於-visual-first-qwen3-5-在圖片記帳任務裡暴露的提示詞陷阱-357c1b36",
@@ -19,7 +773,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:12.803Z",
+        "syncedAt": "2026-05-06T21:53:47.024Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -597,7 +1351,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:12.980Z",
+        "syncedAt": "2026-05-06T21:53:47.444Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -1209,7 +1963,7 @@
       "lastEditedTime": "2026-04-26T09:14:41.193Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:13.162Z",
+        "syncedAt": "2026-05-06T21:53:47.902Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -2132,7 +2886,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:17.613Z",
+        "syncedAt": "2026-05-06T21:53:58.606Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -2711,7 +3465,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:17.766Z",
+        "syncedAt": "2026-05-06T21:53:59.038Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -3408,7 +4162,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:17.935Z",
+        "syncedAt": "2026-05-06T21:53:59.486Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -4567,7 +5321,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:18.149Z",
+        "syncedAt": "2026-05-06T21:53:59.929Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -6708,7 +7462,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:18.511Z",
+        "syncedAt": "2026-05-06T21:54:00.443Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -8197,7 +8951,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:18.827Z",
+        "syncedAt": "2026-05-06T21:54:00.964Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -8727,7 +9481,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:20.560Z",
+        "syncedAt": "2026-05-06T21:54:05.341Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -9222,7 +9976,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:22.600Z",
+        "syncedAt": "2026-05-06T21:54:10.477Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -9835,7 +10589,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:22.770Z",
+        "syncedAt": "2026-05-06T21:54:10.922Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -10345,7 +11099,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:22.978Z",
+        "syncedAt": "2026-05-06T21:54:11.351Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -11242,7 +11996,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:25.684Z",
+        "syncedAt": "2026-05-06T21:54:18.012Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -11543,7 +12297,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:26.670Z",
+        "syncedAt": "2026-05-06T21:54:20.538Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -12894,7 +13648,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:37.617Z",
+        "syncedAt": "2026-05-06T21:54:48.511Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -13069,7 +13823,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:38.616Z",
+        "syncedAt": "2026-05-06T21:54:51.376Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -13669,7 +14423,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T18:45:40.851Z",
+        "syncedAt": "2026-05-06T21:54:56.388Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
