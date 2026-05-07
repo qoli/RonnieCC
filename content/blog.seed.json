@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T21:55:24.739Z",
+  "generatedAt": "2026-05-07T18:46:04.010Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -16,10 +16,10 @@
       "public": true,
       "notionUrl": "https://www.notion.so/qoli/%E7%94%A8%E6%AD%B7%E5%8F%B2%E8%B3%87%E6%96%99%E6%94%B9%E6%8F%90%E7%A4%BA%E8%A9%9E-trackly-%E5%9C%96%E7%89%87%E8%A8%98%E5%B8%B3%E6%8A%BD%E5%8F%96%E5%99%A8%E7%9A%84%E8%AD%89%E6%93%9A%E5%B8%B3%E6%9C%AC-358c1b36c4018154aa7def62ab498f05?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-05-06T21:45:00.975Z",
-      "lastEditedTime": "2026-05-06T21:52:30.201Z",
+      "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:53:46.495Z",
+        "syncedAt": "2026-05-07T18:45:17.550Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -428,12 +428,12 @@
             "type": "sub_header",
             "richText": [
               {
-                "text": "證據四：證據不足時，不要硬補",
+                "text": "證據四：強證據必須是模型可見的證據",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "證據四：證據不足時，不要硬補",
+            "plainText": "證據四：強證據必須是模型可見的證據",
             "caption": [],
             "language": "",
             "source": "",
@@ -445,12 +445,12 @@
             "type": "text",
             "richText": [
               {
-                "text": "第四條證據則反過來約束我們不要過度修 prompt。酸辣粉那筆資料裡，畫面可見：",
+                "text": "第四條證據後來反過來修正了我對「強證據」的理解。酸辣粉那筆資料裡，人類回看截圖時可以得到一個合理的真實支付公式：",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "第四條證據則反過來約束我們不要過度修 prompt。酸辣粉那筆資料裡，畫面可見：",
+            "plainText": "第四條證據後來反過來修正了我對「強證據」的理解。酸辣粉那筆資料裡，人類回看截圖時可以得到一個合理的真實支付公式：",
             "caption": [],
             "language": "",
             "source": "",
@@ -462,12 +462,12 @@
             "type": "code",
             "richText": [
               {
-                "text": "酸辣粉豪華單人餐 42.7\n打包費 1.5\n42.7 + 1.5 = 44.2",
+                "text": "酸辣粉豪華單人餐 42.7\n打包費 1.5\n美團紅包 -13\n42.7 + 1.5 - 13 = 31.2",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "酸辣粉豪華單人餐 42.7\n打包費 1.5\n42.7 + 1.5 = 44.2",
+            "plainText": "酸辣粉豪華單人餐 42.7\n打包費 1.5\n美團紅包 -13\n42.7 + 1.5 - 13 = 31.2",
             "caption": [],
             "language": "Plain Text",
             "source": "",
@@ -479,12 +479,12 @@
             "type": "text",
             "richText": [
               {
-                "text": "但畫面底部被裁切，又露出一行紅包抵扣片段：",
+                "text": "但這不是一條足夠強的 prompt 證據。模型實際可用的 OCR 只穩定給到商品價與打包費，底部紅包扣減只是在圖像邊緣露出片段，並不是一條可靠、完整、可讀的輸入證據。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "但畫面底部被裁切，又露出一行紅包抵扣片段：",
+            "plainText": "但這不是一條足夠強的 prompt 證據。模型實際可用的 OCR 只穩定給到商品價與打包費，底部紅包扣減只是在圖像邊緣露出片段，並不是一條可靠、完整、可讀的輸入證據。",
             "caption": [],
             "language": "",
             "source": "",
@@ -492,18 +492,90 @@
             "children": []
           },
           {
-            "id": "23126eb89b1b42d68a829707edad0dc3",
-            "type": "code",
+            "id": "30c94b7b7e8d440fb840de61a9526578",
+            "type": "text",
             "richText": [
               {
-                "text": "已用1張美團紅包\n-¥13",
+                "text": "所以這筆不能用來要求模型必須輸出 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "31.2",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，也不能推導出「底部裁切、final paid 缺失時仍必須 completed」這種過強規則。更合理的處理，是把它標成 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "ambiguous_input_evidence",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "：如果模型看不清扣減，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "pending",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 合理；如果模型只根據 OCR 可見項計算，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "completed 44.2",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 合理；如果模型成功讀到 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "-13",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "completed 31.2",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 也合理。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "已用1張美團紅包\n-¥13",
+            "plainText": "所以這筆不能用來要求模型必須輸出 31.2，也不能推導出「底部裁切、final paid 缺失時仍必須 completed」這種過強規則。更合理的處理，是把它標成 ambiguous_input_evidence：如果模型看不清扣減，pending 合理；如果模型只根據 OCR 可見項計算，completed 44.2 合理；如果模型成功讀到 -13，completed 31.2 也合理。",
             "caption": [],
-            "language": "Plain Text",
+            "language": "",
             "source": "",
             "assetPath": "",
             "children": []
@@ -513,24 +585,36 @@
             "type": "text",
             "richText": [
               {
-                "text": "這代表 ",
+                "text": "這個修正比單純增加一條 prompt 規則更重要：歷史資料不只用來補 prompt，也用來阻止 prompt 被錯誤證據污染。最後保留的是較保守的通用規則：只有清楚可讀的商品/服務價格、必要費用、免收/贈送項與優惠扣減能閉合成加減公式時，才要求 ",
                 "annotations": [],
                 "href": ""
               },
               {
-                "text": "44.2",
+                "text": "completed",
                 "annotations": [
                   "c"
                 ],
                 "href": ""
               },
               {
-                "text": " 很可能只是折扣前小計，不是 final paid。資料庫裡也找不到第二張圖、訊息上下文或更完整 OCR。這種情況下，不能為了讓驗收變漂亮而推導一個 final amount，也不能改 prompt 讓它強行 completed。正確處理是標成 unverifiable / probable gold defect，等待外部證據。",
+                "text": "；如果費用或扣減被提示但金額不可可靠讀取，就允許 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "pending",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "這代表 44.2 很可能只是折扣前小計，不是 final paid。資料庫裡也找不到第二張圖、訊息上下文或更完整 OCR。這種情況下，不能為了讓驗收變漂亮而推導一個 final amount，也不能改 prompt 讓它強行 completed。正確處理是標成 unverifiable / probable gold defect，等待外部證據。",
+            "plainText": "這個修正比單純增加一條 prompt 規則更重要：歷史資料不只用來補 prompt，也用來阻止 prompt 被錯誤證據污染。最後保留的是較保守的通用規則：只有清楚可讀的商品/服務價格、必要費用、免收/贈送項與優惠扣減能閉合成加減公式時，才要求 completed；如果費用或扣減被提示但金額不可可靠讀取，就允許 pending。",
             "caption": [],
             "language": "",
             "source": "",
@@ -661,12 +745,12 @@
             "type": "text",
             "richText": [
               {
-                "text": "所以這次真正的工程結論是：歷史資料不能直接當標準答案，但可以當證據來源。每一筆失敗都必須先分類，只有能被原始畫面支持、能泛化、且能改善產品行為的證據，才有資格改 prompt。",
+                "text": "所以這次真正的工程結論是：歷史資料不能直接當標準答案，但可以當證據來源。每一筆失敗都必須先分類，只有能被模型實際收到的原始畫面/OCR 支持、能泛化、且能改善產品行為的證據，才有資格改 prompt。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "所以這次真正的工程結論是：歷史資料不能直接當標準答案，但可以當證據來源。每一筆失敗都必須先分類，只有能被原始畫面支持、能泛化、且能改善產品行為的證據，才有資格改 prompt。",
+            "plainText": "所以這次真正的工程結論是：歷史資料不能直接當標準答案，但可以當證據來源。每一筆失敗都必須先分類，只有能被模型實際收到的原始畫面/OCR 支持、能泛化、且能改善產品行為的證據，才有資格改 prompt。",
             "caption": [],
             "language": "",
             "source": "",
@@ -773,7 +857,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:53:47.024Z",
+        "syncedAt": "2026-05-07T18:45:17.917Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -1351,7 +1435,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:53:47.444Z",
+        "syncedAt": "2026-05-07T18:45:18.152Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -1963,7 +2047,7 @@
       "lastEditedTime": "2026-04-26T09:14:41.193Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:53:47.902Z",
+        "syncedAt": "2026-05-07T18:45:18.434Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -2886,7 +2970,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:53:58.606Z",
+        "syncedAt": "2026-05-07T18:45:23.626Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -3465,7 +3549,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:53:59.038Z",
+        "syncedAt": "2026-05-07T18:45:23.823Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -4162,7 +4246,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:53:59.486Z",
+        "syncedAt": "2026-05-07T18:45:24.080Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -5321,7 +5405,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:53:59.929Z",
+        "syncedAt": "2026-05-07T18:45:24.330Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -7462,7 +7546,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:54:00.443Z",
+        "syncedAt": "2026-05-07T18:45:24.606Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -8951,7 +9035,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:54:00.964Z",
+        "syncedAt": "2026-05-07T18:45:24.915Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -9481,7 +9565,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:54:05.341Z",
+        "syncedAt": "2026-05-07T18:45:26.976Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -9976,7 +10060,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:54:10.477Z",
+        "syncedAt": "2026-05-07T18:45:29.334Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -10589,7 +10673,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:54:10.922Z",
+        "syncedAt": "2026-05-07T18:45:29.531Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -11099,7 +11183,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:54:11.351Z",
+        "syncedAt": "2026-05-07T18:45:29.783Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -11996,7 +12080,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:54:18.012Z",
+        "syncedAt": "2026-05-07T18:45:33.243Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -12297,7 +12381,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:54:20.538Z",
+        "syncedAt": "2026-05-07T18:45:34.408Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -13648,7 +13732,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:54:48.511Z",
+        "syncedAt": "2026-05-07T18:45:46.953Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -13823,7 +13907,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:54:51.376Z",
+        "syncedAt": "2026-05-07T18:45:48.091Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -14423,7 +14507,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-06T21:54:56.388Z",
+        "syncedAt": "2026-05-07T18:45:50.274Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
