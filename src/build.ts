@@ -102,6 +102,10 @@ type BlogBlock = {
   language?: string;
   source?: string;
   assetPath?: string;
+  tableColumns?: string[];
+  tableHasColumnHeader?: boolean;
+  tableHasRowHeader?: boolean;
+  tableCells?: Record<string, BlogRichText[]>;
   children?: BlogBlock[];
 };
 
@@ -649,6 +653,53 @@ function renderMediaFallback(block: BlogBlock, label: string, rootPath: string):
   `;
 }
 
+function tableColumns(block: BlogBlock): string[] {
+  if (block.tableColumns?.length) return block.tableColumns;
+
+  const columns = new Set<string>();
+  for (const row of block.children || []) {
+    for (const column of Object.keys(row.tableCells || {})) {
+      columns.add(column);
+    }
+  }
+  return [...columns];
+}
+
+function renderTableRow(row: BlogBlock, columns: string[], cellTag: "td" | "th", rowHeader = false): string {
+  const cells = columns
+    .map((column, index) => {
+      const tag = rowHeader && index === 0 ? "th" : cellTag;
+      const scope = tag === "th" ? ` scope="${cellTag === "th" ? "col" : "row"}"` : "";
+      const content = renderRichText(row.tableCells?.[column] || []);
+      return `<${tag}${scope}>${content}</${tag}>`;
+    })
+    .join("");
+  return `<tr>${cells}</tr>`;
+}
+
+function renderBlogTable(block: BlogBlock): string {
+  const rows = (block.children || []).filter((child) => child.type === "table_row");
+  if (!rows.length) return "";
+
+  const columns = tableColumns(block);
+  if (!columns.length) return "";
+
+  const [firstRow, ...bodyRows] = rows;
+  const hasHeader = block.tableHasColumnHeader === true;
+  const header = hasHeader ? `<thead>${renderTableRow(firstRow, columns, "th")}</thead>` : "";
+  const bodySource = hasHeader ? bodyRows : rows;
+  const body = bodySource.map((row) => renderTableRow(row, columns, "td", block.tableHasRowHeader === true)).join("");
+
+  return `
+    <div class="blog-table-wrap">
+      <table class="blog-table">
+        ${header}
+        <tbody>${body}</tbody>
+      </table>
+    </div>
+  `;
+}
+
 function renderBlogBlock(block: BlogBlock, rootPath: string): string {
   const text = blockText(block);
   const children = renderBlogChildren(block, rootPath);
@@ -675,6 +726,10 @@ function renderBlogBlock(block: BlogBlock, rootPath: string): string {
     case "file":
     case "external_object_instance":
       return renderMediaFallback(block, "Attachment from the original Notion note", rootPath);
+    case "table":
+      return renderBlogTable(block);
+    case "table_row":
+      return "";
     case "page":
     case "collection_view_page":
       return "";

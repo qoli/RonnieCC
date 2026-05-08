@@ -59,6 +59,14 @@ function blockRichText(block, property = "title") {
   return richTextSegments(block.properties?.[property]);
 }
 
+function blockTableCells(block) {
+  return Object.fromEntries(
+    Object.entries(block.properties || {})
+      .map(([key, value]) => [key, richTextSegments(value)])
+      .filter(([, segments]) => segments.length)
+  );
+}
+
 function plainProperty(block, property) {
   return notionText(block.properties?.[property]);
 }
@@ -159,15 +167,27 @@ function normalizeBlock(block, blockMap) {
     language: plainProperty(value, "language"),
     source: plainProperty(value, "source"),
     assetPath: "",
+    tableColumns: Array.isArray(value.format?.table_block_column_order) ? value.format.table_block_column_order : [],
+    tableHasColumnHeader: value.format?.table_block_column_header === true,
+    tableHasRowHeader: value.format?.table_block_row_header === true,
+    tableCells: value.type === "table_row" ? blockTableCells(value) : {},
     children: [],
   };
+
+  const hasContent = (child) =>
+    child.plainText ||
+    child.caption.length ||
+    child.source ||
+    child.children.length ||
+    Object.keys(child.tableCells || {}).length ||
+    ["divider", "image", "video", "file", "external_object_instance", "table", "table_row"].includes(child.type);
 
   if (Array.isArray(value.content) && value.content.length) {
     normalized.children = value.content
       .map((id) => blockMap[id])
       .filter(Boolean)
       .map((child) => normalizeBlock(child, blockMap))
-      .filter((child) => child.plainText || child.caption.length || child.source || child.children.length || ["divider", "image", "video", "file", "external_object_instance"].includes(child.type));
+      .filter(hasContent);
   }
 
   return normalized;
@@ -184,7 +204,15 @@ async function fetchPostContent(row, notionToken) {
     .map((id) => blockMap[id])
     .filter(Boolean)
     .map((block) => normalizeBlock(block, blockMap))
-    .filter((block) => block.plainText || block.caption.length || block.source || block.children.length || ["divider", "image", "video", "file", "external_object_instance"].includes(block.type));
+    .filter(
+      (block) =>
+        block.plainText ||
+        block.caption.length ||
+        block.source ||
+        block.children.length ||
+        Object.keys(block.tableCells || {}).length ||
+        ["divider", "image", "video", "file", "external_object_instance", "table", "table_row"].includes(block.type)
+    );
 
   return attachLocalAssets(contentBlocks, row, notionToken);
 }
