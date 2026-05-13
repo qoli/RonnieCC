@@ -45,9 +45,11 @@ function richTextSegments(value) {
   return value
     .map((part) => {
       const annotations = Array.isArray(part?.[1]) ? part[1] : [];
-      const link = annotations.find((annotation) => annotation?.[0] === "a")?.[1] || "";
+      const linkMention = annotations.find((annotation) => annotation?.[0] === "lm")?.[1] || {};
+      const link = annotations.find((annotation) => annotation?.[0] === "a")?.[1] || linkMention.href || "";
+      const text = String(part?.[0] || "");
       return {
-        text: String(part?.[0] || ""),
+        text: text === "‣" && linkMention.title ? String(linkMention.title) : text,
         annotations: annotations.map((annotation) => annotation?.[0]).filter(Boolean),
         href: link,
       };
