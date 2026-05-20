@@ -13,6 +13,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
 const outputPath = path.join(repoRoot, "content", "blog.seed.json");
 const assetRoot = path.join(repoRoot, "content", "blog-assets");
+const siteUrl = "https://ronniewong.cc";
+const defaultPublishTarget = "ronniecc";
+const subsiteFieldNames = ["子站點", "子站点", "Subsites"];
 
 function titleSlug(title) {
   return String(title || "")
@@ -35,8 +38,28 @@ function notionPageUrl(row) {
   return `https://www.notion.so/qoli/${prefix}${compactId(row.id)}?v=${compactId(collectionViewId)}&source=copy_link`;
 }
 
+function blogPostUrl(slug) {
+  return `${siteUrl}/blog/${encodeURIComponent(slug)}/`;
+}
+
 function isPublic(row) {
   return row["公開"] === true || row["公開"] === "__YES__" || row["公開"] === "Yes";
+}
+
+function normalizeSubsiteName(value) {
+  return String(value || "")
+    .trim()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function subsites(row) {
+  const raw = subsiteFieldNames.map((fieldName) => row[fieldName]).find((value) => value);
+  const values = Array.isArray(raw) ? raw : String(raw || "").split(",");
+  return [...new Set(values.map(normalizeSubsiteName).filter((value) => value && value !== defaultPublishTarget))];
 }
 
 function richTextSegments(value) {
@@ -227,13 +250,21 @@ function idToKey(blocks, id) {
 function normalizePost(row) {
   const writtenYear = row["編寫日期"] ? String(new Date(row["編寫日期"]).getFullYear()) : "";
   const year = writtenYear || String(row["年份"] || "").trim() || (row.createdTime ? String(new Date(row.createdTime).getFullYear()) : "");
+  const slug = postSlug(row);
+  const postSubsites = subsites(row);
   return {
     id: compactId(row.id),
-    slug: postSlug(row),
+    slug,
     title: String(row.Name || "").trim(),
     tag: String(row.Tag || "").trim(),
     year,
     public: isPublic(row),
+    subsites: postSubsites,
+    publishTargets: [defaultPublishTarget, ...postSubsites],
+    canonical: {
+      site: defaultPublishTarget,
+      url: blogPostUrl(slug),
+    },
     notionUrl: notionPageUrl(row),
     createdTime: row.createdTime || "",
     lastEditedTime: row.lastEditedTime || "",
@@ -276,6 +307,7 @@ async function main() {
   }
 
   const payload = {
+    contractVersion: 1,
     generatedAt: new Date().toISOString(),
     source: {
       databaseId,

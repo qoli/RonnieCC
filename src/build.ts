@@ -77,6 +77,12 @@ type BlogPost = {
   tag?: string;
   year?: string;
   public?: boolean;
+  subsites?: string[];
+  publishTargets?: string[];
+  canonical?: {
+    site: string;
+    url: string;
+  };
   notionUrl: string;
   createdTime?: string;
   lastEditedTime?: string;

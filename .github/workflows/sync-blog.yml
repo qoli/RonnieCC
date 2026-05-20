@@ -28,12 +28,12 @@ jobs:
 
       - name: Commit updated blog data
         run: |
-          if git diff --quiet -- content/blog.seed.json; then
+          if git diff --quiet -- content/blog.seed.json content/blog-assets; then
             echo "No blog data changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/blog.seed.json
+          git add content/blog.seed.json content/blog-assets
           git commit -m "Sync Notion blog data"
           git push

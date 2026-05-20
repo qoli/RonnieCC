@@ -70,10 +70,13 @@ The source HTML files can still be served directly for development fallback, but
 ## Blog Sync
 
 The blog index and article pages are generated from a public Notion database. No `NOTION_TOKEN` is required for the current public sync path.
+RonnieCC is the implicit default publishing target for every public post. The Notion `子站點` multi-select adds extra product subsite targets, and `content/blog.seed.json` is the contract that subsites consume.
 
 ```sh
 sh scripts/update-blog.sh
 ```
+
+See `docs/blog-distribution.md` for the subsite distribution contract.
 
 ## Hosting
 

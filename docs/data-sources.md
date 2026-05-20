@@ -1,6 +1,6 @@
 # Ronnie 個人能力網站資料源整理
 
-更新日期：2026-04-25
+更新日期：2026-05-20
 
 這份文件是我們在做網站之前用來對齊資料源的中間文件，不是對外公開文案。它的目的不是把所有內容一次寫成最終版本，而是先把「網站要展示哪些 project ecosystem」、「每個 project 屬於現在、探索還是歷史」、「每個 project 下面有哪些 app / repo / docs / writing / tooling」、「哪些 tag 應該用來描述這些事情」、「哪些資料可信」、「哪些內容可以公開」講清楚。
 
@@ -484,6 +484,7 @@ Blog 入口使用 Notion database 作為上游資料源，但網站只讀取同�
 | Generated file | `content/blog.seed.json` |
 | Sync script | `scripts/sync-blog.mjs` |
 | GitHub Action | `.github/workflows/sync-blog.yml` |
+| Distribution contract | `docs/blog-distribution.md` |
 
 ### Notion schema
 
@@ -494,18 +495,22 @@ Blog 入口使用 Notion database 作為上游資料源，但網站只讀取同�
 | `公開` | checkbox | 發布開關；只有 true / `__YES__` 可以進入網站 |
 | `編寫日期` | date | 文章實際編寫日期；同步時優先用它推導年份 |
 | `年份` | formula / text | 顯示與分組年份；缺少 `編寫日期` 時才使用 |
+| `子站點` | multi-select | 額外同步到哪些產品子站；RonnieCC 主站是 implicit default，不需要也不應該在這裡選 |
 
 ### Blog 同步規則
 
 - Blog index 連到 RonnieCC 站內文章頁，不再直接外跳 Notion。
 - 同步器會抓取公開頁面的 Notion v3 block snapshot，`src/build.ts` 在 build time 生成 `/blog/<slug>/` 和 `/en/blog/<slug>/`。
 - 文章頁 canonical、Open Graph URL、CollectionPage item URL 和 sitemap 都指向 RonnieCC 站內 URL。
+- `content/blog.seed.json` 是主站與子站共用的 Blog contract；子站不應直接拉 Notion。
+- RonnieCC 是所有公開文章的 implicit default target；`子站點` 只描述額外同步目標，目前第一個子站 id 是 `adict`。
+- 同步器會輸出 `subsites`、`publishTargets` 和 `canonical`。完整鏡像到子站的文章 canonical 應指向 RonnieCC 原文 URL。
 - Notion table 會保存 column order、header 設定和 `table_row` cell rich text，build time 轉成站內 HTML table。
 - Notion 圖片在同步階段透過 `getSignedFileUrls` 下載到 `content/blog-assets/<post-id>/`，文章 JSON 只保留站內 `assetPath` 給 build 使用。
 - 如果圖片下載失敗，文章頁仍會顯示 block caption / source fallback，避免靜態 build 產生壞掉的 `<img>`。
 - GitHub Actions 每天同步一次即可，並保留 `workflow_dispatch` 供手動更新。
 - 公開 Notion database 不需要 `NOTION_TOKEN`；如果日後改為私有頁面，GitHub repo 再設定 `NOTION_TOKEN` 或 `NOTION_TOKEN_V2` secret，值為 Notion `token_v2`。
-- 同步器只寫入 `content/blog.seed.json` 和 `content/blog-assets/`，不改動手寫 HTML/CSS/JS。
+- 同步器只寫入 `content/blog.seed.json` 和 `content/blog-assets/`，不改動手寫 HTML/CSS/JS；GitHub Action 會一起提交 JSON 和 asset 變更。
 - `公開` 是唯一發布門檻；Notion view 本身不代表公開狀態。
 - `編寫日期` 是年份分組的第一優先資料源；`年份` formula / text 只作第二優先。兩者都缺失時才 fallback 到 created time。
 
