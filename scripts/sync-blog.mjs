@@ -116,6 +116,10 @@ function attachmentFileName(source) {
 
 async function signedFileUrl(source, blockId, notionToken) {
   if (!source || (!source.startsWith("attachment:") && !/^https?:\/\//.test(source))) return "";
+  if (/^https?:\/\//.test(source)) {
+    const hostname = new URL(source).hostname;
+    if (!hostname.endsWith("notion.so") && !hostname.endsWith("amazonaws.com")) return source;
+  }
 
   const response = await fetch("https://www.notion.so/api/v3/getSignedFileUrls", {
     method: "POST",
@@ -137,7 +141,8 @@ async function signedFileUrl(source, blockId, notionToken) {
   });
 
   if (!response.ok) {
-    throw new Error(`Notion getSignedFileUrls failed with ${response.status}`);
+    const body = await response.text().catch(() => "");
+    throw new Error(`Notion getSignedFileUrls failed with ${response.status} for block ${compactId(blockId)} source ${source}: ${body.slice(0, 300)}`);
   }
 
   const payload = await response.json();

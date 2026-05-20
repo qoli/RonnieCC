@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-05-20T07:42:41.432Z",
+  "generatedAt": "2026-05-20T07:58:52.784Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,1182 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "366c1b36c40181f6a11cec533d1691dc",
+      "slug": "adict-3-0-beta-an-update-for-existing-users-366c1b36",
+      "title": "aDict 3.0 Beta: An Update for Existing Users",
+      "tag": "aDict,Dictionary,Product,Notes",
+      "year": "2026",
+      "public": true,
+      "subsites": [
+        "adict"
+      ],
+      "publishTargets": [
+        "ronniecc",
+        "adict"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/adict-3-0-beta-an-update-for-existing-users-366c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/adict-3-0-beta-an-update-for-existing-users-366c1b36c40181f6a11cec533d1691dc?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-05-20T02:19:38.301Z",
+      "lastEditedTime": "2026-05-20T07:43:01.846Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-05-20T07:55:56.054Z",
+        "blocks": [
+          {
+            "id": "917cb89a655f474c88c4b5f9e8aa69c6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "If you used aDict before, this update is mainly for you: aDict is back.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "If you used aDict before, this update is mainly for you: aDict is back.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fb089048afab40b5843fe664215250cd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Version 3.0 is not a small maintenance update. I rebuilt and reorganized an old dictionary app that had been sitting quietly for a long time. The new version is currently available through TestFlight, and the App Store update has not been released yet. If the TestFlight page shows existing App Store information, that is Apple displaying the current public store metadata. It does not mean that version 3.0 is already live on the App Store. After joining TestFlight and installing the beta, you will get the 3.0 build.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Version 3.0 is not a small maintenance update. I rebuilt and reorganized an old dictionary app that had been sitting quietly for a long time. The new version is currently available through TestFlight, and the App Store update has not been released yet. If the TestFlight page shows existing App Store information, that is Apple displaying the current public store metadata. It does not mean that version 3.0 is already live on the App Store. After joining TestFlight and installing the beta, you will get the 3.0 build.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "cd8dd57ee9f241c98be925f99161c87d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "My goal is still simple: when you are reading on iPhone, iPad, or Mac and run into a word you are not sure about, aDict should let you look it up quickly without first deciding which website, dictionary, or tool to open.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "My goal is still simple: when you are reading on iPhone, iPad, or Mac and run into a word you are not sure about, aDict should let you look it up quickly without first deciding which website, dictionary, or tool to open.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5bca36c238ce4e0391a102b36a2ea3e6",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "What Changed in 3.0",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "What Changed in 3.0",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4767154f9d664f8e9349c0bed02f21aa",
+            "type": "text",
+            "richText": [
+              {
+                "text": "The older version of aDict was mostly a lightweight lookup tool. Version 3.0 keeps that direction, but the app has been rebuilt around clearer pieces:",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "The older version of aDict was mostly a lightweight lookup tool. Version 3.0 keeps that direction, but the app has been rebuilt around clearer pieces:",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ec6e962f85524f979172dffd4090483f",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Online dictionary sources",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Online dictionary sources",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "364c6e025cf840d894bd4993332c7948",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Local dictionary files",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Local dictionary files",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "61703501270e4340a43466e1997d9ed8",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Source switching",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Source switching",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "90bcb92c171a4d9fb790186e101518f4",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Input suggestions",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Input suggestions",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "049ddf9e68624db99b7e18874c5bb690",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Lookup history",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Lookup history",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "55fba249da4848be94e6665dbcc74fd0",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Favorites",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Favorites",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "422e1148ed1848f9a3fa0eadee762afb",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "A shared workflow across iPhone, iPad, and Mac",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "A shared workflow across iPhone, iPad, and Mac",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "085063ab4a5749168027838920868a6d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "You do not need to prepare local dictionary files before using the new version. You can start with the built-in online sources and use it as a simple lookup tool. If you already have your own MDX, MDD, or StarDict files, you can import them later and use them in the same lookup flow.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "You do not need to prepare local dictionary files before using the new version. You can start with the built-in online sources and use it as a simple lookup tool. If you already have your own MDX, MDD, or StarDict files, you can import them later and use them in the same lookup flow.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3db66e25f148447199a8a4033e49c6f9",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "aDict 3.0 dictionary source switching and input suggestions",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "https://raw.githubusercontent.com/qoli/RonnieCC-aDict/main/docs/forum-publishing/assets/freemdict-dictionary-menu-suggestions.png",
+            "assetPath": "content/blog-assets/366c1b36c40181f6a11cec533d1691dc/3db66e25f148447199a8a4033e49c6f9-freemdict-dictionary-menu-suggestions.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d7f5a80a95934b79a3f3e7ed2c776f8d",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Online Sources Are the Starting Point",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Online Sources Are the Starting Point",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "aaa8c72514f640c79c5b312eb8ba7bed",
+            "type": "text",
+            "richText": [
+              {
+                "text": "In this version, online dictionaries are placed closer to the front of the experience. Many users do not need to manage a full personal dictionary library. They just want a reliable lookup entry point while reading.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "In this version, online dictionaries are placed closer to the front of the experience. Many users do not need to manage a full personal dictionary library. They just want a reliable lookup entry point while reading.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8c3e263205fd4a278363aaa522559263",
+            "type": "text",
+            "richText": [
+              {
+                "text": "The current beta includes online sources such as Youdao and V2EX Dict. Different sources serve different purposes. Some are better for concise definitions, while others can provide examples, word origins, related expressions, or contextual notes. aDict does not merge them into one black box. Instead, it lets you switch between sources when needed.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "The current beta includes online sources such as Youdao and V2EX Dict. Different sources serve different purposes. Some are better for concise definitions, while others can provide examples, word origins, related expressions, or contextual notes. aDict does not merge them into one black box. Instead, it lets you switch between sources when needed.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9064fa9643674ef8abac6fd955fe0fcb",
+            "type": "text",
+            "richText": [
+              {
+                "text": "This is one of the areas I still want to refine: lookup should feel fast, source switching should be obvious, and the result page should stay quiet enough for daily use.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "This is one of the areas I still want to refine: lookup should feel fast, source switching should be obvious, and the result page should stay quiet enough for daily use.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "96c0912f8b6a455c9455502ec8daa09b",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Local Dictionaries Are Still Supported",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Local Dictionaries Are Still Supported",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7c4947820c704c98923ba226c8ae43df",
+            "type": "text",
+            "richText": [
+              {
+                "text": "If you originally used aDict because of local dictionaries, that path is still there.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "If you originally used aDict because of local dictionaries, that path is still there.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "26536f835acc4528a998d44b900169b3",
+            "type": "text",
+            "richText": [
+              {
+                "text": "The current beta supports:",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "The current beta supports:",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e038231c29c44d68a4d5af92f77e0b1a",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "MDict / MDX / MDD",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "MDict / MDX / MDD",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0d992a69dbc94390af390041c0a18fba",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "StarDict",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "StarDict",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "296c34b47c8e4c139dcec0179fda5e6c",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Same-name resource file detection",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Same-name resource file detection",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d961623c0f964ca49f5a8b341dd69ab6",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "One-dictionary-per-folder organization",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "One-dictionary-per-folder organization",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "420e19106a7b456badb10d5e93402303",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Local dictionary source switching",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Local dictionary source switching",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9109711ae02841e39ebeb5bf8afb0d1e",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Local dictionary file management",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Local dictionary file management",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c172e1b81b434102a139c581a9d90626",
+            "type": "text",
+            "richText": [
+              {
+                "text": "The one-dictionary-per-folder layout was added after early testing feedback. Initially, I mainly considered structures where files such as ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": ".mdx",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": ", ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": ".mdd",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": ", ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": ".css",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": ", and ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": ".js",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " share the same name and sit together. That missed a common real-world workflow: many users keep each dictionary in its own folder for long-term organization. That was my oversight, and later builds have added support for this layout.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "The one-dictionary-per-folder layout was added after early testing feedback. Initially, I mainly considered structures where files such as .mdx, .mdd, .css, and .js share the same name and sit together. That missed a common real-world workflow: many users keep each dictionary in its own folder for long-term organization. That was my oversight, and later builds have added support for this layout.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0904feab3f2444058f1fb1f76d61e235",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "MDict lookup and dictionary file management",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "https://raw.githubusercontent.com/qoli/RonnieCC-aDict/main/docs/forum-publishing/assets/freemdict-mdict-management.png",
+            "assetPath": "content/blog-assets/366c1b36c40181f6a11cec533d1691dc/0904feab3f2444058f1fb1f76d61e235-freemdict-mdict-management.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "21135311ea414bf488494a80b7e8fc43",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Apple Intelligence Support Is Still Early",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Apple Intelligence Support Is Still Early",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ca052576ed894e6bb5d0361c31d9eeda",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Version 3.0 also includes an early experimental feature related to Apple Intelligence. It can add configurable enrichment blocks to lookup results, such as example sentences, usage notes, or related context.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Version 3.0 also includes an early experimental feature related to Apple Intelligence. It can add configurable enrichment blocks to lookup results, such as example sentences, usage notes, or related context.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a9bb91e4f1ef46b5a1487ccb15e23490",
+            "type": "text",
+            "richText": [
+              {
+                "text": "I do not want to present this as a finished core feature yet. Right now, it is an early test of whether this kind of enrichment layer is actually useful in real reading and lookup scenarios. The rules, interface, and generated output you see now should not be treated as the final version.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "I do not want to present this as a finished core feature yet. Right now, it is an early test of whether this kind of enrichment layer is actually useful in real reading and lookup scenarios. The rules, interface, and generated output you see now should not be treated as the final version.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9f42dc0702114cf5bba07fa3ab09107b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "If you enjoy trying new app features, this part may be interesting. If you only want a clean dictionary tool, you can simply focus on the online sources and local dictionary support first.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "If you enjoy trying new app features, this part may be interesting. If you only want a clean dictionary tool, you can simply focus on the online sources and local dictionary support first.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9f9d8dc0a28847028d68453b69976153",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "Apple Intelligence lookup enrichment rules and result",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "https://raw.githubusercontent.com/qoli/RonnieCC-aDict/main/docs/forum-publishing/assets/appinn-apple-intelligence-enrichment.png",
+            "assetPath": "content/blog-assets/366c1b36c40181f6a11cec533d1691dc/9f9d8dc0a28847028d68453b69976153-appinn-apple-intelligence-enrichment.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "91785aa139e94999afa422e516a22c90",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "How Existing Users Can Read This Update",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "How Existing Users Can Read This Update",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "51ad4f266eb149a685575e8d64683985",
+            "type": "text",
+            "richText": [
+              {
+                "text": "I do not want to describe 3.0 as a finished destination. A better way to put it is this: the old aDict has been rebuilt into a version that can keep moving forward.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "I do not want to describe 3.0 as a finished destination. A better way to put it is this: the old aDict has been rebuilt into a version that can keep moving forward.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "34292d8a20484e3593c1a199d2127e30",
+            "type": "text",
+            "richText": [
+              {
+                "text": "If you only used aDict occasionally for quick lookup, you can try the new online sources, input suggestions, history, and favorites to see whether the daily flow feels smoother.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "If you only used aDict occasionally for quick lookup, you can try the new online sources, input suggestions, history, and favorites to see whether the daily flow feels smoother.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "770f2725e0f4476ba474a55a22b5a634",
+            "type": "text",
+            "richText": [
+              {
+                "text": "If you used aDict for local dictionaries, you can check whether MDX / MDD / StarDict import, resource detection, folder organization, and rendering now match your actual workflow better.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "If you used aDict for local dictionaries, you can check whether MDX / MDD / StarDict import, resource detection, folder organization, and rendering now match your actual workflow better.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c753b28209db415ba4388f63e0be5a47",
+            "type": "text",
+            "richText": [
+              {
+                "text": "If you use a Mac, you can also try whether the same lookup flow feels natural on desktop.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "If you use a Mac, you can also try whether the same lookup flow feels natural on desktop.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f1467cf9ce3048a183a6ac06a1381095",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Links",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Links",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1f7976f0f76e42e99ad82b42b9d209c0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Landing page:",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Landing page:",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1f6f4be8c007495692ff231e8ab54b72",
+            "type": "text",
+            "richText": [
+              {
+                "text": "https://adict.ronniewong.cc/",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://adict.ronniewong.cc/"
+              }
+            ],
+            "plainText": "https://adict.ronniewong.cc/",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "29d2da4e973f4a4ea6ce91bc651fd45f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "TestFlight:",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "TestFlight:",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a7ae917502274c1dbe229b3bf9e9994e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "https://testflight.apple.com/join/dCGMvyw9",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://testflight.apple.com/join/dCGMvyw9"
+              }
+            ],
+            "plainText": "https://testflight.apple.com/join/dCGMvyw9",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "66ddc798a8ba4bdba719bb966be09a32",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Current App Store page:",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Current App Store page:",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "da186965197948c6add171de0d1dc4fd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "https://apps.apple.com/in/app/adict-dictionary-lookup/id1483402597",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://apps.apple.com/in/app/adict-dictionary-lookup/id1483402597"
+              }
+            ],
+            "plainText": "https://apps.apple.com/in/app/adict-dictionary-lookup/id1483402597",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1e5b6df7df3c4f06a48f30604b38091a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Again, version 3.0 is currently a TestFlight beta, not the public App Store update. The TestFlight page may show the existing App Store metadata, but after joining the beta and installing it, you will receive the 3.0 build.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Again, version 3.0 is currently a TestFlight beta, not the public App Store update. The TestFlight page may show the existing App Store metadata, but after joining the beta and installing it, you will receive the 3.0 build.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b19297372d3f4f7a9e6eeebd79ac1688",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Feedback",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Feedback",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7fc1755da4014884a324d0b06e2de05e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "If you try the 3.0 beta and run into issues, import failures, rendering problems, or any part of the flow that feels awkward, you can reach me through the Telegram group.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "If you try the 3.0 beta and run into issues, import failures, rendering problems, or any part of the flow that feels awkward, you can reach me through the Telegram group.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e91e63e36c8d46e99c61a7cc08a1a3d8",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Telegram Group:",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Telegram Group:",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e06d2319681945b793ab0a082a8bea16",
+            "type": "text",
+            "richText": [
+              {
+                "text": "https://t.me/ronnieapp",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://t.me/ronnieapp"
+              }
+            ],
+            "plainText": "https://t.me/ronnieapp",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7da9a4dc9eae425381aaa72d6ed2b7b8",
+            "type": "text",
+            "richText": [
+              {
+                "text": "For me, the most important question for aDict 3.0 is not whether the feature list looks long enough. It is whether the app can once again become a small tool that stays on your device for a long time and is ready whenever you need to look something up.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "For me, the most important question for aDict 3.0 is not whether the feature list looks long enough. It is whether the app can once again become a small tool that stays on your device for a long time and is ready whenever you need to look something up.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "35fc1b36c40180b88fe2e8fa4e55d6ec",
       "slug": "adict-3-0-一個老詞典-app-的重寫-35fc1b36",
@@ -31,7 +1207,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:39:58.193Z",
+        "syncedAt": "2026-05-20T07:56:00.039Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -611,7 +1787,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:16.471Z",
+        "syncedAt": "2026-05-20T07:56:21.570Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -2799,7 +3975,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:17.048Z",
+        "syncedAt": "2026-05-20T07:56:22.004Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -3517,7 +4693,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:17.418Z",
+        "syncedAt": "2026-05-20T07:56:22.548Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -4280,7 +5456,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:17.797Z",
+        "syncedAt": "2026-05-20T07:56:22.952Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -5419,7 +6595,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:41.989Z",
+        "syncedAt": "2026-05-20T07:56:52.098Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -6138,7 +7314,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:42.385Z",
+        "syncedAt": "2026-05-20T07:56:52.480Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -7003,7 +8179,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:42.864Z",
+        "syncedAt": "2026-05-20T07:56:53.112Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -8378,7 +9554,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:43.306Z",
+        "syncedAt": "2026-05-20T07:56:53.522Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -10911,7 +12087,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:43.885Z",
+        "syncedAt": "2026-05-20T07:56:53.966Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -12752,7 +13928,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:44.453Z",
+        "syncedAt": "2026-05-20T07:56:54.471Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -13402,7 +14578,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:48.974Z",
+        "syncedAt": "2026-05-20T07:56:59.001Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -14013,7 +15189,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:57.471Z",
+        "syncedAt": "2026-05-20T07:57:08.145Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -14774,7 +15950,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:57.829Z",
+        "syncedAt": "2026-05-20T07:57:08.647Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -15408,7 +16584,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:40:58.232Z",
+        "syncedAt": "2026-05-20T07:57:10.825Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -16521,7 +17697,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:41:05.706Z",
+        "syncedAt": "2026-05-20T07:57:18.317Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -16894,7 +18070,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:41:09.068Z",
+        "syncedAt": "2026-05-20T07:57:21.420Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -18573,7 +19749,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:41:55.760Z",
+        "syncedAt": "2026-05-20T07:58:07.591Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -18796,7 +19972,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:42:00.440Z",
+        "syncedAt": "2026-05-20T07:58:12.398Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -19556,7 +20732,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-20T07:42:08.613Z",
+        "syncedAt": "2026-05-20T07:58:19.667Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
