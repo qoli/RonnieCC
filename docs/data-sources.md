@@ -472,7 +472,7 @@ type PublicSurface = {
 
 ## Blog 資料源
 
-Blog 入口使用 Notion database 作為上游資料源，但網站只讀取同步後的靜態 JSON。Notion 仍然是編輯器，RonnieCC 是公開閱讀入口。
+Blog 入口使用 Notion database 作為上游資料源，但正式網站只在 build time 讀取同步後的靜態 JSON，並輸出可直接抓取的 HTML 列表。Notion 仍然是編輯器，RonnieCC 是公開閱讀入口。
 
 | 項目 | 值 |
 | --- | --- |
@@ -499,7 +499,7 @@ Blog 入口使用 Notion database 作為上游資料源，但網站只讀取同�
 
 ### Blog 同步規則
 
-- Blog index 連到 RonnieCC 站內文章頁，不再直接外跳 Notion。
+- Blog index 由 `src/build.ts` 生成為靜態 HTML，連到 RonnieCC 站內文章頁，不再直接外跳 Notion，也不依賴瀏覽器端 JSON fetch 才能看見文章列表。
 - 同步器會抓取公開頁面的 Notion v3 block snapshot，`src/build.ts` 在 build time 生成 `/blog/<slug>/` 和 `/en/blog/<slug>/`。
 - 文章頁 canonical、Open Graph URL、CollectionPage item URL 和 sitemap 都指向 RonnieCC 站內 URL。
 - `content/blog.seed.json` 是主站與子站共用的 Blog contract；子站不應直接拉 Notion。

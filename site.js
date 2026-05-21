@@ -774,6 +774,9 @@ function renderBlog() {
   const mount = document.querySelector("#blog-list");
   if (!mount) return;
 
+  const hasBuildTimeList = Boolean(document.body?.dataset.staticLanguage && mount.querySelector(".blog-item"));
+  if (hasBuildTimeList) return;
+
   const ui = activeUi();
   const rootPath = document.body?.dataset.rootPath || "";
   const blogPath = document.body?.dataset.staticLanguage === "en" ? "blog/" : `${rootPath}blog/`;
@@ -826,19 +829,32 @@ async function boot() {
   }
   setupThemeToggle();
   setupLanguageToggle();
-  if (document.body?.dataset.page === "blog-article") {
+
+  const page = document.body?.dataset.page;
+  if (page === "blog-article") {
     return;
   }
-  const rootPath = document.body?.dataset.rootPath || "";
-  const [projectsResponse, blogResponse] = await Promise.all([
-    fetch(`${rootPath}content/projects.seed.json`, { cache: "no-store" }),
-    fetch(`${rootPath}content/blog.seed.json`, { cache: "no-store" }),
-  ]);
-  sourceProjects = await projectsResponse.json();
-  if (blogResponse.ok) {
-    const blogData = await blogResponse.json();
-    sourceBlogPosts = blogData.posts || [];
+
+  const blogList = document.querySelector("#blog-list");
+  if (page === "blog" && document.body?.dataset.staticLanguage && blogList?.querySelector(".blog-item")) {
+    applyStaticCopy();
+    return;
   }
+
+  const rootPath = document.body?.dataset.rootPath || "";
+  if (page === "blog") {
+    const blogResponse = await fetch(`${rootPath}content/blog.seed.json`, { cache: "no-store" });
+    if (blogResponse.ok) {
+      const blogData = await blogResponse.json();
+      sourceBlogPosts = blogData.posts || [];
+    }
+    applyStaticCopy();
+    renderBlog();
+    return;
+  }
+
+  const projectsResponse = await fetch(`${rootPath}content/projects.seed.json`, { cache: "no-store" });
+  sourceProjects = await projectsResponse.json();
   renderAll();
 }
 

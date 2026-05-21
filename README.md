@@ -12,7 +12,7 @@ This repository powers [ronniewong.cc](https://ronniewong.cc), a static public i
 - `src/build.ts` generates static HTML into `dist/`, including clean project URLs such as `/projects/syncnext/`.
 - `src/seo.ts` centralizes canonical URLs, `hreflang`, Open Graph, Twitter metadata, identity links, and JSON-LD.
 - `og-image.svg` and `og-image.png` provide the default social preview image.
-- `blog.html` renders the writing index, and each public note is generated as an internal static page under `/blog/<slug>/`.
+- `blog.html` renders the writing index as build-time static HTML, and each public note is generated as an internal static page under `/blog/<slug>/`.
 - `resume.html` presents the public resume.
 
 ## Content Sources
@@ -69,7 +69,7 @@ The source HTML files can still be served directly for development fallback, but
 
 ## Blog Sync
 
-The blog index and article pages are generated from a public Notion database. No `NOTION_TOKEN` is required for the current public sync path.
+The blog index and article pages are generated from a public Notion database. The production Blog index is a static HTML list generated at build time; browser-side JSON loading is only a direct-source fallback. No `NOTION_TOKEN` is required for the current public sync path.
 RonnieCC is the implicit default publishing target for every public post. The Notion `子站點` multi-select adds extra product subsite targets, and `content/blog.seed.json` is the contract that subsites consume.
 
 ```sh
