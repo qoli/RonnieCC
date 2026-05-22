@@ -73,6 +73,8 @@ type ProjectCopy = Partial<Project> & {
 type BlogPost = {
   id: string;
   slug: string;
+  seoSlug?: string;
+  legacySlugs?: string[];
   title: string;
   tag?: string;
   year?: string;
@@ -292,6 +294,23 @@ function blogPostPath(post: BlogPost, prefix = ""): string {
 
 function blogPostCanonical(post: BlogPost, language: Language): string {
   return canonicalUrl(`blog/${encodeURIComponent(post.slug)}/`, language);
+}
+
+function renderRedirectPage(targetUrl: string, title: string): string {
+  return `<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="${escapeAttr(targetUrl)}">
+    <meta http-equiv="refresh" content="0; url=${escapeAttr(targetUrl)}">
+    <script>window.location.replace(${JSON.stringify(targetUrl)});</script>
+    <title>${escapeHtml(title)} · Ronnie Wong</title>
+  </head>
+  <body>
+    <p><a href="${escapeAttr(targetUrl)}">Continue to ${escapeHtml(title)}</a></p>
+  </body>
+</html>`;
 }
 
 function truncate(value: string, max = 160): string {
@@ -1121,6 +1140,11 @@ async function build(): Promise<void> {
 
     for (const post of blogData.posts.filter((item) => item.public !== false)) {
       await writeOutput(`${locale.outputPrefix}blog/${post.slug}/index.html`, renderBlogPostPage(blogHtml, post, locale));
+      for (const legacySlug of post.legacySlugs || []) {
+        if (legacySlug && legacySlug !== post.slug) {
+          await writeOutput(`${locale.outputPrefix}blog/${legacySlug}/index.html`, renderRedirectPage(blogPostCanonical(post, locale.language), post.title));
+        }
+      }
     }
   }
 

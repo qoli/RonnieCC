@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-05-22T10:07:27.665Z",
+  "generatedAt": "2026-05-22T10:23:44.095Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -10,7 +10,11 @@
   "posts": [
     {
       "id": "368c1b36c40181808b6efe7332eb5106",
-      "slug": "用-codex-做設計-從-網站太醜-到可驗收的品味控制-368c1b36",
+      "slug": "codex-design-taste-control-368c1b36",
+      "seoSlug": "codex-design-taste-control",
+      "legacySlugs": [
+        "用-codex-做設計-從-網站太醜-到可驗收的品味控制-368c1b36"
+      ],
       "title": "用 Codex 做設計：從「網站太醜」到可驗收的品味控制",
       "tag": "AI,Design,Notes",
       "year": "2026",
@@ -21,7 +25,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/%E7%94%A8-codex-%E5%81%9A%E8%A8%AD%E8%A8%88-%E5%BE%9E-%E7%B6%B2%E7%AB%99%E5%A4%AA%E9%86%9C-%E5%88%B0%E5%8F%AF%E9%A9%97%E6%94%B6%E7%9A%84%E5%93%81%E5%91%B3%E6%8E%A7%E5%88%B6-368c1b36/"
+        "url": "https://ronniewong.cc/blog/codex-design-taste-control-368c1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/%E7%94%A8-codex-%E5%81%9A%E8%A8%AD%E8%A8%88-%E5%BE%9E-%E7%B6%B2%E7%AB%99%E5%A4%AA%E9%86%9C-%E5%88%B0%E5%8F%AF%E9%A9%97%E6%94%B6%E7%9A%84%E5%93%81%E5%91%B3%E6%8E%A7%E5%88%B6-368c1b36c40181808b6efe7332eb5106?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-05-22T08:20:51.903Z",
@@ -2350,6 +2354,8 @@
     {
       "id": "366c1b36c40181f6a11cec533d1691dc",
       "slug": "adict-3-0-beta-an-update-for-existing-users-366c1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "aDict 3.0 Beta: An Update for Existing Users",
       "tag": "aDict,Dictionary,Product,Notes",
       "year": "2026",
@@ -3526,6 +3532,8 @@
     {
       "id": "35fc1b36c40180b88fe2e8fa4e55d6ec",
       "slug": "adict-3-0-一個老詞典-app-的重寫-35fc1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "aDict 3.0 一個老詞典 App 的重寫",
       "tag": "aDict,Dictionary,Product,AI,Swift,iOS,macOS",
       "year": "2026",
@@ -4109,6 +4117,8 @@
     {
       "id": "358c1b36c4018154aa7def62ab498f05",
       "slug": "用歷史資料改提示詞-trackly-圖片記帳抽取器的證據帳本-358c1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "用歷史資料改提示詞：Trackly 圖片記帳抽取器的證據帳本",
       "tag": "AI,Local AI,Product,Notes",
       "year": "2026",
@@ -6297,6 +6307,8 @@
     {
       "id": "357c1b36c4018169b545de9cc29a7934",
       "slug": "vlm-不等於-visual-first-qwen3-5-在圖片記帳任務裡暴露的提示詞陷阱-357c1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "VLM 不等於 Visual-first：Qwen3.5 在圖片記帳任務裡暴露的提示詞陷阱",
       "tag": "AI,Local AI,Product,Notes",
       "year": "2026",
@@ -7015,6 +7027,8 @@
     {
       "id": "356c1b36c401814ba27fde6af0a8df3a",
       "slug": "github-pages-search-console-與一個-sitemap-黑箱問題-356c1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "GitHub Pages、Search Console 與一個 sitemap 黑箱問題",
       "tag": "aDict,Ops,Serverless,Product,Notes",
       "year": "2026",
@@ -7775,6 +7789,8 @@
     {
       "id": "34ec1b36c4018133ba41c6d9a03cbe2f",
       "slug": "adict-的演化歷史-從順眼的查詞工具到本地詞典架構-34ec1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "aDict 的演化歷史：從順眼的查詞工具到本地詞典架構",
       "tag": "aDict,iOS,macOS,Swift,Dictionary,Product",
       "year": "2026",
@@ -8917,6 +8933,8 @@
     {
       "id": "34ec1b36c401815bbe3ecc741f8a6a55",
       "slug": "從魔法按鈕到白盒工廠-hln-machine-的工程實錄-34ec1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "從魔法按鈕到白盒工廠：HLN Machine 的工程實錄",
       "tag": "AI,LLM,Automation,Video,Local AI,Pipeline",
       "year": "2026",
@@ -9636,6 +9654,8 @@
     {
       "id": "2f6c1b36c40181b1869ceb917e4b8143",
       "slug": "swiftterm-數據流與監控機制分析報告-2f6c1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "SwiftTerm 數據流與監控機制分析報告",
       "tag": "SwiftTerm,Terminal",
       "year": "2026",
@@ -10501,6 +10521,8 @@
     {
       "id": "2e8c1b36c401819393a4e5224022cb8f",
       "slug": "hsbbrowserappstore-tvos-review-public-中文版-2e8c1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "HSBBrowserAppStore-tvOS-review-public（中文版）",
       "tag": "tvOS,App Store,Review,WebKit",
       "year": "2026",
@@ -11876,6 +11898,8 @@
     {
       "id": "2e2c1b36c401805b8609e5a064f29d6d",
       "slug": "在-tvos-上活下來-一個非典型播放器的工程實錄-2e2c1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "在 tvOS 上活下來：一個非典型播放器的工程實錄",
       "tag": "tvOS,Player,SwiftUI",
       "year": "2026",
@@ -15318,6 +15342,8 @@
     {
       "id": "2b6c1b36c4018072816fd0e513d0903b",
       "slug": "用-semantic-entropy-降低長文翻譯中的名詞飄移-2b6c1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "用 Semantic Entropy 降低長文翻譯中的名詞飄移",
       "tag": "AI,LLM,Translation",
       "year": "2025",
@@ -17159,6 +17185,8 @@
     {
       "id": "10fc1b36c40180e8a6cbd9b2f729427e",
       "slug": "使用-apple-捷徑方便使用-windows-功能-10fc1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "使用 Apple 捷徑方便使用 Windows 功能",
       "tag": "Windows,Shortcut,Automation",
       "year": "2024",
@@ -17809,6 +17837,8 @@
     {
       "id": "108c1b36c401809096e5c28a5fba9cfc",
       "slug": "使用-uitableview-allowsfocus-解決-uitableview-和-swiftui-混寫的焦點錯誤對焦的問題-108c1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "使用 UITableView.allowsFocus 解決 UITableView 和 SwiftUI 混寫的焦點錯誤對焦的問題",
       "tag": "SwiftUI,UIKit,tvOS",
       "year": "2024",
@@ -18420,6 +18450,8 @@
     {
       "id": "34ec1b36c401810e8405df7510cfde52",
       "slug": "用流式下載避免-avplayer-播放時的內存爆炸-34ec1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "用流式下載避免 AVPlayer 播放時的內存爆炸",
       "tag": "iOS,Swift,AVFoundation,Player",
       "year": "2023",
@@ -19181,6 +19213,8 @@
     {
       "id": "2b1d8abfaff84d15ab4bb3a113b3eb6a",
       "slug": "fuck-swiftui-的筆記-2b1d8abf",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "Fuck SwiftUI 的筆記",
       "tag": "SwiftUI,tvOS,iOS,macOS,UIKit,Bug,Notes",
       "year": "2023",
@@ -22123,6 +22157,8 @@
     {
       "id": "2ebc1b36c40182038b6501766f1e94d5",
       "slug": "使用-swiftui-開發多個平台的應用-2ebc1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "使用 SwiftUI 開發多個平台的應用",
       "tag": "SwiftUI,iOS,macOS,tvOS",
       "year": "2021",
@@ -23236,6 +23272,8 @@
     {
       "id": "2b7c1b36c401836b9ee7019e6c1d6ab8",
       "slug": "以-serverless-形式重写工作室网站-2b7c1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "以 Serverless 形式重写工作室网站",
       "tag": "Serverless,WebKit",
       "year": "2021",
@@ -23609,6 +23647,8 @@
     {
       "id": "c01c1b36c4018342857901a47c12e0af",
       "slug": "syncnext-改版日誌-c01c1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "Syncnext 改版日誌",
       "tag": "tvOS,SwiftUI,Player,Notion,Design",
       "year": "2021",
@@ -26411,6 +26451,8 @@
     {
       "id": "c9ec1b36c4018280a8cd012f9dfb9ce7",
       "slug": "sketch-的按鍵精靈-循環點擊確認字體嵌入協議-c9ec1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "Sketch 的按鍵精靈：循環點擊確認字體嵌入協議",
       "tag": "Sketch,Automation",
       "year": "2020",
@@ -26634,6 +26676,8 @@
     {
       "id": "7f9c1b36c401826e94df01608533fd43",
       "slug": "vscode-美化攻略-7f9c1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "VSCode 美化攻略",
       "tag": "VSCode",
       "year": "2020",
@@ -27394,6 +27438,8 @@
     {
       "id": "9bfc1b36c401826091bf0128823fe89f",
       "slug": "元-氣-bread-9bfc1b36",
+      "seoSlug": "",
+      "legacySlugs": [],
       "title": "元の氣 Bread",
       "tag": "Design,WeChat,Mini Program,Food",
       "year": "2020",

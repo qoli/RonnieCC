@@ -20,6 +20,7 @@ is additive metadata.
 | Field | Type | Meaning |
 | --- | --- | --- |
 | `Name` | title | Article title. |
+| `SEO Slug` | text | Optional stable English URL slug body. When present, RonnieCC appends the post id prefix and uses it for canonical URLs. |
 | `Tag` | select / text | Display and keyword metadata. It is not routing metadata. |
 | `公開` | checkbox | Global publish gate. If false, no site should publish the post. |
 | `編寫日期` | date | Preferred article date and year source. |
@@ -37,7 +38,9 @@ distribution metadata:
 ```json
 {
   "id": "35fc1b36c40180b88fe2e8fa4e55d6ec",
-  "slug": "adict-3-0-...",
+  "slug": "adict-3-0-rewrite-35fc1b36",
+  "seoSlug": "adict-3-0-rewrite",
+  "legacySlugs": ["adict-3-0-一個老詞典-app-的重寫-35fc1b36"],
   "title": "aDict 3.0 一個老詞典 App 的重寫",
   "public": true,
   "subsites": ["adict"],
@@ -58,6 +61,7 @@ Compatibility rules:
 
 - Missing `subsites` means `[]`.
 - Missing `publishTargets` means `["ronniecc"]`.
+- Missing `legacySlugs` means `[]`.
 - Missing `canonical.url` should be reconstructed as
   `https://ronniewong.cc/blog/${encodeURIComponent(post.slug)}/`.
 

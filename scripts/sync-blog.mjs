@@ -34,8 +34,23 @@ function titleSlug(title) {
 }
 
 function postSlug(row) {
+  const seoSlug = normalizedSeoSlug(row);
+  const base = seoSlug || titleSlug(row.Name);
+  return base ? `${base}-${compactId(row.id).slice(0, 8)}` : compactId(row.id);
+}
+
+function legacyPostSlug(row) {
   const base = titleSlug(row.Name);
   return base ? `${base}-${compactId(row.id).slice(0, 8)}` : compactId(row.id);
+}
+
+function normalizedSeoSlug(row) {
+  const value = String(row["SEO Slug"] || "").trim().toLowerCase();
+  if (!value) return "";
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value)) {
+    throw new Error(`Invalid SEO Slug for "${row.Name}": "${row["SEO Slug"]}". Use lowercase ASCII words separated by single hyphens.`);
+  }
+  return value;
 }
 
 function notionPageUrl(row) {
@@ -271,10 +286,14 @@ function normalizePost(row) {
   const writtenYear = row["編寫日期"] ? String(new Date(row["編寫日期"]).getFullYear()) : "";
   const year = writtenYear || String(row["年份"] || "").trim() || (row.createdTime ? String(new Date(row.createdTime).getFullYear()) : "");
   const slug = postSlug(row);
+  const seoSlug = normalizedSeoSlug(row);
+  const legacySlug = legacyPostSlug(row);
   const postSubsites = subsites(row);
   return {
     id: compactId(row.id),
     slug,
+    seoSlug,
+    legacySlugs: legacySlug !== slug ? [legacySlug] : [],
     title: String(row.Name || "").trim(),
     tag: String(row.Tag || "").trim(),
     year,
@@ -304,13 +323,23 @@ async function main() {
 
   const table = await fetchCollection(collection.id, collectionViewId, notionToken, collection.space_id);
   const rows = rowsFromCollection(collectionRecord, table)
+    .filter((row) => isPublic(row) && String(row.Name || "").trim())
     .map(normalizePost)
-    .filter((post) => post.public && post.title)
     .sort((a, b) => {
       const yearDiff = Number(b.year || 0) - Number(a.year || 0);
       if (yearDiff !== 0) return yearDiff;
       return String(b.createdTime).localeCompare(String(a.createdTime));
     });
+
+  const missingSeoSlugPosts = rows.filter((post) => !post.seoSlug);
+  if (missingSeoSlugPosts.length) {
+    const sample = missingSeoSlugPosts
+      .slice(0, 5)
+      .map((post) => `"${post.title}"`)
+      .join(", ");
+    const suffix = missingSeoSlugPosts.length > 5 ? ", ..." : "";
+    console.warn(`Missing SEO Slug for ${missingSeoSlugPosts.length}/${rows.length} public posts; using legacy title-derived slugs for now: ${sample}${suffix}`);
+  }
 
   const existingPayload = fullSync ? null : await readExistingPayload();
   const existingPosts = new Map((existingPayload?.posts || []).map((post) => [post.id, post]));
