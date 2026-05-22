@@ -491,7 +491,7 @@ Blog 入口使用 Notion database 作為上游資料源，但正式網站只在 
 | 字段 | 類型 | 網站用途 |
 | --- | --- | --- |
 | `Name` | title | 文章標題 |
-| `SEO Slug` | text | 英文 URL slug 主體；有值時同步器會生成 `/blog/<seo-slug>-<id8>/`，沒有時暫時 fallback 舊 title slug |
+| `SEO Slug` | text | 英文 URL slug 主體；所有文章草稿都應填寫。公開文章缺失時同步器會 fail，有值時生成 `/blog/<seo-slug>-<id8>/` |
 | `Tag` | select | 類別標記；目前有 `Skecth`、`VSCode`、`Serverless`、`SwiftUI` |
 | `公開` | checkbox | 發布開關；只有 true / `__YES__` 可以進入網站 |
 | `編寫日期` | date | 文章實際編寫日期；同步時優先用它推導年份 |
@@ -501,7 +501,7 @@ Blog 入口使用 Notion database 作為上游資料源，但正式網站只在 
 ### Blog 同步規則
 
 - Blog index 由 `src/build.ts` 生成為靜態 HTML，連到 RonnieCC 站內文章頁，不再直接外跳 Notion，也不依賴瀏覽器端 JSON fetch 才能看見文章列表。
-- 同步器會抓取公開頁面的 Notion v3 block snapshot，`src/build.ts` 在 build time 生成 `/blog/<slug>/` 和 `/en/blog/<slug>/`。新文章應在 Notion 先填 `SEO Slug`，讓公開 URL 使用短英文 slug；歷史文章未填時保留舊 title-derived slug。
+- 同步器會抓取公開頁面的 Notion v3 block snapshot，`src/build.ts` 在 build time 生成 `/blog/<slug>/` 和 `/en/blog/<slug>/`。新文章應在 Notion 草稿階段先填 `SEO Slug`，讓公開 URL 使用短英文 slug；公開文章缺失時同步器會 fail。
 - 文章頁 canonical、Open Graph URL、CollectionPage item URL 和 sitemap 都指向 RonnieCC 站內 URL。
 - 當文章從舊 title-derived slug 切到 `SEO Slug` 時，build 會為 `legacySlugs` 生成靜態 redirect 頁，避免舊連結直接斷掉。
 - `content/blog.seed.json` 是主站與子站共用的 Blog contract；子站不應直接拉 Notion。

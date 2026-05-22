@@ -67,6 +67,29 @@ function isPublic(row) {
   return row["公開"] === true || row["公開"] === "__YES__" || row["公開"] === "Yes";
 }
 
+function validateSeoSlugs(rows) {
+  const rowsWithTitle = rows.filter((row) => String(row.Name || "").trim());
+  const missingPublic = rowsWithTitle.filter((row) => isPublic(row) && !String(row["SEO Slug"] || "").trim());
+  if (missingPublic.length) {
+    throw new Error(
+      `Missing SEO Slug for public posts: ${missingPublic
+        .slice(0, 5)
+        .map((row) => `"${row.Name}"`)
+        .join(", ")}${missingPublic.length > 5 ? ", ..." : ""}`
+    );
+  }
+
+  const missingDrafts = rowsWithTitle.filter((row) => !isPublic(row) && !String(row["SEO Slug"] || "").trim());
+  if (missingDrafts.length) {
+    console.warn(
+      `Missing SEO Slug for ${missingDrafts.length} draft posts. Add slugs before publishing: ${missingDrafts
+        .slice(0, 5)
+        .map((row) => `"${row.Name}"`)
+        .join(", ")}${missingDrafts.length > 5 ? ", ..." : ""}`
+    );
+  }
+}
+
 function normalizeSubsiteName(value) {
   return String(value || "")
     .trim()
@@ -322,7 +345,10 @@ async function main() {
   }
 
   const table = await fetchCollection(collection.id, collectionViewId, notionToken, collection.space_id);
-  const rows = rowsFromCollection(collectionRecord, table)
+  const allRows = rowsFromCollection(collectionRecord, table);
+  validateSeoSlugs(allRows);
+
+  const rows = allRows
     .filter((row) => isPublic(row) && String(row.Name || "").trim())
     .map(normalizePost)
     .sort((a, b) => {

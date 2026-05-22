@@ -20,7 +20,7 @@ is additive metadata.
 | Field | Type | Meaning |
 | --- | --- | --- |
 | `Name` | title | Article title. |
-| `SEO Slug` | text | Optional stable English URL slug body. When present, RonnieCC appends the post id prefix and uses it for canonical URLs. |
+| `SEO Slug` | text | Required stable English URL slug body for drafts and public posts. RonnieCC appends the post id prefix and uses it for canonical URLs. |
 | `Tag` | select / text | Display and keyword metadata. It is not routing metadata. |
 | `公開` | checkbox | Global publish gate. If false, no site should publish the post. |
 | `編寫日期` | date | Preferred article date and year source. |
