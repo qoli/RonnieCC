@@ -1,4 +1,5 @@
 const NOTION_API = "https://www.notion.so/api/v3";
+const requestTimeoutMs = 120_000;
 
 export function compactId(id) {
   return String(id || "").replaceAll("-", "").slice(-32);
@@ -19,6 +20,7 @@ async function fetchNotionData(resource, body, notionToken, headers = {}) {
       ...headers,
     },
     body: JSON.stringify(body),
+    signal: AbortSignal.timeout(requestTimeoutMs),
   });
 
   if (!response.ok) {
@@ -28,8 +30,87 @@ async function fetchNotionData(resource, body, notionToken, headers = {}) {
   return response.json();
 }
 
-export async function fetchPageById(pageId, notionToken) {
+function mergeRecordMap(target, source) {
+  for (const [table, records] of Object.entries(source || {})) {
+    if (!records || table === "__version__") continue;
+    target[table] = {
+      ...(target[table] || {}),
+      ...records,
+    };
+  }
+}
+
+function recordKey(records, id) {
+  const compact = compactId(id);
+  return Object.keys(records || {}).find((key) => compactId(key) === compact);
+}
+
+function blockRecord(recordMap, id) {
+  const blocks = recordMap.block || {};
+  return blocks[id] || blocks[idToUuid(id)] || blocks[recordKey(blocks, id)];
+}
+
+async function fetchBlockRecords(ids, notionToken) {
+  if (!ids.length) return {};
+
   return fetchNotionData(
+    "syncRecordValues",
+    {
+      requests: ids.map((id) => ({
+        table: "block",
+        id: idToUuid(id),
+        version: -1,
+      })),
+    },
+    notionToken
+  );
+}
+
+async function hydrateBlockTree(recordMap, rootIds, notionToken) {
+  const queue = [...rootIds];
+  const seen = new Set();
+  const requested = new Set();
+
+  while (queue.length) {
+    const missing = [];
+
+    while (queue.length) {
+      const id = queue.shift();
+      const compact = compactId(id);
+      if (!compact || seen.has(compact)) continue;
+      seen.add(compact);
+
+      const record = blockRecord(recordMap, id);
+      if (!record) {
+        if (!requested.has(compact)) {
+          requested.add(compact);
+          missing.push(id);
+        }
+        continue;
+      }
+
+      const value = recordValue(record);
+      if (Array.isArray(value.content)) {
+        queue.push(...value.content);
+      }
+    }
+
+    if (!missing.length) continue;
+
+    const response = await fetchBlockRecords(missing, notionToken);
+    mergeRecordMap(recordMap, response.recordMap);
+
+    for (const id of missing) {
+      if (blockRecord(recordMap, id)) {
+        seen.delete(compactId(id));
+        queue.push(id);
+      }
+    }
+  }
+}
+
+export async function fetchPageById(pageId, notionToken) {
+  const page = await fetchNotionData(
     "loadPageChunk",
     {
       pageId: idToUuid(pageId),
@@ -40,6 +121,9 @@ export async function fetchPageById(pageId, notionToken) {
     },
     notionToken
   );
+
+  await hydrateBlockTree(page.recordMap || {}, [pageId], notionToken);
+  return page;
 }
 
 export async function fetchCollection(collectionId, collectionViewId, notionToken, spaceId) {

@@ -16,6 +16,7 @@ const assetRoot = path.join(repoRoot, "content", "blog-assets");
 const siteUrl = "https://ronniewong.cc";
 const defaultPublishTarget = "ronniecc";
 const subsiteFieldNames = ["子站點", "子站点", "Subsites"];
+const assetDownloadTimeoutMs = 120_000;
 
 function titleSlug(title) {
   return String(title || "")
@@ -150,7 +151,7 @@ async function signedFileUrl(source, blockId, notionToken) {
 }
 
 async function downloadAsset(url, targetPath) {
-  const response = await fetch(url);
+  const response = await fetch(url, { signal: AbortSignal.timeout(assetDownloadTimeoutMs) });
   if (!response.ok) {
     throw new Error(`Downloading Notion asset failed with ${response.status}`);
   }
@@ -300,7 +301,8 @@ async function main() {
   await rm(assetRoot, { recursive: true, force: true });
 
   const posts = [];
-  for (const post of rows) {
+  for (const [index, post] of rows.entries()) {
+    console.log(`Fetching blog post ${index + 1}/${rows.length}: ${post.title}`);
     posts.push({
       ...post,
       content: {
