@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-05-22T10:31:58.022Z",
+  "generatedAt": "2026-05-22T10:48:06.532Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -29,10 +29,10 @@
       },
       "notionUrl": "https://www.notion.so/qoli/%E7%94%A8-codex-%E5%81%9A%E8%A8%AD%E8%A8%88-%E5%BE%9E-%E7%B6%B2%E7%AB%99%E5%A4%AA%E9%86%9C-%E5%88%B0%E5%8F%AF%E9%A9%97%E6%94%B6%E7%9A%84%E5%93%81%E5%91%B3%E6%8E%A7%E5%88%B6-368c1b36c40181808b6efe7332eb5106?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-05-22T08:20:51.903Z",
-      "lastEditedTime": "2026-05-22T09:33:43.584Z",
+      "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:02:01.625Z",
+        "syncedAt": "2026-05-22T10:42:46.691Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -180,12 +180,12 @@
             "type": "text",
             "richText": [
               {
-                "text": "這張首頁圖應該放在文章最前面。它展示的不是結果有多好看，而是這篇文章的終點：一個由 typography、留白和克制的結構建立出來的個人網站，而不是 app catalog 或 marketing hero。",
+                "text": "這張首頁圖展示的不是結果有多好看，而是這篇文章的終點：一個由 typography、留白和克制的結構建立出來的個人網站，而不是 app catalog 或 marketing hero。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "這張首頁圖應該放在文章最前面。它展示的不是結果有多好看，而是這篇文章的終點：一個由 typography、留白和克制的結構建立出來的個人網站，而不是 app catalog 或 marketing hero。",
+            "plainText": "這張首頁圖展示的不是結果有多好看，而是這篇文章的終點：一個由 typography、留白和克制的結構建立出來的個人網站，而不是 app catalog 或 marketing hero。",
             "caption": [],
             "language": "",
             "source": "",
@@ -594,12 +594,12 @@
             "type": "text",
             "richText": [
               {
-                "text": "這張 Projects 圖應該放在這裡。它的作用不是展示「項目頁很好看」，而是證明 project ecosystem 這個模型如何落到畫面：編號、幾何標記、項目名稱、summary、tags 都在服務同一件事，讓讀者按系統理解項目，而不是按 app icon 掃列表。",
+                "text": "這張 Projects 圖的作用不是展示「項目頁很好看」，而是證明 project ecosystem 這個模型如何落到畫面：編號、幾何標記、項目名稱、summary、tags 都在服務同一件事，讓讀者按系統理解項目，而不是按 app icon 掃列表。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "這張 Projects 圖應該放在這裡。它的作用不是展示「項目頁很好看」，而是證明 project ecosystem 這個模型如何落到畫面：編號、幾何標記、項目名稱、summary、tags 都在服務同一件事，讓讀者按系統理解項目，而不是按 app icon 掃列表。",
+            "plainText": "這張 Projects 圖的作用不是展示「項目頁很好看」，而是證明 project ecosystem 這個模型如何落到畫面：編號、幾何標記、項目名稱、summary、tags 都在服務同一件事，讓讀者按系統理解項目，而不是按 app icon 掃列表。",
             "caption": [],
             "language": "",
             "source": "",
@@ -903,12 +903,12 @@
             "type": "text",
             "richText": [
               {
-                "text": "這張 Selected focus 圖適合放在這一段。它不是功能介紹，而是三個被壓縮後的設計判斷：systems, not demos；AI with operating discipline；interface as judgement。畫面本身也在證明同一件事：幾何圖形只是結構標記，真正的品質來自文字、留白和比例。",
+                "text": "這張 Selected focus 圖不是功能介紹，而是三個被壓縮後的設計判斷：systems, not demos；AI with operating discipline；interface as judgement。畫面本身也在證明同一件事：幾何圖形只是結構標記，真正的品質來自文字、留白和比例。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "這張 Selected focus 圖適合放在這一段。它不是功能介紹，而是三個被壓縮後的設計判斷：systems, not demos；AI with operating discipline；interface as judgement。畫面本身也在證明同一件事：幾何圖形只是結構標記，真正的品質來自文字、留白和比例。",
+            "plainText": "這張 Selected focus 圖不是功能介紹，而是三個被壓縮後的設計判斷：systems, not demos；AI with operating discipline；interface as judgement。畫面本身也在證明同一件事：幾何圖形只是結構標記，真正的品質來自文字、留白和比例。",
             "caption": [],
             "language": "",
             "source": "",
@@ -1485,12 +1485,12 @@
             "type": "text",
             "richText": [
               {
-                "text": "這張 dark mode 圖應該放在這裡。它要證明的是：dark mode 不是把背景變黑，也不是加一個亮藍色 accent，而是讓所有顏色都服從 typography 層級。高亮可以存在，但不能比正文更弱，也不能搶走主句的權重。",
+                "text": "這張 dark mode 圖要證明的是：dark mode 不是把背景變黑，也不是加一個亮藍色 accent，而是讓所有顏色都服從 typography 層級。高亮可以存在，但不能比正文更弱，也不能搶走主句的權重。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "這張 dark mode 圖應該放在這裡。它要證明的是：dark mode 不是把背景變黑，也不是加一個亮藍色 accent，而是讓所有顏色都服從 typography 層級。高亮可以存在，但不能比正文更弱，也不能搶走主句的權重。",
+            "plainText": "這張 dark mode 圖要證明的是：dark mode 不是把背景變黑，也不是加一個亮藍色 accent，而是讓所有顏色都服從 typography 層級。高亮可以存在，但不能比正文更弱，也不能搶走主句的權重。",
             "caption": [],
             "language": "",
             "source": "",
@@ -2025,12 +2025,12 @@
             "type": "text",
             "richText": [
               {
-                "text": "這張圖放在這裡作為「規則擴展」的收束。Read the work by structure, not by release order. 這句話本身就是整個網站後半段設計的總結：不是按時間堆發布物，而是按結構建立閱讀路徑。",
+                "text": "這張圖作為「規則擴展」的收束：Read the work by structure, not by release order. 這句話本身就是整個網站後半段設計的總結：不是按時間堆發布物，而是按結構建立閱讀路徑。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "這張圖放在這裡作為「規則擴展」的收束。Read the work by structure, not by release order. 這句話本身就是整個網站後半段設計的總結：不是按時間堆發布物，而是按結構建立閱讀路徑。",
+            "plainText": "這張圖作為「規則擴展」的收束：Read the work by structure, not by release order. 這句話本身就是整個網站後半段設計的總結：不是按時間堆發布物，而是按結構建立閱讀路徑。",
             "caption": [],
             "language": "",
             "source": "",
@@ -2378,7 +2378,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:02:29.589Z",
+        "syncedAt": "2026-05-22T10:43:15.863Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -3558,7 +3558,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:02:33.383Z",
+        "syncedAt": "2026-05-22T10:43:19.562Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -4142,7 +4142,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:02:49.159Z",
+        "syncedAt": "2026-05-22T10:43:35.786Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -6334,7 +6334,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:02:49.568Z",
+        "syncedAt": "2026-05-22T10:43:36.263Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -7056,7 +7056,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:02:49.991Z",
+        "syncedAt": "2026-05-22T10:43:36.677Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -7823,7 +7823,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:02:50.447Z",
+        "syncedAt": "2026-05-22T10:43:37.232Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -8966,7 +8966,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:03:12.491Z",
+        "syncedAt": "2026-05-22T10:43:59.818Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -9689,7 +9689,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:03:12.901Z",
+        "syncedAt": "2026-05-22T10:44:00.255Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -10558,7 +10558,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:03:13.309Z",
+        "syncedAt": "2026-05-22T10:44:00.688Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -11937,7 +11937,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:03:13.744Z",
+        "syncedAt": "2026-05-22T10:44:01.135Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -15383,7 +15383,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:03:21.054Z",
+        "syncedAt": "2026-05-22T10:44:08.776Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -17228,7 +17228,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:03:21.750Z",
+        "syncedAt": "2026-05-22T10:44:09.306Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -17882,7 +17882,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:03:26.143Z",
+        "syncedAt": "2026-05-22T10:44:13.491Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -18497,7 +18497,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:03:33.766Z",
+        "syncedAt": "2026-05-22T10:44:20.776Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -19262,7 +19262,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:03:34.928Z",
+        "syncedAt": "2026-05-22T10:44:21.216Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -22208,7 +22208,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:04:51.692Z",
+        "syncedAt": "2026-05-22T10:45:32.747Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -23325,7 +23325,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:04:59.702Z",
+        "syncedAt": "2026-05-22T10:45:40.172Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -23702,7 +23702,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:05:02.739Z",
+        "syncedAt": "2026-05-22T10:45:43.503Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -26508,7 +26508,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:06:37.192Z",
+        "syncedAt": "2026-05-22T10:47:13.647Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -26735,7 +26735,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:06:41.941Z",
+        "syncedAt": "2026-05-22T10:47:18.402Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -27499,7 +27499,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:06:48.653Z",
+        "syncedAt": "2026-05-22T10:47:24.867Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
