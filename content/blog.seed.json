@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-05-22T10:23:44.095Z",
+  "generatedAt": "2026-05-22T10:31:58.022Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -2353,9 +2353,11 @@
     },
     {
       "id": "366c1b36c40181f6a11cec533d1691dc",
-      "slug": "adict-3-0-beta-an-update-for-existing-users-366c1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "adict-3-beta-existing-users-366c1b36",
+      "seoSlug": "adict-3-beta-existing-users",
+      "legacySlugs": [
+        "adict-3-0-beta-an-update-for-existing-users-366c1b36"
+      ],
       "title": "aDict 3.0 Beta: An Update for Existing Users",
       "tag": "aDict,Dictionary,Product,Notes",
       "year": "2026",
@@ -2369,7 +2371,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/adict-3-0-beta-an-update-for-existing-users-366c1b36/"
+        "url": "https://ronniewong.cc/blog/adict-3-beta-existing-users-366c1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/adict-3-0-beta-an-update-for-existing-users-366c1b36c40181f6a11cec533d1691dc?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-05-20T02:19:38.301Z",
@@ -3531,9 +3533,11 @@
     },
     {
       "id": "35fc1b36c40180b88fe2e8fa4e55d6ec",
-      "slug": "adict-3-0-一個老詞典-app-的重寫-35fc1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "adict-3-rewrite-dictionary-app-35fc1b36",
+      "seoSlug": "adict-3-rewrite-dictionary-app",
+      "legacySlugs": [
+        "adict-3-0-一個老詞典-app-的重寫-35fc1b36"
+      ],
       "title": "aDict 3.0 一個老詞典 App 的重寫",
       "tag": "aDict,Dictionary,Product,AI,Swift,iOS,macOS",
       "year": "2026",
@@ -3547,7 +3551,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/adict-3-0-%E4%B8%80%E5%80%8B%E8%80%81%E8%A9%9E%E5%85%B8-app-%E7%9A%84%E9%87%8D%E5%AF%AB-35fc1b36/"
+        "url": "https://ronniewong.cc/blog/adict-3-rewrite-dictionary-app-35fc1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/adict-3-0-%E4%B8%80%E5%80%8B%E8%80%81%E8%A9%9E%E5%85%B8-app-%E7%9A%84%E9%87%8D%E5%AF%AB-35fc1b36c40180b88fe2e8fa4e55d6ec?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-05-13T21:36:21.339Z",
@@ -4116,9 +4120,11 @@
     },
     {
       "id": "358c1b36c4018154aa7def62ab498f05",
-      "slug": "用歷史資料改提示詞-trackly-圖片記帳抽取器的證據帳本-358c1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "trackly-prompt-evidence-ledger-358c1b36",
+      "seoSlug": "trackly-prompt-evidence-ledger",
+      "legacySlugs": [
+        "用歷史資料改提示詞-trackly-圖片記帳抽取器的證據帳本-358c1b36"
+      ],
       "title": "用歷史資料改提示詞：Trackly 圖片記帳抽取器的證據帳本",
       "tag": "AI,Local AI,Product,Notes",
       "year": "2026",
@@ -4129,7 +4135,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/%E7%94%A8%E6%AD%B7%E5%8F%B2%E8%B3%87%E6%96%99%E6%94%B9%E6%8F%90%E7%A4%BA%E8%A9%9E-trackly-%E5%9C%96%E7%89%87%E8%A8%98%E5%B8%B3%E6%8A%BD%E5%8F%96%E5%99%A8%E7%9A%84%E8%AD%89%E6%93%9A%E5%B8%B3%E6%9C%AC-358c1b36/"
+        "url": "https://ronniewong.cc/blog/trackly-prompt-evidence-ledger-358c1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/%E7%94%A8%E6%AD%B7%E5%8F%B2%E8%B3%87%E6%96%99%E6%94%B9%E6%8F%90%E7%A4%BA%E8%A9%9E-trackly-%E5%9C%96%E7%89%87%E8%A8%98%E5%B8%B3%E6%8A%BD%E5%8F%96%E5%99%A8%E7%9A%84%E8%AD%89%E6%93%9A%E5%B8%B3%E6%9C%AC-358c1b36c4018154aa7def62ab498f05?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-05-06T21:45:00.975Z",
@@ -6306,9 +6312,11 @@
     },
     {
       "id": "357c1b36c4018169b545de9cc29a7934",
-      "slug": "vlm-不等於-visual-first-qwen3-5-在圖片記帳任務裡暴露的提示詞陷阱-357c1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "qwen-visual-first-prompt-traps-357c1b36",
+      "seoSlug": "qwen-visual-first-prompt-traps",
+      "legacySlugs": [
+        "vlm-不等於-visual-first-qwen3-5-在圖片記帳任務裡暴露的提示詞陷阱-357c1b36"
+      ],
       "title": "VLM 不等於 Visual-first：Qwen3.5 在圖片記帳任務裡暴露的提示詞陷阱",
       "tag": "AI,Local AI,Product,Notes",
       "year": "2026",
@@ -6319,7 +6327,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/vlm-%E4%B8%8D%E7%AD%89%E6%96%BC-visual-first-qwen3-5-%E5%9C%A8%E5%9C%96%E7%89%87%E8%A8%98%E5%B8%B3%E4%BB%BB%E5%8B%99%E8%A3%A1%E6%9A%B4%E9%9C%B2%E7%9A%84%E6%8F%90%E7%A4%BA%E8%A9%9E%E9%99%B7%E9%98%B1-357c1b36/"
+        "url": "https://ronniewong.cc/blog/qwen-visual-first-prompt-traps-357c1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/vlm-%E4%B8%8D%E7%AD%89%E6%96%BC-visual-first-qwen3-5-%E5%9C%A8%E5%9C%96%E7%89%87%E8%A8%98%E5%B8%B3%E4%BB%BB%E5%8B%99%E8%A3%A1%E6%9A%B4%E9%9C%B2%E7%9A%84%E6%8F%90%E7%A4%BA%E8%A9%9E%E9%99%B7%E9%98%B1-357c1b36c4018169b545de9cc29a7934?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-05-05T10:20:49.698Z",
@@ -7026,9 +7034,11 @@
     },
     {
       "id": "356c1b36c401814ba27fde6af0a8df3a",
-      "slug": "github-pages-search-console-與一個-sitemap-黑箱問題-356c1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "github-pages-search-console-sitemap-356c1b36",
+      "seoSlug": "github-pages-search-console-sitemap",
+      "legacySlugs": [
+        "github-pages-search-console-與一個-sitemap-黑箱問題-356c1b36"
+      ],
       "title": "GitHub Pages、Search Console 與一個 sitemap 黑箱問題",
       "tag": "aDict,Ops,Serverless,Product,Notes",
       "year": "2026",
@@ -7039,7 +7049,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/github-pages-search-console-%E8%88%87%E4%B8%80%E5%80%8B-sitemap-%E9%BB%91%E7%AE%B1%E5%95%8F%E9%A1%8C-356c1b36/"
+        "url": "https://ronniewong.cc/blog/github-pages-search-console-sitemap-356c1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/github-pages-search-console-%E8%88%87%E4%B8%80%E5%80%8B-sitemap-%E9%BB%91%E7%AE%B1%E5%95%8F%E9%A1%8C-356c1b36c401814ba27fde6af0a8df3a?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-05-04T18:02:48.467Z",
@@ -7788,9 +7798,11 @@
     },
     {
       "id": "34ec1b36c4018133ba41c6d9a03cbe2f",
-      "slug": "adict-的演化歷史-從順眼的查詞工具到本地詞典架構-34ec1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "adict-evolution-local-dictionary-34ec1b36",
+      "seoSlug": "adict-evolution-local-dictionary",
+      "legacySlugs": [
+        "adict-的演化歷史-從順眼的查詞工具到本地詞典架構-34ec1b36"
+      ],
       "title": "aDict 的演化歷史：從順眼的查詞工具到本地詞典架構",
       "tag": "aDict,iOS,macOS,Swift,Dictionary,Product",
       "year": "2026",
@@ -7804,7 +7816,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/adict-%E7%9A%84%E6%BC%94%E5%8C%96%E6%AD%B7%E5%8F%B2-%E5%BE%9E%E9%A0%86%E7%9C%BC%E7%9A%84%E6%9F%A5%E8%A9%9E%E5%B7%A5%E5%85%B7%E5%88%B0%E6%9C%AC%E5%9C%B0%E8%A9%9E%E5%85%B8%E6%9E%B6%E6%A7%8B-34ec1b36/"
+        "url": "https://ronniewong.cc/blog/adict-evolution-local-dictionary-34ec1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/adict-%E7%9A%84%E6%BC%94%E5%8C%96%E6%AD%B7%E5%8F%B2-%E5%BE%9E%E9%A0%86%E7%9C%BC%E7%9A%84%E6%9F%A5%E8%A9%9E%E5%B7%A5%E5%85%B7%E5%88%B0%E6%9C%AC%E5%9C%B0%E8%A9%9E%E5%85%B8%E6%9E%B6%E6%A7%8B-34ec1b36c4018133ba41c6d9a03cbe2f?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-04-26T07:45:33.380Z",
@@ -8932,9 +8944,11 @@
     },
     {
       "id": "34ec1b36c401815bbe3ecc741f8a6a55",
-      "slug": "從魔法按鈕到白盒工廠-hln-machine-的工程實錄-34ec1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "hln-machine-white-box-factory-34ec1b36",
+      "seoSlug": "hln-machine-white-box-factory",
+      "legacySlugs": [
+        "從魔法按鈕到白盒工廠-hln-machine-的工程實錄-34ec1b36"
+      ],
       "title": "從魔法按鈕到白盒工廠：HLN Machine 的工程實錄",
       "tag": "AI,LLM,Automation,Video,Local AI,Pipeline",
       "year": "2026",
@@ -8945,7 +8959,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/%E5%BE%9E%E9%AD%94%E6%B3%95%E6%8C%89%E9%88%95%E5%88%B0%E7%99%BD%E7%9B%92%E5%B7%A5%E5%BB%A0-hln-machine-%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AF%A6%E9%8C%84-34ec1b36/"
+        "url": "https://ronniewong.cc/blog/hln-machine-white-box-factory-34ec1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/%E5%BE%9E%E9%AD%94%E6%B3%95%E6%8C%89%E9%88%95%E5%88%B0%E7%99%BD%E7%9B%92%E5%B7%A5%E5%BB%A0-hln-machine-%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AF%A6%E9%8C%84-34ec1b36c401815bbe3ecc741f8a6a55?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-04-26T06:06:54.470Z",
@@ -9653,9 +9667,11 @@
     },
     {
       "id": "2f6c1b36c40181b1869ceb917e4b8143",
-      "slug": "swiftterm-數據流與監控機制分析報告-2f6c1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "swiftterm-dataflow-monitoring-2f6c1b36",
+      "seoSlug": "swiftterm-dataflow-monitoring",
+      "legacySlugs": [
+        "swiftterm-數據流與監控機制分析報告-2f6c1b36"
+      ],
       "title": "SwiftTerm 數據流與監控機制分析報告",
       "tag": "SwiftTerm,Terminal",
       "year": "2026",
@@ -9666,7 +9682,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/swiftterm-%E6%95%B8%E6%93%9A%E6%B5%81%E8%88%87%E7%9B%A3%E6%8E%A7%E6%A9%9F%E5%88%B6%E5%88%86%E6%9E%90%E5%A0%B1%E5%91%8A-2f6c1b36/"
+        "url": "https://ronniewong.cc/blog/swiftterm-dataflow-monitoring-2f6c1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/swiftterm-%E6%95%B8%E6%93%9A%E6%B5%81%E8%88%87%E7%9B%A3%E6%8E%A7%E6%A9%9F%E5%88%B6%E5%88%86%E6%9E%90%E5%A0%B1%E5%91%8A-2f6c1b36c40181b1869ceb917e4b8143?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-01-28T23:25:39.482Z",
@@ -10520,9 +10536,11 @@
     },
     {
       "id": "2e8c1b36c401819393a4e5224022cb8f",
-      "slug": "hsbbrowserappstore-tvos-review-public-中文版-2e8c1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "hsbbrowserappstore-tvos-review-cn-2e8c1b36",
+      "seoSlug": "hsbbrowserappstore-tvos-review-cn",
+      "legacySlugs": [
+        "hsbbrowserappstore-tvos-review-public-中文版-2e8c1b36"
+      ],
       "title": "HSBBrowserAppStore-tvOS-review-public（中文版）",
       "tag": "tvOS,App Store,Review,WebKit",
       "year": "2026",
@@ -10533,7 +10551,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/hsbbrowserappstore-tvos-review-public-%E4%B8%AD%E6%96%87%E7%89%88-2e8c1b36/"
+        "url": "https://ronniewong.cc/blog/hsbbrowserappstore-tvos-review-cn-2e8c1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/hsbbrowserappstore-tvos-review-public-%E4%B8%AD%E6%96%87%E7%89%88-2e8c1b36c401819393a4e5224022cb8f?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-01-14T11:00:49.846Z",
@@ -11897,9 +11915,11 @@
     },
     {
       "id": "2e2c1b36c401805b8609e5a064f29d6d",
-      "slug": "在-tvos-上活下來-一個非典型播放器的工程實錄-2e2c1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "tvos-player-engineering-2e2c1b36",
+      "seoSlug": "tvos-player-engineering",
+      "legacySlugs": [
+        "在-tvos-上活下來-一個非典型播放器的工程實錄-2e2c1b36"
+      ],
       "title": "在 tvOS 上活下來：一個非典型播放器的工程實錄",
       "tag": "tvOS,Player,SwiftUI",
       "year": "2026",
@@ -11910,7 +11930,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/%E5%9C%A8-tvos-%E4%B8%8A%E6%B4%BB%E4%B8%8B%E4%BE%86-%E4%B8%80%E5%80%8B%E9%9D%9E%E5%85%B8%E5%9E%8B%E6%92%AD%E6%94%BE%E5%99%A8%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AF%A6%E9%8C%84-2e2c1b36/"
+        "url": "https://ronniewong.cc/blog/tvos-player-engineering-2e2c1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/%E5%9C%A8-tvos-%E4%B8%8A%E6%B4%BB%E4%B8%8B%E4%BE%86-%E4%B8%80%E5%80%8B%E9%9D%9E%E5%85%B8%E5%9E%8B%E6%92%AD%E6%94%BE%E5%99%A8%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AF%A6%E9%8C%84-2e2c1b36c401805b8609e5a064f29d6d?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-01-08T02:50:58.903Z",
@@ -15341,9 +15361,11 @@
     },
     {
       "id": "2b6c1b36c4018072816fd0e513d0903b",
-      "slug": "用-semantic-entropy-降低長文翻譯中的名詞飄移-2b6c1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "semantic-entropy-translation-drift-2b6c1b36",
+      "seoSlug": "semantic-entropy-translation-drift",
+      "legacySlugs": [
+        "用-semantic-entropy-降低長文翻譯中的名詞飄移-2b6c1b36"
+      ],
       "title": "用 Semantic Entropy 降低長文翻譯中的名詞飄移",
       "tag": "AI,LLM,Translation",
       "year": "2025",
@@ -15354,7 +15376,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/%E7%94%A8-semantic-entropy-%E9%99%8D%E4%BD%8E%E9%95%B7%E6%96%87%E7%BF%BB%E8%AD%AF%E4%B8%AD%E7%9A%84%E5%90%8D%E8%A9%9E%E9%A3%84%E7%A7%BB-2b6c1b36/"
+        "url": "https://ronniewong.cc/blog/semantic-entropy-translation-drift-2b6c1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/%E7%94%A8-semantic-entropy-%E9%99%8D%E4%BD%8E%E9%95%B7%E6%96%87%E7%BF%BB%E8%AD%AF%E4%B8%AD%E7%9A%84%E5%90%8D%E8%A9%9E%E9%A3%84%E7%A7%BB-2b6c1b36c4018072816fd0e513d0903b?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2025-11-25T18:57:01.296Z",
@@ -17184,9 +17206,11 @@
     },
     {
       "id": "10fc1b36c40180e8a6cbd9b2f729427e",
-      "slug": "使用-apple-捷徑方便使用-windows-功能-10fc1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "apple-shortcuts-windows-workflow-10fc1b36",
+      "seoSlug": "apple-shortcuts-windows-workflow",
+      "legacySlugs": [
+        "使用-apple-捷徑方便使用-windows-功能-10fc1b36"
+      ],
       "title": "使用 Apple 捷徑方便使用 Windows 功能",
       "tag": "Windows,Shortcut,Automation",
       "year": "2024",
@@ -17197,7 +17221,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/%E4%BD%BF%E7%94%A8-apple-%E6%8D%B7%E5%BE%91%E6%96%B9%E4%BE%BF%E4%BD%BF%E7%94%A8-windows-%E5%8A%9F%E8%83%BD-10fc1b36/"
+        "url": "https://ronniewong.cc/blog/apple-shortcuts-windows-workflow-10fc1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/%E4%BD%BF%E7%94%A8-apple-%E6%8D%B7%E5%BE%91%E6%96%B9%E4%BE%BF%E4%BD%BF%E7%94%A8-windows-%E5%8A%9F%E8%83%BD-10fc1b36c40180e8a6cbd9b2f729427e?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2024-09-28T03:40:21.234Z",
@@ -17836,9 +17860,11 @@
     },
     {
       "id": "108c1b36c401809096e5c28a5fba9cfc",
-      "slug": "使用-uitableview-allowsfocus-解決-uitableview-和-swiftui-混寫的焦點錯誤對焦的問題-108c1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "uitableview-swiftui-focus-bug-108c1b36",
+      "seoSlug": "uitableview-swiftui-focus-bug",
+      "legacySlugs": [
+        "使用-uitableview-allowsfocus-解決-uitableview-和-swiftui-混寫的焦點錯誤對焦的問題-108c1b36"
+      ],
       "title": "使用 UITableView.allowsFocus 解決 UITableView 和 SwiftUI 混寫的焦點錯誤對焦的問題",
       "tag": "SwiftUI,UIKit,tvOS",
       "year": "2024",
@@ -17849,7 +17875,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/%E4%BD%BF%E7%94%A8-uitableview-allowsfocus-%E8%A7%A3%E6%B1%BA-uitableview-%E5%92%8C-swiftui-%E6%B7%B7%E5%AF%AB%E7%9A%84%E7%84%A6%E9%BB%9E%E9%8C%AF%E8%AA%A4%E5%B0%8D%E7%84%A6%E7%9A%84%E5%95%8F%E9%A1%8C-108c1b36/"
+        "url": "https://ronniewong.cc/blog/uitableview-swiftui-focus-bug-108c1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/%E4%BD%BF%E7%94%A8-uitableview-allowsfocus-%E8%A7%A3%E6%B1%BA-uitableview-%E5%92%8C-swiftui-%E6%B7%B7%E5%AF%AB%E7%9A%84%E7%84%A6%E9%BB%9E%E9%8C%AF%E8%AA%A4%E5%B0%8D%E7%84%A6%E7%9A%84%E5%95%8F%E9%A1%8C-108c1b36c401809096e5c28a5fba9cfc?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2024-09-21T07:55:58.653Z",
@@ -18449,9 +18475,11 @@
     },
     {
       "id": "34ec1b36c401810e8405df7510cfde52",
-      "slug": "用流式下載避免-avplayer-播放時的內存爆炸-34ec1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "avplayer-streaming-memory-34ec1b36",
+      "seoSlug": "avplayer-streaming-memory",
+      "legacySlugs": [
+        "用流式下載避免-avplayer-播放時的內存爆炸-34ec1b36"
+      ],
       "title": "用流式下載避免 AVPlayer 播放時的內存爆炸",
       "tag": "iOS,Swift,AVFoundation,Player",
       "year": "2023",
@@ -18462,7 +18490,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/%E7%94%A8%E6%B5%81%E5%BC%8F%E4%B8%8B%E8%BC%89%E9%81%BF%E5%85%8D-avplayer-%E6%92%AD%E6%94%BE%E6%99%82%E7%9A%84%E5%85%A7%E5%AD%98%E7%88%86%E7%82%B8-34ec1b36/"
+        "url": "https://ronniewong.cc/blog/avplayer-streaming-memory-34ec1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/%E7%94%A8%E6%B5%81%E5%BC%8F%E4%B8%8B%E8%BC%89%E9%81%BF%E5%85%8D-avplayer-%E6%92%AD%E6%94%BE%E6%99%82%E7%9A%84%E5%85%A7%E5%AD%98%E7%88%86%E7%82%B8-34ec1b36c401810e8405df7510cfde52?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-04-26T06:54:22.446Z",
@@ -19212,9 +19240,11 @@
     },
     {
       "id": "2b1d8abfaff84d15ab4bb3a113b3eb6a",
-      "slug": "fuck-swiftui-的筆記-2b1d8abf",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "swiftui-notes-2b1d8abf",
+      "seoSlug": "swiftui-notes",
+      "legacySlugs": [
+        "fuck-swiftui-的筆記-2b1d8abf"
+      ],
       "title": "Fuck SwiftUI 的筆記",
       "tag": "SwiftUI,tvOS,iOS,macOS,UIKit,Bug,Notes",
       "year": "2023",
@@ -19225,7 +19255,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/fuck-swiftui-%E7%9A%84%E7%AD%86%E8%A8%98-2b1d8abf/"
+        "url": "https://ronniewong.cc/blog/swiftui-notes-2b1d8abf/"
       },
       "notionUrl": "https://www.notion.so/qoli/fuck-swiftui-%E7%9A%84%E7%AD%86%E8%A8%98-2b1d8abfaff84d15ab4bb3a113b3eb6a?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2023-01-31T21:56:48.350Z",
@@ -22156,9 +22186,11 @@
     },
     {
       "id": "2ebc1b36c40182038b6501766f1e94d5",
-      "slug": "使用-swiftui-開發多個平台的應用-2ebc1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "swiftui-multiplatform-apps-2ebc1b36",
+      "seoSlug": "swiftui-multiplatform-apps",
+      "legacySlugs": [
+        "使用-swiftui-開發多個平台的應用-2ebc1b36"
+      ],
       "title": "使用 SwiftUI 開發多個平台的應用",
       "tag": "SwiftUI,iOS,macOS,tvOS",
       "year": "2021",
@@ -22169,7 +22201,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/%E4%BD%BF%E7%94%A8-swiftui-%E9%96%8B%E7%99%BC%E5%A4%9A%E5%80%8B%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%87%89%E7%94%A8-2ebc1b36/"
+        "url": "https://ronniewong.cc/blog/swiftui-multiplatform-apps-2ebc1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/%E4%BD%BF%E7%94%A8-swiftui-%E9%96%8B%E7%99%BC%E5%A4%9A%E5%80%8B%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%87%89%E7%94%A8-2ebc1b36c40182038b6501766f1e94d5?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-04-26T05:06:43.114Z",
@@ -23271,9 +23303,11 @@
     },
     {
       "id": "2b7c1b36c401836b9ee7019e6c1d6ab8",
-      "slug": "以-serverless-形式重写工作室网站-2b7c1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "serverless-studio-website-2b7c1b36",
+      "seoSlug": "serverless-studio-website",
+      "legacySlugs": [
+        "以-serverless-形式重写工作室网站-2b7c1b36"
+      ],
       "title": "以 Serverless 形式重写工作室网站",
       "tag": "Serverless,WebKit",
       "year": "2021",
@@ -23284,7 +23318,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/%E4%BB%A5-serverless-%E5%BD%A2%E5%BC%8F%E9%87%8D%E5%86%99%E5%B7%A5%E4%BD%9C%E5%AE%A4%E7%BD%91%E7%AB%99-2b7c1b36/"
+        "url": "https://ronniewong.cc/blog/serverless-studio-website-2b7c1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/%E4%BB%A5-serverless-%E5%BD%A2%E5%BC%8F%E9%87%8D%E5%86%99%E5%B7%A5%E4%BD%9C%E5%AE%A4%E7%BD%91%E7%AB%99-2b7c1b36c401836b9ee7019e6c1d6ab8?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-04-26T05:06:40.832Z",
@@ -23646,9 +23680,11 @@
     },
     {
       "id": "c01c1b36c4018342857901a47c12e0af",
-      "slug": "syncnext-改版日誌-c01c1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "syncnext-redesign-log-c01c1b36",
+      "seoSlug": "syncnext-redesign-log",
+      "legacySlugs": [
+        "syncnext-改版日誌-c01c1b36"
+      ],
       "title": "Syncnext 改版日誌",
       "tag": "tvOS,SwiftUI,Player,Notion,Design",
       "year": "2021",
@@ -23659,7 +23695,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/syncnext-%E6%94%B9%E7%89%88%E6%97%A5%E8%AA%8C-c01c1b36/"
+        "url": "https://ronniewong.cc/blog/syncnext-redesign-log-c01c1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/syncnext-%E6%94%B9%E7%89%88%E6%97%A5%E8%AA%8C-c01c1b36c4018342857901a47c12e0af?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-04-26T05:06:38.219Z",
@@ -26450,9 +26486,11 @@
     },
     {
       "id": "c9ec1b36c4018280a8cd012f9dfb9ce7",
-      "slug": "sketch-的按鍵精靈-循環點擊確認字體嵌入協議-c9ec1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "sketch-font-embedding-automation-c9ec1b36",
+      "seoSlug": "sketch-font-embedding-automation",
+      "legacySlugs": [
+        "sketch-的按鍵精靈-循環點擊確認字體嵌入協議-c9ec1b36"
+      ],
       "title": "Sketch 的按鍵精靈：循環點擊確認字體嵌入協議",
       "tag": "Sketch,Automation",
       "year": "2020",
@@ -26463,7 +26501,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/sketch-%E7%9A%84%E6%8C%89%E9%8D%B5%E7%B2%BE%E9%9D%88-%E5%BE%AA%E7%92%B0%E9%BB%9E%E6%93%8A%E7%A2%BA%E8%AA%8D%E5%AD%97%E9%AB%94%E5%B5%8C%E5%85%A5%E5%8D%94%E8%AD%B0-c9ec1b36/"
+        "url": "https://ronniewong.cc/blog/sketch-font-embedding-automation-c9ec1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/sketch-%E7%9A%84%E6%8C%89%E9%8D%B5%E7%B2%BE%E9%9D%88-%E5%BE%AA%E7%92%B0%E9%BB%9E%E6%93%8A%E7%A2%BA%E8%AA%8D%E5%AD%97%E9%AB%94%E5%B5%8C%E5%85%A5%E5%8D%94%E8%AD%B0-c9ec1b36c4018280a8cd012f9dfb9ce7?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-04-26T05:06:43.193Z",
@@ -26675,9 +26713,11 @@
     },
     {
       "id": "7f9c1b36c401826e94df01608533fd43",
-      "slug": "vscode-美化攻略-7f9c1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "vscode-visual-polish-7f9c1b36",
+      "seoSlug": "vscode-visual-polish",
+      "legacySlugs": [
+        "vscode-美化攻略-7f9c1b36"
+      ],
       "title": "VSCode 美化攻略",
       "tag": "VSCode",
       "year": "2020",
@@ -26688,7 +26728,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/vscode-%E7%BE%8E%E5%8C%96%E6%94%BB%E7%95%A5-7f9c1b36/"
+        "url": "https://ronniewong.cc/blog/vscode-visual-polish-7f9c1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/vscode-%E7%BE%8E%E5%8C%96%E6%94%BB%E7%95%A5-7f9c1b36c401826e94df01608533fd43?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-04-26T05:06:41.016Z",
@@ -27437,9 +27477,11 @@
     },
     {
       "id": "9bfc1b36c401826091bf0128823fe89f",
-      "slug": "元-氣-bread-9bfc1b36",
-      "seoSlug": "",
-      "legacySlugs": [],
+      "slug": "motonoqi-bread-design-9bfc1b36",
+      "seoSlug": "motonoqi-bread-design",
+      "legacySlugs": [
+        "元-氣-bread-9bfc1b36"
+      ],
       "title": "元の氣 Bread",
       "tag": "Design,WeChat,Mini Program,Food",
       "year": "2020",
@@ -27450,7 +27492,7 @@
       ],
       "canonical": {
         "site": "ronniecc",
-        "url": "https://ronniewong.cc/blog/%E5%85%83-%E6%B0%A3-bread-9bfc1b36/"
+        "url": "https://ronniewong.cc/blog/motonoqi-bread-design-9bfc1b36/"
       },
       "notionUrl": "https://www.notion.so/qoli/%E5%85%83-%E6%B0%A3-bread-9bfc1b36c401826091bf0128823fe89f?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-04-26T05:06:40.732Z",
