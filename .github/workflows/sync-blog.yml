@@ -2,6 +2,12 @@ name: Sync Notion Blog
 
 on:
   workflow_dispatch:
+    inputs:
+      full_sync:
+        description: "Force a full historical blog sync"
+        required: false
+        default: false
+        type: boolean
   schedule:
     - cron: "0 18 * * *"
 
@@ -24,7 +30,13 @@ jobs:
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_TOKEN_V2: ${{ secrets.NOTION_TOKEN_V2 }}
-        run: node scripts/sync-blog.mjs
+          FULL_SYNC: ${{ github.event_name == 'workflow_dispatch' && inputs.full_sync || false }}
+        run: |
+          if [ "$FULL_SYNC" = "true" ]; then
+            node scripts/sync-blog.mjs --full
+          else
+            node scripts/sync-blog.mjs
+          fi
 
       - name: Commit updated blog data
         run: |

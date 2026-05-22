@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { mkdir, rm, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { compactId, fetchCollection, fetchPageById, idToUuid, notionText, recordValue, rowsFromCollection } from "./notion-sync/notion-api.mjs";
@@ -17,6 +17,11 @@ const siteUrl = "https://ronniewong.cc";
 const defaultPublishTarget = "ronniecc";
 const subsiteFieldNames = ["子站點", "子站点", "Subsites"];
 const assetDownloadTimeoutMs = 120_000;
+const fullSync =
+  process.argv.includes("--full") ||
+  process.argv.includes("--force") ||
+  process.env.RONNIECC_BLOG_SYNC_MODE === "full" ||
+  process.env.RONNIECC_BLOG_FULL_SYNC === "1";
 
 function titleSlug(title) {
   return String(title || "")
@@ -186,6 +191,15 @@ async function attachLocalAssets(blocks, post, notionToken) {
   return blocks;
 }
 
+async function readExistingPayload() {
+  try {
+    return JSON.parse(await readFile(outputPath, "utf8"));
+  } catch (error) {
+    if (error?.code === "ENOENT") return null;
+    throw error;
+  }
+}
+
 function normalizeBlock(block, blockMap) {
   const value = recordValue(block);
   const type = value.type || "unsupported";
@@ -298,11 +312,34 @@ async function main() {
       return String(b.createdTime).localeCompare(String(a.createdTime));
     });
 
-  await rm(assetRoot, { recursive: true, force: true });
+  const existingPayload = fullSync ? null : await readExistingPayload();
+  const existingPosts = new Map((existingPayload?.posts || []).map((post) => [post.id, post]));
+
+  if (fullSync) {
+    await rm(assetRoot, { recursive: true, force: true });
+  }
 
   const posts = [];
+  let fetchedPostCount = 0;
   for (const [index, post] of rows.entries()) {
+    const existingPost = existingPosts.get(post.id);
+    const canReuseExisting =
+      !fullSync &&
+      existingPost?.lastEditedTime === post.lastEditedTime &&
+      existingPost?.content?.blocks?.length;
+
+    if (canReuseExisting) {
+      console.log(`Reusing blog post ${index + 1}/${rows.length}: ${post.title}`);
+      posts.push({
+        ...post,
+        content: existingPost.content,
+      });
+      continue;
+    }
+
     console.log(`Fetching blog post ${index + 1}/${rows.length}: ${post.title}`);
+    await rm(path.join(assetRoot, post.id), { recursive: true, force: true });
+    fetchedPostCount += 1;
     posts.push({
       ...post,
       content: {
@@ -315,7 +352,7 @@ async function main() {
 
   const payload = {
     contractVersion: 1,
-    generatedAt: new Date().toISOString(),
+    generatedAt: existingPayload?.generatedAt || new Date().toISOString(),
     source: {
       databaseId,
       collectionId,
@@ -325,9 +362,19 @@ async function main() {
     posts,
   };
 
+  const existingText = existingPayload ? `${JSON.stringify(existingPayload, null, 2)}\n` : "";
+  let nextText = `${JSON.stringify(payload, null, 2)}\n`;
+  if (nextText === existingText) {
+    console.log(`No blog seed changes. Mode: ${fullSync ? "full" : "incremental"}. Fetched ${fetchedPostCount}/${posts.length} posts.`);
+    return;
+  }
+
+  payload.generatedAt = new Date().toISOString();
+  nextText = `${JSON.stringify(payload, null, 2)}\n`;
+
   await mkdir(path.dirname(outputPath), { recursive: true });
-  await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
-  console.log(`Wrote ${posts.length} blog posts to ${path.relative(repoRoot, outputPath)}`);
+  await writeFile(outputPath, nextText);
+  console.log(`Wrote ${posts.length} blog posts to ${path.relative(repoRoot, outputPath)}. Mode: ${fullSync ? "full" : "incremental"}. Fetched ${fetchedPostCount}/${posts.length} posts.`);
 }
 
 main().catch((error) => {
