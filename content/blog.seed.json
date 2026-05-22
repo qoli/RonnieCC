@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-05-21T18:48:39.009Z",
+  "generatedAt": "2026-05-22T09:37:49.235Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,2101 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "368c1b36c40181808b6efe7332eb5106",
+      "slug": "用-codex-做設計-從-網站太醜-到可驗收的品味控制-368c1b36",
+      "title": "用 Codex 做設計：從「網站太醜」到可驗收的品味控制",
+      "tag": "AI,Design,Notes",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/%E7%94%A8-codex-%E5%81%9A%E8%A8%AD%E8%A8%88-%E5%BE%9E-%E7%B6%B2%E7%AB%99%E5%A4%AA%E9%86%9C-%E5%88%B0%E5%8F%AF%E9%A9%97%E6%94%B6%E7%9A%84%E5%93%81%E5%91%B3%E6%8E%A7%E5%88%B6-368c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/%E7%94%A8-codex-%E5%81%9A%E8%A8%AD%E8%A8%88-%E5%BE%9E-%E7%B6%B2%E7%AB%99%E5%A4%AA%E9%86%9C-%E5%88%B0%E5%8F%AF%E9%A9%97%E6%94%B6%E7%9A%84%E5%93%81%E5%91%B3%E6%8E%A7%E5%88%B6-368c1b36c40181808b6efe7332eb5106?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-05-22T08:20:51.903Z",
+      "lastEditedTime": "2026-05-22T09:33:43.584Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-05-22T09:34:44.291Z",
+        "blocks": [
+          {
+            "id": "8cfd774698924c3798da0aa56e97f485",
+            "type": "text",
+            "richText": [
+              {
+                "text": "重啟 RonnieCC 的設計，不是從一套設計理念開始的。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "重啟 RonnieCC 的設計，不是從一套設計理念開始的。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "037dd71dc4484307b14cd16ea75d6409",
+            "type": "text",
+            "richText": [
+              {
+                "text": "對話框裡，我只打了四個字：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "對話框裡，我只打了四個字：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1377c8d0a3d8415f96c9287fe790d6cc",
+            "type": "code",
+            "richText": [
+              {
+                "text": "網站太醜了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "網站太醜了。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "22a70ea45d0f4954b18dc181db800969",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這句話不是情緒出口，而是一次必要的設計中斷。當時 Codex 已經把一個個人網站做成了看起來合理的靜態頁：有 hero、有 app 卡片、有一些看似完整的產品入口。但它的問題也很明顯：像臨時 demo，像模板，像一個把資料塞進頁面的交付物，而不是一個能代表我的個人索引。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這句話不是情緒出口，而是一次必要的設計中斷。當時 Codex 已經把一個個人網站做成了看起來合理的靜態頁：有 hero、有 app 卡片、有一些看似完整的產品入口。但它的問題也很明顯：像臨時 demo，像模板，像一個把資料塞進頁面的交付物，而不是一個能代表我的個人索引。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "438bd553121b48b68e9ec98ba2766110",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這篇文章不是想寫我相信什麼設計理念。那種話太容易變成結果論，也不容易被別人學走。我真正想記錄的是另一件事：和 Codex 做設計時，品味不是靠「請你做得高級一點」控制的，而是靠一連串具體到可以執行、可以檢查、可以寫進文檔的指令控制的。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這篇文章不是想寫我相信什麼設計理念。那種話太容易變成結果論，也不容易被別人學走。我真正想記錄的是另一件事：和 Codex 做設計時，品味不是靠「請你做得高級一點」控制的，而是靠一連串具體到可以執行、可以檢查、可以寫進文檔的指令控制的。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "50aa2af559a84f828f7574961ae9d26c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "最後 RonnieCC 變成現在這個樣子，不是因為 Codex 第一次就理解了我的審美，而是因為每次它偏離，我都必須把「不對」拆成下一條更準確的指令。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "最後 RonnieCC 變成現在這個樣子，不是因為 Codex 第一次就理解了我的審美，而是因為每次它偏離，我都必須把「不對」拆成下一條更準確的指令。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181f1ab40dc1d25ef7d97",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "attachment:4248402c-9aa0-4a6b-acde-d7ac5be90a9d:Desktop_-_1.png",
+            "assetPath": "content/blog-assets/368c1b36c40181808b6efe7332eb5106/368c1b36c40181f1ab40dc1d25ef7d97-Desktop_-_1.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c78c6bac99fb4ef7b73c0785c91b730f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這張首頁圖應該放在文章最前面。它展示的不是結果有多好看，而是這篇文章的終點：一個由 typography、留白和克制的結構建立出來的個人網站，而不是 app catalog 或 marketing hero。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這張首頁圖應該放在文章最前面。它展示的不是結果有多好看，而是這篇文章的終點：一個由 typography、留白和克制的結構建立出來的個人網站，而不是 app catalog 或 marketing hero。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b11e74642bc849869136ae5d6b3b15b6",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "先砍掉不該展示的東西",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "先砍掉不該展示的東西",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1da88fe8bfbe496c82de27501d5fb348",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第一輪調整並不是改字體，也不是改顏色，而是改內容邊界。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第一輪調整並不是改字體，也不是改顏色，而是改內容邊界。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "94efeff301204f2cae3bdb8c63198012",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我很快發現，Codex 的自然傾向是「把找到的資料都放上去」。這在工程上看起來勤奮，在設計上卻是災難。個人網站不是資料庫，也不是所有歷史 app 的陳列架。於是我給了第一個內容控制指令：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我很快發現，Codex 的自然傾向是「把找到的資料都放上去」。這在工程上看起來勤奮，在設計上卻是災難。個人網站不是資料庫，也不是所有歷史 app 的陳列架。於是我給了第一個內容控制指令：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ade1b7b288784f59b844729ec735f43d",
+            "type": "code",
+            "richText": [
+              {
+                "text": "你應該訪問 ARC 瀏覽器，把依然還在上架的 app 才顯示出來，那些下架的 app 就刪除了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "你應該訪問 ARC 瀏覽器，把依然還在上架的 app 才顯示出來，那些下架的 app 就刪除了。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "39f8feed23d34fe5906a053e7faaec39",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這句話其實定義了一個很重要的設計規則：可展示，不等於應該展示。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這句話其實定義了一個很重要的設計規則：可展示，不等於應該展示。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0a310adff290496384f68ab7ca434367",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如果 Codex 把網站理解成「資料整理任務」，它會傾向於補全；但如果我把它重新定義成「公開索引」，它才會開始判斷哪些內容應該留在頁面裡。這也是後面 RonnieCC 能變乾淨的第一步：不是先美化，而是先刪除不該出現的東西。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果 Codex 把網站理解成「資料整理任務」，它會傾向於補全；但如果我把它重新定義成「公開索引」，它才會開始判斷哪些內容應該留在頁面裡。這也是後面 RonnieCC 能變乾淨的第一步：不是先美化，而是先刪除不該出現的東西。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "71a5cc09537c4389b1e6b4a851c2fa94",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個階段我學到的一點是，和 Codex 做設計，不能只審查畫面，也要審查它背後的內容選擇。很多「醜」不是 CSS 問題，而是內容沒有經過取捨。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個階段我學到的一點是，和 Codex 做設計，不能只審查畫面，也要審查它背後的內容選擇。很多「醜」不是 CSS 問題，而是內容沒有經過取捨。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f7da8ffe97e14126b4a29663eface459",
+            "type": "text",
+            "richText": [
+              {
+                "text": "刪掉不該展示的內容之後，下一個問題才真正浮出來：留下來的內容應該如何被組織。這一步從「誰可以上場」轉向「整個隊形怎麼站」，也就是資訊架構。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "刪掉不該展示的內容之後，下一個問題才真正浮出來：留下來的內容應該如何被組織。這一步從「誰可以上場」轉向「整個隊形怎麼站」，也就是資訊架構。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7afcc92beec04d4f8488ee7636aba942",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "從 Domain 改成 Project ecosystem",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "從 Domain 改成 Project ecosystem",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "42d0b053b3584490b239ffcc2fa7b1e7",
+            "type": "text",
+            "richText": [
+              {
+                "text": "接著出問題的是資訊模型。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "接著出問題的是資訊模型。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "cb5ed50c62b641608fc2a53ff38cdf87",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Codex 一開始按資料來源和能力分類來組織內容，這看起來合理，但不符合 RonnieCC 的真實結構。我先說：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Codex 一開始按資料來源和能力分類來組織內容，這看起來合理，但不符合 RonnieCC 的真實結構。我先說：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d773b1abdbdb4845a551ceb62d884672",
+            "type": "code",
+            "richText": [
+              {
+                "text": "它應該以 Domain 的形式去組織，因為很多項目事實上是一個小型生態圈。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "它應該以 Domain 的形式去組織，因為很多項目事實上是一個小型生態圈。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a50060475ada4dbe85a440250fbe61f5",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但很快我又修正了自己：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但很快我又修正了自己：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "708e50fd0dda401296df60b8d43e55dc",
+            "type": "code",
+            "richText": [
+              {
+                "text": "Domain 設計不好，雖然叫 Domain，但是它應該是 Projects 的形式。例如 Syncnext 就是一堆生態圈的，有 API / Plugin / main-app。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Domain 設計不好，雖然叫 Domain，但是它應該是 Projects 的形式。例如 Syncnext 就是一堆生態圈的，有 API / Plugin / main-app。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "92cffc3418ae440e8c31b83e4bdcc754",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個修正比任何視覺調整都重要。因為 Syncnext 不是一個 app 卡片，它是一個 project ecosystem。它有 main app，有 API，有 plugin，有外部工具，有支援系統。如果把它壓成一張 app card，畫面再精緻也錯。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個修正比任何視覺調整都重要。因為 Syncnext 不是一個 app 卡片，它是一個 project ecosystem。它有 main app，有 API，有 plugin，有外部工具，有支援系統。如果把它壓成一張 app card，畫面再精緻也錯。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d3cd424addca498cb9981b05b381436f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "所以 RonnieCC 的設計不是從「我要什麼版式」開始，而是從「什麼是這個網站的基本單位」開始。後來網站的導航也因此被收斂成三個入口：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "所以 RonnieCC 的設計不是從「我要什麼版式」開始，而是從「什麼是這個網站的基本單位」開始。後來網站的導航也因此被收斂成三個入口：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2df86ec5684b4879ac2e57fee99b383a",
+            "type": "code",
+            "richText": [
+              {
+                "text": "index、Projects、Resume。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "index、Projects、Resume。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a8ec0117a87945c791652cb90d779fb4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Index 展示現在的 project 和探索；Projects 承載完整分類；Resume 對應 Google Drive 的履歷文件。這一刻，Codex 不再能自由發明網站結構，它被限制在一個清楚的信息架構裡。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Index 展示現在的 project 和探索；Projects 承載完整分類；Resume 對應 Google Drive 的履歷文件。這一刻，Codex 不再能自由發明網站結構，它被限制在一個清楚的信息架構裡。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181bf9bb4dd5f11cd6026",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "attachment:d807983b-ff89-4c24-bf96-bdeea8ce41eb:Desktop_-_2.png",
+            "assetPath": "content/blog-assets/368c1b36c40181808b6efe7332eb5106/368c1b36c40181bf9bb4dd5f11cd6026-Desktop_-_2.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "07668a46f3964f6eb7bc7f00e07169be",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這張 Projects 圖應該放在這裡。它的作用不是展示「項目頁很好看」，而是證明 project ecosystem 這個模型如何落到畫面：編號、幾何標記、項目名稱、summary、tags 都在服務同一件事，讓讀者按系統理解項目，而不是按 app icon 掃列表。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這張 Projects 圖應該放在這裡。它的作用不是展示「項目頁很好看」，而是證明 project ecosystem 這個模型如何落到畫面：編號、幾何標記、項目名稱、summary、tags 都在服務同一件事，讓讀者按系統理解項目，而不是按 app icon 掃列表。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e13ab5854700436c9e03592c60a07490",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "參考不是拿來照抄，而是拆成責任",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "參考不是拿來照抄，而是拆成責任",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "53bf9216d62742d7a0db2f2fecc2684a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "真正的視覺轉折，是從 Kami 開始的。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "真正的視覺轉折，是從 Kami 開始的。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9d1964c56b5c4f558bc45c66751b69ca",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我先告訴 Codex：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我先告訴 Codex：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "19f237717e69419eb22b64434ba8943e",
+            "type": "code",
+            "richText": [
+              {
+                "text": "在視覺上，我喜歡 https://github.com/tw93/kami 這個項目提供的方法論，我感覺它值得被轉化成前端辦法。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在視覺上，我喜歡 https://github.com/tw93/kami 這個項目提供的方法論，我感覺它值得被轉化成前端辦法。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41bc73f5e5554c439b0d191bf5bc76ea",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第一次說 Kami，只是把方向從普通 portfolio 拉向一種更克制的設計方法。但這還不夠，因為 Codex 很容易只吸收一點表面語氣，然後繼續用自己的模板邏輯完成頁面。所以我又推進了一句：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第一次說 Kami，只是把方向從普通 portfolio 拉向一種更克制的設計方法。但這還不夠，因為 Codex 很容易只吸收一點表面語氣，然後繼續用自己的模板邏輯完成頁面。所以我又推進了一句：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4c10119f4f5b4b0e923aadc54b96372a",
+            "type": "code",
+            "richText": [
+              {
+                "text": "我認為可以把 kami 提供的方法論執行得極致一些。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我認為可以把 kami 提供的方法論執行得極致一些。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9a190b197a874c5d854b8f14dca94620",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這句話的目的不是讓畫面更裝飾，而是讓 Codex 不要只借一點顏色或氛圍。既然要用 Kami，就要讓它成為設計行為的約束，而不是一個「風格參考」。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這句話的目的不是讓畫面更裝飾，而是讓 Codex 不要只借一點顏色或氛圍。既然要用 Kami，就要讓它成為設計行為的約束，而不是一個「風格參考」。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c8d6b3caa60846ae9377b61ef5a01df1",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但只給一個參考仍然不夠。Codex 很容易把「參考」理解成「復刻外觀」。所以我又提供了另一個舊材料：5mlstudio。這是一個我以前的對外宣傳品牌。它可以作為品質參考，但不是要 Codex 把 RonnieCC 做成 5mlstudio 的復刻。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但只給一個參考仍然不夠。Codex 很容易把「參考」理解成「復刻外觀」。所以我又提供了另一個舊材料：5mlstudio。這是一個我以前的對外宣傳品牌。它可以作為品質參考，但不是要 Codex 把 RonnieCC 做成 5mlstudio 的復刻。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "06225f3a21834412b38d0322bd329566",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這裡最有效的一句提示詞，是後來這句：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這裡最有效的一句提示詞，是後來這句：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b2f6bd91789746fda8bd94d902714bd1",
+            "type": "code",
+            "richText": [
+              {
+                "text": "使用 kami 提供的色彩 token。5mlstudio 提供的排版佈局。再重新做一次 index 看看是否一個正確的設計前進方向。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "使用 kami 提供的色彩 token。5mlstudio 提供的排版佈局。再重新做一次 index 看看是否一個正確的設計前進方向。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1b2852677db345be8b24055a75d5dead",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這句話是整個設計過程裡最值得學走的指令之一。它沒有說「參考 Kami」或「參考 5mlstudio」，而是把兩個參考拆成不同責任：Kami 只負責色彩 token，5mlstudio 只負責排版佈局。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這句話是整個設計過程裡最值得學走的指令之一。它沒有說「參考 Kami」或「參考 5mlstudio」，而是把兩個參考拆成不同責任：Kami 只負責色彩 token，5mlstudio 只負責排版佈局。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "870ed7efb9e44371812d4a8a8bad68d8",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這樣做之後，Codex 的搜索空間立刻變小。它不需要猜「我要哪種風格」，也不能把兩個參考混成拼貼。它只需要遵守兩條邊界：顏色從 Kami 來，空間從 5mlstudio 的排版品質來。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這樣做之後，Codex 的搜索空間立刻變小。它不需要猜「我要哪種風格」，也不能把兩個參考混成拼貼。它只需要遵守兩條邊界：顏色從 Kami 來，空間從 5mlstudio 的排版品質來。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d6711bcf0e894a38af83c1103f5961fe",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這就是用 Codex 做設計時最關鍵的操作：不要給它一個完整參考，給它拆分後的責任。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這就是用 Codex 做設計時最關鍵的操作：不要給它一個完整參考，給它拆分後的責任。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401819b8939fc27f417e1b4",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "attachment:25e9f09b-9d8e-4a5c-803d-c07196d7ba71:Desktop_-_3.png",
+            "assetPath": "content/blog-assets/368c1b36c40181808b6efe7332eb5106/368c1b36c401819b8939fc27f417e1b4-Desktop_-_3.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "87320d489a7d4160a711cda3b4cd7d11",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這張 Selected focus 圖適合放在這一段。它不是功能介紹，而是三個被壓縮後的設計判斷：systems, not demos；AI with operating discipline；interface as judgement。畫面本身也在證明同一件事：幾何圖形只是結構標記，真正的品質來自文字、留白和比例。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這張 Selected focus 圖適合放在這一段。它不是功能介紹，而是三個被壓縮後的設計判斷：systems, not demos；AI with operating discipline；interface as judgement。畫面本身也在證明同一件事：幾何圖形只是結構標記，真正的品質來自文字、留白和比例。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "29946a2cf70c4987b2993e2c12e7cc93",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "失敗的 index 和幼稚的字體",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "失敗的 index 和幼稚的字體",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5d608c316b5a4e5dac65c0e6c72009be",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在設計過程中，有一個版本徹底失敗。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在設計過程中，有一個版本徹底失敗。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "45aef97767f84f52b8219be13230010a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我當時的反饋很重：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我當時的反饋很重：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "612c7347312b4768a73c8ce0de072584",
+            "type": "code",
+            "richText": [
+              {
+                "text": "我覺得現在的 index 是一個完全失敗和錯誤的方法，我不清楚你是用什麼東西在支撐這些設計模式。你現在輸出的樣式，看起來就是一個 17 歲的小朋友，剛學會做網站，然後喜歡用這種幼稚的字體。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我覺得現在的 index 是一個完全失敗和錯誤的方法，我不清楚你是用什麼東西在支撐這些設計模式。你現在輸出的樣式，看起來就是一個 17 歲的小朋友，剛學會做網站，然後喜歡用這種幼稚的字體。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "995bbb9c770e412194c6838a4875c601",
+            "type": "text",
+            "richText": [
+              {
+                "text": "現在回看，這句話之所以有用，不在於情緒，而在於它內含兩個精確判斷。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "現在回看，這句話之所以有用，不在於情緒，而在於它內含兩個精確判斷。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ef70378d9f5c47bf9acb35f95e70bc83",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第一，它否定的是「方法」，不是單個樣式。也就是說，問題不是某個字號太大、某個 padding 不對，而是 Codex 支撐設計的模式錯了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第一，它否定的是「方法」，不是單個樣式。也就是說，問題不是某個字號太大、某個 padding 不對，而是 Codex 支撐設計的模式錯了。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "46f07749c74b4cb0aebc5f84db39550c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第二，它指出了錯誤語氣：幼稚。這比「不好看」更有用。不好看太寬，幼稚則能讓 Codex 重新理解字體、裝飾、版式和整體氣質都在錯誤方向上。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第二，它指出了錯誤語氣：幼稚。這比「不好看」更有用。不好看太寬，幼稚則能讓 Codex 重新理解字體、裝飾、版式和整體氣質都在錯誤方向上。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "03b24f779b374753aef2b1cf301f5bcb",
+            "type": "text",
+            "richText": [
+              {
+                "text": "後來字體被切到 Montserrat，我甚至一開始指定了 Thin 100。這個選擇不是為了追求「細」，而是為了把網站從 app showcase 的普通 UI 語氣，推向 typography-led 的個人索引。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "後來字體被切到 Montserrat，我甚至一開始指定了 Thin 100。這個選擇不是為了追求「細」，而是為了把網站從 app showcase 的普通 UI 語氣，推向 typography-led 的個人索引。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8cb4cc7196254bf1bef4f06f467ea9e1",
+            "type": "text",
+            "richText": [
+              {
+                "text": "接著我把 typography 的要求說得更具體：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "接著我把 typography 的要求說得更具體：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "33a67a9dc1e248d09ff30476eca60591",
+            "type": "code",
+            "richText": [
+              {
+                "text": "網站應該重視強烈的 Typography 能力，透過妥善的 Typography 去表達內容。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "網站應該重視強烈的 Typography 能力，透過妥善的 Typography 去表達內容。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ef8865d096374193b5015595d698723d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "以及：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "以及：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "35c70678256148a2af343865d70e7836",
+            "type": "code",
+            "richText": [
+              {
+                "text": "高質量的 Typography，大留白，重視空氣感，關心行距，字距，才是 Typography 排版的核心。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "高質量的 Typography，大留白，重視空氣感，關心行距，字距，才是 Typography 排版的核心。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4264924085944f0c841befadbbd7f7d7",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這種指令比「做得高級」有效太多。因為它把品味拆成了可檢查的物理屬性：留白、空氣感、行距、字距。Codex 不需要猜什麼叫高級，它只需要把畫面調到這些屬性成立。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這種指令比「做得高級」有效太多。因為它把品味拆成了可檢查的物理屬性：留白、空氣感、行距、字距。Codex 不需要猜什麼叫高級，它只需要把畫面調到這些屬性成立。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f44e66a3d4c74852abd93f90b22512bf",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "色彩不能背叛 typography",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "色彩不能背叛 typography",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a47e405db7e542d2aa924320a0c690a0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "設計方向看起來穩定後，第一個問題是舊規則的殘留。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "設計方向看起來穩定後，第一個問題是舊規則的殘留。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9e19cd7bec8c46b695bec3ecc142088d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我問 Codex：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我問 Codex：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "80dd4d411b634ec59440bfd2df786bbb",
+            "type": "code",
+            "richText": [
+              {
+                "text": "為何還有 var(--brand) 這種 5ml studio 留下的淡藍色呢？不是說好了用 kami 提供的色彩 token 嗎？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "為何還有 var(--brand) 這種 5ml studio 留下的淡藍色呢？不是說好了用 kami 提供的色彩 token 嗎？",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8777596c74c84a458ab2ccacbe9ad76c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這是一個很典型的 AI 協作問題：它表面上接受了規則，但實作時仍然把舊 token、舊習慣或舊文件裡的殘留帶回來。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這是一個很典型的 AI 協作問題：它表面上接受了規則，但實作時仍然把舊 token、舊習慣或舊文件裡的殘留帶回來。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4dc12804cec64ab591f5ce73b2e4087a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "所以設計規則不能只說一次。你必須在畫面裡抓出違規點，告訴它這裡違反了哪條已經建立的約束。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "所以設計規則不能只說一次。你必須在畫面裡抓出違規點，告訴它這裡違反了哪條已經建立的約束。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "98c2e3738aef48bb8571a6fb1d212510",
+            "type": "text",
+            "richText": [
+              {
+                "text": "比忘記規則更麻煩的，是在新情境裡誤用規則。dark mode 就是這樣的測試：不是把 light mode 的 token 反過來就完成了，也不是換一個更亮的 accent 就會更清楚。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "比忘記規則更麻煩的，是在新情境裡誤用規則。dark mode 就是這樣的測試：不是把 light mode 的 token 反過來就完成了，也不是換一個更亮的 accent 就會更清楚。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4715e36b7a7b4b4d8ffa778ab1e92c52",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我看見高亮色之後，指出：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我看見高亮色之後，指出：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "016e0ff4aa2c4e2083848b820a930dda",
+            "type": "code",
+            "richText": [
+              {
+                "text": "亮藍色會引入明度不如核心字體的感覺，這會和 Typography 概念發生嚴重的衝突。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "亮藍色會引入明度不如核心字體的感覺，這會和 Typography 概念發生嚴重的衝突。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "74daf5871bd64436b12d6cf25486bc22",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這句話背後的判斷是：色彩不是獨立裝飾，它必須服從文字層級。如果 highlight 的明度低於核心文字，它就不是 highlight，而是在破壞 typography 的秩序。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這句話背後的判斷是：色彩不是獨立裝飾，它必須服從文字層級。如果 highlight 的明度低於核心文字，它就不是 highlight，而是在破壞 typography 的秩序。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "892876fa1ad54d0fbab54116f4bb4b9c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我又補了一句：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我又補了一句：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8e7313e01da6486f876cfd393ba626c0",
+            "type": "code",
+            "richText": [
+              {
+                "text": "你應該透過瀏覽器的屏幕查看去理解問題。你的核心問題是，你標記的高亮色是存在明度不如其他字體。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "你應該透過瀏覽器的屏幕查看去理解問題。你的核心問題是，你標記的高亮色是存在明度不如其他字體。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fbf8365ad0374e15be8481738fe58dbe",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這裡的重點是「屏幕查看」。很多時候 Codex 會用 CSS 值推理設計，但設計最後是視覺結果，不是 token 表格。dark mode 的對比度問題，必須在瀏覽器裡看見，不能只在代碼裡相信。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這裡的重點是「屏幕查看」。很多時候 Codex 會用 CSS 值推理設計，但設計最後是視覺結果，不是 token 表格。dark mode 的對比度問題，必須在瀏覽器裡看見，不能只在代碼裡相信。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181bda945f007f364e12e",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "attachment:fe933aa6-7d33-4035-8f97-82d00f664852:Desktop_-_5.png",
+            "assetPath": "content/blog-assets/368c1b36c40181808b6efe7332eb5106/368c1b36c40181bda945f007f364e12e-Desktop_-_5.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d7f3b363cb5147d693721768fd8b1bb7",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這張 dark mode 圖應該放在這裡。它要證明的是：dark mode 不是把背景變黑，也不是加一個亮藍色 accent，而是讓所有顏色都服從 typography 層級。高亮可以存在，但不能比正文更弱，也不能搶走主句的權重。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這張 dark mode 圖應該放在這裡。它要證明的是：dark mode 不是把背景變黑，也不是加一個亮藍色 accent，而是讓所有顏色都服從 typography 層級。高亮可以存在，但不能比正文更弱，也不能搶走主句的權重。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6a7061df35e1471b8b5cae442aa34f45",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "規則成立後，才擴展到其他頁",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "規則成立後，才擴展到其他頁",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "44256648ccdb4661a2494396d63471d8",
+            "type": "text",
+            "richText": [
+              {
+                "text": "當 index 的基礎設計終於可信後，我沒有讓 Codex 重新自由設計其他頁，而是下了另一句關鍵指令：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "當 index 的基礎設計終於可信後，我沒有讓 Codex 重新自由設計其他頁，而是下了另一句關鍵指令：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1c9dc07008b54e8389f11ea6ef62d895",
+            "type": "code",
+            "richText": [
+              {
+                "text": "以相同的設計規則，去重建其他頁面。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "以相同的設計規則，去重建其他頁面。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2a3722c2bfdf44a29cca505b0ea19c1b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這句話看起來普通，但它控制了後續所有頁面的品質。它的意思是：不要每個頁面重新發明風格；先在 index 驗證規則，再把規則擴展到 Projects、Detail、Resume 和 Blog。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這句話看起來普通，但它控制了後續所有頁面的品質。它的意思是：不要每個頁面重新發明風格；先在 index 驗證規則，再把規則擴展到 Projects、Detail、Resume 和 Blog。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7bee75acc5484c469db8d6f19e94e3ce",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這句指令也需要配一個驗收清單，否則很容易變成口號：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這句指令也需要配一個驗收清單，否則很容易變成口號：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "58c214a1b6a141cb9436fd622a872da6",
+            "type": "code",
+            "richText": [
+              {
+                "text": "檢查其他頁面是否真的沿用 index 的設計規則：\n1. 色彩 token 是否一致，沒有冒出新的品牌色或舊 token？\n2. 字體層級、行距、留白是否沿用同一套 typography 節奏？\n3. 是否出現 index 沒有使用過的大卡片牆、app grid 或 marketing hero 結構？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "檢查其他頁面是否真的沿用 index 的設計規則：\n1. 色彩 token 是否一致，沒有冒出新的品牌色或舊 token？\n2. 字體層級、行距、留白是否沿用同一套 typography 節奏？\n3. 是否出現 index 沒有使用過的大卡片牆、app grid 或 marketing hero 結構？",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ee1525381878480a84c2e19856ceb87c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這樣 Codex 才不是「做另一個頁面」，而是在同一套已經驗證過的設計語法裡擴展內容。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這樣 Codex 才不是「做另一個頁面」，而是在同一套已經驗證過的設計語法裡擴展內容。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c7509815d1ea40e1baa69cc73ade0ded",
+            "type": "text",
+            "richText": [
+              {
+                "text": "接下來的調整看起來分散，其實都是同一套規則落到不同層級：符號、互動、語氣和閱讀節奏。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "接下來的調整看起來分散，其實都是同一套規則落到不同層級：符號、互動、語氣和閱讀節奏。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2d5f09d918e1447daf9bd097d9926e89",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Project 頁需要不同的 SVG 幾何圖形作為配合，而不是統一模板圖形。這不是要插圖更豐富，而是避免 Codex 用一套模板符號假裝所有 project 都有同樣結構。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Project 頁需要不同的 SVG 幾何圖形作為配合，而不是統一模板圖形。這不是要插圖更豐富，而是避免 Codex 用一套模板符號假裝所有 project 都有同樣結構。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8e3fc96b66094809b7ff6f8425bf3f63",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這裡其實也有一條可以直接拿走的設計指令：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這裡其實也有一條可以直接拿走的設計指令：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c58b40821fde4652b3c2a94a3b960ef1",
+            "type": "code",
+            "richText": [
+              {
+                "text": "為每個 project 設計不同的抽象幾何 SVG 標記。它們只能作為結構符號，不要做成 app icon、功能圖示或插畫；每個符號最好只用 2-3 個幾何動作，並且要反映這個 project 的性質，不能套用同一個模板。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "為每個 project 設計不同的抽象幾何 SVG 標記。它們只能作為結構符號，不要做成 app icon、功能圖示或插畫；每個符號最好只用 2-3 個幾何動作，並且要反映這個 project 的性質，不能套用同一個模板。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "749ce451604342509e3cbf305ff45a7d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這句話的價值在於，它同時限制了三件事：用途、複雜度和差異來源。用途是結構符號，不是裝飾插圖；複雜度被壓在 2-3 個幾何動作；差異必須來自 project 本身，而不是 AI 自己發明一組看起來很忙的圖案。這種 prompt 能立刻把 AI 從「畫幾個好看的 SVG」拉回「用符號幫資訊架構分層」。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這句話的價值在於，它同時限制了三件事：用途、複雜度和差異來源。用途是結構符號，不是裝飾插圖；複雜度被壓在 2-3 個幾何動作；差異必須來自 project 本身，而不是 AI 自己發明一組看起來很忙的圖案。這種 prompt 能立刻把 AI 從「畫幾個好看的 SVG」拉回「用符號幫資訊架構分層」。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "118bdcf9e11e4915881d80a42e0f9e64",
+            "type": "text",
+            "richText": [
+              {
+                "text": "互動識別也要服務 typography。我要求：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "互動識別也要服務 typography。我要求：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9fa6594f0f6949ef89fbdee8a9c0f51d",
+            "type": "code",
+            "richText": [
+              {
+                "text": "可交互按鈕和連結的話，使用下劃線標識，否則現在的 typography 缺乏可交互識別。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "可交互按鈕和連結的話，使用下劃線標識，否則現在的 typography 缺乏可交互識別。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ee3e6c79a20a4ac382763b40ba3db79a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但規則必須有作用域，所以很快又補上一句：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但規則必須有作用域，所以很快又補上一句：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fa53b00a148b4fe299de2a6cbd5b525b",
+            "type": "code",
+            "richText": [
+              {
+                "text": "site-header 下的 a 連結不應該追加下劃線，因為它們不是 typography 空間。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "site-header 下的 a 連結不應該追加下劃線，因為它們不是 typography 空間。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e052e026fb8149c988e657b9ef0dc21f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "下劃線在正文和 typographic content 裡能提高可交互識別，但在 header nav 裡會破壞導航本身的結構。好的 prompt 不只定義規則，也定義規則的作用域。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "下劃線在正文和 typographic content 裡能提高可交互識別，但在 header nav 裡會破壞導航本身的結構。好的 prompt 不只定義規則，也定義規則的作用域。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "97df146880464004b6bdd99a7c7c8245",
+            "type": "text",
+            "richText": [
+              {
+                "text": "文案也一樣。我看到 project 文案裡出現一種「證明 XXX」的僵硬句式，於是說：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "文案也一樣。我看到 project 文案裡出現一種「證明 XXX」的僵硬句式，於是說：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8d97f507f4d74366a6930dea3a2eae8f",
+            "type": "code",
+            "richText": [
+              {
+                "text": "重建所有 project 的文案，他們現在看起來的感覺我說不清楚，但是證明 XXX 的口吻太奇怪了。我想要的口吻是具備工程師和設計師的感覺。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "重建所有 project 的文案，他們現在看起來的感覺我說不清楚，但是證明 XXX 的口吻太奇怪了。我想要的口吻是具備工程師和設計師的感覺。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6f09148232da4675ba278f15df667f76",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這句話不是文案偏好，而是聲音控制。RonnieCC 不是 investor pitch，也不是作品集模板。它需要一種工程師和設計師都能成立的語氣：有判斷，但不表演；有技術密度，但不炫技。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這句話不是文案偏好，而是聲音控制。RonnieCC 不是 investor pitch，也不是作品集模板。它需要一種工程師和設計師都能成立的語氣：有判斷，但不表演；有技術密度，但不炫技。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e89992c7eccd4c36afecbf6d6d6845a3",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這種文案調整也可以用 before/after 驗收：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這種文案調整也可以用 before/after 驗收：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "cd450dac18514d6eb1c1176c73ec6342",
+            "type": "code",
+            "richText": [
+              {
+                "text": "Before：證明 Syncnext 是一個完整的生態系統。\nAfter：Syncnext 包含 API、plugin 與 main app，三者構成一個可擴展的開發者工具鏈。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Before：證明 Syncnext 是一個完整的生態系統。\nAfter：Syncnext 包含 API、plugin 與 main app，三者構成一個可擴展的開發者工具鏈。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "69de6b47599040ef972ae1702248da0a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "前者像在替產品辯護，後者直接說出系統構成。這就是我想要 Codex 學會的差別：少一點宣稱，多一點結構事實。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "前者像在替產品辯護，後者直接說出系統構成。這就是我想要 Codex 學會的差別：少一點宣稱，多一點結構事實。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fd41b6d9b84c4820baf686563e69baf4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Blog list 的調整也延續同一套規則。Year 作為左上角分組標題，blog-items 左對齊，單列佈局，tags 降低對比度，再降低 blog-title 字號。這些指令都在服務同一個目標：讓閱讀節奏清楚，讓 metadata 不搶正文。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Blog list 的調整也延續同一套規則。Year 作為左上角分組標題，blog-items 左對齊，單列佈局，tags 降低對比度，再降低 blog-title 字號。這些指令都在服務同一個目標：讓閱讀節奏清楚，讓 metadata 不搶正文。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c4018126a87fe88435b2b761",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "attachment:fd6413e8-cb39-4d90-8236-34a2edc6c0bf:Desktop_-_4.png",
+            "assetPath": "content/blog-assets/368c1b36c40181808b6efe7332eb5106/368c1b36c4018126a87fe88435b2b761-Desktop_-_4.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a770299597b34cc19de01998a8047413",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這張圖放在這裡作為「規則擴展」的收束。Read the work by structure, not by release order. 這句話本身就是整個網站後半段設計的總結：不是按時間堆發布物，而是按結構建立閱讀路徑。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這張圖放在這裡作為「規則擴展」的收束。Read the work by structure, not by release order. 這句話本身就是整個網站後半段設計的總結：不是按時間堆發布物，而是按結構建立閱讀路徑。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "89effa2c77794dba890b8204db78b7cf",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "最後，把判斷寫進文檔",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "最後，把判斷寫進文檔",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4248fb82f3b249cd9c54d37839238504",
+            "type": "text",
+            "richText": [
+              {
+                "text": "設計穩定後，我還要求：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "設計穩定後，我還要求：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "222ed7b27ae74ab19c8ae62cc081578f",
+            "type": "code",
+            "richText": [
+              {
+                "text": "更新舊的設計文檔，避免被文檔誤導。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "更新舊的設計文檔，避免被文檔誤導。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "366c1b36c40181f6a11cec533d1691dc",
       "slug": "adict-3-0-beta-an-update-for-existing-users-366c1b36",
@@ -31,7 +2126,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:47:52.886Z",
+        "syncedAt": "2026-05-22T09:35:13.212Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -1207,7 +3302,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:47:53.918Z",
+        "syncedAt": "2026-05-22T09:35:18.891Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -1787,7 +3882,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:47:57.643Z",
+        "syncedAt": "2026-05-22T09:35:36.591Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -3975,7 +6070,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:47:57.995Z",
+        "syncedAt": "2026-05-22T09:35:37.387Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -4693,7 +6788,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:47:58.203Z",
+        "syncedAt": "2026-05-22T09:35:37.900Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -5456,7 +7551,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:47:58.350Z",
+        "syncedAt": "2026-05-22T09:35:38.510Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -6595,7 +8690,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:02.682Z",
+        "syncedAt": "2026-05-22T09:36:01.878Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -7314,7 +9409,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:02.857Z",
+        "syncedAt": "2026-05-22T09:36:02.369Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -8179,7 +10274,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:03.062Z",
+        "syncedAt": "2026-05-22T09:36:02.883Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -9554,7 +11649,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:03.258Z",
+        "syncedAt": "2026-05-22T09:36:03.565Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -12087,7 +14182,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:03.580Z",
+        "syncedAt": "2026-05-22T09:36:04.169Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -13928,7 +16023,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:03.868Z",
+        "syncedAt": "2026-05-22T09:36:04.673Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -14578,7 +16673,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:05.561Z",
+        "syncedAt": "2026-05-22T09:36:09.121Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -15189,7 +17284,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:07.629Z",
+        "syncedAt": "2026-05-22T09:36:16.648Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -15950,7 +18045,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:07.816Z",
+        "syncedAt": "2026-05-22T09:36:17.082Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -16584,7 +18679,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:08.030Z",
+        "syncedAt": "2026-05-22T09:36:17.505Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -17697,7 +19792,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:11.239Z",
+        "syncedAt": "2026-05-22T09:36:24.433Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -18070,7 +20165,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:12.240Z",
+        "syncedAt": "2026-05-22T09:36:27.318Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -19749,7 +21844,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:23.619Z",
+        "syncedAt": "2026-05-22T09:37:06.719Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -19972,7 +22067,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:24.707Z",
+        "syncedAt": "2026-05-22T09:37:11.543Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -20732,7 +22827,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-21T18:48:26.783Z",
+        "syncedAt": "2026-05-22T09:37:18.033Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
