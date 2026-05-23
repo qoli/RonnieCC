@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-05-22T10:48:06.532Z",
+  "generatedAt": "2026-05-23T15:11:38.542Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,3362 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "369c1b36c40181038b1ded4549c4bedb",
+      "slug": "codex-workflow-skills-369c1b36",
+      "seoSlug": "codex-workflow-skills",
+      "legacySlugs": [
+        "6-個讓-codex-不再瞎忙的工作流-skill-369c1b36"
+      ],
+      "title": "6 個讓 Codex 不再瞎忙的工作流 Skill",
+      "tag": "AI,Automation,Local AI,Pipeline,Notes",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/codex-workflow-skills-369c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/6-%E5%80%8B%E8%AE%93-codex-%E4%B8%8D%E5%86%8D%E7%9E%8E%E5%BF%99%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81-skill-369c1b36c40181038b1ded4549c4bedb?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-05-23T14:03:17.482Z",
+      "lastEditedTime": "2026-05-23T15:01:21.702Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-05-23T15:03:29.535Z",
+        "blocks": [
+          {
+            "id": "369c1b36c40180299d79ed271c7c6bd7",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我作為一個用了 Codex 接近兩年的用戶。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我作為一個用了 Codex 接近兩年的用戶。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "369c1b36c40180e38249cb41a37c6583",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在工作的過程中，整理了一些值得分享的 Skill。我認為它們很有價值，也很值得公開分享。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在工作的過程中，整理了一些值得分享的 Skill。我認為它們很有價值，也很值得公開分享。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "49562d7b0dcc4a7ea5978bde627780fb",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這些 Skill 怎麼來？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這些 Skill 怎麼來？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "369c1b36c40180cf8bbaf779df25ce03",
+            "type": "text",
+            "richText": [
+              {
+                "text": "它們不是一開始就被設計出來的，而是我不斷觀察自己的行為：我如何糾正模型的工作，如何把模型拉回正確軌道，如何把一次次有效的干預提煉成可以重複使用的流程。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "它們不是一開始就被設計出來的，而是我不斷觀察自己的行為：我如何糾正模型的工作，如何把模型拉回正確軌道，如何把一次次有效的干預提煉成可以重複使用的流程。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "62a90cd8cb234af8aabe45fda1b21af6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "對我來說，方法論先存在於工作過程裡。當一個介入方式被反覆驗證有效，它就應該被固定成 Skill，讓模型下次在相似場景裡自動走對的路。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "對我來說，方法論先存在於工作過程裡。當一個介入方式被反覆驗證有效，它就應該被固定成 Skill，讓模型下次在相似場景裡自動走對的路。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "369c1b36c4018057bdd7e5e9bcd9a22e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "所以我把最近真實使用過的一批 Codex workflow 抽出來，整理成公開 repo：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "qoli/codex-workflow-skills",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/codex-workflow-skills"
+              },
+              {
+                "text": "。這裡不是一包 prompt，而是 6 個可以安裝的 Skill，用來處理上下文恢復、除錯紀律、文字改稿，以及小紅書內容交付。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "所以我把最近真實使用過的一批 Codex workflow 抽出來，整理成公開 repo：qoli/codex-workflow-skills。這裡不是一包 prompt，而是 6 個可以安裝的 Skill，用來處理上下文恢復、除錯紀律、文字改稿，以及小紅書內容交付。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0b0cdf8fb5ed4ab3b15deb63083971ca",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "我怎麼定義一個有效 Skill",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我怎麼定義一個有效 Skill",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0eb2d4f7135f4f7698282b244a629dd0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我後來用四個問題判斷一個 Skill 是否值得沉澱：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我後來用四個問題判斷一個 Skill 是否值得沉澱：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2105ee8f22c74fabbd3b4b2a2cc87e46",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "觸發條件：什麼情境下應該使用它。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "觸發條件：什麼情境下應該使用它。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c9882f4ab2fb45628c3a6740c6d45109",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "觀測順序：執行時應該先看哪些證據，而不是直接猜。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "觀測順序：執行時應該先看哪些證據，而不是直接猜。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f5900374cef9408d804a3949029308aa",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "安全邊界：哪些行為必須明確禁止，例如洩漏 transcript、提交 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": ".env",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "、自動按下發布。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "安全邊界：哪些行為必須明確禁止，例如洩漏 transcript、提交 .env、自動按下發布。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a9ea9a89ef0b4a739ac14c1e3a7efcda",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "完成驗證：怎樣才算真的做完，而不是只產生一段看似合理的回答。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "完成驗證：怎樣才算真的做完，而不是只產生一段看似合理的回答。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c6ebd2292beb41ff8f86bbcc57c6836a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這樣寫出來的 Skill 就不只是一段 prompt，而是一個可重複執行的工作流。這次公開的 6 個 Skill 都是從實際任務裡留下來的；它們不是為了展示而寫，而是在我反覆遇到同類問題後，被固定成更可靠的流程。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這樣寫出來的 Skill 就不只是一段 prompt，而是一個可重複執行的工作流。這次公開的 6 個 Skill 都是從實際任務裡留下來的；它們不是為了展示而寫，而是在我反覆遇到同類問題後，被固定成更可靠的流程。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a7c91532e990487ea4131ad9e4fa4df8",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "1. 找回上下文：不要讓跨天任務重新開始",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "1. 找回上下文：不要讓跨天任務重新開始",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a4fd9311ad8d499383fbc13ba80e5c6d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第一組是上下文恢復：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "codex-conversation-lookup",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 和 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "codex-session-distill-search",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第一組是上下文恢復：codex-conversation-lookup 和 codex-session-distill-search。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d622223d388d4692934bd34ffec06b40",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "案例：三天前的任務，不要重新解釋一遍",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "案例：三天前的任務，不要重新解釋一遍",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "678f230338c8469f9c2c115a3c74e3cf",
+            "type": "code",
+            "richText": [
+              {
+                "text": "我給你一段舊 Codex 對話：《修正數據庫 v2 部署辦法》。\n先用 codex-conversation-lookup 讀懂這段任務：它在哪個 repo、做到哪一步、\n有沒有中斷或未提交變更。不要貼 transcript，給我一張可接續的路線圖。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我給你一段舊 Codex 對話：《修正數據庫 v2 部署辦法》。\n先用 codex-conversation-lookup 讀懂這段任務：它在哪個 repo、做到哪一步、\n有沒有中斷或未提交變更。不要貼 transcript，給我一張可接續的路線圖。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "16cc1eaa3e8f4e3f99e0aef736eec212",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這就是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "codex-conversation-lookup",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 的典型場景。它的重點不是把舊對話全文貼出來，而是把 thread 轉成一張可接續的路線圖：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這就是 codex-conversation-lookup 的典型場景。它的重點不是把舊對話全文貼出來，而是把 thread 轉成一張可接續的路線圖：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "adfc1e164a32475cbe0db7aff623219e",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "這段任務在哪個 repo / cwd 發生。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這段任務在哪個 repo / cwd 發生。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "20e6cbf31e3b4376b0338851094969b3",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "當時完成了什麼，卡在哪裡。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "當時完成了什麼，卡在哪裡。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5d4257f4ffbe4780ba9b05ebd49fa294",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "是否有中斷 turn、未完成 command、patch 或未提交變更。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "是否有中斷 turn、未完成 command、patch 或未提交變更。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d388c0cdac574178a8a3efaf34ac1665",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "下一步應該從哪個檔案、哪條 log、哪個 branch 開始。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "下一步應該從哪個檔案、哪條 log、哪個 branch 開始。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e6e6795e5bbf45fd908eba980730f170",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這讓 Codex 不需要靠模糊記憶硬接，也不需要把私人 transcript 暴露出來。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這讓 Codex 不需要靠模糊記憶硬接，也不需要把私人 transcript 暴露出來。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "dad65b309b0744ceaae921f86b2423a6",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "案例：不是找一條 thread，而是看一整天",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "案例：不是找一條 thread，而是看一整天",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "73a2c2f3289b466aa46e7b602f7c3c7d",
+            "type": "code",
+            "richText": [
+              {
+                "text": "幫我看看昨天到底做了什麼。\n不要只看 session title，請用 codex-session-distill-search 掃本地 Codex logs，\n按 repo / 目標 / 完成狀態整理，並指出主線和被中斷的任務。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "幫我看看昨天到底做了什麼。\n不要只看 session title，請用 codex-session-distill-search 掃本地 Codex logs，\n按 repo / 目標 / 完成狀態整理，並指出主線和被中斷的任務。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9068cedbc641454b92b5bcc82ce3f844",
+            "type": "text",
+            "richText": [
+              {
+                "text": "codex-session-distill-search",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 解決的是另一個問題：不是接續單一 UUID，而是回顧一段時間。我會問「昨天做了什麼」「今天為什麼這麼累」「這幾天主線是什麼」。它會先掃本地 Codex session，再用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "samuelfaj/distill",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/samuelfaj/distill"
+              },
+              {
+                "text": " 這條管線做壓縮和索引，最後只打開少量來源 log 驗證。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "codex-session-distill-search 解決的是另一個問題：不是接續單一 UUID，而是回顧一段時間。我會問「昨天做了什麼」「今天為什麼這麼累」「這幾天主線是什麼」。它會先掃本地 Codex session，再用 samuelfaj/distill 這條管線做壓縮和索引，最後只打開少量來源 log 驗證。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "eeb37bf2bbe24357a3d3e37c270ad648",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這段流程有一個實作重點：我使用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "samuelfaj/distill",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/samuelfaj/distill"
+              },
+              {
+                "text": " 的 CLI / pipeline，但不直接依賴它內建的 local 1.7B 模型。按照我在《初始化並推送私有倉庫》裡的測試，內建模型很快，但在我的 noisy session summary 場景裡不夠穩；我更傾向讓 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "distill",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 走本地 oMLX endpoint 的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "gemma-4-e4b-it-8bit",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，先整理 session title、cwd、assistant summary 和命令線索，再回讀少量來源 log 驗證。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這段流程有一個實作重點：我使用 samuelfaj/distill 的 CLI / pipeline，但不直接依賴它內建的 local 1.7B 模型。按照我在《初始化並推送私有倉庫》裡的測試，內建模型很快，但在我的 noisy session summary 場景裡不夠穩；我更傾向讓 distill 走本地 oMLX endpoint 的 gemma-4-e4b-it-8bit，先整理 session title、cwd、assistant summary 和命令線索，再回讀少量來源 log 驗證。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "25664a801e614e7b8e04b2ff8bd06538",
+            "type": "text",
+            "richText": [
+              {
+                "text": "重點不是換一個模型崇拜，而是讓「看一整天」這件事比只看 thread title 更可靠。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "重點不是換一個模型崇拜，而是讓「看一整天」這件事比只看 thread title 更可靠。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5a4d9a6da35a41428d8af4a42ebc8858",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "2. 約束除錯：先縮小未知，再改程式",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "2. 約束除錯：先縮小未知，再改程式",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a3e2008c09d1441cb2a7d76f67e9c4aa",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第二個 Skill 是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "observability-first-debugging",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第二個 Skill 是 observability-first-debugging。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5cd93d684b414c3d88cd82850568abcd",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "案例：bug 還沒界定，不准先改三個檔案",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "案例：bug 還沒界定，不准先改三個檔案",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7d0e19851d6c4bff9cc15d32b8b3384a",
+            "type": "code",
+            "richText": [
+              {
+                "text": "這個同步流程偶爾失敗，但我還不知道是 API、資料庫、queue 還是 UI 狀態問題。\n使用 observability-first-debugging：先列出未知，選最小觀測點，\n加必要的 logs / assertions，重現後再決定要不要修 code。\n臨時 instrumentation 在定位後要移除。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個同步流程偶爾失敗，但我還不知道是 API、資料庫、queue 還是 UI 狀態問題。\n使用 observability-first-debugging：先列出未知，選最小觀測點，\n加必要的 logs / assertions，重現後再決定要不要修 code。\n臨時 instrumentation 在定位後要移除。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6adc70e0ae2649478f29380bbad26968",
+            "type": "text",
+            "richText": [
+              {
+                "text": "observability-first-debugging",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是我最希望 agent 固化的一條規則：當問題還沒被界定時，不要急著修。先找能縮小未知的觀測點。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "observability-first-debugging 是我最希望 agent 固化的一條規則：當問題還沒被界定時，不要急著修。先找能縮小未知的觀測點。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2b71b6f3ad9b474aa8ec5032f72e5e7b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個 Skill 在我的使用裡通常不是我手動點名才啟動，而是模型遇到 debugging、排查、復現、加 log、縮小問題範圍時會自動調用。引入它之後，我能明顯感覺到模型直接猜原因、直接改實作的狀態大幅減少；它更常用「日誌包圍 Bug」的方式，把問題一圈圈框起來，再根據觀測結果漸進式處理。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個 Skill 在我的使用裡通常不是我手動點名才啟動，而是模型遇到 debugging、排查、復現、加 log、縮小問題範圍時會自動調用。引入它之後，我能明顯感覺到模型直接猜原因、直接改實作的狀態大幅減少；它更常用「日誌包圍 Bug」的方式，把問題一圈圈框起來，再根據觀測結果漸進式處理。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ac156d49cb48477a84a36c05024c073a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這裡的重點不是「多加 log」，而是每次只加能回答下一個問題的觀測。例如：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這裡的重點不是「多加 log」，而是每次只加能回答下一個問題的觀測。例如：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a52475ab686441d182e5752cfe334dcf",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "狀態來源是哪個分支？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "狀態來源是哪個分支？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "393f19800be7463a86294e5ea45fdf10",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "SQLite 裡是否真的有這筆資料？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "SQLite 裡是否真的有這筆資料？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "84ad7712cf984202b753f42d526171f6",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "失敗發生在 request、解析層、外部 API，還是 UI rendering？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "失敗發生在 request、解析層、外部 API，還是 UI rendering？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a28bedd35002417cae9d2d02eed8092a",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "runtime 真壞，還是只有 wrapper 壞？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "runtime 真壞，還是只有 wrapper 壞？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e62859b6d82f47f287870e198e5d779d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "一旦證據把問題邊界縮小，再動手修。臨時 instrumentation 也應該在問題確認後移除，只留下長期有價值的觀測。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "一旦證據把問題邊界縮小，再動手修。臨時 instrumentation 也應該在問題確認後移除，只留下長期有價值的觀測。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9e56e9697cce45c0a37050d1c5e52f70",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "3. 找第二支筆：用 cli-model-chat 改善文字",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "3. 找第二支筆：用 cli-model-chat 改善文字",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e2e5720705364253baec9c8e1b7b74c9",
+            "type": "text",
+            "richText": [
+              {
+                "text": "cli-model-chat",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是這批 Skill 裡我最看重的一個工作流。它表面上只是「問 DeepSeek 一個問題」，但真正有價值的是刻意引入一個沒有上下文的新角度。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "cli-model-chat 是這批 Skill 裡我最看重的一個工作流。它表面上只是「問 DeepSeek 一個問題」，但真正有價值的是刻意引入一個沒有上下文的新角度。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7d13a7a4212646b9ad14c81346f8df47",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在持續工作的 Codex session 裡，連續性是優點，也是污染源。前面任何一句話、任何一次修正、任何一個已經形成的偏好，都會留在任務裡，讓後面的判斷越來越像是在沿著既有路線補強，而不是重新檢查問題本身。這對接續開發很有用，但對寫作、審稿和重新判斷主線，反而可能讓我和 Codex 一起陷在同一個框架裡。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在持續工作的 Codex session 裡，連續性是優點，也是污染源。前面任何一句話、任何一次修正、任何一個已經形成的偏好，都會留在任務裡，讓後面的判斷越來越像是在沿著既有路線補強，而不是重新檢查問題本身。這對接續開發很有用，但對寫作、審稿和重新判斷主線，反而可能讓我和 Codex 一起陷在同一個框架裡。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5b6da4df1b0744dbb8b59d11298d05ac",
+            "type": "text",
+            "richText": [
+              {
+                "text": "所以我需要一個沒有歷史包袱的模型。它只拿到我這次精選給它的問題和摘錄，不知道 repo、不知道前面爭論過什麼、不知道我剛才偏向哪個答案。這不是能力不足，而是設計目的：讓它從 outside the box 的位置看文本。如果它看不懂，往往代表真實讀者也可能看不懂；如果它指出的問題刺耳，也可能正是長 session 裡最容易被我們忽略的盲點。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "所以我需要一個沒有歷史包袱的模型。它只拿到我這次精選給它的問題和摘錄，不知道 repo、不知道前面爭論過什麼、不知道我剛才偏向哪個答案。這不是能力不足，而是設計目的：讓它從 outside the box 的位置看文本。如果它看不懂，往往代表真實讀者也可能看不懂；如果它指出的問題刺耳，也可能正是長 session 裡最容易被我們忽略的盲點。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "941076c282f84dd9b413417385473fef",
+            "type": "text",
+            "richText": [
+              {
+                "text": "因此 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "cli-model-chat",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 的邊界必須很硬：第二模型不接管 repo、不讀本機、不自動改文件，也不變成多代理共識系統。它只是一個被明確提問、明確退出的外部讀者。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "因此 cli-model-chat 的邊界必須很硬：第二模型不接管 repo、不讀本機、不自動改文件，也不變成多代理共識系統。它只是一個被明確提問、明確退出的外部讀者。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5a7928e4634b44079dbec69c46bff94d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我在 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "X",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://x.com/llqoli/status/2057748477724221645?s=20"
+              },
+              {
+                "text": " 上用更直接的方式說過這件事：我始終更喜歡 DeepSeek 的文學水平，因為寫文章不只是把意思說完，還包括敘事、節奏和審美。Codex 很適合作為執行型工作者，但它不應該被默認視為文章審美的最終判斷者。所以我才會寫一個 Python 腳本，把 DeepSeek API 包成單次、無上下文的對話呼叫，讓 Codex 在需要文字判斷時，去請教一個更像外部編輯的模型。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我在 X 上用更直接的方式說過這件事：我始終更喜歡 DeepSeek 的文學水平，因為寫文章不只是把意思說完，還包括敘事、節奏和審美。Codex 很適合作為執行型工作者，但它不應該被默認視為文章審美的最終判斷者。所以我才會寫一個 Python 腳本，把 DeepSeek API 包成單次、無上下文的對話呼叫，讓 Codex 在需要文字判斷時，去請教一個更像外部編輯的模型。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8b6de1daf15340acb2ae4268a12c439c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "所以第二模型不是備援，而是一個被刻意設計出來的方法論角色：外部編輯。它用沒有上下文的方式，守住文字、敘事和判斷的品質。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "所以第二模型不是備援，而是一個被刻意設計出來的方法論角色：外部編輯。它用沒有上下文的方式，守住文字、敘事和判斷的品質。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "44c6cc1192e74f90865d228bac21fd03",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "案例：不是 MCP 編排，而是一對一第二模型",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "案例：不是 MCP 編排，而是一對一第二模型",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1962fab5eb934c9eb3fea4b0d408d134",
+            "type": "code",
+            "richText": [
+              {
+                "text": "我只是想讓 Codex 能問另一個模型一句話，拿回回答。\n不需要 sub-agent，不需要 workflow，不需要 map-reduce。\n如果沒有合適的 MCP，就自己寫一個 CLI + Skill。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我只是想讓 Codex 能問另一個模型一句話，拿回回答。\n不需要 sub-agent，不需要 workflow，不需要 map-reduce。\n如果沒有合適的 MCP，就自己寫一個 CLI + Skill。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d3ac107e916e4315870ceeab4c76710a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這條 workflow 來自《尋找 MCP 模型橋接工具》。一開始我找的是「透過 MCP 和另一個模型通信」的工具，但很快發現很多 MCP 方案不是維護狀態差，就是把問題做得太大。真正需要的只是 narrow bridge：把一個聚焦問題交給 DeepSeek，拿回一段回答。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這條 workflow 來自《尋找 MCP 模型橋接工具》。一開始我找的是「透過 MCP 和另一個模型通信」的工具，但很快發現很多 MCP 方案不是維護狀態差，就是把問題做得太大。真正需要的只是 narrow bridge：把一個聚焦問題交給 DeepSeek，拿回一段回答。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ce651d5020f94a3cb4c9ae8b4e73e294",
+            "type": "text",
+            "richText": [
+              {
+                "text": "所以最後做成了 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "cli_model_chat.py",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " + ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "cli-model-chat",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " Skill：預設模型是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "deepseek-v4-pro",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，credential 只放本機 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": ".env",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，不寫進 repo；除非我明確說要 Codex provider，否則一律走 DeepSeek。如果真的要用 Codex provider，也要跑在臨時空目錄、read-only、ephemeral、ignore config 的隔離模式裡。這個設計讓第二模型保持「對話工具」，而不是變成另一個可以亂動工作區的 agent。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "所以最後做成了 cli_model_chat.py + cli-model-chat Skill：預設模型是 deepseek-v4-pro，credential 只放本機 .env，不寫進 repo；除非我明確說要 Codex provider，否則一律走 DeepSeek。如果真的要用 Codex provider，也要跑在臨時空目錄、read-only、ephemeral、ignore config 的隔離模式裡。這個設計讓第二模型保持「對話工具」，而不是變成另一個可以亂動工作區的 agent。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6fdb034a423644b2bfa501008d6126d2",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "案例：完整文章審稿，只給文章，不給 repo",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "案例：完整文章審稿，只給文章，不給 repo",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "939bb40f24f6492c9c69baf7a99ff6cb",
+            "type": "code",
+            "richText": [
+              {
+                "text": "請從讀者能否學到可操作方法的角度審稿：\n1. 主線是否成立？\n2. 哪些段落仍像觀點而不是方法？\n3. 最值得保留的 3-5 條可複用指令是什麼？\n4. 哪裡應補驗收標準或反例？\n5. 圖片位置和文字節奏是否服務主線？\n6. 最小修改建議，按優先級排序。\n\n下面只貼完整文章正文和圖片占位，不給 repo、Notion token 或本機路徑。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "請從讀者能否學到可操作方法的角度審稿：\n1. 主線是否成立？\n2. 哪些段落仍像觀點而不是方法？\n3. 最值得保留的 3-5 條可複用指令是什麼？\n4. 哪裡應補驗收標準或反例？\n5. 圖片位置和文字節奏是否服務主線？\n6. 最小修改建議，按優先級排序。\n\n下面只貼完整文章正文和圖片占位，不給 repo、Notion token 或本機路徑。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "89f4f8190caf41798c49d197826b04a3",
+            "type": "text",
+            "richText": [
+              {
+                "text": "《整理 Codex 協作經驗》是更典型的內容場景。我當時在寫 RonnieCC / Codex 設計協作文章，目標不是讓模型稱讚文章，而是檢查它是否真的有「乾貨」。我用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "cli-model-chat",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 分別問 DeepSeek 和隔離 Codex，但兩者意見保持分開，不揉成一個平均結論。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "《整理 Codex 協作經驗》是更典型的內容場景。我當時在寫 RonnieCC / Codex 設計協作文章，目標不是讓模型稱讚文章，而是檢查它是否真的有「乾貨」。我用 cli-model-chat 分別問 DeepSeek 和隔離 Codex，但兩者意見保持分開，不揉成一個平均結論。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "cd57f8d2a79d4709b35fc6f9cf1e1ec3",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這次最有用的不是「第二模型也覺得文章好」，而是它們指出了不同問題：DeepSeek 更關注開頭太長、太晚進入可複用方法；Codex 更關注後半段結構像細節合集。後來修改文章時，也不是全盤接受，而是只採納被我確認有價值的建議。這讓第二模型成為 editor，而不是裁判。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這次最有用的不是「第二模型也覺得文章好」，而是它們指出了不同問題：DeepSeek 更關注開頭太長、太晚進入可複用方法；Codex 更關注後半段結構像細節合集。後來修改文章時，也不是全盤接受，而是只採納被我確認有價值的建議。這讓第二模型成為 editor，而不是裁判。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "109ea4b3eca34da4847d00d15527e4cf",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這篇 Skill Blog 本身也用過同一套做法。第一版更像內部決策記錄，DeepSeek 直接指出它不是 public share article，而是 internal log；這個刺耳判斷反而很有用，因為它證明「沒有上下文的讀者」能看出我們在長 session 裡習慣忽略的問題。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這篇 Skill Blog 本身也用過同一套做法。第一版更像內部決策記錄，DeepSeek 直接指出它不是 public share article，而是 internal log；這個刺耳判斷反而很有用，因為它證明「沒有上下文的讀者」能看出我們在長 session 裡習慣忽略的問題。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ba2292d91b1040aa87983f856a47827a",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "4. 拆開內容交付：設計、驗證、發布不能混在一起",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "4. 拆開內容交付：設計、驗證、發布不能混在一起",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e6fa0159b6744e01aab1b21f42161e40",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第四組是小紅書內容工作流：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "xhs-figma-cards",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 和 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "xhs-publish-handoff",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第四組是小紅書內容工作流：xhs-figma-cards 和 xhs-publish-handoff。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "38e323e0fdcd42bcbcc2283a537f93f5",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "幕後：為什麼從 HTML 轉向 Figma",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "幕後：為什麼從 HTML 轉向 Figma",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "84af4de202564ab7b822a14b485895cd",
+            "type": "code",
+            "richText": [
+              {
+                "text": "我交付一篇 Blog，例如 appinn-draft.md。\n先不要急著做圖：先拆成小紅書多圖 markdown 預交流稿，確認卡片順序、文字密度、截圖意圖。\n確認後，再用 xhs-figma-cards 寫入 Figma，建立 1080x1440 image cards。\n後續我可以直接在 Figma 裡改，你也要從當前畫布繼續，不要回到舊稿。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我交付一篇 Blog，例如 appinn-draft.md。\n先不要急著做圖：先拆成小紅書多圖 markdown 預交流稿，確認卡片順序、文字密度、截圖意圖。\n確認後，再用 xhs-figma-cards 寫入 Figma，建立 1080x1440 image cards。\n後續我可以直接在 Figma 裡改，你也要從當前畫布繼續，不要回到舊稿。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7e73f37ea39b46948ad4aeb4054ff287",
+            "type": "text",
+            "richText": [
+              {
+                "text": "xhs-figma-cards",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 不是一開始就長成 Figma-first。它經歷過一次很明確的交付面切換：最早的小紅書工作區是在 aDict landing page repo 裡建立的，當時主路線是 HTML/CSS 生成圖卡。流程是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Blog -> markdown 預交流稿 -> HTML 多圖 -> 視覺檢查 -> 使用者確認 -> 發布交流",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "；",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Auto-Redbook-Skills",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 只做尺寸參考，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "white0dew/XiaohongshuSkills",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 放在末端發布流程。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "xhs-figma-cards 不是一開始就長成 Figma-first。它經歷過一次很明確的交付面切換：最早的小紅書工作區是在 aDict landing page repo 裡建立的，當時主路線是 HTML/CSS 生成圖卡。流程是 Blog -> markdown 預交流稿 -> HTML 多圖 -> 視覺檢查 -> 使用者確認 -> 發布交流；Auto-Redbook-Skills 只做尺寸參考，white0dew/XiaohongshuSkills 放在末端發布流程。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "217a81e30817452390c77c204ed630b5",
+            "type": "text",
+            "richText": [
+              {
+                "text": "HTML 方案的好處是可重複、可版本化、可放進 repo。但真實跑起來後，它的問題也很明顯：圖卡不是只要能生成，還要能被快速預覽、直接介入設計、在同一個畫面上來回改。當參考案例顯示小紅書卡片應該更像「App Store 截圖式賣點圖」而不是長文章拆卡時，HTML 模板的修改成本開始變高。你後來的判斷更直接：Figma 更方便預覽，你可以直接介入設計，Codex 也能操作同一個畫布。於是 runbook 被切到 Figma MCP-first，HTML 只保留為 fallback / historical reference。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "HTML 方案的好處是可重複、可版本化、可放進 repo。但真實跑起來後，它的問題也很明顯：圖卡不是只要能生成，還要能被快速預覽、直接介入設計、在同一個畫面上來回改。當參考案例顯示小紅書卡片應該更像「App Store 截圖式賣點圖」而不是長文章拆卡時，HTML 模板的修改成本開始變高。你後來的判斷更直接：Figma 更方便預覽，你可以直接介入設計，Codex 也能操作同一個畫布。於是 runbook 被切到 Figma MCP-first，HTML 只保留為 fallback / historical reference。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "50535d839aa04ed6bcb4c05aea27f493",
+            "type": "text",
+            "richText": [
+              {
+                "text": "後來在《評估 Codex 小紅書價值》裡，Figma-first 的價值更清楚：Card 01 可以先做純文字呼喚，Card 02 可以基於手機截圖和你的審美反饋迭代；如果 Figma MCP 的低階工具不夠，還可以用 imagegen 做 raster poster，再把通過視覺檢查的位圖貼回 Figma。Figma 在這裡不是單純設計工具，而是我和你共同審稿的工作面。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "後來在《評估 Codex 小紅書價值》裡，Figma-first 的價值更清楚：Card 01 可以先做純文字呼喚，Card 02 可以基於手機截圖和你的審美反饋迭代；如果 Figma MCP 的低階工具不夠，還可以用 imagegen 做 raster poster，再把通過視覺檢查的位圖貼回 Figma。Figma 在這裡不是單純設計工具，而是我和你共同審稿的工作面。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "652d0a91c67c4558b7097239643b20c4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "所以 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "xhs-figma-cards",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 的價值不是「會寫小紅書文案」，而是把內容設計變成可審、可修改、可追蹤的交付流程。它會先決定路線：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "所以 xhs-figma-cards 的價值不是「會寫小紅書文案」，而是把內容設計變成可審、可修改、可追蹤的交付流程。它會先決定路線：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c595c19c979f4ac5a30345a3caccd067",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "可編輯 Figma layout。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "可編輯 Figma layout。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9a3ff832f4964869aa6b38a7b52aeda6",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "imagegen 生成主視覺，再貼回 Figma。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "imagegen 生成主視覺，再貼回 Figma。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2adff84546e944c7a99f8db657c5806c",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "兩者混合：主視覺生成，文字和標籤留在 Figma。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "兩者混合：主視覺生成，文字和標籤留在 Figma。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5f9ed32a01924fb39f11f9fb4dffd0b3",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這裡需要一個能操作 Figma 的 adapter。我的流程驗證過 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "qoli/figma-mcp-go",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/figma-mcp-go"
+              },
+              {
+                "text": "，但 Skill 不應該把它寫死成唯一方案。真正需要的是能力：能 inspect page、create/update frame、edit text layer、import asset，以及在使用者改過畫布後讀取當前狀態繼續工作。只要其他 Figma MCP 或 automation adapter 提供同等能力，也應該可以替換。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這裡需要一個能操作 Figma 的 adapter。我的流程驗證過 qoli/figma-mcp-go，但 Skill 不應該把它寫死成唯一方案。真正需要的是能力：能 inspect page、create/update frame、edit text layer、import asset，以及在使用者改過畫布後讀取當前狀態繼續工作。只要其他 Figma MCP 或 automation adapter 提供同等能力，也應該可以替換。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "dcd07629e0f7432b9d669bf95ac41522",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "案例：卡片已經輸出，進入發布前交付",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "案例：卡片已經輸出，進入發布前交付",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0d2838fb345c4882828f81824c289992",
+            "type": "code",
+            "richText": [
+              {
+                "text": "這 7 張 PNG 已經從 Figma 匯出，請用 xhs-publish-handoff 驗證發布包。\n檢查圖片數量、尺寸、排序、標題長度、正文長度、hashtag。\n如果我確認，再打開小紅書創作者後台填入內容。\n停止在最終「發布」按鈕前，不要替我點擊。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這 7 張 PNG 已經從 Figma 匯出，請用 xhs-publish-handoff 驗證發布包。\n檢查圖片數量、尺寸、排序、標題長度、正文長度、hashtag。\n如果我確認，再打開小紅書創作者後台填入內容。\n停止在最終「發布」按鈕前，不要替我點擊。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9f8a1a02b6b848968b371c166715264e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "xhs-publish-handoff",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 只處理發布前交付。它會驗證圖片數量、尺寸、排序、標題、正文、hashtag，再視需要用已登入的瀏覽器 session 打開創作者後台、上傳圖片、填入內容。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "xhs-publish-handoff 只處理發布前交付。它會驗證圖片數量、尺寸、排序、標題、正文、hashtag，再視需要用已登入的瀏覽器 session 打開創作者後台、上傳圖片、填入內容。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8ecdb78df09e40718b32e2965b9054c8",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但它有一條硬邊界：不自動點擊最終發布。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但它有一條硬邊界：不自動點擊最終發布。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b1f2d43f22524d0481bad36aca0c9810",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這很重要。Figma 產圖、瀏覽器填表、平台發布是三種不同風險等級的操作。前兩者可以自動化，最後一步必須保留人工授權。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這很重要。Figma 產圖、瀏覽器填表、平台發布是三種不同風險等級的操作。前兩者可以自動化，最後一步必須保留人工授權。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "31b38c05864546d29ae7333f2a0e4d39",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "怎麼安裝",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "怎麼安裝",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c2babe3bdaa44adc9bbb6fc7187666d6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "repo 在這裡：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "repo 在這裡：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2abd0f28247b4cd7b8ab36bfa8f273a8",
+            "type": "text",
+            "richText": [
+              {
+                "text": "qoli/codex-workflow-skills",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/codex-workflow-skills"
+              }
+            ],
+            "plainText": "qoli/codex-workflow-skills",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6422639d7648438b9c7f86a4c59122f6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如果你使用 Codex，可以把需要的 Skill 目錄 symlink 到 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "$HOME/.codex/skills",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果你使用 Codex，可以把需要的 Skill 目錄 symlink 到 $HOME/.codex/skills：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a4f01b794acd48a19153e8abb4f034cc",
+            "type": "code",
+            "richText": [
+              {
+                "text": "mkdir -p \"$HOME/.codex/skills\"\nln -s \"$PWD/skills/codex-conversation-lookup\" \"$HOME/.codex/skills/codex-conversation-lookup\"\nln -s \"$PWD/skills/codex-session-distill-search\" \"$HOME/.codex/skills/codex-session-distill-search\"\nln -s \"$PWD/skills/observability-first-debugging\" \"$HOME/.codex/skills/observability-first-debugging\"\nln -s \"$PWD/skills/cli-model-chat\" \"$HOME/.codex/skills/cli-model-chat\"\nln -s \"$PWD/skills/xhs-figma-cards\" \"$HOME/.codex/skills/xhs-figma-cards\"\nln -s \"$PWD/skills/xhs-publish-handoff\" \"$HOME/.codex/skills/xhs-publish-handoff\"",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "mkdir -p \"$HOME/.codex/skills\"\nln -s \"$PWD/skills/codex-conversation-lookup\" \"$HOME/.codex/skills/codex-conversation-lookup\"\nln -s \"$PWD/skills/codex-session-distill-search\" \"$HOME/.codex/skills/codex-session-distill-search\"\nln -s \"$PWD/skills/observability-first-debugging\" \"$HOME/.codex/skills/observability-first-debugging\"\nln -s \"$PWD/skills/cli-model-chat\" \"$HOME/.codex/skills/cli-model-chat\"\nln -s \"$PWD/skills/xhs-figma-cards\" \"$HOME/.codex/skills/xhs-figma-cards\"\nln -s \"$PWD/skills/xhs-publish-handoff\" \"$HOME/.codex/skills/xhs-publish-handoff\"",
+            "caption": [],
+            "language": "Bash",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d22d6409cf4849659df6e508d730e1b3",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如果你只需要其中一兩個，也可以只安裝對應目錄。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果你只需要其中一兩個，也可以只安裝對應目錄。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "383aa0c0554247b18ee22820bc013440",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "我刻意沒有公開的部分",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我刻意沒有公開的部分",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4169c2b154dc404ca201594fc968bdaf",
+            "type": "text",
+            "richText": [
+              {
+                "text": "另一些 Skill 我仍然留在本機，例如 RonnieCC 發布、Notion Blog、hatch-pet、Syncnext plugin maintenance。不是因為它們不重要，而是它們太依賴我的 repo、資料庫、帳號和發布節奏。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "另一些 Skill 我仍然留在本機，例如 RonnieCC 發布、Notion Blog、hatch-pet、Syncnext plugin maintenance。不是因為它們不重要，而是它們太依賴我的 repo、資料庫、帳號和發布節奏。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ac15986f0fd34abb919d377179d2f8e1",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這次公開 repo 的標準很簡單：能離開我的私人環境仍然有用，才公開；綁定私人流程的，只作為文章案例提及。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這次公開 repo 的標準很簡單：能離開我的私人環境仍然有用，才公開；綁定私人流程的，只作為文章案例提及。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6b53a6f0e1ee458e8368de9c71c79b96",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "把工作過程中的方法論提煉成 Skill",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "把工作過程中的方法論提煉成 Skill",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4d5b52f2c9e84eed974cbdd71645a346",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這次整理後，我更確定：值得分享的不只是這 6 個 Skill 本身，而是它們代表了一種工作方式。不是先有 Skill，再從 Skill 裡總結方法論；而是在真實工作裡，我已經反覆用某些方法糾正模型、推進任務，當這些方法穩定有效，就應該被提煉成 Skill。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這次整理後，我更確定：值得分享的不只是這 6 個 Skill 本身，而是它們代表了一種工作方式。不是先有 Skill，再從 Skill 裡總結方法論；而是在真實工作裡，我已經反覆用某些方法糾正模型、推進任務，當這些方法穩定有效，就應該被提煉成 Skill。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4d856eac57dd4b4eb4ca0ef9cf8d00df",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這套方法可以拆成幾個層次：遇到跨天任務時，先把上下文接回真實現場；debugging 時，用證據包圍問題，而不是猜原因；寫作時，引入沒有歷史包袱的外部編輯；到了小紅書這類交付任務，再把設計、驗證、填表和發布授權拆成不同環節。這些方法先在工作中成立，後來才被固定成 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "codex-conversation-lookup",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "、",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "codex-session-distill-search",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "、",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "observability-first-debugging",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "、",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "cli-model-chat",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "、",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "xhs-figma-cards",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 和 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "xhs-publish-handoff",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這套方法可以拆成幾個層次：遇到跨天任務時，先把上下文接回真實現場；debugging 時，用證據包圍問題，而不是猜原因；寫作時，引入沒有歷史包袱的外部編輯；到了小紅書這類交付任務，再把設計、驗證、填表和發布授權拆成不同環節。這些方法先在工作中成立，後來才被固定成 codex-conversation-lookup、codex-session-distill-search、observability-first-debugging、cli-model-chat、xhs-figma-cards 和 xhs-publish-handoff。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a4b99f307cae4e07a84ff3cb151762f4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "還有一個 Skill 我沒有放進公開 repo，但很適合作為「方法論如何沉澱成 Skill」的最後例子：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "ronniecc-content-publisher",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。它不是寫作 Skill，而是發布與驗證 Skill。它把 Notion Blog database 當成內容源，強制同步到 RonnieCC，重新 build 靜態站，再把需要分發的文章同步到 aDict Blog mirror，檢查 SEO slug、canonical URL、sitemap、GitHub Pages workflow 和 Worker sitemap。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "還有一個 Skill 我沒有放進公開 repo，但很適合作為「方法論如何沉澱成 Skill」的最後例子：ronniecc-content-publisher。它不是寫作 Skill，而是發布與驗證 Skill。它把 Notion Blog database 當成內容源，強制同步到 RonnieCC，重新 build 靜態站，再把需要分發的文章同步到 aDict Blog mirror，檢查 SEO slug、canonical URL、sitemap、GitHub Pages workflow 和 Worker sitemap。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b438153346f04a6aa1e808070d440659",
+            "type": "code",
+            "richText": [
+              {
+                "text": "請使用 ronniecc-content-publisher：\n從 Notion Blog database 做 full sync，重建 RonnieCC，\n再同步 aDict Blog mirror，推送變更，等待 Pages 部署，\n最後驗證 live blog index、sitemap 和 Worker sitemap。\n不要只告訴我文章已經寫好，要確認它真的可被讀者看到。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "請使用 ronniecc-content-publisher：\n從 Notion Blog database 做 full sync，重建 RonnieCC，\n再同步 aDict Blog mirror，推送變更，等待 Pages 部署，\n最後驗證 live blog index、sitemap 和 Worker sitemap。\n不要只告訴我文章已經寫好，要確認它真的可被讀者看到。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a805f38464f9480f8f7ed7dbf31e8f3c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個 Skill 不適合公開原樣分享，因為它太綁我的 Notion database、RonnieCC repo、aDict mirror 和 Worker sitemap。但它說明了同一個方向：當我在知識分享裡反覆需要取材、查證、改稿、審稿和發布驗證，這條方法就應該被固定成可執行的 Skill；人的責任則是決定什麼值得寫、哪些案例成立、哪些細節該刪，以及哪個環節必須保留人工授權。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個 Skill 不適合公開原樣分享，因為它太綁我的 Notion database、RonnieCC repo、aDict mirror 和 Worker sitemap。但它說明了同一個方向：當我在知識分享裡反覆需要取材、查證、改稿、審稿和發布驗證，這條方法就應該被固定成可執行的 Skill；人的責任則是決定什麼值得寫、哪些案例成立、哪些細節該刪，以及哪個環節必須保留人工授權。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "434faba89d6247658e84f5d4bb3c1d2c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如果你也在長期使用 Codex 或其他 coding agent，可以先不要急著收集更多 prompt。更值得做的是，回頭看自己最近反覆糾正模型的三個場景：你總是在什麼時候介入？你先看哪些證據？哪些行為你一定會禁止？你怎樣判斷任務完成？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果你也在長期使用 Codex 或其他 coding agent，可以先不要急著收集更多 prompt。更值得做的是，回頭看自己最近反覆糾正模型的三個場景：你總是在什麼時候介入？你先看哪些證據？哪些行為你一定會禁止？你怎樣判斷任務完成？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fd31bec170574968a66e339fd88078dd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "回到前面那四個問題：觸發條件、觀測順序、安全約束、完成驗證。它們不是抽象框架，而是我在反覆介入模型後留下的檢查表。當這些答案穩定下來，就可以把方法寫成 Skill。Skill 不是方法論的來源，而是方法論被反覆驗證後的可執行形態。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "回到前面那四個問題：觸發條件、觀測順序、安全約束、完成驗證。它們不是抽象框架，而是我在反覆介入模型後留下的檢查表。當這些答案穩定下來，就可以把方法寫成 Skill。Skill 不是方法論的來源，而是方法論被反覆驗證後的可執行形態。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "368c1b36c40181acb1d0fcef72e9b0b9",
+      "slug": "machine-readable-content-layer-368c1b36",
+      "seoSlug": "machine-readable-content-layer",
+      "legacySlugs": [
+        "你寫了很多文章-卻沒有被搜尋引擎和-ai-工具穩定讀到-368c1b36"
+      ],
+      "title": "你寫了很多文章，卻沒有被搜尋引擎和 AI 工具穩定讀到",
+      "tag": "AI,Notion,Pipeline,Product,Notes",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/machine-readable-content-layer-368c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/%E4%BD%A0%E5%AF%AB%E4%BA%86%E5%BE%88%E5%A4%9A%E6%96%87%E7%AB%A0-%E5%8D%BB%E6%B2%92%E6%9C%89%E8%A2%AB%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E5%92%8C-ai-%E5%B7%A5%E5%85%B7%E7%A9%A9%E5%AE%9A%E8%AE%80%E5%88%B0-368c1b36c40181acb1d0fcef72e9b0b9?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-05-22T11:22:45.347Z",
+      "lastEditedTime": "2026-05-23T13:53:13.789Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-05-23T15:03:30.229Z",
+        "blocks": [
+          {
+            "id": "368c1b36c401811ea7c9dbb51a9edd08",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我最近在整理 RonnieCC Blog 時，遇到一個看起來很小、但其實會影響整個內容分發的問題：文章在網站上看得到，不代表它已經被搜尋引擎、sitemap、link preview 或 AI 工具穩定讀到。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我最近在整理 RonnieCC Blog 時，遇到一個看起來很小、但其實會影響整個內容分發的問題：文章在網站上看得到，不代表它已經被搜尋引擎、sitemap、link preview 或 AI 工具穩定讀到。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401817b9d23ed6948effc33",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如果只把這件事說成「Blog 靜態化」或「前端 SEO 最佳實踐」，文章會變得很薄。真正值得記錄的不是某個技術選型，而是一次內容系統演進後，發布責任沒有完整交接。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果只把這件事說成「Blog 靜態化」或「前端 SEO 最佳實踐」，文章會變得很薄。真正值得記錄的不是某個技術選型，而是一次內容系統演進後，發布責任沒有完整交接。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401818f9069fba817859b52",
+            "type": "quote",
+            "richText": [
+              {
+                "text": "文章寫完不等於發布。發布也不等於被機器讀到。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "文章寫完不等於發布。發布也不等於被機器讀到。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401818bb44ffbcc5e3ccee3",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "瀏覽器裡看得到，只是發布的第一層；HTML、sitemap、搜尋與 AI Agent 都能讀到，才算真正交付。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:187d02bf-ff79-450f-8e1e-ea31a0006969:ronniecc-machine-readable-hero-v2.png",
+            "assetPath": "content/blog-assets/368c1b36c40181acb1d0fcef72e9b0b9/368c1b36c401818bb44ffbcc5e3ccee3-ronniecc-machine-readable-hero-v2.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401811aad96fdd43c25a06c",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "問題不是靜態化，而是責任沒有交接",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "問題不是靜態化，而是責任沒有交接",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c4018143a812c44efc77ba7e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "RonnieCC Blog 的 v1 很簡單：列表頁放的是 Notion 文章跳轉地址。那個階段的責任邊界很清楚，RonnieCC 只是入口，Notion 才是實際閱讀頁。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "RonnieCC Blog 的 v1 很簡單：列表頁放的是 Notion 文章跳轉地址。那個階段的責任邊界很清楚，RonnieCC 只是入口，Notion 才是實際閱讀頁。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181cf84d9cf9b76de3f7a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "後來我把 RonnieCC 往前推了一步：Notion 繼續做材料中心，但文章要進入 RonnieCC 站內閱讀。這個方向是對的，因為 RonnieCC 不應該只是把讀者送回 Notion。它應該成為正式的內容入口，承接搜尋、內鏈、引用和個人品牌沉澱。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "後來我把 RonnieCC 往前推了一步：Notion 繼續做材料中心，但文章要進入 RonnieCC 站內閱讀。這個方向是對的，因為 RonnieCC 不應該只是把讀者送回 Notion。它應該成為正式的內容入口，承接搜尋、內鏈、引用和個人品牌沉澱。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181e2aec8c21ce189c3b1",
+            "type": "text",
+            "richText": [
+              {
+                "text": "問題出在這次重構之後。文章頁已經同步出來，Blog 頁面也能在瀏覽器裡看到列表，但 Blog index 的主要內容仍然偏向由瀏覽器端動態組出來。對人類讀者來說，頁面正常；但對只讀初始 HTML 的機器讀者來說，文章列表可能仍然不穩定。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "問題出在這次重構之後。文章頁已經同步出來，Blog 頁面也能在瀏覽器裡看到列表，但 Blog index 的主要內容仍然偏向由瀏覽器端動態組出來。對人類讀者來說，頁面正常；但對只讀初始 HTML 的機器讀者來說，文章列表可能仍然不穩定。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181e0a854c0f7033d3bdd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "也就是說，我不是從零開始忘了做靜態化，而是在 RonnieCC 從「Notion 外鏈入口」演進成「站內內容分發系統」時，沒有把 Blog list 的分發責任一起搬過來。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "也就是說，我不是從零開始忘了做靜態化，而是在 RonnieCC 從「Notion 外鏈入口」演進成「站內內容分發系統」時，沒有把 Blog list 的分發責任一起搬過來。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c4018126af9cf045ab0cad07",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "RonnieCC Blog 的問題不是「沒做靜態化」，而是從 Notion 外鏈演進到站內文章時，分發責任沒有一起完成交接。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:d34dc00a-9e26-4876-8bc3-a64ed4b18627:ronniecc-blog-evolution-distribution-layer-v2.png",
+            "assetPath": "content/blog-assets/368c1b36c40181acb1d0fcef72e9b0b9/368c1b36c4018126af9cf045ab0cad07-ronniecc-blog-evolution-distribution-layer-v2.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181fa910fcbef58a65242",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "方法論一：內容移轉不是搬家，而是責任交接",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "方法論一：內容移轉不是搬家，而是責任交接",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401816ea8abf8b2f077fafc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這件事可以抽象成一個更通用的判斷框架：當內容從一個材料層移到公開分發層時，你不是只在搬文章，而是在交接責任。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這件事可以抽象成一個更通用的判斷框架：當內容從一個材料層移到公開分發層時，你不是只在搬文章，而是在交接責任。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181f09af5d95db344623d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "材料層可以是 Notion、CMS、資料庫、Markdown repo 或後台 API。公開分發層則是讀者、搜尋引擎、社交預覽、RSS、sitemap、AI Agent 會接觸到的地方。內容一旦被宣稱「發布」，下面幾件事就應該跟著交出去：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "材料層可以是 Notion、CMS、資料庫、Markdown repo 或後台 API。公開分發層則是讀者、搜尋引擎、社交預覽、RSS、sitemap、AI Agent 會接觸到的地方。內容一旦被宣稱「發布」，下面幾件事就應該跟著交出去：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181df918ffb7b0c558493",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "權威 URL：這篇文章正式存在於哪個公開網址，而不是只存在於後台或 Notion。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "權威 URL：這篇文章正式存在於哪個公開網址，而不是只存在於後台或 Notion。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181158a8de3737360ba00",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "發現入口：首頁、Blog index、內鏈、sitemap 是否都能指向它。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "發現入口：首頁、Blog index、內鏈、sitemap 是否都能指向它。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401814a9357cea6936f89bb",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "可讀內容：初始 HTML 裡是否有足夠的標題、連結、摘要或正文，讓不完整執行前端的讀者也能理解。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "可讀內容：初始 HTML 裡是否有足夠的標題、連結、摘要或正文，讓不完整執行前端的讀者也能理解。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401815faf87d7d80942f71f",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "驗收回路：你是否能用 view-source、sitemap、Search Console、AI browser 這類外部視角確認它真的被交付。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "驗收回路：你是否能用 view-source、sitemap、Search Console、AI browser 這類外部視角確認它真的被交付。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401810590f1d9b8978a388e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如果這些責任沒有交接，文章就只是從一個地方被顯示到另一個地方，還沒有真正進入網路的分發系統。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果這些責任沒有交接，文章就只是從一個地方被顯示到另一個地方，還沒有真正進入網路的分發系統。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181cfa694c51de5b253c4",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "方法論二：把機器讀者當成真實讀者",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "方法論二：把機器讀者當成真實讀者",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181f4b403d5e8dff71b4f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "過去我們很容易把「讀者」理解成人類瀏覽器使用者。但公開網站不是只服務人類。只要你希望內容被搜尋、被引用、被 AI 工具讀取，就必須承認機器讀者也是讀者。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "過去我們很容易把「讀者」理解成人類瀏覽器使用者。但公開網站不是只服務人類。只要你希望內容被搜尋、被引用、被 AI 工具讀取，就必須承認機器讀者也是讀者。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c4018104871dcc8de2594a5f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我會把這些機器讀者分成幾類來看：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我會把這些機器讀者分成幾類來看：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181fba0c0cf5232b0a32b",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "sitemap 與搜尋入口：它們需要穩定 URL、更新時間與可提交的索引結構。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "sitemap 與搜尋入口：它們需要穩定 URL、更新時間與可提交的索引結構。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401814eaa50c5870276996c",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "crawler 與 source reader：它們需要在初始 HTML 裡找到文章列表、標題與連結。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "crawler 與 source reader：它們需要在初始 HTML 裡找到文章列表、標題與連結。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181e19b4cdd7b9e068cd8",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "link preview 與摘要工具：它們需要 metadata、標題、描述與可解析的頁面結構。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "link preview 與摘要工具：它們需要 metadata、標題、描述與可解析的頁面結構。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181a397f6d2094669ee63",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "AI Agent browser：它們不一定像完整瀏覽器一樣執行所有互動邏輯，因此需要簡單、語義清楚、可直接讀取的內容入口。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "AI Agent browser：它們不一定像完整瀏覽器一樣執行所有互動邏輯，因此需要簡單、語義清楚、可直接讀取的內容入口。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181d19254ed6f643e1656",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個矩陣的用途，不是把每個網站都做成傳統靜態站，而是提醒自己：當一種機器讀者讀不到時，內容在某個分發面上就是缺席的。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個矩陣的用途，不是把每個網站都做成傳統靜態站，而是提醒自己：當一種機器讀者讀不到時，內容在某個分發面上就是缺席的。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181dcafb5da45bebf32cf",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "方法論三：發布前問三個問題",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "方法論三：發布前問三個問題",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181acb7c0c74501966409",
+            "type": "text",
+            "richText": [
+              {
+                "text": "所以我現在會把「發布」拆成三個更可驗收的問題。這三個問題不綁定任何框架，也不要求讀者先懂前端。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "所以我現在會把「發布」拆成三個更可驗收的問題。這三個問題不綁定任何框架，也不要求讀者先懂前端。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401814e96ead8e7d3e2bca3",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "權威位置在哪裡？這篇文章最後應該被哪個公開 URL 代表，是 Notion、CMS，還是自己的網站？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "權威位置在哪裡？這篇文章最後應該被哪個公開 URL 代表，是 Notion、CMS，還是自己的網站？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401811d885adabd7d9fe0ae",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "發現路徑是否存在？Blog index、內鏈、sitemap、語言版本入口是否能把讀者帶到這篇文章？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "發現路徑是否存在？Blog index、內鏈、sitemap、語言版本入口是否能把讀者帶到這篇文章？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181acbd96d5d8bcbfdfcf",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "有限能力讀者能不能讀到？不跑完整前端、不依賴登入、不依賴額外互動時，source、crawler 或 AI reader 是否仍能知道這篇文章存在？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "有限能力讀者能不能讀到？不跑完整前端、不依賴登入、不依賴額外互動時，source、crawler 或 AI reader 是否仍能知道這篇文章存在？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401813fbb7edd090cf00676",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如果第一問回答不清楚，問題通常是內容權威性混亂。如果第二問失敗，問題通常是分發入口沒有建好。如果第三問失敗，問題通常是內容只存在於 runtime，而沒有進入可被機器穩定讀取的層。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果第一問回答不清楚，問題通常是內容權威性混亂。如果第二問失敗，問題通常是分發入口沒有建好。如果第三問失敗，問題通常是內容只存在於 runtime，而沒有進入可被機器穩定讀取的層。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401810bb866c184fdb03b82",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "真正的發布驗收，不只看瀏覽器畫面，而是檢查來源碼、sitemap 與有限能力的 AI Reader 是否都能找到內容。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:665e77dc-b890-4eb8-b5e3-9d1e57ae4ef7:ronniecc-publish-check-v2.png",
+            "assetPath": "content/blog-assets/368c1b36c40181acb1d0fcef72e9b0b9/368c1b36c401810bb866c184fdb03b82-ronniecc-publish-check-v2.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401819b948dd40153fbe4f1",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "把 Blog index 變成分發契約",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "把 Blog index 變成分發契約",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181ee9b7bd0aa06bfbf56",
+            "type": "text",
+            "richText": [
+              {
+                "text": "回到 RonnieCC，這次真正要修的不是「頁面好不好看」，而是 Blog index 的責任模型。Notion 負責收集和整理材料；RonnieCC 負責把內容正式交付到公開分發層。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "回到 RonnieCC，這次真正要修的不是「頁面好不好看」，而是 Blog index 的責任模型。Notion 負責收集和整理材料；RonnieCC 負責把內容正式交付到公開分發層。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401816ea940c69dea49da66",
+            "type": "text",
+            "richText": [
+              {
+                "text": "因此正式發布後的 Blog 頁，HTML 本身就應該包含文章標題和文章連結。JavaScript 可以保留，但它只能是 fallback，不能是正式內容被看見的唯一方式。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "因此正式發布後的 Blog 頁，HTML 本身就應該包含文章標題和文章連結。JavaScript 可以保留，但它只能是 fallback，不能是正式內容被看見的唯一方式。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401816b9efdcce8c6137bff",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個決策把 Blog index 從一個瀏覽器互動頁，改回一個內容分發契約：它要讓人能讀，也要讓搜尋引擎、sitemap、預覽工具和 AI Agent 能確認 RonnieCC 到底發布了什麼。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個決策把 Blog index 從一個瀏覽器互動頁，改回一個內容分發契約：它要讓人能讀，也要讓搜尋引擎、sitemap、預覽工具和 AI Agent 能確認 RonnieCC 到底發布了什麼。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401810193b2c63fd4af5c87",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "意義：把文章變成公開知識物件",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "意義：把文章變成公開知識物件",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c401814e9498f1400b6bfaf7",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這件事對 RonnieCC 的意義，不只是「個人品牌資產要被搜尋到」。那個說法太淺。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這件事對 RonnieCC 的意義，不只是「個人品牌資產要被搜尋到」。那個說法太淺。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c4018120a56be5a744fe11a2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "更準確地說，RonnieCC 正在從一個展示個人經驗的網站，變成一個公開知識物件的生產與分發系統。當文章還在 Notion 裡，它是我的材料；當文章進入 RonnieCC，它就應該成為網路可以發現、引用、索引、摘要和再次使用的知識單位。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "更準確地說，RonnieCC 正在從一個展示個人經驗的網站，變成一個公開知識物件的生產與分發系統。當文章還在 Notion 裡，它是我的材料；當文章進入 RonnieCC，它就應該成為網路可以發現、引用、索引、摘要和再次使用的知識單位。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181e5b996ce8730f037fd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這會改變我對「完成」的定義。以前完成可能是寫完、排好版、瀏覽器裡看起來正常。現在完成還要包含：這篇文章是否有權威 URL，是否能被機器發現，是否能被未來的工具穩定讀取。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這會改變我對「完成」的定義。以前完成可能是寫完、排好版、瀏覽器裡看起來正常。現在完成還要包含：這篇文章是否有權威 URL，是否能被機器發現，是否能被未來的工具穩定讀取。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181e38744d3ca8352cefd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "也就是說，RonnieCC 的下一步不是單純寫更多文章，而是讓每篇文章都走完整個交付鏈：從材料，到站內文章，到可被網路基礎設施讀取的公開知識物件。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "也就是說，RonnieCC 的下一步不是單純寫更多文章，而是讓每篇文章都走完整個交付鏈：從材料，到站內文章，到可被網路基礎設施讀取的公開知識物件。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c4018108bbc7df4abfb150d8",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "結尾",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "結尾",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c4018152aaf3f114aec66074",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這件事我本來以為只是修一個清單頁。但真正被修正的，是我對「發布」二字的理解。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這件事我本來以為只是修一個清單頁。但真正被修正的，是我對「發布」二字的理解。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181a49e9cd2235cd380fc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "發布不是讓文章能在瀏覽器裡被打開，而是讓文章進入一個可以被搜尋、被引用、被任何未來系統信任讀取的網路。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "發布不是讓文章能在瀏覽器裡被打開，而是讓文章進入一個可以被搜尋、被引用、被任何未來系統信任讀取的網路。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c40181229b7bd6cf5a2cdde1",
+            "type": "text",
+            "richText": [
+              {
+                "text": "很多內容不是不夠好，只是一直沒有走完最後一哩。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "很多內容不是不夠好，只是一直沒有走完最後一哩。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c1b36c4018166af3fe4b3206cbe82",
+            "type": "quote",
+            "richText": [
+              {
+                "text": "如果你也在寫，問問自己：你的文章，真的交出去了嗎？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果你也在寫，問問自己：你的文章，真的交出去了嗎？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "368c1b36c40181808b6efe7332eb5106",
       "slug": "codex-design-taste-control-368c1b36",
@@ -32,7 +3388,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:42:46.691Z",
+        "syncedAt": "2026-05-23T15:03:51.025Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -2378,7 +5734,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:43:15.863Z",
+        "syncedAt": "2026-05-23T15:04:40.311Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -3558,7 +6914,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:43:19.562Z",
+        "syncedAt": "2026-05-23T15:04:48.696Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -4142,7 +7498,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:43:35.786Z",
+        "syncedAt": "2026-05-23T15:05:15.059Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -6334,7 +9690,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:43:36.263Z",
+        "syncedAt": "2026-05-23T15:05:15.735Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -7056,7 +10412,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:43:36.677Z",
+        "syncedAt": "2026-05-23T15:05:16.928Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -7823,7 +11179,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:43:37.232Z",
+        "syncedAt": "2026-05-23T15:05:17.576Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -8966,7 +12322,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:43:59.818Z",
+        "syncedAt": "2026-05-23T15:05:54.720Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -9689,7 +13045,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:44:00.255Z",
+        "syncedAt": "2026-05-23T15:05:55.773Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -10558,7 +13914,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:44:00.688Z",
+        "syncedAt": "2026-05-23T15:05:56.346Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -11937,7 +15293,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:44:01.135Z",
+        "syncedAt": "2026-05-23T15:05:56.983Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -15383,7 +18739,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:44:08.776Z",
+        "syncedAt": "2026-05-23T15:06:09.442Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -17228,7 +20584,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:44:09.306Z",
+        "syncedAt": "2026-05-23T15:06:10.684Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -17882,7 +21238,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:44:13.491Z",
+        "syncedAt": "2026-05-23T15:06:15.804Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -18497,7 +21853,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:44:20.776Z",
+        "syncedAt": "2026-05-23T15:06:27.538Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -19262,7 +22618,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:44:21.216Z",
+        "syncedAt": "2026-05-23T15:06:28.112Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -22208,7 +25564,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:45:32.747Z",
+        "syncedAt": "2026-05-23T15:08:11.137Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -23325,7 +26681,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:45:40.172Z",
+        "syncedAt": "2026-05-23T15:08:21.806Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -23702,7 +27058,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:45:43.503Z",
+        "syncedAt": "2026-05-23T15:08:26.167Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -26508,7 +29864,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:47:13.647Z",
+        "syncedAt": "2026-05-23T15:10:35.706Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -26735,7 +30091,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:47:18.402Z",
+        "syncedAt": "2026-05-23T15:10:41.948Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -27499,7 +30855,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-22T10:47:24.867Z",
+        "syncedAt": "2026-05-23T15:10:51.877Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
