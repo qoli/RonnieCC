@@ -653,14 +653,57 @@ function blockText(block: BlogBlock): string {
   return renderRichText(block.richText);
 }
 
-function renderBlogChildren(block: BlogBlock, rootPath: string): string {
+function renderBlogChildren(block: BlogBlock, rootPath: string, notionUrl: string): string {
   if (!block.children?.length) return "";
-  return `<div class="blog-block-children">${renderBlogBlocks(block.children, rootPath)}</div>`;
+  return `<div class="blog-block-children">${renderBlogBlocks(block.children, rootPath, notionUrl)}</div>`;
 }
 
-function renderMediaFallback(block: BlogBlock, label: string, rootPath: string): string {
+function youtubeEmbedUrl(source?: string): string {
+  if (!source) return "";
+
+  try {
+    const url = new URL(source);
+    const host = url.hostname.replace(/^www\./, "");
+    if (host === "youtu.be") {
+      const id = url.pathname.split("/").filter(Boolean)[0] || "";
+      return id ? `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}` : "";
+    }
+    if (host === "youtube.com" || host === "m.youtube.com" || host === "music.youtube.com") {
+      const embedId = url.pathname.match(/^\/embed\/([^/?#]+)/)?.[1];
+      const shortId = url.pathname.match(/^\/shorts\/([^/?#]+)/)?.[1];
+      const watchId = url.searchParams.get("v");
+      const id = embedId || shortId || watchId || "";
+      return id ? `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}` : "";
+    }
+  } catch {
+    return "";
+  }
+
+  return "";
+}
+
+function notionChildPageUrl(block: BlogBlock, fallbackUrl: string): string {
+  if (!block.id) return fallbackUrl;
+
+  const title = (block.plainText || "notion-note").trim().replace(/\s+/g, "-").slice(0, 96);
+  return `https://www.notion.so/qoli/${encodeURIComponent(title)}-${block.id}?pvs=21`;
+}
+
+function renderMediaFallback(block: BlogBlock, label: string, rootPath: string, notionUrl: string): string {
   const caption = renderRichText(block.caption);
-  const source = block.source ? `<code>${escapeHtml(block.source)}</code>` : "";
+  const embedUrl = youtubeEmbedUrl(block.source);
+
+  if (embedUrl && block.source) {
+    return `
+      <figure class="blog-media blog-media-video">
+        <div class="blog-video-frame">
+          <iframe src="${escapeAttr(embedUrl)}" title="${escapeAttr(block.plainText || label)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <figcaption>${caption ? `${caption} · ` : ""}<a href="${escapeAttr(block.source)}" target="_blank" rel="noreferrer">Watch on YouTube</a></figcaption>
+      </figure>
+    `;
+  }
+
   if (block.assetPath) {
     return `
       <figure class="blog-media">
@@ -674,8 +717,18 @@ function renderMediaFallback(block: BlogBlock, label: string, rootPath: string):
     <figure class="blog-media-fallback">
       <div>${escapeHtml(label)}</div>
       ${caption ? `<figcaption>${caption}</figcaption>` : ""}
-      ${source ? `<p>${source}</p>` : ""}
+      ${notionUrl ? `<p><a href="${escapeAttr(notionUrl)}" target="_blank" rel="noreferrer">Open in the original Notion note</a></p>` : ""}
     </figure>
+  `;
+}
+
+function renderNotionPageLink(block: BlogBlock, notionUrl: string): string {
+  const title = block.plainText || "Open in the original Notion note";
+  const href = notionChildPageUrl(block, notionUrl);
+  return `
+    <p class="blog-notion-link">
+      <a href="${escapeAttr(href)}" target="_blank" rel="noreferrer">${escapeHtml(title)}</a>
+    </p>
   `;
 }
 
@@ -726,9 +779,9 @@ function renderBlogTable(block: BlogBlock): string {
   `;
 }
 
-function renderBlogBlock(block: BlogBlock, rootPath: string): string {
+function renderBlogBlock(block: BlogBlock, rootPath: string, notionUrl: string): string {
   const text = blockText(block);
-  const children = renderBlogChildren(block, rootPath);
+  const children = renderBlogChildren(block, rootPath, notionUrl);
 
   switch (block.type) {
     case "header":
@@ -746,33 +799,33 @@ function renderBlogBlock(block: BlogBlock, rootPath: string): string {
     case "divider":
       return "<hr>";
     case "image":
-      return renderMediaFallback(block, "Image from the original Notion note", rootPath);
+      return renderMediaFallback(block, "Image from the original Notion note", rootPath, notionUrl);
     case "video":
-      return renderMediaFallback(block, "Video from the original Notion note", rootPath);
+      return renderMediaFallback(block, "Video from the original Notion note", rootPath, notionUrl);
     case "file":
     case "external_object_instance":
-      return renderMediaFallback(block, "Attachment from the original Notion note", rootPath);
+      return renderMediaFallback(block, "Attachment from the original Notion note", rootPath, notionUrl);
     case "table":
       return renderBlogTable(block);
     case "table_row":
       return "";
     case "page":
     case "collection_view_page":
-      return "";
+      return renderNotionPageLink(block, notionUrl);
     case "text":
     default:
       return text ? `<p>${text}</p>${children}` : children;
   }
 }
 
-function renderListRun(blocks: BlogBlock[], tag: "ul" | "ol", rootPath: string): string {
+function renderListRun(blocks: BlogBlock[], tag: "ul" | "ol", rootPath: string, notionUrl: string): string {
   const items = blocks
-    .map((block) => `<li>${blockText(block)}${renderBlogChildren(block, rootPath)}</li>`)
+    .map((block) => `<li>${blockText(block)}${renderBlogChildren(block, rootPath, notionUrl)}</li>`)
     .join("");
   return `<${tag}>${items}</${tag}>`;
 }
 
-function renderBlogBlocks(blocks: BlogBlock[] = [], rootPath = ""): string {
+function renderBlogBlocks(blocks: BlogBlock[] = [], rootPath = "", notionUrl = ""): string {
   const rendered: string[] = [];
 
   for (let index = 0; index < blocks.length; index += 1) {
@@ -785,9 +838,9 @@ function renderBlogBlocks(blocks: BlogBlock[] = [], rootPath = ""): string {
         index += 1;
       }
       index -= 1;
-      rendered.push(renderListRun(run, type === "bulleted_list" ? "ul" : "ol", rootPath));
+      rendered.push(renderListRun(run, type === "bulleted_list" ? "ul" : "ol", rootPath, notionUrl));
     } else {
-      rendered.push(renderBlogBlock(block, rootPath));
+      rendered.push(renderBlogBlock(block, rootPath, notionUrl));
     }
   }
 
@@ -978,7 +1031,7 @@ function renderBlogPage(source: string, posts: BlogPost[], locale: Locale): stri
 function blogArticleMain(post: BlogPost, language: Language, rootPath: string): string {
   const created = createdDateFromContent(post) || formatBlogDate(post.writtenDate) || post.year || "";
   const body = post.content?.blocks?.length
-    ? renderBlogBlocks(post.content.blocks, rootPath)
+    ? renderBlogBlocks(post.content.blocks, rootPath, post.notionUrl)
     : `<p>${escapeHtml(localeCopy[language].blogEmpty)}</p>`;
 
   return `

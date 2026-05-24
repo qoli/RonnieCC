@@ -1019,8 +1019,22 @@ html[data-theme="dark"] .theme-toggle span::after {
   display: block;
   width: 100%;
   height: auto;
-  border: 1px solid color-mix(in srgb, var(--stone) 18%, transparent);
   background: color-mix(in srgb, var(--paper) 70%, transparent);
+  box-shadow: 0 14px 34px color-mix(in srgb, var(--ink) 8%, transparent);
+}
+
+.blog-video-frame {
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: color-mix(in srgb, var(--paper) 70%, transparent);
+  box-shadow: 0 14px 34px color-mix(in srgb, var(--ink) 8%, transparent);
+}
+
+.blog-video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .blog-media figcaption {
@@ -1052,6 +1066,22 @@ html[data-theme="dark"] .theme-toggle span::after {
 .blog-media-fallback p {
   margin: 0;
   font-size: 13px;
+}
+
+.blog-notion-link {
+  margin: 0;
+}
+
+.blog-notion-link a {
+  display: block;
+  padding: 14px 0;
+  border-top: 1px solid color-mix(in srgb, var(--stone) 18%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--stone) 18%, transparent);
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .blog-source {
