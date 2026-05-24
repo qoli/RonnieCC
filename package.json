@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "bun run src/build.ts",
+    "check:blog-media": "node scripts/check-blog-media-warnings.mjs",
     "preview:dist": "python3 -m http.server 4180 --directory dist --bind 127.0.0.1"
   }
 }
