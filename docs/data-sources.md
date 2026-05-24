@@ -514,7 +514,7 @@ Blog 入口使用 Notion database 作為上游資料源，但正式網站只在 
 - 公開 Notion database 不需要 `NOTION_TOKEN`；如果日後改為私有頁面，GitHub repo 再設定 `NOTION_TOKEN` 或 `NOTION_TOKEN_V2` secret，值為 Notion `token_v2`。
 - 同步器只寫入 `content/blog.seed.json` 和 `content/blog-assets/`，不改動手寫 HTML/CSS/JS；GitHub Action 會一起提交 JSON 和 asset 變更。
 - `公開` 是唯一發布門檻；Notion view 本身不代表公開狀態。
-- `編寫日期` 是年份分組的第一優先資料源；`年份` formula / text 只作第二優先。兩者都缺失時才 fallback 到 created time。
+- `編寫日期` 是文章頁 Created byline 與年份分組的第一優先資料源；同步器會保留為 `writtenDate`。`年份` formula / text 只作第二優先。兩者都缺失時才 fallback 到 created time。
 
 ## 目前本地資料狀態
 

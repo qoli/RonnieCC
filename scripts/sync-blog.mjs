@@ -306,7 +306,8 @@ function idToKey(blocks, id) {
 }
 
 function normalizePost(row) {
-  const writtenYear = row["編寫日期"] ? String(new Date(row["編寫日期"]).getFullYear()) : "";
+  const writtenDate = row["編寫日期"] ? String(row["編寫日期"]).trim() : "";
+  const writtenYear = writtenDate ? String(new Date(writtenDate).getFullYear()) : "";
   const year = writtenYear || String(row["年份"] || "").trim() || (row.createdTime ? String(new Date(row.createdTime).getFullYear()) : "");
   const slug = postSlug(row);
   const seoSlug = normalizedSeoSlug(row);
@@ -319,6 +320,7 @@ function normalizePost(row) {
     legacySlugs: legacySlug !== slug ? [legacySlug] : [],
     title: String(row.Name || "").trim(),
     tag: String(row.Tag || "").trim(),
+    writtenDate,
     year,
     public: isPublic(row),
     subsites: postSubsites,

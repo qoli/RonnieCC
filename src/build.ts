@@ -77,6 +77,7 @@ type BlogPost = {
   legacySlugs?: string[];
   title: string;
   tag?: string;
+  writtenDate?: string;
   year?: string;
   public?: boolean;
   subsites?: string[];
@@ -798,6 +799,29 @@ function blogArticleDescription(post: BlogPost): string {
   return truncate(firstText);
 }
 
+function formatBlogDate(value?: string): string {
+  const match = String(value || "").match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+  if (!match) return "";
+
+  const [, year, month, day] = match;
+  return `${year}/${Number(month)}/${Number(day)}`;
+}
+
+function createdDateFromContent(post: BlogPost): string {
+  if (!post.writtenDate?.endsWith("-01-01")) return "";
+
+  const blocks = post.content?.blocks || [];
+  const stack = [...blocks];
+  while (stack.length) {
+    const block = stack.shift();
+    const match = block?.plainText?.match(/Created by .{0,80}? on (\d{4}\/\d{1,2}\/\d{1,2})/);
+    if (match) return match[1];
+    stack.unshift(...(block?.children || []));
+  }
+
+  return "";
+}
+
 function relativizeAssets(html: string, prefix: string): string {
   return html
     .replaceAll('href="styles.css"', `href="${prefix}styles.css"`)
@@ -952,8 +976,7 @@ function renderBlogPage(source: string, posts: BlogPost[], locale: Locale): stri
 }
 
 function blogArticleMain(post: BlogPost, language: Language, rootPath: string): string {
-  const date = post.createdTime ? new Date(post.createdTime).toISOString().slice(0, 10) : post.year || "";
-  const edited = post.lastEditedTime ? new Date(post.lastEditedTime).toISOString().slice(0, 10) : "";
+  const created = createdDateFromContent(post) || formatBlogDate(post.writtenDate) || post.year || "";
   const body = post.content?.blocks?.length
     ? renderBlogBlocks(post.content.blocks, rootPath)
     : `<p>${escapeHtml(localeCopy[language].blogEmpty)}</p>`;
@@ -964,7 +987,7 @@ function blogArticleMain(post: BlogPost, language: Language, rootPath: string): 
       <header class="page-hero compact blog-article-hero">
         <p class="eyebrow">Writing</p>
         <h1>${escapeHtml(post.title)}</h1>
-        <p>${escapeHtml(post.tag || "Note")}${date ? ` · ${escapeHtml(date)}` : ""}${edited && edited !== date ? ` · Updated ${escapeHtml(edited)}` : ""}</p>
+        ${created ? `<p>Created by Ronnie Wong on ${escapeHtml(created)}</p>` : ""}
       </header>
 
       <div class="section blog-prose">

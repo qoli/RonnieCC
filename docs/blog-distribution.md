@@ -42,6 +42,7 @@ distribution metadata:
   "seoSlug": "adict-3-0-rewrite",
   "legacySlugs": ["adict-3-0-一個老詞典-app-的重寫-35fc1b36"],
   "title": "aDict 3.0 一個老詞典 App 的重寫",
+  "writtenDate": "2026-05-20",
   "public": true,
   "subsites": ["adict"],
   "publishTargets": ["ronniecc", "adict"],
@@ -64,6 +65,9 @@ Compatibility rules:
 - Missing `legacySlugs` means `[]`.
 - Missing `canonical.url` should be reconstructed as
   `https://ronniewong.cc/blog/${encodeURIComponent(post.slug)}/`.
+- `writtenDate`, when present, is the Notion `編寫日期` value and should be
+  treated as the article created date. Notion import `createdTime` is metadata,
+  not the public article date.
 
 ## Subsite Consumer Rules
 
