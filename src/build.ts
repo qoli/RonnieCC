@@ -1040,6 +1040,7 @@ function blogArticleMain(post: BlogPost, language: Language, rootPath: string): 
       <header class="page-hero compact blog-article-hero">
         <p class="eyebrow">Writing</p>
         <h1>${escapeHtml(post.title)}</h1>
+        <p>${escapeHtml(post.tag || "Note")}</p>
         ${created ? `<p>Created by Ronnie Wong on ${escapeHtml(created)}</p>` : ""}
       </header>
 
