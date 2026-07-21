@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-05-24T03:45:13.613Z",
+  "generatedAt": "2026-07-21T15:04:54.953Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,351 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "3a4c1b36c40181adb482ddaf963db07e",
+      "slug": "lyricglass-lrclib-client-3a4c1b36",
+      "seoSlug": "lyricglass-lrclib-client",
+      "legacySlugs": [
+        "lyricglass-a-private-single-device-lrclib-client-3a4c1b36"
+      ],
+      "title": "LyricGlass: a Private, Single-Device LRCLIB Client",
+      "tag": "Notes,Product",
+      "writtenDate": "2026-07-21",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/lyricglass-lrclib-client-3a4c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/lyricglass-a-private-single-device-lrclib-client-3a4c1b36c40181adb482ddaf963db07e?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-07-21T14:53:11.554Z",
+      "lastEditedTime": "2026-07-21T14:55:42.809Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-07-21T14:57:38.212Z",
+        "blocks": [
+          {
+            "id": "3a4c1b36c401816a9cfdfc345b4fd700",
+            "type": "text",
+            "richText": [
+              {
+                "text": "LyricGlass is a private, single-device lyric display app maintained by RonnieCC. It runs exclusively on one Essential PH-1 and uses Apple Music as its primary source. This page describes the limited circumstances under which LyricGlass contacts LRCLIB.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "LyricGlass is a private, single-device lyric display app maintained by RonnieCC. It runs exclusively on one Essential PH-1 and uses Apple Music as its primary source. This page describes the limited circumstances under which LyricGlass contacts LRCLIB.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401816b80c5dfcb773bab2f",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "When LyricGlass uses LRCLIB",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "When LyricGlass uses LRCLIB",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c4018189818adf775fc7d6f7",
+            "type": "text",
+            "richText": [
+              {
+                "text": "LyricGlass queries LRCLIB only when Apple Music provides a fully identified track with no usable synchronized lyrics. It performs an exact lookup first; only if that returns 404 does it attempt a search, and only if the result is unambiguous is it used.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "LyricGlass queries LRCLIB only when Apple Music provides a fully identified track with no usable synchronized lyrics. It performs an exact lookup first; only if that returns 404 does it attempt a search, and only if the result is unambiguous is it used.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401818ab506d1895f2bd57f",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "The exact lookup uses the recognized track name, artist, album, and duration when those fields are available.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "The exact lookup uses the recognized track name, artist, album, and duration when those fields are available.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181d5bc8dd04f28dbd761",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Search is limited to the exact-lookup 404 path and uses the recognized track name and artist.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Search is limited to the exact-lookup 404 path and uses the recognized track name and artist.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401810dbf41e49b0f1047df",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "A search result is used only when title, artist, duration, and, when needed, album metadata leave one unambiguous match.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "A search result is used only when title, artist, duration, and, when needed, album metadata leave one unambiguous match.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181419e2dc80abefe8e78",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Apple authorization, transport, rate-limit, server, malformed-response, and malformed-primary-lyrics failures do not query LRCLIB.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Apple authorization, transport, rate-limit, server, malformed-response, and malformed-primary-lyrics failures do not query LRCLIB.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401811698e4c87a89ae4023",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Data boundary",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Data boundary",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401813e81b9f74021a841fc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "LyricGlass recognizes surrounding music through the PH-1 microphone and ShazamKit. Raw microphone audio is not persisted.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "LyricGlass recognizes surrounding music through the PH-1 microphone and ShazamKit. Raw microphone audio is not persisted.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181cf9aa3fa02004b1955",
+            "type": "text",
+            "richText": [
+              {
+                "text": "LRCLIB receives only the song metadata needed for the lookup. No audio, credentials, Music User Tokens, playback data, device keys, or recognition history are ever sent to LRCLIB.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "LRCLIB receives only the song metadata needed for the lookup. No audio, credentials, Music User Tokens, playback data, device keys, or recognition history are ever sent to LRCLIB.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181f4a568d47f6c5eb800",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Successful lyric records may be cached locally on the device with their source information. LyricGlass does not send that cache or its contents back to RonnieCC or LRCLIB.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Successful lyric records may be cached locally on the device with their source information. LyricGlass does not send that cache or its contents back to RonnieCC or LRCLIB.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181278a16c9b41f6f76f0",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Product boundary",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Product boundary",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c4018195bc57eeba6496edcd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "LyricGlass does not play music, control another application’s playback, capture another application’s audio, consume Bluetooth media metadata, or coordinate with a second device. It is a narrow personal client: recognize nearby music, obtain lyrics under the conditions above, and display their timing on its own device.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "LyricGlass does not play music, control another application’s playback, capture another application’s audio, consume Bluetooth media metadata, or coordinate with a second device. It is a narrow personal client: recognize nearby music, obtain lyrics under the conditions above, and display their timing on its own device.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181f993eaf8503b4e0dd0",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Client identification",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Client identification",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401816f82ebe1cee3723bef",
+            "type": "text",
+            "richText": [
+              {
+                "text": "This is the public project page for the LyricGlass LRCLIB client. The LRCLIB User-Agent identifies the application and release version and will reference this page’s public canonical URL. RonnieCC will keep this page aligned with material changes to LyricGlass’s LRCLIB request behavior.",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "This is the public project page for the LyricGlass LRCLIB client. The LRCLIB User-Agent identifies the application and release version and will reference this page’s public canonical URL. RonnieCC will keep this page aligned with material changes to LyricGlass’s LRCLIB request behavior.",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "369c1b36c40181038b1ded4549c4bedb",
       "slug": "codex-workflow-skills-369c1b36",
@@ -33,7 +378,7 @@
       "lastEditedTime": "2026-05-23T15:01:21.702Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:38:21.800Z",
+        "syncedAt": "2026-07-21T14:57:38.598Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -2374,7 +2719,7 @@
       "lastEditedTime": "2026-05-23T13:53:13.789Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:38:22.630Z",
+        "syncedAt": "2026-07-21T14:57:39.432Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -3391,7 +3736,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:38:42.201Z",
+        "syncedAt": "2026-07-21T14:57:53.927Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -5738,7 +6083,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:39:22.415Z",
+        "syncedAt": "2026-07-21T14:58:27.365Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -6919,7 +7264,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:39:27.122Z",
+        "syncedAt": "2026-07-21T14:58:43.431Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -7504,7 +7849,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:39:48.612Z",
+        "syncedAt": "2026-07-21T14:59:02.766Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -9697,7 +10042,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:39:49.196Z",
+        "syncedAt": "2026-07-21T14:59:03.517Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -10420,7 +10765,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:39:49.742Z",
+        "syncedAt": "2026-07-21T14:59:03.948Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -11188,7 +11533,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:39:50.252Z",
+        "syncedAt": "2026-07-21T14:59:04.487Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -12332,7 +12677,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:40:19.467Z",
+        "syncedAt": "2026-07-21T14:59:35.110Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -13056,7 +13401,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:40:19.885Z",
+        "syncedAt": "2026-07-21T14:59:35.927Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -13926,7 +14271,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:40:20.476Z",
+        "syncedAt": "2026-07-21T14:59:36.354Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -15306,7 +15651,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:40:21.059Z",
+        "syncedAt": "2026-07-21T14:59:36.843Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -18753,7 +19098,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:40:30.394Z",
+        "syncedAt": "2026-07-21T14:59:45.459Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -20599,7 +20944,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:40:31.046Z",
+        "syncedAt": "2026-07-21T14:59:46.061Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -21254,7 +21599,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:40:35.422Z",
+        "syncedAt": "2026-07-21T14:59:50.556Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -21870,7 +22215,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:40:45.235Z",
+        "syncedAt": "2026-07-21T14:59:58.452Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -22636,7 +22981,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:40:45.735Z",
+        "syncedAt": "2026-07-21T14:59:58.941Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -25583,7 +25928,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:42:20.124Z",
+        "syncedAt": "2026-07-21T15:01:32.993Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -26701,7 +27046,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:42:28.663Z",
+        "syncedAt": "2026-07-21T15:01:40.611Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -27079,7 +27424,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:42:32.566Z",
+        "syncedAt": "2026-07-21T15:01:44.057Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -29886,7 +30231,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:44:19.380Z",
+        "syncedAt": "2026-07-21T15:03:48.097Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -30114,7 +30459,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:44:24.968Z",
+        "syncedAt": "2026-07-21T15:03:54.515Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -30879,7 +31224,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-05-24T03:44:33.127Z",
+        "syncedAt": "2026-07-21T15:04:03.836Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
