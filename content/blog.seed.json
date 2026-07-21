@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-07-21T15:04:54.953Z",
+  "generatedAt": "2026-07-21T21:11:19.951Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,750 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "3a4c1b36c40181f5a881d8abda0181f4",
+      "slug": "static-lyric-three-line-positioning-3a4c1b36",
+      "seoSlug": "static-lyric-three-line-positioning",
+      "legacySlugs": [
+        "靜態歌詞也能先-跟上-用進度把未知位置縮到三行-3a4c1b36"
+      ],
+      "title": "靜態歌詞也能先「跟上」：用進度把未知位置縮到三行",
+      "tag": "Product,Notes,Automation",
+      "writtenDate": "2026-07-22",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/static-lyric-three-line-positioning-3a4c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/%E9%9D%9C%E6%85%8B%E6%AD%8C%E8%A9%9E%E4%B9%9F%E8%83%BD%E5%85%88-%E8%B7%9F%E4%B8%8A-%E7%94%A8%E9%80%B2%E5%BA%A6%E6%8A%8A%E6%9C%AA%E7%9F%A5%E4%BD%8D%E7%BD%AE%E7%B8%AE%E5%88%B0%E4%B8%89%E8%A1%8C-3a4c1b36c40181f5a881d8abda0181f4?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-07-21T21:03:59.826Z",
+      "lastEditedTime": "2026-07-21T21:05:27.763Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-07-21T21:06:47.361Z",
+        "blocks": [
+          {
+            "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "靜態歌詞最令人挫折的時刻，不是它沒有文字，而是歌正在播，文字卻像一本沒有書籤的書。你看得到全部內容，卻不知道現在該看哪裡。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "靜態歌詞最令人挫折的時刻，不是它沒有文字，而是歌正在播，文字卻像一本沒有書籤的書。你看得到全部內容，卻不知道現在該看哪裡。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c4018198ba73e4c1adf523fa",
+            "type": "text",
+            "richText": [
+              {
+                "text": "常見的直覺是：既然有麥克風，就做 ASR，把聽到的歌詞直接對上文字。但歌唱辨識比口述聽寫難得多，還帶著語言、音質、成本與隱私的問題。更重要的是，它把一個本來可以拆小的問題，一開始就當成「必須選出唯一正解」。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "常見的直覺是：既然有麥克風，就做 ASR，把聽到的歌詞直接對上文字。但歌唱辨識比口述聽寫難得多，還帶著語言、音質、成本與隱私的問題。更重要的是，它把一個本來可以拆小的問題，一開始就當成「必須選出唯一正解」。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c4018152bcc3dcc50045e9e2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這次在 LyricGlass 裡，我們先處理一個更務實的版本：已知歌曲總長度、目前播放位置，以及一份可能不完整的靜態歌詞時，能不能先把畫面帶到大致正確的三行？這不是產生同步 LRC，也不是用來控制播放；它是讓單一裝置上的歌詞顯示，在沒有時間戳時仍然有可用的視覺定位。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這次在 LyricGlass 裡，我們先處理一個更務實的版本：已知歌曲總長度、目前播放位置，以及一份可能不完整的靜態歌詞時，能不能先把畫面帶到大致正確的三行？這不是產生同步 LRC，也不是用來控制播放；它是讓單一裝置上的歌詞顯示，在沒有時間戳時仍然有可用的視覺定位。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181b0bf11d6bbb1ef5bd2",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "先承認：靜態歌詞本身沒有時間",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "先承認：靜態歌詞本身沒有時間",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181b3a4eacf0de57145cb",
+            "type": "text",
+            "richText": [
+              {
+                "text": "只有純文字，無法直接推導「第 78 秒正在唱哪一行」。缺少的不是演算法技巧，而是時間證據。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "只有純文字，無法直接推導「第 78 秒正在唱哪一行」。缺少的不是演算法技巧，而是時間證據。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181b19718f84251ace4c4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "不過，歌曲進度本身是一條很弱、卻真實存在的訊號。假設歌曲播到 40%，把這個比例投射到正規化後的歌詞文字長度，就能取得一個大致中心點；再從中心點取回一段足夠寬的文字窗口。這是一個粗估，不是假裝知道每一行的時間戳。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "不過，歌曲進度本身是一條很弱、卻真實存在的訊號。假設歌曲播到 40%，把這個比例投射到正規化後的歌詞文字長度，就能取得一個大致中心點；再從中心點取回一段足夠寬的文字窗口。這是一個粗估，不是假裝知道每一行的時間戳。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181808293f2d6336c3712",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我把窗口寬度寫成一個常數 c：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我把窗口寬度寫成一個常數 c：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181f29e8ad98db265e94b",
+            "type": "code",
+            "richText": [
+              {
+                "text": "窗口長度 = ceil(c × 正規化後歌詞總長度)",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "窗口長度 = ceil(c × 正規化後歌詞總長度)",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401819d9ba0e6c64ead151b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "c 越大，命中機率越高，但候選範圍也越寬；若 c = 1，答案永遠是整份歌詞，當然不會錯，也完全沒有價值。因此真正的問題不是「怎樣拿滿分」，而是「最小而仍可靠的窗口要多大」。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "c 越大，命中機率越高，但候選範圍也越寬；若 c = 1，答案永遠是整份歌詞，當然不會錯，也完全沒有價值。因此真正的問題不是「怎樣拿滿分」，而是「最小而仍可靠的窗口要多大」。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401817da664c097ca6d1daf",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "把漂亮的假設，改成可被推翻的研究",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "把漂亮的假設，改成可被推翻的研究",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c4018162bd73d67a3f52fecb",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第一版只有五首樣本，c = 0.465 剛好能讓所有可評估的歌詞行落進窗口。這個數字看起來精準，卻沒有資格成為產品答案：同一批歌既拿來選常數，又拿來評分，本質上是在對樣本校準。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第一版只有五首樣本，c = 0.465 剛好能讓所有可評估的歌詞行落進窗口。這個數字看起來精準，卻沒有資格成為產品答案：同一批歌既拿來選常數，又拿來評分，本質上是在對樣本校準。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181da89f8d9a9ed7f398d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "所以實驗擴展到 30 首不同結構的 LRCLIB 記錄：9 種語言、30 個研究分層、共 1,401 個歌詞 occurrence。樣本只保存研究所需的 metadata；歌詞正文不寫進研究產物。同步歌詞只作為隱藏答案，靜態 plainLyrics 才是演算法真正可見的輸入。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "所以實驗擴展到 30 首不同結構的 LRCLIB 記錄：9 種語言、30 個研究分層、共 1,401 個歌詞 occurrence。樣本只保存研究所需的 metadata；歌詞正文不寫進研究產物。同步歌詞只作為隱藏答案，靜態 plainLyrics 才是演算法真正可見的輸入。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401817fa102cb0aadea6f03",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這裡另一個容易被忽略的規則是：不能假設靜態歌詞完整。缺少一段主歌、重複句被省略、拆行或合行，都是真實資料條件，而不是可以悄悄排除的髒資料。因此評估把無法對齊的 occurrence 直接算作 miss，另外報告可對齊覆蓋率；不讓「只挑容易對齊的行」把命中率美化掉。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這裡另一個容易被忽略的規則是：不能假設靜態歌詞完整。缺少一段主歌、重複句被省略、拆行或合行，都是真實資料條件，而不是可以悄悄排除的髒資料。因此評估把無法對齊的 occurrence 直接算作 miss，另外報告可對齊覆蓋率；不讓「只挑容易對齊的行」把命中率美化掉。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401818daea3f93dac93c63d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "30 首樣本的曲線讓原本的數字失效了：追求同批樣本的最小滿分窗口，需要 c = 0.4831；但 c = 0.4 已命中 1,373 / 1,401 個 occurrence，整體為 98.0%，而候選窗口比那個滿分值小約 17%。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "30 首樣本的曲線讓原本的數字失效了：追求同批樣本的最小滿分窗口，需要 c = 0.4831；但 c = 0.4 已命中 1,373 / 1,401 個 occurrence，整體為 98.0%，而候選窗口比那個滿分值小約 17%。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181cb8eeac631c66b34b6",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "為什麼最後選 0.4，而不是 0.4831",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "為什麼最後選 0.4，而不是 0.4831",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c4018141a3e9f31950c758e0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "0.4831 是一個很好的研究觀察：樣本一擴大，舊的五首校準值就不再成立。但它不是一個好的產品信念，因為它正是為這 30 首樣本的滿分邊界而長出來的數字。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "0.4831 是一個很好的研究觀察：樣本一擴大，舊的五首校準值就不再成立。但它不是一個好的產品信念，因為它正是為這 30 首樣本的滿分邊界而長出來的數字。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181be8952effeb901aebb",
+            "type": "text",
+            "richText": [
+              {
+                "text": "0.4 反而比較誠實。它是一個容易理解、刻意保留餘裕的粗定位先驗：回傳約 40% 的歌詞，讓後續邏輯只在這個區域內工作。它不聲稱能選出唯一歌詞行，也不把範圍外的 2% 漏失藏起來。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "0.4 反而比較誠實。它是一個容易理解、刻意保留餘裕的粗定位先驗：回傳約 40% 的歌詞，讓後續邏輯只在這個區域內工作。它不聲稱能選出唯一歌詞行，也不把範圍外的 2% 漏失藏起來。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c4018100b1dcfef5b45c7e87",
+            "type": "text",
+            "richText": [
+              {
+                "text": "真正重要的轉折是：產品不必把「唯一行」當成第一版的驗收條件。對歌詞顯示而言，把正確區域自動捲進可見範圍，使用者往往已經能立刻接回歌曲。這把問題從「替使用者做完判斷」，改成「先消除大部分搜尋成本」。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "真正重要的轉折是：產品不必把「唯一行」當成第一版的驗收條件。對歌詞顯示而言，把正確區域自動捲進可見範圍，使用者往往已經能立刻接回歌曲。這把問題從「替使用者做完判斷」，改成「先消除大部分搜尋成本」。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181d29836c66646198315",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "從研究數字，到真實畫面",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "從研究數字，到真實畫面",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401815f8314f20f360ad6a3",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Lab v0 只會在最終歌詞文件是 UNSYNCED、有 plainLyrics、且歌曲時長與播放位置都已知時啟用。它不根據 Apple Music、Musixmatch、Netease 或 LRCLIB 的來源身分改變算法；來源不是完整度的證據。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Lab v0 只會在最終歌詞文件是 UNSYNCED、有 plainLyrics、且歌曲時長與播放位置都已知時啟用。它不根據 Apple Music、Musixmatch、Netease 或 LRCLIB 的來源身分改變算法；來源不是完整度的證據。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181af8d6bc262eef171bf",
+            "type": "text",
+            "richText": [
+              {
+                "text": "投射後，介面標示三個鄰近候選行，並把中間行自動捲到可視區中央。這個畫面刻意保留 NO LINE SELECTED：它告訴使用者「我們把範圍帶到這裡」，而不是偷偷把中間行包裝成已確定的同步結果。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "投射後，介面標示三個鄰近候選行，並把中間行自動捲到可視區中央。這個畫面刻意保留 NO LINE SELECTED：它告訴使用者「我們把範圍帶到這裡」，而不是偷偷把中間行包裝成已確定的同步結果。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181d19ad1e640e1c27986",
+            "type": "text",
+            "richText": [
+              {
+                "text": "兩個匿名的真機 UNSYNCED 樣本都落在預期的三行可見區域。這是很小、但足以支持 v0 產品目標的正向觀察；它不是 corpus 命中率的替代品，也不是單行精準度的證據。這個差別值得被保留，因為只有保留，後續研究才不會被一次漂亮 demo 帶偏。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "兩個匿名的真機 UNSYNCED 樣本都落在預期的三行可見區域。這是很小、但足以支持 v0 產品目標的正向觀察；它不是 corpus 命中率的替代品，也不是單行精準度的證據。這個差別值得被保留，因為只有保留，後續研究才不會被一次漂亮 demo 帶偏。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181d18683e005e7392e24",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "元音分析不是前提，而是第二層",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "元音分析不是前提，而是第二層",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c4018173a3c3ca8baf8fff95",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我們仍然研究語言中立的元音證據與八秒鐘的聲學窗口，但它的角色已經改變：不是用來拯救一個完全不知道位置的系統，而是只在 c = 0.4 返回的候選區間內，嘗試把三行再排序成一行。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我們仍然研究語言中立的元音證據與八秒鐘的聲學窗口，但它的角色已經改變：不是用來拯救一個完全不知道位置的系統，而是只在 c = 0.4 返回的候選區間內，嘗試把三行再排序成一行。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181bc94c3d864aa7eaced",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個分層大幅降低了難度，也讓失敗比較安全。若音訊證據不足、文字端編碼器尚未接上，或最佳候選和次佳候選沒有足夠差距，系統就停在「未選行」，不改寫歌詞時間、不生成假的 LRC、更不暗中切換到其他資料來源。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個分層大幅降低了難度，也讓失敗比較安全。若音訊證據不足、文字端編碼器尚未接上，或最佳候選和次佳候選沒有足夠差距，系統就停在「未選行」，不改寫歌詞時間、不生成假的 LRC、更不暗中切換到其他資料來源。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181848d19d1a7cee99030",
+            "type": "text",
+            "richText": [
+              {
+                "text": "換句話說，粗定位本身已經有獨立產品價值；精細辨識只是讓它更好，而不是讓它第一次變得可用。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "換句話說，粗定位本身已經有獨立產品價值；精細辨識只是讓它更好，而不是讓它第一次變得可用。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181ecbba7c9ed17ff427b",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "這次留下的幾條準則",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這次留下的幾條準則",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c4018108afe4cd9ccd73b9d7",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "先定義使用者真正需要的精度；可見的三行，未必比不存在的單行答案差。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "先定義使用者真正需要的精度；可見的三行，未必比不存在的單行答案差。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181e480f4f6d26f1123a3",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "不要把校準集上的滿分當成通用常數；選定常數後，仍需要歌曲級 holdout 驗證。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "不要把校準集上的滿分當成通用常數；選定常數後，仍需要歌曲級 holdout 驗證。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c40181c7b5d4c625d6e1415e",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "不完整歌詞不是例外條件，必須留在正式分母裡。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "不完整歌詞不是例外條件，必須留在正式分母裡。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401812c9b44ca0161bdc800",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "來源名稱不是資料品質證據；應根據最後拿到的文件狀態決定是否適用。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "來源名稱不是資料品質證據；應根據最後拿到的文件狀態決定是否適用。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c4018147858fc20eeeb6bcc0",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "粗定位與精細辨識要分層驗證，並分開報告各自的可靠度。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "粗定位與精細辨識要分層驗證，並分開報告各自的可靠度。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401812dbe1ff5494964e6c7",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "在信心不足時保留不確定，比輸出一條看似同步的錯誤歌詞更誠實。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在信心不足時保留不確定，比輸出一條看似同步的錯誤歌詞更誠實。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a4c1b36c401819fad78ffbb27f11343",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我喜歡這個案例，因為它沒有從「模型能不能做最難的事」開始，而是從「今天能不能讓使用者少找一頁歌詞」開始。把未知位置從整份文字壓到三行，聽起來不像人工智慧的壯舉；但對正在播放的歌而言，那已經是一種很具體的同步感。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我喜歡這個案例，因為它沒有從「模型能不能做最難的事」開始，而是從「今天能不能讓使用者少找一頁歌詞」開始。把未知位置從整份文字壓到三行，聽起來不像人工智慧的壯舉；但對正在播放的歌而言，那已經是一種很具體的同步感。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "3a4c1b36c40181adb482ddaf963db07e",
       "slug": "lyricglass-lrclib-client-3a4c1b36",
@@ -33,7 +777,7 @@
       "lastEditedTime": "2026-07-21T14:55:42.809Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:57:38.212Z",
+        "syncedAt": "2026-07-21T21:06:47.726Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -378,7 +1122,7 @@
       "lastEditedTime": "2026-05-23T15:01:21.702Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:57:38.598Z",
+        "syncedAt": "2026-07-21T21:06:48.052Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -2719,7 +3463,7 @@
       "lastEditedTime": "2026-05-23T13:53:13.789Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:57:39.432Z",
+        "syncedAt": "2026-07-21T21:06:48.488Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -3736,7 +4480,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:57:53.927Z",
+        "syncedAt": "2026-07-21T21:06:58.494Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -6083,7 +6827,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:58:27.365Z",
+        "syncedAt": "2026-07-21T21:07:17.228Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -7264,7 +8008,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:58:43.431Z",
+        "syncedAt": "2026-07-21T21:07:21.385Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -7849,7 +8593,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:59:02.766Z",
+        "syncedAt": "2026-07-21T21:07:33.695Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -10042,7 +10786,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:59:03.517Z",
+        "syncedAt": "2026-07-21T21:07:34.083Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -10765,7 +11509,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:59:03.948Z",
+        "syncedAt": "2026-07-21T21:07:34.428Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -11533,7 +12277,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:59:04.487Z",
+        "syncedAt": "2026-07-21T21:07:34.748Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -12677,7 +13421,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:59:35.110Z",
+        "syncedAt": "2026-07-21T21:07:49.207Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -13401,7 +14145,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:59:35.927Z",
+        "syncedAt": "2026-07-21T21:07:49.544Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -14271,7 +15015,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:59:36.354Z",
+        "syncedAt": "2026-07-21T21:07:49.858Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -15651,7 +16395,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:59:36.843Z",
+        "syncedAt": "2026-07-21T21:07:50.184Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -19098,7 +19842,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:59:45.459Z",
+        "syncedAt": "2026-07-21T21:07:55.408Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -20944,7 +21688,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:59:46.061Z",
+        "syncedAt": "2026-07-21T21:07:55.935Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -21599,7 +22343,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:59:50.556Z",
+        "syncedAt": "2026-07-21T21:08:00.056Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -22215,7 +22959,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:59:58.452Z",
+        "syncedAt": "2026-07-21T21:08:05.886Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -22981,7 +23725,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T14:59:58.941Z",
+        "syncedAt": "2026-07-21T21:08:06.266Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -25928,7 +26672,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T15:01:32.993Z",
+        "syncedAt": "2026-07-21T21:09:06.569Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -27046,7 +27790,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T15:01:40.611Z",
+        "syncedAt": "2026-07-21T21:09:13.764Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -27424,7 +28168,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T15:01:44.057Z",
+        "syncedAt": "2026-07-21T21:09:16.305Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -30231,7 +30975,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T15:03:48.097Z",
+        "syncedAt": "2026-07-21T21:10:34.195Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -30459,7 +31203,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T15:03:54.515Z",
+        "syncedAt": "2026-07-21T21:10:37.307Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -31224,7 +31968,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T15:04:03.836Z",
+        "syncedAt": "2026-07-21T21:10:42.860Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
