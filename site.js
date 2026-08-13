@@ -134,17 +134,18 @@ const fallbackGlyph = `
 const projectCopyEn = {
   syncnext: {
     categoryLabel: "Current Project",
-    summary: "A tvOS media runtime ecosystem shaped around long-running playback, content sources, plugin/API boundaries, networking rules, and support documentation.",
-    capability: "Uses the real constraints of Apple TV as a product boundary, organizing playback, external sources, plugin references, and support tooling into a maintainable system.",
+    summary: "A tvOS media runtime ecosystem shaped around long-running playback, native AVKit integration, content sources, plugin/API boundaries, and support documentation.",
+    capability: "Uses the real constraints of Apple TV as a product boundary, organizing playback, an AVKit bridge, external sources, plugin references, and support tooling into a maintainable system.",
     detail: {
-      thesis: "Syncnext is not just a player. It is a media runtime built around playback reliability and flexible content sources. The design question is where each boundary belongs: native app, external source, plugin, or documentation.",
+      thesis: "Syncnext is not just a player. It is a media runtime built around playback reliability and flexible content sources. The design question is where each boundary belongs: native app, playback bridge, external source, plugin, or documentation.",
       sections: [
         { title: "Product frame", body: "The system has to handle real devices, real playback sessions, and real maintenance cost. Playback stability, Apple TV focus, subscriptions, FAQ, release cadence, and support all belong to the product surface." },
-        { title: "Engineering frame", body: "The main app keeps playback and interaction stable, while the API, plugin reference, networking helper, and predecessor projects absorb volatility around external content sources." },
+        { title: "Engineering frame", body: "The main app keeps the product and interaction boundaries stable. The public SyncnextHybrid package isolates AetherEngine, the AVKit timeline, and audio analysis, while the API, plugin reference, and networking helper absorb volatility around external content sources." },
         { title: "Design frame", body: "The public story should present a small product ecosystem: not a feature checklist, but a maintained system with clear boundaries and explanations." },
       ],
       components: [
         { role: "Playback experience, Apple TV interaction, and product entry point." },
+        { role: "Isolates AetherEngine from the app while providing native AVKit presentation, independent audio analysis, and a physical-device validation boundary." },
         { role: "Owns metadata and external integration boundaries." },
         { role: "Describes the plugin protocol and extension model." },
         { role: "Keeps the product evolution readable." },
@@ -231,20 +232,20 @@ const projectCopyEn = {
   },
   "hln-machine": {
     categoryLabel: "Exploration",
-    summary: "A local AI short-video pipeline that turns a news seed into an observable, restartable, partially rerunnable generation workflow.",
+    summary: "A local-first, white-box AI video pipeline that turns a news source into a branded YouTube Short with scripting, speech, A/B-roll, word-level subtitles, and packaging.",
     capability: "Treats generative AI as engineering work: IR, checkpoints, dependency hashes, review points, and failure recovery matter more than a single prompt.",
     detail: {
       thesis: "HLN Machine explores a local AI video factory. It is not about one generated result, but about splitting generation into a white-box pipeline that can be inspected, rerun, and repaired.",
       sections: [
         { title: "Product frame", body: "Short-video generation looks like media automation, but the real work is workflow design: each intermediate state has to be understandable for the system to keep improving." },
-        { title: "Engineering frame", body: "The pipeline is organized around IR.json, checkpoints, dependency hashes, partial reruns, and human-reviewable intermediate states, so failures can be located instead of hidden." },
-        { title: "Design frame", body: "This is a lab for AI engineering judgement: transparent, diagnosable, and recoverable rather than packaged as a finished product." },
+        { title: "Engineering frame", body: "The public Python pipeline coordinates news scripting, speech, A/B-roll, word-level subtitles, branding, and optional YouTube upload. Design notes, module specs, and runbooks make intermediate state and failure location inspectable." },
+        { title: "Design frame", body: "This is not a turnkey model or content bundle. It is a public AI engineering lab: the code and architecture are readable, while credentials, model weights, private media, and machine-specific assets remain operator supplied." },
       ],
       components: [
-        { role: "Turns news or ideas into processable video seeds." },
-        { role: "Generates reviewable short-video text structure." },
-        { role: "Connects script structure to visual material." },
-        { role: "Supports restart, diagnosis, and partial repair." },
+        { role: "Fetches source material, builds editorial context, drafts the script, synthesizes speech, and generates subtitle timing." },
+        { role: "Selects B-roll references and coordinates ComfyUI image, video, and speech-to-video workflows." },
+        { role: "Renders word-level subtitles and applies brand assets." },
+        { role: "Prepares title, description, and cover, with an optional YouTube Data API upload step." },
       ],
     },
   },

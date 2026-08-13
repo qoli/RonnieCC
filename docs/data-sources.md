@@ -134,11 +134,12 @@ Ronnie 的舊職背景是 UI/UX Designer。這對網站定位很重要：網站�
 
 ### Syncnext
 
-Syncnext 不應該只被當成一個 app card。它是一個 media runtime ecosystem，包含 main app、public API/support repos、plugin reference、networking rules、userscript helper，以及舊 predecessor SyncPlaylist 的歷史脈絡。
+Syncnext 不應該只被當成一個 app card。它是一個 media runtime ecosystem，包含 main app、公開的 AVKit/AetherEngine integration boundary、public API/support repos、plugin reference、networking rules、userscript helper，以及舊 predecessor SyncPlaylist 的歷史脈絡。
 
 | Component | 類型 | 來源 | Visibility | 公開展示策略 |
 | --- | --- | --- | --- | --- |
 | Syncnext main app | tvOS app / main product | Notion、GitHub private | Private repo | 產品可公開展示；private app repo 不公開。 |
+| SyncnextHybrid | Swift playback bridge / AVKit integration | GitHub | Public / MIT | 可作 native playback boundary、audio analysis 和 physical-device validation 的主要公開工程證據。 |
 | Syncnext product page | product docs / support | Notion | Public/Notion visibility 待確認 | 可作產品敘事、docs、FAQ、changelog 來源。 |
 | syncnext-api | API / metadata support repo | GitHub | Public | 可作 ecosystem 和工程證據；不一定作首頁主 CTA。 |
 | syncnextPlugin | plugin protocol / reference implementation | GitHub | Public | 可作 plugin ecosystem 證據。 |
@@ -223,7 +224,8 @@ HLN Machine 是 local AI video factory，不是 app。它應該作為強 case st
 | --- | --- | --- | --- | --- |
 | HLN Machine Notion page | project narrative / system design | Notion | Private/Notion visibility 待確認 | 可提煉成公開 case study，不直接公開原頁。 |
 | HLN_Project | implementation repo | GitHub | Private | 內部證據，不公開 repo link。 |
-| pipeline A/B/C/D | workflow architecture | Notion、GitHub private | Internal source | 可公開抽象流程，不公開敏感實作細節。 |
+| HLN-Public | security-reviewed source snapshot | GitHub | Public / MIT | 公開展示 Python pipeline、architecture、module specs 與 runbooks；不可描述成包含模型與素材的 turnkey bundle。 |
+| pipeline A/B/C/D | workflow architecture | HLN-Public、Notion、GitHub private | Public snapshot + internal source | 可展示 news story、video、branding、upload 四段流程；憑證、模型權重、私有素材和 machine-specific assets 保持私有。 |
 | HLN linked essays | engineering writing | Notion | 待確認 | 可作 writing 或 case study 延伸來源。 |
 | resume positioning | selected project wording | Google Drive | Private source | 只作文案提煉，不公開 Drive link。 |
 
@@ -283,6 +285,7 @@ GitHub private repo 可以作為內部資料源。公開網站是否放 repo lin
 | Repo | Visibility | Language | 所屬 project / component | 公開展示策略 |
 | --- | --- | --- | --- | --- |
 | https://github.com/qoli/Syncnext | Private | Swift | Syncnext main app | 內部證據，不公開 repo link。 |
+| https://github.com/qoli/SyncnextHybrid | Public | Swift | Syncnext AVKit / AetherEngine bridge | 可公開作 playback architecture、audio analysis、maintenance SOP 和實機驗證證據。 |
 | https://github.com/qoli/syncnext-api | Public | JavaScript | Syncnext API | 可公開作技術補充。 |
 | https://github.com/qoli/syncnextPlugin | Public | JavaScript | Syncnext plugin | 可公開作 ecosystem 證據。 |
 | https://github.com/qoli/SyncnextClash | Public | Shell | Syncnext networking support | 可公開，但不一定首頁展示。 |
@@ -298,6 +301,7 @@ GitHub private repo 可以作為內部資料源。公開網站是否放 repo lin
 | https://github.com/qoli/TracklyPrompt | Private | 未標註 | Trackly prompt material | 內部 AI workflow 證據，不公開 repo link。 |
 | https://github.com/qoli/Trackly-icons | Private | Python | Trackly icon/tooling | 內部素材/tooling 證據，不公開 repo link。 |
 | https://github.com/qoli/HLN_Project | Private | Python | HLN Machine | 內部證據，不公開 repo link。 |
+| https://github.com/qoli/HLN-Public | Public | Python | HLN Machine public snapshot | 可公開，作為 white-box AI video pipeline、設計文檔、module specs 和 runbooks 的主要工程證據。 |
 | https://github.com/qoli/chatgpt-history | Public | Python | chatgpt-history | 可公開，作為 conversation analysis / project memory pipeline 的主要技術證據。 |
 
 ## 已確認的 Google Drive 來源

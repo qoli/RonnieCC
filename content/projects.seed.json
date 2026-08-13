@@ -5,8 +5,8 @@
     "category": "current",
     "categoryLabel": "現在",
     "type": "Media runtime ecosystem",
-    "summary": "tvOS 媒體 runtime 生態，圍繞長時間播放、內容來源、plugin/API、網路規則和支援文檔持續演進。",
-    "capability": "以 Apple TV 的真實限制為邊界，把播放器、外部來源、plugin reference 和 support tooling 整理成可維護的產品系統。",
+    "summary": "tvOS 媒體 runtime 生態，圍繞長時間播放、native AVKit 整合、內容來源、plugin/API 和支援文檔持續演進。",
+    "capability": "以 Apple TV 的真實限制為邊界，把播放器、AVKit bridge、外部來源、plugin reference 和 support tooling 整理成可維護的產品系統。",
     "tags": [
       "Apple Platforms",
       "Media Runtime",
@@ -15,7 +15,7 @@
     ],
     "status": "Active",
     "detail": {
-      "thesis": "Syncnext 不是單一播放器，而是一套圍繞播放可靠性和內容來源彈性的 media runtime。設計重點在於邊界：哪些留在 native app，哪些交給外部 source、plugin 和文檔承擔。",
+      "thesis": "Syncnext 不是單一播放器，而是一套圍繞播放可靠性和內容來源彈性的 media runtime。設計重點在於邊界：哪些留在 native app，哪些交給 playback bridge、外部 source、plugin 和文檔承擔。",
       "sections": [
         {
           "title": "Product frame",
@@ -23,7 +23,7 @@
         },
         {
           "title": "Engineering frame",
-          "body": "主 app 保持播放和互動的穩定邊界；API、plugin reference、networking helper 和 predecessor 則承擔高變動內容來源與擴展層。"
+          "body": "主 app 保持產品與互動邊界；公開的 SyncnextHybrid 隔離 AetherEngine、AVKit timeline 和音訊分析整合；API、plugin reference 與 networking helper 則承擔高變動內容來源和擴展層。"
         },
         {
           "title": "Design frame",
@@ -36,6 +36,12 @@
           "type": "tvOS / iOS app",
           "visibility": "Private source",
           "role": "播放體驗、Apple TV 互動和產品入口。"
+        },
+        {
+          "name": "SyncnextHybrid",
+          "type": "Swift playback bridge",
+          "visibility": "Public / MIT",
+          "role": "隔離 AetherEngine 與主 app，透過 native AVKit 呈現播放，並提供獨立音訊分析和實機驗證邊界。"
         },
         {
           "name": "syncnext-api",
@@ -58,11 +64,18 @@
       ],
       "proof": [
         "long-running tvOS runtime",
-        "native playback boundary",
+        "public AVKit / AetherEngine integration boundary",
+        "physical-device playback smoke contract",
         "API / plugin ecosystem",
         "support docs and changelog"
       ],
       "surfaces": [
+        {
+          "label": "SyncnextHybrid source",
+          "kind": "GitHub / MIT",
+          "href": "https://github.com/qoli/SyncnextHybrid",
+          "role": "Public Swift integration boundary for AetherEngine, native AVKit presentation, audio analysis, and physical-device playback validation."
+        },
         {
           "label": "Product documentation",
           "kind": "Notion",
@@ -90,6 +103,10 @@
       ]
     },
     "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/qoli/SyncnextHybrid"
+      },
       {
         "label": "Notion",
         "href": "https://www.notion.so/821b80378be241149fa5e9a1bbf6cfdc"
@@ -487,7 +504,7 @@
     "category": "exploration",
     "categoryLabel": "探索",
     "type": "Local AI video factory",
-    "summary": "本地 AI 短影片 pipeline，把新聞 seed 轉成可觀測、可重啟、可局部重跑的生成流程。",
+    "summary": "本地優先的白盒 AI 短影片 pipeline，把新聞來源轉成有腳本、語音、A/B-Roll、逐字字幕與品牌包裝的 YouTube Short。",
     "capability": "用工程方式處理生成式 AI：IR、checkpoint、依賴 hash、人工審查點和失敗恢復比單次 prompt 更重要。",
     "tags": [
       "AI Pipeline",
@@ -495,7 +512,7 @@
       "Media Automation",
       "White-box Engineering"
     ],
-    "status": "Exploration",
+    "status": "Exploration / Public repo",
     "detail": {
       "thesis": "HLN Machine 是 local AI video factory 的探索。它關注的不是一次生成結果，而是把生成過程拆成可以檢查、重跑和修復的 white-box pipeline。",
       "sections": [
@@ -505,46 +522,52 @@
         },
         {
           "title": "Engineering frame",
-          "body": "pipeline 圍繞 IR.json、checkpoint、dependency hash、partial rerun 和 human-reviewable intermediate states 組織，讓錯誤可以被定位而不是被掩蓋。"
+          "body": "公開的 Python pipeline 編排新聞腳本、語音、A/B-Roll、逐字字幕、品牌包裝與選用的 YouTube upload；設計文檔、module specs 和 runbooks 讓中間狀態與失敗位置可以被檢查。"
         },
         {
           "title": "Design frame",
-          "body": "這不是成熟產品包裝，而是一個展示 AI engineering judgment 的 lab：透明、可診斷、可恢復。"
+          "body": "這不是 turnkey 模型或內容包，而是一個公開 AI engineering lab：程式與架構可讀，憑證、模型權重、私有素材和 machine-specific assets 仍由 operator 自行提供。"
         }
       ],
       "components": [
         {
-          "name": "Seed intake",
-          "type": "Input stage",
-          "visibility": "Internal",
-          "role": "把新聞或想法轉成可處理的 video seed。"
+          "name": "News story pipeline",
+          "type": "Editorial / speech stage",
+          "visibility": "Public snapshot",
+          "role": "取得新聞材料、建立 editorial context、草擬腳本、生成語音與字幕時間。"
         },
         {
-          "name": "Script / subtitle pipeline",
-          "type": "Generation stage",
-          "visibility": "Internal",
-          "role": "生成可審查的短片文本結構。"
+          "name": "Video pipeline",
+          "type": "ComfyUI media stage",
+          "visibility": "Public snapshot",
+          "role": "選擇 B-Roll reference，並編排 image、video 與 speech-to-video workflow。"
         },
         {
-          "name": "B-Roll assembly",
-          "type": "Media stage",
-          "visibility": "Internal",
-          "role": "把腳本和視覺素材組織到同一流程。"
+          "name": "Branding pipeline",
+          "type": "Post-production stage",
+          "visibility": "Public snapshot",
+          "role": "繪製逐字字幕並套用品牌資產。"
         },
         {
-          "name": "Checkpoint system",
-          "type": "Observability",
-          "visibility": "Internal",
-          "role": "支援重啟、診斷和局部修復。"
+          "name": "Upload pipeline",
+          "type": "Distribution stage",
+          "visibility": "Public snapshot",
+          "role": "準備標題、描述與封面，並提供選用的 YouTube Data API 上傳步驟。"
         }
       ],
       "proof": [
-        "white-box AI pipeline",
-        "checkpoint and restart design",
-        "media automation",
-        "local-first experimentation"
+        "MIT-licensed Python pipeline snapshot",
+        "four-stage operational runbooks",
+        "module specifications and design notes",
+        "explicit public/private asset boundary"
       ],
       "surfaces": [
+        {
+          "label": "HLN Machine source",
+          "kind": "GitHub / MIT",
+          "href": "https://github.com/qoli/HLN-Public",
+          "role": "Security-reviewed public snapshot of the Python automation code, architecture, module specifications, and operational runbooks."
+        },
         {
           "label": "Notion notes",
           "kind": "Exploration",
@@ -560,6 +583,10 @@
       ]
     },
     "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/qoli/HLN-Public"
+      },
       {
         "label": "Notion",
         "href": "https://www.notion.so/2c2c1b36c401806a909dd06baad8815a"
