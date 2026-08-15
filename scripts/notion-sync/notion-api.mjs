@@ -1,5 +1,6 @@
 const NOTION_API = "https://www.notion.so/api/v3";
 const requestTimeoutMs = 120_000;
+const requestUserAgent = "RonnieCC-Notion-Sync/1.0";
 
 export function compactId(id) {
   return String(id || "").replaceAll("-", "").slice(-32);
@@ -16,6 +17,7 @@ async function fetchNotionData(resource, body, notionToken, headers = {}) {
     method: "POST",
     headers: {
       "content-type": "application/json",
+      "user-agent": requestUserAgent,
       ...(notionToken ? { cookie: `token_v2=${notionToken}` } : {}),
       ...headers,
     },

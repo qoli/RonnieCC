@@ -17,6 +17,7 @@ const siteUrl = "https://ronniewong.cc";
 const defaultPublishTarget = "ronniecc";
 const subsiteFieldNames = ["子站點", "子站点", "Subsites"];
 const assetDownloadTimeoutMs = 120_000;
+const notionRequestUserAgent = "RonnieCC-Notion-Sync/1.0";
 const fullSync =
   process.argv.includes("--full") ||
   process.argv.includes("--force") ||
@@ -169,6 +170,7 @@ async function signedFileUrl(source, blockId, notionToken) {
     method: "POST",
     headers: {
       "content-type": "application/json",
+      "user-agent": notionRequestUserAgent,
       ...(notionToken ? { cookie: `token_v2=${notionToken}` } : {}),
     },
     body: JSON.stringify({
