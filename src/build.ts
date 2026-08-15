@@ -653,9 +653,9 @@ function blockText(block: BlogBlock): string {
   return renderRichText(block.richText);
 }
 
-function renderBlogChildren(block: BlogBlock, rootPath: string, notionUrl: string): string {
+function renderBlogChildren(block: BlogBlock, rootPath: string, notionUrl: string, usedIds: Set<string>): string {
   if (!block.children?.length) return "";
-  return `<div class="blog-block-children">${renderBlogBlocks(block.children, rootPath, notionUrl)}</div>`;
+  return `<div class="blog-block-children">${renderBlogBlocks(block.children, rootPath, notionUrl, usedIds)}</div>`;
 }
 
 function youtubeEmbedUrl(source?: string): string {
@@ -779,17 +779,17 @@ function renderBlogTable(block: BlogBlock): string {
   `;
 }
 
-function renderBlogBlock(block: BlogBlock, rootPath: string, notionUrl: string): string {
+function renderBlogBlock(block: BlogBlock, rootPath: string, notionUrl: string, usedIds: Set<string>): string {
   const text = blockText(block);
-  const children = renderBlogChildren(block, rootPath, notionUrl);
+  const children = renderBlogChildren(block, rootPath, notionUrl, usedIds);
 
   switch (block.type) {
     case "header":
-      return text ? `<h2>${text}</h2>${children}` : children;
+      return text ? `<h2 id="${escapeAttr(uniqueHeadingId(block.plainText || "", usedIds))}">${text}</h2>${children}` : children;
     case "sub_header":
-      return text ? `<h3>${text}</h3>${children}` : children;
+      return text ? `<h3 id="${escapeAttr(uniqueHeadingId(block.plainText || "", usedIds))}">${text}</h3>${children}` : children;
     case "sub_sub_header":
-      return text ? `<h4>${text}</h4>${children}` : children;
+      return text ? `<h4 id="${escapeAttr(uniqueHeadingId(block.plainText || "", usedIds))}">${text}</h4>${children}` : children;
     case "quote":
       return text ? `<blockquote>${text}</blockquote>${children}` : children;
     case "code": {
@@ -825,7 +825,7 @@ function renderListRun(blocks: BlogBlock[], tag: "ul" | "ol", rootPath: string, 
   return `<${tag}>${items}</${tag}>`;
 }
 
-function renderBlogBlocks(blocks: BlogBlock[] = [], rootPath = "", notionUrl = ""): string {
+function renderBlogBlocks(blocks: BlogBlock[] = [], rootPath = "", notionUrl = "", usedIds: Set<string> = new Set()): string {
   const rendered: string[] = [];
 
   for (let index = 0; index < blocks.length; index += 1) {
@@ -840,7 +840,7 @@ function renderBlogBlocks(blocks: BlogBlock[] = [], rootPath = "", notionUrl = "
       index -= 1;
       rendered.push(renderListRun(run, type === "bulleted_list" ? "ul" : "ol", rootPath, notionUrl));
     } else {
-      rendered.push(renderBlogBlock(block, rootPath, notionUrl));
+      rendered.push(renderBlogBlock(block, rootPath, notionUrl, usedIds));
     }
   }
 
@@ -858,6 +858,32 @@ function formatBlogDate(value?: string): string {
 
   const [, year, month, day] = match;
   return `${year}/${Number(month)}/${Number(day)}`;
+}
+
+function blogPostDateKey(post: BlogPost): string {
+  const created = createdDateFromContent(post);
+  const raw = created ? created.replaceAll("/", "-") : post.writtenDate || "";
+  const match = raw.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+  if (match) return `${match[1]}-${match[2].padStart(2, "0")}-${match[3].padStart(2, "0")}`;
+  return `${post.year || "0000"}-00-00`;
+}
+
+function slugifyHeading(value: string): string {
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/[^\p{L}\p{N}_-]+/gu, "")
+    .replace(/-+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function uniqueHeadingId(value: string, used: Set<string>): string {
+  const base = slugifyHeading(value) || "section";
+  let id = base;
+  for (let suffix = 2; used.has(id); suffix += 1) id = `${base}-${suffix}`;
+  used.add(id);
+  return id;
 }
 
 function createdDateFromContent(post: BlogPost): string {
@@ -1028,7 +1054,30 @@ function renderBlogPage(source: string, posts: BlogPost[], locale: Locale): stri
   });
 }
 
-function blogArticleMain(post: BlogPost, language: Language, rootPath: string): string {
+function blogArticleNav(post: BlogPost, prevPost?: BlogPost, nextPost?: BlogPost): string {
+  const links = [
+    prevPost
+      ? `
+            <a class="blog-article-nav-link prev" href="../${encodeURIComponent(prevPost.slug)}/">
+              <span class="blog-article-nav-label">Previous</span>
+              <span class="blog-article-nav-title">${escapeHtml(prevPost.title)}</span>
+            </a>`
+      : "",
+    nextPost
+      ? `
+            <a class="blog-article-nav-link next" href="../${encodeURIComponent(nextPost.slug)}/">
+              <span class="blog-article-nav-label">Next</span>
+              <span class="blog-article-nav-title">${escapeHtml(nextPost.title)}</span>
+            </a>`
+      : "",
+  ].join("");
+
+  if (!links.trim()) return "";
+  return `<nav class="blog-article-nav" aria-label="Article navigation">${links}
+          </nav>`;
+}
+
+function blogArticleMain(post: BlogPost, language: Language, rootPath: string, prevPost?: BlogPost, nextPost?: BlogPost): string {
   const created = createdDateFromContent(post) || formatBlogDate(post.writtenDate) || post.year || "";
   const body = post.content?.blocks?.length
     ? renderBlogBlocks(post.content.blocks, rootPath, post.notionUrl)
@@ -1049,12 +1098,13 @@ function blogArticleMain(post: BlogPost, language: Language, rootPath: string): 
         <footer class="blog-source">
           <a href="${escapeAttr(post.notionUrl)}" target="_blank" rel="noreferrer">Original Notion note</a>
         </footer>
+        ${blogArticleNav(post, prevPost, nextPost)}
       </div>
     </article>
   </main>`;
 }
 
-function renderBlogPostPage(source: string, post: BlogPost, locale: Locale): string {
+function renderBlogPostPage(source: string, post: BlogPost, locale: Locale, prevPost?: BlogPost, nextPost?: BlogPost): string {
   const path = `blog/${encodeURIComponent(post.slug)}/`;
   const rootPath = locale.language === "en" ? "../../../" : "../../";
   const altUrl = locale.language === "en" ? `../../../blog/${encodeURIComponent(post.slug)}/` : `../../en/blog/${encodeURIComponent(post.slug)}/`;
@@ -1064,7 +1114,7 @@ function renderBlogPostPage(source: string, post: BlogPost, locale: Locale): str
       '<body data-page="blog">',
       `<body data-page="blog-article" data-static-language="${locale.language}" data-root-path="${rootPath}">`
     )
-    .replace(/<main>[\s\S]*?<\/main>/, blogArticleMain(post, locale.language, rootPath));
+    .replace(/<main>[\s\S]*?<\/main>/, blogArticleMain(post, locale.language, rootPath, prevPost, nextPost));
 
   html = setLanguageToggle(html, locale.language, altUrl);
   html = applySeo(html, {
@@ -1198,7 +1248,11 @@ async function build(): Promise<void> {
   const indexDescription = "This site is a public index of my projects, writings, experiments, and external traces across the web.";
   const resumeDescription = "Resume page in Ronnie Wong's public index, summarizing the background behind the projects, writings, experiments, and external traces across the web.";
 
-  for (const language of Object.keys(locales) as Language[]) {
+    const orderedPosts = [...blogData.posts.filter((item) => item.public !== false)].sort((a, b) =>
+      blogPostDateKey(b).localeCompare(blogPostDateKey(a))
+    );
+
+    for (const language of Object.keys(locales) as Language[]) {
     const locale = locales[language];
     const projectsForLocale = localizedProjects(projects, language, projectCopyEn);
 
@@ -1215,8 +1269,11 @@ async function build(): Promise<void> {
       await writeOutput(`${locale.outputPrefix}projects/${project.id}/index.html`, renderProjectPage(projectHtml, project, projectsForLocale, locale));
     }
 
-    for (const post of blogData.posts.filter((item) => item.public !== false)) {
-      await writeOutput(`${locale.outputPrefix}blog/${post.slug}/index.html`, renderBlogPostPage(blogHtml, post, locale));
+    for (let index = 0; index < orderedPosts.length; index += 1) {
+      const post = orderedPosts[index];
+      const prevPost = orderedPosts[index + 1];
+      const nextPost = orderedPosts[index - 1];
+      await writeOutput(`${locale.outputPrefix}blog/${post.slug}/index.html`, renderBlogPostPage(blogHtml, post, locale, prevPost, nextPost));
       for (const legacySlug of post.legacySlugs || []) {
         if (legacySlug && legacySlug !== post.slug) {
           await writeOutput(`${locale.outputPrefix}blog/${legacySlug}/index.html`, renderRedirectPage(blogPostCanonical(post, locale.language), post.title));
