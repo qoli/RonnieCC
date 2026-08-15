@@ -573,7 +573,7 @@ html[data-theme="dark"] .theme-toggle span::after {
 }
 
 .hero-text,
-.page-hero p:not(.eyebrow),
+.page-hero p:not(.eyebrow):not(.blog-article-meta),
 .archive-copy p {
   max-width: 760px;
   margin-top: 24px;
@@ -752,7 +752,7 @@ html[data-theme="dark"] .theme-toggle span::after {
   margin-bottom: clamp(28px, 4vw, 46px);
 }
 
-.page-hero.compact p:not(.eyebrow) {
+.page-hero.compact p:not(.eyebrow):not(.blog-article-meta) {
   max-width: 680px;
   margin-top: clamp(34px, 5vw, 58px);
   color: var(--olive);
@@ -854,20 +854,22 @@ html[data-theme="dark"] .theme-toggle span::after {
 
 .page-hero.compact.blog-article-hero .eyebrow {
   margin-bottom: clamp(16px, 2.4vw, 24px);
+  color: color-mix(in srgb, var(--stone) 72%, var(--parchment));
 }
 
-.blog-article-hero p:not(.eyebrow) {
+.blog-article-meta {
   max-width: 760px;
   margin-top: clamp(20px, 3vw, 28px);
-  color: color-mix(in srgb, var(--stone) 72%, var(--olive));
+  color: color-mix(in srgb, var(--stone) 68%, var(--parchment));
   font-family: var(--mono);
-  font-size: clamp(12px, 1.4vw, 15px);
-  font-weight: 600;
+  font-size: clamp(11px, 1.2vw, 13px);
+  font-weight: 500;
   letter-spacing: 0.08em;
+  line-height: 1.6;
   text-transform: uppercase;
 }
 
-.blog-article-hero p:not(.eyebrow) + p:not(.eyebrow) {
+.blog-article-meta + .blog-article-meta {
   margin-top: 6px;
 }
 
@@ -885,7 +887,7 @@ html[data-theme="dark"] .theme-toggle span::after {
 .blog-prose h4 {
   max-width: 820px;
   color: var(--near-black);
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.22;
   scroll-margin-top: 24px;
@@ -911,7 +913,7 @@ html[data-theme="dark"] .theme-toggle span::after {
 .blog-prose li,
 .blog-prose blockquote,
 .blog-media-fallback figcaption {
-  color: var(--olive);
+  color: color-mix(in srgb, var(--olive) 45%, var(--near-black));
   font-size: clamp(18px, 2vw, 22px);
   font-weight: 200;
   line-height: 1.8;
@@ -1070,7 +1072,7 @@ html[data-theme="dark"] .theme-toggle span::after {
 }
 
 .blog-media figcaption {
-  color: color-mix(in srgb, var(--stone) 82%, var(--olive));
+  color: color-mix(in srgb, var(--stone) 72%, var(--parchment));
   font-family: var(--mono);
   font-size: 11px;
   font-weight: 600;
@@ -1086,7 +1088,7 @@ html[data-theme="dark"] .theme-toggle span::after {
 
 .blog-media-fallback > div,
 .blog-source a {
-  color: var(--stone);
+  color: color-mix(in srgb, var(--stone) 82%, var(--parchment));
   font-family: var(--mono);
   font-size: 11px;
   font-weight: 700;
@@ -1846,8 +1848,8 @@ blockquote {
   width: var(--page);
   margin: 0 auto;
   padding: clamp(48px, 7vw, 78px) 0 28px;
-  color: var(--stone);
-  font-size: 14px;
+  color: color-mix(in srgb, var(--stone) 72%, var(--parchment));
+  font-size: 12px;
 }
 
 .footer-links {
@@ -2052,7 +2054,7 @@ blockquote {
   }
 
   .hero-text,
-  .page-hero p,
+  .page-hero p:not(.blog-article-meta),
   .archive-copy p {
     font-size: 20px;
   }
