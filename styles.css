@@ -1161,15 +1161,25 @@ html[data-theme="dark"] .theme-toggle span::after {
 }
 
 .blog-article-nav-title {
-  color: var(--brand);
+  color: var(--near-black);
   font-family: var(--serif);
-  font-size: clamp(17px, 2vw, 20px);
-  line-height: 1.4;
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 400;
+  line-height: 1.45;
   overflow-wrap: anywhere;
+  transition: color 160ms ease;
+}
+
+.blog-article-nav-link.prev .blog-article-nav-label::before {
+  content: "←\00a0";
+}
+
+.blog-article-nav-link.next .blog-article-nav-label::after {
+  content: "\00a0→";
 }
 
 .blog-article-nav-link:hover .blog-article-nav-title {
-  color: var(--brand-light);
+  color: var(--brand);
 }
 
 .section-header {
