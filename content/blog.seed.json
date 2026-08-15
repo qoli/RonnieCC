@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-07-21T21:11:19.951Z",
+  "generatedAt": "2026-08-15T12:51:56.939Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,1648 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "3bdc1b36c40181468c75cc2ae69c2709",
+      "slug": "ai-game-agent-three-line-runtime-3bdc1b36",
+      "seoSlug": "ai-game-agent-three-line-runtime",
+      "legacySlugs": [
+        "怎麼教會-ai-玩遊戲-windowsagent-的三線架構-3bdc1b36"
+      ],
+      "title": "怎麼教會 AI 玩遊戲？WindowsAgent 的三線架構",
+      "tag": "AI,LLM,Windows,Automation,Design,Notes",
+      "writtenDate": "2026-08-15",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/ai-game-agent-three-line-runtime-3bdc1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/%E6%80%8E%E9%BA%BC%E6%95%99%E6%9C%83-ai-%E7%8E%A9%E9%81%8A%E6%88%B2-windowsagent-%E7%9A%84%E4%B8%89%E7%B7%9A%E6%9E%B6%E6%A7%8B-3bdc1b36c40181468c75cc2ae69c2709?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-08-15T11:48:06.660Z",
+      "lastEditedTime": "2026-08-15T12:43:46.007Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-08-15T12:47:43.907Z",
+        "blocks": [
+          {
+            "id": "9fb8cdc0b75b4837915376c9cae023f9",
+            "type": "text",
+            "richText": [
+              {
+                "text": "把一張遊戲截圖交給 AI，它通常能認出飛船、HUD 和文字提示。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "把一張遊戲截圖交給 AI，它通常能認出飛船、HUD 和文字提示。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4387a9908564474aa607296099a0ffc2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但如果下一句是：「現在請你飛到另一個星系，再找一座空間站停靠。」看得懂畫面，立刻就不等於會玩遊戲。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但如果下一句是：「現在請你飛到另一個星系，再找一座空間站停靠。」看得懂畫面，立刻就不等於會玩遊戲。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b0c951f97b0a4267a921275174c8448c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "它要知道飛船是否仍被限制、當前速度是否真的歸零、目標在前方還是後方、跳躍引擎有沒有完成充能。任何一步看錯，後面的操作都可能失去前提。更危險的是，AI 很容易把「按鍵已經送出」理解成「飛船已經完成了動作」。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "它要知道飛船是否仍被限制、當前速度是否真的歸零、目標在前方還是後方、跳躍引擎有沒有完成充能。任何一步看錯，後面的操作都可能失去前提。更危險的是，AI 很容易把「按鍵已經送出」理解成「飛船已經完成了動作」。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c7adf55dfe91459e891cfbb3c17aff3f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我做 WindowsAgent，最初並不是想再寫一套《Elite Dangerous》的自動化腳本。我真正想知道的是：能不能讓高階 AI 理解自己已經掌握哪些遊戲能力，發現缺少甚麼，再為自己開發一個可以被調用、驗證和修復的新技能？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我做 WindowsAgent，最初並不是想再寫一套《Elite Dangerous》的自動化腳本。我真正想知道的是：能不能讓高階 AI 理解自己已經掌握哪些遊戲能力，發現缺少甚麼，再為自己開發一個可以被調用、驗證和修復的新技能？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c451a1693f064b50b5ccfea72c9e918b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在這套系統裡，Action 是 AI 可以使用的遊戲技能；Gate 是一個操作前必須被當前證據證明的條件；Streaming Action 則是在有限時間內反覆觀察、操作和驗證的控制流程。Evidence 是與推理分離保存的原始畫面與事件，讓每個結論之後仍然可以被追問。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在這套系統裡，Action 是 AI 可以使用的遊戲技能；Gate 是一個操作前必須被當前證據證明的條件；Streaming Action 則是在有限時間內反覆觀察、操作和驗證的控制流程。Evidence 是與推理分離保存的原始畫面與事件，讓每個結論之後仍然可以被追問。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b229a04477774d53b08fbda9b9fe4ee4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Runtime 的責任，是讓這些能力在 Windows 已登入的互動工作階段中被找到、驗證和執行。這篇文章記錄的不是 ED 掛機方法，也不是一鍵遊戲助手，而是 WindowsAgent 在 2026 年逐步形成的一個工程判斷：高階 AI 可以負責目標、規劃和技能開發，但不應該直接控制每一幀。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Runtime 的責任，是讓這些能力在 Windows 已登入的互動工作階段中被找到、驗證和執行。這篇文章記錄的不是 ED 掛機方法，也不是一鍵遊戲助手，而是 WindowsAgent 在 2026 年逐步形成的一個工程判斷：高階 AI 可以負責目標、規劃和技能開發，但不應該直接控制每一幀。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3bdc1b36c40181ebbde7cbb34c4e984a",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "ED 實機與 WindowsAgent Live：遊戲畫面、Action 狀態和事件記錄同時可見。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:bc293801-71c4-4a74-9d79-5fc6358687e1:windowsagent-ed-live-runtime.jpg",
+            "assetPath": "content/blog-assets/3bdc1b36c40181468c75cc2ae69c2709/3bdc1b36c40181ebbde7cbb34c4e984a-windowsagent-ed-live-runtime.jpg",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "96e5fa1514394cb9b0b97adc98594486",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "第一個低收益方向：每一幀都問模型",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第一個低收益方向：每一幀都問模型",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d98ee117342d4e3d8c8c8a9ed489349e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "最直覺的 AI 遊戲方案，是不斷截圖，把畫面交給視覺模型，再讓模型決定下一個按鍵。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "最直覺的 AI 遊戲方案，是不斷截圖，把畫面交給視覺模型，再讓模型決定下一個按鍵。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4371bda97eb440c79908b927a318af86",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個方式做展示很直接，但一進入實時控制就會出現問題。一次截圖、傳輸、排隊、推理和回傳，可能已經跨過遊戲裡真正需要反應的時間窗口。即使平均延遲下降，網絡抖動、服務排隊和偶發中斷仍然沒有硬上限。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個方式做展示很直接，但一進入實時控制就會出現問題。一次截圖、傳輸、排隊、推理和回傳，可能已經跨過遊戲裡真正需要反應的時間窗口。即使平均延遲下降，網絡抖動、服務排隊和偶發中斷仍然沒有硬上限。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e3d5c0015d8d40a1b23c3ab1ca1b20ff",
+            "type": "text",
+            "richText": [
+              {
+                "text": "成本也不只是等待。每一幀重新推理，代表每一次都重新解釋遊戲狀態；模型的上一個判斷未必能成為下一個判斷的可靠契約。它可以在語言上說得很完整，卻沒有義務證明按鍵之後的遊戲狀態真的改變了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "成本也不只是等待。每一幀重新推理，代表每一次都重新解釋遊戲狀態；模型的上一個判斷未必能成為下一個判斷的可靠契約。它可以在語言上說得很完整，卻沒有義務證明按鍵之後的遊戲狀態真的改變了。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5603149b6c544e00af134e37d20c31bd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我後來才意識到，問題並不是應該換哪個更快的模型，而是我把三種不同時鐘、不同失敗後果和不同可信度的工作放進了同一條線。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我後來才意識到，問題並不是應該換哪個更快的模型，而是我把三種不同時鐘、不同失敗後果和不同可信度的工作放進了同一條線。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2f77227cfafe4f32891d10a00e7a4685",
+            "type": "text",
+            "richText": [
+              {
+                "text": "飛船姿態和油門控制按數十至數百毫秒計算；證據記錄與事件索引按秒計算；高階模型的規劃、開發和覆盤則按秒至分鐘計算。速度只是表面，真正需要拆開的是責任。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "飛船姿態和油門控制按數十至數百毫秒計算；證據記錄與事件索引按秒計算；高階模型的規劃、開發和覆盤則按秒至分鐘計算。速度只是表面，真正需要拆開的是責任。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "890706c733f242fea98d2f5f75613436",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "快線：讓 Action 負責有截止時間的反射",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "快線：讓 Action 負責有截止時間的反射",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "87bcfdfb7b0a47c6abb9287b2d0afc77",
+            "type": "text",
+            "richText": [
+              {
+                "text": "WindowsAgent 的第一條線是快速反射。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "WindowsAgent 的第一條線是快速反射。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a87a592e64a44ceda9b32d124f8c3907",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Streaming Action 會在一個有界迴圈裡觀察、檢查 Gate、發出短促按鍵、記錄事件，再驗證新的畫面。它不等待高階模型逐幀決策，也不能在證據不足時擴大自己的權限。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Streaming Action 會在一個有界迴圈裡觀察、檢查 Gate、發出短促按鍵、記錄事件，再驗證新的畫面。它不等待高階模型逐幀決策，也不能在證據不足時擴大自己的權限。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "99d9e739ab474c55b0678d6dbda339d5",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這條線的控制責任很具體：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這條線的控制責任很具體：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9a63384091c74221bd8b1994cc173f96",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "每個 Action 都有時間和樣本上限；",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "每個 Action 都有時間和樣本上限；",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d6c9783187594b2192b2e727ff0c5129",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "觀察不清楚時回傳 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "UNKNOWN",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，而不是沿用上一幀；",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "觀察不清楚時回傳 UNKNOWN，而不是沿用上一幀；",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f4f0a8a40cce4fa48f15ed81d97cf514",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "控制失敗時可以中斷，必要時執行油門歸零等補償；",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "控制失敗時可以中斷，必要時執行油門歸零等補償；",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ee37625a1f2642ac9352368e6a445642",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "發出指令與觀察到結果是兩件不同的事。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "發出指令與觀察到結果是兩件不同的事。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7d30bac115db4ddbab4923881d1e6556",
+            "type": "text",
+            "richText": [
+              {
+                "text": "ED 的離站流程提供了一個足夠具體的例子：系統先用當前 HUD 的視覺速度狀態證明飛船真的開始移動，再等待限制飛行的狀態解除；最後即使已經送出零油門，也仍要從後續畫面連續確認速度確實歸零，才把 Action 標記為完成。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "ED 的離站流程提供了一個足夠具體的例子：系統先用當前 HUD 的視覺速度狀態證明飛船真的開始移動，再等待限制飛行的狀態解除；最後即使已經送出零油門，也仍要從後續畫面連續確認速度確實歸零，才把 Action 標記為完成。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cf423bc0c394175bb63bb80b598a51e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這裡真正被驗證的不是某個按鍵，而是一條狀態轉移：指令送出，遊戲產生新狀態，事後條件成立。少了最後一步，系統只能證明自己做過甚麼，不能證明遊戲發生了甚麼。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這裡真正被驗證的不是某個按鍵，而是一條狀態轉移：指令送出，遊戲產生新狀態，事後條件成立。少了最後一步，系統只能證明自己做過甚麼，不能證明遊戲發生了甚麼。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "dc7dd2ca1d0a47f0a02c30170560c316",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "索引線：模型可以幫忙找，但證據不能由模型發明",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "索引線：模型可以幫忙找，但證據不能由模型發明",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6f14dcf308ad485592b80cbb3139ba42",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第二條線負責記錄和定位。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第二條線負責記錄和定位。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d9083e4a2745436bb4266bd7fc51e53d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Event Journal 是一份只追加的事件紀錄，保存 Action 的開始、階段、子 Action、失敗和完成。Evidence Recorder 則以低幀率保留實際畫面，讓一次長航程之後仍然可以回到當時的視覺證據。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Event Journal 是一份只追加的事件紀錄，保存 Action 的開始、階段、子 Action、失敗和完成。Evidence Recorder 則以低幀率保留實際畫面，讓一次長航程之後仍然可以回到當時的視覺證據。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "40f621601c374a66aeaa63067b17db1a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Visual Log 可以讓小型視覺模型為畫面寫下時間索引，幫助高階 AI 從一段長錄影裡先找到值得檢查的區間。但這些描述只是不可信的索引，不能替代原始 Evidence。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Visual Log 可以讓小型視覺模型為畫面寫下時間索引，幫助高階 AI 從一段長錄影裡先找到值得檢查的區間。但這些描述只是不可信的索引，不能替代原始 Evidence。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5e54d49a175a4af389dcf1190fc896d1",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個邊界來自一次實際除錯：遊戲畫面已經進入正確頁面，但按鈕分類器回傳 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "UNKNOWN",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，整段流程因此停下。系統沒有偷偷換一種識別方式，也沒有把「頁面存在」推論成「按鈕可以操作」。高階 AI 根據事件時間找到對應畫面，再檢查 OCR 區域和分類條件，修正擁有這項能力的 Action，然後重新執行。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個邊界來自一次實際除錯：遊戲畫面已經進入正確頁面，但按鈕分類器回傳 UNKNOWN，整段流程因此停下。系統沒有偷偷換一種識別方式，也沒有把「頁面存在」推論成「按鈕可以操作」。高階 AI 根據事件時間找到對應畫面，再檢查 OCR 區域和分類條件，修正擁有這項能力的 Action，然後重新執行。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3bdc1b36c4018106ae08c7b94cb9de4f",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "Evidence 回放讓 AI 定位失敗畫面，檢查分類器為甚麼回傳 UNKNOWN。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:a27284b1-2e18-4114-8284-6263b6484494:windowsagent-ed-evidence-debug.jpg",
+            "assetPath": "content/blog-assets/3bdc1b36c40181468c75cc2ae69c2709/3bdc1b36c4018106ae08c7b94cb9de4f-windowsagent-ed-evidence-debug.jpg",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a9fbc2f7bc8a48299637324a78215e94",
+            "type": "text",
+            "richText": [
+              {
+                "text": "索引線的價值不是讓模型替系統下結論，而是讓模型知道應該回去哪一段證據提問。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "索引線的價值不是讓模型替系統下結論，而是讓模型知道應該回去哪一段證據提問。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "808a9be4ed3b42e0a0468be3cdf5b5e7",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "慢線：高階 AI 是玩家，也是技能開發者",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "慢線：高階 AI 是玩家，也是技能開發者",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6b37bc2576f54dbeb9302c2c39c95dd6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第三條線才是高階智能。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第三條線才是高階智能。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ebc40ef87cba47a5b7663c860fe0607b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "高階 Agent 可以先取得當前畫面與前景遊戲身分，再讀取該遊戲的 Rule——一個保存遊戲指引、Action 與 Runtime 宣告的插件目錄。已有能力足夠時，它調用 Action；證據暴露能力缺口時，它回到擁有該技能的 package（Action 的實作套件），修改實作、驗證契約，再同步更新 Rule。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "高階 Agent 可以先取得當前畫面與前景遊戲身分，再讀取該遊戲的 Rule——一個保存遊戲指引、Action 與 Runtime 宣告的插件目錄。已有能力足夠時，它調用 Action；證據暴露能力缺口時，它回到擁有該技能的 package（Action 的實作套件），修改實作、驗證契約，再同步更新 Rule。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b4ca1b832df54c02be27f4a4f5c9ddce",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這讓高階 AI 的角色不只是一個遠端駕駛員。它一邊使用技能玩遊戲，一邊開發讓自己可以繼續玩下去的技能。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這讓高階 AI 的角色不只是一個遠端駕駛員。它一邊使用技能玩遊戲，一邊開發讓自己可以繼續玩下去的技能。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8459992e228441bc95d1f859ad50f12f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "目前 ED Rule 已拆出 100 個 Action。這個數字不是功能清單，而是一個壓力測試：當技能從讀取一個 HUD 狀態，擴大到選單操作、姿態控制與多階段航行時，Runtime 能否仍然讓每項能力保有自己的契約、失敗語義和證據？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "目前 ED Rule 已拆出 100 個 Action。這個數字不是功能清單，而是一個壓力測試：當技能從讀取一個 HUD 狀態，擴大到選單操作、姿態控制與多階段航行時，Runtime 能否仍然讓每項能力保有自己的契約、失敗語義和證據？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3bdc1b36c40181189e95d3491f71a616",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "Action OSD 會在遊戲畫面上顯示當前 Action、階段與證據 Gate。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:05fe17fe-6788-4a6b-b90d-c189211e8e7f:windowsagent-ed-action-osd.jpg",
+            "assetPath": "content/blog-assets/3bdc1b36c40181468c75cc2ae69c2709/3bdc1b36c40181189e95d3491f71a616-windowsagent-ed-action-osd.jpg",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "75968995a2b14c74911248e4578e333c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這也是「技能樹」比「宏」更準確的原因。宏只記得應該依序做甚麼；Action 還必須知道自己何時有權執行、如何證明完成，以及失敗後把控制權交給誰。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這也是「技能樹」比「宏」更準確的原因。宏只記得應該依序做甚麼；Action 還必須知道自己何時有權執行、如何證明完成，以及失敗後把控制權交給誰。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2cd34af9dd114e1a97189b67c63944ea",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "三條線不是三個模組，而是三種責任",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "三條線不是三個模組，而是三種責任",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "36d5b6a1960b4c6a9fec1aab1a0963ec",
+            "type": "text",
+            "richText": [
+              {
+                "text": "把架構畫成三條線，很容易被理解成單純的性能分層：快的放本地，慢的放雲端。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "把架構畫成三條線，很容易被理解成單純的性能分層：快的放本地，慢的放雲端。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "74e264cebb0d41d78f980e68241fbe12",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但 WindowsAgent 的判斷更接近控制系統的責任分離：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但 WindowsAgent 的判斷更接近控制系統的責任分離：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "95fad3d336374c7b9fa57e89fe3b8bd2",
+            "type": "table",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [
+              "QHAk",
+              "wSSc",
+              "ZG<=",
+              "[JSW"
+            ],
+            "tableHasColumnHeader": true,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "90df52a3795c4287ac6af1fa0c336bb5",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "QHAk": [
+                    {
+                      "text": "線路",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "ZG<=": [
+                    {
+                      "text": "時間尺度",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "[JSW": [
+                    {
+                      "text": "可信度邊界",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "wSSc": [
+                    {
+                      "text": "主要責任",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "c50403d594d048beb91f4c7630d17cae",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "QHAk": [
+                    {
+                      "text": "快線",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "ZG<=": [
+                    {
+                      "text": "數十至數百毫秒",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "[JSW": [
+                    {
+                      "text": "只接受當前證據與明確狀態",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "wSSc": [
+                    {
+                      "text": "觀察、Gate、控制、補償",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "8d4503ebcc57443da2f8246598921b43",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "QHAk": [
+                    {
+                      "text": "索引線",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "ZG<=": [
+                    {
+                      "text": "約秒級",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "[JSW": [
+                    {
+                      "text": "索引可以不完整，原始 Evidence 才是權威",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "wSSc": [
+                    {
+                      "text": "錄製、事件、定位失敗區間",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "5ba5edae7802494ba056c52ee61f7649",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "QHAk": [
+                    {
+                      "text": "慢線",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "ZG<=": [
+                    {
+                      "text": "秒至分鐘",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "[JSW": [
+                    {
+                      "text": "可以推理，但不能捏造即時控制結果",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "wSSc": [
+                    {
+                      "text": "規劃、開發、覆盤、修復",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "4d471a60078a4e6898ca9c8bb30ef5d2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "高階 AI 可以決定飛船應該做甚麼，也可以開發完成目標所需的能力；但它不親自決定每一個短促按鍵脈衝。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "高階 AI 可以決定飛船應該做甚麼，也可以開發完成目標所需的能力；但它不親自決定每一個短促按鍵脈衝。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3bdc1b36c40181838fabfe3264d2dda5",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "從平板監督高階 AI：它負責規劃目標，再調用已學會的 Action。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:dd7af276-8899-42ee-af3d-beb3a3c0057d:windowsagent-ed-tablet-agent.jpg",
+            "assetPath": "content/blog-assets/3bdc1b36c40181468c75cc2ae69c2709/3bdc1b36c40181838fabfe3264d2dda5-windowsagent-ed-tablet-agent.jpg",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7deaec479dae4654b10b5b60c6ee90bc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "反過來，快線也不能偷偷取得高階決策權。Action 只能在自身 schema、Rule 和 Gate 允許的範圍內操作；遇到未定義的畫面或基礎設施故障，必須明確失敗，而不是換模型、換資料來源或猜一條替代路徑。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "反過來，快線也不能偷偷取得高階決策權。Action 只能在自身 schema、Rule 和 Gate 允許的範圍內操作；遇到未定義的畫面或基礎設施故障，必須明確失敗，而不是換模型、換資料來源或猜一條替代路徑。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "429c56938c524c90a2dae348f40bbab3",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "為甚麼模型再快，三線架構仍然成立",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "為甚麼模型再快，三線架構仍然成立",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ed02802a1faa4267851bffa1ae9227b9",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這套分層不是建立在「2026 年的模型很慢」這個短期條件上。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這套分層不是建立在「2026 年的模型很慢」這個短期條件上。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6b34893e94234e3eb0a5d686e3bb3318",
+            "type": "text",
+            "richText": [
+              {
+                "text": "雲端模型的推理速度可以繼續提高，但網絡往返、排隊、抖動和服務中斷無法被模型算力消除。平均延遲再低，也不等於每次請求都有可承諾的截止時間。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "雲端模型的推理速度可以繼續提高，但網絡往返、排隊、抖動和服務中斷無法被模型算力消除。平均延遲再低，也不等於每次請求都有可承諾的截止時間。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d8887627de03442dbadb486eeafd3f69",
+            "type": "text",
+            "richText": [
+              {
+                "text": "即使把高階模型搬到本地，推理仍然可能耗時、隨機，並且需要處理上下文。部署位置可以改變延遲，卻不會自動改變責任：高階推理適合決定目標、理解例外、開發技能，不適合成為每一次方向修正和按鍵釋放的唯一安全邊界。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "即使把高階模型搬到本地，推理仍然可能耗時、隨機，並且需要處理上下文。部署位置可以改變延遲，卻不會自動改變責任：高階推理適合決定目標、理解例外、開發技能，不適合成為每一次方向修正和按鍵釋放的唯一安全邊界。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "33e2605a398d487bbbc54542378d8837",
+            "type": "text",
+            "richText": [
+              {
+                "text": "因此三線架構的價值不是省下幾秒，而是讓每種智能只承擔自己能夠證明的責任：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "因此三線架構的價值不是省下幾秒，而是讓每種智能只承擔自己能夠證明的責任：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "740ea5aaab00493a9a977c5023177c8a",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "模型負責意圖和新能力；",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "模型負責意圖和新能力；",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b1878c27fcbf4e3a85ad631e1c82c6a1",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Action 負責有截止時間的反射；",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Action 負責有截止時間的反射；",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "24408a3007a54adebbb2df5c70dd8071",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Evidence 負責讓結果可以被追問和重建。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Evidence 負責讓結果可以被追問和重建。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3b442617ffa643aaa5a3f5df9a1980c5",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "這次留下的工程準則",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這次留下的工程準則",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "10a5b935733e48e0a5e4ba176f48e5b3",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "按時鐘、後果和可信度分層，不要只按技術名稱分模組。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "按時鐘、後果和可信度分層，不要只按技術名稱分模組。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "089f2c0a37e449dc8caa0ce9e9c59eac",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "高階模型擁有目標，不直接擁有每一個控制脈衝。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "高階模型擁有目標，不直接擁有每一個控制脈衝。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c0be7c59d9cd47f985c2d839c3779637",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "指令成功與事後條件必須分開記錄。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "指令成功與事後條件必須分開記錄。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0224260ec9204ae79f28cb2df5f5b5c9",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "UNKNOWN",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是有效結果，不是等待被猜測填滿的空格。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "UNKNOWN 是有效結果，不是等待被猜測填滿的空格。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "cb7a2c6986c54326b8c97906c0d52063",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "視覺模型可以做索引，但索引不能升格成權威證據。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "視覺模型可以做索引，但索引不能升格成權威證據。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0d613b9c75724358a70a1e5e11730b07",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "能力出錯時，修復擁有它的 Action，不要在上層 prompt 裡偷偷繞路。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "能力出錯時，修復擁有它的 Action，不要在上層 prompt 裡偷偷繞路。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "708bf9900ded4da5ae39362a454524de",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "一個可重用技能必須能被驗證、停止、回放和修復。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "一個可重用技能必須能被驗證、停止、回放和修復。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1ec138861af444dab0892b01fb4b6611",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "下一個問題：技能樹愈大，如何仍然證明它是對的？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "下一個問題：技能樹愈大，如何仍然證明它是對的？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "650c3f6ff87647af8a60bc5595b1fb13",
+            "type": "text",
+            "richText": [
+              {
+                "text": "三線架構解決了不同時間尺度上的責任分離，卻沒有自動解決能力規模擴張後的治理問題。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "三線架構解決了不同時間尺度上的責任分離，卻沒有自動解決能力規模擴張後的治理問題。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0127c472c7ab43c7a32a291a615b763e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "當 ED Rule 增長到 100 個 Action，一個底層輸出、schema 或失敗語義的改動，可能同時影響多個上層工作流。新增一項技能已經不是最難的部分；更難的是證明它沒有改壞父 Action 的前提，也沒有把原本明確的失敗變成另一條隱藏路徑。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "當 ED Rule 增長到 100 個 Action，一個底層輸出、schema 或失敗語義的改動，可能同時影響多個上層工作流。新增一項技能已經不是最難的部分；更難的是證明它沒有改壞父 Action 的前提，也沒有把原本明確的失敗變成另一條隱藏路徑。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5558db7ba008432681a7f306ebb737cc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "所以下一步不只是讓 AI 學會更多遊戲動作，而是讓整棵技能樹都能被靜態檢查、黑盒驗收和真實 Windows 執行證據共同約束。高階 AI 可以參與修復，但它提出的每一次修改仍要回到相同問題：輸入是否明確、權限是否有界、失敗是否可見、事後條件是否真的被觀察。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "所以下一步不只是讓 AI 學會更多遊戲動作，而是讓整棵技能樹都能被靜態檢查、黑盒驗收和真實 Windows 執行證據共同約束。高階 AI 可以參與修復，但它提出的每一次修改仍要回到相同問題：輸入是否明確、權限是否有界、失敗是否可見、事後條件是否真的被觀察。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "245cab9bdf2a4d8282336ca0ec768f55",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這也是我現在對 Agent Runtime 最關心的判斷。模型能力會持續變強，技能數量也會增加；真正決定系統能不能長期維護的，不是 AI 能完成多少動作，而是每項能力在被組合之後，是否仍然保留可以被驗證的邊界。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這也是我現在對 Agent Runtime 最關心的判斷。模型能力會持續變強，技能數量也會增加；真正決定系統能不能長期維護的，不是 AI 能完成多少動作，而是每項能力在被組合之後，是否仍然保留可以被驗證的邊界。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "27909a38e7d347cd8ab535021da29aa3",
+            "type": "text",
+            "richText": [
+              {
+                "text": "專案：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "WindowsAgent 網站",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://qoli.github.io/WindowsAgent/"
+              },
+              {
+                "text": " · ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "GitHub",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/WindowsAgent"
+              }
+            ],
+            "plainText": "專案：WindowsAgent 網站 · GitHub",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "3a4c1b36c40181f5a881d8abda0181f4",
       "slug": "static-lyric-three-line-positioning-3a4c1b36",
@@ -33,7 +1675,7 @@
       "lastEditedTime": "2026-07-21T21:05:27.763Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:06:47.361Z",
+        "syncedAt": "2026-08-15T12:47:49.142Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -777,7 +2419,7 @@
       "lastEditedTime": "2026-07-21T14:55:42.809Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:06:47.726Z",
+        "syncedAt": "2026-08-15T12:47:49.587Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -1122,7 +2764,7 @@
       "lastEditedTime": "2026-05-23T15:01:21.702Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:06:48.052Z",
+        "syncedAt": "2026-08-15T12:47:49.881Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -3463,7 +5105,7 @@
       "lastEditedTime": "2026-05-23T13:53:13.789Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:06:48.488Z",
+        "syncedAt": "2026-08-15T12:47:50.420Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -4480,7 +6122,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:06:58.494Z",
+        "syncedAt": "2026-08-15T12:48:01.667Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -6827,7 +8469,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:07:17.228Z",
+        "syncedAt": "2026-08-15T12:48:25.367Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -8008,7 +9650,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:07:21.385Z",
+        "syncedAt": "2026-08-15T12:48:29.636Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -8593,7 +10235,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:07:33.695Z",
+        "syncedAt": "2026-08-15T12:48:42.976Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -10786,7 +12428,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:07:34.083Z",
+        "syncedAt": "2026-08-15T12:48:43.564Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -11509,7 +13151,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:07:34.428Z",
+        "syncedAt": "2026-08-15T12:48:43.848Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -12277,7 +13919,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:07:34.748Z",
+        "syncedAt": "2026-08-15T12:48:44.160Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -13421,7 +15063,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:07:49.207Z",
+        "syncedAt": "2026-08-15T12:49:03.692Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -14145,7 +15787,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:07:49.544Z",
+        "syncedAt": "2026-08-15T12:49:04.080Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -15015,7 +16657,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:07:49.858Z",
+        "syncedAt": "2026-08-15T12:49:04.390Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -16395,7 +18037,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:07:50.184Z",
+        "syncedAt": "2026-08-15T12:49:04.743Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -19842,7 +21484,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:07:55.408Z",
+        "syncedAt": "2026-08-15T12:49:12.087Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -21688,7 +23330,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:07:55.935Z",
+        "syncedAt": "2026-08-15T12:49:12.624Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -22343,7 +23985,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:08:00.056Z",
+        "syncedAt": "2026-08-15T12:49:15.729Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -22959,7 +24601,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:08:05.886Z",
+        "syncedAt": "2026-08-15T12:49:22.300Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -23725,7 +25367,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:08:06.266Z",
+        "syncedAt": "2026-08-15T12:49:22.588Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -26672,7 +28314,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:09:06.569Z",
+        "syncedAt": "2026-08-15T12:50:15.786Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -27790,7 +29432,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:09:13.764Z",
+        "syncedAt": "2026-08-15T12:50:20.437Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -28168,7 +29810,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:09:16.305Z",
+        "syncedAt": "2026-08-15T12:50:22.367Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -30975,7 +32617,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:10:34.195Z",
+        "syncedAt": "2026-08-15T12:51:29.217Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -31203,7 +32845,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:10:37.307Z",
+        "syncedAt": "2026-08-15T12:51:32.558Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -31968,7 +33610,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-07-21T21:10:42.860Z",
+        "syncedAt": "2026-08-15T12:51:37.040Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
