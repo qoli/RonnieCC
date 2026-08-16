@@ -429,13 +429,17 @@ function activeUi() {
   return uiCopy[activeLanguage] || uiCopy.mix;
 }
 
+function activeHtmlLang(ui) {
+  return document.body?.dataset.page === "home" ? "en" : ui.htmlLang;
+}
+
 function setupLanguageToggle() {
   const button = document.querySelector("[data-language-toggle]");
   if (!button) return;
 
   const sync = () => {
     const ui = activeUi();
-    document.documentElement.lang = ui.htmlLang;
+    document.documentElement.lang = activeHtmlLang(ui);
     document.documentElement.dataset.language = activeLanguage;
     button.textContent = ui.languageButton;
     button.setAttribute("aria-label", ui.languageLabel);
@@ -490,7 +494,7 @@ function setText(selector, text) {
 
 function applyStaticCopy() {
   const ui = activeUi();
-  document.documentElement.lang = ui.htmlLang;
+  document.documentElement.lang = activeHtmlLang(ui);
   document.documentElement.dataset.language = activeLanguage;
 
   if (document.body.dataset.page === "projects") {

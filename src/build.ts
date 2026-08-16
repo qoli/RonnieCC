@@ -330,7 +330,7 @@ function truncate(value: string, max = 160): string {
 
 function withStaticMode(html: string, locale: Locale): string {
   return html
-    .replace("<html lang=\"zh-Hant\">", `<html lang="${locale.htmlLang}" data-static-project-urls="true">`)
+    .replace(/<html lang="[^"]+">/, `<html lang="${locale.htmlLang}" data-static-project-urls="true">`)
     .replace(
       'document.documentElement.dataset.language = localStorage.getItem("site-language") || "mix";',
       `document.documentElement.dataset.language = "${locale.language}";`
@@ -1231,7 +1231,8 @@ function renderProjectPage(source: string, project: Project, projects: Project[]
 }
 
 function renderSimplePage(source: string, locale: Locale, path: string, altUrl: string, title: string, description: string): string {
-  let html = preparePage(source, locale, altUrl, locale.rootPath);
+  const pageLocale = path === "" ? { ...locale, htmlLang: "en" } : locale;
+  let html = preparePage(source, pageLocale, altUrl, locale.rootPath);
   const isResume = path === "resume.html";
   return applySeo(html, {
     language: locale.language,
