@@ -789,6 +789,11 @@ html[data-theme="dark"] .theme-toggle span::after {
   padding-top: clamp(32px, 5vw, 68px);
 }
 
+.blog-feed-link {
+  display: inline-block;
+  margin-top: 24px;
+}
+
 .blog-list {
   display: grid;
   gap: clamp(64px, 9vw, 112px);

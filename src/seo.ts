@@ -126,6 +126,7 @@ export function renderSeoHead(meta: SeoMeta): string {
     linkTag("alternate", alternates.mix, ' hreflang="zh-Hant"'),
     linkTag("alternate", alternates.en, ' hreflang="en"'),
     linkTag("alternate", alternates.xDefault, ' hreflang="x-default"'),
+    linkTag("alternate", `${siteUrl}/rss.xml`, ' type="application/rss+xml" title="Ronnie Wong Blog RSS"'),
     ...socialProfiles.map((href) => linkTag("me", href)),
     ...jsonLd.map(jsonLdTag),
   ].join("\n");

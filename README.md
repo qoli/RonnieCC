@@ -40,6 +40,7 @@ The generated `dist/` folder contains static HTML for:
 - `en/blog.html`
 - every blog article page under `blog/<post-slug>/`
 - every English blog article page under `en/blog/<post-slug>/`
+- `rss.xml`
 - `resume.html`
 - `en/resume.html`
 - every project detail page under `projects/<project-id>/`
@@ -48,7 +49,7 @@ The generated `dist/` folder contains static HTML for:
 - `robots.txt`
 
 The default language is the mixed Chinese/English site. English pages live under `/en/`.
-Both language versions use their own canonical URLs and reciprocal `hreflang` links. The generated pages also include Open Graph, Twitter card metadata, `Person`/`WebSite`/`CollectionPage`/`CreativeWork` JSON-LD, and a sitemap with `lastmod`. `robots.txt` points crawlers to the Worker-hosted RonnieCC sitemap at `https://ronniewong-sitemaps.ronnie.workers.dev/ronniecc.xml`; the Worker mirrors the generated site sitemap so Search Console uses the tested `workers.dev` fetch path.
+Both language versions use their own canonical URLs and reciprocal `hreflang` links. The generated pages also include Open Graph, Twitter card metadata, `Person`/`WebSite`/`CollectionPage`/`CreativeWork` JSON-LD, RSS autodiscovery for `/rss.xml`, and a sitemap with `lastmod`. `robots.txt` points crawlers to the Worker-hosted RonnieCC sitemap at `https://ronniewong-sitemaps.ronnie.workers.dev/ronniecc.xml`; the Worker mirrors the generated site sitemap so Search Console uses the tested `workers.dev` fetch path.
 
 ## Local Preview
 

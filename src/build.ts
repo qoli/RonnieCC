@@ -286,6 +286,15 @@ function escapeAttr(value: string): string {
   return escapeHtml(value);
 }
 
+function escapeXml(value: string): string {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&apos;");
+}
+
 function stripProtocol(url: string): string {
   return url.replace(/^https?:\/\//, "");
 }
@@ -1279,6 +1288,60 @@ function renderSitemap(projects: Project[], posts: BlogPost[]): string {
     .join("\n")}\n</urlset>\n`;
 }
 
+function rssDate(value?: string): string {
+  const text = String(value || "").trim();
+  if (!text) return "";
+  const normalized = /^\d{4}-\d{2}-\d{2}$/.test(text) ? `${text}T00:00:00Z` : text;
+  const date = new Date(normalized);
+  return Number.isNaN(date.valueOf()) ? "" : date.toUTCString();
+}
+
+function renderRss(posts: BlogPost[]): string {
+  const visiblePosts = posts
+    .filter((post) => post.public !== false)
+    .sort((a, b) => blogPostDateKey(b).localeCompare(blogPostDateKey(a)));
+  const lastBuildDate = rssDate(
+    visiblePosts.reduce((latest, post) => {
+      const candidate = post.lastEditedTime || post.writtenDate || post.createdTime || "";
+      return candidate > latest ? candidate : latest;
+    }, "")
+  );
+  const items = visiblePosts.map((post) => {
+    const url = blogPostCanonical(post, "mix");
+    const contentDate = createdDateFromContent(post).replaceAll("/", "-");
+    const published = rssDate(contentDate || post.writtenDate || post.createdTime);
+    const categories = String(post.tag || "")
+      .split(",")
+      .map((tag) => tag.trim())
+      .filter(Boolean)
+      .map((tag) => `      <category>${escapeXml(tag)}</category>`)
+      .join("\n");
+
+    return `    <item>
+      <title>${escapeXml(post.title)}</title>
+      <link>${escapeXml(url)}</link>
+      <guid isPermaLink="true">${escapeXml(url)}</guid>
+      <description>${escapeXml(blogArticleDescription(post))}</description>${published ? `
+      <pubDate>${published}</pubDate>` : ""}${categories ? `
+${categories}` : ""}
+    </item>`;
+  });
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ronnie Wong Blog</title>
+    <link>${siteUrl}/blog.html</link>
+    <description>Notes about product engineering, Apple platforms, AI workflows, design, and building independent software.</description>
+    <language>zh-Hant</language>
+    <atom:link href="${siteUrl}/rss.xml" rel="self" type="application/rss+xml" />${lastBuildDate ? `
+    <lastBuildDate>${lastBuildDate}</lastBuildDate>` : ""}
+${items.join("\n")}
+  </channel>
+</rss>
+`;
+}
+
 async function build(): Promise<void> {
   const projects = await readJson<Project[]>("content/projects.seed.json");
   const blogData = await readJson<{ posts: BlogPost[] }>("content/blog.seed.json");
@@ -1335,6 +1398,7 @@ async function build(): Promise<void> {
   const sitemap = renderSitemap(projects, blogData.posts);
   await writeOutput("sitemap.xml", sitemap);
   await writeOutput("sitemap-gsc.xml", sitemap);
+  await writeOutput("rss.xml", renderRss(blogData.posts));
   await writeOutput("robots.txt", "User-agent: *\nAllow: /\n\nSitemap: https://ronniewong-sitemaps.ronnie.workers.dev/ronniecc.xml\n");
 
   console.log(`Built dist with ${projects.length} projects and ${blogData.posts.length} blog posts.`);
