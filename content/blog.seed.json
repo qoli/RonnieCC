@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-08-16T08:33:13.359Z",
+  "generatedAt": "2026-08-16T11:51:57.042Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,750 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "3bec1b36c40181f89e0bd1287493b2b0",
+      "slug": "skills-choose-agent-models-3bec1b36",
+      "seoSlug": "skills-choose-agent-models",
+      "legacySlugs": [
+        "skill-不只教-ai-做事-也能替子代理選好模型-3bec1b36"
+      ],
+      "title": "Skill 不只教 AI 做事，也能替子代理選好模型",
+      "tag": "AI,Automation,Local AI,Notes",
+      "writtenDate": "2026-08-16",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/skills-choose-agent-models-3bec1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/skill-%E4%B8%8D%E5%8F%AA%E6%95%99-ai-%E5%81%9A%E4%BA%8B-%E4%B9%9F%E8%83%BD%E6%9B%BF%E5%AD%90%E4%BB%A3%E7%90%86%E9%81%B8%E5%A5%BD%E6%A8%A1%E5%9E%8B-3bec1b36c40181f89e0bd1287493b2b0?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-08-16T11:40:05.246Z",
+      "lastEditedTime": "2026-08-16T11:40:05.246Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-08-16T11:45:03.142Z",
+        "blocks": [
+          {
+            "id": "55ff165b12fd4ed78978288ae6d25770",
+            "type": "text",
+            "richText": [
+              {
+                "text": "最近整理幾個 Codex Skill 時，我一直遇到同一個小問題。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "最近整理幾個 Codex Skill 時，我一直遇到同一個小問題。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "edaeb6dd842547dba7894369693abf9b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "有些 Skill 需要呼叫子代理，但每次執行時，主代理都要重新判斷：這次應該使用哪個 model？reasoning effort 要開到哪一級？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "有些 Skill 需要呼叫子代理，但每次執行時，主代理都要重新判斷：這次應該使用哪個 model？reasoning effort 要開到哪一級？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7181f3a6d80740bf8e3776b1cf1c8d3c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "一開始，我覺得這是主代理應該做的決定。後來才發現，這個選擇其實被放錯了位置。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "一開始，我覺得這是主代理應該做的決定。後來才發現，這個選擇其實被放錯了位置。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "048f2ef172da46e18a3019f091118a7a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "真正最清楚這項工作有多難的人，並不是臨時收到任務的主代理，而是寫下這個 Skill 的開發者。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "真正最清楚這項工作有多難的人，並不是臨時收到任務的主代理，而是寫下這個 Skill 的開發者。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8cff71a722b84aaab31dba6f616edc48",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Skill 已經知道自己要做什麼",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Skill 已經知道自己要做什麼",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3554469af4994a90bf7d345be268807f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Skill 和一般 prompt 最大的差別，是 Skill 已經知道自己要做什麼。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Skill 和一般 prompt 最大的差別，是 Skill 已經知道自己要做什麼。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1a29f59bab234c3f9a950219013b4107",
+            "type": "text",
+            "richText": [
+              {
+                "text": "一個用來搜尋 Codex 工作紀錄的 Skill，會知道自己需要掃描哪些紀錄、怎樣縮小候選範圍，以及最後要回讀哪些證據。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "一個用來搜尋 Codex 工作紀錄的 Skill，會知道自己需要掃描哪些紀錄、怎樣縮小候選範圍，以及最後要回讀哪些證據。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fe381fe8ce9246b592624f6a35652c48",
+            "type": "text",
+            "richText": [
+              {
+                "text": "一個操作瀏覽器的 Skill，也會知道自己需要連接瀏覽器、讀取頁面狀態，再完成指定操作。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "一個操作瀏覽器的 Skill，也會知道自己需要連接瀏覽器、讀取頁面狀態，再完成指定操作。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "79b3fef0742448d4afa2c2d34d2f07f7",
+            "type": "text",
+            "richText": [
+              {
+                "text": "每次輸入的內容當然不同，但它們要解決的是同一類問題，執行步驟和工作範圍也大致固定。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "每次輸入的內容當然不同，但它們要解決的是同一類問題，執行步驟和工作範圍也大致固定。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4f2a6cbc7dc14d7db1120d9fd40e1f56",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這代表，當一項工作被整理成 Skill 之後，這類問題的複雜度範圍其實也被決定了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這代表，當一項工作被整理成 Skill 之後，這類問題的複雜度範圍其實也被決定了。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "150c8bb3fa8c47d28051b979058db804",
+            "type": "text",
+            "richText": [
+              {
+                "text": "既然 Skill 已經知道工作會做到哪裡、需要多少判斷，開發者自然可以預測：這件事需要什麼級別的模型，以及多少 reasoning effort。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "既然 Skill 已經知道工作會做到哪裡、需要多少判斷，開發者自然可以預測：這件事需要什麼級別的模型，以及多少 reasoning effort。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ba2a2a0683fe44219ae15bb56471725b",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "模型選擇應該寫進 Skill",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "模型選擇應該寫進 Skill",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e7c9a6754bdc46de986cdda168c406fe",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如果一個 Skill 處理的是固定格式的搜尋與整理，開發者可以預先替它選擇較輕量的模型。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果一個 Skill 處理的是固定格式的搜尋與整理，開發者可以預先替它選擇較輕量的模型。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0bc23e2859d64263a3b500425ceabc3b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如果這項工作包含較多判斷，便可以指定能力更高的模型，或者使用更高的 reasoning effort。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果這項工作包含較多判斷，便可以指定能力更高的模型，或者使用更高的 reasoning effort。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b494469ed4cb4bf19bcb329203edb973",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這不是要替模型排出高低，也不是要讓所有 Skill 都使用最強的模型。Skill 作者只需要替這類工作選擇一個足夠的模型。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這不是要替模型排出高低，也不是要讓所有 Skill 都使用最強的模型。Skill 作者只需要替這類工作選擇一個足夠的模型。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fb3952c5fdb1464db45fd3b764be0f0f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "然後把選擇直接寫進 Skill：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "然後把選擇直接寫進 Skill：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d26349ed9fe241b789a1827975e61956",
+            "type": "code",
+            "richText": [
+              {
+                "text": "當這個 Skill 被觸發：\n\n1. 建立指定 model 與 effort 的子代理。\n2. 把 Skill 的實際工作交給它完成。\n3. 子代理完成後，把結果交回主代理。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "當這個 Skill 被觸發：\n\n1. 建立指定 model 與 effort 的子代理。\n2. 把 Skill 的實際工作交給它完成。\n3. 子代理完成後，把結果交回主代理。",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "615a15cfa1b04643b508e5d2329ced49",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如此一來，主代理不必在每次執行時重新評估模型。它只需要按照 Skill 已經定義好的方式呼叫子代理。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如此一來，主代理不必在每次執行時重新評估模型。它只需要按照 Skill 已經定義好的方式呼叫子代理。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8144471e88994cc6b6d62e6e11dd8eac",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "我在 Codex Skill 裡的實際做法",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我在 Codex Skill 裡的實際做法",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41374926939c4721a375f13c18e8d179",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我現在有些 Skill 會明確指定由 Luna High 子代理執行，有些瀏覽器工作則指定 Terra High。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我現在有些 Skill 會明確指定由 Luna High 子代理執行，有些瀏覽器工作則指定 Terra High。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8330a47d97cb4a808fbdf4365d7986a9",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這些設定不是通用的模型推薦，只是因為不同 Skill 處理的問題不同。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這些設定不是通用的模型推薦，只是因為不同 Skill 處理的問題不同。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "840164b271914f90bc725495633ed6fc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "例如，Codex session search 的流程相對固定：掃描紀錄、選出候選 task、回讀來源，再把整理結果交給主代理。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "例如，Codex session search 的流程相對固定：掃描紀錄、選出候選 task、回讀來源，再把整理結果交給主代理。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "504149c1f14a41c185b6fe158e07b2bd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個 Skill 的作者已經知道它會處理多少資料、需要哪些判斷，也知道整個工作範圍。因此，適合它的 model 和 effort 可以在開發 Skill 時決定，不必每次呼叫時重新討論。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個 Skill 的作者已經知道它會處理多少資料、需要哪些判斷，也知道整個工作範圍。因此，適合它的 model 和 effort 可以在開發 Skill 時決定，不必每次呼叫時重新討論。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5f966f607b4544d89e5f23fb93730b26",
+            "type": "text",
+            "richText": [
+              {
+                "text": "模型的選擇於是成為 Skill 本身的一部分。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "模型的選擇於是成為 Skill 本身的一部分。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "48333273a32542b79b3c3dec9c3b110b",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Skill 重用的不只是 Prompt",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Skill 重用的不只是 Prompt",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "25dcc46e5d9749e6a6cfd8719824d359",
+            "type": "text",
+            "richText": [
+              {
+                "text": "以前我會把 Skill 理解成一種 prompt 重用：把反覆使用的指令保存起來，下次不必重新交代。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "以前我會把 Skill 理解成一種 prompt 重用：把反覆使用的指令保存起來，下次不必重新交代。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b97aee9bfb2543bdaf65ffd248e8927c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但當 Skill 開始呼叫子代理，它還可以重用另一項東西：開發者對問題複雜度的判斷。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但當 Skill 開始呼叫子代理，它還可以重用另一項東西：開發者對問題複雜度的判斷。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "11046ab44d014ac592c5f96ee4bc4595",
+            "type": "text",
+            "richText": [
+              {
+                "text": "開發者只需要在設計 Skill 時回答一次：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "開發者只需要在設計 Skill 時回答一次：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e8517447362f4ebf8c0711739bdd6914",
+            "type": "quote",
+            "richText": [
+              {
+                "text": "這類問題，需要什麼級別的模型才足夠？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這類問題，需要什麼級別的模型才足夠？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fb698ff7f2e342edac697bc7a428f246",
+            "type": "text",
+            "richText": [
+              {
+                "text": "之後每次執行，都可以沿用相同的答案。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "之後每次執行，都可以沿用相同的答案。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a113bc8463e143d7bc6a0d58e89251c2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如果將來 Skill 的工作內容改變，或者原本選擇的模型不再合適，再修改 Skill 裡的設定就可以了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果將來 Skill 的工作內容改變，或者原本選擇的模型不再合適，再修改 Skill 裡的設定就可以了。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "40ce7986df8445fba36ad080294c47b4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "因此，更優雅地使用子代理，不一定需要複雜的模型路由系統。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "因此，更優雅地使用子代理，不一定需要複雜的模型路由系統。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1f7513a020454dba8df6511ed661b641",
+            "type": "text",
+            "richText": [
+              {
+                "text": "當 Skill 已經知道要做什麼，問題的複雜度也就變得可預測。既然複雜度已知，Skill 作者便可以預先選好合適的 model 和 effort。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "當 Skill 已經知道要做什麼，問題的複雜度也就變得可預測。既然複雜度已知，Skill 作者便可以預先選好合適的 model 和 effort。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c138c589ceb4408a8ba15f98c732f1d2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Skill 重用的不只是工作方法，也包括一次已經做好的模型選擇。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Skill 重用的不只是工作方法，也包括一次已經做好的模型選擇。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "3bdc1b36c40181468c75cc2ae69c2709",
       "slug": "ai-game-agent-three-line-runtime-3bdc1b36",
@@ -33,7 +777,7 @@
       "lastEditedTime": "2026-08-15T12:43:46.007Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:25:06.464Z",
+        "syncedAt": "2026-08-16T11:45:03.497Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -1675,7 +2419,7 @@
       "lastEditedTime": "2026-07-21T21:05:27.763Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:25:18.528Z",
+        "syncedAt": "2026-08-16T11:45:13.533Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -2419,7 +3163,7 @@
       "lastEditedTime": "2026-07-21T14:55:42.809Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:25:19.099Z",
+        "syncedAt": "2026-08-16T11:45:14.471Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -2764,7 +3508,7 @@
       "lastEditedTime": "2026-05-23T15:01:21.702Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:25:19.621Z",
+        "syncedAt": "2026-08-16T11:45:14.818Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -5105,7 +5849,7 @@
       "lastEditedTime": "2026-05-23T13:53:13.789Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:25:20.348Z",
+        "syncedAt": "2026-08-16T11:45:15.316Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -6122,7 +6866,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:25:40.792Z",
+        "syncedAt": "2026-08-16T11:45:29.912Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -8469,7 +9213,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:26:24.298Z",
+        "syncedAt": "2026-08-16T11:46:02.512Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -9650,7 +10394,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:26:31.394Z",
+        "syncedAt": "2026-08-16T11:46:07.455Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -10235,7 +10979,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:26:54.509Z",
+        "syncedAt": "2026-08-16T11:46:27.028Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -12428,7 +13172,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:26:55.560Z",
+        "syncedAt": "2026-08-16T11:46:27.763Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -13151,7 +13895,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:26:56.280Z",
+        "syncedAt": "2026-08-16T11:46:28.705Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -13919,7 +14663,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:26:56.805Z",
+        "syncedAt": "2026-08-16T11:46:29.283Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -15063,7 +15807,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:27:31.034Z",
+        "syncedAt": "2026-08-16T11:46:56.519Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -15787,7 +16531,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:27:31.552Z",
+        "syncedAt": "2026-08-16T11:46:57.105Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -16657,7 +17401,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:27:33.029Z",
+        "syncedAt": "2026-08-16T11:46:57.885Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -18037,7 +18781,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:27:33.588Z",
+        "syncedAt": "2026-08-16T11:46:58.427Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -21484,7 +22228,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:27:43.999Z",
+        "syncedAt": "2026-08-16T11:47:07.670Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -23330,7 +24074,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:27:44.696Z",
+        "syncedAt": "2026-08-16T11:47:08.250Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -23985,7 +24729,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:27:50.283Z",
+        "syncedAt": "2026-08-16T11:47:13.271Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -24601,7 +25345,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:28:01.115Z",
+        "syncedAt": "2026-08-16T11:47:22.782Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -25367,7 +26111,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:28:01.653Z",
+        "syncedAt": "2026-08-16T11:47:23.229Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -28314,7 +29058,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:29:44.051Z",
+        "syncedAt": "2026-08-16T11:48:53.887Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -29432,7 +30176,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:29:59.774Z",
+        "syncedAt": "2026-08-16T11:49:03.447Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -29810,7 +30554,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:30:05.019Z",
+        "syncedAt": "2026-08-16T11:49:07.280Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -32617,7 +33361,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:32:15.120Z",
+        "syncedAt": "2026-08-16T11:50:58.647Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -32845,7 +33589,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:32:20.113Z",
+        "syncedAt": "2026-08-16T11:51:05.522Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -33610,7 +34354,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T08:32:28.527Z",
+        "syncedAt": "2026-08-16T11:51:13.631Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
