@@ -1,0 +1,111 @@
+<p>An AI game agent can press the correct key and still be wrong.</p>
+<p>In <em>Elite Dangerous</em>, sending the zero-throttle binding proves only that the command left the agent. It does not prove that the ship stopped. If the next action assumes that it did, the rest of the plan is already operating on a false state.</p>
+<p>I first tried the obvious architecture: capture a frame, ask a vision model what to do, send a key, and repeat. The problem was not simply model latency. I had placed three different clocks, failure modes, and standards of evidence into one loop.</p>
+<p>WindowsAgent grew out of a harder question than automating one game: can a high-level AI understand which game capabilities it already has, discover what is missing, and then develop a new skill that can be invoked, verified, stopped, replayed, and repaired?</p>
+<p>In this system, an <strong>Action</strong> is a game capability the AI can invoke. A <strong>Gate</strong> is a precondition that current evidence must prove before the Action is allowed to continue. A <strong>Streaming Action</strong> repeatedly observes, acts, and verifies inside a bounded control loop. Raw frames and events are retained as <strong>Evidence</strong>, separately from the model's interpretation, so later reasoning can still be challenged.</p>
+<p>The engineering conclusion I reached is simple: a high-level model can own goals, planning, exceptions, and skill development, but it should not own every time-sensitive control pulse.</p>
+
+<figure class="blog-media">
+  <img src="{{rootPath}}content/blog-assets/3bdc1b36c40181468c75cc2ae69c2709/3bdc1b36c40181ebbde7cbb34c4e984a-windowsagent-ed-live-runtime.jpg" alt="Elite Dangerous running with WindowsAgent Live, Action state, and event records visible at the same time." loading="lazy">
+  <figcaption>Elite Dangerous running with WindowsAgent Live: the game, Action state, and event records remain visible together.</figcaption>
+</figure>
+
+<h3 id="the-first-low-return-design-ask-the-model-every-frame">The first low-return design: ask the model every frame</h3>
+<p>The most direct AI game demo continuously takes screenshots, sends them to a vision model, and lets the model choose the next keypress.</p>
+<p>That looks convincing in a demo. Under real-time control, one screenshot, transfer, queue, inference, and response can already exceed the game's useful reaction window. Lower average latency does not eliminate network jitter, service queues, or occasional outages, and none of them has a hard upper bound.</p>
+<p>Delay is only part of the problem. Asking again on every frame means reconstructing the state on every frame. The previous answer does not automatically become a reliable contract for the next one. A model can give a coherent explanation without proving that the game changed after its command.</p>
+<p>I eventually realized that choosing a faster model would not fix the architecture. Ship attitude and throttle control operate on tens to hundreds of milliseconds. Evidence recording and event indexing operate on seconds. High-level planning, development, and review operate on seconds to minutes. Speed exposed the problem, but responsibility was what actually needed to be separated.</p>
+
+<h3 id="the-fast-loop-actions-own-deadline-bound-reflexes">The fast loop: Actions own deadline-bound reflexes</h3>
+<p>The first WindowsAgent loop handles fast reflexes.</p>
+<p>A Streaming Action observes the current state, checks its Gates, emits a short input, records an event, and then verifies the new state. It does not wait for a high-level model to decide every pulse, and uncertain evidence never grants it more authority.</p>
+<ul>
+  <li>Every Action has explicit time and sample limits.</li>
+  <li>An unclear observation returns <code>UNKNOWN</code>; it never reuses a convenient earlier frame.</li>
+  <li>A failed control sequence can stop and run bounded compensation, such as returning throttle to zero.</li>
+  <li>Command delivery and observed outcome are recorded as different events.</li>
+</ul>
+<p>The station-departure flow makes this distinction concrete. The Action first uses fresh HUD evidence to establish that the ship has really started moving. It then waits for the mass-lock state to clear. After sending zero throttle, it still requires three later visual confirmations of zero speed before reporting completion.</p>
+
+<pre data-language="text"><code>zero-throttle command sent
+→ key delivery confirmed
+→ ship state still unproven
+→ later HUD frames sampled
+→ STOPPED confirmed three times
+→ Action completed</code></pre>
+
+<p>The Action verifies a state transition, not a keypress: a command was emitted, the game produced a new state, and the postcondition became observable. Without that final step, the system can prove only what it attempted, not what happened.</p>
+
+<h3 id="the-index-loop-models-can-help-find-evidence-but-cannot-create-it">The index loop: models can help find evidence, but cannot create it</h3>
+<p>The second loop records events and helps locate failures.</p>
+<p>An append-only Event Journal retains Action starts, stages, child Actions, failures, and completions. An Evidence Recorder samples the actual game so that a long journey can still be reconstructed later.</p>
+<p>A small vision model may write timestamped scene descriptions to help a high-level agent find the relevant part of a long recording. Those descriptions are an untrusted index. They are allowed to be incomplete, but they can never replace the original frames.</p>
+<p>This boundary came from a real debugging case. The game had reached the correct page, but the button classifier returned <code>UNKNOWN</code>, so the whole flow stopped. The system did not silently switch recognizers or infer that a visible page implied an actionable button. The high-level agent used the event time to retrieve the corresponding frame, inspected the OCR region and classification conditions, repaired the Action that owned the capability, and ran it again.</p>
+
+<figure class="blog-media">
+  <img src="{{rootPath}}content/blog-assets/3bdc1b36c40181468c75cc2ae69c2709/3bdc1b36c4018106ae08c7b94cb9de4f-windowsagent-ed-evidence-debug.jpg" alt="Evidence replay locating the frame where a button classifier returned UNKNOWN." loading="lazy">
+  <figcaption>Evidence replay lets the agent locate the failed frame and inspect why the classifier returned <code>UNKNOWN</code>.</figcaption>
+</figure>
+
+<p>The index loop does not let a model decide what happened. It helps the model find the evidence that deserves a new question.</p>
+
+<h3 id="the-slow-loop-the-ai-is-both-player-and-skill-developer">The slow loop: the AI is both player and skill developer</h3>
+<p>The third loop is where high-level intelligence belongs.</p>
+<p>The agent first identifies the foreground game and reads its Rule: a plugin directory containing game guidance, Action contracts, and Runtime declarations. If an existing capability is sufficient, it invokes the Action. If evidence reveals a missing capability, it returns to the package that owns that skill, changes the implementation, verifies the contract, and updates the Rule.</p>
+<p>The model is therefore not just a remote pilot. It uses skills to play while also developing the skills needed to continue.</p>
+<p>The current Elite Dangerous Rule has grown to 100 Actions. That number is not a feature checklist; it is a pressure test. As capabilities expand from reading one HUD state to menu navigation, attitude control, and multi-stage travel, can every Action retain its own contract, failure semantics, and evidence?</p>
+
+<figure class="blog-media">
+  <img src="{{rootPath}}content/blog-assets/3bdc1b36c40181468c75cc2ae69c2709/3bdc1b36c40181189e95d3491f71a616-windowsagent-ed-action-osd.jpg" alt="The Action OSD showing the current Action, stage, and evidence Gate over the game." loading="lazy">
+  <figcaption>The Action OSD exposes the current Action, stage, and evidence Gate over the game.</figcaption>
+</figure>
+
+<p>This is why a skill tree is a better description than a macro library. A macro remembers an input sequence. An Action must also know when it is authorized to run, how completion will be proven, and who regains control after failure.</p>
+
+<h3 id="three-loops-are-three-responsibilities-not-three-modules">Three loops are three responsibilities, not three modules</h3>
+<p>It is easy to interpret the design as ordinary performance tiering: keep fast work local and send slow work to the cloud. The actual boundary is closer to a control system's division of responsibility.</p>
+
+<div class="blog-table-wrap">
+  <table class="blog-table">
+    <thead><tr><th scope="col">Loop</th><th scope="col">Primary responsibility</th><th scope="col">Time scale</th><th scope="col">Trust boundary</th></tr></thead>
+    <tbody>
+      <tr><td>Fast</td><td>Observation, Gates, control, compensation</td><td>Tens to hundreds of milliseconds</td><td>Accepts only current evidence and explicit state</td></tr>
+      <tr><td>Index</td><td>Recording, events, locating failure intervals</td><td>Seconds</td><td>The index may be incomplete; raw Evidence remains authoritative</td></tr>
+      <tr><td>Slow</td><td>Planning, development, review, repair</td><td>Seconds to minutes</td><td>May reason, but cannot invent a real-time outcome</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p>The high-level AI can decide what the ship should do and develop a missing capability. It does not personally choose every short key-down or key-release pulse.</p>
+
+<figure class="blog-media">
+  <img src="{{rootPath}}content/blog-assets/3bdc1b36c40181468c75cc2ae69c2709/3bdc1b36c40181838fabfe3264d2dda5-windowsagent-ed-tablet-agent.jpg" alt="Supervising the high-level game agent from a tablet while it plans and invokes learned Actions." loading="lazy">
+  <figcaption>Supervising the high-level agent from a tablet: it plans the goal, then invokes Actions it has already learned.</figcaption>
+</figure>
+
+<p>The fast loop cannot quietly acquire high-level authority either. An Action operates only inside its schema, Rule, and Gates. An undefined screen or infrastructure failure must remain an explicit failure. It cannot change models, switch data sources, or guess an alternative route just to keep the workflow moving.</p>
+
+<h3 id="why-faster-models-do-not-remove-the-boundary">Why faster models do not remove the boundary</h3>
+<p>This design does not depend on 2026 models being slow.</p>
+<p>Inference will continue to improve, but more model throughput does not remove network round trips, queues, jitter, or service interruptions. A low average latency is not a deadline guarantee.</p>
+<p>Moving the high-level model onto the PC changes latency but not automatically responsibility. Inference may still be variable, context-dependent, and probabilistic. High-level reasoning is useful for goals, exceptions, and capability development. Deterministic control should remain deterministic where the domain allows it.</p>
+<p>A sufficiently fast local model might move some work across the boundary. That is the part of this design I am least certain about. My current position is that faster inference can reduce latency inside a responsibility, but does not by itself prove that the model should own the responsibility.</p>
+
+<h3 id="engineering-rules-that-survived-the-experiment">Engineering rules that survived the experiment</h3>
+<ul>
+  <li>Separate work by clock, consequence, and trust level, not only by technology name.</li>
+  <li>Let the high-level model own goals, not every control pulse.</li>
+  <li>Record command delivery and postcondition evidence separately.</li>
+  <li><code>UNKNOWN</code> is a valid result, not an empty field waiting to be guessed.</li>
+  <li>A vision model may index evidence, but the index never becomes the evidence.</li>
+  <li>Repair the Action that owns a capability instead of hiding a workaround in a higher-level prompt.</li>
+  <li>A reusable skill must be verifiable, stoppable, replayable, and repairable.</li>
+</ul>
+
+<h3 id="the-next-problem-how-do-you-verify-a-growing-skill-tree">The next problem: how do you verify a growing skill tree?</h3>
+<p>The three loops separate responsibilities across time scales. They do not automatically solve governance as the capability graph grows.</p>
+<p>With 100 Actions, a change to one low-level output, schema, or failure meaning may affect multiple parent workflows. Adding the next skill is no longer the hardest problem. The harder problem is proving that it did not invalidate a parent's precondition or turn a visible failure into a hidden alternative path.</p>
+<p>The next stage is therefore not simply teaching the agent more moves. The whole skill tree needs static checks, black-box acceptance, and evidence from the real Windows runtime. A high-level AI can participate in the repair, but every proposed change must return to the same questions: are the inputs explicit, is the authority bounded, is failure visible, and was the postcondition actually observed?</p>
+<p>This is the Agent Runtime question I care about most. Models will become more capable and skill graphs will grow. Long-term maintainability will depend less on how many actions the AI can perform than on whether each composed capability still preserves a boundary that can be verified.</p>
+
+<p>Project: <a href="https://qoli.github.io/WindowsAgent/" target="_blank" rel="noreferrer">WindowsAgent website</a> · <a href="https://github.com/qoli/WindowsAgent" target="_blank" rel="noreferrer">GitHub repository</a></p>

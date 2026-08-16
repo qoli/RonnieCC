@@ -1,0 +1,7 @@
+{
+  "3bdc1b36c40181468c75cc2ae69c2709": {
+    "title": "Why My Game Agent Doesn't Let an LLM Control Every Frame",
+    "description": "Sending a keypress proves what the agent attempted, not what the game did. I split control, evidence, and planning into three separate loops.",
+    "bodyPath": "content/blog.en/3bdc1b36c40181468c75cc2ae69c2709.html"
+  }
+}

@@ -94,6 +94,15 @@ type BlogPost = {
     syncedAt: string;
     blocks: BlogBlock[];
   };
+  localizedDescription?: string;
+  localizedBodyHtml?: string;
+  hasLocalizedCopy?: boolean;
+};
+
+type BlogPostCopy = {
+  title: string;
+  description: string;
+  bodyPath: string;
 };
 
 type BlogRichText = {
@@ -848,6 +857,7 @@ function renderBlogBlocks(blocks: BlogBlock[] = [], rootPath = "", notionUrl = "
 }
 
 function blogArticleDescription(post: BlogPost): string {
+  if (post.localizedDescription) return truncate(post.localizedDescription);
   const firstText = post.content?.blocks.find((block) => block.plainText && ["text", "quote"].includes(block.type))?.plainText || post.title;
   return truncate(firstText);
 }
@@ -923,6 +933,40 @@ function relativizeProjectDetail(html: string, navPrefix: string, assetPrefix: s
 
 async function readJson<T>(path: string): Promise<T> {
   return JSON.parse(await readFile(join(root, path), "utf8")) as T;
+}
+
+async function readBlogCopyEn(): Promise<Record<string, BlogPostCopy & { bodyHtml: string }>> {
+  const copies = await readJson<Record<string, BlogPostCopy>>("content/blog.en.json");
+  const resolved: Record<string, BlogPostCopy & { bodyHtml: string }> = {};
+
+  for (const [postId, copy] of Object.entries(copies)) {
+    resolved[postId] = {
+      ...copy,
+      bodyHtml: await readFile(join(root, copy.bodyPath), "utf8"),
+    };
+  }
+
+  return resolved;
+}
+
+function localizedBlogPosts(
+  posts: BlogPost[],
+  language: Language,
+  copyEn: Record<string, BlogPostCopy & { bodyHtml: string }>
+): BlogPost[] {
+  if (language !== "en") return posts;
+
+  return posts.map((post) => {
+    const copy = copyEn[post.id];
+    if (!copy) return { ...post, hasLocalizedCopy: false };
+    return {
+      ...post,
+      title: copy.title,
+      localizedDescription: copy.description,
+      localizedBodyHtml: copy.bodyHtml,
+      hasLocalizedCopy: true,
+    };
+  });
 }
 
 async function writeOutput(path: string, content: string): Promise<void> {
@@ -1055,19 +1099,21 @@ function renderBlogPage(source: string, posts: BlogPost[], locale: Locale): stri
 }
 
 function blogArticleNav(post: BlogPost, prevPost?: BlogPost, nextPost?: BlogPost): string {
+  const visiblePrevPost = post.hasLocalizedCopy && !prevPost?.hasLocalizedCopy ? undefined : prevPost;
+  const visibleNextPost = post.hasLocalizedCopy && !nextPost?.hasLocalizedCopy ? undefined : nextPost;
   const links = [
-    prevPost
+    visiblePrevPost
       ? `
-            <a class="blog-article-nav-link prev" href="../${encodeURIComponent(prevPost.slug)}/">
+            <a class="blog-article-nav-link prev" href="../${encodeURIComponent(visiblePrevPost.slug)}/">
               <span class="blog-article-nav-label">Previous</span>
-              <span class="blog-article-nav-title">${escapeHtml(prevPost.title)}</span>
+              <span class="blog-article-nav-title">${escapeHtml(visiblePrevPost.title)}</span>
             </a>`
       : "",
-    nextPost
+    visibleNextPost
       ? `
-            <a class="blog-article-nav-link next" href="../${encodeURIComponent(nextPost.slug)}/">
+            <a class="blog-article-nav-link next" href="../${encodeURIComponent(visibleNextPost.slug)}/">
               <span class="blog-article-nav-label">Next</span>
-              <span class="blog-article-nav-title">${escapeHtml(nextPost.title)}</span>
+              <span class="blog-article-nav-title">${escapeHtml(visibleNextPost.title)}</span>
             </a>`
       : "",
   ].join("");
@@ -1079,9 +1125,11 @@ function blogArticleNav(post: BlogPost, prevPost?: BlogPost, nextPost?: BlogPost
 
 function blogArticleMain(post: BlogPost, language: Language, rootPath: string, prevPost?: BlogPost, nextPost?: BlogPost): string {
   const created = createdDateFromContent(post) || formatBlogDate(post.writtenDate) || post.year || "";
-  const body = post.content?.blocks?.length
-    ? renderBlogBlocks(post.content.blocks, rootPath, post.notionUrl)
-    : `<p>${escapeHtml(localeCopy[language].blogEmpty)}</p>`;
+  const body = post.localizedBodyHtml
+    ? post.localizedBodyHtml.replaceAll("{{rootPath}}", rootPath)
+    : post.content?.blocks?.length
+      ? renderBlogBlocks(post.content.blocks, rootPath, post.notionUrl)
+      : `<p>${escapeHtml(localeCopy[language].blogEmpty)}</p>`;
 
   return `
   <main>
@@ -1234,6 +1282,7 @@ async function build(): Promise<void> {
   const projects = await readJson<Project[]>("content/projects.seed.json");
   const blogData = await readJson<{ posts: BlogPost[] }>("content/blog.seed.json");
   const projectCopyEn = await readProjectCopyEn();
+  const blogCopyEn = await readBlogCopyEn();
 
   await rm(outDir, { recursive: true, force: true });
   await mkdir(outDir, { recursive: true });
@@ -1248,17 +1297,17 @@ async function build(): Promise<void> {
   const indexDescription = "This site is a public index of my projects, writings, experiments, and external traces across the web.";
   const resumeDescription = "Resume page in Ronnie Wong's public index, summarizing the background behind the projects, writings, experiments, and external traces across the web.";
 
-    const orderedPosts = [...blogData.posts.filter((item) => item.public !== false)].sort((a, b) =>
-      blogPostDateKey(b).localeCompare(blogPostDateKey(a))
-    );
-
     for (const language of Object.keys(locales) as Language[]) {
     const locale = locales[language];
     const projectsForLocale = localizedProjects(projects, language, projectCopyEn);
+    const postsForLocale = localizedBlogPosts(blogData.posts, language, blogCopyEn);
+    const orderedPosts = [...postsForLocale.filter((item) => item.public !== false)].sort((a, b) =>
+      blogPostDateKey(b).localeCompare(blogPostDateKey(a))
+    );
 
     await writeOutput(`${locale.outputPrefix}index.html`, renderSimplePage(indexHtml, locale, "", language === "en" ? "../" : "en/", "Ronnie Wong", indexDescription));
     await writeOutput(`${locale.outputPrefix}projects.html`, renderProjectsPage(projectsHtml, projectsForLocale, locale));
-    await writeOutput(`${locale.outputPrefix}blog.html`, renderBlogPage(blogHtml, blogData.posts, locale));
+    await writeOutput(`${locale.outputPrefix}blog.html`, renderBlogPage(blogHtml, postsForLocale, locale));
     await writeOutput(`${locale.outputPrefix}resume.html`, renderSimplePage(resumeHtml, locale, "resume.html", language === "en" ? "../resume.html" : "en/resume.html", "Resume · Ronnie Wong", resumeDescription));
 
     if (language === "mix") {
