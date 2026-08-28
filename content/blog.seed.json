@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-08-16T12:03:43.955Z",
+  "generatedAt": "2026-08-28T11:19:53.677Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,678 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "3cac1b36c40181bdbdfff48d2e739434",
+      "slug": "gemma-small-model-task-acceleration-3cac1b36",
+      "seoSlug": "gemma-small-model-task-acceleration",
+      "legacySlugs": [
+        "讓小模型真正接手工作-gemma-4-e4b-如何加速日常任務-3cac1b36"
+      ],
+      "title": "讓小模型真正接手工作：Gemma 4 E4B 如何加速日常任務",
+      "tag": "AI,LLM,Local AI,Automation,Pipeline,Notes",
+      "writtenDate": "2026-08-28",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/gemma-small-model-task-acceleration-3cac1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/%E8%AE%93%E5%B0%8F%E6%A8%A1%E5%9E%8B%E7%9C%9F%E6%AD%A3%E6%8E%A5%E6%89%8B%E5%B7%A5%E4%BD%9C-gemma-4-e4b-%E5%A6%82%E4%BD%95%E5%8A%A0%E9%80%9F%E6%97%A5%E5%B8%B8%E4%BB%BB%E5%8B%99-3cac1b36c40181bdbdfff48d2e739434?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-08-28T10:59:54.779Z",
+      "lastEditedTime": "2026-08-28T11:15:10.927Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-08-28T11:15:54.084Z",
+        "blocks": [
+          {
+            "id": "3cac1b36c40180619f78d96033725575",
+            "type": "text",
+            "richText": [
+              {
+                "text": "通常，機械性的任務，要麼是正則，要麼是小參數大模型的基本智能已經足夠。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "通常，機械性的任務，要麼是正則，要麼是小參數大模型的基本智能已經足夠。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cac1b36c4018073872cdec413ded894",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在 Telegram 廣告這件事上，我認為 Gemma 4 E4B 就很夠用。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在 Telegram 廣告這件事上，我認為 Gemma 4 E4B 就很夠用。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4eac4749701c4a669aa067a4b0d00573",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這是一個案例分享。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這是一個案例分享。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8bcc360e9ed949f48ed0c61b3e068386",
+            "type": "text",
+            "richText": [
+              {
+                "text": "GroupSentry 是一個 Telegram 群組廣告審核機器人。它會讀取訊息正文、引用內容、發言者 profile 和群組語境，判斷一則訊息是在招攬、推銷，還是在討論或舉報廣告。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "GroupSentry 是一個 Telegram 群組廣告審核機器人。它會讀取訊息正文、引用內容、發言者 profile 和群組語境，判斷一則訊息是在招攬、推銷，還是在討論或舉報廣告。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "acca5faaa5914bff91b31de0baf5b81f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "原本的處理流程裡，確定性規則可以很快攔截組合特徵完全明確的廣告，其餘訊息交給 Luna Medium。Luna 適合處理需要綜合理解的複雜案例，但一次分類通常需要十幾秒。對真正模糊的訊息，這個成本合理；對大量重複、邊界清楚的日常判斷，每次都使用 Luna 並不划算。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "原本的處理流程裡，確定性規則可以很快攔截組合特徵完全明確的廣告，其餘訊息交給 Luna Medium。Luna 適合處理需要綜合理解的複雜案例，但一次分類通常需要十幾秒。對真正模糊的訊息，這個成本合理；對大量重複、邊界清楚的日常判斷，每次都使用 Luna 並不划算。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1438c8fd96464b44bbcb9a892cc470eb",
+            "type": "text",
+            "richText": [
+              {
+                "text": "所以我把本機運行的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "gemma-4-e4b-it-8bit",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 引入 GroupSentry，放在確定性規則和 Luna 之間，作為一個加速模組。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "所以我把本機運行的 gemma-4-e4b-it-8bit 引入 GroupSentry，放在確定性規則和 Luna 之間，作為一個加速模組。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5612ea71bb764ddb80dd686f5a27f858",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Gemma 不需要成為縮小版 Luna",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Gemma 不需要成為縮小版 Luna",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a03a34022219454b90362c3c68a891dd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "引入小模型之後，首先要回答的不是它能不能分類，而是它可以在哪些條件下直接完成分類。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "引入小模型之後，首先要回答的不是它能不能分類，而是它可以在哪些條件下直接完成分類。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2f495069c6794023920593fd9af2ab4b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "GroupSentry 最後形成三層路由：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "GroupSentry 最後形成三層路由：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "64296706990f434ba67f3aec97c63aca",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "確定性組合規則處理不需要模型的明確廣告。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "確定性組合規則處理不需要模型的明確廣告。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "52d02614670e4857817b7946515a229c",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "Gemma 處理高信心正常訊息，以及證據完整的高信心廣告。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Gemma 處理高信心正常訊息，以及證據完整的高信心廣告。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0a1eb296920e48828adb5dc7d9788d5d",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "Luna 接手模糊、衝突、資料不足或 Gemma 執行失敗的情況。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Luna 接手模糊、衝突、資料不足或 Gemma 執行失敗的情況。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6e7683dc3e61476495da662669d744da",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Gemma 的工作形式要足夠機械。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Gemma 的工作形式要足夠機械。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fb9486ed7b344eba960db3a01029e414",
+            "type": "text",
+            "richText": [
+              {
+                "text": "對正常訊息，已知非新成員在 Gemma 給出 0–2 分時可以直接放行；新成員或年資未知的發言者，只有 0–1 分可以直接放行。如果文字同時出現強風險訊號，即使分數很低，也會升級到 Luna。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "對正常訊息，已知非新成員在 Gemma 給出 0–2 分時可以直接放行；新成員或年資未知的發言者，只有 0–1 分可以直接放行。如果文字同時出現強風險訊號，即使分數很低，也會升級到 Luna。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "08865bf13f5f4b0ebfdc694ab55f3945",
+            "type": "text",
+            "richText": [
+              {
+                "text": "對廣告訊息，直接刪除的條件更嚴格：Gemma 必須給出恰好 10 分，正文、引用或 profile 裡還要存在獨立的強風險證據，而且理由不能包含「中立討論」、「舉報或批評」或「證據不足」等衝突。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "對廣告訊息，直接刪除的條件更嚴格：Gemma 必須給出恰好 10 分，正文、引用或 profile 裡還要存在獨立的強風險證據，而且理由不能包含「中立討論」、「舉報或批評」或「證據不足」等衝突。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c8231118c88f4341825dc3f9aca3f3da",
+            "type": "text",
+            "richText": [
+              {
+                "text": "9 分仍然交給 Luna。即使是 10 分，只要缺少獨立證據，或者理由彼此矛盾，也交給 Luna。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "9 分仍然交給 Luna。即使是 10 分，只要缺少獨立證據，或者理由彼此矛盾，也交給 Luna。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c3e7f62f74664cd199b8ea9f99593de9",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個分工不要求 Gemma 解決最困難的理解問題。它只需要穩定處理最頻繁、最清楚的那一部分，讓那些訊息不必再進入較慢的 Luna 路徑。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個分工不要求 Gemma 解決最困難的理解問題。它只需要穩定處理最頻繁、最清楚的那一部分，讓那些訊息不必再進入較慢的 Luna 路徑。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9d6f5d79ed7548dfb68ac36f2d5756f6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Gemma 的低分放行和高信心刪除會按比例交給 Luna 做非阻塞的事後審計。大模型仍然參與品質控制，但不位於每一次處理的關鍵路徑上。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Gemma 的低分放行和高信心刪除會按比例交給 Luna 做非阻塞的事後審計。大模型仍然參與品質控制，但不位於每一次處理的關鍵路徑上。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0439bc2fe46d4805be87e2e2fa4cf0eb",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "部署後的變化",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "部署後的變化",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "abf43804cbf34236925f746874aa78ce",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在約 26.5 小時的部署日誌裡，GroupSentry 共處理了 91 次分類。Gemma 被使用 84 次，其中直接放行 27 次、直接刪除 5 次；確定性規則另外直接刪除了 7 次。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在約 26.5 小時的部署日誌裡，GroupSentry 共處理了 91 次分類。Gemma 被使用 84 次，其中直接放行 27 次、直接刪除 5 次；確定性規則另外直接刪除了 7 次。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b0f4a28daba5448dbaa81a41a8307060",
+            "type": "text",
+            "richText": [
+              {
+                "text": "與前一段同樣包含 91 次分類的樣本相比，Luna 的使用量由 86 次降至 52 次，減少約 39.5%。38 次刪除裡，有 12 次由 Gemma 或確定性規則直接完成，不再經過 Luna。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "與前一段同樣包含 91 次分類的樣本相比，Luna 的使用量由 86 次降至 52 次，減少約 39.5%。38 次刪除裡，有 12 次由 Gemma 或確定性規則直接完成，不再經過 Luna。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "52a2ffdc45a74e64a026599db285db5d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "平均刪除延遲的差異也很直接：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "平均刪除延遲的差異也很直接：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c8a0abc37bf24974aec2714e3184d919",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "確定性規則：約 1.66 秒；",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "確定性規則：約 1.66 秒；",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b1555b6940fd40fea61b91500d0056e7",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Gemma 直接刪除：約 3.92 秒；",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Gemma 直接刪除：約 3.92 秒；",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e0c5e500c48b4c43ab5b77a685d08d9a",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Luna 路徑：約 19.96 秒。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Luna 路徑：約 19.96 秒。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f973e2cb390f4ae398d2d4eebb0ccf15",
+            "type": "text",
+            "richText": [
+              {
+                "text": "一次真實的高信心廣告 smoke test，從 Gemma 判斷到走完直接刪除路徑約 5.5 秒。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "一次真實的高信心廣告 smoke test，從 Gemma 判斷到走完直接刪除路徑約 5.5 秒。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8dc97811a3984c868266e03446647af6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Gemma 4 E4B 帶來的性能收益，不只來自它本身推理較快，而是它讓一部分日常工作不再需要啟動 Luna。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Gemma 4 E4B 帶來的性能收益，不只來自它本身推理較快，而是它讓一部分日常工作不再需要啟動 Luna。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cac1b36c4018020b1dbe478a367eb44",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "結語",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "結語",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5b1380810b144b45a08614809bc5342a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Gemma 4 E4B 不需要處理所有問題。它只要把高頻、機械、輸出固定的日常判斷留在本機完成，困難和不確定的部分再交給 Luna。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Gemma 4 E4B 不需要處理所有問題。它只要把高頻、機械、輸出固定的日常判斷留在本機完成，困難和不確定的部分再交給 Luna。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "99a71f51d16f48b383dc2155dc7d44be",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這就是小模型作為加速模組最實際的價值。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這就是小模型作為加速模組最實際的價值。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "3bec1b36c40181f89e0bd1287493b2b0",
       "slug": "skills-choose-agent-models-3bec1b36",
@@ -33,7 +705,7 @@
       "lastEditedTime": "2026-08-16T11:56:00.262Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:57:10.352Z",
+        "syncedAt": "2026-08-28T11:15:54.397Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -735,7 +1407,7 @@
       "lastEditedTime": "2026-08-15T12:43:46.007Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:57:10.713Z",
+        "syncedAt": "2026-08-28T11:15:54.705Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -2377,7 +3049,7 @@
       "lastEditedTime": "2026-07-21T21:05:27.763Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:57:19.585Z",
+        "syncedAt": "2026-08-28T11:16:00.056Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -3121,7 +3793,7 @@
       "lastEditedTime": "2026-07-21T14:55:42.809Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:57:19.963Z",
+        "syncedAt": "2026-08-28T11:16:00.485Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -3466,7 +4138,7 @@
       "lastEditedTime": "2026-05-23T15:01:21.702Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:57:20.381Z",
+        "syncedAt": "2026-08-28T11:16:00.784Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -5807,7 +6479,7 @@
       "lastEditedTime": "2026-05-23T13:53:13.789Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:57:20.958Z",
+        "syncedAt": "2026-08-28T11:16:01.457Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -6824,7 +7496,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:57:37.092Z",
+        "syncedAt": "2026-08-28T11:16:10.990Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -9171,7 +9843,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:58:09.758Z",
+        "syncedAt": "2026-08-28T11:16:37.165Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -10352,7 +11024,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:58:14.890Z",
+        "syncedAt": "2026-08-28T11:16:45.290Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -10937,7 +11609,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:58:32.813Z",
+        "syncedAt": "2026-08-28T11:16:59.803Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -13130,7 +13802,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:58:33.603Z",
+        "syncedAt": "2026-08-28T11:17:00.338Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -13853,7 +14525,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:58:34.171Z",
+        "syncedAt": "2026-08-28T11:17:00.660Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -14621,7 +15293,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:58:35.048Z",
+        "syncedAt": "2026-08-28T11:17:01.011Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -15765,7 +16437,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:58:59.997Z",
+        "syncedAt": "2026-08-28T11:17:20.232Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -16489,7 +17161,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:59:00.559Z",
+        "syncedAt": "2026-08-28T11:17:20.499Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -17359,7 +18031,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:59:01.027Z",
+        "syncedAt": "2026-08-28T11:17:20.768Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -18739,7 +19411,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:59:01.556Z",
+        "syncedAt": "2026-08-28T11:17:21.089Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -22186,7 +22858,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:59:10.083Z",
+        "syncedAt": "2026-08-28T11:17:27.875Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -24032,7 +24704,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:59:10.700Z",
+        "syncedAt": "2026-08-28T11:17:28.327Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -24687,7 +25359,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:59:15.094Z",
+        "syncedAt": "2026-08-28T11:17:30.437Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -25303,7 +25975,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:59:23.801Z",
+        "syncedAt": "2026-08-28T11:17:36.255Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -26069,7 +26741,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T11:59:24.264Z",
+        "syncedAt": "2026-08-28T11:17:36.692Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -29016,7 +29688,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T12:00:54.215Z",
+        "syncedAt": "2026-08-28T11:18:23.121Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -30134,7 +30806,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T12:01:03.669Z",
+        "syncedAt": "2026-08-28T11:18:27.208Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -30512,7 +31184,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T12:01:07.073Z",
+        "syncedAt": "2026-08-28T11:18:28.796Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -33319,7 +33991,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T12:02:50.430Z",
+        "syncedAt": "2026-08-28T11:19:25.148Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -33547,7 +34219,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T12:02:55.988Z",
+        "syncedAt": "2026-08-28T11:19:28.609Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -34312,7 +34984,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-16T12:03:04.221Z",
+        "syncedAt": "2026-08-28T11:19:32.772Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
