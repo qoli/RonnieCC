@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-08-28T11:19:53.677Z",
+  "generatedAt": "2026-08-31T20:57:23.211Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,3005 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "3cdc1b36c40181b58b50db5caad5fced",
+      "slug": "mlx-h3-m2-ultra-settings-3cdc1b36",
+      "seoSlug": "mlx-h3-m2-ultra-settings",
+      "legacySlugs": [
+        "在-m2-ultra-128gb-上把-h3-跑起來-我的-mlx-h3-運行參數-3cdc1b36"
+      ],
+      "title": "在 M2 Ultra 128GB 上把 H3 跑起來：我的 mlx-h3 運行參數",
+      "tag": "AI,Local AI,macOS,Video,Pipeline,Notes",
+      "writtenDate": "2026-09-01",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/mlx-h3-m2-ultra-settings-3cdc1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/%E5%9C%A8-m2-ultra-128gb-%E4%B8%8A%E6%8A%8A-h3-%E8%B7%91%E8%B5%B7%E4%BE%86-%E6%88%91%E7%9A%84-mlx-h3-%E9%81%8B%E8%A1%8C%E5%8F%83%E6%95%B8-3cdc1b36c40181b58b50db5caad5fced?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-08-31T18:29:41.695Z",
+      "lastEditedTime": "2026-08-31T20:52:17.855Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-08-31T20:52:55.173Z",
+        "blocks": [
+          {
+            "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這篇文章，我分享一下如何在我的 macOS 上，把 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "MiniMax H3",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://huggingface.co/MiniMaxAI/MiniMax-H3"
+              },
+              {
+                "text": " 這個模型成功跑起來。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這篇文章，我分享一下如何在我的 macOS 上，把 MiniMax H3 這個模型成功跑起來。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40180259973dad48e9be418",
+            "type": "text",
+            "richText": [
+              {
+                "text": "為何我要堅持在 macOS 跑起來這件事呢？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "為何我要堅持在 macOS 跑起來這件事呢？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40180d79da7c9c6ee8d79a8",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這是因為，8bit 量化永遠比 nvfp4 具備更好的質量，無論在提示詞的遵守能力，以及畫面元素的運動表達下。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這是因為，8bit 量化永遠比 nvfp4 具備更好的質量，無論在提示詞的遵守能力，以及畫面元素的運動表達下。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c401808aa750e5355b2d607c",
+            "type": "code",
+            "richText": [
+              {
+                "text": "weights/\n├── tokenizer/tokenizer.json\n├── mlx-8bit/te_qwen3vl_a8g32.safetensors\n├── mlx-8bit/dit_fl2va_a8g32.safetensors\n├── mlx-8bit/dit_ref2va_a8g32.safetensors\n├── adapters/minimax-h3-turbo/\n│   ├── minimax_h3_turbo_v4_step600_ema.safetensors\n│   └── minimax_h3_turbo_4step_ema_ckpt850.safetensors\n└── bf16/vae/\n    ├── minimax_h3_video_vae_fp16.safetensors\n    └── minimax_h3_audio_vae_fp32.safetensors",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "weights/\n├── tokenizer/tokenizer.json\n├── mlx-8bit/te_qwen3vl_a8g32.safetensors\n├── mlx-8bit/dit_fl2va_a8g32.safetensors\n├── mlx-8bit/dit_ref2va_a8g32.safetensors\n├── adapters/minimax-h3-turbo/\n│   ├── minimax_h3_turbo_v4_step600_ema.safetensors\n│   └── minimax_h3_turbo_4step_ema_ckpt850.safetensors\n└── bf16/vae/\n    ├── minimax_h3_video_vae_fp16.safetensors\n    └── minimax_h3_audio_vae_fp32.safetensors",
+            "caption": [],
+            "language": "Bash",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c401806583b0e7111e5bd74c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "為了在 M2 Ultra 128g 平穩時間長時間運行，分段和 AGX RELAX 是必不可少的參數。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "為了在 M2 Ultra 128g 平穩時間長時間運行，分段和 AGX RELAX 是必不可少的參數。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c401807a93f6f717b89413fc",
+            "type": "code",
+            "richText": [
+              {
+                "text": "QKV 2,048／SDPA 512／MLP 2,048 三段 chunking + AGX_RELAX_CDM_CTXSTORE_TIMEOUT=1",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "QKV 2,048／SDPA 512／MLP 2,048 三段 chunking + AGX_RELAX_CDM_CTXSTORE_TIMEOUT=1",
+            "caption": [],
+            "language": "Bash",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40180089d69f335629b90b4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "然後，我的 4070Ti 12G vRAM 機器，作為快速預覽機。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "然後，我的 4070Ti 12G vRAM 機器，作為快速預覽機。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9e01052da9e34257a3b9bfd5c9052ce6",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "故事流程",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "故事流程",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "86b50ecdb93d461096ac738316c0ed14",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "H3.c 成功編譯、通過 1,768 項檢查，也能生成短片。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "H3.c 成功編譯、通過 1,768 項檢查，也能生成短片。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40180829927d008c6104b46",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "真正的長序列正常退出，但畫面與聲音靜默失效。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "真正的長序列正常退出，但畫面與聲音靜默失效。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40180bead96d43a84000f2f",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "H3.c 的 MPSGraph SDPA 可以用 2,048-row query chunking 避開部分錯誤，但速度代價與其他畫質問題促使我轉向 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "mlx-h3",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "H3.c 的 MPSGraph SDPA 可以用 2,048-row query chunking 避開部分錯誤，但速度代價與其他畫質問題促使我轉向 mlx-h3。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c401809581caeae4bf65917c",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "mlx-h3",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 先跑通 18,916-row、28,548-row 任務，接着挑戰 1280×736、362-frame Base-20。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "mlx-h3 先跑通 18,916-row、28,548-row 任務，接着挑戰 1280×736、362-frame Base-20。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40180449d20f77ca8c86489",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "首次 DiT 完成後才在 VAE 發現 non-finite；因為沒有保存 latent，數小時運算無法恢復，於是我加入 rolling checkpoint。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "首次 DiT 完成後才在 VAE 發現 non-finite；因為沒有保存 latent，數小時運算無法恢復，於是我加入 rolling checkpoint。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40180dea845e23dc21771d4",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "從 step 4 resume 時，顯示器被喚醒，step 5 出現 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "ImpactingInteractivity watchdog kill",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/ml-explore/mlx/issues/3267"
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "從 step 4 resume 時，顯示器被喚醒，step 5 出現 ImpactingInteractivity watchdog kill。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40180728d5cccf8383bd8cb",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "網絡資料顯示，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "display-active MLX 工作",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/ml-explore/mlx/issues/3267"
+              },
+              {
+                "text": "和 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "65K+ full SDPA",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/ml-explore/mlx/issues/3302"
+              },
+              {
+                "text": " 都可能觸發 watchdog；AGX relaxation 只是 workaround，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "chunked full-attention PR #3307",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/ml-explore/mlx/pull/3307"
+              },
+              {
+                "text": " 也已關閉、未合併到我使用的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "MLX v0.32.2",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/ml-explore/mlx/releases/tag/v0.32.2"
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "網絡資料顯示，display-active MLX 工作和 65K+ full SDPA 都可能觸發 watchdog；AGX relaxation 只是 workaround，chunked full-attention PR #3307 也已關閉、未合併到我使用的 MLX v0.32.2。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c401806dafd0fc5a6de7cc7c",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "單獨加入 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "AGX_RELAX_CDM_CTXSTORE_TIMEOUT=1",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 後，明確 Metal error 變成全 NaN。它改變了失敗表面，沒有修好 correctness。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "單獨加入 AGX_RELAX_CDM_CTXSTORE_TIMEOUT=1 後，明確 Metal error 變成全 NaN。它改變了失敗表面，沒有修好 correctness。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40180cca3ccfc3fabe35385",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "block／stage probe 把 non-finite 前移到 raw Q；QKV 2,048 讓前六個 blocks finite，但 block 7 仍被 watchdog 終止。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "block／stage probe 把 non-finite 前移到 raw Q；QKV 2,048 讓前六個 blocks finite，但 block 7 仍被 watchdog 終止。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40180e3b9abc59f12dc7155",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "SDPA 降到 512 後，單次工作變短，但 block 3、chunk 154/205 仍被 display-active watchdog 終止。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "SDPA 降到 512 後，單次工作變短，但 block 3、chunk 154/205 仍被 display-active watchdog 終止。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "24ecc93c50bf4f89afca4b3a23f18073",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "DeepSeek Pro Max 根據已有證據，獨立建議用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "QKV 2048 + SDPA 512 + AGX=1 + finite guards",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 做 bounded step-5 qualification，並判斷 chunk 154 沒有特殊數學意義。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "DeepSeek Pro Max 根據已有證據，獨立建議用 QKV 2048 + SDPA 512 + AGX=1 + finite guards 做 bounded step-5 qualification，並判斷 chunk 154 沒有特殊數學意義。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3b733b5d17ad4c9d93b121e7ea86327b",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "解題目標由證明 macOS driver 的唯一內部真相，轉為把會觸發 watchdog 的工作拆成較短、受保護、可恢復的單位。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "解題目標由證明 macOS driver 的唯一內部真相，轉為把會觸發 watchdog 的工作拆成較短、受保護、可恢復的單位。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c6685b4245344ab7abe5c62737f1b028",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "bounded step 5 通過 50/50 blocks，peak 39.2 GiB、swap 0，之後完成 20 steps。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "bounded step 5 通過 50/50 blocks，peak 39.2 GiB、swap 0，之後完成 20 steps。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0e95375dfce44db48519229b58740cd4",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "成片仍從 decoded frame 251 開始花屏；decoder-only replay 排除 VAE、FFmpeg 和 mux。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "成片仍從 decoded frame 251 開始花屏；decoder-only replay 排除 VAE、FFmpeg 和 mux。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "373c0c63326e440eb305ba34f6062dcc",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "最後定位到 104,595-row MLP ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "fc1",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 約 5.586 GiB 的 intermediate；row 74,899 對應 4 GiB 邊界。加入 MLP 2,048 後，完整生成通過。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "最後定位到 104,595-row MLP fc1 約 5.586 GiB 的 intermediate；row 74,899 對應 4 GiB 邊界。加入 MLP 2,048 後，完整生成通過。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "03b1ffedf49248c8baf0c1fa5173fec7",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "Kimi K3 與 DeepSeek Pro Max：兩條解題路線",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Kimi K3 與 DeepSeek Pro Max：兩條解題路線",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "50db06ff1fec49638df00bd329efc6ea",
+            "type": "text",
+            "richText": [
+              {
+                "text": "兩個顧問都把問題拆成大型 QKV correctness 與 display-active watchdog，但完成標準不同。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "兩個顧問都把問題拆成大型 QKV correctness 與 display-active watchdog，但完成標準不同。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f9db4ee404d64affaa121d3f9be21706",
+            "type": "table",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [
+              ":F[~",
+              "DL`R",
+              "St{T"
+            ],
+            "tableHasColumnHeader": true,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "4b1d9e736b304fcc9b4805411d42f781",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  ":F[~": [
+                    {
+                      "text": "項目",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "DL`R": [
+                    {
+                      "text": "Kimi K3-256K max",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "St{T": [
+                    {
+                      "text": "DeepSeek V4-Pro max",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "f6a19ac708cb445cb4a490641cb86f9a",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  ":F[~": [
+                    {
+                      "text": "主要路線",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "DL`R": [
+                    {
+                      "text": "繼續追 mechanism：online K/V softmax-LSE、每個 K/V chunk 單獨 eval，再用 falsifier matrix 區分機制。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "St{T": [
+                    {
+                      "text": "先做 bounded qualification：QKV 2,048、SDPA 512、AGX=1、stage／block finite guards。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "162f4a6e9aa94b4ca37ab5fd26394643",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  ":F[~": [
+                    {
+                      "text": "重點判斷",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "DL`R": [
+                    {
+                      "text": "大型 fused QKV 的 index／offset 邊界，和 display-active watchdog，是兩個獨立故障。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "St{T": [
+                    {
+                      "text": "同樣拆成兩個故障，並量化未分塊 QKV 約 4,498,421,760 bytes，超過 2^32。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "0adb7d07e427452caacfd8f997f40875",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  ":F[~": [
+                    {
+                      "text": "本機驗證",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "DL`R": [
+                    {
+                      "text": "有兩項上下文誤讀：把當前 run 當成已啟用 AGX，也把未採用的 PR #3307 LSE workspace 當成現有負擔，所以「不要再測 AGX」沒有採納。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "St{T": [
+                    {
+                      "text": "建議的 bounded 組合通過 50/50 blocks，checkpoint 到 5/20；但這不代表完整 correctness 已解決。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "555733ec76254e8bab8d1c8e40110e0c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Kimi 的路線是繼續追查 mechanism；DeepSeek 的路線是用受控實驗繞開觸發點。兩條路都有價值，而這次先取得本機完整進展的是後者。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Kimi 的路線是繼續追查 mechanism；DeepSeek 的路線是用受控實驗繞開觸發點。兩條路都有價值，而這次先取得本機完整進展的是後者。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c7182b9d723d43379109b95c1db71860",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "參數來源和證據邊界",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "參數來源和證據邊界",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "dd03a224fa0c4b24b514b5d86bd55bfe",
+            "type": "text",
+            "richText": [
+              {
+                "text": "模型、runtime 與版本",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              }
+            ],
+            "plainText": "模型、runtime 與版本",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b9f25124a0db4f3ea56edc88745818d6",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "MiniMax-H3 官方模型",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://huggingface.co/MiniMaxAI/MiniMax-H3"
+              },
+              {
+                "text": "：tokenizer、Video VAE、Audio VAE 與官方模型 contract。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "MiniMax-H3 官方模型：tokenizer、Video VAE、Audio VAE 與官方模型 contract。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "96e4fea3fe7e4fcb915ea4e3ab753975",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "minimax-h3-base-8bit-mlx",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://huggingface.co/appautomaton/minimax-h3-base-8bit-mlx"
+              },
+              {
+                "text": "：這次使用的 W8A16 Text Encoder／DiT bundle。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "minimax-h3-base-8bit-mlx：這次使用的 W8A16 Text Encoder／DiT bundle。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d65833825aae40eda329adf4ae82ef40",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "qoli/mlx-h3 fork（main）",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/mlx-h3/tree/main"
+              },
+              {
+                "text": "：我維護的 mlx-h3 fork，收錄本文使用的長序列執行修正。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "qoli/mlx-h3 fork（main）：我維護的 mlx-h3 fork，收錄本文使用的長序列執行修正。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c9ec3e027f0d42c2a51bc0cb0748c4c6",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "commit 76cde5a",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/mlx-h3/commit/76cde5a"
+              },
+              {
+                "text": "：QKV、SDPA、MLP 分塊、finite guards、checkpoint 與長序列執行邊界的精確版本 permalink。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "commit 76cde5a：QKV、SDPA、MLP 分塊、finite guards、checkpoint 與長序列執行邊界的精確版本 permalink。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9839761a5c6f4b3987001dd66b4f0fd2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "網絡資料",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              }
+            ],
+            "plainText": "網絡資料",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7257197e89cd4792a9b6d181e22aeb53",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "MLX #3267",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/ml-explore/mlx/issues/3267"
+              },
+              {
+                "text": "：display-active 時的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "ImpactingInteractivity",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "、display asleep 對照，以及 AGX relaxation 只屬 workaround。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "MLX #3267：display-active 時的 ImpactingInteractivity、display asleep 對照，以及 AGX relaxation 只屬 workaround。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "50f15d2874ce4eb4ab52748a592e6386",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "MLX #3302",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/ml-explore/mlx/issues/3302"
+              },
+              {
+                "text": "：65K+ full SDPA、單一 command buffer 與 GPU watchdog 風險；AGX 不應被當成永久安全修復。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "MLX #3302：65K+ full SDPA、單一 command buffer 與 GPU watchdog 風險；AGX 不應被當成永久安全修復。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1c75931d25ad4570b356b772e34d335b",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "MLX PR #3307",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/ml-explore/mlx/pull/3307"
+              },
+              {
+                "text": "：chunked full-attention／online-LSE 的探索。PR 已 closed、未合併，不能假定 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "MLX v0.32.2",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/ml-explore/mlx/releases/tag/v0.32.2"
+              },
+              {
+                "text": " 已包含，也不能直接把短 query 假設套到 H3 的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "qL=kL=104,595",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "MLX PR #3307：chunked full-attention／online-LSE 的探索。PR 已 closed、未合併，不能假定 MLX v0.32.2 已包含，也不能直接把短 query 假設套到 H3 的 qL=kL=104,595。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "73568df3e048460d8ce41c0d136c8192",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "PortOS watchdog research",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/atomantic/PortOS/blob/main/docs/research/2026-06-13-mflux-training-watchdog-panic.md"
+              },
+              {
+                "text": "、",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "mlx-lm #1662",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/ml-explore/mlx-lm/issues/1662"
+              },
+              {
+                "text": " 和 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Apple Developer thread 653206",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://developer.apple.com/forums/thread/653206"
+              },
+              {
+                "text": "：只作 display-active／WindowServer watchdog 故障家族的旁證，不是本次 H3 唯一 root cause 的證明。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "PortOS watchdog research、mlx-lm #1662 和 Apple Developer thread 653206：只作 display-active／WindowServer watchdog 故障家族的旁證，不是本次 H3 唯一 root cause 的證明。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c4b677c41193488589b29987d44a2eda",
+            "type": "text",
+            "richText": [
+              {
+                "text": "本機觀察與實作",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              }
+            ],
+            "plainText": "本機觀察與實作",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f60ee79799744689909105a596cb8ff5",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "QKV 2,048：未分塊 QKV 約 4,498,421,760 bytes，raw Q 首次 non-finite；2,048-row chunking 在本機通過。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "QKV 2,048：未分塊 QKV 約 4,498,421,760 bytes，raw Q 首次 non-finite；2,048-row chunking 在本機通過。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "93645a016f4249d0a710c37841a1d4eb",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "SDPA 512：我在 SDPA 2,048 遇到 watchdog 後先自行採用並測試；DeepSeek 後來獨立提出相同數值。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "SDPA 512：我在 SDPA 2,048 遇到 watchdog 後先自行採用並測試；DeepSeek 後來獨立提出相同數值。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "841c070711cd4a18a44eadf6f21db167",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "MLP 2,048：本機 forensic 發現 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "fc1",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 約 5.586 GiB、row 74,899 對應 4 GiB 邊界；2,048-row chunk 約 112 MiB，並通過完整生成。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "MLP 2,048：本機 forensic 發現 fc1 約 5.586 GiB、row 74,899 對應 4 GiB 邊界；2,048-row chunk 約 112 MiB，並通過完整生成。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "02a7e85d35e2486e8c12e7549bd19ccc",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "70 GiB guard、rolling checkpoint、finite guard 和 swap guard，都是這次 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "本機運行設計",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/mlx-h3/commit/76cde5a"
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "70 GiB guard、rolling checkpoint、finite guard 和 swap guard，都是這次 本機運行設計。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c66de3bdabb14f6bba0f13092ac4b4a2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "顧問意見",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              }
+            ],
+            "plainText": "顧問意見",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b45abdf2c58647909452e0764df243c7",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "DeepSeek Pro Max 建議用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "QKV=2048",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "、",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "SDPA=512",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "、",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "AGX=1",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 與 finite guards 做 bounded step-5 qualification，並判斷 chunk 154 更像 display-active scheduling deadline，而不是特殊數學邊界。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "DeepSeek Pro Max 建議用 QKV=2048、SDPA=512、AGX=1 與 finite guards 做 bounded step-5 qualification，並判斷 chunk 154 更像 display-active scheduling deadline，而不是特殊數學邊界。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "70f24d98c69b40a79bbc9d005f1a4b6e",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "4 GiB／32-bit overflow 不能寫成已證明的 MLX upstream root cause。直接證據是 raw Q 首次 non-finite，以及 QKV chunking 後消失。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "4 GiB／32-bit overflow 不能寫成已證明的 MLX upstream root cause。直接證據是 raw Q 首次 non-finite，以及 QKV chunking 後消失。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c401813ca48bddf0c95e9354",
+            "type": "file",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "H3.c 的 22-frame 短序列成功樣本。短片能正常生成；問題是在真正有用的長序列才穩定重現。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:4c8247f7-8c87-403e-8c27-39d072d595bc:h3c-short-sequence-success.mp4",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40181629322d019fe86862b",
+            "type": "file",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "H3.c 未分塊長序列失敗樣本：程序正常退出、MP4 可播放，但畫面只剩灰褐紋理。播放時請留意音量；音頻接近全頻噪聲。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:38c9a4cf-4c69-4908-8fc2-caa698b6e7dc:h3c-long-sequence-monolithic-failure.mp4",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40181db93b3e7a79de83b3f",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "失敗樣本的音頻頻譜。以靜態圖呈現噪聲證據，避免頁面主動播放高音量音頻。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:e529be98-e236-4fc5-8e9d-125942eb0c9c:h3c-monolithic-failure-audio-spectrum.png",
+            "assetPath": "content/blog-assets/3cdc1b36c40181b58b50db5caad5fced/3cdc1b36c40181db93b3e7a79de83b3f-h3c-monolithic-failure-audio-spectrum.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40181d4a62bdaefc5b9ff49",
+            "type": "file",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "H3.c 的 q2048 SDPA diagnostic：864×480、192 frames。場景和電車重新出現。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:5af384a6-677e-41ae-aa63-906368547081:h3c-sdpa-q2048-diagnostic.mp4",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40181e5b348c54773d999aa",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "q2048 diagnostic contact sheet。這不是與 15 秒失敗樣本完全相同條件的嚴格 A/B，只用來展示 chunking 後可讀場景重新出現。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:5d9b7a61-5ab1-4f91-b5ce-f0a691fb1d7e:h3c-sdpa-q2048-contact-sheet.png",
+            "assetPath": "content/blog-assets/3cdc1b36c40181b58b50db5caad5fced/3cdc1b36c40181e5b348c54773d999aa-h3c-sdpa-q2048-contact-sheet.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "efb95c1d56304009bd5e5053c0d0adee",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "我最後使用的設定",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我最後使用的設定",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "34aee09e93df47548dfd22dd4274112b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "模型檔案來自 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "MiniMax-H3 官方權重",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://huggingface.co/MiniMaxAI/MiniMax-H3"
+              },
+              {
+                "text": "與 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "8-bit MLX bundle",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://huggingface.co/appautomaton/minimax-h3-base-8bit-mlx"
+              },
+              {
+                "text": "：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "模型檔案來自 MiniMax-H3 官方權重與 8-bit MLX bundle：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3a427a68c258486d8417e867892264c5",
+            "type": "code",
+            "richText": [
+              {
+                "text": "MLX 8-bit Text Encoder：W8A16\nMLX 8-bit Ref2VA DiT：W8A16\nVideo VAE：FP16\nAudio VAE：FP32\nTokenizer：MiniMax tokenizer.json",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "MLX 8-bit Text Encoder：W8A16\nMLX 8-bit Ref2VA DiT：W8A16\nVideo VAE：FP16\nAudio VAE：FP32\nTokenizer：MiniMax tokenizer.json",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "40fd0a960e2c4165bc015adeb270be82",
+            "type": "text",
+            "richText": [
+              {
+                "text": "完整生成命令的核心是：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "完整生成命令的核心是：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "82f4e0eac6f54060b837b3d02eb118fb",
+            "type": "code",
+            "richText": [
+              {
+                "text": "AGX_RELAX_CDM_CTXSTORE_TIMEOUT=1 \\\nuv run mlx-h3 \\\n  --prompt-file \"$MLX_H3_PROMPT_FILE\" \\\n  --width 1280 \\\n  --height 736 \\\n  --frames 362 \\\n  --steps 20 \\\n  --seed 42 \\\n  --budget 70 \\\n  --ref-image-size max \\\n  --ref-image \"$MLX_H3_REFERENCE_IMAGE\" \\\n  --qkv-projection-chunk-size 2048 \\\n  --sdpa-query-chunk-size 512 \\\n  --mlp-row-chunk-size 2048 \\\n  --latent-cache outputs/result.mp4.latents.safetensors \\\n  --output outputs/result.mp4",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "AGX_RELAX_CDM_CTXSTORE_TIMEOUT=1 \\\nuv run mlx-h3 \\\n  --prompt-file \"$MLX_H3_PROMPT_FILE\" \\\n  --width 1280 \\\n  --height 736 \\\n  --frames 362 \\\n  --steps 20 \\\n  --seed 42 \\\n  --budget 70 \\\n  --ref-image-size max \\\n  --ref-image \"$MLX_H3_REFERENCE_IMAGE\" \\\n  --qkv-projection-chunk-size 2048 \\\n  --sdpa-query-chunk-size 512 \\\n  --mlp-row-chunk-size 2048 \\\n  --latent-cache outputs/result.mp4.latents.safetensors \\\n  --output outputs/result.mp4",
+            "caption": [],
+            "language": "Bash",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7e2a76a29fe343a3a946b9200a2e34c0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "實際長任務還應該放在 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "caffeinate -is",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 下運行，避免系統睡眠。重新執行時不要建立另一個輸出 identity，而是用完全相同的 prompt、references、weights、geometry、seed 和 sampling profile，加入：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "實際長任務還應該放在 caffeinate -is 下運行，避免系統睡眠。重新執行時不要建立另一個輸出 identity，而是用完全相同的 prompt、references、weights、geometry、seed 和 sampling profile，加入：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "375b0f779fde4594a641602a7421fa75",
+            "type": "code",
+            "richText": [
+              {
+                "text": "--resume-checkpoint outputs/result.mp4.latents.safetensors",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "--resume-checkpoint outputs/result.mp4.latents.safetensors",
+            "caption": [],
+            "language": "Bash",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e26d65fd4584414d874b8a8b9a0a6685",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如果 20 steps 已經完成，只是在 VAE 或 mux 階段失敗，則不應再跑一次 DiT：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果 20 steps 已經完成，只是在 VAE 或 mux 階段失敗，則不應再跑一次 DiT：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1531401febf646a1ada17d160392266b",
+            "type": "code",
+            "richText": [
+              {
+                "text": "uv run mlx-h3 \\\n  --decode-latents outputs/result.mp4.latents.safetensors \\\n  --output outputs/result.mp4",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "uv run mlx-h3 \\\n  --decode-latents outputs/result.mp4.latents.safetensors \\\n  --output outputs/result.mp4",
+            "caption": [],
+            "language": "Bash",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7a43a60a4744430d81863129da7f8f4b",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "這些參數代表甚麼",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這些參數代表甚麼",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a771eb4c0c22419e90d4ba78d64be60f",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "1280×736、362 frames",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "1280×736、362 frames",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ea76b63e3a58472c904a72d403a9b4df",
+            "type": "text",
+            "richText": [
+              {
+                "text": "mlx-h3 的畫布長寬必須是 32 的倍數，總面積不能超過 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "768 × 1344",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。1280×736 在這個限制內。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "mlx-h3 的畫布長寬必須是 32 的倍數，總面積不能超過 768 × 1344。1280×736 在這個限制內。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7dcd427d06264ffc9ede45d3a5cd5e09",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Video VAE 的 frame count 使用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "17n + 5",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 對齊。362 frames 在 24 fps 下是 15.083 秒，也是我這次完整品牌片的長度。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Video VAE 的 frame count 使用 17n + 5 對齊。362 frames 在 24 fps 下是 15.083 秒，也是我這次完整品牌片的長度。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a28105fc89dd49c49ccfd090af579b52",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個尺寸不是「Mac 能跑 H3」的最低要求。低成本驗證可以先用 416×224、124 frames；我也用 864×480、192 frames 跑過 8 秒、四張 Ref2VA 圖片的小貓故事。那次 sequence length 是 28,548，80.8 分鐘完成，peak MLX allocation 為 28.7 GiB。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個尺寸不是「Mac 能跑 H3」的最低要求。低成本驗證可以先用 416×224、124 frames；我也用 864×480、192 frames 跑過 8 秒、四張 Ref2VA 圖片的小貓故事。那次 sequence length 是 28,548，80.8 分鐘完成，peak MLX allocation 為 28.7 GiB。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "398c37f9b9b4460a94617c823a8972f1",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "W8A16，而不是先追求 W8A8",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "W8A16，而不是先追求 W8A8",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "904eca643b58469a92038bd17b816785",
+            "type": "text",
+            "richText": [
+              {
+                "text": "8-bit DiT 和 Text Encoder 的目的首先是降低 residency。計算時 activation 仍然是 BF16，所以 W8A16 並不是用低精度換取一個漂亮的速度數字。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "8-bit DiT 和 Text Encoder 的目的首先是降低 residency。計算時 activation 仍然是 BF16，所以 W8A16 並不是用低精度換取一個漂亮的速度數字。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1fa30133c61f461382ddb8a719cb900d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我沒有在這次 M2 Ultra profile 裡加入 NAX W8A8，也沒有使用 Turbo LoRA 或 cache approximation。我要先建立 H3 Base 的品質基準，不想同時疊加 sampler、量化和 cache 近似帶來的變數。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我沒有在這次 M2 Ultra profile 裡加入 NAX W8A8，也沒有使用 Turbo LoRA 或 cache approximation。我要先建立 H3 Base 的品質基準，不想同時疊加 sampler、量化和 cache 近似帶來的變數。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0faea48a13a14d5f99b24b598aa29c62",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Video VAE 保持 FP16，Audio VAE 則使用 FP32。影片和音頻在 H3 中共同 denoise，但最後由不同 VAE 解碼；音頻曾經生成接近滿幅的噪聲，所以我沒有再在 Audio VAE 上壓低精度。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Video VAE 保持 FP16，Audio VAE 則使用 FP32。影片和音頻在 H3 中共同 denoise，但最後由不同 VAE 解碼；音頻曾經生成接近滿幅的噪聲，所以我沒有再在 Audio VAE 上壓低精度。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1cbfa0b84bca47d8862ac9b6ae8a9529",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "Base 20 steps、simple + res_multistep",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Base 20 steps、simple + res_multistep",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "843486b5b3084e2c8ce9b17e07cfb23b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "20 steps 是這個 runtime 的品質基線。Base 路徑使用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "simple",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " schedule 和二階 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "res_multistep",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " solver，影片與音頻在同一個 joint sequence 中一起前進。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "20 steps 是這個 runtime 的品質基線。Base 路徑使用 simple schedule 和二階 res_multistep solver，影片與音頻在同一個 joint sequence 中一起前進。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d52ce5b0704e422fb54f4669db5eeb84",
+            "type": "text",
+            "richText": [
+              {
+                "text": "seed 42",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 只是讓驗證可重現，不是一個提升品質的魔法數字。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "seed 42 只是讓驗證可重現，不是一個提升品質的魔法數字。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "89af1547d5484f28afc68538fad0d683",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "QKV 2,048、SDPA 512、MLP 2,048",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "QKV 2,048、SDPA 512、MLP 2,048",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "85464d52d99642d28ccd37cb1e738a95",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這三個 chunk size 處理三個不同邊界，而且來源不完全相同。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這三個 chunk size 處理三個不同邊界，而且來源不完全相同。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "280c2461d5ce4e2387b65485fdda3721",
+            "type": "text",
+            "richText": [
+              {
+                "text": "--qkv-projection-chunk-size 2048",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 來自",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "本機 block／stage probe 與 chunking 實作",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/mlx-h3/commit/76cde5a"
+              },
+              {
+                "text": "。未分塊 QKV 約 4,498,421,760 bytes，raw Q 首次出現 non-finite；改成 2,048-row chunking 後，這個失敗在實機消失。這支持「大型 fused output 是觸發條件」，但不足以把 32-bit overflow 寫成已證明的 MLX upstream root cause。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "--qkv-projection-chunk-size 2048 來自本機 block／stage probe 與 chunking 實作。未分塊 QKV 約 4,498,421,760 bytes，raw Q 首次出現 non-finite；改成 2,048-row chunking 後，這個失敗在實機消失。這支持「大型 fused output 是觸發條件」，但不足以把 32-bit overflow 寫成已證明的 MLX upstream root cause。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f29ff364d00f40dfac6b66b3b07f8280",
+            "type": "text",
+            "richText": [
+              {
+                "text": "--sdpa-query-chunk-size 512",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是我在 2,048-row SDPA 仍遇到 watchdog 後先自行採用的數值；DeepSeek Pro Max 後來獨立提出相同方向。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "MLX #3302",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/ml-explore/mlx/issues/3302"
+              },
+              {
+                "text": " 提供的是長 full-SDPA command buffer 的 watchdog 背景，不是這個 H3 數值的來源。512 把 query 分段，縮短每個 full-attention Metal command buffer；每段 query 仍然看到完整 key/value sequence，所以不是 local attention，也沒有近似 attention semantics。512 單獨仍曾在 chunk 154/205 被 watchdog 終止，真正通過的是後來的 bounded 組合。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "--sdpa-query-chunk-size 512 是我在 2,048-row SDPA 仍遇到 watchdog 後先自行採用的數值；DeepSeek Pro Max 後來獨立提出相同方向。MLX #3302 提供的是長 full-SDPA command buffer 的 watchdog 背景，不是這個 H3 數值的來源。512 把 query 分段，縮短每個 full-attention Metal command buffer；每段 query 仍然看到完整 key/value sequence，所以不是 local attention，也沒有近似 attention semantics。512 單獨仍曾在 chunk 154/205 被 watchdog 終止，真正通過的是後來的 bounded 組合。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4a81359dfbb9479fa4bc9ef7c55a5084",
+            "type": "text",
+            "richText": [
+              {
+                "text": "--mlp-row-chunk-size 2048",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 則來自成片 decoded frame 251 之後的 forensic。H3 的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "fc1",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 每個 sequence row 輸出 28,672 個 BF16 values；sequence length 104,595 時，未分塊 fused output 是 5.586 GiB。污染對應 packed row 74,899，也就是 output 跨過 4 GiB 的位置。這是很強的本機邊界相關性，不等於已證明底層 driver 的唯一原因。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "--mlp-row-chunk-size 2048 則來自成片 decoded frame 251 之後的 forensic。H3 的 fc1 每個 sequence row 輸出 28,672 個 BF16 values；sequence length 104,595 時，未分塊 fused output 是 5.586 GiB。污染對應 packed row 74,899，也就是 output 跨過 4 GiB 的位置。這是很強的本機邊界相關性，不等於已證明底層 driver 的唯一原因。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "487cf3925db04581a3a0bf56e84aeca4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "2,048-row MLP chunk 約 112 MiB。它不改變每一 row 的計算，只是不再要求 Metal 一次 materialize 超過 5 GiB 的中間 tensor。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "2,048-row MLP chunk 約 112 MiB。它不改變每一 row 的計算，只是不再要求 Metal 一次 materialize 超過 5 GiB 的中間 tensor。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40181ee8c72e4d1fe3a724a",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "失敗輸出相鄰幀：左為 decoded frame 250，右為第一個可見污染的 decoded frame 251。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:39f05a7a-214b-4fa3-8105-e177fe4a5728:mlx-h3-frame-250-251-corruption-boundary.png",
+            "assetPath": "content/blog-assets/3cdc1b36c40181b58b50db5caad5fced/3cdc1b36c40181ee8c72e4d1fe3a724a-mlx-h3-frame-250-251-corruption-boundary.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "19b9f7ab84804ae3a821b14571f5ce22",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "AGX_RELAX_CDM_CTXSTORE_TIMEOUT=1",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "AGX_RELAX_CDM_CTXSTORE_TIMEOUT=1",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "47f510f559664ae7900fe5ce411fa6f9",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這不是 MLX 的品質參數。它放寬 macOS 對長時間 Metal command 的 interactivity watchdog。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這不是 MLX 的品質參數。它放寬 macOS 對長時間 Metal command 的 interactivity watchdog。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d6ea9c39d511411e9c8cd879248e3b55",
+            "type": "text",
+            "richText": [
+              {
+                "text": "MLX #3267",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/ml-explore/mlx/issues/3267"
+              },
+              {
+                "text": " 與 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "MLX #3302",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/ml-explore/mlx/issues/3302"
+              },
+              {
+                "text": " 分別支持 display-active workload、長 full-SDPA command buffer 與 watchdog 風險，但不能證明這次 H3 的唯一 root cause。我的本機結果也顯示，單獨開啟 AGX 後，明確 Metal error 一度變成全 NaN；它只改變失敗表面，沒有修好 correctness。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "MLX #3267 與 MLX #3302 分別支持 display-active workload、長 full-SDPA command buffer 與 watchdog 風險，但不能證明這次 H3 的唯一 root cause。我的本機結果也顯示，單獨開啟 AGX 後，明確 Metal error 一度變成全 NaN；它只改變失敗表面，沒有修好 correctness。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6a3be0ed293f4d62854151d42e87fc3c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "真正的轉折，是不再等待一個已證明的 driver 內部真相才繼續，而是把 QKV、SDPA 和後來的 MLP 工作拆短，加入 finite、swap 和 checkpoint 保護，再用 bounded step 5 驗證。這個組合通過 50/50 blocks 後，才繼續完整 20 steps。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "真正的轉折，是不再等待一個已證明的 driver 內部真相才繼續，而是把 QKV、SDPA 和後來的 MLP 工作拆短，加入 finite、swap 和 checkpoint 保護，再用 bounded step 5 驗證。這個組合通過 50/50 blocks 後，才繼續完整 20 steps。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ee0cbcaf1703491393b041e914010761",
+            "type": "text",
+            "richText": [
+              {
+                "text": "代價是桌面可能出現更長時間的停頓，所以 mlx-h3 沒有把它做成預設值。我只會在長序列、登入中、display-active 的 Mac 上明確開啟。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "代價是桌面可能出現更長時間的停頓，所以 mlx-h3 沒有把它做成預設值。我只會在長序列、登入中、display-active 的 Mac 上明確開啟。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "76fa0bf8049c4205bbd6cbfea172448f",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "70 GiB memory budget",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "70 GiB memory budget",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b5849c75ca8e4ca5a132a4512b1be2f7",
+            "type": "text",
+            "richText": [
+              {
+                "text": "--budget 70",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 不是說這次生成必須吃掉 70 GiB，而是這台 128GB Mac 的 fail-fast 上限。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "--budget 70 不是說這次生成必須吃掉 70 GiB，而是這台 128GB Mac 的 fail-fast 上限。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "20eb6c9891a14a7faf2f9c2aa8b21e71",
+            "type": "text",
+            "richText": [
+              {
+                "text": "實際 1280×736 sustained run 的 DiT active memory 約 21.8 GiB，peak 約 36.6 GiB，沒有增加 swap。我之前因舊 guard 的 free-memory 判斷遇到 false positive，所以這裡只把 70 GiB 當作安全柵欄，不當作預期運行值。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "實際 1280×736 sustained run 的 DiT active memory 約 21.8 GiB，peak 約 36.6 GiB，沒有增加 swap。我之前因舊 guard 的 free-memory 判斷遇到 false positive，所以這裡只把 70 GiB 當作安全柵欄，不當作預期運行值。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c401801bbe46de41a5a2e2e4",
+            "type": "image",
+            "richText": [
+              {
+                "text": "終端機 2026-08-31 上午1.07.55.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "終端機 2026-08-31 上午1.07.55.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:da793d65-6255-435a-870f-2c6fc0ddbec7:終端機_2026-08-31_上午1.07.55.png",
+            "assetPath": "content/blog-assets/3cdc1b36c40181b58b50db5caad5fced/3cdc1b36c401801bbe46de41a5a2e2e4-_2026-08-31_-1.07.55.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "07514ce8d00f49008d57c2034303922a",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "每一步都保存 checkpoint",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "每一步都保存 checkpoint",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "33cbda7be5154a489d6f8764743d1a9f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第一次 1280×736 Base-20 跑完 DiT 後，Video VAE 才顯示 frames 已經包含 non-finite values。當時沒有保存 latent，前面的數小時計算完全無法恢復。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第一次 1280×736 Base-20 跑完 DiT 後，Video VAE 才顯示 frames 已經包含 non-finite values。當時沒有保存 latent，前面的數小時計算完全無法恢復。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4ca208ca0d5545fdaae6ec7fbcf24bfb",
+            "type": "text",
+            "richText": [
+              {
+                "text": "現在",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "每個 finite sampling step 都會 atomic replace 同一個 rolling checkpoint",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/mlx-h3/commit/76cde5a"
+              },
+              {
+                "text": "。失敗的 step 不會覆蓋上一個可用狀態；request、model file、reference、schedule 或 geometry 對不上時也會直接拒絕 resume。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "現在每個 finite sampling step 都會 atomic replace 同一個 rolling checkpoint。失敗的 step 不會覆蓋上一個可用狀態；request、model file、reference、schedule 或 geometry 對不上時也會直接拒絕 resume。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "84818675276f447985dcb583660b8cc5",
+            "type": "text",
+            "richText": [
+              {
+                "text": "checkpoint 對這種任務不是方便功能。最終 run 由已驗證的 step 1 checkpoint 接續，完成剩餘 steps、Video VAE、Audio VAE 和 mux，該段 log 記錄 694.2 分鐘。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "checkpoint 對這種任務不是方便功能。最終 run 由已驗證的 step 1 checkpoint 接續，完成剩餘 steps、Video VAE、Audio VAE 和 mux，該段 log 記錄 694.2 分鐘。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f11d05a145f44f89a62af2618da8604e",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "為甚麼我最後沒有繼續使用 H3.c",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "為甚麼我最後沒有繼續使用 H3.c",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2097a94255b049348fdfbfbaa6830a7f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我最早選擇的是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "antirez/h3.c",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/antirez/h3.c"
+              },
+              {
+                "text": "。它的吸引力很直接：原生 C、Apple Silicon／Metal、可以使用官方 BF16 模型、沒有 Python 和 ComfyUI，而且作者本身已經能帶來很高的開發者注意力。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我最早選擇的是 antirez/h3.c。它的吸引力很直接：原生 C、Apple Silicon／Metal、可以使用官方 BF16 模型、沒有 Python 和 ComfyUI，而且作者本身已經能帶來很高的開發者注意力。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "514c22f5f56846c0ab9aaa3f4cbe16db",
+            "type": "text",
+            "richText": [
+              {
+                "text": "截至 2026 年 9 月 1 日，專案建立約三星期，GitHub 已經有約 2,520 stars 和 186 forks。這種聲量很容易放大一個印象：MiniMax H3 已經在 Mac 上跑起來了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "截至 2026 年 9 月 1 日，專案建立約三星期，GitHub 已經有約 2,520 stars 和 186 forks。這種聲量很容易放大一個印象：MiniMax H3 已經在 Mac 上跑起來了。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cb959910cc34b2d9e25b0e795aea360",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但我的實際驗收標準不是 binary 成功退出，也不是目錄裡出現了一個 MP4。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但我的實際驗收標準不是 binary 成功退出，也不是目錄裡出現了一個 MP4。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "909f47f7942744d7accd91b0a91047ae",
+            "type": "text",
+            "richText": [
+              {
+                "text": "H3.c 可以通過自己的 host checks、tokenizer tests 和 Metal AudioVAE tests，也可以生成一支正常的短片；它同樣可以在沒有 OOM、NaN、Metal exception 或 non-zero exit 的情況下，輸出整段灰色紋理和全頻噪聲。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "H3.c 可以通過自己的 host checks、tokenizer tests 和 Metal AudioVAE tests，也可以生成一支正常的短片；它同樣可以在沒有 OOM、NaN、Metal exception 或 non-zero exit 的情況下，輸出整段灰色紋理和全頻噪聲。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "eddc7db83c4149c68a19af1f62bbc986",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在我重現的長序列上，2,048-row query chunking 可以避開 MPSGraph SDPA 的靜默錯值，代價是 DiT 約慢 2.51 倍。這是本機 workaround 證據，不是對 display driver 唯一 root cause 的證明。更重要的是，在只有 4,420 rows、遠低於該失敗範圍的白熊動作中，局部融化、毛髮結塊和動作跳變仍然存在。這是另一個品質問題，不能拿 SDPA workaround 當答案。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在我重現的長序列上，2,048-row query chunking 可以避開 MPSGraph SDPA 的靜默錯值，代價是 DiT 約慢 2.51 倍。這是本機 workaround 證據，不是對 display driver 唯一 root cause 的證明。更重要的是，在只有 4,420 rows、遠低於該失敗範圍的白熊動作中，局部融化、毛髮結塊和動作跳變仍然存在。這是另一個品質問題，不能拿 SDPA workaround 當答案。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40181449644c64a24aac3ea",
+            "type": "file",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "白熊動作比較片段。這段短序列不在長序列 SDPA 危險區，仍可觀察局部融化、毛髮結塊與動作跳變。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:2d4027ee-0de7-470d-88b4-3a7b3f2cc2c4:h3c-shirokuma-motion-comparison.mp4",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c4018130a1b9ddefabd6b884",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "白熊動作 contact sheet。保留完整比較畫面，不把短序列畫質問題混同為長序列 SDPA failure。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:74842449-9988-4369-a4e7-fd2c58dbbeae:h3c-shirokuma-motion-contact-sheet.png",
+            "assetPath": "content/blog-assets/3cdc1b36c40181b58b50db5caad5fced/3cdc1b36c4018130a1b9ddefabd6b884-h3c-shirokuma-motion-contact-sheet.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40180688404e1af97cbdbab",
+            "type": "text",
+            "richText": [
+              {
+                "text": "H3.c Repo 它拿到了明星開發者的名氣，但是沒有對應的質量。我在 H3.c 如何繼續使用這件事，我沒辦法推進了，我認為問題發生在 MPSGraph 領域。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "H3.c Repo 它拿到了明星開發者的名氣，但是沒有對應的質量。我在 H3.c 如何繼續使用這件事，我沒辦法推進了，我認為問題發生在 MPSGraph 領域。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ad8625c3d6d8405c8d9c27bd48c733dd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "因此，我切換到 upstream ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "appautomaton/mlx-h3",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/appautomaton/mlx-h3"
+              },
+              {
+                "text": "，並在我維護的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "qoli/mlx-h3 fork",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/mlx-h3/tree/main"
+              },
+              {
+                "text": " 完成這次長序列修正。它使用 MLX Steel／Metal attention，先在相同的 M2 Ultra 上完成 18,916-row 和 28,548-row 任務，沒有重現 H3.c 的長序列 block corruption；再經過 QKV、SDPA、MLP 分塊和 checkpoint 修正，完成 104,595-row 的完整生成。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "因此，我切換到 upstream appautomaton/mlx-h3，並在我維護的 qoli/mlx-h3 fork 完成這次長序列修正。它使用 MLX Steel／Metal attention，先在相同的 M2 Ultra 上完成 18,916-row 和 28,548-row 任務，沒有重現 H3.c 的長序列 block corruption；再經過 QKV、SDPA、MLP 分塊和 checkpoint 修正，完成 104,595-row 的完整生成。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6b2d9a7d12364b0b98a31f99c66cb9cf",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這不是一個嚴格的 H3.c 對 mlx-h3 畫質排行榜。兩邊的 sampler、量化、RNG 和部分 conditioning 並不完全相同。我能確認的是：在我真正需要的長度和輸出驗收下，mlx-h3 成為了可以繼續工作的 runtime。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這不是一個嚴格的 H3.c 對 mlx-h3 畫質排行榜。兩邊的 sampler、量化、RNG 和部分 conditioning 並不完全相同。我能確認的是：在我真正需要的長度和輸出驗收下，mlx-h3 成為了可以繼續工作的 runtime。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c4018152a2b0e16802b983aa",
+            "type": "file",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "mlx-h3 小貓故事：864×480、192 frames、8 秒、四張 Ref2VA 圖片，完整影音解碼。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:0a53d0e7-544c-4d91-a0e0-a7d3c331cc58:mlx-h3-kitten-fishing-864x480-8s.mp4",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c40181abbe26e4bc7b42356f",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "小貓故事 contact sheet：四個場景保持可讀，角色延續到最後的夜景。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:d65520b3-f85b-4bc1-86e0-ce8bb1a98464:mlx-h3-kitten-fishing-contact-sheet.png",
+            "assetPath": "content/blog-assets/3cdc1b36c40181b58b50db5caad5fced/3cdc1b36c40181abbe26e4bc7b42356f-mlx-h3-kitten-fishing-contact-sheet.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c4018165bfa9f200f492d70b",
+            "type": "file",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "最終品牌片：1280×736、362 frames、24 fps、32 kHz stereo，Base-20 完整生成。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:66c3119b-c19b-4505-913c-c031101948d8:mlx-h3-ronnie-brand-film-final-1280x736.mp4",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3cdc1b36c4018124b94df0bb88e401f7",
+            "type": "image",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "最終品牌片 contact sheet，由 ronnie-full-direct-mac-1280x736-362f-base20-mlx0322-mlp2048-accept-step1-20260831.mp4 直接以 2 fps 抽取。尾段 RECOVER → INTERFACE → SHIP → READY 保持可讀。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:1186b9f7-ba5c-4723-bf35-df00af6a3fd1:ronnie-full-direct-mac-1280x736-362f-base20-mlx0322-mlp2048-accept-step1-20260831-contact-sheet-2fps.png",
+            "assetPath": "content/blog-assets/3cdc1b36c40181b58b50db5caad5fced/3cdc1b36c4018124b94df0bb88e401f7-ronnie-full-direct-mac-1280x736-362f-base20-mlx0322-mlp2048-accept-step1-20260831-contact-sheet-",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "895ceb870bb247e9b68ea8a0953e9c9b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "目前，這就是我在 M2 Ultra 128GB 上運行長序列 H3 Base 的設定：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "目前，這就是我在 M2 Ultra 128GB 上運行長序列 H3 Base 的設定：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2a48820bd9904e0d997118576e5d2da3",
+            "type": "code",
+            "richText": [
+              {
+                "text": "W8A16\nBase 20\nQKV 2048\nSDPA 512\nMLP 2048\n70 GiB guard\nrolling checkpoint\nAGX_RELAX_CDM_CTXSTORE_TIMEOUT=1",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "W8A16\nBase 20\nQKV 2048\nSDPA 512\nMLP 2048\n70 GiB guard\nrolling checkpoint\nAGX_RELAX_CDM_CTXSTORE_TIMEOUT=1",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "3cac1b36c40181bdbdfff48d2e739434",
       "slug": "gemma-small-model-task-acceleration-3cac1b36",
@@ -33,7 +3032,7 @@
       "lastEditedTime": "2026-08-28T11:15:10.927Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:15:54.084Z",
+        "syncedAt": "2026-08-31T20:53:14.806Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -705,7 +3704,7 @@
       "lastEditedTime": "2026-08-16T11:56:00.262Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:15:54.397Z",
+        "syncedAt": "2026-08-31T20:53:15.153Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -1407,7 +4406,7 @@
       "lastEditedTime": "2026-08-15T12:43:46.007Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:15:54.705Z",
+        "syncedAt": "2026-08-31T20:53:15.460Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -3049,7 +6048,7 @@
       "lastEditedTime": "2026-07-21T21:05:27.763Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:16:00.056Z",
+        "syncedAt": "2026-08-31T20:53:22.802Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -3793,7 +6792,7 @@
       "lastEditedTime": "2026-07-21T14:55:42.809Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:16:00.485Z",
+        "syncedAt": "2026-08-31T20:53:23.110Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -4138,7 +7137,7 @@
       "lastEditedTime": "2026-05-23T15:01:21.702Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:16:00.784Z",
+        "syncedAt": "2026-08-31T20:53:23.401Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -6479,7 +9478,7 @@
       "lastEditedTime": "2026-05-23T13:53:13.789Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:16:01.457Z",
+        "syncedAt": "2026-08-31T20:53:23.903Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -7496,7 +10495,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:16:10.990Z",
+        "syncedAt": "2026-08-31T20:53:31.668Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -9843,7 +12842,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:16:37.165Z",
+        "syncedAt": "2026-08-31T20:53:50.251Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -11024,7 +14023,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:16:45.290Z",
+        "syncedAt": "2026-08-31T20:53:53.645Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -11609,7 +14608,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:16:59.803Z",
+        "syncedAt": "2026-08-31T20:54:04.195Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -13802,7 +16801,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:17:00.338Z",
+        "syncedAt": "2026-08-31T20:54:04.640Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -14525,7 +17524,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:17:00.660Z",
+        "syncedAt": "2026-08-31T20:54:04.956Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -15293,7 +18292,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:17:01.011Z",
+        "syncedAt": "2026-08-31T20:54:05.254Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -16437,7 +19436,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:17:20.232Z",
+        "syncedAt": "2026-08-31T20:54:18.152Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -17161,7 +20160,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:17:20.499Z",
+        "syncedAt": "2026-08-31T20:54:18.469Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -18031,7 +21030,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:17:20.768Z",
+        "syncedAt": "2026-08-31T20:54:18.761Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -19411,7 +22410,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:17:21.089Z",
+        "syncedAt": "2026-08-31T20:54:19.188Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -22858,7 +25857,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:17:27.875Z",
+        "syncedAt": "2026-08-31T20:54:23.690Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -24704,7 +27703,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:17:28.327Z",
+        "syncedAt": "2026-08-31T20:54:24.087Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -25359,7 +28358,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:17:30.437Z",
+        "syncedAt": "2026-08-31T20:54:28.023Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -25975,7 +28974,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:17:36.255Z",
+        "syncedAt": "2026-08-31T20:54:34.356Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -26741,7 +29740,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:17:36.692Z",
+        "syncedAt": "2026-08-31T20:54:34.685Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -29688,7 +32687,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:18:23.121Z",
+        "syncedAt": "2026-08-31T20:55:25.546Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -30806,7 +33805,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:18:27.208Z",
+        "syncedAt": "2026-08-31T20:55:31.525Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -31184,7 +34183,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:18:28.796Z",
+        "syncedAt": "2026-08-31T20:55:33.846Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -33991,7 +36990,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:19:25.148Z",
+        "syncedAt": "2026-08-31T20:56:42.524Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -34219,7 +37218,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:19:28.609Z",
+        "syncedAt": "2026-08-31T20:56:45.218Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -34984,7 +37983,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-28T11:19:32.772Z",
+        "syncedAt": "2026-08-31T20:56:50.365Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
