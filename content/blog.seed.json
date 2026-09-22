@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-08-31T20:57:23.211Z",
+  "generatedAt": "2026-09-22T02:01:42.516Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,1423 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "3e2c1b36c401811198bbd92929b220c4",
+      "slug": "macos-27-swiftui-toolbar-grouping-workaround-3e2c1b36",
+      "seoSlug": "macos-27-swiftui-toolbar-grouping-workaround",
+      "legacySlugs": [
+        "macos-27-的-toolbar-auto-grouping-讓-toolbarspacer-失效-3e2c1b36"
+      ],
+      "title": "macOS 27 的 Toolbar auto grouping 讓 ToolbarSpacer 失效",
+      "tag": "macOS,Swift,SwiftUI,Bug",
+      "writtenDate": "2026-09-22",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/macos-27-swiftui-toolbar-grouping-workaround-3e2c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/macos-27-%E7%9A%84-toolbar-auto-grouping-%E8%AE%93-toolbarspacer-%E5%A4%B1%E6%95%88-3e2c1b36c401811198bbd92929b220c4?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-09-21T21:29:12.803Z",
+      "lastEditedTime": "2026-09-22T01:54:39.977Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-09-22T01:56:00.391Z",
+        "blocks": [
+          {
+            "id": "bba69330c91d43f982ea08b86347bb76",
+            "type": "text",
+            "richText": [
+              {
+                "text": "如果你正在學 SwiftUI Toolbar，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Phil Zakharchenko 的〈A Tale of Adopting Customizable SwiftUI Toolbars〉",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://philz.blog/adopting-customizable-swiftui-toolbars/"
+              },
+              {
+                "text": "是一篇值得讀的文章。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "如果你正在學 SwiftUI Toolbar，Phil Zakharchenko 的〈A Tale of Adopting Customizable SwiftUI Toolbars〉是一篇值得讀的文章。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d51723ff792f492e8c005135a750fb97",
+            "type": "text",
+            "richText": [
+              {
+                "text": "文章把 SwiftUI 的普通 toolbar 與 customizable toolbar 分得很清楚。對 customizable toolbar 來說，每個可自訂控制項都應該有自己的 ToolbarItem(id:)，不同的邏輯區域再用 ToolbarSpacer 分隔。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "文章把 SwiftUI 的普通 toolbar 與 customizable toolbar 分得很清楚。對 customizable toolbar 來說，每個可自訂控制項都應該有自己的 ToolbarItem(id:)，不同的邏輯區域再用 ToolbarSpacer 分隔。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a2dd8473902c41ed96d326116734db01",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這套結構到了 macOS 27 出現問題。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這套結構到了 macOS 27 出現問題。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "da310cdc440042b59103dc7e3775580f",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "macOS 27 重新決定了 Toolbar grouping",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "macOS 27 重新決定了 Toolbar grouping",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "363ba00db5f54a1eb2ff47adcaa92edb",
+            "type": "text",
+            "richText": [
+              {
+                "text": "SwiftChat 的 toolbar 原本需要三個區域：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "SwiftChat 的 toolbar 原本需要三個區域：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b0747c61f298493595e0e73c3d8e8b93",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "Sidebar 與 New chat。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Sidebar 與 New chat。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3410d8bdf02f452097e0abd3eb474e56",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "Conversation source。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Conversation source。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e2d4c1aee0eb41438b3bf4335ac2c2f1",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "Share 與 Open in New Window。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Share 與 Open in New Window。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b56feeac4b8a4158b4f34c60c329705a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第一與第二區都位於 navigation placement，中間已經加入 fixed ToolbarSpacer。但在 macOS 27 實際執行時，系統仍把它們視為同一個 navigation island。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第一與第二區都位於 navigation placement，中間已經加入 fixed ToolbarSpacer。但在 macOS 27 實際執行時，系統仍把它們視為同一個 navigation island。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e3add2e633274d4d8f456798ecefcd73",
+            "type": "text",
+            "richText": [
+              {
+                "text": "ToolbarSpacer 存在於 toolbar 結構中，卻無法阻止系統重新 grouping。Conversation source 因此被合併到 Sidebar 與 New chat 的 capsule 裡。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "ToolbarSpacer 存在於 toolbar 結構中，卻無法阻止系統重新 grouping。Conversation source 因此被合併到 Sidebar 與 New chat 的 capsule 裡。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "bd4664e5a5354d538ec060e94e1cb08f",
+            "type": "image",
+            "richText": [
+              {
+                "text": "macos-27-toolbar-auto-grouping-example.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "macos-27-toolbar-auto-grouping-example.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:53d207bb-5261-4076-b3ec-b62e36fdbb60:macos-27-toolbar-auto-grouping-example.png",
+            "assetPath": "content/blog-assets/3e2c1b36c401811198bbd92929b220c4/bd4664e5a5354d538ec060e94e1cb08f-macos-27-toolbar-auto-grouping-example.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "83d946c6e4cb427da995dbc99e037958",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這不是 spacing 數值能修正的版面問題。Toolbar 的分組已由系統決定。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這不是 spacing 數值能修正的版面問題。Toolbar 的分組已由系統決定。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a4b69870abf44811a86f9409cea0967f",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Workaround：macOS 改由 AppKit 接管 Toolbar",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Workaround：macOS 改由 AppKit 接管 Toolbar",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1a19db8427a54f05805150f2a802577b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "目前的 workaround 是保留 SwiftUI 管理的狀態與 actions，但不再讓 SwiftUI 生成 macOS toolbar 的結構。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "目前的 workaround 是保留 SwiftUI 管理的狀態與 actions，但不再讓 SwiftUI 生成 macOS toolbar 的結構。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e2a7b9d69c0a446eb49c8489cfef5bfe",
+            "type": "text",
+            "richText": [
+              {
+                "text": "macOS 分支使用 SwiftUI Introspect 取得 NSWindow，再把 window.toolbar 替換成由 AppKit 建立的 NSToolbar。其他平台則繼續使用原本的 SwiftUI ToolbarContent。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "macOS 分支使用 SwiftUI Introspect 取得 NSWindow，再把 window.toolbar 替換成由 AppKit 建立的 NSToolbar。其他平台則繼續使用原本的 SwiftUI ToolbarContent。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "effede0afadb43909cc1b1fdf8dc53c7",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "分開 macOS 與其他平台",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "分開 macOS 與其他平台",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "747dd3e6e54d42eda9cd2fa54499417d",
+            "type": "code",
+            "richText": [
+              {
+                "text": "extension View {\n    @ViewBuilder\n    func conversationToolbar(\n        sidebarVisibility: Binding<NavigationSplitViewVisibility>,\n        surface: Binding<ChatSurfaceKind>,\n        subtitle: String,\n        newConversation: @escaping () -> Void,\n        shareURL: URL?,\n        openConversationInNewWindow: @escaping () -> Void\n    ) -> some View {\n        #if os(macOS)\n        configureConversationToolbar(\n            sidebarVisibility: sidebarVisibility,\n            surface: surface,\n            subtitle: subtitle,\n            newConversation: newConversation,\n            shareURL: shareURL,\n            openConversationInNewWindow: openConversationInNewWindow\n        )\n        #else\n        toolbar {\n            ConversationToolbar(\n                sidebarVisibility: sidebarVisibility,\n                surface: surface,\n                subtitle: subtitle,\n                newConversation: newConversation,\n                shareURL: shareURL,\n                openConversationInNewWindow: openConversationInNewWindow\n            )\n        }\n        #endif\n    }\n}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "extension View {\n    @ViewBuilder\n    func conversationToolbar(\n        sidebarVisibility: Binding<NavigationSplitViewVisibility>,\n        surface: Binding<ChatSurfaceKind>,\n        subtitle: String,\n        newConversation: @escaping () -> Void,\n        shareURL: URL?,\n        openConversationInNewWindow: @escaping () -> Void\n    ) -> some View {\n        #if os(macOS)\n        configureConversationToolbar(\n            sidebarVisibility: sidebarVisibility,\n            surface: surface,\n            subtitle: subtitle,\n            newConversation: newConversation,\n            shareURL: shareURL,\n            openConversationInNewWindow: openConversationInNewWindow\n        )\n        #else\n        toolbar {\n            ConversationToolbar(\n                sidebarVisibility: sidebarVisibility,\n                surface: surface,\n                subtitle: subtitle,\n                newConversation: newConversation,\n                shareURL: shareURL,\n                openConversationInNewWindow: openConversationInNewWindow\n            )\n        }\n        #endif\n    }\n}",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0af90b43e8d94546b3e12b241082a5e3",
+            "type": "text",
+            "richText": [
+              {
+                "text": "AppShellView 不再直接使用 .toolbar {}，而是改用這個跨平台入口：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "AppShellView 不再直接使用 .toolbar {}，而是改用這個跨平台入口：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0b60f1213ed6414d9abeb7628b69b4b5",
+            "type": "code",
+            "richText": [
+              {
+                "text": ".conversationToolbar(\n    sidebarVisibility: $navigation.sidebarVisibility,\n    surface: $navigation.selectedSurface,\n    subtitle: conversationSubtitle,\n    newConversation: presentNewConversation,\n    shareURL: shareableChatGPTConversationURL,\n    openConversationInNewWindow: openConversationInNewWindow\n)",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": ".conversationToolbar(\n    sidebarVisibility: $navigation.sidebarVisibility,\n    surface: $navigation.selectedSurface,\n    subtitle: conversationSubtitle,\n    newConversation: presentNewConversation,\n    shareURL: shareableChatGPTConversationURL,\n    openConversationInNewWindow: openConversationInNewWindow\n)",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b284952b25a24e64992905e30e3895a4",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "取得 NSWindow",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "取得 NSWindow",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "bcbda7a1f78f4a6a872e9d0b6f8a6c98",
+            "type": "text",
+            "richText": [
+              {
+                "text": "configureConversationToolbar 透過 SwiftUI Introspect 取得目前的 NSWindow：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "configureConversationToolbar 透過 SwiftUI Introspect 取得目前的 NSWindow：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "aa7944c0533347d6a03f0f2e919a1168",
+            "type": "code",
+            "richText": [
+              {
+                "text": "extension View {\n    func configureConversationToolbar(\n        sidebarVisibility: Binding<NavigationSplitViewVisibility>,\n        surface: Binding<ChatSurfaceKind>,\n        subtitle: String,\n        newConversation: @escaping () -> Void,\n        shareURL: URL?,\n        openConversationInNewWindow: @escaping () -> Void\n    ) -> some View {\n        introspect(.window, on: .macOS(.v26, .v27)) { window in\n            MacConversationToolbar.install(\n                on: window,\n                configuration: MacConversationToolbarConfiguration(\n                    sidebarIsVisible:\n                        sidebarVisibility.wrappedValue != .detailOnly,\n                    surface: surface.wrappedValue,\n                    subtitle: subtitle,\n                    shareURL: shareURL,\n                    toggleSidebar: {\n                        sidebarVisibility.wrappedValue =\n                            sidebarVisibility.wrappedValue == .detailOnly\n                            ? .all\n                            : .detailOnly\n                    },\n                    newConversation: newConversation,\n                    selectSurface: {\n                        surface.wrappedValue = $0\n                    },\n                    openConversationInNewWindow:\n                        openConversationInNewWindow\n                )\n            )\n        }\n    }\n}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "extension View {\n    func configureConversationToolbar(\n        sidebarVisibility: Binding<NavigationSplitViewVisibility>,\n        surface: Binding<ChatSurfaceKind>,\n        subtitle: String,\n        newConversation: @escaping () -> Void,\n        shareURL: URL?,\n        openConversationInNewWindow: @escaping () -> Void\n    ) -> some View {\n        introspect(.window, on: .macOS(.v26, .v27)) { window in\n            MacConversationToolbar.install(\n                on: window,\n                configuration: MacConversationToolbarConfiguration(\n                    sidebarIsVisible:\n                        sidebarVisibility.wrappedValue != .detailOnly,\n                    surface: surface.wrappedValue,\n                    subtitle: subtitle,\n                    shareURL: shareURL,\n                    toggleSidebar: {\n                        sidebarVisibility.wrappedValue =\n                            sidebarVisibility.wrappedValue == .detailOnly\n                            ? .all\n                            : .detailOnly\n                    },\n                    newConversation: newConversation,\n                    selectSurface: {\n                        surface.wrappedValue = $0\n                    },\n                    openConversationInNewWindow:\n                        openConversationInNewWindow\n                )\n            )\n        }\n    }\n}",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "32845c00c73745e69b381f65c5b9aafe",
+            "type": "text",
+            "richText": [
+              {
+                "text": "SwiftUI 仍然持有：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "SwiftUI 仍然持有：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fded76b286e64ccb82fdcb8bb4066bfa",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Sidebar 顯示狀態。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Sidebar 顯示狀態。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "68484a0ed90c4d59ab641fa2e0f41ba0",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Conversation surface。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Conversation surface。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c8f0898c8c2f4ea19ede55005e80a3a0",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Conversation subtitle。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Conversation subtitle。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "11a18389eb024c8799f2500f10354a3f",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "New conversation action。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "New conversation action。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "14104fb810824718a4f238d0245d407e",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Share URL。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Share URL。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f61c35ed4fb14635b2730d56ca2b570d",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Open in New Window action。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Open in New Window action。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "14ed604f7d8b4c198e508b4e20734fb0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "AppKit controller 收到的是這些狀態目前的值，以及需要回到 SwiftUI 執行的 closures。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "AppKit controller 收到的是這些狀態目前的值，以及需要回到 SwiftUI 執行的 closures。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "19e96ddf58eb499bbb0d2288a88c561d",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "每個 Window 保存一個 Toolbar Controller",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "每個 Window 保存一個 Toolbar Controller",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "04a7a861ffc4433c9840511929a142ee",
+            "type": "text",
+            "richText": [
+              {
+                "text": "每個 NSWindow 都有自己的 MacConversationToolbarController：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "每個 NSWindow 都有自己的 MacConversationToolbarController：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d594f195f8b9416eba0f594fd0782a10",
+            "type": "code",
+            "richText": [
+              {
+                "text": "@MainActor\nprivate enum MacConversationToolbar {\n    private static let controllers =\n        NSMapTable<NSWindow, MacConversationToolbarController>(\n            keyOptions: .weakMemory,\n            valueOptions: .strongMemory\n        )\n\n    static func install(\n        on window: NSWindow,\n        configuration: MacConversationToolbarConfiguration\n    ) {\n        if let controller = controllers.object(forKey: window) {\n            controller.update(configuration)\n            controller.installIfNeeded(on: window)\n            return\n        }\n\n        let controller = MacConversationToolbarController(\n            configuration: configuration\n        )\n\n        controllers.setObject(controller, forKey: window)\n        controller.installIfNeeded(on: window)\n    }\n}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "@MainActor\nprivate enum MacConversationToolbar {\n    private static let controllers =\n        NSMapTable<NSWindow, MacConversationToolbarController>(\n            keyOptions: .weakMemory,\n            valueOptions: .strongMemory\n        )\n\n    static func install(\n        on window: NSWindow,\n        configuration: MacConversationToolbarConfiguration\n    ) {\n        if let controller = controllers.object(forKey: window) {\n            controller.update(configuration)\n            controller.installIfNeeded(on: window)\n            return\n        }\n\n        let controller = MacConversationToolbarController(\n            configuration: configuration\n        )\n\n        controllers.setObject(controller, forKey: window)\n        controller.installIfNeeded(on: window)\n    }\n}",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "55d41a0c9f4f48cbbab49873485c336c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "使用 weak window key，window 被釋放後，對應的 controller entry 也會消失。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "使用 weak window key，window 被釋放後，對應的 controller entry 也會消失。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "be865b12e58c40cdb8ab2c1e75e037c5",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "使用真正的 NSToolbarItemGroup",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "使用真正的 NSToolbarItemGroup",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d87711fa7fac455c885c85105f72a5bc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "AppKit 的 NSToolbarItemGroup 本身就是一個包含 subitems 的 toolbar item。系統會把整個 group 視為單一 toolbar 單位，而不是再從相鄰的 SwiftUI toolbar items 推測 grouping。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Apple 的文件",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://developer.apple.com/documentation/appkit/nstoolbaritemgroup"
+              },
+              {
+                "text": "也明確區分了 group 與一般 toolbar item。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "AppKit 的 NSToolbarItemGroup 本身就是一個包含 subitems 的 toolbar item。系統會把整個 group 視為單一 toolbar 單位，而不是再從相鄰的 SwiftUI toolbar items 推測 grouping。Apple 的文件也明確區分了 group 與一般 toolbar item。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "49693044330143128c7f3e2360353105",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Navigation controls 使用一個真正的 NSToolbarItemGroup：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Navigation controls 使用一個真正的 NSToolbarItemGroup：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c34eeb7e438541468ae101f70a53ce39",
+            "type": "code",
+            "richText": [
+              {
+                "text": "private lazy var navigationGroup: NSToolbarItemGroup = {\n    let group = NSToolbarItemGroup(\n        itemIdentifier: .conversationNavigation\n    )\n\n    group.label = \"Navigation\"\n    group.paletteLabel = \"Navigation\"\n    group.controlRepresentation = .expanded\n    group.subitems = [\n        sidebarItem,\n        newConversationItem,\n    ]\n\n    return group\n}()",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "private lazy var navigationGroup: NSToolbarItemGroup = {\n    let group = NSToolbarItemGroup(\n        itemIdentifier: .conversationNavigation\n    )\n\n    group.label = \"Navigation\"\n    group.paletteLabel = \"Navigation\"\n    group.controlRepresentation = .expanded\n    group.subitems = [\n        sidebarItem,\n        newConversationItem,\n    ]\n\n    return group\n}()",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0864198f650a4e20819e5b81988d75b4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Conversation source 是獨立的 NSMenuToolbarItem：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Conversation source 是獨立的 NSMenuToolbarItem：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3f216e8b31264f14935d802459bd8391",
+            "type": "code",
+            "richText": [
+              {
+                "text": "private lazy var surfaceItem: NSMenuToolbarItem = {\n    let item = NSMenuToolbarItem(\n        itemIdentifier: .conversationSurface\n    )\n\n    item.paletteLabel = \"Conversation source\"\n    item.toolTip = \"Choose conversation source\"\n    item.showsIndicator = true\n    item.menu = NSMenu(title: \"Conversation source\")\n\n    return item\n}()",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "private lazy var surfaceItem: NSMenuToolbarItem = {\n    let item = NSMenuToolbarItem(\n        itemIdentifier: .conversationSurface\n    )\n\n    item.paletteLabel = \"Conversation source\"\n    item.toolTip = \"Choose conversation source\"\n    item.showsIndicator = true\n    item.menu = NSMenu(title: \"Conversation source\")\n\n    return item\n}()",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7b471b4f31e449f596be962fb3315408",
+            "type": "text",
+            "richText": [
+              {
+                "text": "右側 actions 也是一個明確的 NSToolbarItemGroup：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "右側 actions 也是一個明確的 NSToolbarItemGroup：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "513a9b7351a84529b38df7ef7d7dafb8",
+            "type": "code",
+            "richText": [
+              {
+                "text": "private lazy var actionsGroup: NSToolbarItemGroup = {\n    let group = NSToolbarItemGroup(\n        itemIdentifier: .conversationActions\n    )\n\n    group.label = \"Conversation actions\"\n    group.paletteLabel = \"Conversation actions\"\n    group.controlRepresentation = .expanded\n    group.subitems = [\n        shareItem,\n        openConversationItem,\n    ]\n\n    return group\n}()",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "private lazy var actionsGroup: NSToolbarItemGroup = {\n    let group = NSToolbarItemGroup(\n        itemIdentifier: .conversationActions\n    )\n\n    group.label = \"Conversation actions\"\n    group.paletteLabel = \"Conversation actions\"\n    group.controlRepresentation = .expanded\n    group.subitems = [\n        shareItem,\n        openConversationItem,\n    ]\n\n    return group\n}()",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "49b717f58df347ec9608652bce706f92",
+            "type": "text",
+            "richText": [
+              {
+                "text": "兩個 group 都指定：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "兩個 group 都指定：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a62df272750a447c9dd86c2b6aa0e339",
+            "type": "code",
+            "richText": [
+              {
+                "text": "group.controlRepresentation = .expanded",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "group.controlRepresentation = .expanded",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5e02a16aa5294db3b4476ffb9e058f35",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這使 group 直接顯示所有 subitems，不把它們收進另一個 collapsed control。AppKit 提供的 representation 包括 automatic、collapsed 與 expanded。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Apple 文件",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://developer.apple.com/documentation/appkit/nstoolbaritemgroup/controlrepresentation-swift.enum"
+              }
+            ],
+            "plainText": "這使 group 直接顯示所有 subitems，不把它們收進另一個 collapsed control。AppKit 提供的 representation 包括 automatic、collapsed 與 expanded。Apple 文件",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b2f5656ccb2c4c9595089bc1a6a79589",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "明確指定 Toolbar 順序",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "明確指定 Toolbar 順序",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d3a067c412454371a984ca7b3501b188",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Toolbar controller 實作 NSToolbarDelegate，直接返回需要的 item 順序：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Toolbar controller 實作 NSToolbarDelegate，直接返回需要的 item 順序：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "bef92ed23bf645168c44f6f1228993f0",
+            "type": "code",
+            "richText": [
+              {
+                "text": "func toolbarDefaultItemIdentifiers(\n    _ toolbar: NSToolbar\n) -> [NSToolbarItem.Identifier] {\n    [\n        .conversationNavigation,\n        .conversationSurface,\n        .flexibleSpace,\n        .conversationActions,\n    ]\n}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "func toolbarDefaultItemIdentifiers(\n    _ toolbar: NSToolbar\n) -> [NSToolbarItem.Identifier] {\n    [\n        .conversationNavigation,\n        .conversationSurface,\n        .flexibleSpace,\n        .conversationActions,\n    ]\n}",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1d8f9c4fea0242bc96493344ebfcf758",
+            "type": "text",
+            "richText": [
+              {
+                "text": "實際結構是：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "實際結構是：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "be458c4632d04a8da42e59b61f26d1b7",
+            "type": "code",
+            "richText": [
+              {
+                "text": "Navigation group\nConversation source\nFlexible space\nActions group",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Navigation group\nConversation source\nFlexible space\nActions group",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d3815cc22fd24275bc269545ab835e25",
+            "type": "text",
+            "richText": [
+              {
+                "text": "NSToolbarDelegate 再根據 identifier 返回相應的 AppKit item：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "NSToolbarDelegate 再根據 identifier 返回相應的 AppKit item：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f8aac4a101d04032a249d1e116080d27",
+            "type": "code",
+            "richText": [
+              {
+                "text": "func toolbar(\n    _ toolbar: NSToolbar,\n    itemForItemIdentifier itemIdentifier: NSToolbarItem.Identifier,\n    willBeInsertedIntoToolbar flag: Bool\n) -> NSToolbarItem? {\n    switch itemIdentifier {\n    case .conversationNavigation:\n        navigationGroup\n\n    case .conversationSurface:\n        surfaceItem\n\n    case .conversationActions:\n        actionsGroup\n\n    default:\n        nil\n    }\n}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "func toolbar(\n    _ toolbar: NSToolbar,\n    itemForItemIdentifier itemIdentifier: NSToolbarItem.Identifier,\n    willBeInsertedIntoToolbar flag: Bool\n) -> NSToolbarItem? {\n    switch itemIdentifier {\n    case .conversationNavigation:\n        navigationGroup\n\n    case .conversationSurface:\n        surfaceItem\n\n    case .conversationActions:\n        actionsGroup\n\n    default:\n        nil\n    }\n}",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "02ce1600bfd440aaa288b98576e3df71",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這種寫法與 Apple 的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "NSToolbar",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://developer.apple.com/documentation/appkit/nstoolbar/"
+              },
+              {
+                "text": " 模型一致：toolbar 由 identifiers、delegate 及對應的 NSToolbarItem 組成。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這種寫法與 Apple 的 NSToolbar 模型一致：toolbar 由 identifiers、delegate 及對應的 NSToolbarItem 組成。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ce320a592eb548a0ae149819940b29df",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "安裝到 Window",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "安裝到 Window",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "984bbd759ee8476586090217e43f165a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Controller 建立自己的 NSToolbar：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Controller 建立自己的 NSToolbar：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e58898355b9d47519ceec9d2a86815b0",
+            "type": "code",
+            "richText": [
+              {
+                "text": "private lazy var toolbar: NSToolbar = {\n    let toolbar = NSToolbar(\n        identifier: .swiftChatConversation\n    )\n\n    toolbar.delegate = self\n    toolbar.displayMode = .iconOnly\n    toolbar.allowsUserCustomization = false\n    toolbar.autosavesConfiguration = false\n\n    return toolbar\n}()",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "private lazy var toolbar: NSToolbar = {\n    let toolbar = NSToolbar(\n        identifier: .swiftChatConversation\n    )\n\n    toolbar.delegate = self\n    toolbar.displayMode = .iconOnly\n    toolbar.allowsUserCustomization = false\n    toolbar.autosavesConfiguration = false\n\n    return toolbar\n}()",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "73d95176a6b7451aba8cba2567a122c0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "最後直接安裝到目前的 window：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "最後直接安裝到目前的 window：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "efdc5494890f4ef5ba4a6cce186c74a7",
+            "type": "code",
+            "richText": [
+              {
+                "text": "func installIfNeeded(on window: NSWindow) {\n    guard window.toolbar !== toolbar else {\n        return\n    }\n\n    window.toolbar = toolbar\n}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "func installIfNeeded(on window: NSWindow) {\n    guard window.toolbar !== toolbar else {\n        return\n    }\n\n    window.toolbar = toolbar\n}",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7f0caf47edae40099acc8704d856b096",
+            "type": "text",
+            "richText": [
+              {
+                "text": "當 SwiftUI 狀態改變時，controller 更新受影響的 toolbar item，不重新建立整個 toolbar：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "當 SwiftUI 狀態改變時，controller 更新受影響的 toolbar item，不重新建立整個 toolbar：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5e1e1d02f27a4960965e46408c5215ad",
+            "type": "code",
+            "richText": [
+              {
+                "text": "func update(\n    _ configuration: MacConversationToolbarConfiguration\n) {\n    self.configuration = configuration\n    applyConfiguration()\n}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "func update(\n    _ configuration: MacConversationToolbarConfiguration\n) {\n    self.configuration = configuration\n    applyConfiguration()\n}",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "70d2eaec1b7c46899b97302f9347be3e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "applyConfiguration() 使用 snapshot 避免重複更新：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "applyConfiguration() 使用 snapshot 避免重複更新：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6045494cea8d49e68a5a710247223031",
+            "type": "code",
+            "richText": [
+              {
+                "text": "private func applyConfiguration() {\n    let newSnapshot = Snapshot(\n        sidebarIsVisible: configuration.sidebarIsVisible,\n        surface: configuration.surface,\n        subtitle: configuration.subtitle,\n        shareURL: configuration.shareURL\n    )\n\n    guard snapshot != newSnapshot else {\n        return\n    }\n\n    snapshot = newSnapshot\n\n    let sidebarTitle = configuration.sidebarIsVisible\n        ? \"Hide Sidebar\"\n        : \"Show Sidebar\"\n\n    sidebarItem.label = sidebarTitle\n    sidebarItem.paletteLabel = sidebarTitle\n    sidebarItem.toolTip = sidebarTitle\n\n    surfaceItem.title = configuration.surfaceTitle\n    surfaceItem.label = configuration.surfaceTitle\n    surfaceItem.menu = makeSurfaceMenu()\n\n    actionsGroup.isHidden =\n        configuration.surface != .chatGPT\n        || configuration.shareURL == nil\n\n    toolbar.validateVisibleItems()\n}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "private func applyConfiguration() {\n    let newSnapshot = Snapshot(\n        sidebarIsVisible: configuration.sidebarIsVisible,\n        surface: configuration.surface,\n        subtitle: configuration.subtitle,\n        shareURL: configuration.shareURL\n    )\n\n    guard snapshot != newSnapshot else {\n        return\n    }\n\n    snapshot = newSnapshot\n\n    let sidebarTitle = configuration.sidebarIsVisible\n        ? \"Hide Sidebar\"\n        : \"Show Sidebar\"\n\n    sidebarItem.label = sidebarTitle\n    sidebarItem.paletteLabel = sidebarTitle\n    sidebarItem.toolTip = sidebarTitle\n\n    surfaceItem.title = configuration.surfaceTitle\n    surfaceItem.label = configuration.surfaceTitle\n    surfaceItem.menu = makeSurfaceMenu()\n\n    actionsGroup.isHidden =\n        configuration.surface != .chatGPT\n        || configuration.shareURL == nil\n\n    toolbar.validateVisibleItems()\n}",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e35f5fc6d6214af9a23531e62631e791",
+            "type": "text",
+            "richText": [
+              {
+                "text": "完成後，Sidebar 與 New chat 保留在左側 navigation group；Conversation source 成為旁邊獨立的 capsule；Share 與 Open in New Window 留在右側。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "完成後，Sidebar 與 New chat 保留在左側 navigation group；Conversation source 成為旁邊獨立的 capsule；Share 與 Open in New Window 留在右側。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3e2c1b36c40180a48e5ddfb72e084f95",
+            "type": "image",
+            "richText": [
+              {
+                "text": "SwiftChat 2026-09-22 清晨7.03.55.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "SwiftChat 2026-09-22 清晨7.03.55.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:a4ce2ea2-ad6f-400a-bdb1-ab6fcbd70cd8:SwiftChat_2026-09-22_清晨7.03.55.png",
+            "assetPath": "content/blog-assets/3e2c1b36c401811198bbd92929b220c4/3e2c1b36c40180a48e5ddfb72e084f95-SwiftChat_2026-09-22_-7.03.55.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "3cdc1b36c40181b58b50db5caad5fced",
       "slug": "mlx-h3-m2-ultra-settings-3cdc1b36",
@@ -33,7 +1450,7 @@
       "lastEditedTime": "2026-08-31T20:52:17.855Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:52:55.173Z",
+        "syncedAt": "2026-09-22T01:56:05.779Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -3032,7 +4449,7 @@
       "lastEditedTime": "2026-08-28T11:15:10.927Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:53:14.806Z",
+        "syncedAt": "2026-09-22T01:56:35.815Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -3704,7 +5121,7 @@
       "lastEditedTime": "2026-08-16T11:56:00.262Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:53:15.153Z",
+        "syncedAt": "2026-09-22T01:56:36.421Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -4406,7 +5823,7 @@
       "lastEditedTime": "2026-08-15T12:43:46.007Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:53:15.460Z",
+        "syncedAt": "2026-09-22T01:56:36.822Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -6048,7 +7465,7 @@
       "lastEditedTime": "2026-07-21T21:05:27.763Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:53:22.802Z",
+        "syncedAt": "2026-09-22T01:56:43.539Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -6792,7 +8209,7 @@
       "lastEditedTime": "2026-07-21T14:55:42.809Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:53:23.110Z",
+        "syncedAt": "2026-09-22T01:56:44.138Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -7137,7 +8554,7 @@
       "lastEditedTime": "2026-05-23T15:01:21.702Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:53:23.401Z",
+        "syncedAt": "2026-09-22T01:56:44.524Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -9478,7 +10895,7 @@
       "lastEditedTime": "2026-05-23T13:53:13.789Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:53:23.903Z",
+        "syncedAt": "2026-09-22T01:56:45.337Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -10495,7 +11912,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:53:31.668Z",
+        "syncedAt": "2026-09-22T01:56:56.482Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -12842,7 +14259,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:53:50.251Z",
+        "syncedAt": "2026-09-22T01:57:25.286Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -14023,7 +15440,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:53:53.645Z",
+        "syncedAt": "2026-09-22T01:57:29.594Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -14608,7 +16025,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:54:04.195Z",
+        "syncedAt": "2026-09-22T01:57:47.445Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -16801,7 +18218,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:54:04.640Z",
+        "syncedAt": "2026-09-22T01:57:48.200Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -17524,7 +18941,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:54:04.956Z",
+        "syncedAt": "2026-09-22T01:57:48.635Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -18292,7 +19709,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:54:05.254Z",
+        "syncedAt": "2026-09-22T01:57:49.363Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -19436,7 +20853,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:54:18.152Z",
+        "syncedAt": "2026-09-22T01:58:13.724Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -20160,7 +21577,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:54:18.469Z",
+        "syncedAt": "2026-09-22T01:58:14.279Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -21030,7 +22447,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:54:18.761Z",
+        "syncedAt": "2026-09-22T01:58:14.691Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -22410,7 +23827,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:54:19.188Z",
+        "syncedAt": "2026-09-22T01:58:15.344Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -25857,7 +27274,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:54:23.690Z",
+        "syncedAt": "2026-09-22T01:58:23.692Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -27703,7 +29120,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:54:24.087Z",
+        "syncedAt": "2026-09-22T01:58:24.283Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -28358,7 +29775,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:54:28.023Z",
+        "syncedAt": "2026-09-22T01:58:27.634Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -28974,7 +30391,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:54:34.356Z",
+        "syncedAt": "2026-09-22T01:58:35.650Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -29740,7 +31157,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:54:34.685Z",
+        "syncedAt": "2026-09-22T01:58:36.171Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -32687,7 +34104,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:55:25.546Z",
+        "syncedAt": "2026-09-22T01:59:48.148Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -33805,7 +35222,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:55:31.525Z",
+        "syncedAt": "2026-09-22T01:59:53.953Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -34183,7 +35600,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:55:33.846Z",
+        "syncedAt": "2026-09-22T01:59:56.503Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -36990,7 +38407,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:56:42.524Z",
+        "syncedAt": "2026-09-22T02:01:09.183Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -37218,7 +38635,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:56:45.218Z",
+        "syncedAt": "2026-09-22T02:01:13.458Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -37983,7 +39400,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-08-31T20:56:50.365Z",
+        "syncedAt": "2026-09-22T02:01:19.336Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
