@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-09-22T02:01:42.516Z",
+  "generatedAt": "2026-10-04T04:46:16.141Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,2748 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "3efc1b36c40181c894b9f4205ddb7769",
+      "slug": "apple-swift-engineering-prebuild-evidence-3efc1b36",
+      "seoSlug": "apple-swift-engineering-prebuild-evidence",
+      "legacySlugs": [
+        "apple-swift-engineering-讓-ai-在編譯前查清楚-swift-程式-3efc1b36"
+      ],
+      "title": "Apple Swift Engineering：讓 AI 在編譯前查清楚 Swift 程式",
+      "tag": "AI,Swift,macOS,Notes",
+      "writtenDate": "2026-10-04",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/apple-swift-engineering-prebuild-evidence-3efc1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/apple-swift-engineering-%E8%AE%93-ai-%E5%9C%A8%E7%B7%A8%E8%AD%AF%E5%89%8D%E6%9F%A5%E6%B8%85%E6%A5%9A-swift-%E7%A8%8B%E5%BC%8F-3efc1b36c40181c894b9f4205ddb7769?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-10-04T03:48:49.769Z",
+      "lastEditedTime": "2026-10-04T04:39:10.624Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-10-04T04:40:13.750Z",
+        "blocks": [
+          {
+            "id": "8b9773492bb84438806dc6a9e9865d74",
+            "type": "text",
+            "richText": [
+              {
+                "text": "apple-swift-engineering",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/apple-swift-engineering"
+              },
+              {
+                "text": " 的起點，是一次對 SwiftFairy 的研究。我認可它的工程價值，也想把其中有用的能力帶進自己的 Agent 工作流程。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "apple-swift-engineering 的起點，是一次對 SwiftFairy 的研究。我認可它的工程價值，也想把其中有用的能力帶進自己的 Agent 工作流程。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "236b298c4f63428cb35a1091846f571e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但我不想長期維護一套 Swift 規則庫。很多問題已有公開資料，與其自己保存和更新答案，我更想讓 Agent 根據程式碼上下文，知道應該搜尋什麼、去哪裡找證據。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但我不想長期維護一套 Swift 規則庫。很多問題已有公開資料，與其自己保存和更新答案，我更想讓 Agent 根據程式碼上下文，知道應該搜尋什麼、去哪裡找證據。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2c5b74eea6824894b88e099cb6949cdf",
+            "type": "text",
+            "richText": [
+              {
+                "text": "當時，我的本地環境已經裝好 Xcode 27 提供的 Apple Skills，尤其在 macOS 開發上，已感覺到明顯改善。因此方案逐漸收斂：本地語義 CLI 提供專案與 SDK 事實，Apple Skills 提供框架指南，網絡搜尋補充資訊缺口，再用一份給 AI 看的工作說明，也就是 Skill，把流程接起來。最後做成了 Apple Swift Engineering Skill 與 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "swift-semantic",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " CLI，沒有另外包成 MCP。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "當時，我的本地環境已經裝好 Xcode 27 提供的 Apple Skills，尤其在 macOS 開發上，已感覺到明顯改善。因此方案逐漸收斂：本地語義 CLI 提供專案與 SDK 事實，Apple Skills 提供框架指南，網絡搜尋補充資訊缺口，再用一份給 AI 看的工作說明，也就是 Skill，把流程接起來。最後做成了 Apple Swift Engineering Skill 與 swift-semantic CLI，沒有另外包成 MCP。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5c92ea3f2de94697908a11f8611da323",
+            "type": "text",
+            "richText": [
+              {
+                "text": "當時的目標是讓模型更快完成 Apple 工程任務。最近，我把這套工具整理成公開倉庫；回看實際使用時，我現在更關心的是：它能不能支援 AI 在 App 進入編譯之前，就指出具體的錯誤。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "當時的目標是讓模型更快完成 Apple 工程任務。最近，我把這套工具整理成公開倉庫；回看實際使用時，我現在更關心的是：它能不能支援 AI 在 App 進入編譯之前，就指出具體的錯誤。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b0e1f898d7324c95870a8ce6e1e4c3fd",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Apple Swift Engineering Skill 是什麼",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Apple Swift Engineering Skill 是什麼",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d762cfe760ab426c83c83b6fae718822",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Apple Swift Engineering 是給 coding Agent 使用的 Swift 工程工作流程與本地工具。Skill 本身是一份 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "SKILL.md",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，規定 Agent 如何取得專案事實、查證框架行為、追查程式碼並驗證修改；搭配的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "swift-semantic",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " CLI 負責產生可定位的查詢結果。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Apple Swift Engineering 是給 coding Agent 使用的 Swift 工程工作流程與本地工具。Skill 本身是一份 SKILL.md，規定 Agent 如何取得專案事實、查證框架行為、追查程式碼並驗證修改；搭配的 swift-semantic CLI 負責產生可定位的查詢結果。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "094d4e2c982f4b8e8b86df0ebcb4b380",
+            "type": "text",
+            "richText": [
+              {
+                "text": "公開倉庫",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/apple-swift-engineering"
+              },
+              {
+                "text": " 包含 Skill、查詢與使用指南、原生 CLI、安裝腳本，以及讀取完整 JSON 結果的 Python 輔助程式。CLI 的 Swift 套件依賴固定版本的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "swift-syntax 604.0.0",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，使用其中的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "SwiftSyntax",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "、",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "SwiftParser",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 與 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "SwiftParserDiagnostics",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 解析原始碼及保留解析診斷；結果輔助程式需要 Python 3。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "公開倉庫 包含 Skill、查詢與使用指南、原生 CLI、安裝腳本，以及讀取完整 JSON 結果的 Python 輔助程式。CLI 的 Swift 套件依賴固定版本的 swift-syntax 604.0.0，使用其中的 SwiftSyntax、SwiftParser 與 SwiftParserDiagnostics 解析原始碼及保留解析診斷；結果輔助程式需要 Python 3。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6082f3a53fc84cb8ae0790216488f968",
+            "type": "text",
+            "richText": [
+              {
+                "text": "執行環境需要 macOS、Xcode 與相容的 Swift 工具鏈。本地 SDK 資訊取自選中的 Xcode，透過 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "xcrun",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "、",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "swift-frontend",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 與 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "swift-symbolgraph-extract",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 等工具取得。SDK 查詢會使用本機編譯器工具；本文的「編譯前」指完整 App build 之前。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "執行環境需要 macOS、Xcode 與相容的 Swift 工具鏈。本地 SDK 資訊取自選中的 Xcode，透過 xcrun、swift-frontend 與 swift-symbolgraph-extract 等工具取得。SDK 查詢會使用本機編譯器工具；本文的「編譯前」指完整 App build 之前。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c7ddeb5fd7714dd786f67816e43e5b4b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Skill 將 Agent 使用的資訊分成三個來源：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Skill 將 Agent 使用的資訊分成三個來源：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "31b8cd6855cd48339b235c84e0a9b2ae",
+            "type": "table",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [
+              "jgcR",
+              "=qJd"
+            ],
+            "tableHasColumnHeader": true,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "24ce59b7fb644f74a098c24ec9e86c15",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "=qJd": [
+                    {
+                      "text": "提供給 Agent 的資訊",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "jgcR": [
+                    {
+                      "text": "來源",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "3e6fcb7fb63549678bae52ddfe15b280",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "=qJd": [
+                    {
+                      "text": "專案宣告、引用與呼叫關係、檔案及行列位置；SDK 的簽名、所屬模組與可取得的 availability 資訊。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "jgcR": [
+                    {
+                      "text": "本地 ",
+                      "annotations": [],
+                      "href": ""
+                    },
+                    {
+                      "text": "swift-semantic",
+                      "annotations": [
+                        "c"
+                      ],
+                      "href": ""
+                    },
+                    {
+                      "text": " CLI",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "4e10336396274120934896e3bf7119d3",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "=qJd": [
+                    {
+                      "text": "例如 SwiftUI 的框架使用指南，供 Agent 解讀 API 行為與工程約束。這些指南沒有打包進本倉庫；未安裝時可查官方文件。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "jgcR": [
+                    {
+                      "text": "已安裝的 Apple Skills",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "9c25bcc0192d4e8b8010a488949e8686",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "=qJd": [
+                    {
+                      "text": "補充本地事實與指南未解答的問題，優先查 Apple 文件、WWDC、",
+                      "annotations": [],
+                      "href": ""
+                    },
+                    {
+                      "text": "Swift.org",
+                      "annotations": [
+                        "a"
+                      ],
+                      "href": "http://Swift.org"
+                    },
+                    {
+                      "text": " 等一手資料，並核對適用版本。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "jgcR": [
+                    {
+                      "text": "Agent 的網絡查詢",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "ef9994a470174fea870cf6f53aba2b5d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "CLI 返回 JSON，包含事實、來源位置、確定程度、診斷、環境資訊，以及 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "contextRequests",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。遇到無法確定的關係，會保留 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "ambiguous",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 或 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "needs_context",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 等狀態，讓 Agent 知道還需要哪個使用位置、模組或型別資訊。查不到關係時，不能直接推論它不存在。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "CLI 返回 JSON，包含事實、來源位置、確定程度、診斷、環境資訊，以及 contextRequests。遇到無法確定的關係，會保留 ambiguous 或 needs_context 等狀態，讓 Agent 知道還需要哪個使用位置、模組或型別資訊。查不到關係時，不能直接推論它不存在。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a8475e51c613403393bf13c57751351e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "例如，以下命令查詢 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "OpenSearchStatus",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 在專案裡的引用：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "例如，以下命令查詢 OpenSearchStatus 在專案裡的引用：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b1b636b1b6bf4a66bafe971c0c2a0dbc",
+            "type": "code",
+            "richText": [
+              {
+                "text": "swift-semantic resolve \\\n  --root /path/to/Syncnext \\\n  --symbol OpenSearchStatus \\\n  --query references",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "swift-semantic resolve \\\n  --root /path/to/Syncnext \\\n  --symbol OpenSearchStatus \\\n  --query references",
+            "caption": [],
+            "language": "Bash",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9416a51d01584a179226ecdf8bf24b62",
+            "type": "text",
+            "richText": [
+              {
+                "text": "下列 JSON 節錄自此案例保存的實際結果，只保留其中一筆引用與相關欄位，省略其他引用及統計，並將本機專案根路徑替換為 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "/path/to/Syncnext",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "下列 JSON 節錄自此案例保存的實際結果，只保留其中一筆引用與相關欄位，省略其他引用及統計，並將本機專案根路徑替換為 /path/to/Syncnext：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2c62d41353a149a3815b4020e5c290e1",
+            "type": "code",
+            "richText": [
+              {
+                "text": "{\n  \"schemaVersion\": 1,\n  \"state\": \"resolved\",\n  \"facts\": [\n    {\n      \"kind\": \"reference\",\n      \"subject\": \"OpenSearchStatus\",\n      \"values\": [\n        \"SearchCoreView.searchStatus\"\n      ],\n      \"certainty\": \"resolved\",\n      \"evidence\": [\n        {\n          \"file\": \"/path/to/Syncnext/Syncnext tvOS/App/Search/Core/SearchCoreView.swift\",\n          \"line\": 75,\n          \"column\": 39,\n          \"role\": \"type-reference\"\n        },\n        {\n          \"file\": \"/path/to/Syncnext/Syncnext tvOS/App/Search/Status/OpenSearchStatus.swift\",\n          \"line\": 15,\n          \"column\": 1,\n          \"role\": \"declaration\"\n        }\n      ]\n    }\n  ],\n  \"contextRequests\": [],\n  \"diagnostics\": [],\n  \"context\": {\n    \"semanticScope\": \"source syntax and partial binding; no macro expansion or compiler type checking\"\n  }\n}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "{\n  \"schemaVersion\": 1,\n  \"state\": \"resolved\",\n  \"facts\": [\n    {\n      \"kind\": \"reference\",\n      \"subject\": \"OpenSearchStatus\",\n      \"values\": [\n        \"SearchCoreView.searchStatus\"\n      ],\n      \"certainty\": \"resolved\",\n      \"evidence\": [\n        {\n          \"file\": \"/path/to/Syncnext/Syncnext tvOS/App/Search/Core/SearchCoreView.swift\",\n          \"line\": 75,\n          \"column\": 39,\n          \"role\": \"type-reference\"\n        },\n        {\n          \"file\": \"/path/to/Syncnext/Syncnext tvOS/App/Search/Status/OpenSearchStatus.swift\",\n          \"line\": 15,\n          \"column\": 1,\n          \"role\": \"declaration\"\n        }\n      ]\n    }\n  ],\n  \"contextRequests\": [],\n  \"diagnostics\": [],\n  \"context\": {\n    \"semanticScope\": \"source syntax and partial binding; no macro expansion or compiler type checking\"\n  }\n}",
+            "caption": [],
+            "language": "JSON",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4ba3159decfe4c9ea45537fa3fbe504b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這筆 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "reference",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 事實表示：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "SearchCoreView.searchStatus",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 引用了 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "OpenSearchStatus",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "evidence",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 給出使用端與宣告端的位置；Agent 可以直接讀取 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "SearchCoreView.swift",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 第 75 行附近的程式碼，再沿搜尋流程檢查結果的寫入與讀取。行列位置從 1 起算。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這筆 reference 事實表示：SearchCoreView.searchStatus 引用了 OpenSearchStatus。evidence 給出使用端與宣告端的位置；Agent 可以直接讀取 SearchCoreView.swift 第 75 行附近的程式碼，再沿搜尋流程檢查結果的寫入與讀取。行列位置從 1 起算。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e72ffc06e9d241de88926fcde96912ca",
+            "type": "text",
+            "richText": [
+              {
+                "text": "state: \"resolved\"",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 與這筆事實的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "certainty: \"resolved\"",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，表示查詢解析出了這個引用關係。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "contextRequests: []",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 與 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "diagnostics: []",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 表示本次結果沒有提出補充上下文要求或診斷；它們不證明整個搜尋流程正確。這筆 JSON 提供追查入口，尚未判斷回覆是否屬於正確的搜尋操作。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "state: \"resolved\" 與這筆事實的 certainty: \"resolved\"，表示查詢解析出了這個引用關係。contextRequests: [] 與 diagnostics: [] 表示本次結果沒有提出補充上下文要求或診斷；它們不證明整個搜尋流程正確。這筆 JSON 提供追查入口，尚未判斷回覆是否屬於正確的搜尋操作。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a8d8a799671f40b18b845ac825abb4a1",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這套流程的改善在於判斷可以回到具體程式碼：Agent 從引用與呼叫位置追查資料的寫入端和消費端，再核對它們是否遵守同一個契約；框架相關判斷則有本機 SDK 與適用文件作依據。例如，接下來的搜尋案例需要檢查「新的搜尋工作，是否可能拿到上一輪的回覆」。這是資料歸屬問題，型別正確也可能發生。CLI 幫助定位相關程式碼，缺陷判斷由 Agent 檢查實作後提出，修改仍需編譯與測試驗證。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這套流程的改善在於判斷可以回到具體程式碼：Agent 從引用與呼叫位置追查資料的寫入端和消費端，再核對它們是否遵守同一個契約；框架相關判斷則有本機 SDK 與適用文件作依據。例如，接下來的搜尋案例需要檢查「新的搜尋工作，是否可能拿到上一輪的回覆」。這是資料歸屬問題，型別正確也可能發生。CLI 幫助定位相關程式碼，缺陷判斷由 Agent 檢查實作後提出，修改仍需編譯與測試驗證。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ad48cda7191146159c9117ca5b04a0a5",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "案例：非同步搜尋的請求身份與結果歸屬",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "案例：非同步搜尋的請求身份與結果歸屬",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "09558f3d43784135aad081ad974fd0b2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Syncnext 的搜尋由 Swift 呼叫 JavaScript 插件，插件完成 HTTP 請求後，透過 bridge 回傳結果。以下分析的是重構前的普通插件搜尋路徑。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Syncnext 的搜尋由 Swift 呼叫 JavaScript 插件，插件完成 HTTP 請求後，透過 bridge 回傳結果。以下分析的是重構前的普通插件搜尋路徑。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2ccb83873bec462abf8f724e64884c78",
+            "type": "code",
+            "richText": [
+              {
+                "text": "SearchCoreView\n  → VODHelper.searchPlugin\n  → SourcePlugin.search\n  → JavaScript / HTTP\n  → PluginCommunicationBridge\n  → SourcePlugin 讀取結果\n  → SearchCoreView 篩選、更新畫面",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "SearchCoreView\n  → VODHelper.searchPlugin\n  → SourcePlugin.search\n  → JavaScript / HTTP\n  → PluginCommunicationBridge\n  → SourcePlugin 讀取結果\n  → SearchCoreView 篩選、更新畫面",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "47f9c42d52084ed995a0738c48af6216",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這條資料流需要同時滿足兩個條件：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這條資料流需要同時滿足兩個條件：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b7ef6858c5b7458190398ae4dfbda742",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "操作有效：",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 接收結果的工作仍屬於當前搜尋 session。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "操作有效： 接收結果的工作仍屬於當前搜尋 session。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "965fcf871b5c41f5a8d893134bf6adba",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "結果歸屬正確：",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 讀出的資料由該次插件搜尋產生。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "結果歸屬正確： 讀出的資料由該次插件搜尋產生。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "26b2d61632784536ba3ead8940b5b19a",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "1. 畫面檢查了工作身份，結果存取卻只識別來源",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "1. 畫面檢查了工作身份，結果存取卻只識別來源",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a2fc9601fc4f4d98a0bcc6d989877bd7",
+            "type": "text",
+            "richText": [
+              {
+                "text": "畫面接收來源批次時，已有以下檢查：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "畫面接收來源批次時，已有以下檢查：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "58ef251bb9144181af3eb9af44ed1622",
+            "type": "code",
+            "richText": [
+              {
+                "text": "guard requestID == searchRequestID, !Task.isCancelled else {\n    continue\n}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "guard requestID == searchRequestID, !Task.isCancelled else {\n    continue\n}",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "cc0dc7e0af1c421c82b27fb5c8b0665d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但插件搜尋傳給 JavaScript 的結果 key 是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "pluginAddress",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。回覆保存與讀取都使用同一個來源網址：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但插件搜尋傳給 JavaScript 的結果 key 是 pluginAddress。回覆保存與讀取都使用同一個來源網址：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d6cf1330baaa4586866f8953ba8c2f60",
+            "type": "table",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [
+              "rGsq",
+              "=jk`"
+            ],
+            "tableHasColumnHeader": true,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "ddb32dac74fc4fc587a073984bc4e96d",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "=jk`": [
+                    {
+                      "text": "使用的身份",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "rGsq": [
+                    {
+                      "text": "層級",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "dad3c2c8ee724869af09655db1c50950",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "=jk`": [
+                    {
+                      "text": "每次搜尋建立的 UUID",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "rGsq": [
+                    {
+                      "text": "畫面接收工作",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "3ce36991b07d4e019a6329b5b110dec4",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "=jk`": [
+                    {
+                      "text": "pluginAddress",
+                      "annotations": [
+                        "c"
+                      ],
+                      "href": ""
+                    }
+                  ],
+                  "rGsq": [
+                    {
+                      "text": "插件結果保存",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "4328bc75451c47e4ab1cafe40403dfbd",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "=jk`": [
+                    {
+                      "text": "pluginAddress",
+                      "annotations": [
+                        "c"
+                      ],
+                      "href": ""
+                    }
+                  ],
+                  "rGsq": [
+                    {
+                      "text": "插件結果讀取",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "70c203d97ee343d3bd090fb2c4d0a87b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "同一插件先後搜尋 A、B，保存位置相同。開始 B 時，展示結果會清空，但 bridge 裡 A 的結果沒有清除。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "同一插件先後搜尋 A、B，保存位置相同。開始 B 時，展示結果會清空，但 bridge 裡 A 的結果沒有清除。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6b1311db3d244258b3a0bab77ae4c00b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "等待邏輯檢查的是以下條件：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "等待邏輯檢查的是以下條件：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "368c4708c59141baaeb3c4fea23805d3",
+            "type": "code",
+            "richText": [
+              {
+                "text": "!PluginCommunicationBridge\n    .getSearchMedias(byKey: pluginAddress)\n    .isEmpty",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "!PluginCommunicationBridge\n    .getSearchMedias(byKey: pluginAddress)\n    .isEmpty",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6ebcd62d3ed249cfadb20f32785ed4f2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這裡判斷的是「來源位置已有非空資料」，沒有判斷「本次操作已回覆」。因此，畫面 UUID 檢查與結果 key 並未共同保證結果歸屬。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這裡判斷的是「來源位置已有非空資料」，沒有判斷「本次操作已回覆」。因此，畫面 UUID 檢查與結果 key 並未共同保證結果歸屬。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a5f343b09dd24f10874cd4651225bae1",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "2. 可推導的失敗時序",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "2. 可推導的失敗時序",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6571871d2a4f464da57314d19d3b7483",
+            "type": "text",
+            "richText": [
+              {
+                "text": "以下是原始碼可推導的反例，不是執行期重現紀錄。令 P 為插件來源，A、B 為互不匹配的搜尋詞；P 下已有 A 的非空結果，B 的回覆尚未抵達：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "以下是原始碼可推導的反例，不是執行期重現紀錄。令 P 為插件來源，A、B 為互不匹配的搜尋詞；P 下已有 A 的非空結果，B 的回覆尚未抵達：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "393860a883084a46b41c11180acf5bd1",
+            "type": "table",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [
+              "NBCi",
+              "{Yce",
+              "^\\H["
+            ],
+            "tableHasColumnHeader": true,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "90f795e584c64cf782f0bd07289aa230",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "NBCi": [
+                    {
+                      "text": "步驟",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "^\\H[": [
+                    {
+                      "text": "執行結果",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "{Yce": [
+                    {
+                      "text": "P 下的資料",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "684ccd73637544348780960732b2f463",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "NBCi": [
+                    {
+                      "text": "開始 B",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "^\\H[": [
+                    {
+                      "text": "B 建立新的 UUID，並啟動插件搜尋。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "{Yce": [
+                    {
+                      "text": "A",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "908a27c52f0045fda4705f4ed3c4d159",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "NBCi": [
+                    {
+                      "text": "檢查等待條件",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "^\\H[": [
+                    {
+                      "text": "非空條件成立，B 的來源工作讀取 A 並返回。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "{Yce": [
+                    {
+                      "text": "A",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "3ade2076a7c245df993b963107bde9ce",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "NBCi": [
+                    {
+                      "text": "畫面接收批次",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "^\\H[": [
+                    {
+                      "text": "工作 UUID 屬於 B，檢查通過。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "{Yce": [
+                    {
+                      "text": "A",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "0d943577142d4160930a45c2ce9175ce",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "NBCi": [
+                    {
+                      "text": "按 B 的關鍵字篩選",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "^\\H[": [
+                    {
+                      "text": "不匹配 B 的舊片名被移除，該來源沒有顯示結果。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "{Yce": [
+                    {
+                      "text": "A",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "485597d783e0495d9ea48256565013c5",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "NBCi": [
+                    {
+                      "text": "B 的回覆抵達",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "^\\H[": [
+                    {
+                      "text": "bridge 更新資料；該來源工作已返回，不會再發布第二個批次。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "{Yce": [
+                    {
+                      "text": "B",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "c931e1687f444c1aacbd6d368e51bfcc",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "NBCi": [
+                    {
+                      "text": "再次搜尋 B",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "^\\H[": [
+                    {
+                      "text": "可能讀到上一輪留下的 B，於是出現結果。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "{Yce": [
+                    {
+                      "text": "B",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "4ac4eabd2d9042188b3400449874131b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這是由舊程式推導的失敗路徑，能解釋「首次缺結果、重搜才出現」的可能機制。原始日誌缺少 App 讀取快取的時點，尚不能確認當次回報是否走過這條路。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這是由舊程式推導的失敗路徑，能解釋「首次缺結果、重搜才出現」的可能機制。原始日誌缺少 App 讀取快取的時點，尚不能確認當次回報是否走過這條路。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "89c1efd2c2a041e68dd44d4b04bffbaf",
+            "type": "text",
+            "richText": [
+              {
+                "text": "缺陷本身是身份契約不完整：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "requestID == searchRequestID",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 成立，不能推出 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "owner(result) == expectedOperation",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "缺陷本身是身份契約不完整：requestID == searchRequestID 成立，不能推出 owner(result) == expectedOperation。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4401a94dde0e42d185dc7cb657c64397",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "3. 回覆狀態與資料量也被合併了",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "3. 回覆狀態與資料量也被合併了",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8346149204624339a772b4d8f9521b4e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "getSearchMedias",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 在找不到 key 時返回 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "[]",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "；成功回覆零筆資料時也返回 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "[]",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "getSearchMedias 在找不到 key 時返回 []；成功回覆零筆資料時也返回 []。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "49e876fd662c464299c979249a1ff0ee",
+            "type": "table",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [
+              "_uDS",
+              "U=[U",
+              "eYQl"
+            ],
+            "tableHasColumnHeader": true,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "2d700f82211a48cea576c64b43f428bf",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "U=[U": [
+                    {
+                      "text": "讀取值",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "_uDS": [
+                    {
+                      "text": "真實狀態",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "eYQl": [
+                    {
+                      "text": "非空等待條件",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "e640fe39d40147eeb3259b73f00bf4a2",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "U=[U": [
+                    {
+                      "text": "[]",
+                      "annotations": [
+                        "c"
+                      ],
+                      "href": ""
+                    }
+                  ],
+                  "_uDS": [
+                    {
+                      "text": "尚未收到回覆",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "eYQl": [
+                    {
+                      "text": "未完成",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "281ff2cda3da4ae480834ec0be18d94d",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "U=[U": [
+                    {
+                      "text": "[]",
+                      "annotations": [
+                        "c"
+                      ],
+                      "href": ""
+                    }
+                  ],
+                  "_uDS": [
+                    {
+                      "text": "成功回覆零筆",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "eYQl": [
+                    {
+                      "text": "未完成",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "7890cc73380c478ca1c38fd200cd9376",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "U=[U": [
+                    {
+                      "text": "非空陣列",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "_uDS": [
+                    {
+                      "text": "留有上一輪資料",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "eYQl": [
+                    {
+                      "text": "完成",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "b6c2ec1d216b4f5085244a8a120ea3e7",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個讀取介面無法區分未回覆與成功空結果，非空條件也可能把舊資料誤當本次完成。操作狀態需要與 payload 分開：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個讀取介面無法區分未回覆與成功空結果，非空條件也可能把舊資料誤當本次完成。操作狀態需要與 payload 分開：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "594c04a35bc2498094f4acdcee89199f",
+            "type": "code",
+            "richText": [
+              {
+                "text": "pending\n  → success([items])  → terminal\n  → success([])       → terminal\n  → failure(error)    → terminal\n  → cancelled         → terminal",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "pending\n  → success([items])  → terminal\n  → success([])       → terminal\n  → failure(error)    → terminal\n  → cancelled         → terminal",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e2bed58cdff74ff98a9902a7867b86f7",
+            "type": "text",
+            "richText": [
+              {
+                "text": "完成應由回覆事件決定，不能由陣列是否非空推定。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "完成應由回覆事件決定，不能由陣列是否非空推定。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "cf1f0b31d12644f5a411079efc13ae63",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "4. 修正：以原生 operation 綁定回覆",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "4. 修正：以原生 operation 綁定回覆",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "074c6c4a355a4bcd986a658935570136",
+            "type": "text",
+            "richText": [
+              {
+                "text": "實際重構將普通插件搜尋改為獨立 operation。以下節錄身份建立與結果接收，省略逾時、取消及清理程式：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "實際重構將普通插件搜尋改為獨立 operation。以下節錄身份建立與結果接收，省略逾時、取消及清理程式：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "352ec0618f394ec0aa01ce4430678eec",
+            "type": "code",
+            "richText": [
+              {
+                "text": "let requestID = UUID()\nPluginAutomationRequestRegistry.begin(\n    requestID,\n    allowedOrigin: nil,\n    isSearch: true\n)\n\nlet handler = JSCommunicationHandler(\n    debug: false,\n    name: plugin.name,\n    automationRequestID: requestID,\n    diagnosticRole: .search\n)\n\n// 位於 withCheckedThrowingContinuation 內\nPluginAutomationRequestRegistry.awaitSearch(requestID) { result in\n    continuation.resume(with: result.mapError { $0 as Error })\n}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "let requestID = UUID()\nPluginAutomationRequestRegistry.begin(\n    requestID,\n    allowedOrigin: nil,\n    isSearch: true\n)\n\nlet handler = JSCommunicationHandler(\n    debug: false,\n    name: plugin.name,\n    automationRequestID: requestID,\n    diagnosticRole: .search\n)\n\n// 位於 withCheckedThrowingContinuation 內\nPluginAutomationRequestRegistry.awaitSearch(requestID) { result in\n    continuation.resume(with: result.mapError { $0 as Error })\n}",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "aec84cd02ecf48f387cc7c0c9b0cee3d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這裡的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "requestID",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是插件 operation 的身份，與畫面的搜尋 session UUID 分屬不同層。handler 建立 JS context 時，將其原生識別值綁到該 operation：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這裡的 requestID 是插件 operation 的身份，與畫面的搜尋 session UUID 分屬不同層。handler 建立 JS context 時，將其原生識別值綁到該 operation：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e39dfd175008446f90921ade86d5d188",
+            "type": "code",
+            "richText": [
+              {
+                "text": "PluginAutomationRequestRegistry.bindJavaScriptContext(\n    automationContextKey,\n    to: automationRequestID\n)",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "PluginAutomationRequestRegistry.bindJavaScriptContext(\n    automationContextKey,\n    to: automationRequestID\n)",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "aeb9b84e088b4bce868b058939a44bef",
+            "type": "text",
+            "richText": [
+              {
+                "text": "callback 歸屬從原生 context 查得，JavaScript 傳入的 key 不再決定回覆應完成哪個 operation。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "callback 歸屬從原生 context 查得，JavaScript 傳入的 key 不再決定回覆應完成哪個 operation。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3383cbed79634ea2b4518f3f7397e86d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "修正後的契約是：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "修正後的契約是：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "33f1a27eb6054db0bbc54879e8e3006a",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "每個 operation 接收自己的回覆，不讀取來源共用位置來推定本次結果。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "每個 operation 接收自己的回覆，不讀取來源共用位置來推定本次結果。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a324fa12f0c6476cb38d646baf79517d",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "success([])",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 正常完成；同一 operation 最多完成一次。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "success([]) 正常完成；同一 operation 最多完成一次。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fd96d19007904f72b6a02aaead9f7d59",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "取消、完成後的晚到或重複回覆被拒收，清理只影響該 operation。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "取消、完成後的晚到或重複回覆被拒收，清理只影響該 operation。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e3534e8f49b94e3885ee80414fffd271",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "session 在聚合時檢查當前搜尋身份，拒收已失效搜尋的結果。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "session 在聚合時檢查當前搜尋身份，拒收已失效搜尋的結果。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9e4cbbccbd1141b0b462ba7286fd9721",
+            "type": "text",
+            "richText": [
+              {
+                "text": "來源錯誤仍只寫日誌，成功來源繼續呈現。內部保留失敗狀態，不要求畫面顯示錯誤。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "來源錯誤仍只寫日誌，成功來源繼續呈現。內部保留失敗狀態，不要求畫面顯示錯誤。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2779c4b4945d42f89f7ce9bc866e37f8",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "5. apple-swift-engineering 提供了哪些證據",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "5. apple-swift-engineering 提供了哪些證據",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6153a12d96404bee93924ea4a1bee0f1",
+            "type": "text",
+            "richText": [
+              {
+                "text": "此案例保存的查詢之一是：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "此案例保存的查詢之一是：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2e8273e1cf8b424fbf306a3a4814e9a3",
+            "type": "code",
+            "richText": [
+              {
+                "text": "swift-semantic resolve \\\n  --root /path/to/Syncnext \\\n  --symbol OpenSearchStatus \\\n  --query references",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "swift-semantic resolve \\\n  --root /path/to/Syncnext \\\n  --symbol OpenSearchStatus \\\n  --query references",
+            "caption": [],
+            "language": "Bash",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "94472bbec0b8440a90f16ce053a2cec2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "返回的引用包括 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "OpenSearchView.openSearch",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 與 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "SearchCoreView.searchStatus",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，附有宣告及使用位置。Agent 依這些位置讀取執行流程，再檢查插件回覆的寫入與消費端。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "返回的引用包括 OpenSearchView.openSearch 與 SearchCoreView.searchStatus，附有宣告及使用位置。Agent 依這些位置讀取執行流程，再檢查插件回覆的寫入與消費端。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ba0450f7e56047d3a827555a8cd68d42",
+            "type": "table",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [
+              "U{~_",
+              "E[dN"
+            ],
+            "tableHasColumnHeader": true,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "068eb5160de345f8bc42701ecf5dbf8a",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "E[dN": [
+                    {
+                      "text": "支持的結論",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "U{~_": [
+                    {
+                      "text": "證據",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "82fbbe10fd1249d98ed20489a7b778eb",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "E[dN": [
+                    {
+                      "text": "找到狀態的入口及使用端。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "U{~_": [
+                    {
+                      "text": "CLI 引用與定位",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "0aa72e67cf0642d4a5a06d32537fd4d5",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "E[dN": [
+                    {
+                      "text": "確認共用結果 key、非空等待條件與畫面 UUID 檢查的契約缺口。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "U{~_": [
+                    {
+                      "text": "舊版原始碼",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "4102087d5dde4aac9fb0ddfb8d5d6398",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "E[dN": [
+                    {
+                      "text": "上述缺陷在重構及第一次 App 編譯前已提出。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "U{~_": [
+                    {
+                      "text": "分析與編譯時間線",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "136acf571ba8451bbe89a34315c6fb9e",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "E[dN": [
+                    {
+                      "text": "覆蓋新舊搜尋切換、空回覆、晚到回覆、取消及單次完成；原生 JavaScriptCore 測試替換 HTTP／UI 等外部依賴。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "U{~_": [
+                    {
+                      "text": "重構後受控測試",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "735f68e0e4c345ccb7c3160628370821",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "E[dN": [
+                    {
+                      "text": "相關改動通過編譯；不等同原始事故的實機重現。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "U{~_": [
+                    {
+                      "text": "App／Top Shelf Simulator 編譯",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "e8bdece60ab540baafc95ad09e7ea888",
+            "type": "text",
+            "richText": [
+              {
+                "text": "CLI 提供引用與位置；資料流缺陷的判斷來自後續對 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "SourcePlugin",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 與 bridge 實作的檢查。它沒有自動產生這條缺陷 finding，這個案例也不建立與 SwiftFairy 檢測效果等價的結論。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "CLI 提供引用與位置；資料流缺陷的判斷來自後續對 SourcePlugin 與 bridge 實作的檢查。它沒有自動產生這條缺陷 finding，這個案例也不建立與 SwiftFairy 檢測效果等價的結論。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a67787a59ad44d0a81f7ad10b4aef9d3",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "公開版本",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "公開版本",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "eecc13681ca04b81a52bbbb19a79c3dd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "倉庫採用 MIT 授權，包含 Skill、本地 CLI、使用指南、安裝腳本與測試。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "倉庫採用 MIT 授權，包含 Skill、本地 CLI、使用指南、安裝腳本與測試。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d116f7bf13854fd6a7b3c83a64d20b06",
+            "type": "code",
+            "richText": [
+              {
+                "text": "git clone https://github.com/qoli/apple-swift-engineering.git\ncd apple-swift-engineering\nbash swift_semantic/bin/install.sh",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "git clone https://github.com/qoli/apple-swift-engineering.git\ncd apple-swift-engineering\nbash swift_semantic/bin/install.sh",
+            "caption": [],
+            "language": "Bash",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fa5e9eb0103345428a7d602cb751a98f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "安裝後可以請 Codex：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "安裝後可以請 Codex：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "57955aad197f4d87aa8bf35dff00b01f",
+            "type": "quote",
+            "richText": [
+              {
+                "text": "使用 $apple-swift-engineering，先追查搜尋的請求身份、回覆寫入與結果消費，檢查結果歸屬及完成條件，再提出修改。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "使用 $apple-swift-engineering，先追查搜尋的請求身份、回覆寫入與結果消費，檢查結果歸屬及完成條件，再提出修改。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b05148cb09c84fd5938a115170972ca5",
+            "type": "text",
+            "richText": [
+              {
+                "text": "公開版本已在 Xcode 27.0、Swift 6.4、macOS 27 arm64 上完成驗證：43 個原生測試、6 個結果處理測試通過，隔離安裝也通過。較舊工具鏈與 macOS 執行環境尚未驗證。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "公開版本已在 Xcode 27.0、Swift 6.4、macOS 27 arm64 上完成驗證：43 個原生測試、6 個結果處理測試通過，隔離安裝也通過。較舊工具鏈與 macOS 執行環境尚未驗證。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "3e2c1b36c401811198bbd92929b220c4",
       "slug": "macos-27-swiftui-toolbar-grouping-workaround-3e2c1b36",
@@ -33,7 +2775,7 @@
       "lastEditedTime": "2026-09-22T01:54:39.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:56:00.391Z",
+        "syncedAt": "2026-10-04T04:40:14.333Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -1450,7 +4192,7 @@
       "lastEditedTime": "2026-08-31T20:52:17.855Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:56:05.779Z",
+        "syncedAt": "2026-10-04T04:40:21.141Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -4449,7 +7191,7 @@
       "lastEditedTime": "2026-08-28T11:15:10.927Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:56:35.815Z",
+        "syncedAt": "2026-10-04T04:40:48.352Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -5121,7 +7863,7 @@
       "lastEditedTime": "2026-08-16T11:56:00.262Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:56:36.421Z",
+        "syncedAt": "2026-10-04T04:40:48.844Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -5823,7 +8565,7 @@
       "lastEditedTime": "2026-08-15T12:43:46.007Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:56:36.822Z",
+        "syncedAt": "2026-10-04T04:40:49.256Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -7465,7 +10207,7 @@
       "lastEditedTime": "2026-07-21T21:05:27.763Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:56:43.539Z",
+        "syncedAt": "2026-10-04T04:40:57.903Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -8209,7 +10951,7 @@
       "lastEditedTime": "2026-07-21T14:55:42.809Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:56:44.138Z",
+        "syncedAt": "2026-10-04T04:40:58.371Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -8554,7 +11296,7 @@
       "lastEditedTime": "2026-05-23T15:01:21.702Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:56:44.524Z",
+        "syncedAt": "2026-10-04T04:40:58.715Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -10895,7 +13637,7 @@
       "lastEditedTime": "2026-05-23T13:53:13.789Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:56:45.337Z",
+        "syncedAt": "2026-10-04T04:40:59.179Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -11912,7 +14654,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:56:56.482Z",
+        "syncedAt": "2026-10-04T04:41:10.739Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -14259,7 +17001,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:57:25.286Z",
+        "syncedAt": "2026-10-04T04:41:36.280Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -15440,7 +18182,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:57:29.594Z",
+        "syncedAt": "2026-10-04T04:41:42.814Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -16025,7 +18767,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:57:47.445Z",
+        "syncedAt": "2026-10-04T04:41:57.510Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -18218,7 +20960,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:57:48.200Z",
+        "syncedAt": "2026-10-04T04:41:58.679Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -18941,7 +21683,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:57:48.635Z",
+        "syncedAt": "2026-10-04T04:41:59.332Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -19709,7 +22451,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:57:49.363Z",
+        "syncedAt": "2026-10-04T04:41:59.974Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -20853,7 +23595,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:58:13.724Z",
+        "syncedAt": "2026-10-04T04:42:19.310Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -21577,7 +24319,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:58:14.279Z",
+        "syncedAt": "2026-10-04T04:42:19.878Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -22447,7 +25189,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:58:14.691Z",
+        "syncedAt": "2026-10-04T04:42:20.408Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -23827,7 +26569,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:58:15.344Z",
+        "syncedAt": "2026-10-04T04:42:21.129Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -27274,7 +30016,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:58:23.692Z",
+        "syncedAt": "2026-10-04T04:42:28.119Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -29120,7 +31862,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:58:24.283Z",
+        "syncedAt": "2026-10-04T04:42:28.843Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -29775,7 +32517,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:58:27.634Z",
+        "syncedAt": "2026-10-04T04:42:33.758Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -30391,7 +33133,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:58:35.650Z",
+        "syncedAt": "2026-10-04T04:42:41.429Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -31157,7 +33899,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:58:36.171Z",
+        "syncedAt": "2026-10-04T04:42:41.909Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -34104,7 +36846,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:59:48.148Z",
+        "syncedAt": "2026-10-04T04:43:51.345Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -35222,7 +37964,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:59:53.953Z",
+        "syncedAt": "2026-10-04T04:43:59.106Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -35600,7 +38342,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T01:59:56.503Z",
+        "syncedAt": "2026-10-04T04:44:02.071Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -38407,7 +41149,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T02:01:09.183Z",
+        "syncedAt": "2026-10-04T04:45:25.545Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -38635,7 +41377,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T02:01:13.458Z",
+        "syncedAt": "2026-10-04T04:45:29.582Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -39400,7 +42142,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-09-22T02:01:19.336Z",
+        "syncedAt": "2026-10-04T04:45:36.047Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
