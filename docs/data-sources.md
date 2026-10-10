@@ -504,13 +504,13 @@ Blog 入口使用 Notion database 作為上游資料源，但正式網站只在 
 
 ### Blog 同步規則
 
-- Blog index 由 `src/build.ts` 生成為靜態 HTML，連到 RonnieCC 站內文章頁，不再直接外跳 Notion，也不依賴瀏覽器端 JSON fetch 才能看見文章列表。
+- Blog index 由 `src/build.ts` 生成為靜態 HTML；一般文章連到 RonnieCC 站內頁，產品子站擁有 canonical 的文章直接連到該產品頁，不依賴瀏覽器端 JSON fetch 才能看見文章列表。
 - 同步器會抓取公開頁面的 Notion v3 block snapshot，`src/build.ts` 在 build time 生成 `/blog/<slug>/` 和 `/en/blog/<slug>/`。新文章應在 Notion 草稿階段先填 `SEO Slug`，讓公開 URL 使用短英文 slug；公開文章缺失時同步器會 fail。
-- 文章頁 canonical、Open Graph URL、CollectionPage item URL 和 sitemap 都指向 RonnieCC 站內 URL。
+- 預設文章的 canonical、Open Graph URL、CollectionPage item URL 和 sitemap 都指向 RonnieCC；`content/blog-canonical-owners.json` 宣告的產品落地文章則一致指向產品子站，並從 RonnieCC sitemap 排除。
 - 當文章從舊 title-derived slug 切到 `SEO Slug` 時，build 會為 `legacySlugs` 生成靜態 redirect 頁，避免舊連結直接斷掉。
 - `content/blog.seed.json` 是主站與子站共用的 Blog contract；子站不應直接拉 Notion。
 - RonnieCC 是所有公開文章的 implicit default target；`子站點` 只描述額外同步目標，目前第一個子站 id 是 `adict`。
-- 同步器會輸出 `subsites`、`publishTargets` 和 `canonical`。完整鏡像到子站的文章 canonical 應指向 RonnieCC 原文 URL。
+- 同步器會輸出 `subsites`、`publishTargets` 和 `canonical`。完整鏡像預設指向 RonnieCC；purpose-built 產品落地文章由集中 registry 指定唯一 canonical owner，子站不得自行覆寫。
 - Notion table 會保存 column order、header 設定和 `table_row` cell rich text，build time 轉成站內 HTML table。
 - Notion 圖片在同步階段透過 `getSignedFileUrls` 下載到 `content/blog-assets/<post-id>/`，文章 JSON 只保留站內 `assetPath` 給 build 使用。
 - 如果圖片下載失敗，文章頁仍會顯示 block caption / source fallback，避免靜態 build 產生壞掉的 `<img>`。

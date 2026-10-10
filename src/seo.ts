@@ -3,6 +3,7 @@ export type Language = "mix" | "en";
 export type SeoMeta = {
   language: Language;
   path: string;
+  canonical?: string;
   title: string;
   description: string;
   type?: "website" | "profile" | "article";
@@ -96,8 +97,9 @@ function jsonLdTag(data: unknown): string {
 }
 
 export function renderSeoHead(meta: SeoMeta): string {
-  const canonical = canonicalUrl(meta.path, meta.language);
+  const canonical = meta.canonical || canonicalUrl(meta.path, meta.language);
   const alternates = alternateUrls(meta.path);
+  const ownsCanonical = canonical.startsWith(`${siteUrl}/`);
   const info = languageInfo[meta.language];
   const type = meta.type === "article" ? "article" : meta.type === "profile" ? "profile" : "website";
   const jsonLd = meta.jsonLd || [];
@@ -123,9 +125,13 @@ export function renderSeoHead(meta: SeoMeta): string {
     metaTag("twitter:image:alt", `${siteName} public index`),
     metaTag("twitter:site", "@llqoli"),
     metaTag("twitter:creator", "@llqoli"),
-    linkTag("alternate", alternates.mix, ' hreflang="zh-Hant"'),
-    linkTag("alternate", alternates.en, ' hreflang="en"'),
-    linkTag("alternate", alternates.xDefault, ' hreflang="x-default"'),
+    ...(ownsCanonical
+      ? [
+          linkTag("alternate", alternates.mix, ' hreflang="zh-Hant"'),
+          linkTag("alternate", alternates.en, ' hreflang="en"'),
+          linkTag("alternate", alternates.xDefault, ' hreflang="x-default"'),
+        ]
+      : []),
     linkTag("alternate", `${siteUrl}/rss.xml`, ' type="application/rss+xml" title="Ronnie Wong Blog RSS"'),
     ...socialProfiles.map((href) => linkTag("me", href)),
     ...jsonLd.map(jsonLdTag),
@@ -133,7 +139,7 @@ export function renderSeoHead(meta: SeoMeta): string {
 }
 
 export function applySeo(html: string, meta: SeoMeta): string {
-  const canonical = canonicalUrl(meta.path, meta.language);
+  const canonical = meta.canonical || canonicalUrl(meta.path, meta.language);
   const withBase = html
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(meta.title)}</title>`)
     .replace(
@@ -221,6 +227,7 @@ export function profilePageJsonLd(language: Language, path: string, description:
 export function creativeWorkJsonLd(params: {
   language: Language;
   path: string;
+  url?: string;
   name: string;
   description: string;
   keywords: string[];
@@ -232,7 +239,7 @@ export function creativeWorkJsonLd(params: {
     "@type": "CreativeWork",
     name: params.name,
     description: params.description,
-    url: canonicalUrl(params.path, params.language),
+    url: params.url || canonicalUrl(params.path, params.language),
     inLanguage: languageInfo[params.language].htmlLang,
     creator: { "@id": `${siteUrl}/#person` },
     keywords: params.keywords,

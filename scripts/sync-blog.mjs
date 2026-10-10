@@ -12,9 +12,14 @@ const sourceUrl = "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
 const outputPath = path.join(repoRoot, "content", "blog.seed.json");
+const canonicalOwnersPath = path.join(repoRoot, "content", "blog-canonical-owners.json");
 const assetRoot = path.join(repoRoot, "content", "blog-assets");
 const siteUrl = "https://ronniewong.cc";
 const defaultPublishTarget = "ronniecc";
+const canonicalSiteUrls = {
+  ronniecc: siteUrl,
+  adict: "https://adict.ronniewong.cc",
+};
 const subsiteFieldNames = ["子站點", "子站点", "Subsites"];
 const assetDownloadTimeoutMs = 120_000;
 const notionRequestUserAgent = "RonnieCC-Notion-Sync/1.0";
@@ -62,6 +67,45 @@ function notionPageUrl(row) {
 
 function blogPostUrl(slug) {
   return `${siteUrl}/blog/${encodeURIComponent(slug)}/`;
+}
+
+async function readCanonicalOwners() {
+  try {
+    const payload = JSON.parse(await readFile(canonicalOwnersPath, "utf8"));
+    if (!payload || typeof payload !== "object" || Array.isArray(payload)) return {};
+
+    const normalized = {};
+    for (const [rawId, owner] of Object.entries(payload)) {
+      const id = compactId(rawId);
+      if (!id || normalized[id]) throw new Error(`Duplicate or invalid canonical owner post ID: "${rawId}"`);
+      normalized[id] = owner;
+    }
+    return normalized;
+  } catch (error) {
+    if (error?.code === "ENOENT") return {};
+    throw error;
+  }
+}
+
+function canonicalForPost({ id, slug, publishTargets }, canonicalOwners) {
+  const owner = canonicalOwners[id];
+  if (!owner) {
+    return {
+      site: defaultPublishTarget,
+      url: blogPostUrl(slug),
+    };
+  }
+
+  const site = normalizeSubsiteName(owner.site);
+  const baseUrl = canonicalSiteUrls[site];
+  if (!site || !baseUrl || !publishTargets.includes(site)) {
+    throw new Error(`Invalid canonical owner for post "${id}": the owner must be an allowed publish target.`);
+  }
+
+  return {
+    site,
+    url: `${baseUrl}/blog/${encodeURIComponent(slug)}/`,
+  };
 }
 
 function isPublic(row) {
@@ -307,16 +351,18 @@ function idToKey(blocks, id) {
   return Object.keys(blocks).find((key) => compactId(key) === compact);
 }
 
-function normalizePost(row) {
+function normalizePost(row, canonicalOwners) {
   const writtenDate = row["編寫日期"] ? String(row["編寫日期"]).trim() : "";
   const writtenYear = writtenDate ? String(new Date(writtenDate).getFullYear()) : "";
   const year = writtenYear || String(row["年份"] || "").trim() || (row.createdTime ? String(new Date(row.createdTime).getFullYear()) : "");
   const slug = postSlug(row);
+  const id = compactId(row.id);
   const seoSlug = normalizedSeoSlug(row);
   const legacySlug = legacyPostSlug(row);
   const postSubsites = subsites(row);
+  const publishTargets = [defaultPublishTarget, ...postSubsites];
   return {
-    id: compactId(row.id),
+    id,
     slug,
     seoSlug,
     legacySlugs: legacySlug !== slug ? [legacySlug] : [],
@@ -326,11 +372,8 @@ function normalizePost(row) {
     year,
     public: isPublic(row),
     subsites: postSubsites,
-    publishTargets: [defaultPublishTarget, ...postSubsites],
-    canonical: {
-      site: defaultPublishTarget,
-      url: blogPostUrl(slug),
-    },
+    publishTargets,
+    canonical: canonicalForPost({ id, slug, publishTargets }, canonicalOwners),
     notionUrl: notionPageUrl(row),
     createdTime: row.createdTime || "",
     lastEditedTime: row.lastEditedTime || "",
@@ -339,6 +382,7 @@ function normalizePost(row) {
 
 async function main() {
   const notionToken = process.env.NOTION_TOKEN || process.env.NOTION_TOKEN_V2;
+  const canonicalOwners = await readCanonicalOwners();
 
   const page = await fetchPageById(databaseId, notionToken);
   const collectionRecord = page.recordMap.collection?.[collectionId] || Object.values(page.recordMap.collection || {})[0];
@@ -354,12 +398,18 @@ async function main() {
 
   const rows = allRows
     .filter((row) => isPublic(row) && String(row.Name || "").trim())
-    .map(normalizePost)
+    .map((row) => normalizePost(row, canonicalOwners))
     .sort((a, b) => {
       const yearDiff = Number(b.year || 0) - Number(a.year || 0);
       if (yearDiff !== 0) return yearDiff;
       return String(b.createdTime).localeCompare(String(a.createdTime));
     });
+
+  const publicPostIds = new Set(rows.map((post) => post.id));
+  const unusedCanonicalOwners = Object.keys(canonicalOwners).filter((id) => !publicPostIds.has(id));
+  if (unusedCanonicalOwners.length) {
+    throw new Error(`Canonical owner entries do not match a public post: ${unusedCanonicalOwners.join(", ")}`);
+  }
 
   const missingSeoSlugPosts = rows.filter((post) => !post.seoSlug);
   if (missingSeoSlugPosts.length) {

@@ -312,7 +312,12 @@ function blogPostPath(post: BlogPost, prefix = ""): string {
 }
 
 function blogPostCanonical(post: BlogPost, language: Language): string {
+  if (post.canonical?.site && post.canonical.site !== "ronniecc") return post.canonical.url;
   return canonicalUrl(`blog/${encodeURIComponent(post.slug)}/`, language);
+}
+
+function blogPostHref(post: BlogPost, language: Language, localHref: string): string {
+  return post.canonical?.site && post.canonical.site !== "ronniecc" ? blogPostCanonical(post, language) : localHref;
 }
 
 function renderRedirectPage(targetUrl: string, title: string): string {
@@ -637,7 +642,7 @@ function blogList(posts: BlogPost[], language: Language): string {
               .map(
                 (post) => `
                   <article class="blog-item">
-                    <a href="${escapeAttr(blogPostPath(post))}">
+                    <a href="${escapeAttr(blogPostHref(post, language, blogPostPath(post)))}">
                       <span class="blog-title">${escapeHtml(post.title)}</span>
                       <span class="blog-meta">${escapeHtml(post.tag || "Note")}</span>
                     </a>
@@ -1107,20 +1112,20 @@ function renderBlogPage(source: string, posts: BlogPost[], locale: Locale): stri
   });
 }
 
-function blogArticleNav(post: BlogPost, prevPost?: BlogPost, nextPost?: BlogPost): string {
+function blogArticleNav(post: BlogPost, language: Language, prevPost?: BlogPost, nextPost?: BlogPost): string {
   const visiblePrevPost = post.hasLocalizedCopy && !prevPost?.hasLocalizedCopy ? undefined : prevPost;
   const visibleNextPost = post.hasLocalizedCopy && !nextPost?.hasLocalizedCopy ? undefined : nextPost;
   const links = [
     visiblePrevPost
       ? `
-            <a class="blog-article-nav-link prev" href="../${encodeURIComponent(visiblePrevPost.slug)}/">
+            <a class="blog-article-nav-link prev" href="${escapeAttr(blogPostHref(visiblePrevPost, language, `../${encodeURIComponent(visiblePrevPost.slug)}/`))}">
               <span class="blog-article-nav-label">Previous</span>
               <span class="blog-article-nav-title">${escapeHtml(visiblePrevPost.title)}</span>
             </a>`
       : "",
     visibleNextPost
       ? `
-            <a class="blog-article-nav-link next" href="../${encodeURIComponent(visibleNextPost.slug)}/">
+            <a class="blog-article-nav-link next" href="${escapeAttr(blogPostHref(visibleNextPost, language, `../${encodeURIComponent(visibleNextPost.slug)}/`))}">
               <span class="blog-article-nav-label">Next</span>
               <span class="blog-article-nav-title">${escapeHtml(visibleNextPost.title)}</span>
             </a>`
@@ -1155,7 +1160,7 @@ function blogArticleMain(post: BlogPost, language: Language, rootPath: string, p
         <footer class="blog-source">
           <a href="${escapeAttr(post.notionUrl)}" target="_blank" rel="noreferrer">Original Notion note</a>
         </footer>
-        ${blogArticleNav(post, prevPost, nextPost)}
+        ${blogArticleNav(post, language, prevPost, nextPost)}
       </div>
     </article>
   </main>`;
@@ -1163,6 +1168,7 @@ function blogArticleMain(post: BlogPost, language: Language, rootPath: string, p
 
 function renderBlogPostPage(source: string, post: BlogPost, locale: Locale, prevPost?: BlogPost, nextPost?: BlogPost): string {
   const path = `blog/${encodeURIComponent(post.slug)}/`;
+  const canonical = blogPostCanonical(post, locale.language);
   const rootPath = locale.language === "en" ? "../../../" : "../../";
   const altUrl = locale.language === "en" ? `../../../blog/${encodeURIComponent(post.slug)}/` : `../../en/blog/${encodeURIComponent(post.slug)}/`;
   const description = blogArticleDescription(post);
@@ -1173,10 +1179,13 @@ function renderBlogPostPage(source: string, post: BlogPost, locale: Locale, prev
     )
     .replace(/<main>[\s\S]*?<\/main>/, blogArticleMain(post, locale.language, rootPath, prevPost, nextPost));
 
-  html = setLanguageToggle(html, locale.language, altUrl);
+  html = post.canonical?.site && post.canonical.site !== "ronniecc"
+    ? html.replace(/<button class="language-toggle"[^>]*>[\s\S]*?<\/button>/, "")
+    : setLanguageToggle(html, locale.language, altUrl);
   html = applySeo(html, {
     language: locale.language,
     path,
+    canonical,
     title: `${post.title} · Ronnie Wong`,
     description,
     type: "article",
@@ -1185,6 +1194,7 @@ function renderBlogPostPage(source: string, post: BlogPost, locale: Locale, prev
       creativeWorkJsonLd({
         language: locale.language,
         path,
+        url: canonical,
         name: post.title,
         description,
         keywords: post.tag ? post.tag.split(",").map((tag) => tag.trim()).filter(Boolean) : [],
@@ -1264,7 +1274,7 @@ function renderSimplePage(source: string, locale: Locale, path: string, altUrl: 
 
 function renderSitemap(projects: Project[], posts: BlogPost[]): string {
   const lastmod = new Date().toISOString().slice(0, 10);
-  const visiblePosts = posts.filter((post) => post.public !== false);
+  const visiblePosts = posts.filter((post) => post.public !== false && (!post.canonical?.site || post.canonical.site === "ronniecc"));
   const urls = [
     `${siteUrl}/`,
     `${siteUrl}/projects.html`,
