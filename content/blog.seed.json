@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-10-04T04:46:16.141Z",
+  "generatedAt": "2026-10-10T14:54:47.574Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,625 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "3f5c1b36c40181f3bc8fe3c595a49136",
+      "slug": "tvos-runs-as-current-user-incident-3f5c1b36",
+      "seoSlug": "tvos-runs-as-current-user-incident",
+      "legacySlugs": [
+        "runs-as-current-user-並不是一個可以隨便勾選的-checkbox-3f5c1b36"
+      ],
+      "title": "Runs as Current User 並不是一個可以隨便勾選的 Checkbox",
+      "tag": "tvOS,App Store,Bug,Ops",
+      "writtenDate": "2026-10-10",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/tvos-runs-as-current-user-incident-3f5c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/runs-as-current-user-%E4%B8%A6%E4%B8%8D%E6%98%AF%E4%B8%80%E5%80%8B%E5%8F%AF%E4%BB%A5%E9%9A%A8%E4%BE%BF%E5%8B%BE%E9%81%B8%E7%9A%84-checkbox-3f5c1b36c40181f3bc8fe3c595a49136?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-10-10T14:31:19.578Z",
+      "lastEditedTime": "2026-10-10T14:42:25.351Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-10-10T14:46:57.506Z",
+        "blocks": [
+          {
+            "id": "1dbb2abe68894e338264b1ecf6eba671",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Syncnext 1.188 上線後，開始有人回報原本已購買的終身版突然失效，既有的 StoreKit 1 驗證流程也失去工作能力。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Syncnext 1.188 上線後，開始有人回報原本已購買的終身版突然失效，既有的 StoreKit 1 驗證流程也失去工作能力。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0e735412c57646e085006190d989e48d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我最後在 1.190 移除了 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "runs-as-current-user",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。同一位用戶更新後，不只購買恢復，原本消失的播放紀錄也一起回來了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我最後在 1.190 移除了 runs-as-current-user。同一位用戶更新後，不只購買恢復，原本消失的播放紀錄也一起回來了。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a4134184713b49b6b0590ef3ad1e167e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這次事故讓我確認：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Runs as Current User",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 並不是一個可以根據 Xcode 裡幾行說明就安全開啟的選項。它實際造成的影響，遠大於 Apple 文件描述的範圍。對我來說，這不是一個好的 API。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這次事故讓我確認：Runs as Current User 並不是一個可以根據 Xcode 裡幾行說明就安全開啟的選項。它實際造成的影響，遠大於 Apple 文件描述的範圍。對我來說，這不是一個好的 API。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2c7a97049eee4872b6e80763945c32d3",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "當初為什麼會開啟它",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "當初為什麼會開啟它",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "11ea4dee46264b71835ec8eb7b02c9bd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "事情起於一個真實的使用需求。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "事情起於一個真實的使用需求。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f5221af1c4584c6492298ad1961433a2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "一位用戶家裡有兩台 Apple TV，希望兩邊保留各自的觀看紀錄。他想保留原來的使用者，再新增另一位 Apple TV 使用者：新使用者登入另一個 iCloud Apple ID，讓 CloudKit 資料分開；「商店」仍使用原本購買 Syncnext 的 Apple Account，以沿用 Pro 權益。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "一位用戶家裡有兩台 Apple TV，希望兩邊保留各自的觀看紀錄。他想保留原來的使用者，再新增另一位 Apple TV 使用者：新使用者登入另一個 iCloud Apple ID，讓 CloudKit 資料分開；「商店」仍使用原本購買 Syncnext 的 Apple Account，以沿用 Pro 權益。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8999ddaf5fc84b26991a52e5df383734",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Apple TV 允許 iCloud 與商店帳號分開設定。但建立多個系統使用者之後，App 是否跟隨目前使用者，還取決於 User Management entitlement。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Apple TV 允許 iCloud 與商店帳號分開設定。但建立多個系統使用者之後，App 是否跟隨目前使用者，還取決於 User Management entitlement。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4cb5b1db681043cf9365755534336be8",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我當時查到的有效公開資料，只有 Apple 的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "User Management entitlement",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.user-management"
+              },
+              {
+                "text": " 文件。文件說明：加入 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "com.apple.developer.user-management",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 並指定 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "runs-as-current-user",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 後，系統會以目前選取的使用者執行 App，本機資料、UserDefaults、iCloud 等資源也會跟隨目前使用者。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我當時查到的有效公開資料，只有 Apple 的 User Management entitlement 文件。文件說明：加入 com.apple.developer.user-management 並指定 runs-as-current-user 後，系統會以目前選取的使用者執行 App，本機資料、UserDefaults、iCloud 等資源也會跟隨目前使用者。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "48ff531658794d6faed25ef9db95833f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這段說明正好對應觀看紀錄隔離的需求。10 月 4 日，我把這個 entitlement 加入 Syncnext。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這段說明正好對應觀看紀錄隔離的需求。10 月 4 日，我把這個 entitlement 加入 Syncnext。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7e40aa18f7f34558a993ee79bef3f202",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "1.188 之後的事故",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "1.188 之後的事故",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a335c968096a4dad906ee9fd91a9795b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在 1.188 版本加入了 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "runs-as-current-user",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在 1.188 版本加入了 runs-as-current-user。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0fe5b7b8855a4054a8f19fede5f60ca3",
+            "type": "text",
+            "richText": [
+              {
+                "text": "10 月 9 日，一位已購買終身版的用戶回報：前一天仍能使用，當天卻失效；App 無法取得原有購買。兩台 Apple TV 使用相同 Apple ID 與網路，其中一台正常，另一台無法辨識購買。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "10 月 9 日，一位已購買終身版的用戶回報：前一天仍能使用，當天卻失效；App 無法取得原有購買。兩台 Apple TV 使用相同 Apple ID 與網路，其中一台正常，另一台無法辨識購買。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e692ad7f4d344091984f17f4e8bfa93b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這不是一套剛寫好的 StoreKit 程式。Syncnext 的 StoreKit 程式碼至少從 tvOS 15 開始就在實際使用，近期也沒有修改這條購買驗證流程。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這不是一套剛寫好的 StoreKit 程式。Syncnext 的 StoreKit 程式碼至少從 tvOS 15 開始就在實際使用，近期也沒有修改這條購買驗證流程。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4a28d1aa6add46528128d35d97e96147",
+            "type": "text",
+            "richText": [
+              {
+                "text": "同一時間，原本持續工作數年的 StoreKit 1 跨區憑證驗證開始大量失敗。永久買斷與訂閱驗證都受到影響。1.187 沒有相同現象；第一個出現問題的版本，正是加入 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "runs-as-current-user",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 的 1.188。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "同一時間，原本持續工作數年的 StoreKit 1 跨區憑證驗證開始大量失敗。永久買斷與訂閱驗證都受到影響。1.187 沒有相同現象；第一個出現問題的版本，正是加入 runs-as-current-user 的 1.188。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2270dba224834b1295a4dba755db7e66",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Apple 文件只說明 App 會改以目前使用者執行，以及本機與 iCloud 資料會跟隨該使用者。文件沒有提到 StoreKit 1、App Store receipt、既有購買，或升級後的交易狀態會受到什麼影響。我也找不到其他有效的公開資料，可以解釋或預告這種行為。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Apple 文件只說明 App 會改以目前使用者執行，以及本機與 iCloud 資料會跟隨該使用者。文件沒有提到 StoreKit 1、App Store receipt、既有購買，或升級後的交易狀態會受到什麼影響。我也找不到其他有效的公開資料，可以解釋或預告這種行為。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "140bd550214d41d68f86cd3a4b643a69",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我能依靠的只有版本時間線：StoreKit 程式沒有變，新增的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "runs-as-current-user",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 卻同時改變了播放紀錄與購買驗證的行為。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我能依靠的只有版本時間線：StoreKit 程式沒有變，新增的 runs-as-current-user 卻同時改變了播放紀錄與購買驗證的行為。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "67c67da08fc44a698f6d56a124df1d4c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我決定移除它。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我決定移除它。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5849bbdd02e44cf49b422973bc37d5a4",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "移除後的驗證",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "移除後的驗證",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a706b8b02b594ae0a8177a3fc52b8ee3",
+            "type": "text",
+            "richText": [
+              {
+                "text": "runs-as-current-user",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 在 1.190 被移除。tvOS Simulator 與裝置 build 通過，簽署產物也確認不再包含 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "com.apple.developer.user-management",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "runs-as-current-user 在 1.190 被移除。tvOS Simulator 與裝置 build 通過，簽署產物也確認不再包含 com.apple.developer.user-management。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8e8ebf428d014c77a8ac30ba08fd961e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "10 月 10 日，用戶更新到 1.190 後回報：購買恢復正常，原有播放紀錄也重新出現。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "10 月 10 日，用戶更新到 1.190 後回報：購買恢復正常，原有播放紀錄也重新出現。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4e59e092e483428db7e3fe6e8785382f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "播放紀錄回來，表示 App 再次讀到原本的資料範圍；購買同時恢復，則確認問題不只存在於文件有說明的本機與 iCloud 資料隔離。這個 entitlement 還影響了既有的 StoreKit 1 工作流程。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "播放紀錄回來，表示 App 再次讀到原本的資料範圍；購買同時恢復，則確認問題不只存在於文件有說明的本機與 iCloud 資料隔離。這個 entitlement 還影響了既有的 StoreKit 1 工作流程。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e61c9889f35c4b2b87aa8b4eec823d78",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Apple 把 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Runs as Current User",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 呈現為一項 User Management capability，但它改變的是整個 App 的執行身分，而且影響會穿過文件沒有說明的系統邊界。當一個 API 的實際作用範圍無法從文件判斷，甚至會讓長期正常運作的購買流程失效，我不認為它是一個好的 API。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Apple 把 Runs as Current User 呈現為一項 User Management capability，但它改變的是整個 App 的執行身分，而且影響會穿過文件沒有說明的系統邊界。當一個 API 的實際作用範圍無法從文件判斷，甚至會讓長期正常運作的購買流程失效，我不認為它是一個好的 API。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "3efc1b36c40181c894b9f4205ddb7769",
       "slug": "apple-swift-engineering-prebuild-evidence-3efc1b36",
@@ -33,7 +652,7 @@
       "lastEditedTime": "2026-10-04T04:39:10.624Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:40:13.750Z",
+        "syncedAt": "2026-10-10T14:46:58.147Z",
         "blocks": [
           {
             "id": "8b9773492bb84438806dc6a9e9865d74",
@@ -2775,7 +3394,7 @@
       "lastEditedTime": "2026-09-22T01:54:39.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:40:14.333Z",
+        "syncedAt": "2026-10-10T14:46:58.534Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -4192,7 +4811,7 @@
       "lastEditedTime": "2026-08-31T20:52:17.855Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:40:21.141Z",
+        "syncedAt": "2026-10-10T14:47:04.790Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -7191,7 +7810,7 @@
       "lastEditedTime": "2026-08-28T11:15:10.927Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:40:48.352Z",
+        "syncedAt": "2026-10-10T14:47:43.943Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -7863,7 +8482,7 @@
       "lastEditedTime": "2026-08-16T11:56:00.262Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:40:48.844Z",
+        "syncedAt": "2026-10-10T14:47:44.276Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -8565,7 +9184,7 @@
       "lastEditedTime": "2026-08-15T12:43:46.007Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:40:49.256Z",
+        "syncedAt": "2026-10-10T14:47:44.596Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -10207,7 +10826,7 @@
       "lastEditedTime": "2026-07-21T21:05:27.763Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:40:57.903Z",
+        "syncedAt": "2026-10-10T14:47:54.697Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -10951,7 +11570,7 @@
       "lastEditedTime": "2026-07-21T14:55:42.809Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:40:58.371Z",
+        "syncedAt": "2026-10-10T14:47:55.233Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -11296,7 +11915,7 @@
       "lastEditedTime": "2026-05-23T15:01:21.702Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:40:58.715Z",
+        "syncedAt": "2026-10-10T14:47:55.515Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -13637,7 +14256,7 @@
       "lastEditedTime": "2026-05-23T13:53:13.789Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:40:59.179Z",
+        "syncedAt": "2026-10-10T14:47:56.188Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -14654,7 +15273,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:41:10.739Z",
+        "syncedAt": "2026-10-10T14:48:14.411Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -17001,7 +17620,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:41:36.280Z",
+        "syncedAt": "2026-10-10T14:48:54.697Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -18182,7 +18801,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:41:42.814Z",
+        "syncedAt": "2026-10-10T14:49:04.889Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -18767,7 +19386,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:41:57.510Z",
+        "syncedAt": "2026-10-10T14:49:21.792Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -20960,7 +21579,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:41:58.679Z",
+        "syncedAt": "2026-10-10T14:49:22.264Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -21683,7 +22302,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:41:59.332Z",
+        "syncedAt": "2026-10-10T14:49:22.715Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -22451,7 +23070,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:41:59.974Z",
+        "syncedAt": "2026-10-10T14:49:23.141Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -23595,7 +24214,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:42:19.310Z",
+        "syncedAt": "2026-10-10T14:49:45.509Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -24319,7 +24938,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:42:19.878Z",
+        "syncedAt": "2026-10-10T14:49:46.694Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -25189,7 +25808,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:42:20.408Z",
+        "syncedAt": "2026-10-10T14:49:47.109Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -26569,7 +27188,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:42:21.129Z",
+        "syncedAt": "2026-10-10T14:49:47.525Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -30016,7 +30635,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:42:28.119Z",
+        "syncedAt": "2026-10-10T14:49:55.756Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -31862,7 +32481,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:42:28.843Z",
+        "syncedAt": "2026-10-10T14:49:56.172Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -32517,7 +33136,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:42:33.758Z",
+        "syncedAt": "2026-10-10T14:50:00.749Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -33133,7 +33752,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:42:41.429Z",
+        "syncedAt": "2026-10-10T14:50:10.798Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -33899,7 +34518,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:42:41.909Z",
+        "syncedAt": "2026-10-10T14:50:11.176Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -36846,7 +37465,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:43:51.345Z",
+        "syncedAt": "2026-10-10T14:51:39.252Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -37964,7 +38583,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:43:59.106Z",
+        "syncedAt": "2026-10-10T14:51:49.967Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -38342,7 +38961,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:44:02.071Z",
+        "syncedAt": "2026-10-10T14:51:54.118Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -41149,7 +41768,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:45:25.545Z",
+        "syncedAt": "2026-10-10T14:53:55.010Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -41377,7 +41996,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:45:29.582Z",
+        "syncedAt": "2026-10-10T14:54:00.136Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -42142,7 +42761,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-04T04:45:36.047Z",
+        "syncedAt": "2026-10-10T14:54:06.516Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
