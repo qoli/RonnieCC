@@ -70,6 +70,21 @@ type ProjectCopy = Partial<Project> & {
   detail?: Partial<Project["detail"]>;
 };
 
+type App = {
+  id: string;
+  name: string;
+  tagline: string;
+  externalUrl?: string;
+  showcase?: {
+    previewLight: string;
+    previewDark: string;
+    width: number;
+    height: number;
+  };
+};
+
+type ShowcaseApp = App & { externalUrl: string; showcase: NonNullable<App["showcase"]> };
+
 type BlogPost = {
   id: string;
   slug: string;
@@ -928,14 +943,16 @@ function createdDateFromContent(post: BlogPost): string {
 function relativizeAssets(html: string, prefix: string): string {
   return html
     .replaceAll('href="styles.css"', `href="${prefix}styles.css"`)
+    .replaceAll('href="apps.css"', `href="${prefix}apps.css"`)
     .replaceAll('href="favicon.ico"', `href="${prefix}favicon.ico"`)
     .replaceAll('href="favicon.svg"', `href="${prefix}favicon.svg"`)
     .replaceAll('src="site.js"', `src="${prefix}site.js"`);
 }
 
-function relativizeProjectDetail(html: string, navPrefix: string, assetPrefix: string): string {
+function relativizeProjectDetail(html: string, navPrefix: string, assetPrefix: string, appsHref = `${navPrefix}apps/`): string {
   return html
     .replaceAll('href="index.html"', `href="${navPrefix}index.html"`)
+    .replaceAll('href="apps.html"', `href="${appsHref}"`)
     .replaceAll('href="projects.html"', `href="${navPrefix}projects.html"`)
     .replaceAll('href="blog.html"', `href="${navPrefix}blog.html"`)
     .replaceAll('href="resume.html"', `href="${navPrefix}resume.html"`)
@@ -1005,7 +1022,7 @@ async function copyDirectory(source: string, target: string): Promise<void> {
 async function copyStaticAssets(): Promise<void> {
   await copyDirectory(join(root, "assets"), join(outDir, "assets"));
   await copyDirectory(join(root, "content"), join(outDir, "content"));
-  for (const file of ["styles.css", "site.js", "favicon.ico", "favicon.svg", "og-image.png", "og-image.svg", "google2a0cacaa0b72e2c3.html", "CNAME", ".nojekyll"]) {
+  for (const file of ["styles.css", "apps.css", "site.js", "favicon.ico", "favicon.svg", "og-image.png", "og-image.svg", "google2a0cacaa0b72e2c3.html", "CNAME", ".nojekyll"]) {
     await copyFile(join(root, file), join(outDir, file));
   }
 }
@@ -1027,7 +1044,52 @@ function setLanguageToggle(html: string, language: Language, altUrl: string): st
 }
 
 function preparePage(html: string, locale: Locale, altUrl: string, assetPrefix = ""): string {
-  return setLanguageToggle(relativizeAssets(withStaticBody(withStaticMode(html, locale), locale), assetPrefix), locale.language, altUrl);
+  return setLanguageToggle(relativizeAssets(withStaticBody(withStaticMode(html, locale), locale), assetPrefix), locale.language, altUrl)
+    .replaceAll('href="apps.html"', 'href="apps/"');
+}
+
+function appShowcase(app: ShowcaseApp, language: Language, assetPrefix: string): string {
+  const media = app.showcase;
+  const address = new URL(app.externalUrl).host;
+  const labelMix = `${address}（在新分頁開啟）`;
+  const labelEn = `${address} (opens in a new tab)`;
+  return `<article class="app-feature" data-app-id="${escapeAttr(app.id)}">
+          <a class="app-feature-link" href="${escapeAttr(app.externalUrl)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeAttr(language === "en" ? labelEn : labelMix)}" data-apps-label-mix="${escapeAttr(labelMix)}" data-apps-label-en="${escapeAttr(labelEn)}">
+            <div class="app-feature-media">
+              <img class="app-preview app-preview-light" src="${escapeAttr(assetPrefix + media.previewLight)}" alt="${escapeAttr(app.name)} dictionary lookup on iPhone" width="${media.width}" height="${media.height}" fetchpriority="high" decoding="async">
+              <img class="app-preview app-preview-dark" src="${escapeAttr(assetPrefix + media.previewDark)}" alt="${escapeAttr(app.name)} dictionary lookup on iPhone in dark mode" width="${media.width}" height="${media.height}" decoding="async">
+            </div>
+            <div class="app-feature-caption">
+              <span class="app-visit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"></path></svg><span>${escapeHtml(address)}</span></span>
+            </div>
+          </a>
+        </article>`;
+}
+
+function renderAppsPage(source: string, apps: ShowcaseApp[], locale: Locale): string {
+  const assetPrefix = locale.language === "en" ? "../../" : "../";
+  const altUrl = locale.language === "en" ? "../../apps/" : "../en/apps/";
+  let html = preparePage(source, { ...locale, rootPath: assetPrefix }, altUrl, assetPrefix)
+    .replaceAll('href="index.html"', 'href="../index.html"')
+    .replaceAll('href="apps/"', 'href="../apps/"')
+    .replaceAll('href="projects.html"', 'href="../projects.html"')
+    .replaceAll('href="blog.html"', 'href="../blog.html"')
+    .replaceAll('href="resume.html"', 'href="../resume.html"')
+    .replace(/(<section class="apps-showcase" id="apps-showcase" aria-label="Apps">)[\s\S]*?<\/section>/, `$1\n${apps.map((app) => appShowcase(app, locale.language, assetPrefix)).join("\n")}\n      </section>`);
+  const description = locale.language === "en"
+    ? "Apps by Ronnie Wong, with product previews and direct links to their websites."
+    : "我打造的 App，為日常而用。從這裡找到產品，前往各自的網站。";
+  return applySeo(html, {
+    language: locale.language,
+    path: "apps/",
+    title: "Apps · Ronnie Wong",
+    description,
+    jsonLd: [
+      personJsonLd(locale.language),
+      collectionPageJsonLd({ language: locale.language, path: "apps/", name: "Ronnie Wong Apps", description, items: apps.map((app) => ({ name: app.name, url: app.externalUrl })) }),
+      breadcrumbJsonLd([{ name: "Ronnie Wong", url: canonicalUrl("", locale.language) }, { name: "Apps", url: canonicalUrl("apps/", locale.language) }]),
+    ],
+  });
 }
 
 function renderProjectsPage(source: string, projects: Project[], locale: Locale): string {
@@ -1208,7 +1270,7 @@ function renderBlogPostPage(source: string, post: BlogPost, locale: Locale, prev
       ]),
     ],
   });
-  return relativizeProjectDetail(html, rootPath, rootPath);
+  return relativizeProjectDetail(html, rootPath, rootPath, "../../apps/");
 }
 
 function renderProjectPage(source: string, project: Project, projects: Project[], locale: Locale): string {
@@ -1277,10 +1339,12 @@ function renderSitemap(projects: Project[], posts: BlogPost[]): string {
   const visiblePosts = posts.filter((post) => post.public !== false && (!post.canonical?.site || post.canonical.site === "ronniecc"));
   const urls = [
     `${siteUrl}/`,
+    `${siteUrl}/apps/`,
     `${siteUrl}/projects.html`,
     `${siteUrl}/blog.html`,
     `${siteUrl}/resume.html`,
     `${siteUrl}/en/`,
+    `${siteUrl}/en/apps/`,
     `${siteUrl}/en/projects.html`,
     `${siteUrl}/en/blog.html`,
     `${siteUrl}/en/resume.html`,
@@ -1354,6 +1418,8 @@ ${items.join("\n")}
 
 async function build(): Promise<void> {
   const projects = await readJson<Project[]>("content/projects.seed.json");
+  const apps = (await readJson<App[]>("content/apps.seed.json"))
+    .filter((app): app is ShowcaseApp => Boolean(app.showcase && app.externalUrl));
   const blogData = await readJson<{ posts: BlogPost[] }>("content/blog.seed.json");
   const projectCopyEn = await readProjectCopyEn();
   const blogCopyEn = await readBlogCopyEn();
@@ -1363,6 +1429,7 @@ async function build(): Promise<void> {
   await copyStaticAssets();
 
   const indexHtml = await readFile(join(root, "index.html"), "utf8");
+  const appsHtml = await readFile(join(root, "apps.html"), "utf8");
   const projectsHtml = await readFile(join(root, "projects.html"), "utf8");
   const projectHtml = await readFile(join(root, "project.html"), "utf8");
   const blogHtml = await readFile(join(root, "blog.html"), "utf8");
@@ -1380,6 +1447,7 @@ async function build(): Promise<void> {
     );
 
     await writeOutput(`${locale.outputPrefix}index.html`, renderSimplePage(indexHtml, locale, "", language === "en" ? "../" : "en/", "Ronnie Wong", indexDescription));
+    await writeOutput(`${locale.outputPrefix}apps/index.html`, renderAppsPage(appsHtml, apps, locale));
     await writeOutput(`${locale.outputPrefix}projects.html`, renderProjectsPage(projectsHtml, projectsForLocale, locale));
     await writeOutput(`${locale.outputPrefix}blog.html`, renderBlogPage(blogHtml, postsForLocale, locale));
     await writeOutput(`${locale.outputPrefix}resume.html`, renderSimplePage(resumeHtml, locale, "resume.html", language === "en" ? "../resume.html" : "en/resume.html", "Resume · Ronnie Wong", resumeDescription));

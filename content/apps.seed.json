@@ -24,9 +24,15 @@
     "tagline": "簡單美觀的詞典查詢工具",
     "description": "一個簡單美觀的詞典/字典查詢工具，包含多平台更新日誌、詞典列表、使用文章與反饋入口。",
     "status": "active",
-    "platforms": ["iOS", "macOS"],
+    "platforms": ["iOS", "iPadOS", "macOS"],
     "sourceUrl": "https://www.notion.so/a647f1ed9f604892895b8e71a65f1d70",
-    "externalUrl": "https://qoli.notion.site/aDict-app-a647f1ed9f604892895b8e71a65f1d70",
+    "externalUrl": "https://adict.ronniewong.cc/",
+    "showcase": {
+      "previewLight": "assets/apps/adict/preview-light.webp",
+      "previewDark": "assets/apps/adict/preview-dark.webp",
+      "width": 603,
+      "height": 1143
+    },
     "sections": [
       {
         "label": "多平台更新日誌",

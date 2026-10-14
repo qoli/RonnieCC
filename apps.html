@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apps · Ronnie Wong</title>
+    <meta name="description" content="我打造的 App，為日常而用。從這裡找到產品，前往各自的網站。">
+    <link rel="canonical" href="https://ronniewong.cc/apps/">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script>
+      const themeMode = ["auto", "light", "dark"].includes(localStorage.getItem("theme"))
+        ? localStorage.getItem("theme")
+        : "auto";
+      document.documentElement.dataset.themeMode = themeMode;
+      document.documentElement.dataset.theme =
+        themeMode === "auto"
+          ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+          : themeMode;
+      document.documentElement.dataset.language = localStorage.getItem("site-language") || "mix";
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="apps.css">
+  </head>
+  <body data-page="apps">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ronnie Wong home"><span class="brand-mark">RW</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Index</a>
+        <a aria-current="page" href="apps.html">Apps</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+      <button class="language-toggle" type="button" aria-label="Switch language" data-language-toggle>EN</button>
+      <button class="theme-toggle" type="button" aria-label="Change color mode" data-theme-toggle><span aria-hidden="true"></span></button>
+    </header>
+
+    <main class="apps-page" aria-label="Apps">
+      <section class="apps-showcase" id="apps-showcase" aria-label="Apps">
+        <article class="app-feature" data-app-id="adict">
+          <a class="app-feature-link" href="https://adict.ronniewong.cc/" target="_blank" rel="noopener noreferrer" aria-label="前往 aDict 網站（在新分頁開啟）" data-apps-label-mix="前往 aDict 網站（在新分頁開啟）" data-apps-label-en="Visit the aDict website (opens in a new tab)">
+            <div class="app-feature-media">
+              <img class="app-preview app-preview-light" src="assets/apps/adict/preview-light.webp" alt="aDict dictionary lookup on iPhone" width="603" height="1143" fetchpriority="high" decoding="async">
+              <img class="app-preview app-preview-dark" src="assets/apps/adict/preview-dark.webp" alt="aDict dictionary lookup on iPhone in dark mode" width="603" height="1143" decoding="async">
+            </div>
+            <div class="app-feature-caption">
+              <span class="app-visit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"></path></svg><span>adict.ronniewong.cc</span></span>
+            </div>
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <script src="site.js" defer></script>
+  </body>
+</html>

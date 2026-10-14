@@ -2,11 +2,12 @@
 
 Public index for Ronnie Wong.
 
-This repository powers [ronniewong.cc](https://ronniewong.cc), a static public index of my projects, writings, experiments, and external traces across the web. It is not an app catalog: the site is organized around projects, explorations, writing, historical design work, and a web resume.
+This repository powers [ronniewong.cc](https://ronniewong.cc), a static public index of my projects, writings, experiments, and external traces across the web. Apps has a dedicated product entry page; projects, explorations, writing, historical design work, and a web resume retain their own surfaces.
 
 ## Site Structure
 
 - `index.html` presents the primary statement and selected capability signals.
+- `apps.html` is the source template for `/apps/` and `/en/apps/`, an image-led directory linking directly to product websites. The first entry is aDict; this surface has no internal product detail pages.
 - `projects.html` lists current, exploration, and historical projects.
 - `project.html` remains the legacy dynamic project detail fallback.
 - `src/build.ts` generates static HTML into `dist/`, including clean project URLs such as `/projects/syncnext/`.
@@ -18,6 +19,7 @@ This repository powers [ronniewong.cc](https://ronniewong.cc), a static public i
 ## Content Sources
 
 - `content/projects.seed.json` is the canonical project index used by the project list and detail pages.
+- `content/apps.seed.json` drives the Apps directory. Only entries with `showcase` metadata and an `externalUrl` are displayed. aDict media is copied from the managed aDict site into `assets/apps/adict/`.
 - `content/blog.seed.json` is generated from the public Notion blog database and includes article metadata plus a build-time block snapshot. Synced Notion images are downloaded under `content/blog-assets/`.
 - `docs/data-sources.md` records the working content model and source decisions.
 - `docs/visual-direction.md` records the current design direction.
@@ -34,6 +36,8 @@ The generated `dist/` folder contains static HTML for:
 
 - `index.html`
 - `en/index.html`
+- `apps/index.html`
+- `en/apps/index.html`
 - `projects.html`
 - `en/projects.html`
 - `blog.html`

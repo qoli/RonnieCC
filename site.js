@@ -497,6 +497,13 @@ function applyStaticCopy() {
   document.documentElement.lang = activeHtmlLang(ui);
   document.documentElement.dataset.language = activeLanguage;
 
+  if (document.body.dataset.page === "apps") {
+    const labelKey = activeLanguage === "en" ? "appsLabelEn" : "appsLabelMix";
+    document.querySelectorAll("[data-apps-label-mix]").forEach((element) => {
+      element.setAttribute("aria-label", element.dataset[labelKey]);
+    });
+  }
+
   if (document.body.dataset.page === "projects") {
     setText(".page-hero p:not(.eyebrow)", ui.projectsIntro);
   }
@@ -836,6 +843,10 @@ async function boot() {
   setupLanguageToggle();
 
   const page = document.body?.dataset.page;
+  if (page === "apps") {
+    applyStaticCopy();
+    return;
+  }
   if (page === "blog-article") {
     return;
   }
