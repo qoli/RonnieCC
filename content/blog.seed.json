@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-10-10T14:54:47.574Z",
+  "generatedAt": "2026-10-14T07:43:30.586Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,612 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "3f9c1b36c401812ea221f558cc1f7a9a",
+      "slug": "agent-instruments-app-hang-fix-3f9c1b36",
+      "seoSlug": "agent-instruments-app-hang-fix",
+      "legacySlugs": [
+        "app-卡頓時-我讓-agent-用-instruments-skill-找原因-3f9c1b36"
+      ],
+      "title": "App 卡頓時，我讓 Agent 用 Instruments Skill 找原因",
+      "tag": "AI,tvOS,Swift,Notes",
+      "writtenDate": "2026-10-14",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/agent-instruments-app-hang-fix-3f9c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/app-%E5%8D%A1%E9%A0%93%E6%99%82-%E6%88%91%E8%AE%93-agent-%E7%94%A8-instruments-skill-%E6%89%BE%E5%8E%9F%E5%9B%A0-3f9c1b36c401812ea221f558cc1f7a9a?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-10-14T05:15:34.800Z",
+      "lastEditedTime": "2026-10-14T07:30:25.833Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-10-14T07:36:10.526Z",
+        "blocks": [
+          {
+            "id": "cb3df8ac876443f1a78aa70a415e11dc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Syncnext 的「搜索」重構後，Apple TV 上的會明顯卡頓。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Syncnext 的「搜索」重構後，Apple TV 上的會明顯卡頓。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3f9c1b36c4018025b689ce09b8a6248a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我把執行日誌交給 Agent，請它先分析、確認問題。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我把執行日誌交給 Agent，請它先分析、確認問題。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3f9c1b36c4018028a53dcae335c04060",
+            "type": "text",
+            "richText": [
+              {
+                "text": "當時我也把搜尋併發當成懷疑方向。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "當時我也把搜尋併發當成懷疑方向。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b71946f11f2e4f5683c652843042b6ab",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "看起來很麻煩的問題？",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "看起來很麻煩的問題？",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3f9c1b36c4018065b76bfa7843bff678",
+            "type": "text",
+            "richText": [
+              {
+                "text": "AI 看完日誌後，給我建議：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "AI 看完日誌後，給我建議：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3f9c1b36c4018057bdbbc29214fbcc67",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "JS Context 很多",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "JS Context 很多",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3f9c1b36c401800f99daefa0f0758d33",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "可能存在 Promise 問題",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "可能存在 Promise 問題",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3f9c1b36c4018037a65ff71f2c180367",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "JavaScriptCore 生命週期是壓力",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "JavaScriptCore 生命週期是壓力",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3f9c1b36c40180338d65d14d27639af3",
+            "type": "code",
+            "richText": [
+              {
+                "text": "建議分三階段修，優先處理「無界排程」與「JSValue retain cycle」。不要先大改整個 Search UI。\n\n如果只做一輪修復，我會選：有界雙 lane 排程 + JSPromise managed ownership + 對應回歸測試。這是風險最低、對卡頓改善最大的第一刀。\n",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "建議分三階段修，優先處理「無界排程」與「JSValue retain cycle」。不要先大改整個 Search UI。\n\n如果只做一輪修復，我會選：有界雙 lane 排程 + JSPromise managed ownership + 對應回歸測試。這是風險最低、對卡頓改善最大的第一刀。\n",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f257b4404bcc43a28a9e1e66515f84fb",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "懷疑方向",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "懷疑方向",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3f9c1b36c401803f856fc5e9242b0d5f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我很好奇的想起 xcode 27 提供了一堆 Skil，就問起了 Skil 的問題，",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我很好奇的想起 xcode 27 提供了一堆 Skil，就問起了 Skil 的問題，",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3f9c1b36c40180e6b3bcc7b9871e5137",
+            "type": "text",
+            "richText": [
+              {
+                "text": "就把 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "debugging-instruments",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://www.skills.sh/dpearson2699/swift-ios-skills/debugging-instruments"
+              },
+              {
+                "text": " 找到了，並且採集了性能數據。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "就把 debugging-instruments 找到了，並且採集了性能數據。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "84f4fc8049b84ca6826b9e5050de5a88",
+            "type": "text",
+            "richText": [
+              {
+                "text": "然後 AI 在 Apple TV 真機上使用 Instruments 的 Time Profiler。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "然後 AI 在 Apple TV 真機上使用 Instruments 的 Time Profiler。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c452c54a6de5433b99b556e1c03767bd",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Instruments 找到繁簡轉換熱點",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Instruments 找到繁簡轉換熱點",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4591232ab56141488063fa7d03fb9c4d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "有效的 trace 抓到一次約 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "3.65 秒的 Severe Hang",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，其中約 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "88%",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 的時間花在 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "GBig.simplify",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "——繁簡轉換函式。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "有效的 trace 抓到一次約 3.65 秒的 Severe Hang，其中約 88% 的時間花在 GBig.simplify——繁簡轉換函式。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c66e848163ee457abd796c047862b471",
+            "type": "text",
+            "richText": [
+              {
+                "text": "沿著呼叫堆疊往回看，核心原因集中在一條很小的路徑：搜尋結果分批到達，每次讀取累積結果，都重新做匹配與繁簡轉換。已收到的結果被反覆處理，這些計算又在主執行緒上執行。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "沿著呼叫堆疊往回看，核心原因集中在一條很小的路徑：搜尋結果分批到達，每次讀取累積結果，都重新做匹配與繁簡轉換。已收到的結果被反覆處理，這些計算又在主執行緒上執行。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "85c09806ea9f426f8142df7d65dbc42f",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "用快取修正，再驗證一次",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "用快取修正，再驗證一次",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b31f24c6f4fa44debe7af19a15e02972",
+            "type": "text",
+            "richText": [
+              {
+                "text": "看到這條路徑，我回它：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "看到這條路徑，我回它：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "66e364131ff545069c61932f299ba824",
+            "type": "quote",
+            "richText": [
+              {
+                "text": "這是一個可 cache 的路徑。而不需要總是重做 繁簡 轉換。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這是一個可 cache 的路徑。而不需要總是重做 繁簡 轉換。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d7a159b13b7e45f3b6e681c38ba87d45",
+            "type": "text",
+            "richText": [
+              {
+                "text": "接著讓它實作，並再用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "debugging-instruments",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 驗證。修正很直接：搜尋關鍵字先處理一次，新結果到達時只匹配一次並保存結果，後續畫面更新直接讀取；繁簡轉換的對照表也改成字典查找。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "接著讓它實作，並再用 debugging-instruments 驗證。修正很直接：搜尋關鍵字先處理一次，新結果到達時只匹配一次並保存結果，後續畫面更新直接讀取；繁簡轉換的對照表也改成字典查找。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f8cf0ee8833e417e800dba90f047a6f8",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在同一台 Apple TV、同一個搜尋關鍵字、同樣的 Debug 設定下重錄，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "搜尋期間的卡頓從 18 次降到 0 次",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，主執行緒 CPU 時間從 16.255 秒降到 1.477 秒。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在同一台 Apple TV、同一個搜尋關鍵字、同樣的 Debug 設定下重錄，搜尋期間的卡頓從 18 次降到 0 次，主執行緒 CPU 時間從 16.255 秒降到 1.477 秒。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3f9c1b36c40180379821f13306e672eb",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "結語",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "結語",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3f9c1b36c401804caa7ddf673db3524e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在當前的狀態下，AI 已經具備強大的推理能力。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在當前的狀態下，AI 已經具備強大的推理能力。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3f9c1b36c4018078ba14d6e1af51f9c6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "但是，依然是證據很重要，如果跟隨 AI 的建議，我可能要做一次龐大的重構計劃。但是，這次直接找到 Hangs 的發生位置，就做也很小的修復就可以完成任務了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "但是，依然是證據很重要，如果跟隨 AI 的建議，我可能要做一次龐大的重構計劃。但是，這次直接找到 Hangs 的發生位置，就做也很小的修復就可以完成任務了。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "3f5c1b36c40181f3bc8fe3c595a49136",
       "slug": "tvos-runs-as-current-user-incident-3f5c1b36",
@@ -33,7 +639,7 @@
       "lastEditedTime": "2026-10-10T14:42:25.351Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:46:57.506Z",
+        "syncedAt": "2026-10-14T07:36:11.136Z",
         "blocks": [
           {
             "id": "1dbb2abe68894e338264b1ecf6eba671",
@@ -652,7 +1258,7 @@
       "lastEditedTime": "2026-10-04T04:39:10.624Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:46:58.147Z",
+        "syncedAt": "2026-10-14T07:36:11.450Z",
         "blocks": [
           {
             "id": "8b9773492bb84438806dc6a9e9865d74",
@@ -3394,7 +4000,7 @@
       "lastEditedTime": "2026-09-22T01:54:39.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:46:58.534Z",
+        "syncedAt": "2026-10-14T07:36:12.034Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -4811,7 +5417,7 @@
       "lastEditedTime": "2026-08-31T20:52:17.855Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:47:04.790Z",
+        "syncedAt": "2026-10-14T07:36:18.063Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -7810,7 +8416,7 @@
       "lastEditedTime": "2026-08-28T11:15:10.927Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:47:43.943Z",
+        "syncedAt": "2026-10-14T07:36:46.096Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -8482,7 +9088,7 @@
       "lastEditedTime": "2026-08-16T11:56:00.262Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:47:44.276Z",
+        "syncedAt": "2026-10-14T07:36:46.536Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -9184,7 +9790,7 @@
       "lastEditedTime": "2026-08-15T12:43:46.007Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:47:44.596Z",
+        "syncedAt": "2026-10-14T07:36:47.008Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -10826,7 +11432,7 @@
       "lastEditedTime": "2026-07-21T21:05:27.763Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:47:54.697Z",
+        "syncedAt": "2026-10-14T07:36:55.662Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -11570,7 +12176,7 @@
       "lastEditedTime": "2026-07-21T14:55:42.809Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:47:55.233Z",
+        "syncedAt": "2026-10-14T07:36:56.042Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -11915,7 +12521,7 @@
       "lastEditedTime": "2026-05-23T15:01:21.702Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:47:55.515Z",
+        "syncedAt": "2026-10-14T07:36:56.382Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -14256,7 +14862,7 @@
       "lastEditedTime": "2026-05-23T13:53:13.789Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:47:56.188Z",
+        "syncedAt": "2026-10-14T07:36:57.020Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -15273,7 +15879,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:48:14.411Z",
+        "syncedAt": "2026-10-14T07:37:14.661Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -17620,7 +18226,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:48:54.697Z",
+        "syncedAt": "2026-10-14T07:37:42.099Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -18801,7 +19407,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:49:04.889Z",
+        "syncedAt": "2026-10-14T07:38:22.283Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -19386,7 +19992,7 @@
       "lastEditedTime": "2026-05-06T22:37:18.709Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:49:21.792Z",
+        "syncedAt": "2026-10-14T07:38:37.506Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -21579,7 +22185,7 @@
       "lastEditedTime": "2026-05-05T10:22:06.786Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:49:22.264Z",
+        "syncedAt": "2026-10-14T07:38:38.008Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -22302,7 +22908,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:49:22.715Z",
+        "syncedAt": "2026-10-14T07:38:38.376Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -23070,7 +23676,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:49:23.141Z",
+        "syncedAt": "2026-10-14T07:38:38.700Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -24214,7 +24820,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:49:45.509Z",
+        "syncedAt": "2026-10-14T07:38:58.395Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -24938,7 +25544,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:49:46.694Z",
+        "syncedAt": "2026-10-14T07:38:58.787Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -25808,7 +26414,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:49:47.109Z",
+        "syncedAt": "2026-10-14T07:38:59.429Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -27188,7 +27794,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:49:47.525Z",
+        "syncedAt": "2026-10-14T07:38:59.842Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -30635,7 +31241,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:49:55.756Z",
+        "syncedAt": "2026-10-14T07:39:06.388Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -32481,7 +33087,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:49:56.172Z",
+        "syncedAt": "2026-10-14T07:39:06.905Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -33136,7 +33742,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:50:00.749Z",
+        "syncedAt": "2026-10-14T07:39:11.266Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -33752,7 +34358,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:50:10.798Z",
+        "syncedAt": "2026-10-14T07:39:19.116Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -34518,7 +35124,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:50:11.176Z",
+        "syncedAt": "2026-10-14T07:39:19.491Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -37465,7 +38071,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:51:39.252Z",
+        "syncedAt": "2026-10-14T07:40:41.715Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -38583,7 +39189,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:51:49.967Z",
+        "syncedAt": "2026-10-14T07:40:51.146Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -38961,7 +39567,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:51:54.118Z",
+        "syncedAt": "2026-10-14T07:40:54.754Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -41768,7 +42374,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:53:55.010Z",
+        "syncedAt": "2026-10-14T07:42:36.115Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -41996,7 +42602,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:54:00.136Z",
+        "syncedAt": "2026-10-14T07:42:41.587Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -42761,7 +43367,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-10T14:54:06.516Z",
+        "syncedAt": "2026-10-14T07:42:49.171Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
