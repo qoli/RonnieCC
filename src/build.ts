@@ -70,16 +70,22 @@ type ProjectCopy = Partial<Project> & {
   detail?: Partial<Project["detail"]>;
 };
 
+type AppShowcaseImage = {
+  id: string;
+  previewLight: string;
+  previewDark?: string;
+  alt: string;
+  width: number;
+  height: number;
+  layout?: "full";
+};
+
 type App = {
   id: string;
   name: string;
-  tagline: string;
   externalUrl?: string;
   showcase?: {
-    previewLight: string;
-    previewDark: string;
-    width: number;
-    height: number;
+    images: AppShowcaseImage[];
   };
 };
 
@@ -1048,22 +1054,27 @@ function preparePage(html: string, locale: Locale, altUrl: string, assetPrefix =
     .replaceAll('href="apps.html"', 'href="apps/"');
 }
 
-function appShowcase(app: ShowcaseApp, language: Language, assetPrefix: string): string {
-  const media = app.showcase;
-  const address = new URL(app.externalUrl).host;
+function appShowcase(app: ShowcaseApp, language: Language, assetPrefix: string, appIndex: number): string {
+  const url = new URL(app.externalUrl);
+  const address = url.host + url.pathname.replace(/\/$/, "");
   const labelMix = `${address}（在新分頁開啟）`;
   const labelEn = `${address} (opens in a new tab)`;
-  return `<article class="app-feature" data-app-id="${escapeAttr(app.id)}">
+  return app.showcase.images.map((media, imageIndex) => {
+    const layoutClass = media.layout === "full" ? " app-feature-full" : "";
+    const lightClass = media.previewDark ? " app-preview-light" : "";
+    const loading = appIndex === 0 && imageIndex === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
+    return `<article class="app-feature${layoutClass}" data-app-id="${escapeAttr(app.id)}" data-image-id="${escapeAttr(media.id)}" style="--preview-width: ${media.width}">
           <a class="app-feature-link" href="${escapeAttr(app.externalUrl)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeAttr(language === "en" ? labelEn : labelMix)}" data-apps-label-mix="${escapeAttr(labelMix)}" data-apps-label-en="${escapeAttr(labelEn)}">
             <div class="app-feature-media">
-              <img class="app-preview app-preview-light" src="${escapeAttr(assetPrefix + media.previewLight)}" alt="${escapeAttr(app.name)} dictionary lookup on iPhone" width="${media.width}" height="${media.height}" fetchpriority="high" decoding="async">
-              <img class="app-preview app-preview-dark" src="${escapeAttr(assetPrefix + media.previewDark)}" alt="${escapeAttr(app.name)} dictionary lookup on iPhone in dark mode" width="${media.width}" height="${media.height}" decoding="async">
+              <img class="app-preview${lightClass}" src="${escapeAttr(assetPrefix + media.previewLight)}" alt="${escapeAttr(media.alt)}" width="${media.width}" height="${media.height}" ${loading} decoding="async">${media.previewDark ? `
+              <img class="app-preview app-preview-dark" src="${escapeAttr(assetPrefix + media.previewDark)}" alt="${escapeAttr(media.alt)}" width="${media.width}" height="${media.height}" loading="lazy" decoding="async">` : ""}
             </div>
             <div class="app-feature-caption">
               <span class="app-visit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"></path></svg><span>${escapeHtml(address)}</span></span>
             </div>
           </a>
         </article>`;
+  }).join("\n");
 }
 
 function renderAppsPage(source: string, apps: ShowcaseApp[], locale: Locale): string {
@@ -1075,7 +1086,7 @@ function renderAppsPage(source: string, apps: ShowcaseApp[], locale: Locale): st
     .replaceAll('href="projects.html"', 'href="../projects.html"')
     .replaceAll('href="blog.html"', 'href="../blog.html"')
     .replaceAll('href="resume.html"', 'href="../resume.html"')
-    .replace(/(<section class="apps-showcase" id="apps-showcase" aria-label="Apps">)[\s\S]*?<\/section>/, `$1\n${apps.map((app) => appShowcase(app, locale.language, assetPrefix)).join("\n")}\n      </section>`);
+    .replace(/(<section class="apps-showcase" id="apps-showcase" aria-label="Apps">)[\s\S]*?<\/section>/, `$1\n${apps.map((app, index) => appShowcase(app, locale.language, assetPrefix, index)).join("\n")}\n      </section>`);
   const description = locale.language === "en"
     ? "Apps by Ronnie Wong, with product previews and direct links to their websites."
     : "我打造的 App，為日常而用。從這裡找到產品，前往各自的網站。";
@@ -1419,7 +1430,7 @@ ${items.join("\n")}
 async function build(): Promise<void> {
   const projects = await readJson<Project[]>("content/projects.seed.json");
   const apps = (await readJson<App[]>("content/apps.seed.json"))
-    .filter((app): app is ShowcaseApp => Boolean(app.showcase && app.externalUrl));
+    .filter((app): app is ShowcaseApp => Boolean(app.showcase?.images.length && app.externalUrl));
   const blogData = await readJson<{ posts: BlogPost[] }>("content/blog.seed.json");
   const projectCopyEn = await readProjectCopyEn();
   const blogCopyEn = await readBlogCopyEn();

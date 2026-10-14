@@ -28,10 +28,22 @@
     "sourceUrl": "https://www.notion.so/a647f1ed9f604892895b8e71a65f1d70",
     "externalUrl": "https://adict.ronniewong.cc/",
     "showcase": {
-      "previewLight": "assets/apps/adict/preview-light.webp",
-      "previewDark": "assets/apps/adict/preview-dark.webp",
-      "width": 603,
-      "height": 1143
+      "images": [
+        {
+          "id": "iphone",
+          "previewLight": "assets/apps/adict/preview-iphone.png",
+          "alt": "aDict dictionary lookup on iPhone",
+          "width": 714,
+          "height": 914
+        },
+        {
+          "id": "mac",
+          "previewLight": "assets/apps/adict/preview.png",
+          "alt": "aDict dictionary lookup on Mac",
+          "width": 1228,
+          "height": 914
+        }
+      ]
     },
     "sections": [
       {
@@ -43,6 +55,23 @@
         "href": "https://www.notion.so/e83a7752e7ee491196d0f71bb4f9a75f"
       }
     ]
+  },
+  {
+    "id": "localclash",
+    "name": "localClash",
+    "externalUrl": "https://github.com/qoli/localclash-luci",
+    "showcase": {
+      "images": [
+        {
+          "id": "luci",
+          "previewLight": "assets/apps/localclash/preview.png",
+          "alt": "localClash LuCI overview on OpenWrt",
+          "width": 1538,
+          "height": 914,
+          "layout": "full"
+        }
+      ]
+    }
   },
   {
     "id": "trackly-reborn",
