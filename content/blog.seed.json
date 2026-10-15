@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-10-14T10:06:16.511Z",
+  "generatedAt": "2026-10-15T21:12:17.467Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,1244 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "3fac1b36c40181d9a885e5a1ae215584",
+      "slug": "localclash-palworld-routing-with-agents-3fac1b36",
+      "seoSlug": "localclash-palworld-routing-with-agents",
+      "legacySlugs": [
+        "介紹-localclash-3fac1b36"
+      ],
+      "title": "介紹 LocalClash",
+      "tag": "AI,Automation,Product,Notes",
+      "writtenDate": "2026-10-15",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/localclash-palworld-routing-with-agents-3fac1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/%E4%BB%8B%E7%B4%B9-localclash-3fac1b36c40181d9a885e5a1ae215584?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-10-15T03:38:51.397Z",
+      "lastEditedTime": "2026-10-15T04:15:41.624Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-10-15T21:12:16.507Z",
+        "blocks": [
+          {
+            "id": "3fac1b36c40180a28146c3b1c2f731b5",
+            "type": "text",
+            "richText": [
+              {
+                "text": "OpenClash 的更新越來越難受，越來越難用。有一天，我終於忍不住，建立了 LoaclClash 的項目。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "OpenClash 的更新越來越難受，越來越難用。有一天，我終於忍不住，建立了 LoaclClash 的項目。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fac1b36c4018038804ff69b4b540b72",
+            "type": "text",
+            "richText": [
+              {
+                "text": "LocalClash 的第一個提交是在 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "2026 年 5 月 15 日",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/localClash/commit/49b934abb132de9c2477b4a774c1f2e967c1f920"
+              },
+              {
+                "text": "，LuCI 的第一份設計文件則提交於 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "5 月 21 日",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/localclash-luci/commit/43b00264e4d90369944950410039e290b0133db0"
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "LocalClash 的第一個提交是在 2026 年 5 月 15 日，LuCI 的第一份設計文件則提交於 5 月 21 日。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f58cdea4f3f04a0db01187962b8e998d",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "LocalClash 的概念",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "LocalClash 的概念",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fac1b36c4018078851def9d90211877",
+            "type": "text",
+            "richText": [
+              {
+                "text": "它的概念很簡單。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "它的概念很簡單。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fac1b36c401803da584d40e4aada1e3",
+            "type": "text",
+            "richText": [
+              {
+                "text": "分兩層：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "分兩層：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fac1b36c4018010a1caf5666750612f",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "超容易入門的 LuCI 界面；",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "超容易入門的 LuCI 界面；",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fac1b36c4018072bec4c0b80ce0f099",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "面向進階功能的 Agent interface。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "面向進階功能的 Agent interface。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fac1b36c401800a99c3d1410091f22c",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "LuCI",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "LuCI",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fac1b36c4018009942acdc470704d17",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在 LuCI 下，使用者只需要關心「安裝 → 訂閱 → 啟動」三件事。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在 LuCI 下，使用者只需要關心「安裝 → 訂閱 → 啟動」三件事。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fac1b36c4018085a8ade003955a16a4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "其中，我會提供我一個持續優化的 ACL4SSSR 風格的維護。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "其中，我會提供我一個持續優化的 ACL4SSSR 風格的維護。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fac1b36c40180bbaec5cd92c6e7f22c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "並且，它是基於 DAT 格式驅動的，所以性能也很優越。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "並且，它是基於 DAT 格式驅動的，所以性能也很優越。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f250e143ebb342da99d91fc954572d5d",
+            "type": "image",
+            "richText": [
+              {
+                "text": "localclash-luci-overview-2026-10-15.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "localclash-luci-overview-2026-10-15.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:82a8d330-3832-4bf2-99d0-0b74dd73f6b0:localclash-luci-overview-2026-10-15.png",
+            "assetPath": "content/blog-assets/3fac1b36c40181d9a885e5a1ae215584/f250e143ebb342da99d91fc954572d5d-localclash-luci-overview-2026-10-15.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d84b943ded3c4eab82d674bf5cd53567",
+            "type": "text",
+            "richText": [
+              {
+                "text": "新版 LuCI 概覽頁：Mihomo 運行中、網路接管已生效。2026 年 10 月 15 日從 Arc 實際畫面擷取。",
+                "annotations": [
+                  "i"
+                ],
+                "href": ""
+              }
+            ],
+            "plainText": "新版 LuCI 概覽頁：Mihomo 運行中、網路接管已生效。2026 年 10 月 15 日從 Arc 實際畫面擷取。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fac1b36c401802da0abd6b1b6447911",
+            "type": "sub_sub_header",
+            "richText": [
+              {
+                "text": "Agent Interface",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Agent Interface",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fac1b36c40180adb15cf6dbe285d8dc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我特別為 Agent 提供了 MCP 和 Skill。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我特別為 Agent 提供了 MCP 和 Skill。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fac1b36c40180f2a67af1b827a0d140",
+            "type": "text",
+            "richText": [
+              {
+                "text": "從而使用者可以建立透過 Agent 建立複雜的操作。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "從而使用者可以建立透過 Agent 建立複雜的操作。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fac1b36c40180648f01d636e2e23edc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "MCP 把訂閱、規則、代理分組和 Mihomo 的操作，做成 Agent 可以直接調用的工具。主要包括：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "MCP 把訂閱、規則、代理分組和 Mihomo 的操作，做成 Agent 可以直接調用的工具。主要包括：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a00f6b3c1ba3494ea930d8b0d0c5a833",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "查目前怎麼設定",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "config_status",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 查看配置狀態，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "routing_explain",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 查詢某個服務或網域的預期路由。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "查目前怎麼設定：config_status 查看配置狀態，routing_explain 查詢某個服務或網域的預期路由。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7b7f625ffdbc4650913b9d9705cf72ad",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "找規則和出口",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "pack_rules_query",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 搜尋現成規則包，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "subscription_nodes_search",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 尋找候選節點。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "找規則和出口：pack_rules_query 搜尋現成規則包，subscription_nodes_search 尋找候選節點。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "626d4d748b584c4db7d19adee1dc78e4",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "建立個人化分流",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "proxy_group_build",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 建立服務專用分組；",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "config_patch_draft",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 先產生變更草稿，確認後再用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "config_patch_apply",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 寫入。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "建立個人化分流：proxy_group_build 建立服務專用分組；config_patch_draft 先產生變更草稿，確認後再用 config_patch_apply 寫入。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4cfb96ed930f478ab252d82780c5c0ef",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "檢查並載入配置",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "mihomo_config_test",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 交給 Mihomo 檢查配置，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "restart_runtime",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 可以用熱重載讓設定生效。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "檢查並載入配置：mihomo_config_test 交給 Mihomo 檢查配置，restart_runtime 可以用熱重載讓設定生效。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "95473f057c624e66948ab72fd34dc126",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "讀回實際結果",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "mihomo_api_request",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 查看運行中的規則和分組，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "mihomo_connections_read",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 查看真實連線命中的規則與代理鏈；需要排查時，也能用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "mihomo_logs_read",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 讀取一段日誌。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "讀回實際結果：mihomo_api_request 查看運行中的規則和分組，mihomo_connections_read 查看真實連線命中的規則與代理鏈；需要排查時，也能用 mihomo_logs_read 讀取一段日誌。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "758b7a77c3de45dcb830110c62699b35",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Skill 則是給 Agent 看的操作說明書。配套的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "localclash-mcp-route-operator",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/localClash/tree/main/.codex/skills/localclash-mcp-route-operator"
+              },
+              {
+                "text": " 會引導 Agent：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Skill 則是給 Agent 看的操作說明書。配套的 localclash-mcp-route-operator 會引導 Agent：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ba20930d38154d939931fc2e11e0aa05",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "先查現有規則包和目前狀態，能復用的規則就先復用。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "先查現有規則包和目前狀態，能復用的規則就先復用。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f36df33b99f24b04865dcc1becd75f10",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "為單一服務或遊戲建立專用出口；若要修改其他服務也在使用的共享分組，先說明影響並取得確認。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "為單一服務或遊戲建立專用出口；若要修改其他服務也在使用的共享分組，先說明影響並取得確認。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9d2b149a14054975b8c6e971a8e1b667",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "分開處理設定寫入與執行時重載，操作後再檢查已載入的規則，以及新連線實際經過的節點。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "分開處理設定寫入與執行時重載，操作後再檢查已載入的規則，以及新連線實際經過的節點。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fa85da5a8644d1ea2168ab40986fc60",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在這個用法裡，MCP 連到路由器上的 Core，Skill 則安裝在執行 Agent 的電腦上。以 Codex 為例，在 LuCI 展開「Agent Skill 与 MCP 接入」，複製接入指令交給 Agent，再按指引接好 MCP 與 Skill，就可以開始用對話查狀態、規劃分流。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在這個用法裡，MCP 連到路由器上的 Core，Skill 則安裝在執行 Agent 的電腦上。以 Codex 為例，在 LuCI 展開「Agent Skill 与 MCP 接入」，複製接入指令交給 Agent，再按指引接好 MCP 與 Skill，就可以開始用對話查狀態、規劃分流。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "65e628bcb3c54bff9ababca2d1d67c12",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "案例：改善 Palworld 掉包",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "案例：改善 Palworld 掉包",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8e957fec23e74cceb9105d919fcf1770",
+            "type": "text",
+            "richText": [
+              {
+                "text": "拿我玩 Palworld 時遇過的一次問題來說。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "拿我玩 Palworld 時遇過的一次問題來說。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e88cd17d724a46c695b1016ab894d0fc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "當時連社群伺服器不穩，遊戲面板的入站掉包接近 30%。我請 Agent 幫忙調查 Mihomo 線路，想試試台灣出口。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "當時連社群伺服器不穩，遊戲面板的入站掉包接近 30%。我請 Agent 幫忙調查 Mihomo 線路，想試試台灣出口。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fb0664d306ee449db69dd978ba8953c0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "查到的遊戲 UDP 流量原本走直連。Agent 選出支援 UDP、目前可用的台灣節點，建立這個遊戲自己的代理分組，只把那台伺服器的流量送進去。配置通過檢查並載入後，我重新連進伺服器，再由 Agent 確認新連線實際命中了規則、經過指定節點。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "查到的遊戲 UDP 流量原本走直連。Agent 選出支援 UDP、目前可用的台灣節點，建立這個遊戲自己的代理分組，只把那台伺服器的流量送進去。配置通過檢查並載入後，我重新連進伺服器，再由 Agent 確認新連線實際命中了規則、經過指定節點。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9ccdc40fb0904c2e9e9323e635e3d6d6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "當次遊戲面板的掉包降到了零，代價是延遲增加。後來再比較日本節點，延遲又降了一些：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "當次遊戲面板的掉包降到了零，代價是延遲增加。後來再比較日本節點，延遲又降了一些：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a9fd603116064ad0a69e5e84a9d7d7b4",
+            "type": "table",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [
+              "ujFD",
+              "Zy_W",
+              "Zx@n"
+            ],
+            "tableHasColumnHeader": true,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "10bd9a397789482ab7fcbbf98737651f",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "Zx@n": [
+                    {
+                      "text": "入站掉包",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "Zy_W": [
+                    {
+                      "text": "遊戲 RTT",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "ujFD": [
+                    {
+                      "text": "連線方式",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "eed2aad5da9e48f39548bef1cafe7f99",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "Zx@n": [
+                    {
+                      "text": "約 29.5%",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "Zy_W": [
+                    {
+                      "text": "約 163 ms",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "ujFD": [
+                    {
+                      "text": "直連",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "a0e663d98b3040dc87ce888ccae663cf",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "Zx@n": [
+                    {
+                      "text": "0%",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "Zy_W": [
+                    {
+                      "text": "約 259 ms",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "ujFD": [
+                    {
+                      "text": "台灣節點",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "745c509002914b88b0d21395de2f823b",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "Zx@n": [
+                    {
+                      "text": "0%",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "Zy_W": [
+                    {
+                      "text": "約 213 ms",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "ujFD": [
+                    {
+                      "text": "日本節點",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "084be1d0435046bf98416391269e6222",
+            "type": "text",
+            "richText": [
+              {
+                "text": "節點地區沿用訂閱標籤，數字是當次遊戲面板的觀測。我的實際體驗也是延遲增加，但掉包減少，連線有改善。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "節點地區沿用訂閱標籤，數字是當次遊戲面板的觀測。我的實際體驗也是延遲增加，但掉包減少，連線有改善。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c806fec5c80d47bd94c9a496028e25f0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個案例用到的是 Core 和 MCP。現在搭配提供的 Skill，會引導 Agent 按這類流程工作，從查路徑、規劃分流，到套用後驗證新連線。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個案例用到的是 Core 和 MCP。現在搭配提供的 Skill，會引導 Agent 按這類流程工作，從查路徑、規劃分流，到套用後驗證新連線。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "47decbc219f849c2b11702d858dbef9e",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "下載與試用",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "下載與試用",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "bb82aa962389476fa29e21f2178a766c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "有興趣的佬友可以先從 LuCI 裝起來。用到比較個人化的路由需求時，再把 MCP 和 Skill 接給 Agent。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "有興趣的佬友可以先從 LuCI 裝起來。用到比較個人化的路由需求時，再把 MCP 和 Skill 接給 Agent。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "bef137a6da62480fa9aaa9fe4a073701",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "LocalClash Core",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/localClash"
+              }
+            ],
+            "plainText": "LocalClash Core",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "59b6146900fa44a8a245678d17b22c7f",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "LocalClash LuCI",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/localclash-luci"
+              }
+            ],
+            "plainText": "LocalClash LuCI",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f437b2c3cab74d1c95da85d8cd83bcd5",
+            "type": "text",
+            "richText": [
+              {
+                "text": "歡迎試用，也歡迎回報哪些地方還不好上手。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "歡迎試用，也歡迎回報哪些地方還不好上手。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "3f9c1b36c401812ea221f558cc1f7a9a",
       "slug": "agent-instruments-app-hang-fix-3f9c1b36",
