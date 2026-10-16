@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-10-15T21:12:17.467Z",
+  "generatedAt": "2026-10-16T14:38:58.768Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,413 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "3fbc1b36c40181a79495c7f04d686183",
+      "slug": "pi-plugins-browser-search-context-3fbc1b36",
+      "seoSlug": "pi-plugins-browser-search-context",
+      "legacySlugs": [
+        "推薦-pi-的插件-pi-arc-cdp-search-和-pl-clm-3fbc1b36"
+      ],
+      "title": "推薦 Pi 的插件 pi-arc-cdp-search 和 pl-clm",
+      "tag": "AI,Automation,Terminal,Notes",
+      "writtenDate": "2026-10-16",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/pi-plugins-browser-search-context-3fbc1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/%E6%8E%A8%E8%96%A6-pi-%E7%9A%84%E6%8F%92%E4%BB%B6-pi-arc-cdp-search-%E5%92%8C-pl-clm-3fbc1b36c40181a79495c7f04d686183?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-10-16T13:48:25.425Z",
+      "lastEditedTime": "2026-10-16T14:12:08.457Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-10-16T14:31:21.513Z",
+        "blocks": [
+          {
+            "id": "3fbc1b36c40180579f01d99c30f0353a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我使用 pi 有一段時間了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我使用 pi 有一段時間了。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fbc1b36c401804fadfbfb9a8c4e6c44",
+            "type": "text",
+            "richText": [
+              {
+                "text": "根據使用經驗，我推薦兩個插件",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "根據使用經驗，我推薦兩個插件",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c8413d64015d45a9b66acda2ec2a0306",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "pi-arc-cdp-search：直接用現有瀏覽器搜尋與讀頁",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "pi-arc-cdp-search：直接用現有瀏覽器搜尋與讀頁",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41e6c29eb3e044f9a302f8c702c327bd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "專案：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "qoli/pi-arc-cdp-search",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/pi-arc-cdp-search"
+              },
+              {
+                "text": "，MIT 授權。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "專案：qoli/pi-arc-cdp-search，MIT 授權。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d29bac4f059d417ab8f13125288b94e2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個插件提供兩個工具：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個插件提供兩個工具：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5308f012a98e481f9dc76c263a5988c1",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "google_search",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "：搜尋 Google，回傳標題、網址與摘要。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "google_search：搜尋 Google，回傳標題、網址與摘要。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9947833870f24146b8c2ab2e71438bea",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "visit_page",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "：開啟指定網址，把主要文字、標題、清單與程式碼區塊整理成 Markdown。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "visit_page：開啟指定網址，把主要文字、標題、清單與程式碼區塊整理成 Markdown。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6a5d9d38ef4b4e16aff3e53163993382",
+            "type": "text",
+            "richText": [
+              {
+                "text": "它透過 CDP（Chrome DevTools Protocol）連到正在執行的 Arc 或 Chromium 瀏覽器，沿用該瀏覽器的 profile 與登入狀態。每次工作會建立臨時分頁，完成後關閉。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "它透過 CDP（Chrome DevTools Protocol）連到正在執行的 Arc 或 Chromium 瀏覽器，沿用該瀏覽器的 profile 與登入狀態。每次工作會建立臨時分頁，完成後關閉。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9b60fbeb4bdb4586a0e8822da8b48344",
+            "type": "text",
+            "richText": [
+              {
+                "text": "例如，你可以讓 Pi 先找官方文件，再讀其中一篇；如果文件需要登入，瀏覽器原本的登入狀態也能派上用場。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "例如，你可以讓 Pi 先找官方文件，再讀其中一篇；如果文件需要登入，瀏覽器原本的登入狀態也能派上用場。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "bad08fd44976449fa9500171a83d2132",
+            "type": "text",
+            "richText": [
+              {
+                "text": "不需要另外申請搜尋服務的 API key，Pi 仍使用你原本設定的模型服務。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "不需要另外申請搜尋服務的 API key，Pi 仍使用你原本設定的模型服務。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ac39d77968d64a1c9b9fd505cdd589bf",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "它可以通過 CAPTCHA",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "它可以通過 CAPTCHA",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3fbc1b36c4018057bc00d13da51053dd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "它通過 CAPTCHA 的方法很樸素，就是讓「人類通過 CAPTCHA」。因為它以 CDP 協議的形式，操作一個可視化瀏覽器。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "它通過 CAPTCHA 的方法很樸素，就是讓「人類通過 CAPTCHA」。因為它以 CDP 協議的形式，操作一個可視化瀏覽器。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f9df62e25a304e36be5e85ed2599f980",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "pi-clm：讓模型整理下一輪要讀的上下文",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "pi-clm：讓模型整理下一輪要讀的上下文",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1d9445498e444774874f5d45adbd8d90",
+            "type": "text",
+            "richText": [
+              {
+                "text": "專案：",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "qoli/pi-clm",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/pi-clm"
+              },
+              {
+                "text": "。這是我 fork 的版本，原作是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "lolipopshock/pi-clm",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/lolipopshock/pi-clm"
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "專案：qoli/pi-clm。這是我 fork 的版本，原作是 lolipopshock/pi-clm。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f0071562c56248608691fd289e547e22",
+            "type": "text",
+            "richText": [
+              {
+                "text": "當程式碼、工具輸出與網頁內容不斷累積時，可以試試 pi-clm。它會把模型下一次請求將看到的對話映射成一份可編輯的檔案，讓模型用一般工具刪減過時輸出、整理筆記，再把編輯後的內容用於下一輪請求。原始 Pi session 歷史不會被覆寫，具體機制可看 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "How it works",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qoli/pi-clm/blob/main/docs/how-it-works.md"
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "當程式碼、工具輸出與網頁內容不斷累積時，可以試試 pi-clm。它會把模型下一次請求將看到的對話映射成一份可編輯的檔案，讓模型用一般工具刪減過時輸出、整理筆記，再把編輯後的內容用於下一輪請求。原始 Pi session 歷史不會被覆寫，具體機制可看 How it works。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "3fac1b36c40181d9a885e5a1ae215584",
       "slug": "localclash-palworld-routing-with-agents-3fac1b36",
@@ -33,7 +440,7 @@
       "lastEditedTime": "2026-10-15T04:15:41.624Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-15T21:12:16.507Z",
+        "syncedAt": "2026-10-16T14:31:21.876Z",
         "blocks": [
           {
             "id": "3fac1b36c40180a28146c3b1c2f731b5",
@@ -1271,7 +1678,7 @@
       "lastEditedTime": "2026-10-14T07:30:25.833Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:56:48.440Z",
+        "syncedAt": "2026-10-16T14:31:25.181Z",
         "blocks": [
           {
             "id": "cb3df8ac876443f1a78aa70a415e11dc",
@@ -1880,7 +2287,7 @@
       "lastEditedTime": "2026-10-14T09:01:06.532Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:56:48.784Z",
+        "syncedAt": "2026-10-16T14:31:25.547Z",
         "blocks": [
           {
             "id": "4fa0a3ed8cfc4e839b88e86cbac50200",
@@ -3139,7 +3546,7 @@
       "lastEditedTime": "2026-10-10T14:42:25.351Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:56:58.540Z",
+        "syncedAt": "2026-10-16T14:31:36.425Z",
         "blocks": [
           {
             "id": "1dbb2abe68894e338264b1ecf6eba671",
@@ -3758,7 +4165,7 @@
       "lastEditedTime": "2026-10-04T04:39:10.624Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:56:58.860Z",
+        "syncedAt": "2026-10-16T14:31:37.081Z",
         "blocks": [
           {
             "id": "8b9773492bb84438806dc6a9e9865d74",
@@ -6500,7 +6907,7 @@
       "lastEditedTime": "2026-09-22T01:54:39.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:56:59.672Z",
+        "syncedAt": "2026-10-16T14:31:37.900Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -7917,7 +8324,7 @@
       "lastEditedTime": "2026-08-31T20:52:17.855Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:57:07.440Z",
+        "syncedAt": "2026-10-16T14:31:44.810Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -10916,7 +11323,7 @@
       "lastEditedTime": "2026-08-28T11:15:10.927Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:57:47.297Z",
+        "syncedAt": "2026-10-16T14:32:23.167Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -11588,7 +11995,7 @@
       "lastEditedTime": "2026-08-16T11:56:00.262Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:57:47.648Z",
+        "syncedAt": "2026-10-16T14:32:23.849Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -12290,7 +12697,7 @@
       "lastEditedTime": "2026-08-15T12:43:46.007Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:57:48.014Z",
+        "syncedAt": "2026-10-16T14:32:24.442Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -13932,7 +14339,7 @@
       "lastEditedTime": "2026-07-21T21:05:27.763Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:57:56.995Z",
+        "syncedAt": "2026-10-16T14:32:33.585Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -14676,7 +15083,7 @@
       "lastEditedTime": "2026-07-21T14:55:42.809Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:57:57.326Z",
+        "syncedAt": "2026-10-16T14:32:34.393Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -15021,7 +15428,7 @@
       "lastEditedTime": "2026-05-23T15:01:21.702Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:57:58.099Z",
+        "syncedAt": "2026-10-16T14:32:34.814Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -17362,7 +17769,7 @@
       "lastEditedTime": "2026-05-23T13:53:13.789Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:57:58.612Z",
+        "syncedAt": "2026-10-16T14:32:35.787Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -18379,7 +18786,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:58:18.167Z",
+        "syncedAt": "2026-10-16T14:32:49.182Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -20726,7 +21133,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:59:08.672Z",
+        "syncedAt": "2026-10-16T14:33:24.975Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -21907,7 +22314,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:59:16.121Z",
+        "syncedAt": "2026-10-16T14:33:33.615Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -22479,9 +22886,12 @@
       "writtenDate": "2026-05-07",
       "year": "2026",
       "public": true,
-      "subsites": [],
+      "subsites": [
+        "trackly"
+      ],
       "publishTargets": [
-        "ronniecc"
+        "ronniecc",
+        "trackly"
       ],
       "canonical": {
         "site": "ronniecc",
@@ -22489,10 +22899,10 @@
       },
       "notionUrl": "https://www.notion.so/qoli/%E7%94%A8%E6%AD%B7%E5%8F%B2%E8%B3%87%E6%96%99%E6%94%B9%E6%8F%90%E7%A4%BA%E8%A9%9E-trackly-%E5%9C%96%E7%89%87%E8%A8%98%E5%B8%B3%E6%8A%BD%E5%8F%96%E5%99%A8%E7%9A%84%E8%AD%89%E6%93%9A%E5%B8%B3%E6%9C%AC-358c1b36c4018154aa7def62ab498f05?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-05-06T21:45:00.975Z",
-      "lastEditedTime": "2026-05-06T22:37:18.709Z",
+      "lastEditedTime": "2026-10-16T02:56:51.745Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:59:51.826Z",
+        "syncedAt": "2026-10-16T14:33:49.085Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -24672,9 +25082,12 @@
       "writtenDate": "2026-05-05",
       "year": "2026",
       "public": true,
-      "subsites": [],
+      "subsites": [
+        "trackly"
+      ],
       "publishTargets": [
-        "ronniecc"
+        "ronniecc",
+        "trackly"
       ],
       "canonical": {
         "site": "ronniecc",
@@ -24682,10 +25095,10 @@
       },
       "notionUrl": "https://www.notion.so/qoli/vlm-%E4%B8%8D%E7%AD%89%E6%96%BC-visual-first-qwen3-5-%E5%9C%A8%E5%9C%96%E7%89%87%E8%A8%98%E5%B8%B3%E4%BB%BB%E5%8B%99%E8%A3%A1%E6%9A%B4%E9%9C%B2%E7%9A%84%E6%8F%90%E7%A4%BA%E8%A9%9E%E9%99%B7%E9%98%B1-357c1b36c4018169b545de9cc29a7934?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-05-05T10:20:49.698Z",
-      "lastEditedTime": "2026-05-05T10:22:06.786Z",
+      "lastEditedTime": "2026-10-16T02:56:52.619Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:59:52.639Z",
+        "syncedAt": "2026-10-16T14:33:49.717Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -25408,7 +25821,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:59:53.034Z",
+        "syncedAt": "2026-10-16T14:33:50.111Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -26176,7 +26589,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T09:59:53.359Z",
+        "syncedAt": "2026-10-16T14:33:50.499Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -27320,7 +27733,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:01:02.770Z",
+        "syncedAt": "2026-10-16T14:34:18.192Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -28044,7 +28457,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:01:03.091Z",
+        "syncedAt": "2026-10-16T14:34:18.618Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -28914,7 +29327,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:01:03.423Z",
+        "syncedAt": "2026-10-16T14:34:19.014Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -30294,7 +30707,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:01:04.038Z",
+        "syncedAt": "2026-10-16T14:34:19.466Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -33741,7 +34154,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:01:31.413Z",
+        "syncedAt": "2026-10-16T14:34:27.858Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -35587,7 +36000,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:01:32.275Z",
+        "syncedAt": "2026-10-16T14:34:28.382Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -36242,7 +36655,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:01:37.455Z",
+        "syncedAt": "2026-10-16T14:34:32.619Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -36858,7 +37271,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:01:55.274Z",
+        "syncedAt": "2026-10-16T14:34:42.011Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -37624,7 +38037,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:01:55.623Z",
+        "syncedAt": "2026-10-16T14:34:42.536Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -40571,7 +40984,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:03:34.556Z",
+        "syncedAt": "2026-10-16T14:36:06.229Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -41689,7 +42102,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:03:40.241Z",
+        "syncedAt": "2026-10-16T14:36:15.323Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -42067,7 +42480,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:03:42.568Z",
+        "syncedAt": "2026-10-16T14:36:20.062Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -44874,7 +45287,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:05:34.493Z",
+        "syncedAt": "2026-10-16T14:38:08.136Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -45102,7 +45515,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:05:43.417Z",
+        "syncedAt": "2026-10-16T14:38:12.432Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -45867,7 +46280,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-14T10:05:48.567Z",
+        "syncedAt": "2026-10-16T14:38:19.405Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
