@@ -57,15 +57,15 @@
     ]
   },
   {
-    "id": "localclash",
-    "name": "localClash",
-    "externalUrl": "https://github.com/qoli/localclash-luci",
+    "id": "swiftchat",
+    "name": "SwiftChat",
+    "externalUrl": "https://swiftchat.ronniewong.cc/",
     "showcase": {
       "images": [
         {
-          "id": "luci",
-          "previewLight": "assets/apps/localclash/preview.png",
-          "alt": "localClash LuCI overview on OpenWrt",
+          "id": "mac",
+          "previewLight": "assets/apps/swiftchat/preview.png",
+          "alt": "SwiftChat conversation on Mac",
           "width": 1538,
           "height": 914,
           "layout": "full"
