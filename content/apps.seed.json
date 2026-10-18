@@ -81,7 +81,25 @@
     "status": "testflight",
     "platforms": ["iOS"],
     "sourceUrl": "https://www.notion.so/1a0c1b36c4018065a4adf53d5dd41fbe",
-    "externalUrl": "https://www.notion.so/267c1b36c40180ec9489d4f84ef1c079",
+    "externalUrl": "https://trackly.ronniewong.cc/",
+    "showcase": {
+      "images": [
+        {
+          "id": "records",
+          "previewLight": "assets/apps/trackly/preview-records.png",
+          "alt": "Trackly expense records on iPhone",
+          "width": 714,
+          "height": 914
+        },
+        {
+          "id": "overview",
+          "previewLight": "assets/apps/trackly/preview-overview.png",
+          "alt": "Trackly spending overview on iPhone",
+          "width": 714,
+          "height": 914
+        }
+      ]
+    },
     "primaryCta": {
       "label": "TestFlight",
       "href": "https://testflight.apple.com/join/aQ64Cnfv"
