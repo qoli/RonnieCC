@@ -1062,6 +1062,27 @@ html[data-theme="dark"] .theme-toggle span::after {
   padding-left: 1.1em;
 }
 
+.blog-toggle {
+  padding-block: 0.75em;
+  border-top: 1px solid color-mix(in srgb, var(--stone) 28%, transparent);
+}
+
+.blog-toggle > summary {
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 500;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.blog-toggle > .blog-block-children {
+  padding-left: 0;
+}
+
+.blog-toggle > .blog-block-children > * + * {
+  margin-top: 1em;
+}
+
 .blog-media,
 .blog-media-fallback {
   display: grid;

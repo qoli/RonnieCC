@@ -836,6 +836,8 @@ function renderBlogBlock(block: BlogBlock, rootPath: string, notionUrl: string, 
       return text ? `<h4 id="${escapeAttr(uniqueHeadingId(block.plainText || "", usedIds))}">${text}</h4>${children}` : children;
     case "quote":
       return text ? `<blockquote>${text}</blockquote>${children}` : children;
+    case "toggle":
+      return `<details class="blog-toggle"><summary>${text}</summary>${children}</details>`;
     case "code": {
       const language = block.language ? ` data-language="${escapeAttr(block.language)}"` : "";
       return text ? `<pre${language}><code>${escapeHtml(block.plainText || "")}</code></pre>${children}` : children;

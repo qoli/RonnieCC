@@ -77,6 +77,14 @@ Compatibility rules:
   treated as the article created date. Notion import `createdTime` is metadata,
   not the public article date.
 
+Notion `toggle` blocks render as native `details` / `summary`, initially closed,
+on the main site as well as in the Trackly mirror. Keep their source title,
+child order, and images inside the disclosure; images use the full reading
+column instead of a nested-list indent. When checking illustrated tutorials,
+verify both the collapsed state and expansion with the mouse or keyboard on
+desktop and mobile. Flattening these blocks into paragraphs exposes optional
+setup and reference sections in the main reading flow.
+
 ## Subsite Consumer Rules
 
 A subsite should:
