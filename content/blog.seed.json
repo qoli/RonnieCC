@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-10-18T08:42:46.292Z",
+  "generatedAt": "2026-10-21T10:00:01.071Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,3117 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "400c1b36c40181e9baf3fc5c6e91bb98",
+      "slug": "trackly-first-ai-setup-400c1b36",
+      "seoSlug": "trackly-first-ai-setup",
+      "legacySlugs": [
+        "trackly-第一次設定-ai-400c1b36"
+      ],
+      "title": "Trackly 第一次設定 AI",
+      "tag": "Trackly,Product,AI,iOS",
+      "writtenDate": "2026-10-21",
+      "year": "2026",
+      "public": true,
+      "subsites": [
+        "trackly"
+      ],
+      "publishTargets": [
+        "ronniecc",
+        "trackly"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/trackly-first-ai-setup-400c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/trackly-%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%A8%AD%E5%AE%9A-ai-400c1b36c40181e9baf3fc5c6e91bb98?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-10-21T09:45:39.712Z",
+      "lastEditedTime": "2026-10-21T09:52:08.027Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-10-21T09:53:11.404Z",
+        "blocks": [
+          {
+            "id": "9ba762b19de342d18628dc9399c70bf0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "照著圖片接上你的 AI 服務，就能開始辨識帳單。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "照著圖片接上你的 AI 服務，就能開始辨識帳單。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "897084587cd64244b68efed69f023190",
+            "type": "text",
+            "richText": [
+              {
+                "text": "用你的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "AI 帳號",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 或 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "API Key",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 接入；已有 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Coding Plan",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 也能用。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "用你的 AI 帳號 或 API Key 接入；已有 Coding Plan 也能用。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5010a71f053c4525b6e027f26fce27e0",
+            "type": "toggle",
+            "richText": [
+              {
+                "text": "還沒有 AI 帳號或 Key",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "還沒有 AI 帳號或 Key",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "41c6499bde4547d899f07530aaa5de2a",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "先到你要使用的 AI 服務商網站註冊，確認帳號或方案能供第三方 App 使用，再回來照圖設定。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "先到你要使用的 AI 服務商網站註冊，確認帳號或方案能供第三方 App 使用，再回來照圖設定。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "8d396a84f4914705b52630e91a782db3",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "要使用 Key",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "：登入服務商後台，找「API Keys／金鑰管理」建立或複製 Key；例如 ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "OpenAI 金鑰管理",
+                    "annotations": [
+                      "a"
+                    ],
+                    "href": "https://platform.openai.com/api-keys"
+                  },
+                  {
+                    "text": "，其 ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "官方說明",
+                    "annotations": [
+                      "a"
+                    ],
+                    "href": "https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-keyx"
+                  },
+                  {
+                    "text": " 有取得方式。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "要使用 Key：登入服務商後台，找「API Keys／金鑰管理」建立或複製 Key；例如 OpenAI 金鑰管理，其 官方說明 有取得方式。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "da4bd7f4d1dd428fb4c19c21287fa527",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "已有 Coding Plan",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "：找該方案的登入方式或專用 Key。以 ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "Kimi Code",
+                    "annotations": [
+                      "a"
+                    ],
+                    "href": "https://www.kimi.com/en/help/kimi-code/membership-guide"
+                  },
+                  {
+                    "text": " 為例，方案也可提供 Key；在 Trackly 選 Kimi For Coding。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "已有 Coding Plan：找該方案的登入方式或專用 Key。以 Kimi Code 為例，方案也可提供 Key；在 Trackly 選 Kimi For Coding。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "301b2b6392a34b9787c1f76b23010faf",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "Key 是服務商核發的一串文字，貼進 Trackly 的 Key 欄位；帳號密碼則留在服務商的登入頁使用。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Key 是服務商核發的一串文字，貼進 Trackly 的 Key 欄位；帳號密碼則留在服務商的登入頁使用。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "6ffc9b5f991b46e59b81711b347750f6",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "01 打開右上角選單",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "01 打開右上角選單",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "dbd40b5bc51a4ca4a59e2591444d2bf0",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-ai-setup-01-overview.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-ai-setup-01-overview.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:5182477b-aaaa-4407-be19-1e24bac3b06d:trackly-ai-setup-01-overview.png",
+            "assetPath": "content/blog-assets/400c1b36c40181e9baf3fc5c6e91bb98/dbd40b5bc51a4ca4a59e2591444d2bf0-trackly-ai-setup-01-overview.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "145c4787894b4f13a0a26c1777eaf989",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在 Trackly 首頁，點右上角的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "⋯",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在 Trackly 首頁，點右上角的 ⋯。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9bf9d66835814b088af84fd47111d42f",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "02 點 AI 設定",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "02 點 AI 設定",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e561b25f9564414e9e0ba5707832ff35",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-ai-setup-02-ai-settings.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-ai-setup-02-ai-settings.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:26771bdd-dd59-445f-b52f-6a953f7f6afc:trackly-ai-setup-02-ai-settings.png",
+            "assetPath": "content/blog-assets/400c1b36c40181e9baf3fc5c6e91bb98/e561b25f9564414e9e0ba5707832ff35-trackly-ai-setup-02-ai-settings.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e3ebb778b8fb4faa9fdea9f0b2e2d728",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在「概覽」往上滑，找到 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "AI 設定",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在「概覽」往上滑，找到 AI 設定。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9f30a8387bce49edb58a293e8c7544dc",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "03 點主要服務",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "03 點主要服務",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a99f1aee84604d06af895afc800e5199",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-ai-setup-03a-primary.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-ai-setup-03a-primary.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:4169a793-2cf8-4402-8981-d0f080bb9113:trackly-ai-setup-03a-primary.png",
+            "assetPath": "content/blog-assets/400c1b36c40181e9baf3fc5c6e91bb98/a99f1aee84604d06af895afc800e5199-trackly-ai-setup-03a-primary.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a6c307409aed4ca8940203af81b4ae05",
+            "type": "text",
+            "richText": [
+              {
+                "text": "點 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "主要服務",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "；第一次先設定這一個服務就好。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "點 主要服務；第一次先設定這一個服務就好。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "840d94b31796462cb19d140e52bb858b",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "04 點供應商",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "04 點供應商",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "928b9f343c99416586df8da3251bf90b",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-ai-setup-03b-provider.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-ai-setup-03b-provider.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:46069cc6-5c9a-4599-8ef0-17ed44ea1e8e:trackly-ai-setup-03b-provider.png",
+            "assetPath": "content/blog-assets/400c1b36c40181e9baf3fc5c6e91bb98/928b9f343c99416586df8da3251bf90b-trackly-ai-setup-03b-provider.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1693be52c4a94ccd9a9dc9736ee6b0cd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在「主要服務」點 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "供應商",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，準備選自己的 AI 服務。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在「主要服務」點 供應商，準備選自己的 AI 服務。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8c7f6b4315d84c6e8846bbf03a7a8ead",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "05 搜尋你使用的服務商",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "05 搜尋你使用的服務商",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "42b62cab63584a65a32448aca8fa93bc",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-ai-setup-04-provider-choice.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-ai-setup-04-provider-choice.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:2d4373d5-2c56-4674-b919-39f96b04e073:trackly-ai-setup-04-provider-choice.png",
+            "assetPath": "content/blog-assets/400c1b36c40181e9baf3fc5c6e91bb98/42b62cab63584a65a32448aca8fa93bc-trackly-ai-setup-04-provider-choice.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1a36bdb2a4ec4105bc60fa09c000590d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在下方搜尋自己的服務商名稱，再點對應入口；圖中以 OpenAI 為例。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在下方搜尋自己的服務商名稱，再點對應入口；圖中以 OpenAI 為例。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "29e47f79cc5746b8af4d78f4b2264c13",
+            "type": "text",
+            "richText": [
+              {
+                "text": "用 Coding Plan？",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": " Kimi 請找 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Kimi For Coding",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "；其他方案可展開下方的對照。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "用 Coding Plan？ Kimi 請找 Kimi For Coding；其他方案可展開下方的對照。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "20091079ef3f4af083a842a491f569b2",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "06 點管理授權",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "06 點管理授權",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "83d8c6a305214a1eb75d574510c23dea",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-ai-setup-05-manage-authorization.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-ai-setup-05-manage-authorization.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:bb237eb6-7e46-4546-bf41-44d18c24f080:trackly-ai-setup-05-manage-authorization.png",
+            "assetPath": "content/blog-assets/400c1b36c40181e9baf3fc5c6e91bb98/83d8c6a305214a1eb75d574510c23dea-trackly-ai-setup-05-manage-authorization.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8736a5b7c5324649ae4b9cfcc3d74bc0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "選好服務商後，點 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "管理授權",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，接上你自己的帳號或 Key。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "選好服務商後，點 管理授權，接上你自己的帳號或 Key。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e681c525873c462e94fe6df867d55148",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "07 選一種方式連接",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "07 選一種方式連接",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "49309d04db43435abdb9c24ba4262177",
+            "type": "text",
+            "richText": [
+              {
+                "text": "展開符合你畫面的那一段，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "只需完成其中一種",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，再接第 08 步。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "展開符合你畫面的那一段，只需完成其中一種，再接第 08 步。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a8ee5820bfa243859e262ada655667ec",
+            "type": "toggle",
+            "richText": [
+              {
+                "text": "畫面有 Sign in 按鈕 用帳號登入",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "畫面有 Sign in 按鈕 用帳號登入",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "fb90462a6d164c50baa474e6821309ca",
+                "type": "image",
+                "richText": [
+                  {
+                    "text": "trackly-ai-setup-06a-account-login.png",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "trackly-ai-setup-06a-account-login.png",
+                "caption": [],
+                "language": "",
+                "source": "attachment:2eef19bf-d4af-457a-bdd2-9e176278e1e5:trackly-ai-setup-06a-account-login.png",
+                "assetPath": "content/blog-assets/400c1b36c40181e9baf3fc5c6e91bb98/fb90462a6d164c50baa474e6821309ca-trackly-ai-setup-06a-account-login.png",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "21e75d02e46f4a1aac25339afb4372f8",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "點 ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "Sign in",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "，在服務商頁面完成登入，再返回 Trackly。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "點 Sign in，在服務商頁面完成登入，再返回 Trackly。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "4551c13b57ca4e109db666068ad4dbdc",
+            "type": "toggle",
+            "richText": [
+              {
+                "text": "服務商給你一串 Key 貼上並儲存",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "服務商給你一串 Key 貼上並儲存",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "9dd7ef03255a4d4f9aecca5913f25a9e",
+                "type": "image",
+                "richText": [
+                  {
+                    "text": "trackly-ai-setup-06b-paste-key.png",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "trackly-ai-setup-06b-paste-key.png",
+                "caption": [],
+                "language": "",
+                "source": "attachment:0cc74369-78a4-4803-b91f-cd03d8a8050b:trackly-ai-setup-06b-paste-key.png",
+                "assetPath": "content/blog-assets/400c1b36c40181e9baf3fc5c6e91bb98/9dd7ef03255a4d4f9aecca5913f25a9e-trackly-ai-setup-06b-paste-key.png",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "3a150a7ef9204d5395c70ca3c492f552",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "貼上服務商提供的 ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "API Key／方案 Key",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "，再點 ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "儲存憑證",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "貼上服務商提供的 API Key／方案 Key，再點 儲存憑證。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "b7a5fd46ee4f4bff96aaa4136125424c",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "08 打開模型清單",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "08 打開模型清單",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "57cd73958d5a44d9b69e9f65731c5c07",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-ai-setup-07a-open-models.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-ai-setup-07a-open-models.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:00c1e83c-8552-4875-985a-4759c276ff65:trackly-ai-setup-07a-open-models.png",
+            "assetPath": "content/blog-assets/400c1b36c40181e9baf3fc5c6e91bb98/57cd73958d5a44d9b69e9f65731c5c07-trackly-ai-setup-07a-open-models.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3d24e2a898a04eb19ca887b2c9dd6f63",
+            "type": "text",
+            "richText": [
+              {
+                "text": "完成授權後返回「主要服務」，點下方的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "模型",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "完成授權後返回「主要服務」，點下方的 模型。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "75f8e3d078f24f698606701f946841ae",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "09 選一個記帳模型",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "09 選一個記帳模型",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "6f9b6521891f4d56866d36675673a245",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-ai-setup-07b-choose-model.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-ai-setup-07b-choose-model.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:94c7d97c-614d-413b-9170-9d2921ce1d5c:trackly-ai-setup-07b-choose-model.png",
+            "assetPath": "content/blog-assets/400c1b36c40181e9baf3fc5c6e91bb98/6f9b6521891f4d56866d36675673a245-trackly-ai-setup-07b-choose-model.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "19f7b05481094657a38c44ec3dad0239",
+            "type": "text",
+            "richText": [
+              {
+                "text": "選你方案可用的項目；標有 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "文字與圖像",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 的模型可直接讀照片，選好就會儲存。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "選你方案可用的項目；標有 文字與圖像 的模型可直接讀照片，選好就會儲存。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "74c152b9714648f7bac87dffbe8aa550",
+            "type": "text",
+            "richText": [
+              {
+                "text": "只有文字模型也能使用，Trackly 會先辨識照片中的文字。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "只有文字模型也能使用，Trackly 會先辨識照片中的文字。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0fa41e04e4754419a00b68951092ea7e",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "10 用一張帳單確認",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "10 用一張帳單確認",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "cec92ac3d6ba4170a1285b7f629fa38f",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-ai-setup-10-try-bill.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-ai-setup-10-try-bill.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:0dbc9942-e40f-4e87-b1dd-4581b28d66b4:trackly-ai-setup-10-try-bill.png",
+            "assetPath": "content/blog-assets/400c1b36c40181e9baf3fc5c6e91bb98/cec92ac3d6ba4170a1285b7f629fa38f-trackly-ai-setup-10-try-bill.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5ad34ee9ed4d4dc89a218599c10536a5",
+            "type": "text",
+            "richText": [
+              {
+                "text": "回首頁，選一張帳單或付款截圖，再把",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "選好的照片卡片向上拖曳",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，開始辨識。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "回首頁，選一張帳單或付款截圖，再把選好的照片卡片向上拖曳，開始辨識。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e2c49469e62f483c823b246d1b1ad27b",
+            "type": "callout",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "38024ae143e7450eb3a3f964b29b7fe3",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "出現新的消費紀錄後，核對金額與商家，就完成第一次設定。只看到「已設定」還需要做這一步。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "出現新的消費紀錄後，核對金額與商家，就完成第一次設定。只看到「已設定」還需要做這一步。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "bb2cae4dfe54473a9b6f494e4b7964e3",
+            "type": "toggle",
+            "richText": [
+              {
+                "text": "Coding Plan 要選哪個入口",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Coding Plan 要選哪個入口",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "386ec0f024964d9998b3031d71b718f5",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "找到你已有的方案，照下面的名稱搜尋。",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "Key、帳號與所選入口要來自同一服務或方案。",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  }
+                ],
+                "plainText": "找到你已有的方案，照下面的名稱搜尋。Key、帳號與所選入口要來自同一服務或方案。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "56a69a643f6740c7adda6f5c9667b1ef",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Codex 帳號權益",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": " → OpenAI Codex → 帳號登入。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Codex 帳號權益 → OpenAI Codex → 帳號登入。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "dd515d2e2e074aea8d5cba536e3b65a7",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Kimi Coding Plan",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": " → Kimi For Coding → 帳號登入，或方案 Key。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Kimi Coding Plan → Kimi For Coding → 帳號登入，或方案 Key。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "3a227623028740e8a608be727f48a586",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "GLM Coding Plan",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": " → ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "Z.AI",
+                    "annotations": [
+                      "a"
+                    ],
+                    "href": "http://Z.AI"
+                  },
+                  {
+                    "text": "／",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "Z.AI",
+                    "annotations": [
+                      "a"
+                    ],
+                    "href": "http://Z.AI"
+                  },
+                  {
+                    "text": " Coding CN → 對應站點的方案 Key。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "GLM Coding Plan → Z.AI／Z.AI Coding CN → 對應站點的方案 Key。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "dd229075e7ff45059c442eb3dc0b7e8f",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "MiniMax Coding／Token Plan",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": " → MiniMax／MiniMax CN → 對應站點的方案 Key。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "MiniMax Coding／Token Plan → MiniMax／MiniMax CN → 對應站點的方案 Key。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "70c04f97168b4ee0aca15ff6b5f5c2ed",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Qwen Token Plan",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": " → Qwen Token Plan／CN／Individual → 對應方案與區域的 Key。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Qwen Token Plan → Qwen Token Plan／CN／Individual → 對應方案與區域的 Key。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "8992c19a5fad49dfabff8af11de21ed4",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Xiaomi Token Plan",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": " → Xiaomi Token Plan AMS／CN／SGP → 對應區域的方案 Key。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Xiaomi Token Plan → Xiaomi Token Plan AMS／CN／SGP → 對應區域的方案 Key。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "8b140d3cade9433d8e1060bb60e05496",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "GitHub Copilot 帳號權益",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": " → GitHub Copilot → 畫面提供的登入或存取憑證方式。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "GitHub Copilot 帳號權益 → GitHub Copilot → 畫面提供的登入或存取憑證方式。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "fee2d1017b9e4f28bdc06578c0aae5ac",
+                "type": "image",
+                "richText": [
+                  {
+                    "text": "trackly-ai-setup-09-kimi-account.png",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "trackly-ai-setup-09-kimi-account.png",
+                "caption": [],
+                "language": "",
+                "source": "attachment:9aa63702-0829-4e66-8cf6-5c50aec14c89:trackly-ai-setup-09-kimi-account.png",
+                "assetPath": "content/blog-assets/400c1b36c40181e9baf3fc5c6e91bb98/fee2d1017b9e4f28bdc06578c0aae5ac-trackly-ai-setup-09-kimi-account.png",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "64487d30b71d4844be6d3a0d854f6617",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "用帳號",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "：點 ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "Sign in to Kimi For Coding",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "，完成登入後返回 Trackly。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "用帳號：點 Sign in to Kimi For Coding，完成登入後返回 Trackly。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "f44403dad0c54db58a3a7bc8dc0aae38",
+                "type": "image",
+                "richText": [
+                  {
+                    "text": "trackly-ai-setup-09-kimi-key.png",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "trackly-ai-setup-09-kimi-key.png",
+                "caption": [],
+                "language": "",
+                "source": "attachment:1b1afae1-da44-43aa-837e-1d6828acbf2d:trackly-ai-setup-09-kimi-key.png",
+                "assetPath": "content/blog-assets/400c1b36c40181e9baf3fc5c6e91bb98/f44403dad0c54db58a3a7bc8dc0aae38-trackly-ai-setup-09-kimi-key.png",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "81a39d7642a849a5b8390b0835af9d49",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "或用方案 Key",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "：貼上 Kimi Coding Plan 提供的 Key，再點 ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "儲存憑證",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "；兩種方式選一種。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "或用方案 Key：貼上 Kimi Coding Plan 提供的 Key，再點 儲存憑證；兩種方式選一種。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "133a62e9ad264c36ae18ae9f43976147",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "BYOK",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": " 就是自行提供 Key；Coding Plan 也可能用方案 Key 接入，兩者可以同時成立。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "BYOK 就是自行提供 Key；Coding Plan 也可能用方案 Key 接入，兩者可以同時成立。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "9a33f866c1184c7da9c4a83aa715d9b2",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "方案專用 Key 的取得與適用範圍，可查 ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "Kimi",
+                    "annotations": [
+                      "a"
+                    ],
+                    "href": "https://www.kimi.com/en/help/kimi-code/membership-guide"
+                  },
+                  {
+                    "text": "、",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "GLM",
+                    "annotations": [
+                      "a"
+                    ],
+                    "href": "https://docs.z.ai/devpack/overview"
+                  },
+                  {
+                    "text": "、",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "MiniMax",
+                    "annotations": [
+                      "a"
+                    ],
+                    "href": "https://platform.minimax.io/subscribe/coding-plan"
+                  },
+                  {
+                    "text": " 或 ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "Qwen",
+                    "annotations": [
+                      "a"
+                    ],
+                    "href": "https://www.alibabacloud.com/help/en/model-studio/coding-plan"
+                  },
+                  {
+                    "text": " 的官方說明。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "方案專用 Key 的取得與適用範圍，可查 Kimi、GLM、MiniMax 或 Qwen 的官方說明。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "55f901d858cd45a4b2bf76792f91e270",
+            "type": "toggle",
+            "richText": [
+              {
+                "text": "卡住時從這裡看",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "卡住時從這裡看",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "8f8a03bfd7e74bf6ac8313f800a1cabc",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "仍顯示待授權",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "：回「管理授權」完成登入；貼 Key 的方式還要按「儲存憑證」。選好模型不會代替登入。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "仍顯示待授權：回「管理授權」完成登入；貼 Key 的方式還要按「儲存憑證」。選好模型不會代替登入。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "177a7e4f6b994061abccc10526ef23c8",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "找不到模型",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "：先完成授權，再點主要服務右上角的圓形箭頭重新整理；也清除模型搜尋與能力篩選。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "找不到模型：先完成授權，再點主要服務右上角的圓形箭頭重新整理；也清除模型搜尋與能力篩選。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "288c22dcbe1349ccab9ce784eb75ad37",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "照片沒有出現",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "：先把帳單或付款截圖存進「照片」，並確認 Trackly 有讀取該圖片的照片權限。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "照片沒有出現：先把帳單或付款截圖存進「照片」，並確認 Trackly 有讀取該圖片的照片權限。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "33c48a41525c48f7aa73abd7c28685a7",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "設定好了卻辨識失敗",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "：核對服務商與 Key 是否配套、方案是否可用，以及帳號是否有該模型權限。依 App 顯示的錯誤處理後再試。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "設定好了卻辨識失敗：核對服務商與 Key 是否配套、方案是否可用，以及帳號是否有該模型權限。依 App 顯示的錯誤處理後再試。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "8552fc33cf304649a78e47d26bb17081",
+            "type": "toggle",
+            "richText": [
+              {
+                "text": "有自己的 API 網址時怎麼填",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "有自己的 API 網址時怎麼填",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "657c3833b8b24498afe3b7f204c1e995",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "在供應商選 ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "自訂 OpenAI 相容服務",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "，填服務商提供的三項資料：",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "在供應商選 自訂 OpenAI 相容服務，填服務商提供的三項資料：",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "c49b27f58f8c4cf2aac7ed39f9ca2898",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "API 網址",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "：支援 OpenAI Chat Completions 的 API 根網址。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "API 網址：支援 OpenAI Chat Completions 的 API 根網址。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "37ab954c7e9d4685bf3bd08b9e9fd033",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "API Key",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "：該網址配套的 Key。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "API Key：該網址配套的 Key。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "b74db8895a90404b9a1489641811ccf6",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "模型 ID",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "：服務商列出的精確模型名稱。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "模型 ID：服務商列出的精確模型名稱。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "fb89035531e84262ba31a4b4b8bd6465",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "填好網址與 Key 後可點「取得模型清單」，也可直接填模型 ID。網址沒帶路徑時使用 ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "/v1",
+                    "annotations": [
+                      "c"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "；畫面中的 example 網址只是提示。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "填好網址與 Key 後可點「取得模型清單」，也可直接填模型 ID。網址沒帶路徑時使用 /v1；畫面中的 example 網址只是提示。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "e43daa2d141c4e8dbf0583a7a3b757fc",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "「模型支援圖片輸入」與「模型思考方式」依服務商對該模型的說明設定。只想先完成內建服務設定時，可略過這一節。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "「模型支援圖片輸入」與「模型思考方式」依服務商對該模型的說明設定。只想先完成內建服務設定時，可略過這一節。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "c1324a1e349e428a805931ac58e00c50",
+            "type": "toggle",
+            "richText": [
+              {
+                "text": "需要第二個服務時再設定備用",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "需要第二個服務時再設定備用",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "28cbb9da1971477ba8a36c20cbff9d58",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "第一次先完成主要服務。之後可用相同步驟設定「備用服務」；要改用它時，需手動「交換主要與備用服務」。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "第一次先完成主要服務。之後可用相同步驟設定「備用服務」；要改用它時，需手動「交換主要與備用服務」。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "43f1bbbc2f3544f3ae9ec6e9224c498d",
+            "type": "toggle",
+            "richText": [
+              {
+                "text": "AI 服務商完整列表",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "AI 服務商完整列表",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "543ab17f0fa74fa7892707d3bb99fc89",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "目前介面有 ",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "40 個內建服務商",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "，另支援自訂 OpenAI 相容服務。下面按 Trackly 提供的接入方式整理；可用模型與權限依你的服務商帳號而定。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "目前介面有 40 個內建服務商，另支援自訂 OpenAI 相容服務。下面按 Trackly 提供的接入方式整理；可用模型與權限依你的服務商帳號而定。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "751c6cf94d86489ba175192deff4f1c4",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "帳號登入",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  }
+                ],
+                "plainText": "帳號登入",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "162ac604974e489682684295ea639074",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "OpenAI Codex",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "OpenAI Codex",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "6caf1f5dc95b4f6b83706ef9da77001e",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "帳號登入或 Key",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  }
+                ],
+                "plainText": "帳號登入或 Key",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "33e5cf3367ab48d39ac60e1d4289819a",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Anthropic",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Anthropic",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "70f3271c321f4c3299f2a63afdd86f63",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "GitHub Copilot",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "GitHub Copilot",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "a684035b54f541a38d323dcd894e02bd",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Kimi For Coding",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Kimi For Coding",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "20e398ed71b246cf85b96cf474dc1456",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "OpenRouter",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "OpenRouter",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "5912e58e7f6942b19851dfb2110056d8",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Radius",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Radius",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "4408ba923f0e4afe8b8c38bc2aeb2054",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "xAI",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "xAI",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "2b5e34efa372449fa0139b02f9ee6da7",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "Key 或服務商要求的存取憑證",
+                    "annotations": [
+                      "b"
+                    ],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Key 或服務商要求的存取憑證",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "760aec8bbda74dc1a16eb51eabcb0e2a",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Amazon Bedrock",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Amazon Bedrock",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "61715803ab654e788b6b07de0067c948",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Ant Ling",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Ant Ling",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "4ea0adc0924b4e7d84884398ea81d1f0",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Azure OpenAI",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Azure OpenAI",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "766742cd139a434e9bc3950b21c8d99e",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Baseten",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Baseten",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "83b43961ddd14a9695bbd1d1d92c6125",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Cerebras",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Cerebras",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "67f239874fe5456c8f21d9b8413720f2",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Cloudflare AI Gateway",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Cloudflare AI Gateway",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "7364e2ed0a274178ad6defcd0ad6f240",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Cloudflare Workers AI",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Cloudflare Workers AI",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "4f81e05407c9490382db72382ba973fe",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "DeepSeek",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "DeepSeek",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "6aadb6ea342b4240839b0bd4980799a7",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Fireworks",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Fireworks",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "73975e9bd31d4dfab56806fde4a32e0e",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Google",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Google",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "d2523e4cf810449182e3ddc47fc766e6",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Google Vertex AI",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Google Vertex AI",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "5d9567649b6a4683b74e8fbb241f5006",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Groq",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Groq",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "d47db66a8e81441392605873c8571d4a",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Hugging Face",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Hugging Face",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "89b97d8455634da4b67af243f66edd78",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "MiniMax",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "MiniMax",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "9621c654d3b749f0a870ffcb8babe403",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "MiniMax CN",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "MiniMax CN",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "15e5aef9fa284459a84a29ba865285f0",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Mistral",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Mistral",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "e5539e40368341cf92d3ac909496cc68",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Moonshot AI",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Moonshot AI",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "a559a43a2ac044fa9cbd8a12dc141d99",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Moonshot AI CN",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Moonshot AI CN",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "15d892a5008a4f9ba090710ee1486816",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "NVIDIA",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "NVIDIA",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "6422ce2ddb0b48798107755db2a1b0da",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "OpenAI",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "OpenAI",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "e5870733eb93458296d26b558e422c2d",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "OpenCode Zen",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "OpenCode Zen",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "58b8abb88f3a418bac6c7442d6b9f2dc",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "OpenCode Go",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "OpenCode Go",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "794d925087174affb868aa0cb0341c56",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Qwen Token Plan",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Qwen Token Plan",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "d6b7b2992fd04a1b96f43f157b4756b7",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Qwen Token Plan CN",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Qwen Token Plan CN",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "bb1d8e96a1bf463d85b5cc31a7aa8565",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Qwen Token Plan Individual",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Qwen Token Plan Individual",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "baaa8b943e794ef49bad54ae5667d119",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Together",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Together",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "b6e0a0b87c5746a8905e2334d0f06c69",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Vercel AI Gateway",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Vercel AI Gateway",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "186dfc56a6534a16b047cb1a3ecc5efc",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Xiaomi",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Xiaomi",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "bbb093299787481883f0ff53fe5c90c7",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Xiaomi Token Plan AMS",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Xiaomi Token Plan AMS",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "5bccee3d25384b2ea14dbfa736c48a96",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Xiaomi Token Plan CN",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Xiaomi Token Plan CN",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "f85d3d712cda4d57a250b7af206ad00e",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Xiaomi Token Plan SGP",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Xiaomi Token Plan SGP",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "ec6a16a8e78240de9870ebda8895b094",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Z.AI",
+                    "annotations": [
+                      "a"
+                    ],
+                    "href": "http://Z.AI"
+                  }
+                ],
+                "plainText": "Z.AI",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "a4f72e6591c34a30abed6298a701afc3",
+                "type": "bulleted_list",
+                "richText": [
+                  {
+                    "text": "Z.AI",
+                    "annotations": [
+                      "a"
+                    ],
+                    "href": "http://Z.AI"
+                  },
+                  {
+                    "text": " Coding CN",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "Z.AI Coding CN",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              },
+              {
+                "id": "a87f9140fe0148d8bc5fdd88075a483e",
+                "type": "text",
+                "richText": [
+                  {
+                    "text": "清單核對日期：",
+                    "annotations": [],
+                    "href": ""
+                  },
+                  {
+                    "text": "‣",
+                    "annotations": [
+                      "d"
+                    ],
+                    "href": ""
+                  },
+                  {
+                    "text": "。",
+                    "annotations": [],
+                    "href": ""
+                  }
+                ],
+                "plainText": "清單核對日期：‣。",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {},
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    },
     {
       "id": "3fdc1b36c40181918fb0f53680b97cd5",
       "slug": "swiftchat-mac-ai-chat-3fdc1b36",
@@ -36,7 +3147,7 @@
       "lastEditedTime": "2026-10-18T08:34:35.231Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:37:07.066Z",
+        "syncedAt": "2026-10-21T09:53:51.059Z",
         "blocks": [
           {
             "id": "3fdc1b36c40180e8b534e061c3b1cfa2",
@@ -866,7 +3977,7 @@
       "lastEditedTime": "2026-10-16T14:12:08.457Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:37:09.449Z",
+        "syncedAt": "2026-10-21T09:53:53.126Z",
         "blocks": [
           {
             "id": "3fbc1b36c40180579f01d99c30f0353a",
@@ -1273,7 +4384,7 @@
       "lastEditedTime": "2026-10-15T04:15:41.624Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:37:09.759Z",
+        "syncedAt": "2026-10-21T09:53:53.491Z",
         "blocks": [
           {
             "id": "3fac1b36c40180a28146c3b1c2f731b5",
@@ -2511,7 +5622,7 @@
       "lastEditedTime": "2026-10-14T07:30:25.833Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:37:11.402Z",
+        "syncedAt": "2026-10-21T09:53:55.330Z",
         "blocks": [
           {
             "id": "cb3df8ac876443f1a78aa70a415e11dc",
@@ -3120,7 +6231,7 @@
       "lastEditedTime": "2026-10-14T09:01:06.532Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:37:11.766Z",
+        "syncedAt": "2026-10-21T09:53:56.081Z",
         "blocks": [
           {
             "id": "4fa0a3ed8cfc4e839b88e86cbac50200",
@@ -4379,7 +7490,7 @@
       "lastEditedTime": "2026-10-10T14:42:25.351Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:37:20.663Z",
+        "syncedAt": "2026-10-21T09:54:05.586Z",
         "blocks": [
           {
             "id": "1dbb2abe68894e338264b1ecf6eba671",
@@ -4998,7 +8109,7 @@
       "lastEditedTime": "2026-10-04T04:39:10.624Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:37:21.107Z",
+        "syncedAt": "2026-10-21T09:54:06.043Z",
         "blocks": [
           {
             "id": "8b9773492bb84438806dc6a9e9865d74",
@@ -7740,7 +10851,7 @@
       "lastEditedTime": "2026-09-22T01:54:39.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:37:21.718Z",
+        "syncedAt": "2026-10-21T09:54:06.623Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -9157,7 +12268,7 @@
       "lastEditedTime": "2026-08-31T20:52:17.855Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:37:28.318Z",
+        "syncedAt": "2026-10-21T09:54:11.674Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -12156,7 +15267,7 @@
       "lastEditedTime": "2026-08-28T11:15:10.927Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:37:53.508Z",
+        "syncedAt": "2026-10-21T09:54:44.922Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -12828,7 +15939,7 @@
       "lastEditedTime": "2026-08-16T11:56:00.262Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:37:53.970Z",
+        "syncedAt": "2026-10-21T09:54:45.563Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -13530,7 +16641,7 @@
       "lastEditedTime": "2026-08-15T12:43:46.007Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:37:54.333Z",
+        "syncedAt": "2026-10-21T09:54:45.969Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -15172,7 +18283,7 @@
       "lastEditedTime": "2026-07-21T21:05:27.763Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:38:00.742Z",
+        "syncedAt": "2026-10-21T09:54:53.012Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -15916,7 +19027,7 @@
       "lastEditedTime": "2026-07-21T14:55:42.809Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:38:01.113Z",
+        "syncedAt": "2026-10-21T09:54:53.455Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -16261,7 +19372,7 @@
       "lastEditedTime": "2026-05-23T15:01:21.702Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:38:01.662Z",
+        "syncedAt": "2026-10-21T09:54:54.483Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -18602,7 +21713,7 @@
       "lastEditedTime": "2026-05-23T13:53:13.789Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:38:02.258Z",
+        "syncedAt": "2026-10-21T09:54:55.158Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -19619,7 +22730,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:38:14.088Z",
+        "syncedAt": "2026-10-21T09:55:08.434Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -21966,7 +25077,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:38:40.037Z",
+        "syncedAt": "2026-10-21T09:55:37.661Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -23147,7 +26258,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:38:44.995Z",
+        "syncedAt": "2026-10-21T09:55:44.273Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -23735,7 +26846,7 @@
       "lastEditedTime": "2026-10-16T02:56:51.745Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:38:58.831Z",
+        "syncedAt": "2026-10-21T09:56:00.439Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -25931,7 +29042,7 @@
       "lastEditedTime": "2026-10-16T02:56:52.619Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:38:59.151Z",
+        "syncedAt": "2026-10-21T09:56:01.230Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -26654,7 +29765,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:38:59.454Z",
+        "syncedAt": "2026-10-21T09:56:01.596Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -27422,7 +30533,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:39:00.311Z",
+        "syncedAt": "2026-10-21T09:56:01.933Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -28566,7 +31677,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:39:19.698Z",
+        "syncedAt": "2026-10-21T09:56:26.091Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -29290,7 +32401,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:39:20.022Z",
+        "syncedAt": "2026-10-21T09:56:26.554Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -30160,7 +33271,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:39:20.381Z",
+        "syncedAt": "2026-10-21T09:56:26.928Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -31540,7 +34651,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:39:20.717Z",
+        "syncedAt": "2026-10-21T09:56:27.360Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -34987,7 +38098,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:39:27.118Z",
+        "syncedAt": "2026-10-21T09:56:34.424Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -36833,7 +39944,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:39:27.498Z",
+        "syncedAt": "2026-10-21T09:56:34.945Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -37488,7 +40599,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:39:31.137Z",
+        "syncedAt": "2026-10-21T09:56:38.610Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -38104,7 +41215,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:39:38.067Z",
+        "syncedAt": "2026-10-21T09:56:45.827Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -38870,7 +41981,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:39:38.756Z",
+        "syncedAt": "2026-10-21T09:56:46.187Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -41817,7 +44928,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:40:38.311Z",
+        "syncedAt": "2026-10-21T09:57:53.657Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -42935,7 +46046,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:40:45.908Z",
+        "syncedAt": "2026-10-21T09:58:02.000Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -43313,7 +46424,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:40:48.509Z",
+        "syncedAt": "2026-10-21T09:58:04.470Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -46120,7 +49231,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:42:08.999Z",
+        "syncedAt": "2026-10-21T09:59:19.764Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -46348,7 +49459,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:42:12.712Z",
+        "syncedAt": "2026-10-21T09:59:23.620Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -47113,7 +50224,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-18T08:42:18.676Z",
+        "syncedAt": "2026-10-21T09:59:29.016Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
