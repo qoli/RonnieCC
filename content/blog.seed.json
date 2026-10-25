@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-10-21T10:00:01.071Z",
+  "generatedAt": "2026-10-25T08:06:16.963Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,1734 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "404c1b36c401817b8802f6901ec0ea38",
+      "slug": "in-app-acceptance-for-ai-debugging-404c1b36",
+      "seoSlug": "in-app-acceptance-for-ai-debugging",
+      "legacySlugs": [
+        "syncnext-的-app-debug-acceptance-實作-404c1b36"
+      ],
+      "title": "Syncnext 的 App Debug Acceptance 實作",
+      "tag": "AI,Automation,tvOS,Swift",
+      "writtenDate": "2026-10-25",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/in-app-acceptance-for-ai-debugging-404c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/syncnext-%E7%9A%84-app-debug-acceptance-%E5%AF%A6%E4%BD%9C-404c1b36c401817b8802f6901ec0ea38?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-10-25T07:14:57.849Z",
+      "lastEditedTime": "2026-10-25T07:57:43.718Z",
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-10-25T07:59:22.805Z",
+        "blocks": [
+          {
+            "id": "384d26859dc84ef7bca80c7ca3abd64b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "App Debug Acceptance 是編譯進 Debug App 的驗收入口。Agent 在獨立 Swift 檔案中準備場景、呼叫正式程式並寫斷言；App 完成初始化後，依啟動參數執行指定 case，將結果寫入同一輪 run ID 的 Log。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "App Debug Acceptance 是編譯進 Debug App 的驗收入口。Agent 在獨立 Swift 檔案中準備場景、呼叫正式程式並寫斷言；App 完成初始化後，依啟動參數執行指定 case，將結果寫入同一輪 run ID 的 Log。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "47cb87a6b9434a0d8cc34ebd6511ca46",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "歷史難題：已有自動化能力，Agent 仍逐步操作 UI",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "歷史難題：已有自動化能力，Agent 仍逐步操作 UI",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d6056eabb9f44d4fa481a2b145530aa4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "appDebugCode",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是我在 2023 年留下的掛點，用來在 App 初始化完成後快速重跑指定 function，驗證修改。當時 SwiftUI Preview 在我的專案裡不夠好用，部分功能也依賴 App 完成初始化，因此需要一個能在完整 App 環境中直接執行程式的位置。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "appDebugCode 是我在 2023 年留下的掛點，用來在 App 初始化完成後快速重跑指定 function，驗證修改。當時 SwiftUI Preview 在我的專案裡不夠好用，部分功能也依賴 App 完成初始化，因此需要一個能在完整 App 環境中直接執行程式的位置。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d6969be5b5f6444ba08491815f964a53",
+            "type": "text",
+            "richText": [
+              {
+                "text": "後來我也整理過供 Agent 操作 App 的 Automation，但 Agent 仍常採用「截圖 → 判斷畫面 → 傳送遙控按鍵 → 再截圖」的流程。每輪驗收都要重新導航、準備設定，並從畫面確認操作進度；修復後還要重走一次。播放器 seek 的驗收也顯示，Agent 已經知道怎麼執行 seek。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "後來我也整理過供 Agent 操作 App 的 Automation，但 Agent 仍常採用「截圖 → 判斷畫面 → 傳送遙控按鍵 → 再截圖」的流程。每輪驗收都要重新導航、準備設定，並從畫面確認操作進度；修復後還要重走一次。播放器 seek 的驗收也顯示，Agent 已經知道怎麼執行 seek。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5424c04d88c841b788d57c029e717453",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這次改造把 Agent 的驗收工作單位固定為獨立 Swift case，並寫入 Skill 的執行流程：由程式準備資料與設定、呼叫正式方法、等待完成訊號並作斷言。修復後可以選擇同一個 case、帶入相同輸入重跑，再以新的 run ID 核對結果。原有掛點得以保留，個別任務則不必再共同修改 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "appDebugCode",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這次改造把 Agent 的驗收工作單位固定為獨立 Swift case，並寫入 Skill 的執行流程：由程式準備資料與設定、呼叫正式方法、等待完成訊號並作斷言。修復後可以選擇同一個 case、帶入相同輸入重跑，再以新的 run ID 核對結果。原有掛點得以保留，個別任務則不必再共同修改 appDebugCode。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "56f5d3b6507a459d8c03dc415f2d42ce",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "改善了什麼",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "改善了什麼",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "92e3ad3dcf25466b8c0ac1907ab66283",
+            "type": "table",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [
+              "<xBS",
+              "_`{D",
+              "SDa="
+            ],
+            "tableHasColumnHeader": true,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "ca2bf05443d84649914e3c035aedc948",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "<xBS": [
+                    {
+                      "text": "驗收環節",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "SDa=": [
+                    {
+                      "text": "現在：Swift case",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "_`{D": [
+                    {
+                      "text": "以前：逐步截圖與遙控",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "a6b388098ae14b3186f3795108badf2a",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "<xBS": [
+                    {
+                      "text": "準備場景",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "SDa=": [
+                    {
+                      "text": "由 case 寫入本次資料與設定，帶入指定輸入，再呼叫正式搜尋或播放流程。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "_`{D": [
+                    {
+                      "text": "透過 UI 依序切換設定、選擇來源、搜尋與進入影片；每輪重新導航到目標狀態。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "7ddf33df8e5c4d26810621515d0f0280",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "<xBS": [
+                    {
+                      "text": "執行動作",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "SDa=": [
+                    {
+                      "text": "在同一段 Swift 程式中串接正式方法呼叫與非同步等待，動作之間不需要逐步交回 Agent 看圖決定。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "_`{D": [
+                    {
+                      "text": "每一步都經過截圖、判斷畫面和焦點、傳送按鍵，再查看下一張截圖。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "65ee7622ef2b4f96a596f075b102a7f6",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "<xBS": [
+                    {
+                      "text": "判定結果",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "SDa=": [
+                    {
+                      "text": "直接讀取實際狀態作斷言，例如 seek 後的位置、暫停狀態與播放時間是否前進，並記錄檢查名稱和結果。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "_`{D": [
+                    {
+                      "text": "從畫面確認是否進到下一步；精確的播放器位置或內部狀態還要另外查證。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "74e54cc373784955a8c2d58f94e51a27",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "<xBS": [
+                    {
+                      "text": "修復後重跑",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "SDa=": [
+                    {
+                      "text": "沿用同一個 case 與輸入，以新的 run ID 重跑，對照每項檢查。已編譯的 case 可直接重新啟動；改過 Swift 程式則重新建置與安裝。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "_`{D": [
+                    {
+                      "text": "重新操作同一串選單與按鍵，再確認測試設定和畫面位置。",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "ec8dbb1e70ed4e6aa78cf22e92742150",
+            "type": "text",
+            "richText": [
+              {
+                "text": "以目前的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "HTTPPlayback",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " case 為例，驗證「暫停時 seek」會執行以下檢查：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "以目前的 HTTPPlayback case 為例，驗證「暫停時 seek」會執行以下檢查：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5848ba50f2a54093835fe914c042073c",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "經正式 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "PlayerHelper",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 開片並保持暫停，等待播放器可 seek。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "經正式 PlayerHelper 開片並保持暫停，等待播放器可 seek。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9d316478427b4bbc8d778a294b98f4ef",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "透過 App 的 HTTP 播放介面 seek 到 7.25 秒，斷言回傳狀態仍為 paused，且位置誤差小於 0.5 秒。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "透過 App 的 HTTP 播放介面 seek 到 7.25 秒，斷言回傳狀態仍為 paused，且位置誤差小於 0.5 秒。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fccad9022fa6458aab2dd1b9371a398a",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "讀取實際掛載的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "AVPlayer",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 時間，等待 500 毫秒後再次讀取，斷言時間變化小於 0.1 秒，確認暫停狀態確實保留。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "讀取實際掛載的 AVPlayer 時間，等待 500 毫秒後再次讀取，斷言時間變化小於 0.1 秒，確認暫停狀態確實保留。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d970ae9d863d4f378e0236eb7cd12171",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這段測試一次由 case 執行，失敗時可從檢查名稱區分「位置不對」與「暫停沒有保留」。修復後直接重跑相同條件；焦點、字幕和排版等畫面問題，再以實際畫面驗收。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這段測試一次由 case 執行，失敗時可從檢查名稱區分「位置不對」與「暫停沒有保留」。修復後直接重跑相同條件；焦點、字幕和排版等畫面問題，再以實際畫面驗收。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8e5c8402996842798588cda600a6096f",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "1. 執行位置與分工",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "1. 執行位置與分工",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9a02b8ecc1b0464fb1a54321dab35a2c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "入口放在 App 原有初始化流程之後：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "入口放在 App 原有初始化流程之後：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "deef4ec943e14d36b04d0b16d64f9524",
+            "type": "code",
+            "richText": [
+              {
+                "text": "#if DEBUG\nawait appDebugCode()\n#endif",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "#if DEBUG\nawait appDebugCode()\n#endif",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2622c3f1e6814887aee2b2c17e897158",
+            "type": "text",
+            "richText": [
+              {
+                "text": "執行順序如下：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "執行順序如下：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "555948c9945b4631ac4cc8dcb698be15",
+            "type": "code",
+            "richText": [
+              {
+                "text": "flowchart LR\n    A[\"App 初始化\"] --> B[\"appDebugCode\"]\n    B --> C[\"依 case ID 分派\"]\n    C --> D[\"case.run(runID:)\"]\n    D --> E[\"正式流程與斷言\"]",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "flowchart LR\n    A[\"App 初始化\"] --> B[\"appDebugCode\"]\n    B --> C[\"依 case ID 分派\"]\n    C --> D[\"case.run(runID:)\"]\n    D --> E[\"正式流程與斷言\"]",
+            "caption": [],
+            "language": "Mermaid",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0487ffd4e26744c2b74553d7a83ea2ce",
+            "type": "text",
+            "richText": [
+              {
+                "text": "appDebugCode",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 將啟動參數交給 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "StudyTVAcceptanceRuntime.runRequested",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，由它處理 case 查找與開始／完成事件。各 case 自己準備設定和測試資料，呼叫本次要驗證的正式功能。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "appDebugCode 將啟動參數交給 StudyTVAcceptanceRuntime.runRequested，由它處理 case 查找與開始／完成事件。各 case 自己準備設定和測試資料，呼叫本次要驗證的正式功能。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "662e59883e6542a3bbd5091d943ff7bd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Xcode 工具負責建置；主機端 helper 負責裝置確認、部署、啟動與取回證據。業務斷言留在 App 的 case 裡。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Xcode 工具負責建置；主機端 helper 負責裝置確認、部署、啟動與取回證據。業務斷言留在 App 的 case 裡。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0fa427f4095e4dda8a244ec0cf0ef3e4",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "2. case 協定與分派",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "2. case 協定與分派",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0ab156a4a79d461d91748a074fd60ec6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "case 的共用協定：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "case 的共用協定：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3d1fb7cb1ec742b1ab61c24ccec55cce",
+            "type": "code",
+            "richText": [
+              {
+                "text": "@MainActor\nprotocol StudyTVAcceptanceCase: AnyObject {\n    static func run(runID: UUID) async throws -> Bool\n}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "@MainActor\nprotocol StudyTVAcceptanceCase: AnyObject {\n    static func run(runID: UUID) async throws -> Bool\n}",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3381803a962e40e198ba110c3d8bbcc9",
+            "type": "text",
+            "richText": [
+              {
+                "text": "每個 case 繼承 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "NSObject",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，並宣告唯一的 Objective-C 型別名稱：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "每個 case 繼承 NSObject，並宣告唯一的 Objective-C 型別名稱：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3274a29f6ab54d84995355e17063d0ae",
+            "type": "code",
+            "richText": [
+              {
+                "text": "@objc(StudyTVAcceptance_DispatcherSettingsSmoke)",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "@objc(StudyTVAcceptance_DispatcherSettingsSmoke)",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7168a40f98e1480a935b2e2983c648e3",
+            "type": "text",
+            "richText": [
+              {
+                "text": "啟動參數傳入 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "DispatcherSettingsSmoke",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，runtime 就以 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "NSClassFromString(\"StudyTVAcceptance_\" + caseID)",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 查找型別，再轉成 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "StudyTVAcceptanceCase.Type",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 後執行。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "啟動參數傳入 DispatcherSettingsSmoke，runtime 就以 NSClassFromString(\"StudyTVAcceptance_\" + caseID) 查找型別，再轉成 StudyTVAcceptanceCase.Type 後執行。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b39b86da5bb9426bbdbddc9ab99aa160",
+            "type": "text",
+            "richText": [
+              {
+                "text": "目前的選擇規則是：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "目前的選擇規則是：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ee8bfde26b76445fa7161b4289602eb8",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "一個 process 執行一個指定 case；無 case 參數時不自動執行新案例。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "一個 process 執行一個指定 case；無 case 參數時不自動執行新案例。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d9bcbb9bfbc94ad2980b9ca4a539c1d2",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "case ID 僅接受 ASCII 英文字母、數字與底線；run ID 可由主機提供 UUID，省略時由 App 產生。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "case ID 僅接受 ASCII 英文字母、數字與底線；run ID 可由主機提供 UUID，省略時由 App 產生。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "25625c66ed9a44c8ae4d40da24950268",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "未知 case、重複選擇或無效 run ID，記錄拒絕與失敗，不改跑其他 case。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "未知 case、重複選擇或無效 run ID，記錄拒絕與失敗，不改跑其他 case。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "daf3405af8cd460da7df5e2e28373d86",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "有效 case 在初始化後等待 3 秒，再記錄 started 並執行。這段延遲只控制啟動時機，case 仍須等待正式流程的完成訊號。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "有效 case 在初始化後等待 3 秒，再記錄 started 並執行。這段延遲只控制啟動時機，case 仍須等待正式流程的完成訊號。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b3ec4969832e4ad780c5c5cd38b50ab4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "案例放在 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Syncnext tvOS/!debug/Acceptance/",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 目錄，透過 Xcode 的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "PBXFileSystemSynchronizedRootGroup",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 自動收錄。新增案例只需要增加自己的 Swift 檔案，不必修改中央登錄清單。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "案例放在 Syncnext tvOS/!debug/Acceptance/ 目錄，透過 Xcode 的 PBXFileSystemSynchronizedRootGroup 自動收錄。新增案例只需要增加自己的 Swift 檔案，不必修改中央登錄清單。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "0e22b9c1036043fdadf402f722466a2b",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "3. 最小可執行 case",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "3. 最小可執行 case",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1381ec43c3364e638901d3c508a770f5",
+            "type": "text",
+            "richText": [
+              {
+                "text": "以下是現有設定 smoke case 的等價寫法，將較長的 Log 字串拆開：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "以下是現有設定 smoke case 的等價寫法，將較長的 Log 字串拆開：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5a8bd1c0ad2040c88724dc251b5e9376",
+            "type": "code",
+            "richText": [
+              {
+                "text": "#if DEBUG\nimport Foundation\n\n@objc(StudyTVAcceptance_DispatcherSettingsSmoke)\nfinal class DispatcherSettingsSmokeAcceptance:\n    NSObject, StudyTVAcceptanceCase\n{\n    @MainActor\n    static func run(runID: UUID) async throws -> Bool {\n        AppSettingHelper.shared.appSearchPreTMDBEnabled = false\n\n        let actual = AppSettingHelper.shared.appSearchPreTMDBEnabled\n        let passed = !actual\n        AppLogger.shared.log(\n            \"event=app.debug.acceptance.check \"\n                + \"runID=\\(runID.uuidString) \"\n                + \"case=DispatcherSettingsSmoke \"\n                + \"check=tmdb_presearch \"\n                + \"expected=false actual=\\(actual) passed=\\(passed)\",\n            category: \"StudyTVAcceptance\"\n        )\n        return passed\n    }\n}\n#endif",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "#if DEBUG\nimport Foundation\n\n@objc(StudyTVAcceptance_DispatcherSettingsSmoke)\nfinal class DispatcherSettingsSmokeAcceptance:\n    NSObject, StudyTVAcceptanceCase\n{\n    @MainActor\n    static func run(runID: UUID) async throws -> Bool {\n        AppSettingHelper.shared.appSearchPreTMDBEnabled = false\n\n        let actual = AppSettingHelper.shared.appSearchPreTMDBEnabled\n        let passed = !actual\n        AppLogger.shared.log(\n            \"event=app.debug.acceptance.check \"\n                + \"runID=\\(runID.uuidString) \"\n                + \"case=DispatcherSettingsSmoke \"\n                + \"check=tmdb_presearch \"\n                + \"expected=false actual=\\(actual) passed=\\(passed)\",\n            category: \"StudyTVAcceptance\"\n        )\n        return passed\n    }\n}\n#endif",
+            "caption": [],
+            "language": "Swift",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "31dcade767ee4e76af2dfda0181abdd7",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個 case 的驗收範圍是設定寫入與讀回。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "run",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 回傳斷言結果，runtime 統一輸出完成事件；case 不重複輸出開始／完成事件。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個 case 的驗收範圍是設定寫入與讀回。run 回傳斷言結果，runtime 統一輸出完成事件；case 不重複輸出開始／完成事件。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f8a56703d1eb483fa4e0df5208ee20ce",
+            "type": "text",
+            "richText": [
+              {
+                "text": "功能驗收則在同一位置呼叫正式流程。現有的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "HTTPPlayback",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 專門驗證 App 的 HTTP 播放介面：它經 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "PlayerHelper",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 開啟影片，對照 API 回傳與實際掛載的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "AVPlayer",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，檢查 seek 後的位置、暫停狀態及時間前進。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "功能驗收則在同一位置呼叫正式流程。現有的 HTTPPlayback 專門驗證 App 的 HTTP 播放介面：它經 PlayerHelper 開啟影片，對照 API 回傳與實際掛載的 AVPlayer，檢查 seek 後的位置、暫停狀態及時間前進。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "14d072bc04e949afb5dd086bddac9591",
+            "type": "text",
+            "richText": [
+              {
+                "text": "case 可以直接呼叫 App 裡既有的方法，包括播放器 seek。測試動作由 Swift 程式組合，啟動參數只選擇已編譯的程式與輸入。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "case 可以直接呼叫 App 裡既有的方法，包括播放器 seek。測試動作由 Swift 程式組合，啟動參數只選擇已編譯的程式與輸入。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "67c0431c3fc649eb86f4602c2feb08a0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "非同步功能要等搜尋完成、播放進度前進或分析回呼等實際條件，再作斷言和回傳。只把 View 掛上去，就只能證明該畫面已呈現。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "非同步功能要等搜尋完成、播放進度前進或分析回呼等實際條件，再作斷言和回傳。只把 View 掛上去，就只能證明該畫面已呈現。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "724d8edf600843349a8114c094cbad09",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-acceptance-case-run.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-acceptance-case-run.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:0946e8d8-8b94-4910-ba20-d5b8bd784f8e:syncnext-acceptance-case-run.png",
+            "assetPath": "content/blog-assets/404c1b36c401817b8802f6901ec0ea38/724d8edf600843349a8114c094cbad09-syncnext-acceptance-case-run.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4e6db81a2ebf42889a74aa469c905b24",
+            "type": "text",
+            "richText": [
+              {
+                "text": "實際案例 MusicRecognitionConfirmationAcceptance 的 run 區域：讀取啟動參數、準備設定、呼叫正式播放器，並觀察辨識狀態與執行斷言。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "實際案例 MusicRecognitionConfirmationAcceptance 的 run 區域：讀取啟動參數、準備設定、呼叫正式播放器，並觀察辨識狀態與執行斷言。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "836ac10c674443bd960ef1e83caa18a7",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "4. 建置、啟動與讀取結果",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "4. 建置、啟動與讀取結果",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "44a4537228264d929bef0529e92429ea",
+            "type": "text",
+            "richText": [
+              {
+                "text": "新增或修改 Swift case 後，先建置包含該檔案的已簽章 Debug App。以下使用我的書房電視 helper，從 App repo 執行；",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "STUDY_HELPER",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 指向 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "study_tv.py",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "APP_PATH",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是剛建置的 App 路徑：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "新增或修改 Swift case 後，先建置包含該檔案的已簽章 Debug App。以下使用我的書房電視 helper，從 App repo 執行；STUDY_HELPER 指向 study_tv.py，APP_PATH 是剛建置的 App 路徑：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "8eb758e215d2420b86b61e5d00d06dd3",
+            "type": "code",
+            "richText": [
+              {
+                "text": "RUN_ID=\"$(uuidgen)\"\n\npython3 \"$STUDY_HELPER\" launch \\\n    --app-path \"$APP_PATH\" \\\n    -- --syncnext-acceptance-case=DispatcherSettingsSmoke \\\n    \"--syncnext-acceptance-run-id=$RUN_ID\"",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "RUN_ID=\"$(uuidgen)\"\n\npython3 \"$STUDY_HELPER\" launch \\\n    --app-path \"$APP_PATH\" \\\n    -- --syncnext-acceptance-case=DispatcherSettingsSmoke \\\n    \"--syncnext-acceptance-run-id=$RUN_ID\"",
+            "caption": [],
+            "language": "Bash",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "d61b0167335641f08c153d2b7d77a4f0",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-acceptance-entry-notice.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-acceptance-entry-notice.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:f7210372-62c1-4312-b248-b8087214209f:syncnext-acceptance-entry-notice.png",
+            "assetPath": "content/blog-assets/404c1b36c401817b8802f6901ec0ea38/d61b0167335641f08c153d2b7d77a4f0-syncnext-acceptance-entry-notice.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "fa3f735d3509430d97feb9eaa588b445",
+            "type": "text",
+            "richText": [
+              {
+                "text": "tvOS 模擬器中的驗收入口通知：啟動 DispatcherIdentitySmoke 後，App 顯示實際 case ID 與本輪 run ID。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "tvOS 模擬器中的驗收入口通知：啟動 DispatcherIdentitySmoke 後，App 顯示實際 case ID 與本輪 run ID。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "77d87f9e84294581940221730aeaf263",
+            "type": "text",
+            "richText": [
+              {
+                "text": "helper 會確認書房電視身份，再安裝與帶參數啟動 App。若只是重跑、切換已編譯 case 或修改輸入，可省略 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "--app-path",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，重用裝置上的 binary。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "helper 會確認書房電視身份，再安裝與帶參數啟動 App。若只是重跑、切換已編譯 case 或修改輸入，可省略 --app-path，重用裝置上的 binary。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1313707161ac4d618e41a462fd5207fa",
+            "type": "text",
+            "richText": [
+              {
+                "text": "將 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "RUN_DIR",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 設為本輪證據目錄，取回 Log：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "將 RUN_DIR 設為本輪證據目錄，取回 Log：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "eccf1d2184744a4f9bba1d0b928cb9a0",
+            "type": "code",
+            "richText": [
+              {
+                "text": "python3 \"$STUDY_HELPER\" logs --output \"$RUN_DIR/app.log\"",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "python3 \"$STUDY_HELPER\" logs --output \"$RUN_DIR/app.log\"",
+            "caption": [],
+            "language": "Bash",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "4c8c0173c5aa4d30a84dcde7d9a6af51",
+            "type": "text",
+            "richText": [
+              {
+                "text": "以下是此 smoke case 成功時的主要事件，省略 waiting 事件，UUID 與 PID 以佔位符表示：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "以下是此 smoke case 成功時的主要事件，省略 waiting 事件，UUID 與 PID 以佔位符表示：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b0aa8e10d8be4945b3767ae630a10dde",
+            "type": "code",
+            "richText": [
+              {
+                "text": "event=app.debug.acceptance.started runID=<UUID> case=DispatcherSettingsSmoke processID=<PID>\nevent=app.debug.acceptance.check runID=<UUID> case=DispatcherSettingsSmoke check=tmdb_presearch expected=false actual=false passed=true\nevent=app.debug.acceptance.completed runID=<UUID> case=DispatcherSettingsSmoke processID=<PID> passed=true",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "event=app.debug.acceptance.started runID=<UUID> case=DispatcherSettingsSmoke processID=<PID>\nevent=app.debug.acceptance.check runID=<UUID> case=DispatcherSettingsSmoke check=tmdb_presearch expected=false actual=false passed=true\nevent=app.debug.acceptance.completed runID=<UUID> case=DispatcherSettingsSmoke processID=<PID> passed=true",
+            "caption": [],
+            "language": "Plain Text",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "9d166ca26c344ee2bd00ee945413c296",
+            "type": "text",
+            "richText": [
+              {
+                "text": "先核對同一個 case 與 run ID 的 started／completed；case 有輸出 check 時，再對照檢查結果。缺少完成事件時不能判定通過，須確認是否仍在執行或已中斷；出現失敗則保留原因。通過的範圍由 case 裡的斷言決定。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "先核對同一個 case 與 run ID 的 started／completed；case 有輸出 check 時，再對照檢查結果。缺少完成事件時不能判定通過，須確認是否仍在執行或已中斷；出現失敗則保留原因。通過的範圍由 case 裡的斷言決定。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5b203ac44808417e9d804df9ce0c6db6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "書房電視是專用驗收環境，case 可以直接修改並留下本次需要的 App 設定與測試資料。搜尋詞、來源篩選等前置條件也由程式準備。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "書房電視是專用驗收環境，case 可以直接修改並留下本次需要的 App 設定與測試資料。搜尋詞、來源篩選等前置條件也由程式準備。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "1087434466a743099d7b820ac04b2855",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "5. 接入除錯流程",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "5. 接入除錯流程",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e02493c17ba14295ac1a291ae2508cb2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我的除錯流程分成三個階段：",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我的除錯流程分成三個階段：",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3ec2c6ffb2f64724bad3de72a539f921",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "確認問題並取證",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "：用 case 重現指定來源、資料及設定，記錄失敗狀態與分析需要的證據。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "確認問題並取證：用 case 重現指定來源、資料及設定，記錄失敗狀態與分析需要的證據。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c99f506c564c4b3db94c1ce67ab3bcbd",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "修復",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "：依證據修改正式功能所屬的模組。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "修復：依證據修改正式功能所屬的模組。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "508b5a41be5942e284cfcd1475c998e2",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "驗收",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "：保留原本的問題條件與判定標準，以新的 run ID 重跑，核對這一輪的斷言及完成事件。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "驗收：保留原本的問題條件與判定標準，以新的 run ID 重跑，核對這一輪的斷言及完成事件。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "ef61507481134aebbb83911a3a312863",
+            "type": "text",
+            "richText": [
+              {
+                "text": "同一個掛點可以用於重現和驗收，但每一輪要先確定目標。確認某條路徑會失敗，和確認修復符合預期，是不同的檢查。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "同一個掛點可以用於重現和驗收，但每一輪要先確定目標。確認某條路徑會失敗，和確認修復符合預期，是不同的檢查。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "055639d093af47f8ac8dfdee86506fca",
+            "type": "text",
+            "richText": [
+              {
+                "text": "涉及焦點、字幕或首幀等畫面問題時，由 case 準備場景並掛載正式畫面，再補截圖與必要的遙控操作。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "涉及焦點、字幕或首幀等畫面問題時，由 case 準備場景並掛載正式畫面，再補截圖與必要的遙控操作。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "400c1b36c40181e9baf3fc5c6e91bb98",
       "slug": "trackly-first-ai-setup-400c1b36",
@@ -36,7 +1764,7 @@
       "lastEditedTime": "2026-10-21T09:52:08.027Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:53:11.404Z",
+        "syncedAt": "2026-10-25T07:59:33.114Z",
         "blocks": [
           {
             "id": "9ba762b19de342d18628dc9399c70bf0",
@@ -3147,7 +4875,7 @@
       "lastEditedTime": "2026-10-18T08:34:35.231Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:53:51.059Z",
+        "syncedAt": "2026-10-25T08:00:12.935Z",
         "blocks": [
           {
             "id": "3fdc1b36c40180e8b534e061c3b1cfa2",
@@ -3977,7 +5705,7 @@
       "lastEditedTime": "2026-10-16T14:12:08.457Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:53:53.126Z",
+        "syncedAt": "2026-10-25T08:00:15.464Z",
         "blocks": [
           {
             "id": "3fbc1b36c40180579f01d99c30f0353a",
@@ -4384,7 +6112,7 @@
       "lastEditedTime": "2026-10-15T04:15:41.624Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:53:53.491Z",
+        "syncedAt": "2026-10-25T08:00:16.397Z",
         "blocks": [
           {
             "id": "3fac1b36c40180a28146c3b1c2f731b5",
@@ -5622,7 +7350,7 @@
       "lastEditedTime": "2026-10-14T07:30:25.833Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:53:55.330Z",
+        "syncedAt": "2026-10-25T08:00:18.466Z",
         "blocks": [
           {
             "id": "cb3df8ac876443f1a78aa70a415e11dc",
@@ -6231,7 +7959,7 @@
       "lastEditedTime": "2026-10-14T09:01:06.532Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:53:56.081Z",
+        "syncedAt": "2026-10-25T08:00:18.886Z",
         "blocks": [
           {
             "id": "4fa0a3ed8cfc4e839b88e86cbac50200",
@@ -7490,7 +9218,7 @@
       "lastEditedTime": "2026-10-10T14:42:25.351Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:54:05.586Z",
+        "syncedAt": "2026-10-25T08:00:27.971Z",
         "blocks": [
           {
             "id": "1dbb2abe68894e338264b1ecf6eba671",
@@ -8109,7 +9837,7 @@
       "lastEditedTime": "2026-10-04T04:39:10.624Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:54:06.043Z",
+        "syncedAt": "2026-10-25T08:00:28.444Z",
         "blocks": [
           {
             "id": "8b9773492bb84438806dc6a9e9865d74",
@@ -10851,7 +12579,7 @@
       "lastEditedTime": "2026-09-22T01:54:39.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:54:06.623Z",
+        "syncedAt": "2026-10-25T08:00:29.188Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -12268,7 +13996,7 @@
       "lastEditedTime": "2026-08-31T20:52:17.855Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:54:11.674Z",
+        "syncedAt": "2026-10-25T08:00:34.933Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -15267,7 +16995,7 @@
       "lastEditedTime": "2026-08-28T11:15:10.927Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:54:44.922Z",
+        "syncedAt": "2026-10-25T08:01:01.863Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -15939,7 +17667,7 @@
       "lastEditedTime": "2026-08-16T11:56:00.262Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:54:45.563Z",
+        "syncedAt": "2026-10-25T08:01:02.283Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -16641,7 +18369,7 @@
       "lastEditedTime": "2026-08-15T12:43:46.007Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:54:45.969Z",
+        "syncedAt": "2026-10-25T08:01:02.706Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -18283,7 +20011,7 @@
       "lastEditedTime": "2026-07-21T21:05:27.763Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:54:53.012Z",
+        "syncedAt": "2026-10-25T08:01:08.576Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -19027,7 +20755,7 @@
       "lastEditedTime": "2026-07-21T14:55:42.809Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:54:53.455Z",
+        "syncedAt": "2026-10-25T08:01:09.020Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -19372,7 +21100,7 @@
       "lastEditedTime": "2026-05-23T15:01:21.702Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:54:54.483Z",
+        "syncedAt": "2026-10-25T08:01:09.337Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -21713,7 +23441,7 @@
       "lastEditedTime": "2026-05-23T13:53:13.789Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:54:55.158Z",
+        "syncedAt": "2026-10-25T08:01:09.855Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -22730,7 +24458,7 @@
       "lastEditedTime": "2026-05-22T10:39:06.761Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:55:08.434Z",
+        "syncedAt": "2026-10-25T08:01:21.485Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -25077,7 +26805,7 @@
       "lastEditedTime": "2026-05-20T07:43:01.846Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:55:37.661Z",
+        "syncedAt": "2026-10-25T08:01:46.749Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -26258,7 +27986,7 @@
       "lastEditedTime": "2026-05-20T02:15:45.597Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:55:44.273Z",
+        "syncedAt": "2026-10-25T08:01:54.282Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -26846,7 +28574,7 @@
       "lastEditedTime": "2026-10-16T02:56:51.745Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:56:00.439Z",
+        "syncedAt": "2026-10-25T08:02:09.384Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -29042,7 +30770,7 @@
       "lastEditedTime": "2026-10-16T02:56:52.619Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:56:01.230Z",
+        "syncedAt": "2026-10-25T08:02:09.903Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -29765,7 +31493,7 @@
       "lastEditedTime": "2026-05-04T18:04:07.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:56:01.596Z",
+        "syncedAt": "2026-10-25T08:02:10.205Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -30533,7 +32261,7 @@
       "lastEditedTime": "2026-05-20T00:27:07.803Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:56:01.933Z",
+        "syncedAt": "2026-10-25T08:02:10.572Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -31677,7 +33405,7 @@
       "lastEditedTime": "2026-04-26T06:09:32.191Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:56:26.091Z",
+        "syncedAt": "2026-10-25T08:02:30.460Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -32401,7 +34129,7 @@
       "lastEditedTime": "2026-04-26T06:01:48.283Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:56:26.554Z",
+        "syncedAt": "2026-10-25T08:02:30.829Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -33271,7 +34999,7 @@
       "lastEditedTime": "2026-04-26T06:01:38.930Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:56:26.928Z",
+        "syncedAt": "2026-10-25T08:02:31.211Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -34651,7 +36379,7 @@
       "lastEditedTime": "2026-04-26T06:01:30.977Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:56:27.360Z",
+        "syncedAt": "2026-10-25T08:02:31.602Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -38098,7 +39826,7 @@
       "lastEditedTime": "2026-04-26T09:30:54.153Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:56:34.424Z",
+        "syncedAt": "2026-10-25T08:02:38.351Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -39944,7 +41672,7 @@
       "lastEditedTime": "2026-04-26T06:01:19.421Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:56:34.945Z",
+        "syncedAt": "2026-10-25T08:02:38.853Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -40599,7 +42327,7 @@
       "lastEditedTime": "2026-04-26T06:01:18.708Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:56:38.610Z",
+        "syncedAt": "2026-10-25T08:02:43.630Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -41215,7 +42943,7 @@
       "lastEditedTime": "2026-04-26T06:55:47.814Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:56:45.827Z",
+        "syncedAt": "2026-10-25T08:02:50.507Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -41981,7 +43709,7 @@
       "lastEditedTime": "2026-04-26T06:01:20.987Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:56:46.187Z",
+        "syncedAt": "2026-10-25T08:02:50.910Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -44928,7 +46656,7 @@
       "lastEditedTime": "2026-04-26T06:01:41.469Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:57:53.657Z",
+        "syncedAt": "2026-10-25T08:03:58.603Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -46046,7 +47774,7 @@
       "lastEditedTime": "2026-04-26T06:01:29.393Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:58:02.000Z",
+        "syncedAt": "2026-10-25T08:04:13.218Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -46424,7 +48152,7 @@
       "lastEditedTime": "2026-04-26T06:12:38.613Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:58:04.470Z",
+        "syncedAt": "2026-10-25T08:04:16.929Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -49231,7 +50959,7 @@
       "lastEditedTime": "2026-04-26T06:01:54.548Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:59:19.764Z",
+        "syncedAt": "2026-10-25T08:05:35.264Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -49459,7 +51187,7 @@
       "lastEditedTime": "2026-04-26T06:01:50.892Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:59:23.620Z",
+        "syncedAt": "2026-10-25T08:05:39.494Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -50224,7 +51952,7 @@
       "lastEditedTime": "2026-04-26T06:48:35.462Z",
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-21T09:59:29.016Z",
+        "syncedAt": "2026-10-25T08:05:45.727Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
