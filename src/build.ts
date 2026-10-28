@@ -1,7 +1,7 @@
 import { mkdir, rm, copyFile, readdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import {
-  applySeo,
+  applySeo as renderSeo,
   breadcrumbJsonLd,
   canonicalUrl,
   collectionPageJsonLd,
@@ -11,6 +11,9 @@ import {
   siteUrl,
   websiteJsonLd,
 } from "./seo";
+import type { SeoMeta } from "./seo";
+import { blogSocialCard } from "./social-card.mjs";
+import { SocialImages } from "./render-social-image.mjs";
 
 type ProjectCategory = "current" | "exploration" | "history";
 type Language = "mix" | "en";
@@ -150,6 +153,27 @@ type BlogBlock = {
 
 const root = process.cwd();
 const outDir = join(root, "dist");
+const socialImages = new SocialImages();
+
+function applySeo(html: string, meta: SeoMeta): string {
+  const descriptions: Record<string, string> = {
+    "": "Apps, projects and writing by Ronnie Wong.",
+    "apps/": "aDict · SwiftChat · Trackly",
+    "projects.html": "Product engineering, interface design and experiments.",
+    "blog.html": "Notes on software, Apple platforms, AI workflows and design.",
+    "resume.html": "Product engineer and designer.",
+  };
+  const image = meta.image || socialImages.add({
+    key: `${meta.language}/${meta.path.replace(/\/$/, "").replace(/\.html$/, "") || "home"}`,
+    brand: "Ronnie Wong",
+    eyebrow: meta.path.startsWith("projects/") ? "Project" : meta.path === "blog.html" ? "Writing" : "Public index",
+    title: !meta.path ? "Public index\nfor useful systems." : meta.title.replace(/ · Ronnie Wong$/, ""),
+    description: descriptions[meta.path] || "",
+    address: "ronniewong.cc",
+    background: "#f4efe4",
+  });
+  return renderSeo(html, { ...meta, image });
+}
 const categoryOrder: ProjectCategory[] = ["current", "exploration", "history"];
 const categoryLabelsMix: Record<ProjectCategory, string> = {
   current: "現在",
@@ -1262,6 +1286,7 @@ function renderBlogPostPage(source: string, post: BlogPost, locale: Locale, prev
     path,
     canonical,
     title: `${post.title} · Ronnie Wong`,
+    image: socialImages.add(blogSocialCard(post)),
     description,
     type: "article",
     jsonLd: [
@@ -1492,7 +1517,8 @@ async function build(): Promise<void> {
   await writeOutput("rss.xml", renderRss(blogData.posts));
   await writeOutput("robots.txt", "User-agent: *\nAllow: /\n\nSitemap: https://ronniewong-sitemaps.ronnie.workers.dev/ronniecc.xml\n");
 
-  console.log(`Built dist with ${projects.length} projects and ${blogData.posts.length} blog posts.`);
+  const socialImageCount = await socialImages.write(outDir);
+  console.log(`Built dist with ${projects.length} projects, ${blogData.posts.length} blog posts and ${socialImageCount} social images.`);
 }
 
 build().catch((error) => {

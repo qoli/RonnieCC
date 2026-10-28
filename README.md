@@ -57,6 +57,10 @@ Both language versions use their own canonical URLs and reciprocal `hreflang` li
 
 ## Local Preview
 
+Run `bun install --frozen-lockfile` before the first build. Social preview images
+are rendered at build time with resvg and the bundled OFL-licensed Noto Sans CJK
+font. The font and renderer are build tools; they are not copied into the site.
+
 Build and serve `dist/`:
 
 ```sh
@@ -71,6 +75,29 @@ http://127.0.0.1:4180/
 ```
 
 The source HTML files can still be served directly for development fallback, but SEO-facing checks should use `dist/`.
+
+## Social previews
+
+Every indexable page supplies a 1200 × 630 PNG, image dimensions, descriptive alt
+text and matching Open Graph/X image URLs. Home, Apps, project listings, individual
+projects, Blog and Resume have their own covers. Article covers use the article
+title, including reviewed English titles, rather than the global site image.
+
+`src/social-card.mjs` defines the shared Blog `socialImage` contract (`url`,
+`width`, `height`, `alt`). Normal Notion sync populates it; `bun run sync:social`
+refreshes just that metadata from the current cached seed. Then `bun run build`
+renders the corresponding files into `dist/social/`. Mirrors preserve this
+metadata and use the same article art. Publish RonnieCC before dependent mirrors.
+Content-based filenames change when a title or cover design changes.
+
+Run `bun run check:social` for renderer/contract checks. Static product cards can
+also be regenerated from a site's `social-cards.json` with
+`node scripts/render-social-cards.mjs <cards.json> <public-directory> <images.json>`.
+The output includes PNGs, outlined self-contained SVG sources and a route/image
+manifest. WebP artwork conversion requires ImageMagick during regeneration only.
+For buildless sites, apply that manifest to existing fixed HTML pages with
+`node scripts/apply-static-social-meta.mjs <cards.json> <images.json> <public-directory>`;
+Blog generators apply article metadata separately.
 
 ## Blog Sync
 

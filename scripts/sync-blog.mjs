@@ -2,6 +2,7 @@
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { blogSocialImage } from "../src/social-card.mjs";
 import { compactId, fetchCollection, fetchPageById, idToUuid, notionText, recordValue, rowsFromCollection } from "./notion-sync/notion-api.mjs";
 
 const databaseId = "60ac1b36c401837598a501cc8b7ea241";
@@ -361,22 +362,25 @@ function normalizePost(row, canonicalOwners) {
   const legacySlug = legacyPostSlug(row);
   const postSubsites = subsites(row);
   const publishTargets = [defaultPublishTarget, ...postSubsites];
+  const title = String(row.Name || "").trim();
+  const canonical = canonicalForPost({ id, slug, publishTargets }, canonicalOwners);
   return {
     id,
     slug,
     seoSlug,
     legacySlugs: legacySlug !== slug ? [legacySlug] : [],
-    title: String(row.Name || "").trim(),
+    title,
     tag: String(row.Tag || "").trim(),
     writtenDate,
     year,
     public: isPublic(row),
     subsites: postSubsites,
     publishTargets,
-    canonical: canonicalForPost({ id, slug, publishTargets }, canonicalOwners),
+    canonical,
     notionUrl: notionPageUrl(row),
     createdTime: row.createdTime || "",
     lastEditedTime: row.lastEditedTime || "",
+    socialImage: blogSocialImage({ slug, title, canonical }),
   };
 }
 

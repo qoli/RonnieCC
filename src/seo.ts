@@ -7,6 +7,7 @@ export type SeoMeta = {
   title: string;
   description: string;
   type?: "website" | "profile" | "article";
+  image?: { url: string; width: number; height: number; alt: string };
   jsonLd?: unknown[];
 };
 
@@ -103,6 +104,7 @@ export function renderSeoHead(meta: SeoMeta): string {
   const info = languageInfo[meta.language];
   const type = meta.type === "article" ? "article" : meta.type === "profile" ? "profile" : "website";
   const jsonLd = meta.jsonLd || [];
+  const image = meta.image || { url: defaultSocialImage, width: 1200, height: 630, alt: `${siteName} public index` };
 
   return [
     metaTag("author", siteName),
@@ -112,17 +114,18 @@ export function renderSeoHead(meta: SeoMeta): string {
     propertyTag("og:title", meta.title),
     propertyTag("og:description", meta.description),
     propertyTag("og:url", canonical),
-    propertyTag("og:image", defaultSocialImage),
-    propertyTag("og:image:width", "1200"),
-    propertyTag("og:image:height", "630"),
-    propertyTag("og:image:alt", `${siteName} public index`),
+    propertyTag("og:image", image.url),
+    propertyTag("og:image:type", "image/png"),
+    propertyTag("og:image:width", String(image.width)),
+    propertyTag("og:image:height", String(image.height)),
+    propertyTag("og:image:alt", image.alt),
     propertyTag("og:locale", info.ogLocale),
     propertyTag("og:locale:alternate", info.alternateLocale),
     metaTag("twitter:card", "summary_large_image"),
     metaTag("twitter:title", meta.title),
     metaTag("twitter:description", meta.description),
-    metaTag("twitter:image", defaultSocialImage),
-    metaTag("twitter:image:alt", `${siteName} public index`),
+    metaTag("twitter:image", image.url),
+    metaTag("twitter:image:alt", image.alt),
     metaTag("twitter:site", "@llqoli"),
     metaTag("twitter:creator", "@llqoli"),
     ...(ownsCanonical
