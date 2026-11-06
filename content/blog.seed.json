@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-11-06T21:21:41.021Z",
+  "generatedAt": "2026-11-06T22:11:19.872Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -33,7 +33,7 @@
       },
       "notionUrl": "https://www.notion.so/qoli/trackly-%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8-%E8%A8%AD%E5%AE%9A%E8%83%8C%E9%9D%A2%E8%BC%95%E9%BB%9E-410c1b36c4018135a06dc0c82c79915b?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-11-06T20:54:32.099Z",
-      "lastEditedTime": "2026-11-06T21:13:17.346Z",
+      "lastEditedTime": "2026-11-06T22:01:34.245Z",
       "socialImage": {
         "url": "https://ronniewong.cc/social/blog/trackly-back-tap-setup-410c1b36-4392af57322f.png",
         "width": 1200,
@@ -42,7 +42,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:15:20.364Z",
+        "syncedAt": "2026-11-06T22:02:15.790Z",
         "blocks": [
           {
             "id": "96e7dfdf58784bc5816c65e39e0e599b",
@@ -99,64 +99,16 @@
             "children": []
           },
           {
-            "id": "b2585029e12a48e6a6d795654fc36532",
+            "id": "5da1dc59e074494582f0e39c70e2420c",
             "type": "sub_header",
             "richText": [
               {
-                "text": "1. 打開「背面輕點」",
+                "text": "設定背面輕點",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "1. 打開「背面輕點」",
-            "caption": [],
-            "language": "",
-            "source": "",
-            "assetPath": "",
-            "tableColumns": [],
-            "tableHasColumnHeader": false,
-            "tableHasRowHeader": false,
-            "tableCells": {},
-            "children": []
-          },
-          {
-            "id": "5046e73c1a304c3a873636ee52f5adb8",
-            "type": "image",
-            "richText": [
-              {
-                "text": "trackly-back-tap-settings-path.png",
-                "annotations": [],
-                "href": ""
-              }
-            ],
-            "plainText": "trackly-back-tap-settings-path.png",
-            "caption": [
-              {
-                "text": "設定 → 輔助使用 → 觸控 → 背面輕點",
-                "annotations": [],
-                "href": ""
-              }
-            ],
-            "language": "",
-            "source": "attachment:7357d8fc-31b7-4a6d-a3a9-a12c8a51224c:trackly-back-tap-settings-path.png",
-            "assetPath": "content/blog-assets/410c1b36c4018135a06dc0c82c79915b/5046e73c1a304c3a873636ee52f5adb8-trackly-back-tap-settings-path.png",
-            "tableColumns": [],
-            "tableHasColumnHeader": false,
-            "tableHasRowHeader": false,
-            "tableCells": {},
-            "children": []
-          },
-          {
-            "id": "5da1dc59e074494582f0e39c70e2420c",
-            "type": "text",
-            "richText": [
-              {
-                "text": "到 iPhone 的「設定」→「輔助使用」→「觸控」，向下滑動並點「背面輕點」。",
-                "annotations": [],
-                "href": ""
-              }
-            ],
-            "plainText": "到 iPhone 的「設定」→「輔助使用」→「觸控」，向下滑動並點「背面輕點」。",
+            "plainText": "設定背面輕點",
             "caption": [],
             "language": "",
             "source": "",
@@ -169,15 +121,15 @@
           },
           {
             "id": "7df378137ae24e1cbe435b5f6d91ece3",
-            "type": "sub_header",
+            "type": "numbered_list",
             "richText": [
               {
-                "text": "2. 選擇點法並指定 Trackly Action",
+                "text": "打開 iPhone 的「設定」→「輔助使用」→「觸控」。往下捲動，點「背面輕點」。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "2. 選擇點法並指定 Trackly Action",
+            "plainText": "打開 iPhone 的「設定」→「輔助使用」→「觸控」。往下捲動，點「背面輕點」。",
             "caption": [],
             "language": "",
             "source": "",
@@ -189,38 +141,11 @@
             "children": []
           },
           {
-            "id": "e577b8f5e0284414986e9d87790d9733",
-            "type": "image",
+            "id": "d6bb16fa9c4049dfad4c1aa881f9f19b",
+            "type": "numbered_list",
             "richText": [
               {
-                "text": "trackly-back-tap-choose-action.png",
-                "annotations": [],
-                "href": ""
-              }
-            ],
-            "plainText": "trackly-back-tap-choose-action.png",
-            "caption": [
-              {
-                "text": "點兩下或點三下 → 捷徑 → Trackly Action",
-                "annotations": [],
-                "href": ""
-              }
-            ],
-            "language": "",
-            "source": "attachment:218d60c2-552d-47b6-9d39-89d17a872eeb:trackly-back-tap-choose-action.png",
-            "assetPath": "content/blog-assets/410c1b36c4018135a06dc0c82c79915b/e577b8f5e0284414986e9d87790d9733-trackly-back-tap-choose-action.png",
-            "tableColumns": [],
-            "tableHasColumnHeader": false,
-            "tableHasRowHeader": false,
-            "tableCells": {},
-            "children": []
-          },
-          {
-            "id": "2de0ecd6abe443bcbbb17ba11e25d9a2",
-            "type": "text",
-            "richText": [
-              {
-                "text": "點「點兩下」或「點三下」，只要設定其中一種。滑到「捷徑」區，點 ",
+                "text": "選「點兩下」或「點三下」。在動作清單往下捲到「捷徑」區，選 ",
                 "annotations": [],
                 "href": ""
               },
@@ -237,7 +162,40 @@
                 "href": ""
               }
             ],
-            "plainText": "點「點兩下」或「點三下」，只要設定其中一種。滑到「捷徑」區，點 Trackly Action。",
+            "plainText": "選「點兩下」或「點三下」。在動作清單往下捲到「捷徑」區，選 Trackly Action。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2de0ecd6abe443bcbbb17ba11e25d9a2",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "返回「背面輕點」。看到你選的手勢旁顯示 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Action",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，就設定好了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "返回「背面輕點」。看到你選的手勢旁顯示 Trackly Action，就設定好了。",
             "caption": [],
             "language": "",
             "source": "",
@@ -253,7 +211,7 @@
             "type": "text",
             "richText": [
               {
-                "text": "回到「背面輕點」畫面，確認你選的點法顯示 ",
+                "text": "如果動作清單裡找不到 ",
                 "annotations": [],
                 "href": ""
               },
@@ -265,12 +223,12 @@
                 "href": ""
               },
               {
-                "text": "。",
+                "text": "，到「捷徑」App 的「所有捷徑」確認它已加入，再回到「背面輕點」選取。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "回到「背面輕點」畫面，確認你選的點法顯示 Trackly Action。",
+            "plainText": "如果動作清單裡找不到 Trackly Action，到「捷徑」App 的「所有捷徑」確認它已加入，再回到「背面輕點」選取。",
             "caption": [],
             "language": "",
             "source": "",
@@ -328,7 +286,7 @@
             "type": "text",
             "richText": [
               {
-                "text": "影片以「截圖」示範如何指定動作。設定 Trackly 時，在「捷徑」區選 ",
+                "text": "影片使用英文介面，並以「截圖」為例。跟著影片找到動作清單，再按上面的步驟選 ",
                 "annotations": [],
                 "href": ""
               },
@@ -343,9 +301,16 @@
                 "text": "。",
                 "annotations": [],
                 "href": ""
+              },
+              {
+                "text": "從 0:06 看設定示範",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://www.youtube.com/watch?v=Z4ZeFJ65iXc&t=6s"
               }
             ],
-            "plainText": "影片以「截圖」示範如何指定動作。設定 Trackly 時，在「捷徑」區選 Trackly Action。",
+            "plainText": "影片使用英文介面，並以「截圖」為例。跟著影片找到動作清單，再按上面的步驟選 Trackly Action。從 0:06 看設定示範",
             "caption": [],
             "language": "",
             "source": "",
@@ -416,7 +381,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:15:26.255Z",
+        "syncedAt": "2026-11-06T22:02:16.142Z",
         "blocks": [
           {
             "id": "1ed2e29cca8a4795b3c4258af9902830",
@@ -781,7 +746,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:15:34.219Z",
+        "syncedAt": "2026-11-06T22:02:28.710Z",
         "blocks": [
           {
             "id": "384d26859dc84ef7bca80c7ca3abd64b",
@@ -2518,7 +2483,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:15:42.736Z",
+        "syncedAt": "2026-11-06T22:02:44.147Z",
         "blocks": [
           {
             "id": "9ba762b19de342d18628dc9399c70bf0",
@@ -5635,7 +5600,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:16:19.137Z",
+        "syncedAt": "2026-11-06T22:03:42.900Z",
         "blocks": [
           {
             "id": "3fdc1b36c40180e8b534e061c3b1cfa2",
@@ -6471,7 +6436,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:16:21.670Z",
+        "syncedAt": "2026-11-06T22:03:45.869Z",
         "blocks": [
           {
             "id": "3fbc1b36c40180579f01d99c30f0353a",
@@ -6884,7 +6849,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:16:22.024Z",
+        "syncedAt": "2026-11-06T22:03:46.195Z",
         "blocks": [
           {
             "id": "3fac1b36c40180a28146c3b1c2f731b5",
@@ -8128,7 +8093,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:16:24.422Z",
+        "syncedAt": "2026-11-06T22:03:48.402Z",
         "blocks": [
           {
             "id": "cb3df8ac876443f1a78aa70a415e11dc",
@@ -8743,7 +8708,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:16:24.801Z",
+        "syncedAt": "2026-11-06T22:03:48.741Z",
         "blocks": [
           {
             "id": "4fa0a3ed8cfc4e839b88e86cbac50200",
@@ -10008,7 +9973,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:16:33.710Z",
+        "syncedAt": "2026-11-06T22:04:01.700Z",
         "blocks": [
           {
             "id": "1dbb2abe68894e338264b1ecf6eba671",
@@ -10633,7 +10598,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:16:34.057Z",
+        "syncedAt": "2026-11-06T22:04:02.056Z",
         "blocks": [
           {
             "id": "8b9773492bb84438806dc6a9e9865d74",
@@ -13381,7 +13346,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:16:34.434Z",
+        "syncedAt": "2026-11-06T22:04:02.436Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -14804,7 +14769,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:16:39.924Z",
+        "syncedAt": "2026-11-06T22:04:09.419Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -17809,7 +17774,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:17:04.215Z",
+        "syncedAt": "2026-11-06T22:04:49.888Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -18487,7 +18452,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:17:04.561Z",
+        "syncedAt": "2026-11-06T22:04:50.247Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -19195,7 +19160,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:17:04.926Z",
+        "syncedAt": "2026-11-06T22:04:50.586Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -20846,7 +20811,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:17:13.427Z",
+        "syncedAt": "2026-11-06T22:04:58.458Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -21599,7 +21564,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:17:13.771Z",
+        "syncedAt": "2026-11-06T22:04:58.805Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -21950,7 +21915,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:17:14.131Z",
+        "syncedAt": "2026-11-06T22:04:59.138Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -24297,7 +24262,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:17:14.522Z",
+        "syncedAt": "2026-11-06T22:04:59.539Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -25320,7 +25285,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:17:24.769Z",
+        "syncedAt": "2026-11-06T22:05:15.362Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -27673,7 +27638,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:17:43.745Z",
+        "syncedAt": "2026-11-06T22:05:53.279Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -28860,7 +28825,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:17:47.085Z",
+        "syncedAt": "2026-11-06T22:05:56.792Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -29454,7 +29419,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:17:59.702Z",
+        "syncedAt": "2026-11-06T22:06:16.833Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -31656,7 +31621,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:18:00.077Z",
+        "syncedAt": "2026-11-06T22:06:17.194Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -32385,7 +32350,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:18:00.430Z",
+        "syncedAt": "2026-11-06T22:06:17.528Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -33159,7 +33124,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:18:00.780Z",
+        "syncedAt": "2026-11-06T22:06:17.873Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -34309,7 +34274,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:18:16.739Z",
+        "syncedAt": "2026-11-06T22:06:48.092Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -35039,7 +35004,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:18:17.082Z",
+        "syncedAt": "2026-11-06T22:06:48.441Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -35915,7 +35880,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:18:17.423Z",
+        "syncedAt": "2026-11-06T22:06:48.773Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -37301,7 +37266,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:18:17.790Z",
+        "syncedAt": "2026-11-06T22:06:49.120Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -40754,7 +40719,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:18:23.667Z",
+        "syncedAt": "2026-11-06T22:06:58.347Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -42606,7 +42571,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:18:24.079Z",
+        "syncedAt": "2026-11-06T22:06:58.707Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -43267,7 +43232,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:18:28.076Z",
+        "syncedAt": "2026-11-06T22:07:02.706Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -43889,7 +43854,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:18:34.262Z",
+        "syncedAt": "2026-11-06T22:07:12.128Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -44661,7 +44626,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:18:34.617Z",
+        "syncedAt": "2026-11-06T22:07:12.461Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -47614,7 +47579,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:19:34.245Z",
+        "syncedAt": "2026-11-06T22:08:36.226Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -48738,7 +48703,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:19:40.670Z",
+        "syncedAt": "2026-11-06T22:08:43.047Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -49122,7 +49087,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:19:43.180Z",
+        "syncedAt": "2026-11-06T22:08:45.882Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -51935,7 +51900,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:20:56.006Z",
+        "syncedAt": "2026-11-06T22:10:32.395Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -52169,7 +52134,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:20:59.638Z",
+        "syncedAt": "2026-11-06T22:10:37.524Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -52940,7 +52905,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:21:05.520Z",
+        "syncedAt": "2026-11-06T22:10:44.490Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
