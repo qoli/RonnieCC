@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-11-06T21:12:06.626Z",
+  "generatedAt": "2026-11-06T21:21:41.021Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,748 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "410c1b36c4018135a06dc0c82c79915b",
+      "slug": "trackly-back-tap-setup-410c1b36",
+      "seoSlug": "trackly-back-tap-setup",
+      "legacySlugs": [
+        "trackly-使用教學-設定背面輕點-410c1b36"
+      ],
+      "title": "Trackly 使用教學｜設定背面輕點",
+      "tag": "Trackly,Product,iOS,Shortcut",
+      "writtenDate": "2026-11-07",
+      "year": "2026",
+      "public": true,
+      "subsites": [
+        "trackly"
+      ],
+      "publishTargets": [
+        "ronniecc",
+        "trackly"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/trackly-back-tap-setup-410c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/trackly-%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8-%E8%A8%AD%E5%AE%9A%E8%83%8C%E9%9D%A2%E8%BC%95%E9%BB%9E-410c1b36c4018135a06dc0c82c79915b?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-11-06T20:54:32.099Z",
+      "lastEditedTime": "2026-11-06T21:13:17.346Z",
+      "socialImage": {
+        "url": "https://ronniewong.cc/social/blog/trackly-back-tap-setup-410c1b36-4392af57322f.png",
+        "width": 1200,
+        "height": 630,
+        "alt": "Trackly 使用教學｜設定背面輕點 — Ronnie Wong"
+      },
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-11-06T21:15:20.364Z",
+        "blocks": [
+          {
+            "id": "96e7dfdf58784bc5816c65e39e0e599b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "設定後，在消費 App 的訂單詳情輕點 iPhone 背面兩下或三下，就能啟動 Trackly 的截圖記帳流程。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "設定後，在消費 App 的訂單詳情輕點 iPhone 背面兩下或三下，就能啟動 Trackly 的截圖記帳流程。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "50e3f5084afb4858b8c29d18ec6336ea",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在 Trackly 開啟「教學與捷徑」→「安裝捷徑」，先安裝 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Action",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，再安裝與你目前 iOS 版本相符的執行捷徑。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在 Trackly 開啟「教學與捷徑」→「安裝捷徑」，先安裝 Trackly Action，再安裝與你目前 iOS 版本相符的執行捷徑。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b2585029e12a48e6a6d795654fc36532",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "1. 打開「背面輕點」",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "1. 打開「背面輕點」",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5046e73c1a304c3a873636ee52f5adb8",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-back-tap-settings-path.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-back-tap-settings-path.png",
+            "caption": [
+              {
+                "text": "設定 → 輔助使用 → 觸控 → 背面輕點",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:7357d8fc-31b7-4a6d-a3a9-a12c8a51224c:trackly-back-tap-settings-path.png",
+            "assetPath": "content/blog-assets/410c1b36c4018135a06dc0c82c79915b/5046e73c1a304c3a873636ee52f5adb8-trackly-back-tap-settings-path.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "5da1dc59e074494582f0e39c70e2420c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "到 iPhone 的「設定」→「輔助使用」→「觸控」，向下滑動並點「背面輕點」。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "到 iPhone 的「設定」→「輔助使用」→「觸控」，向下滑動並點「背面輕點」。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "7df378137ae24e1cbe435b5f6d91ece3",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "2. 選擇點法並指定 Trackly Action",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "2. 選擇點法並指定 Trackly Action",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "e577b8f5e0284414986e9d87790d9733",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-back-tap-choose-action.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-back-tap-choose-action.png",
+            "caption": [
+              {
+                "text": "點兩下或點三下 → 捷徑 → Trackly Action",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:218d60c2-552d-47b6-9d39-89d17a872eeb:trackly-back-tap-choose-action.png",
+            "assetPath": "content/blog-assets/410c1b36c4018135a06dc0c82c79915b/e577b8f5e0284414986e9d87790d9733-trackly-back-tap-choose-action.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "2de0ecd6abe443bcbbb17ba11e25d9a2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "點「點兩下」或「點三下」，只要設定其中一種。滑到「捷徑」區，點 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Action",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "點「點兩下」或「點三下」，只要設定其中一種。滑到「捷徑」區，點 Trackly Action。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "96c27b86053c48a09e89400210d205cd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "回到「背面輕點」畫面，確認你選的點法顯示 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Action",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "回到「背面輕點」畫面，確認你選的點法顯示 Trackly Action。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f6ae0643bf6a4f989a8a2469737e6dbf",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Apple 官方示範",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Apple 官方示範",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "26375b57e3e84fefbb746935971c9305",
+            "type": "video",
+            "richText": [],
+            "plainText": "",
+            "caption": [
+              {
+                "text": "Apple Support 英文操作示範",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "https://www.youtube.com/watch?v=Z4ZeFJ65iXc",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f6196eed68d94aa088e5b754f8b790e2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "影片以「截圖」示範如何指定動作。設定 Trackly 時，在「捷徑」區選 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Action",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "影片以「截圖」示範如何指定動作。設定 Trackly 時，在「捷徑」區選 Trackly Action。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "721285caec4e4ec2b0b3e6018a75957e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Apple 的背面輕點使用說明",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://support.apple.com/zh-tw/guide/shortcuts/apd897693606/9.0/ios/26"
+              }
+            ],
+            "plainText": "Apple 的背面輕點使用說明",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "410c1b36c40181d2a3c8c74f0d8380ef",
+      "slug": "trackly-action-button-setup-410c1b36",
+      "seoSlug": "trackly-action-button-setup",
+      "legacySlugs": [
+        "trackly-使用教學-設定動作按鈕-410c1b36"
+      ],
+      "title": "Trackly 使用教學｜設定動作按鈕",
+      "tag": "Trackly,Product,iOS,Shortcut",
+      "writtenDate": "2026-11-07",
+      "year": "2026",
+      "public": true,
+      "subsites": [
+        "trackly"
+      ],
+      "publishTargets": [
+        "ronniecc",
+        "trackly"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/trackly-action-button-setup-410c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/trackly-%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8-%E8%A8%AD%E5%AE%9A%E5%8B%95%E4%BD%9C%E6%8C%89%E9%88%95-410c1b36c40181d2a3c8c74f0d8380ef?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-11-06T20:54:32.099Z",
+      "lastEditedTime": "2026-11-06T21:13:16.723Z",
+      "socialImage": {
+        "url": "https://ronniewong.cc/social/blog/trackly-action-button-setup-410c1b36-97cf1acb3689.png",
+        "width": 1200,
+        "height": 630,
+        "alt": "Trackly 使用教學｜設定動作按鈕 — Ronnie Wong"
+      },
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-11-06T21:15:26.255Z",
+        "blocks": [
+          {
+            "id": "1ed2e29cca8a4795b3c4258af9902830",
+            "type": "text",
+            "richText": [
+              {
+                "text": "設定後，在消費 App 的訂單詳情按住 iPhone 的動作按鈕，就能啟動 Trackly 的截圖記帳流程。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "設定後，在消費 App 的訂單詳情按住 iPhone 的動作按鈕，就能啟動 Trackly 的截圖記帳流程。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "b15961386a2d4d10b71fc03a6ae1cbc9",
+            "type": "text",
+            "richText": [
+              {
+                "text": "你需要一部配備動作按鈕的 iPhone。在 Trackly 開啟「教學與捷徑」→「安裝捷徑」，先安裝 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Action",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，再安裝與你目前 iOS 版本相符的執行捷徑。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "你需要一部配備動作按鈕的 iPhone。在 Trackly 開啟「教學與捷徑」→「安裝捷徑」，先安裝 Trackly Action，再安裝與你目前 iOS 版本相符的執行捷徑。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "74cb856774a5408e90739d0456ab3838",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "1. 打開「動作按鈕」",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "1. 打開「動作按鈕」",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "32aeb3c18d1e4b279e657efca3ce58f9",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-action-button-settings.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-action-button-settings.png",
+            "caption": [
+              {
+                "text": "「設定」主頁的「動作按鈕」入口",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:2ed3bb6d-389c-45aa-bc47-edb64fa4a238:trackly-action-button-settings.png",
+            "assetPath": "content/blog-assets/410c1b36c40181d2a3c8c74f0d8380ef/32aeb3c18d1e4b279e657efca3ce58f9-trackly-action-button-settings.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "813248e6073c4ad085c6c493fb12ab9d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "打開 iPhone 的「設定」，點「動作按鈕」。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "打開 iPhone 的「設定」，點「動作按鈕」。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f47ca20dc54f4f67bb85fe19c8225b8f",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "2. 滑到「捷徑」",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "2. 滑到「捷徑」",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "3c91cf2dc4ba4210982963e49214b731",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-action-button-choose-shortcut.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-action-button-choose-shortcut.png",
+            "caption": [
+              {
+                "text": "「捷徑」畫面中的藍色選擇按鈕",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:1115a607-3ae7-4661-b84a-526c3b490034:trackly-action-button-choose-shortcut.png",
+            "assetPath": "content/blog-assets/410c1b36c40181d2a3c8c74f0d8380ef/3c91cf2dc4ba4210982963e49214b731-trackly-action-button-choose-shortcut.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "56fb6aae37ac4c1d8adb0ba8cbb3d569",
+            "type": "text",
+            "richText": [
+              {
+                "text": "左右滑動找到「捷徑」，點下方的「選擇捷徑⋯」。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "左右滑動找到「捷徑」，點下方的「選擇捷徑⋯」。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "79f0533f80204c38a1860b0c6f89dcea",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "3. 選擇 Trackly Action",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "3. 選擇 Trackly Action",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "c3e0c87409a5431481c295d7761066c3",
+            "type": "image",
+            "richText": [
+              {
+                "text": "trackly-action-button-trackly-action.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "trackly-action-button-trackly-action.png",
+            "caption": [
+              {
+                "text": "「我的捷徑」中的 Trackly Action",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:3269dddf-eec0-4858-a21a-13daa40cb9fe:trackly-action-button-trackly-action.png",
+            "assetPath": "content/blog-assets/410c1b36c40181d2a3c8c74f0d8380ef/c3e0c87409a5431481c295d7761066c3-trackly-action-button-trackly-action.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "eaba8ec3f50f4ccb927bc286eb78573b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "點 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Action",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。回到「動作按鈕」畫面，看到這個名稱就設定好了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "點 Trackly Action。回到「動作按鈕」畫面，看到這個名稱就設定好了。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "33415d16fd504b01ad0a8e22d9053f1d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "日後只更新執行捷徑時，保留原本的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Action",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，就能沿用這個綁定。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "日後只更新執行捷徑時，保留原本的 Trackly Action，就能沿用這個綁定。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f234457b0cf942efaa22b6deef24407d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Apple 的動作按鈕使用說明",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://support.apple.com/zh-tw/guide/iphone/iphe89d61d66/27/ios/27"
+              }
+            ],
+            "plainText": "Apple 的動作按鈕使用說明",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "404c1b36c401817b8802f6901ec0ea38",
       "slug": "in-app-acceptance-for-ai-debugging-404c1b36",
@@ -39,7 +781,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:05:47.648Z",
+        "syncedAt": "2026-11-06T21:15:34.219Z",
         "blocks": [
           {
             "id": "384d26859dc84ef7bca80c7ca3abd64b",
@@ -1776,7 +2518,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:05:56.626Z",
+        "syncedAt": "2026-11-06T21:15:42.736Z",
         "blocks": [
           {
             "id": "9ba762b19de342d18628dc9399c70bf0",
@@ -4893,7 +5635,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:06:36.945Z",
+        "syncedAt": "2026-11-06T21:16:19.137Z",
         "blocks": [
           {
             "id": "3fdc1b36c40180e8b534e061c3b1cfa2",
@@ -5729,7 +6471,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:06:39.789Z",
+        "syncedAt": "2026-11-06T21:16:21.670Z",
         "blocks": [
           {
             "id": "3fbc1b36c40180579f01d99c30f0353a",
@@ -6142,7 +6884,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:06:40.276Z",
+        "syncedAt": "2026-11-06T21:16:22.024Z",
         "blocks": [
           {
             "id": "3fac1b36c40180a28146c3b1c2f731b5",
@@ -7386,7 +8128,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:06:42.570Z",
+        "syncedAt": "2026-11-06T21:16:24.422Z",
         "blocks": [
           {
             "id": "cb3df8ac876443f1a78aa70a415e11dc",
@@ -8001,7 +8743,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:06:43.048Z",
+        "syncedAt": "2026-11-06T21:16:24.801Z",
         "blocks": [
           {
             "id": "4fa0a3ed8cfc4e839b88e86cbac50200",
@@ -9266,7 +10008,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:06:51.945Z",
+        "syncedAt": "2026-11-06T21:16:33.710Z",
         "blocks": [
           {
             "id": "1dbb2abe68894e338264b1ecf6eba671",
@@ -9891,7 +10633,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:06:52.343Z",
+        "syncedAt": "2026-11-06T21:16:34.057Z",
         "blocks": [
           {
             "id": "8b9773492bb84438806dc6a9e9865d74",
@@ -12639,7 +13381,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:06:52.919Z",
+        "syncedAt": "2026-11-06T21:16:34.434Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -14062,7 +14804,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:06:57.588Z",
+        "syncedAt": "2026-11-06T21:16:39.924Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -17067,7 +17809,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:07:20.011Z",
+        "syncedAt": "2026-11-06T21:17:04.215Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -17745,7 +18487,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:07:20.411Z",
+        "syncedAt": "2026-11-06T21:17:04.561Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -18453,7 +19195,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:07:20.826Z",
+        "syncedAt": "2026-11-06T21:17:04.926Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -20104,7 +20846,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:07:28.854Z",
+        "syncedAt": "2026-11-06T21:17:13.427Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -20857,7 +21599,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:07:29.202Z",
+        "syncedAt": "2026-11-06T21:17:13.771Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -21208,7 +21950,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:07:29.541Z",
+        "syncedAt": "2026-11-06T21:17:14.131Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -23555,7 +24297,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:07:29.988Z",
+        "syncedAt": "2026-11-06T21:17:14.522Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -24578,7 +25320,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:07:40.276Z",
+        "syncedAt": "2026-11-06T21:17:24.769Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -26931,7 +27673,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:00.583Z",
+        "syncedAt": "2026-11-06T21:17:43.745Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -28118,7 +28860,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:04.880Z",
+        "syncedAt": "2026-11-06T21:17:47.085Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -28712,7 +29454,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:17.900Z",
+        "syncedAt": "2026-11-06T21:17:59.702Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -30914,7 +31656,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:18.451Z",
+        "syncedAt": "2026-11-06T21:18:00.077Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -31643,7 +32385,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:18.822Z",
+        "syncedAt": "2026-11-06T21:18:00.430Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -32417,7 +33159,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:19.209Z",
+        "syncedAt": "2026-11-06T21:18:00.780Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -33567,7 +34309,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:35.928Z",
+        "syncedAt": "2026-11-06T21:18:16.739Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -34297,7 +35039,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:36.351Z",
+        "syncedAt": "2026-11-06T21:18:17.082Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -35173,7 +35915,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:36.717Z",
+        "syncedAt": "2026-11-06T21:18:17.423Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -36559,7 +37301,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:37.103Z",
+        "syncedAt": "2026-11-06T21:18:17.790Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -40012,7 +40754,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:43.171Z",
+        "syncedAt": "2026-11-06T21:18:23.667Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -41864,7 +42606,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:43.697Z",
+        "syncedAt": "2026-11-06T21:18:24.079Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -42525,7 +43267,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:48.286Z",
+        "syncedAt": "2026-11-06T21:18:28.076Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -43147,7 +43889,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:55.232Z",
+        "syncedAt": "2026-11-06T21:18:34.262Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -43919,7 +44661,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:08:55.638Z",
+        "syncedAt": "2026-11-06T21:18:34.617Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -46872,7 +47614,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:09:53.267Z",
+        "syncedAt": "2026-11-06T21:19:34.245Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -47996,7 +48738,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:10:00.195Z",
+        "syncedAt": "2026-11-06T21:19:40.670Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -48380,7 +49122,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:10:02.766Z",
+        "syncedAt": "2026-11-06T21:19:43.180Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -51193,7 +51935,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:11:19.838Z",
+        "syncedAt": "2026-11-06T21:20:56.006Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -51427,7 +52169,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:11:23.277Z",
+        "syncedAt": "2026-11-06T21:20:59.638Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -52198,7 +52940,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T21:11:29.059Z",
+        "syncedAt": "2026-11-06T21:21:05.520Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
