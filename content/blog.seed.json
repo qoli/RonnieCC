@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-10-28T18:15:03.644Z",
+  "generatedAt": "2026-11-06T21:12:06.626Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -39,7 +39,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:09:01.670Z",
+        "syncedAt": "2026-11-06T21:05:47.648Z",
         "blocks": [
           {
             "id": "384d26859dc84ef7bca80c7ca3abd64b",
@@ -1776,7 +1776,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:09:10.731Z",
+        "syncedAt": "2026-11-06T21:05:56.626Z",
         "blocks": [
           {
             "id": "9ba762b19de342d18628dc9399c70bf0",
@@ -4893,7 +4893,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:09:46.165Z",
+        "syncedAt": "2026-11-06T21:06:36.945Z",
         "blocks": [
           {
             "id": "3fdc1b36c40180e8b534e061c3b1cfa2",
@@ -5729,7 +5729,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:09:48.503Z",
+        "syncedAt": "2026-11-06T21:06:39.789Z",
         "blocks": [
           {
             "id": "3fbc1b36c40180579f01d99c30f0353a",
@@ -6142,7 +6142,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:09:48.849Z",
+        "syncedAt": "2026-11-06T21:06:40.276Z",
         "blocks": [
           {
             "id": "3fac1b36c40180a28146c3b1c2f731b5",
@@ -7386,7 +7386,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:09:50.616Z",
+        "syncedAt": "2026-11-06T21:06:42.570Z",
         "blocks": [
           {
             "id": "cb3df8ac876443f1a78aa70a415e11dc",
@@ -8001,7 +8001,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:09:50.966Z",
+        "syncedAt": "2026-11-06T21:06:43.048Z",
         "blocks": [
           {
             "id": "4fa0a3ed8cfc4e839b88e86cbac50200",
@@ -9266,7 +9266,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:10:01.346Z",
+        "syncedAt": "2026-11-06T21:06:51.945Z",
         "blocks": [
           {
             "id": "1dbb2abe68894e338264b1ecf6eba671",
@@ -9891,7 +9891,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:10:01.736Z",
+        "syncedAt": "2026-11-06T21:06:52.343Z",
         "blocks": [
           {
             "id": "8b9773492bb84438806dc6a9e9865d74",
@@ -12639,7 +12639,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:10:02.143Z",
+        "syncedAt": "2026-11-06T21:06:52.919Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -14062,7 +14062,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:10:07.054Z",
+        "syncedAt": "2026-11-06T21:06:57.588Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -17067,7 +17067,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:10:31.021Z",
+        "syncedAt": "2026-11-06T21:07:20.011Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -17745,7 +17745,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:10:31.366Z",
+        "syncedAt": "2026-11-06T21:07:20.411Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -18453,7 +18453,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:10:31.693Z",
+        "syncedAt": "2026-11-06T21:07:20.826Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -20082,9 +20082,12 @@
       "writtenDate": "2026-07-22",
       "year": "2026",
       "public": true,
-      "subsites": [],
+      "subsites": [
+        "lyricglass"
+      ],
       "publishTargets": [
-        "ronniecc"
+        "ronniecc",
+        "lyricglass"
       ],
       "canonical": {
         "site": "ronniecc",
@@ -20092,7 +20095,7 @@
       },
       "notionUrl": "https://www.notion.so/qoli/%E9%9D%9C%E6%85%8B%E6%AD%8C%E8%A9%9E%E4%B9%9F%E8%83%BD%E5%85%88-%E8%B7%9F%E4%B8%8A-%E7%94%A8%E9%80%B2%E5%BA%A6%E6%8A%8A%E6%9C%AA%E7%9F%A5%E4%BD%8D%E7%BD%AE%E7%B8%AE%E5%88%B0%E4%B8%89%E8%A1%8C-3a4c1b36c40181f5a881d8abda0181f4?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-07-21T21:03:59.826Z",
-      "lastEditedTime": "2026-07-21T21:05:27.763Z",
+      "lastEditedTime": "2026-11-06T21:05:24.250Z",
       "socialImage": {
         "url": "https://ronniewong.cc/social/blog/static-lyric-three-line-positioning-3a4c1b36-4787ff3a7c3a.png",
         "width": 1200,
@@ -20101,7 +20104,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:10:37.647Z",
+        "syncedAt": "2026-11-06T21:07:28.854Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -20832,9 +20835,12 @@
       "writtenDate": "2026-07-21",
       "year": "2026",
       "public": true,
-      "subsites": [],
+      "subsites": [
+        "lyricglass"
+      ],
       "publishTargets": [
-        "ronniecc"
+        "ronniecc",
+        "lyricglass"
       ],
       "canonical": {
         "site": "ronniecc",
@@ -20842,7 +20848,7 @@
       },
       "notionUrl": "https://www.notion.so/qoli/lyricglass-a-private-single-device-lrclib-client-3a4c1b36c40181adb482ddaf963db07e?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-07-21T14:53:11.554Z",
-      "lastEditedTime": "2026-07-21T14:55:42.809Z",
+      "lastEditedTime": "2026-11-06T21:05:23.581Z",
       "socialImage": {
         "url": "https://ronniewong.cc/social/blog/lyricglass-lrclib-client-3a4c1b36-b5d5118c93e2.png",
         "width": 1200,
@@ -20851,7 +20857,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:10:38.594Z",
+        "syncedAt": "2026-11-06T21:07:29.202Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -21202,7 +21208,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:10:38.929Z",
+        "syncedAt": "2026-11-06T21:07:29.541Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -23549,7 +23555,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:10:39.380Z",
+        "syncedAt": "2026-11-06T21:07:29.988Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -24572,7 +24578,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:10:48.767Z",
+        "syncedAt": "2026-11-06T21:07:40.276Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -26925,7 +26931,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:11:11.851Z",
+        "syncedAt": "2026-11-06T21:08:00.583Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -28112,7 +28118,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:11:31.726Z",
+        "syncedAt": "2026-11-06T21:08:04.880Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -28706,7 +28712,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:11:44.733Z",
+        "syncedAt": "2026-11-06T21:08:17.900Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -30908,7 +30914,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:11:45.090Z",
+        "syncedAt": "2026-11-06T21:08:18.451Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -31637,7 +31643,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:11:45.414Z",
+        "syncedAt": "2026-11-06T21:08:18.822Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -32411,7 +32417,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:11:45.736Z",
+        "syncedAt": "2026-11-06T21:08:19.209Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -33561,7 +33567,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:12:03.078Z",
+        "syncedAt": "2026-11-06T21:08:35.928Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -34291,7 +34297,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:12:03.466Z",
+        "syncedAt": "2026-11-06T21:08:36.351Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -35167,7 +35173,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:12:03.806Z",
+        "syncedAt": "2026-11-06T21:08:36.717Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -36553,7 +36559,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:12:04.174Z",
+        "syncedAt": "2026-11-06T21:08:37.103Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -40006,7 +40012,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:12:10.138Z",
+        "syncedAt": "2026-11-06T21:08:43.171Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -41858,7 +41864,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:12:10.549Z",
+        "syncedAt": "2026-11-06T21:08:43.697Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -42519,7 +42525,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:12:13.394Z",
+        "syncedAt": "2026-11-06T21:08:48.286Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -43141,7 +43147,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:12:19.085Z",
+        "syncedAt": "2026-11-06T21:08:55.232Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -43913,7 +43919,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:12:19.460Z",
+        "syncedAt": "2026-11-06T21:08:55.638Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -46866,7 +46872,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:13:14.472Z",
+        "syncedAt": "2026-11-06T21:09:53.267Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -47990,7 +47996,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:13:20.336Z",
+        "syncedAt": "2026-11-06T21:10:00.195Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -48374,7 +48380,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:13:22.416Z",
+        "syncedAt": "2026-11-06T21:10:02.766Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -51187,7 +51193,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:14:26.494Z",
+        "syncedAt": "2026-11-06T21:11:19.838Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -51421,7 +51427,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:14:29.942Z",
+        "syncedAt": "2026-11-06T21:11:23.277Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -52192,7 +52198,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-10-28T18:14:34.965Z",
+        "syncedAt": "2026-11-06T21:11:29.059Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",

@@ -35,8 +35,8 @@ purpose-built landing page for the article; the named owner must also be one of 
 post's publish targets and an allowlisted site. Unused entries fail the sync instead
 of silently drifting. RonnieCC remains the default owner.
 
-The first supported `子站點` option is `aDict`. It is normalized to the stable
-subsite id `adict` in the generated JSON.
+The `子站點` options `aDict`, `Trackly`, `SwiftChat` and `LyricGlass` are normalized
+to `adict`, `trackly`, `swiftchat` and `lyricglass` in the generated JSON.
 
 ## Generated Post Fields
 
@@ -96,7 +96,7 @@ A subsite should:
 4. Set each article canonical to `post.canonical.url`. A product subsite that is the
    declared owner therefore emits a self-canonical; other copies point to that owner.
 5. Copy or otherwise serve the referenced `content/blog-assets/` files.
-6. Include only mirrored subsite URLs in the subsite sitemap.
+6. Include only URLs whose canonical owner is the subsite in its sitemap.
 
 Example filter for the aDict subsite:
 
