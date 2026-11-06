@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-11-06T22:11:19.872Z",
+  "generatedAt": "2026-11-06T22:30:55.562Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -33,7 +33,7 @@
       },
       "notionUrl": "https://www.notion.so/qoli/trackly-%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8-%E8%A8%AD%E5%AE%9A%E8%83%8C%E9%9D%A2%E8%BC%95%E9%BB%9E-410c1b36c4018135a06dc0c82c79915b?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-11-06T20:54:32.099Z",
-      "lastEditedTime": "2026-11-06T22:01:34.245Z",
+      "lastEditedTime": "2026-11-06T22:23:55.253Z",
       "socialImage": {
         "url": "https://ronniewong.cc/social/blog/trackly-back-tap-setup-410c1b36-4392af57322f.png",
         "width": 1200,
@@ -42,7 +42,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:02:15.790Z",
+        "syncedAt": "2026-11-06T22:24:33.119Z",
         "blocks": [
           {
             "id": "96e7dfdf58784bc5816c65e39e0e599b",
@@ -244,12 +244,12 @@
             "type": "sub_header",
             "richText": [
               {
-                "text": "Apple 官方示範",
+                "text": "示範影片與官方說明",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "Apple 官方示範",
+            "plainText": "示範影片與官方說明",
             "caption": [],
             "language": "",
             "source": "",
@@ -261,32 +261,11 @@
             "children": []
           },
           {
-            "id": "26375b57e3e84fefbb746935971c9305",
-            "type": "video",
-            "richText": [],
-            "plainText": "",
-            "caption": [
-              {
-                "text": "Apple Support 英文操作示範",
-                "annotations": [],
-                "href": ""
-              }
-            ],
-            "language": "",
-            "source": "https://www.youtube.com/watch?v=Z4ZeFJ65iXc",
-            "assetPath": "",
-            "tableColumns": [],
-            "tableHasColumnHeader": false,
-            "tableHasRowHeader": false,
-            "tableCells": {},
-            "children": []
-          },
-          {
-            "id": "f6196eed68d94aa088e5b754f8b790e2",
+            "id": "ba9acb510bc1435cbc0878b33e3115a5",
             "type": "text",
             "richText": [
               {
-                "text": "影片使用英文介面，並以「截圖」為例。跟著影片找到動作清單，再按上面的步驟選 ",
+                "text": "影片示範如何找到「背面輕點」設定。進入動作清單後，依照上方步驟選 ",
                 "annotations": [],
                 "href": ""
               },
@@ -301,16 +280,32 @@
                 "text": "。",
                 "annotations": [],
                 "href": ""
-              },
+              }
+            ],
+            "plainText": "影片示範如何找到「背面輕點」設定。進入動作清單後，依照上方步驟選 Trackly Action。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "f6196eed68d94aa088e5b754f8b790e2",
+            "type": "bulleted_list",
+            "richText": [
               {
-                "text": "從 0:06 看設定示範",
+                "text": "Bilibili 中文示範（Apple资讯集轉載）",
                 "annotations": [
                   "a"
                 ],
-                "href": "https://www.youtube.com/watch?v=Z4ZeFJ65iXc&t=6s"
+                "href": "https://www.bilibili.com/video/BV1S54y1W7Mu/"
               }
             ],
-            "plainText": "影片使用英文介面，並以「截圖」為例。跟著影片找到動作清單，再按上面的步驟選 Trackly Action。從 0:06 看設定示範",
+            "plainText": "Bilibili 中文示範（Apple资讯集轉載）",
             "caption": [],
             "language": "",
             "source": "",
@@ -323,17 +318,57 @@
           },
           {
             "id": "721285caec4e4ec2b0b3e6018a75957e",
-            "type": "text",
+            "type": "bulleted_list",
             "richText": [
               {
-                "text": "Apple 的背面輕點使用說明",
+                "text": "YouTube｜Apple Support 英文示範（從 0:06 開始）",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://www.youtube.com/watch?v=Z4ZeFJ65iXc&t=6s"
+              }
+            ],
+            "plainText": "YouTube｜Apple Support 英文示範（從 0:06 開始）",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "a7cac3be94fd44a28eaeee6a9a996643",
+            "type": "bulleted_list",
+            "richText": [
+              {
+                "text": "Apple 官方文字說明 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "簡體中文",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://support.apple.com/zh-cn/guide/iphone/iphaa57e7885/27/ios/27"
+              },
+              {
+                "text": " · ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "繁體中文",
                 "annotations": [
                   "a"
                 ],
                 "href": "https://support.apple.com/zh-tw/guide/shortcuts/apd897693606/9.0/ios/26"
               }
             ],
-            "plainText": "Apple 的背面輕點使用說明",
+            "plainText": "Apple 官方文字說明 簡體中文 · 繁體中文",
             "caption": [],
             "language": "",
             "source": "",
@@ -381,7 +416,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:02:16.142Z",
+        "syncedAt": "2026-11-06T22:24:33.484Z",
         "blocks": [
           {
             "id": "1ed2e29cca8a4795b3c4258af9902830",
@@ -746,7 +781,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:02:28.710Z",
+        "syncedAt": "2026-11-06T22:24:42.346Z",
         "blocks": [
           {
             "id": "384d26859dc84ef7bca80c7ca3abd64b",
@@ -2483,7 +2518,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:02:44.147Z",
+        "syncedAt": "2026-11-06T22:24:50.859Z",
         "blocks": [
           {
             "id": "9ba762b19de342d18628dc9399c70bf0",
@@ -5600,7 +5635,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:03:42.900Z",
+        "syncedAt": "2026-11-06T22:25:28.190Z",
         "blocks": [
           {
             "id": "3fdc1b36c40180e8b534e061c3b1cfa2",
@@ -6436,7 +6471,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:03:45.869Z",
+        "syncedAt": "2026-11-06T22:25:30.816Z",
         "blocks": [
           {
             "id": "3fbc1b36c40180579f01d99c30f0353a",
@@ -6849,7 +6884,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:03:46.195Z",
+        "syncedAt": "2026-11-06T22:25:31.159Z",
         "blocks": [
           {
             "id": "3fac1b36c40180a28146c3b1c2f731b5",
@@ -8093,7 +8128,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:03:48.402Z",
+        "syncedAt": "2026-11-06T22:25:33.436Z",
         "blocks": [
           {
             "id": "cb3df8ac876443f1a78aa70a415e11dc",
@@ -8708,7 +8743,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:03:48.741Z",
+        "syncedAt": "2026-11-06T22:25:33.787Z",
         "blocks": [
           {
             "id": "4fa0a3ed8cfc4e839b88e86cbac50200",
@@ -9973,7 +10008,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:04:01.700Z",
+        "syncedAt": "2026-11-06T22:25:43.502Z",
         "blocks": [
           {
             "id": "1dbb2abe68894e338264b1ecf6eba671",
@@ -10598,7 +10633,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:04:02.056Z",
+        "syncedAt": "2026-11-06T22:25:43.920Z",
         "blocks": [
           {
             "id": "8b9773492bb84438806dc6a9e9865d74",
@@ -13346,7 +13381,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:04:02.436Z",
+        "syncedAt": "2026-11-06T22:25:44.287Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -14769,7 +14804,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:04:09.419Z",
+        "syncedAt": "2026-11-06T22:25:49.591Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -17774,7 +17809,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:04:49.888Z",
+        "syncedAt": "2026-11-06T22:26:13.902Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -18452,7 +18487,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:04:50.247Z",
+        "syncedAt": "2026-11-06T22:26:14.313Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -19160,7 +19195,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:04:50.586Z",
+        "syncedAt": "2026-11-06T22:26:14.726Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -20811,7 +20846,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:04:58.458Z",
+        "syncedAt": "2026-11-06T22:26:21.870Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -21564,7 +21599,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:04:58.805Z",
+        "syncedAt": "2026-11-06T22:26:22.211Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -21915,7 +21950,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:04:59.138Z",
+        "syncedAt": "2026-11-06T22:26:22.584Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -24262,7 +24297,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:04:59.539Z",
+        "syncedAt": "2026-11-06T22:26:22.977Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -25285,7 +25320,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:05:15.362Z",
+        "syncedAt": "2026-11-06T22:26:33.423Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -27638,7 +27673,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:05:53.279Z",
+        "syncedAt": "2026-11-06T22:26:54.515Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -28825,7 +28860,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:05:56.792Z",
+        "syncedAt": "2026-11-06T22:26:57.443Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -29419,7 +29454,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:06:16.833Z",
+        "syncedAt": "2026-11-06T22:27:10.814Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -31621,7 +31656,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:06:17.194Z",
+        "syncedAt": "2026-11-06T22:27:11.170Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -32350,7 +32385,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:06:17.528Z",
+        "syncedAt": "2026-11-06T22:27:11.509Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -33124,7 +33159,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:06:17.873Z",
+        "syncedAt": "2026-11-06T22:27:11.845Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -34274,7 +34309,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:06:48.092Z",
+        "syncedAt": "2026-11-06T22:27:27.527Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -35004,7 +35039,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:06:48.441Z",
+        "syncedAt": "2026-11-06T22:27:27.868Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -35880,7 +35915,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:06:48.773Z",
+        "syncedAt": "2026-11-06T22:27:28.213Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -37266,7 +37301,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:06:49.120Z",
+        "syncedAt": "2026-11-06T22:27:28.576Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -40719,7 +40754,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:06:58.347Z",
+        "syncedAt": "2026-11-06T22:27:36.666Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -42571,7 +42606,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:06:58.707Z",
+        "syncedAt": "2026-11-06T22:27:37.039Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -43232,7 +43267,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:07:02.706Z",
+        "syncedAt": "2026-11-06T22:27:41.361Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -43854,7 +43889,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:07:12.128Z",
+        "syncedAt": "2026-11-06T22:27:47.651Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -44626,7 +44661,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:07:12.461Z",
+        "syncedAt": "2026-11-06T22:27:48.032Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -47579,7 +47614,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:08:36.226Z",
+        "syncedAt": "2026-11-06T22:28:47.883Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -48703,7 +48738,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:08:43.047Z",
+        "syncedAt": "2026-11-06T22:28:54.633Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -49087,7 +49122,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:08:45.882Z",
+        "syncedAt": "2026-11-06T22:28:57.250Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -51900,7 +51935,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:10:32.395Z",
+        "syncedAt": "2026-11-06T22:30:10.817Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -52134,7 +52169,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:10:37.524Z",
+        "syncedAt": "2026-11-06T22:30:14.423Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -52905,7 +52940,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:10:44.490Z",
+        "syncedAt": "2026-11-06T22:30:20.719Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
