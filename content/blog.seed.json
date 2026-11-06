@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-11-06T22:30:55.562Z",
+  "generatedAt": "2026-11-06T22:56:48.967Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8734,7 +8734,7 @@
       },
       "notionUrl": "https://www.notion.so/qoli/trackly-%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8-%E6%88%AA%E5%9C%96%E5%B0%B1%E8%83%BD%E8%A8%98%E5%B8%B3-iphone-3f8c1b36c4018125aba4eba430ea485a?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-10-13T07:50:02.549Z",
-      "lastEditedTime": "2026-10-14T09:01:06.532Z",
+      "lastEditedTime": "2026-11-06T22:40:47.756Z",
       "socialImage": {
         "url": "https://ronniewong.cc/social/blog/trackly-iphone-screenshot-expense-guide-3f8c1b36-5d1e32ec33a0.png",
         "width": 1200,
@@ -8743,7 +8743,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:25:33.787Z",
+        "syncedAt": "2026-11-06T22:56:45.744Z",
         "blocks": [
           {
             "id": "4fa0a3ed8cfc4e839b88e86cbac50200",
@@ -9144,37 +9144,28 @@
             "children": []
           },
           {
-            "id": "842887be2bb3467f9f07607cc7060c02",
-            "type": "numbered_list",
-            "richText": [
-              {
-                "text": "開啟 Trackly 提供的「記帳捷徑」安裝入口。",
-                "annotations": [],
-                "href": ""
-              }
-            ],
-            "plainText": "開啟 Trackly 提供的「記帳捷徑」安裝入口。",
-            "caption": [],
-            "language": "",
-            "source": "",
-            "assetPath": "",
-            "tableColumns": [],
-            "tableHasColumnHeader": false,
-            "tableHasRowHeader": false,
-            "tableCells": {},
-            "children": []
-          },
-          {
             "id": "881f0767516d448e84ca4b0945adf183",
             "type": "numbered_list",
             "richText": [
               {
-                "text": "系統會顯示 Apple「捷徑」的加入頁面；確認內容後，點選「加入捷徑」。",
+                "text": "依 iPhone 的 iOS 版本選擇執行捷徑。要從動作按鈕啟動記帳時，再加入 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Action",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "系統會顯示 Apple「捷徑」的加入頁面；確認內容後，點選「加入捷徑」。",
+            "plainText": "依 iPhone 的 iOS 版本選擇執行捷徑。要從動作按鈕啟動記帳時，再加入 Trackly Action。",
             "caption": [],
             "language": "",
             "source": "",
@@ -9190,12 +9181,12 @@
             "type": "numbered_list",
             "richText": [
               {
-                "text": "加入後，即可從「捷徑」App 執行。",
+                "text": "在 Apple「捷徑」的加入頁面點「加入捷徑」。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "加入後，即可從「捷徑」App 執行。",
+            "plainText": "在 Apple「捷徑」的加入頁面點「加入捷徑」。",
             "caption": [],
             "language": "",
             "source": "",
@@ -9211,14 +9202,38 @@
             "type": "text",
             "richText": [
               {
-                "text": "記帳捷徑安裝連結：〔待補：iCloud 捷徑分享連結〕",
+                "text": "Trackly iOS 26",
                 "annotations": [
-                  "b"
+                  "a"
                 ],
+                "href": "https://www.icloud.com/shortcuts/9c7db4daa488467f8738d4d67d4cd0e8"
+              },
+              {
+                "text": " · ",
+                "annotations": [],
                 "href": ""
+              },
+              {
+                "text": "Trackly iOS 27",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://www.icloud.com/shortcuts/28d3adf4ebb041e2b0273c03e9ea71d4"
+              },
+              {
+                "text": " · ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Action（動作按鈕）",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://www.icloud.com/shortcuts/c4ac0acaa9f8464abc2c04203875c461"
               }
             ],
-            "plainText": "記帳捷徑安裝連結：〔待補：iCloud 捷徑分享連結〕",
+            "plainText": "Trackly iOS 26 · Trackly iOS 27 · Trackly Action（動作按鈕）",
             "caption": [],
             "language": "",
             "source": "",
@@ -9313,12 +9328,36 @@
             "type": "numbered_list",
             "richText": [
               {
-                "text": "執行「Trackly iOS 27」記帳捷徑（實際名稱以你加入的版本為準）。",
+                "text": "啟動你加入的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly iOS 26",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 或 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly iOS 27",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "執行「Trackly iOS 27」記帳捷徑（實際名稱以你加入的版本為準）。",
+            "plainText": "啟動你加入的 Trackly iOS 26 或 Trackly iOS 27。",
             "caption": [],
             "language": "",
             "source": "",
@@ -9572,12 +9611,12 @@
             "type": "text",
             "richText": [
               {
-                "text": "使用支援 Action Button（動作按鈕）的 iPhone，可以把記帳捷徑指定給實體按鈕：",
+                "text": "配備動作按鈕的 iPhone 可以長按按鈕啟動記帳。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "使用支援 Action Button（動作按鈕）的 iPhone，可以把記帳捷徑指定給實體按鈕：",
+            "plainText": "配備動作按鈕的 iPhone 可以長按按鈕啟動記帳。",
             "caption": [],
             "language": "",
             "source": "",
@@ -9614,12 +9653,24 @@
             "type": "numbered_list",
             "richText": [
               {
-                "text": "將動作切換為「捷徑」。",
+                "text": "滑到「捷徑」，選 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Action",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "將動作切換為「捷徑」。",
+            "plainText": "滑到「捷徑」，選 Trackly Action。",
             "caption": [],
             "language": "",
             "source": "",
@@ -9635,12 +9686,12 @@
             "type": "numbered_list",
             "richText": [
               {
-                "text": "選擇剛剛加入的 Trackly 記帳捷徑。",
+                "text": "查看消費訂單時，長按動作按鈕開始記帳。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "選擇剛剛加入的 Trackly 記帳捷徑。",
+            "plainText": "查看消費訂單時，長按動作按鈕開始記帳。",
             "caption": [],
             "language": "",
             "source": "",
@@ -9653,15 +9704,17 @@
           },
           {
             "id": "00d4ad9a458d4314b76a6ecfa0e93934",
-            "type": "numbered_list",
+            "type": "text",
             "richText": [
               {
-                "text": "下次查看消費訂單時，按下動作按鈕即可執行記帳。",
-                "annotations": [],
-                "href": ""
+                "text": "查看動作按鈕設定教學",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://trackly.ronniewong.cc/blog/trackly-action-button-setup-410c1b36/"
               }
             ],
-            "plainText": "下次查看消費訂單時，按下動作按鈕即可執行記帳。",
+            "plainText": "查看動作按鈕設定教學",
             "caption": [],
             "language": "",
             "source": "",
