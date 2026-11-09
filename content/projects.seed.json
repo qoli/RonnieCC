@@ -499,6 +499,168 @@
     ]
   },
   {
+    "id": "ai-reasoning-core",
+    "name": "AIReasoningCore",
+    "category": "current",
+    "categoryLabel": "現在",
+    "type": "Swift AI runtime",
+    "summary": "為 iOS 和 macOS 應用程式提供多供應商模型串流、工具呼叫與結構化生成的原生 Swift runtime。",
+    "capability": "透過 AnyLanguageModel 提供共用的模型介面，由 pi-ai-swift 處理各供應商的認證與串流協定。",
+    "tags": [
+      "Swift",
+      "Apple Platforms",
+      "AI Infrastructure"
+    ],
+    "status": "Active",
+    "detail": {
+      "thesis": "Swift 應用程式可以透過同一套工作階段 API 使用不同模型，並自行管理工具與對話資料。",
+      "sections": [
+        {
+          "title": "Model sessions",
+          "body": "AIReasoningCore 將 PiAILanguageModel 接到 AnyLanguageModel 的 LanguageModelSession，讓應用程式接收生成串流，並提供自己的工具供模型呼叫。"
+        },
+        {
+          "title": "Provider runtime",
+          "body": "pi-ai-swift 管理模型目錄、授權流程與各供應商的請求格式，並將回應轉成共用的串流事件。"
+        }
+      ],
+      "components": [
+        {
+          "name": "AIReasoningCore",
+          "type": "Swift package",
+          "visibility": "Public repo",
+          "role": "將模型串流與工具呼叫接到 AnyLanguageModel 的工作階段。"
+        },
+        {
+          "name": "pi-ai-swift",
+          "type": "Swift provider runtime",
+          "visibility": "Public repo",
+          "role": "處理模型供應商的目錄、認證、請求與回應。"
+        }
+      ]
+    },
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/qoli/AIReasoningCore"
+      },
+      {
+        "label": "Website",
+        "href": "https://aireasoningcore.ronniewong.cc/"
+      },
+      {
+        "label": "pi-ai-swift",
+        "href": "https://github.com/qoli/pi-ai-swift"
+      }
+    ]
+  },
+  {
+    "id": "windows-agent",
+    "name": "WindowsAgent",
+    "category": "current",
+    "categoryLabel": "現在",
+    "type": "Windows desktop agent runtime",
+    "summary": "在已登入的 Windows 桌面工作階段執行的 Go runtime，提供螢幕擷取、觀察與依 Rule 定義的操作。",
+    "capability": "把螢幕畫面、前景程式身分和應用程式專屬的 Actions 提供給 AI agent，讓每項操作都有明確的輸入和結果。",
+    "tags": [
+      "Windows",
+      "Go",
+      "Agent Runtime",
+      "Desktop Automation"
+    ],
+    "status": "Active",
+    "detail": {
+      "thesis": "WindowsAgent 讓 AI agent 透過結構化介面觀察互動式 Windows 桌面，並執行為個別應用程式定義的操作。",
+      "sections": [
+        {
+          "title": "Desktop capture",
+          "body": "Capture Agent 使用 Windows Graphics Capture 擷取主螢幕，並記錄前景程式與擷取時間，為後續觀察提供桌面脈絡。"
+        },
+        {
+          "title": "Rules and Actions",
+          "body": "Rule 綁定到指定的執行檔，定義可用的 Actions、輸入和完成條件。Runtime 負責驗證請求並管理執行與取消。"
+        }
+      ],
+      "components": [
+        {
+          "name": "Capture Agent",
+          "type": "Go / Windows Graphics Capture",
+          "visibility": "Public repo",
+          "role": "擷取主螢幕、識別前景程式，並載入對應的 Rule。"
+        },
+        {
+          "name": "Rules and Actions",
+          "type": "Application-specific packages",
+          "visibility": "Public repo",
+          "role": "描述個別應用程式的觀察和操作流程。"
+        }
+      ]
+    },
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/qoli/WindowsAgent"
+      },
+      {
+        "label": "Website",
+        "href": "https://qoli.github.io/WindowsAgent/"
+      }
+    ]
+  },
+  {
+    "id": "localclash",
+    "name": "localClash",
+    "category": "current",
+    "categoryLabel": "現在",
+    "type": "Mihomo management toolkit",
+    "summary": "管理 Mihomo 訂閱、設定與執行狀態的 Go 工具，提供 CLI、MCP 和 OpenWrt LuCI 整合。",
+    "capability": "由核心產生與驗證 Mihomo 設定，讓 LuCI 專注於路由器的操作介面、流量接管與 DNS 整合。",
+    "tags": [
+      "Go",
+      "Mihomo",
+      "MCP",
+      "OpenWrt"
+    ],
+    "status": "Active",
+    "detail": {
+      "thesis": "localClash 讓命令列、MCP 客戶端和路由器介面共用 Mihomo 的管理流程。",
+      "sections": [
+        {
+          "title": "Mihomo management",
+          "body": "核心處理訂閱來源、產生並驗證 Mihomo 設定，並管理 Mihomo 的啟停與重載。"
+        },
+        {
+          "title": "OpenWrt integration",
+          "body": "localclash-luci 提供 OpenWrt 安裝套件與 LuCI 操作介面，讓使用者在路由器後台初始化服務、檢查執行狀態和管理網路接管。"
+        }
+      ],
+      "components": [
+        {
+          "name": "localClash",
+          "type": "Go CLI / MCP server",
+          "visibility": "Public repo",
+          "role": "管理訂閱、Mihomo 設定和執行流程。"
+        },
+        {
+          "name": "localclash-luci",
+          "type": "OpenWrt LuCI package",
+          "visibility": "Public repo",
+          "role": "提供路由器管理介面，並處理 OpenWrt 的流量接管與 DNS。"
+        }
+      ]
+    },
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/qoli/localClash"
+      },
+      {
+        "label": "localclash-luci",
+        "href": "https://github.com/qoli/localclash-luci"
+      }
+    ]
+  },
+  {
     "id": "hln-machine",
     "name": "HLN Machine",
     "category": "exploration",

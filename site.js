@@ -90,6 +90,18 @@ const projectGlyphs = {
     <path d="M28 26h28c8 0 14 6 14 14v54H42c-8 0-14-6-14-14Z"></path>
     <path d="M70 40c0-8 6-14 14-14h8v68H70"></path>
   `,
+  "ai-reasoning-core": `
+    <path d="M60 22 90 40 60 58 30 40Z"></path>
+    <path d="m30 58 30 18 30-18M30 76l30 18 30-18"></path>
+  `,
+  "windows-agent": `
+    <path d="M24 76V30h56M40 90h56V44"></path>
+    <rect x="40" y="44" width="40" height="32"></rect>
+  `,
+  localclash: `
+    <path d="M22 60h20M52 56l20-20h26M52 64l20 20h26"></path>
+    <circle cx="48" cy="60" r="6"></circle>
+  `,
   "hln-machine": `
     <path d="M26 30h24v24H26ZM70 30h24v24H70ZM48 74h24v24H48Z"></path>
     <path d="M50 42h20M38 54l16 20M82 54 66 74"></path>
@@ -227,6 +239,54 @@ const projectCopyEn = {
         { role: "Current engineering direction and data-structure evolution." },
         { role: "Part of the multi-platform experience." },
         { role: "Internal protocol and shared boundary." },
+      ],
+    },
+  },
+  "ai-reasoning-core": {
+    categoryLabel: "Current Project",
+    summary: "A native Swift runtime for iOS and macOS apps, with model streaming across providers, tool calls, and structured generation.",
+    capability: "Uses AnyLanguageModel as the app-facing model interface and delegates provider authentication and streaming protocols to pi-ai-swift.",
+    detail: {
+      thesis: "Swift apps can work with different models through one session API and retain control of their own tools and conversation data.",
+      sections: [
+        { body: "AIReasoningCore connects PiAILanguageModel to AnyLanguageModel's LanguageModelSession so apps can stream responses and supply their own tools for model calls." },
+        { body: "pi-ai-swift manages model catalogs, authorization flows, and provider request formats, then normalizes responses into shared streaming events." },
+      ],
+      components: [
+        { role: "Connects model streaming and tool calls to AnyLanguageModel sessions." },
+        { role: "Manages provider catalogs, authentication, requests, and responses." },
+      ],
+    },
+  },
+  "windows-agent": {
+    categoryLabel: "Current Project",
+    summary: "A Go runtime for a signed-in Windows desktop session, with screen capture, observation, and Rule-defined actions.",
+    capability: "Gives AI agents screen frames, foreground application identity, and application-specific Actions with defined inputs and outcomes.",
+    detail: {
+      thesis: "WindowsAgent gives AI agents a structured interface to observe the interactive Windows desktop and run actions defined for individual applications.",
+      sections: [
+        { body: "The Capture Agent uses Windows Graphics Capture to capture the primary screen and records the foreground application and capture time for subsequent observation." },
+        { body: "Each Rule is scoped to an executable and defines its available Actions, inputs, and completion conditions. The runtime validates requests and manages execution and cancellation." },
+      ],
+      components: [
+        { role: "Captures the primary screen, identifies the foreground application, and resolves its Rule." },
+        { role: "Define observation and action workflows for individual applications." },
+      ],
+    },
+  },
+  localclash: {
+    categoryLabel: "Current Project",
+    summary: "A Go toolkit for managing Mihomo subscriptions, configuration, and runtime through a CLI, MCP, and an OpenWrt LuCI integration.",
+    capability: "The core renders and validates Mihomo configuration, while LuCI handles the router interface, traffic redirection, and DNS integration.",
+    detail: {
+      thesis: "localClash brings the same Mihomo management workflow to the command line, MCP clients, and the router interface.",
+      sections: [
+        { body: "The core handles subscription sources, renders and validates Mihomo configuration, and manages startup, shutdown, and reloads." },
+        { body: "localclash-luci provides the OpenWrt package and LuCI interface for setting up the service, checking runtime status, and managing router traffic redirection." },
+      ],
+      components: [
+        { role: "Manages subscriptions, Mihomo configuration, and the runtime lifecycle." },
+        { role: "Provides the router interface and handles traffic redirection and DNS on OpenWrt." },
       ],
     },
   },

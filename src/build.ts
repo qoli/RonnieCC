@@ -277,6 +277,18 @@ const projectGlyphs: Record<string, string> = {
     <path d="M28 26h28c8 0 14 6 14 14v54H42c-8 0-14-6-14-14Z"></path>
     <path d="M70 40c0-8 6-14 14-14h8v68H70"></path>
   `,
+  "ai-reasoning-core": `
+    <path d="M60 22 90 40 60 58 30 40Z"></path>
+    <path d="m30 58 30 18 30-18M30 76l30 18 30-18"></path>
+  `,
+  "windows-agent": `
+    <path d="M24 76V30h56M40 90h56V44"></path>
+    <rect x="40" y="44" width="40" height="32"></rect>
+  `,
+  localclash: `
+    <path d="M22 60h20M52 56l20-20h26M52 64l20 20h26"></path>
+    <circle cx="48" cy="60" r="6"></circle>
+  `,
   "hln-machine": `
     <path d="M26 30h24v24H26ZM70 30h24v24H70ZM48 74h24v24H48Z"></path>
     <path d="M50 42h20M38 54l16 20M82 54 66 74"></path>
