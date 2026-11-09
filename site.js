@@ -153,7 +153,7 @@ const projectCopyEn = {
     },
   },
   "eison-ai": {
-    categoryLabel: "Current Project",
+    categoryLabel: "Historical Project",
     summary: "A local-first AI reading product across iOS, macOS, iPadOS, and Safari Extension, using Cognitive Index to reorganize reading and saving.",
     capability: "Places AI inside reading, saving, indexing, and retrieval workflows so model capability becomes part of interface and data structure.",
     detail: {
@@ -172,7 +172,7 @@ const projectCopyEn = {
     },
   },
   threadbridge: {
-    categoryLabel: "Current Project",
+    categoryLabel: "Historical Project",
     summary: "A workspace-first Codex runtime made from a macOS desktop owner, Telegram adapter, and local management surface, binding real workspaces to continuous Codex sessions.",
     capability: "Turns agent use from one-off terminal sessions into a managed runtime: workspace binding, session continuity, Telegram threads, local TUI, and repair flows have to work as one system.",
     detail: {

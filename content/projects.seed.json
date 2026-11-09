@@ -120,8 +120,8 @@
   {
     "id": "eison-ai",
     "name": "eisonAI",
-    "category": "current",
-    "categoryLabel": "現在",
+    "category": "history",
+    "categoryLabel": "歷史",
     "type": "Local-first AI reading product",
     "summary": "跨 iOS / macOS / iPadOS / Safari Extension 的 local-first AI reading product，用 Cognitive Index 重新組織閱讀和保存。",
     "capability": "把 AI 放進閱讀、保存、索引和找回資料的工作流，讓模型能力成為界面和資料結構的一部分。",
@@ -131,7 +131,7 @@
       "Knowledge Tools",
       "Swift"
     ],
-    "status": "Active",
+    "status": "Historical",
     "detail": {
       "thesis": "eisonAI 的核心不是聊天入口，而是閱讀工作流。它把 AI 放在 capture、index、context 和 retrieval 之間，讓資料被保存後仍然能被理解。",
       "sections": [
@@ -215,8 +215,8 @@
   {
     "id": "threadbridge",
     "name": "threadBridge",
-    "category": "current",
-    "categoryLabel": "現在",
+    "category": "history",
+    "categoryLabel": "歷史",
     "type": "Workspace-first Codex runtime",
     "summary": "macOS desktop owner、Telegram adapter 和本地管理界面組成的 agent runtime，把真實 workspace 綁定到可延續的 Codex session。",
     "capability": "把 agent 使用從單次 terminal session 推進成可管理的 runtime：workspace binding、session continuity、Telegram thread、local TUI 和狀態修復需要一起設計。",
@@ -226,7 +226,7 @@
       "Telegram",
       "Local-first"
     ],
-    "status": "Active / Public RC",
+    "status": "Historical / Public RC",
     "detail": {
       "thesis": "threadBridge 是 workspace-first 的 Codex runtime。它把 macOS desktop process 作為 owner，Telegram 只是 adapter；真正重要的是讓 workspace、session、local TUI 和遠端訊息都能回到同一條可維護的工作連續性。",
       "sections": [
