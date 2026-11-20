@@ -160,7 +160,8 @@ function richTextSegments(value) {
       const annotations = Array.isArray(part?.[1]) ? part[1] : [];
       const linkMention = annotations.find((annotation) => annotation?.[0] === "lm")?.[1] || {};
       const link = annotations.find((annotation) => annotation?.[0] === "a")?.[1] || linkMention.href || "";
-      const text = String(part?.[0] || "");
+      const equation = annotations.find((annotation) => annotation?.[0] === "e")?.[1];
+      const text = String(equation || part?.[0] || "");
       return {
         text: text === "‣" && linkMention.title ? String(linkMention.title) : text,
         annotations: annotations.map((annotation) => annotation?.[0]).filter(Boolean),
@@ -183,6 +184,9 @@ function blockTableCells(block) {
 }
 
 function plainProperty(block, property) {
+  if (block.properties?.[property]?.some((part) => part?.[1]?.some((annotation) => annotation?.[0] === "e"))) {
+    return richTextSegments(block.properties[property]).map((segment) => segment.text).join("");
+  }
   return notionText(block.properties?.[property]);
 }
 

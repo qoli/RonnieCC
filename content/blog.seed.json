@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-11-06T22:56:48.967Z",
+  "generatedAt": "2026-11-20T14:11:06.599Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,2860 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "41ac1b36c40181cf8261fc89174bcaef",
+      "slug": "syncnext-tvos-frame-interpolation-41ac1b36",
+      "seoSlug": "syncnext-tvos-frame-interpolation",
+      "legacySlugs": [
+        "syncnext-插幀開發日誌-從-公主嫁到-的那段橫搖開始到閃爍修復-41ac1b36"
+      ],
+      "title": "Syncnext 插幀開發日誌｜從《公主嫁到》的那段橫搖開始到閃爍修復",
+      "tag": "tvOS,Player,Video",
+      "writtenDate": "2026-11-16",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/syncnext-tvos-frame-interpolation-41ac1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/syncnext-%E6%8F%92%E5%B9%80%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C-%E5%BE%9E-%E5%85%AC%E4%B8%BB%E5%AB%81%E5%88%B0-%E7%9A%84%E9%82%A3%E6%AE%B5%E6%A9%AB%E6%90%96%E9%96%8B%E5%A7%8B%E5%88%B0%E9%96%83%E7%88%8D%E4%BF%AE%E5%BE%A9-41ac1b36c40181cf8261fc89174bcaef?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-11-16T13:24:51.319Z",
+      "lastEditedTime": "2026-11-20T13:54:48.910Z",
+      "socialImage": {
+        "url": "https://ronniewong.cc/social/blog/syncnext-tvos-frame-interpolation-41ac1b36-20a88d4602ea.png",
+        "width": 1200,
+        "height": 630,
+        "alt": "Syncnext 插幀開發日誌｜從《公主嫁到》的那段橫搖開始到閃爍修復 — Ronnie Wong"
+      },
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-11-20T14:09:59.717Z",
+        "blocks": [
+          {
+            "id": "41ac1b36c40181d082ede9f4d07b65f5",
+            "type": "text",
+            "richText": [
+              {
+                "text": "《公主嫁到》第 5 集從 11:29 播。聽到「是，公主」，鏡頭向右掃過院子，接著切到鳥籠。我測 Syncnext 插幀時，反覆重播的是 11:31.68 到 11:32.92 這一秒多的橫搖。後來其中一張補出來的畫格，頭飾的邊緣碎成幾塊，畫面右側也冒出破碎的黑條。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "《公主嫁到》第 5 集從 11:29 播。聽到「是，公主」，鏡頭向右掃過院子，接著切到鳥籠。我測 Syncnext 插幀時，反覆重播的是 11:31.68 到 11:32.92 這一秒多的橫搖。後來其中一張補出來的畫格，頭飾的邊緣碎成幾塊，畫面右側也冒出破碎的黑條。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c401816a8253d7415f822e73",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-mdd-pan-timeline.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-mdd-pan-timeline.png",
+            "caption": [
+              {
+                "text": "《公主嫁到》第 5 集的六張原始畫格。從左到右、由上到下按正片時間排列。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:05523564-6206-49a7-95f7-877937b21302:syncnext-mdd-pan-timeline.png",
+            "assetPath": "content/blog-assets/41ac1b36c40181cf8261fc89174bcaef/41ac1b36c401816a8253d7415f822e73-syncnext-mdd-pan-timeline.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c40181ea8fd4d9c05ccda715",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "書房的第一代 Apple TV",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "書房的第一代 Apple TV",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c4018111a8aaf9d3459e29a4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "11 月 8 日，我用翻拍畫面對回這段橫搖。原片連續 32 張都是逐行畫格，時間戳每張相隔 40 毫秒。我先在書房的第一代 Apple TV 4K（A10X）試 VideoToolbox。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "isSupported",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 和 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "startSession",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 都回傳 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "true",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，送進第一對畫格就報 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "-12911",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。讀取啟動呼叫的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "NSError",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 才發現，1080p 那次在回傳 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "true",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 的同時也寫了 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "-12910",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，指出該處理路徑的像素上限是 921,600。降到 720p、360p 又報 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "-12904",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，卡在模型初始化。我把實機結果送成 Apple Feedback ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "FB25486216",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "11 月 8 日，我用翻拍畫面對回這段橫搖。原片連續 32 張都是逐行畫格，時間戳每張相隔 40 毫秒。我先在書房的第一代 Apple TV 4K（A10X）試 VideoToolbox。isSupported 和 startSession 都回傳 true，送進第一對畫格就報 -12911。讀取啟動呼叫的 NSError 才發現，1080p 那次在回傳 true 的同時也寫了 -12910，指出該處理路徑的像素上限是 921,600。降到 720p、360p 又報 -12904，卡在模型初始化。我把實機結果送成 Apple Feedback FB25486216。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c4018185bf7fc483dc634919",
+            "type": "text",
+            "richText": [
+              {
+                "text": "11 月 14 日，接著試自寫的 Metal 運動補償。用 4K 25 fps 原片在書房播 10 分鐘，插幀畫面以 1080p 呈現，穩定到 60 fps，35,995 次呈現裡漏時槽是 0。後來在客廳看實際畫面，我把這版的畫質判為不及格。回頭看當時留下的證據，錄影經過裁切、縮小，邊緣指標只量了約 0.14 秒。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "11 月 14 日，接著試自寫的 Metal 運動補償。用 4K 25 fps 原片在書房播 10 分鐘，插幀畫面以 1080p 呈現，穩定到 60 fps，35,995 次呈現裡漏時槽是 0。後來在客廳看實際畫面，我把這版的畫質判為不及格。回頭看當時留下的證據，錄影經過裁切、縮小，邊緣指標只量了約 0.14 秒。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c40181869b02f75b11ff701b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我把目標改成 2×。在相鄰兩張原幀之間補一張，這段原片就會從 25 fps 變成 50 fps。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我把目標改成 2×。在相鄰兩張原幀之間補一張，這段原片就會從 25 fps 變成 50 fps。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c40181578b51d816654b8a79",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "用 OBS 光流找一個能播的尺寸",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "用 OBS 光流找一個能播的尺寸",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c40181d7a4dce1ad68aa8b87",
+            "type": "text",
+            "richText": [
+              {
+                "text": "接下來試的是 qshiqshi/obs-optical-flow。外掛估算前後兩個方向的位移，再合成中間幀。我在書房的 tvOS 測試程式用同一段 4K 原片跑三組。第一組播原始 25 fps，另外兩組分別用 RIFE 的長邊 384 像素推論，以及 OBS 的長邊 480 像素光流網格。兩組插幀都以 1080p 呈現，這輪達到 50 fps、零漏時槽。每對畫格的處理耗時 P95，OBS 約 22 ms，RIFE 約 45 ms。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "qshiqshi/obs-optical-flow 原始碼",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/qshiqshi/obs-optical-flow/tree/7c376f1a137ca5ba002d76f2e69bd61cf65e355b"
+              }
+            ],
+            "plainText": "接下來試的是 qshiqshi/obs-optical-flow。外掛估算前後兩個方向的位移，再合成中間幀。我在書房的 tvOS 測試程式用同一段 4K 原片跑三組。第一組播原始 25 fps，另外兩組分別用 RIFE 的長邊 384 像素推論，以及 OBS 的長邊 480 像素光流網格。兩組插幀都以 1080p 呈現，這輪達到 50 fps、零漏時槽。每對畫格的處理耗時 P95，OBS 約 22 ms，RIFE 約 45 ms。qshiqshi/obs-optical-flow 原始碼",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c401815ebf47c8d3883747f4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "把 OBS 的網格長邊加到 576，穩定段還有 49.18 fps。640 和 768 分別跌到 47.17 和 46.35 fps，768 的畫質依然過不了。576 的畫面也截到了碎裂，先前從錄影近似對時抽圖時，漏掉了這張生成幀。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "把 OBS 的網格長邊加到 576，穩定段還有 49.18 fps。640 和 768 分別跌到 47.17 和 46.35 fps，768 的畫質依然過不了。576 的畫面也截到了碎裂，先前從錄影近似對時抽圖時，漏掉了這張生成幀。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c40181df86afe8894dad61c0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我想先找到看起來不碎的尺寸，再回來做效能優化。用原片八成的 3072×1728 網格即時播放，穩定段只有 8.08 fps。降回長邊 1080 也只有 25.96 fps，出問題的橫搖全程呈現原幀。於是我直接讀回書房呈現的畫格，把截圖上 11:32.58 的播放時鐘對到 11:32.70 的生成幀。固定前後兩張原幀，再用光流網格長邊 1080、1536 和 3072 重算，頭飾和畫面邊緣依然碎。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我想先找到看起來不碎的尺寸，再回來做效能優化。用原片八成的 3072×1728 網格即時播放，穩定段只有 8.08 fps。降回長邊 1080 也只有 25.96 fps，出問題的橫搖全程呈現原幀。於是我直接讀回書房呈現的畫格，把截圖上 11:32.58 的播放時鐘對到 11:32.70 的生成幀。固定前後兩張原幀，再用光流網格長邊 1080、1536 和 3072 重算，頭飾和畫面邊緣依然碎。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c401818a8068e0a2f1902a74",
+            "type": "text",
+            "richText": [
+              {
+                "text": "沿光流方向做五點取樣，碎片被抹淡，也拉出了拖影，臉和金飾跟著變糊。只剔除越界的取樣，兩側的黑邊確實縮小，頭飾仍有碎塊。把雙向光流的一致性檢查收緊，頭飾和鳥籠反而多了較硬的碎塊。再加短距離的局部模糊，差異很小。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "沿光流方向做五點取樣，碎片被抹淡，也拉出了拖影，臉和金飾跟著變糊。只剔除越界的取樣，兩側的黑邊確實縮小，頭飾仍有碎塊。把雙向光流的一致性檢查收緊，頭飾和鳥籠反而多了較硬的碎塊。再加短距離的局部模糊，差異很小。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c4018158ad6dd1263633be8b",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "在 Mac 上用原版外掛重現",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在 Mac 上用原版外掛重現",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c40181cc836ae11059e40409",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我把測試用的 18.2 秒另存成 MP4，保留 4K HEVC、25 fps 和原本的 AAC 音軌。在 M2 Ultra 的 OBS 32.1.2 載入原版外掛，分別用 480×270、960×540 和 1920×1080 的光流網格重算同一張中間幀。三組都有碎裂，鳥籠欄杆有類似的破碎，切鏡還把前後場景疊在一張裡。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我把測試用的 18.2 秒另存成 MP4，保留 4K HEVC、25 fps 和原本的 AAC 音軌。在 M2 Ultra 的 OBS 32.1.2 載入原版外掛，分別用 480×270、960×540 和 1920×1080 的光流網格重算同一張中間幀。三組都有碎裂，鳥籠欄杆有類似的破碎，切鏡還把前後場景疊在一張裡。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c40181b49cd9e5b4f14a7a17",
+            "type": "text",
+            "richText": [
+              {
+                "text": "接著只改光流降採樣倍率的下限，沿用原版 shader，以 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "3840×2160",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 算光流和固定的半程幀。再用同樣的 4K 光流網格，在 1080p50 畫布上即時播放並擷取。頭飾、右側黑條和鳥籠欄杆的碎裂都重現了。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "接著只改光流降採樣倍率的下限，沿用原版 shader，以 3840×2160 算光流和固定的半程幀。再用同樣的 4K 光流網格，在 1080p50 畫布上即時播放並擷取。頭飾、右側黑條和鳥籠欄杆的碎裂都重現了。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c401816aa8d3f01e24f40462",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "Practical-RIFE 的即時測試與 4K 對照",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Practical-RIFE 的即時測試與 4K 對照",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c40181ab9b09e7e30e0046b4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在試 OBS 光流之前，我先用 Practical-RIFE 4.25 在書房做 2× 即時插幀。推論長邊用 256 像素，穩定段量到 49.99 fps，鳥籠的細線還是彎了。效能調整後，Debug 版把推論長邊推到 384，五分鐘長播的穩定段量到 49.98 fps。當時 App 預設的推論長邊仍是 256 像素。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在試 OBS 光流之前，我先用 Practical-RIFE 4.25 在書房做 2× 即時插幀。推論長邊用 256 像素，穩定段量到 49.99 fps，鳥籠的細線還是彎了。效能調整後，Debug 版把推論長邊推到 384，五分鐘長播的穩定段量到 49.98 fps。當時 App 預設的推論長邊仍是 256 像素。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c4018117b718dcd55416d9c2",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-rife-inference-size-comparison.jpg",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-rife-inference-size-comparison.jpg",
+            "caption": [
+              {
+                "text": "左起為原片參照，以及推論長邊 256、384、1920 像素的結果。看最下排鳥籠欄杆的彎曲與重影，就能看出工作尺寸帶來的差異。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:f1872c8e-0046-4818-8bab-7b670a652d5f:syncnext-rife-inference-size-comparison.jpg",
+            "assetPath": "content/blog-assets/41ac1b36c40181cf8261fc89174bcaef/41ec1b36c4018117b718dcd55416d9c2-syncnext-rife-inference-size-comparison.jpg",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c401811089f0c5cb7a8c0236",
+            "type": "text",
+            "richText": [
+              {
+                "text": "看到上游外掛在同一處也會碎，我停下 OBS 這條路，換回 Practical-RIFE 4.25，用同一對原幀做全尺寸對照。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Practical-RIFE",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://github.com/hzwer/Practical-RIFE"
+              }
+            ],
+            "plainText": "看到上游外掛在同一處也會碎，我停下 OBS 這條路，換回 Practical-RIFE 4.25，用同一對原幀做全尺寸對照。Practical-RIFE",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c401816cbafaefaa6a5db8ec",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-obs-rife-4k-comparison.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-obs-rife-4k-comparison.png",
+            "caption": [
+              {
+                "text": "同一對 4K 原幀的局部對照。中間兩欄是 11:32.70 的 OBS 100% 與 Practical-RIFE 100%，左右為 11:32.68 和 11:32.72 的原幀。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:50b04882-2800-4a03-a9e6-5f99bc7e7129:syncnext-obs-rife-4k-comparison.png",
+            "assetPath": "content/blog-assets/41ac1b36c40181cf8261fc89174bcaef/41ac1b36c401816cbafaefaa6a5db8ec-syncnext-obs-rife-4k-comparison.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c40181c99b28cf21ed0eae91",
+            "type": "text",
+            "richText": [
+              {
+                "text": "RIFE 保住了頭飾的輪廓，右側和鳥籠也少了同類碎裂。我用重複原幀和 RIFE 補幀做了同速 A/B，覺得 RIFE 的 50 fps 看起來好一些，原片的橫向拖影仍在。全尺寸推論在 M2 Ultra 每對畫格的中位數約 157 毫秒，25 fps 原片每 40 毫秒就來一張，這次 4K50 成片是離線算完的。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "RIFE 保住了頭飾的輪廓，右側和鳥籠也少了同類碎裂。我用重複原幀和 RIFE 補幀做了同速 A/B，覺得 RIFE 的 50 fps 看起來好一些，原片的橫向拖影仍在。全尺寸推論在 M2 Ultra 每對畫格的中位數約 157 毫秒，25 fps 原片每 40 毫秒就來一張，這次 4K50 成片是離線算完的。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c40181698ecfd42199adf1c3",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "去客廳測第三代 Apple TV",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "去客廳測第三代 Apple TV",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c40181458fc9c24e953d4b29",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我把實機目標改成第三代 Apple TV 4K，用同一種 A/B 循環重試 VideoToolbox。客廳那台能處理 1080p，送 4K 時第一對畫格仍報 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "-12911",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。我看過同一音軌下的原片 25 fps 和 VideoToolbox 50 fps，覺得 50 fps 的畫質可以接受。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我把實機目標改成第三代 Apple TV 4K，用同一種 A/B 循環重試 VideoToolbox。客廳那台能處理 1080p，送 4K 時第一對畫格仍報 -12911。我看過同一音軌下的原片 25 fps 和 VideoToolbox 50 fps，覺得 50 fps 的畫質可以接受。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c4018195a128d6a42f2b713c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "即時長測換成《馬達加斯加》的 4K 25 fps SDR 片段。A、B 各播同一段 150 秒，都先縮到 1080p，B 再用 VideoToolbox 即時插到 50 fps。B 段生成了 3,749 張中間幀，每對畫格的總處理時間 P95 是 40.30 毫秒。219 對花超過 40 毫秒，播放緩衝吸收了這些波動。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "即時長測換成《馬達加斯加》的 4K 25 fps SDR 片段。A、B 各播同一段 150 秒，都先縮到 1080p，B 再用 VideoToolbox 即時插到 50 fps。B 段生成了 3,749 張中間幀，每對畫格的總處理時間 P95 是 40.30 毫秒。219 對花超過 40 毫秒，播放緩衝吸收了這些波動。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c40181bcacbed904fc8cbc8c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "回到 Syncnext，這一版的插幀只保留 VideoToolbox。播放工具列可以即時切換，「覆蓋信息」面板也能看到 FPS 和上一幀的耗時。內部 TestFlight 的 591 在客廳兩次成功跑出 25→50 fps。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "回到 Syncnext，這一版的插幀只保留 VideoToolbox。播放工具列可以即時切換，「覆蓋信息」面板也能看到 FPS 和上一幀的耗時。內部 TestFlight 的 591 在客廳兩次成功跑出 25→50 fps。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c401814b95a0ca2729c70d9f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "24→48 fps 在啟動 VideoToolbox 前就被顯示模式協商擋住。我另做 Probe 在 LG C3 上測，50 Hz 和 60 Hz 都能呈現約 48 fps。後來 25→50 fps 也卡過一次。電視已回報 50 Hz，程式還在等切換結束。我改用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "CADisplayLink",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 量刷新率，穩定達標就沿用當前模式，遇到實際切換再等結束通知。這版通過兩組回歸檢查和模擬器建置，當時客廳實機仍待回驗。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "24→48 fps 在啟動 VideoToolbox 前就被顯示模式協商擋住。我另做 Probe 在 LG C3 上測，50 Hz 和 60 Hz 都能呈現約 48 fps。後來 25→50 fps 也卡過一次。電視已回報 50 Hz，程式還在等切換結束。我改用 CADisplayLink 量刷新率，穩定達標就沿用當前模式，遇到實際切換再等結束通知。這版通過兩組回歸檢查和模擬器建置，當時客廳實機仍待回驗。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ac1b36c40181e59bfdf6b34cd8dd95",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "在 N／P 階段，才建立閃爍指標",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在 N／P 階段，才建立閃爍指標",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181c68feae788ff8e209b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "11 月 16 日，客廳開啟插幀看《公公出宮》第 3 集時遇到閃爍。我把全片原始 HLS 留到本機，讓 macOS Probe 能播放同一份素材。後來換到第 13 集，我反覆看 10:56 起的背心遠景和 11:06 起的近景，量那件背心上的密集菱格。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "11 月 16 日，客廳開啟插幀看《公公出宮》第 3 集時遇到閃爍。我把全片原始 HLS 留到本機，讓 macOS Probe 能播放同一份素材。後來換到第 13 集，我反覆看 10:56 起的背心遠景和 11:06 起的近景，量那件背心上的密集菱格。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181249feee372ff8cf81b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在 K 之前，我一直找不到能客觀量出閃爍的指標。K 塗抹版主要靠肉眼和人工標記驗收，遮罩全白處會重複上一張已呈現的原幀。近景可以接受，遠景即使遮罩圈對了，仍會閃。到了 N／P 的探索，才逐步建立可從影格重算的訊號。N 嘗試增強 VT 中間幀已有的細節，近景觀感卻退步，量測也得能說明這個退步。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在 K 之前，我一直找不到能客觀量出閃爍的指標。K 塗抹版主要靠肉眼和人工標記驗收，遮罩全白處會重複上一張已呈現的原幀。近景可以接受，遠景即使遮罩圈對了，仍會閃。到了 N／P 的探索，才逐步建立可從影格重算的訊號。N 嘗試增強 VT 中間幀已有的細節，近景觀感卻退步，量測也得能說明這個退步。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401817c8501e4d7482f1bb5",
+            "type": "text",
+            "richText": [
+              {
+                "text": "先讓量測跟著同一塊布移動。量測用原片計算一組獨立的光流，插入時點取前後軌跡位置的中點。任一次前後向追蹤的回程誤差超過一個原片像素，或進入邊緣內縮 12 像素以外的範圍，就將那條軌跡整窗排除。這樣可以減少人物移動時，取樣點從亮紋跑到暗紋造成的混淆。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "先讓量測跟著同一塊布移動。量測用原片計算一組獨立的光流，插入時點取前後軌跡位置的中點。任一次前後向追蹤的回程誤差超過一個原片像素，或進入邊緣內縮 12 像素以外的範圍，就將那條軌跡整窗排除。這樣可以減少人物移動時，取樣點從亮紋跑到暗紋造成的混淆。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401818e9f1bdb695de9590c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "每個位置分開量局部亮度和細節強度。令 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Y'",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是 8-bit 視訊範圍的數位亮度碼值，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "G_\\sigma",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是尺度為 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "\\sigma",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 個原片像素的高斯平滑，則",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "每個位置分開量局部亮度和細節強度。令 Y' 是 8-bit 視訊範圍的數位亮度碼值，G_\\sigma 是尺度為 \\sigma 個原片像素的高斯平滑，則",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401818c9b23ed9641341af4",
+            "type": "equation",
+            "richText": [
+              {
+                "text": "\\begin{aligned}\nL_\\sigma&=G_\\sigma*Y'\\\\\nC_\\sigma&=\\sqrt{\\max\\left(0,\\;G_\\sigma*\\left[(Y'-G_{\\sigma/2}*Y')^2\\right]\\right)}\n\\end{aligned}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "\\begin{aligned}\nL_\\sigma&=G_\\sigma*Y'\\\\\nC_\\sigma&=\\sqrt{\\max\\left(0,\\;G_\\sigma*\\left[(Y'-G_{\\sigma/2}*Y')^2\\right]\\right)}\n\\end{aligned}",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401810bbb6bd245cab8bb2f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "L",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 量局部平均亮度。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "C",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 先用原圖減去模糊版本，留下細紋，再平方、局部平均、開根號，得到細紋的 RMS 強度。文中比較主要用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "\\sigma=2",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，也保留 1、4 像素尺度的結果。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "L 量局部平均亮度。C 先用原圖減去模糊版本，留下細紋，再平方、局部平均、開根號，得到細紋的 RMS 強度。文中比較主要用 \\sigma=2，也保留 1、4 像素尺度的結果。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c4018179bc9af97281ae43bc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "原片每 40 ms 一張，中間插入一張，時點落在 20 ms。令 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "F",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 分別取 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "L",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 或 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "C",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，前後原幀是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "O_i,O_{i+1}",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，被測中間幀是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "M_i",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。同一條紋在這對原幀的位置為 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "x_0,x_1",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，中間時點取 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "x_m=(x_0+x_1)/2",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "F(I,x)",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 表示在影格 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "I",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 的位置 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "x",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 取特徵，先算兩端參照 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "E_i",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，再算兩組的中點偏差",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "原片每 40 ms 一張，中間插入一張，時點落在 20 ms。令 F 分別取 L 或 C，前後原幀是 O_i,O_{i+1}，被測中間幀是 M_i。同一條紋在這對原幀的位置為 x_0,x_1，中間時點取 x_m=(x_0+x_1)/2。用 F(I,x) 表示在影格 I 的位置 x 取特徵，先算兩端參照 E_i，再算兩組的中點偏差",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181249c47e552f413cbb5",
+            "type": "equation",
+            "richText": [
+              {
+                "text": "\\begin{aligned}\nE_i&=\\frac{F(O_i,x_0)+F(O_{i+1},x_1)}{2}\\\\\nd_i^{\\mathrm{test}}&=F(M_i,x_m)-E_i\\\\\nd_i^{\\mathrm{repeat}}&=F(O_i,x_m)-E_i\n\\end{aligned}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "\\begin{aligned}\nE_i&=\\frac{F(O_i,x_0)+F(O_{i+1},x_1)}{2}\\\\\nd_i^{\\mathrm{test}}&=F(M_i,x_m)-E_i\\\\\nd_i^{\\mathrm{repeat}}&=F(O_i,x_m)-E_i\n\\end{aligned}",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181ad9205c1b7670150f0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "重複前幀的對照也在 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "x_m",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 取值。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "E_i",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是前後原幀的特徵平均，原片沒有攝下真實的 20 ms 中點可直接作答案。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "重複前幀的對照也在 x_m 取值。E_i 是前後原幀的特徵平均，原片沒有攝下真實的 20 ms 中點可直接作答案。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181448b10ef9f904765f8",
+            "type": "text",
+            "richText": [
+              {
+                "text": "若前後原幀的細節強度是 40、42，中間幀只有 28，兩端平均就是 41，偏差為 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "28-41=-13",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。負號保留了「中間幀變淡」的方向。背心的實測正是原幀清楚、插入幀變淡、下一張原幀又恢復，每秒出現 25 次起伏。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "若前後原幀的細節強度是 40、42，中間幀只有 28，兩端平均就是 41，偏差為 28-41=-13。負號保留了「中間幀變淡」的方向。背心的實測正是原幀清楚、插入幀變淡、下一張原幀又恢復，每秒出現 25 次起伏。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181f5871fef05dd4f48a0",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-flicker-metric-triplet.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-flicker-metric-triplet.png",
+            "caption": [
+              {
+                "text": "單個追蹤點的示意計算，40、28、42 為示意數字。先看中間幀偏離兩端平均多少，再扣掉重複前幀對照的交替幅度。正式分數另作時間與空間彙整。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:41f416d6-ff1e-4a7e-8c52-2b32fc85fc25:syncnext-flicker-metric-triplet.png",
+            "assetPath": "content/blog-assets/41ac1b36c40181cf8261fc89174bcaef/41ec1b36c40181f5871fef05dd4f48a0-syncnext-flicker-metric-triplet.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c4018141b8cfd001d7c1156e",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-vest-flicker-waveform.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-vest-flicker-waveform.png",
+            "caption": [
+              {
+                "text": "N／P 階段建立量測後，回看 K 版背心遠景的一秒資料。橙點是插入幀，反覆落在波谷，對應細紋變淡。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:10101e8d-f756-4a35-9991-c1287db371d8:syncnext-vest-flicker-waveform.png",
+            "assetPath": "content/blog-assets/41ac1b36c40181cf8261fc89174bcaef/41ec1b36c4018141b8cfd001d7c1156e-syncnext-vest-flicker-waveform.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c4018139aa67d4ff329043bd",
+            "type": "text",
+            "richText": [
+              {
+                "text": "接著量這種起伏是否持續出現。每個一秒窗有 25 個中間時點，切成五段，每段先取五個偏差的有符號平均，再取五段的中位數。對追蹤位置 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "p",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，記作",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "接著量這種起伏是否持續出現。每個一秒窗有 25 個中間時點，切成五段，每段先取五個偏差的有符號平均，再取五段的中位數。對追蹤位置 p，記作",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181a69712c23f383dfc86",
+            "type": "equation",
+            "richText": [
+              {
+                "text": "D_w(p)=\\operatorname{median}_{b=1,\\ldots,5}\n\\left[\\frac{1}{5}\\sum_{i\\in B_b}d_i(p)\\right]",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "D_w(p)=\\operatorname{median}_{b=1,\\ldots,5}\n\\left[\\frac{1}{5}\\sum_{i\\in B_b}d_i(p)\\right]",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401815f9786c2744d1bb69e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這個次序讓孤立的一次跳動較難主導整窗。然後用完全相同的原幀、時間與取樣座標，重播「重複前一原幀」作為對照，也算出它的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "D",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。逐點比較兩組交替幅度，再取該窗有效位置的第 90 百分位，最後對各時間窗取中位數",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這個次序讓孤立的一次跳動較難主導整窗。然後用完全相同的原幀、時間與取樣座標，重播「重複前一原幀」作為對照，也算出它的 D。逐點比較兩組交替幅度，再取該窗有效位置的第 90 百分位，最後對各時間窗取中位數",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181a2a1b7e7f92174cced",
+            "type": "equation",
+            "richText": [
+              {
+                "text": "S_F=\\operatorname{median}_{w}\\;Q_{0.9,\\;p\\in V_w}\n\\left(\\left|D_w^{\\mathrm{test}}(p)\\right|-\\left|D_w^{\\mathrm{repeat}}(p)\\right|\\right)",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "S_F=\\operatorname{median}_{w}\\;Q_{0.9,\\;p\\in V_w}\n\\left(\\left|D_w^{\\mathrm{test}}(p)\\right|-\\left|D_w^{\\mathrm{repeat}}(p)\\right|\\right)",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181959decd49290d269e4",
+            "type": "text",
+            "richText": [
+              {
+                "text": "V_w",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是通過整窗追蹤的有效位置。兩組各自先算出保留正負方向的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "D_w",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，之後才取絕對值、逐點相減。差值保留負值，代表比重複前幀的交替更少。這個分數回答的是，相對於重複前幀，被測輸出額外增加了多少持續交替。以前面的示意數字來看，重複前幀若在中點取到 40，對照的單次偏差就是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "40-41=-1",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。若一秒分段彙整後，兩組仍分別是 −13、−1，該點的交替增量便是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "13-1=12",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，再參與空間百分位和跨窗中位數。單位是 8-bit 視訊亮度碼值或細節 RMS 碼值的差。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "V_w 是通過整窗追蹤的有效位置。兩組各自先算出保留正負方向的 D_w，之後才取絕對值、逐點相減。差值保留負值，代表比重複前幀的交替更少。這個分數回答的是，相對於重複前幀，被測輸出額外增加了多少持續交替。以前面的示意數字來看，重複前幀若在中點取到 40，對照的單次偏差就是 40-41=-1。若一秒分段彙整後，兩組仍分別是 −13、−1，該點的交替增量便是 13-1=12，再參與空間百分位和跨窗中位數。單位是 8-bit 視訊亮度碼值或細節 RMS 碼值的差。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401815a883bca38dbb30ff2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "量測器也保留頻譜，讓我們看見背心的峰值落在 25 Hz。報表裡的這個交替分數則由上面的時域公式計算。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "量測器也保留頻譜，讓我們看見背心的峰值落在 25 Hz。報表裡的這個交替分數則由上面的時域公式計算。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401816f8d06d4d378e676e1",
+            "type": "text",
+            "richText": [
+              {
+                "text": "到 P 階段，我又要求補上原片的絕對亮度、細節和位置作基線。在固定紋理的控制實驗裡，所有幀一起模糊，交替分數仍是零，細節 RMS 已從 3.85 降到 1.54。直接重複原幀也能取得零增量。於是每輪除了看交替量，也要核對原片細節保留了多少，並用藏起真幀再重建的測試檢查位置。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "到 P 階段，我又要求補上原片的絕對亮度、細節和位置作基線。在固定紋理的控制實驗裡，所有幀一起模糊，交替分數仍是零，細節 RMS 已從 3.85 降到 1.54。直接重複原幀也能取得零增量。於是每輪除了看交替量，也要核對原片細節保留了多少，並用藏起真幀再重建的測試檢查位置。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c4018120b2d7d16af24757dc",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "P 的局部相位插幀",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "P 的局部相位插幀",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181fbb741e3ea040a7f8a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "接下來的 P，從前後兩張原幀重建細紋。振幅保留條紋的平均對比，相位把條紋放到移動的半途。較粗的影像結構先判斷整體位移，協助排除週期花紋的錯配。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "接下來的 P，從前後兩張原幀重建細紋。振幅保留條紋的平均對比，相位把條紋放到移動的半途。較粗的影像結構先判斷整體位移，協助排除週期花紋的錯配。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181e8b3fbedf5b49307c8",
+            "type": "text",
+            "richText": [
+              {
+                "text": "第一個 P 原型先沿用上面的指標。為了單獨比較中點合成方法，K、N、P 都使用同一組呈現原幀，在正常 25→50 fps 下重算。2 像素尺度的持續細節交替增量如下",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "第一個 P 原型先沿用上面的指標。為了單獨比較中點合成方法，K、N、P 都使用同一組呈現原幀，在正常 25→50 fps 下重算。2 像素尺度的持續細節交替增量如下",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181d98a16efb0f94cc183",
+            "type": "table",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [
+              "jAqs",
+              "Wt^j",
+              "Vj`p"
+            ],
+            "tableHasColumnHeader": true,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "41ec1b36c40181c6938cc98469dd9e06",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "Vj`p": [
+                    {
+                      "text": "背心近景",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "Wt^j": [
+                    {
+                      "text": "背心遠景",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "jAqs": [
+                    {
+                      "text": "方法",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "41ec1b36c4018150a25cee4379c97675",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "Vj`p": [
+                    {
+                      "text": "2.69",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "Wt^j": [
+                    {
+                      "text": "11.00",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "jAqs": [
+                    {
+                      "text": "K 塗抹版",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "41ec1b36c40181b3bc0cc3643a4556f3",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "Vj`p": [
+                    {
+                      "text": "4.98",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "Wt^j": [
+                    {
+                      "text": "12.46",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "jAqs": [
+                    {
+                      "text": "N 細節增強版",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "41ec1b36c40181acb9a4c3faf944649d",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "Vj`p": [
+                    {
+                      "text": "0.29",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "Wt^j": [
+                    {
+                      "text": "0.82",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "jAqs": [
+                    {
+                      "text": "P 局部相位插幀",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "41ec1b36c401818e9ba8edc6d4b4ec27",
+            "type": "text",
+            "richText": [
+              {
+                "text": "P 把原幀與插入幀之間的細節起伏壓低了。接著暫時藏起原片的奇數幀，只用相鄰偶數幀重建，再交換奇偶，做 12.5→25 fps 的驗證。每張重建圖都和藏起的真幀逐像素比對，對每個像素取兩者差值的絕對值，再平均。P 在遠、近景的平均誤差都比 VT 小。再逐塊、逐幀檢查，按區塊面積加權後，P 誤差較大的比例為遠景 3.3%、近景 21.2%，圖中的局部斜線也能看見位置偏差。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "P 把原幀與插入幀之間的細節起伏壓低了。接著暫時藏起原片的奇數幀，只用相鄰偶數幀重建，再交換奇偶，做 12.5→25 fps 的驗證。每張重建圖都和藏起的真幀逐像素比對，對每個像素取兩者差值的絕對值，再平均。P 在遠、近景的平均誤差都比 VT 小。再逐塊、逐幀檢查，按區塊面積加權後，P 誤差較大的比例為遠景 3.3%、近景 21.2%，圖中的局部斜線也能看見位置偏差。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181d3970dcfecc2dccd68",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-vt-phase-reconstruction-reference.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-vt-phase-reconstruction-reference.png",
+            "caption": [
+              {
+                "text": "12.5→25 fps 抽幀驗證。左欄是藏起來作為答案的真實原幀，中欄由 VT 重建，右欄由 P 重建。上排可見 P 保住菱格對比，下排近景的局部位置仍有偏差。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:8a8b35d3-bc0a-407e-8f99-2fcf9863812e:syncnext-vt-phase-reconstruction-reference.png",
+            "assetPath": "content/blog-assets/41ac1b36c40181cf8261fc89174bcaef/41ec1b36c40181d3970dcfecc2dccd68-syncnext-vt-phase-reconstruction-reference.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401811abc42dcc58d1f0eb8",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這樣得到的中間幀，原本變淡的背心條紋能保住對比。P 沿用 VT 的色彩，重建中間幀的亮度，原幀照原樣顯示。11 月 19 日，我看過客廳 Probe 45，認可了 P 的效果，接著把它整合進播放器。「高風險紋理遮罩」也改名為「高風險紋理處理」。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這樣得到的中間幀，原本變淡的背心條紋能保住對比。P 沿用 VT 的色彩，重建中間幀的亮度，原幀照原樣顯示。11 月 19 日，我看過客廳 Probe 45，認可了 P 的效果，接著把它整合進播放器。「高風險紋理遮罩」也改名為「高風險紋理處理」。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181e999e3d1d3627b5c19",
+            "type": "text",
+            "richText": [
+              {
+                "text": "快速動作很快暴露另一個問題。《公公出宮》第 21 集有一段人物大幅移動，FPS 看起來還在，動作卻像回到 25 fps。在第一段取樣窗，原片選出 520 個快速移動的特徵點。關閉亮度補償的 VT 中間幀還能追到 486 個，全畫面 P 只剩 90 個。第一版 P 會覆寫整張中間幀的亮度，並在 32×32 小區塊裡推算紋理位置。人物位移太大時，同一塊區域的前後內容已從臉換成背景。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "快速動作很快暴露另一個問題。《公公出宮》第 21 集有一段人物大幅移動，FPS 看起來還在，動作卻像回到 25 fps。在第一段取樣窗，原片選出 520 個快速移動的特徵點。關閉亮度補償的 VT 中間幀還能追到 486 個，全畫面 P 只剩 90 個。第一版 P 會覆寫整張中間幀的亮度，並在 32×32 小區塊裡推算紋理位置。人物位移太大時，同一塊區域的前後內容已從臉換成背景。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c4018119a883f33f8fe5c405",
+            "type": "text",
+            "richText": [
+              {
+                "text": "細節 RMS 保留細紋有多強，條紋挪錯位置也可能有接近的強度。有些增加的畫格已經上屏，人物輪廓卻沒有落在移動的半途。於是驗收加入快速運動的軌跡與中點位置，分開記錄實際上屏的原幀、插入幀和 VT 耗時。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "細節 RMS 保留細紋有多強，條紋挪錯位置也可能有接近的強度。有些增加的畫格已經上屏，人物輪廓卻沒有落在移動的半途。於是驗收加入快速運動的軌跡與中點位置，分開記錄實際上屏的原幀、插入幀和 VT 耗時。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c4018119ba6de2bfa014e28b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我提出的分工是，大幅度動作交給 VT，P 只處理能穩定對上的細紋。接下來固定 P 的重建方法，專門改選區。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我提出的分工是，大幅度動作交給 VT，P 只處理能穩定對上的細紋。接下來固定 P 的重建方法，專門改選區。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c4018171b724e0bc9925d68b",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "R 決定哪些地方交給 P",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "R 決定哪些地方交給 P",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181f1a6ebc3b0098b097a",
+            "type": "text",
+            "richText": [
+              {
+                "text": "R 是一張 0 到 1 的權重圖。每個位置的值 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "m",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 決定中間幀亮度要混入多少 P，最後的合成是",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "R 是一張 0 到 1 的權重圖。每個位置的值 m 決定中間幀亮度要混入多少 P，最後的合成是",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401811fa9e3daa0943cc76d",
+            "type": "equation",
+            "richText": [
+              {
+                "text": "Y_{\\mathrm{out}}(x)=Y_{\\mathrm{VT}}(x)+m(x)\\left[Y_{\\mathrm{P}}(x)-Y_{\\mathrm{VT}}(x)\\right]",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Y_{\\mathrm{out}}(x)=Y_{\\mathrm{VT}}(x)+m(x)\\left[Y_{\\mathrm{P}}(x)-Y_{\\mathrm{VT}}(x)\\right]",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181f6b200cffc9aa48ad1",
+            "type": "text",
+            "richText": [
+              {
+                "text": "m=0",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 時保留 VT，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "m=1",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 時使用 P，中間值按比例混合。原幀照常呈現，中間幀的色彩沿用 VT。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "m=0 時保留 VT，m=1 時使用 P，中間值按比例混合。原幀照常呈現，中間幀的色彩沿用 VT。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401819ab994c2b560e0d700",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-vt-p-r-flow.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-vt-p-r-flow.png",
+            "caption": [
+              {
+                "text": "VT 提供完整中間幀，P 供應細紋亮度，R 控制混合區域與強度。這是處理流程示意。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:7283e475-6c9e-4db4-8d0b-3a3a4a6ae670:syncnext-vt-p-r-flow.png",
+            "assetPath": "content/blog-assets/41ac1b36c40181cf8261fc89174bcaef/41ec1b36c401819ab994c2b560e0d700-syncnext-vt-p-r-flow.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c4018144b736cbf2d812bbf6",
+            "type": "text",
+            "richText": [
+              {
+                "text": "初期 R 把空間與時間兩種證據合在一起。下面是 Probe 46、69 所沿用的凍結估計器。先用雙向光流，把前後原幀的細紋與舊歷史搬到同一個位置，再觀察 VT 是否持續把紋理抹淡。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "初期 R 把空間與時間兩種證據合在一起。下面是 Probe 46、69 所沿用的凍結估計器。先用雙向光流，把前後原幀的細紋與舊歷史搬到同一個位置，再觀察 VT 是否持續把紋理抹淡。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181e6ac3fc42e0409f279",
+            "type": "text",
+            "richText": [
+              {
+                "text": "令 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "\\bar T_i",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是前後原幀沿軌跡取到的細紋強度平均，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "T_i^{\\mathrm{VT}}",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是 VT 中間幀的細紋強度。把前一原幀重複到中間時點，取到的對照強度記為 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "T_i^{\\mathrm{repeat}}",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。新的損失觀測為",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "令 \\bar T_i 是前後原幀沿軌跡取到的細紋強度平均，T_i^{\\mathrm{VT}} 是 VT 中間幀的細紋強度。把前一原幀重複到中間時點，取到的對照強度記為 T_i^{\\mathrm{repeat}}。新的損失觀測為",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181d4b297f82d8139906a",
+            "type": "equation",
+            "richText": [
+              {
+                "text": "e_i=u_i\\max\\left(\\bar T_i-T_i^{\\mathrm{VT}}-\\left|\\bar T_i-T_i^{\\mathrm{repeat}}\\right|,\\;0\\right)",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "e_i=u_i\\max\\left(\\bar T_i-T_i^{\\mathrm{VT}}-\\left|\\bar T_i-T_i^{\\mathrm{repeat}}\\right|,\\;0\\right)",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401815ca30fd8e4a1389bf2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "u_i",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是紋理存在且能可靠追蹤的權重。VT 中間幀的細紋比兩端參照淡得越多，扣掉重複前幀對照的偏差後，剩下的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "e_i",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 就越大。這是 R 每對畫格的即時觀測，前節的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "S_F",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 則用來評分整段測試。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "u_i 是紋理存在且能可靠追蹤的權重。VT 中間幀的細紋比兩端參照淡得越多，扣掉重複前幀對照的偏差後，剩下的 e_i 就越大。這是 R 每對畫格的即時觀測，前節的 S_F 則用來評分整段測試。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401815b9343c15ce90bfbfc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "歷史按九成舊值、一成新觀測更新，再沿光流搬到下一張原幀的位置",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "歷史按九成舊值、一成新觀測更新，再沿光流搬到下一張原幀的位置",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181d2b297dc4d4297f1a4",
+            "type": "equation",
+            "richText": [
+              {
+                "text": "h_{i+1}=\\mathcal{W}_{i\\rightarrow i+1}\\left(0.9h_i+0.1e_i\\right)",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "h_{i+1}=\\mathcal{W}_{i\\rightarrow i+1}\\left(0.9h_i+0.1e_i\\right)",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181a88cb7d1c764cabd4e",
+            "type": "text",
+            "richText": [
+              {
+                "text": "\\mathcal W",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 表示隨運動搬移歷史，只在雙向光流可靠、仍在有效範圍時保留；不可靠、出界或切鏡時清零。這一對的遮罩先使用舊歷史，當前 VT 的內容在完成後才寫入下一對，讓反覆出現的紋理損失累積起來。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "\\mathcal W 表示隨運動搬移歷史，只在雙向光流可靠、仍在有效範圍時保留；不可靠、出界或切鏡時清零。這一對的遮罩先使用舊歷史，當前 VT 的內容在完成後才寫入下一對，讓反覆出現的紋理損失累積起來。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181edb62adcf33f06b37f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "接著把歷史損失 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "h",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 轉成時間權重 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "t",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。當時的設定從 4 以下的零權重，平滑增加到 12 以上的完整權重。空間支援 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "s",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 會檢查前後原幀是否都有相近尺度的細紋，再結合既有歷史遮罩，向亮度、紋理相近的鄰區補上細縫。式中的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "h",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 取沿光流對回左原幀的歷史值。細紋對位可靠且未切鏡時，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "g_{\\mathrm{match}}=1",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，其餘為零。用連續權重表示合併關係",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "接著把歷史損失 h 轉成時間權重 t。當時的設定從 4 以下的零權重，平滑增加到 12 以上的完整權重。空間支援 s 會檢查前後原幀是否都有相近尺度的細紋，再結合既有歷史遮罩，向亮度、紋理相近的鄰區補上細縫。式中的 h 取沿光流對回左原幀的歷史值。細紋對位可靠且未切鏡時，g_{\\mathrm{match}}=1，其餘為零。用連續權重表示合併關係",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181a59904dcf9f5883599",
+            "type": "equation",
+            "richText": [
+              {
+                "text": "\\begin{aligned}\nt&=g_{\\mathrm{match}}\\operatorname{smoothstep}(4,12,h)\\\\\nm_{\\mathrm{raw}}&=q\\left[t+(1-t)s\\right]\n\\end{aligned}",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "\\begin{aligned}\nt&=g_{\\mathrm{match}}\\operatorname{smoothstep}(4,12,h)\\\\\nm_{\\mathrm{raw}}&=q\\left[t+(1-t)s\\right]\n\\end{aligned}",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401813ea6acdfca47af6f6d",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這裡的 smoothstep 先把 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "h",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 的 4 到 12 範圍映成 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "z\\in[0,1]",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，再取 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "z^2(3-2z)",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 作平滑權重。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "q",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 是光流與局部運動的可信度。往返對不上或出界的地方設為零；在這份凍結設定中，每對原幀位移 8 像素以內可維持完整運動權重，8 到 16 像素之間逐步降低，16 像素以上回到 VT。這些距離以 1080p 原片像素計算。最後把權重上採樣、量化成灰階圖，並讓已選區的內部逐步推向全 P，邊界沿用灰階銜接，得到合成用的 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "m",
+                "annotations": [
+                  "e"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這裡的 smoothstep 先把 h 的 4 到 12 範圍映成 z\\in[0,1]，再取 z^2(3-2z) 作平滑權重。q 是光流與局部運動的可信度。往返對不上或出界的地方設為零；在這份凍結設定中，每對原幀位移 8 像素以內可維持完整運動權重，8 到 16 像素之間逐步降低，16 像素以上回到 VT。這些距離以 1080p 原片像素計算。最後把權重上採樣、量化成灰階圖，並讓已選區的內部逐步推向全 P，邊界沿用灰階銜接，得到合成用的 m。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c4018173b580d6f7fef9c0bc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "《公主嫁到》那段橫搖又回來了。用原片選出 8,825 條大位移軌跡，VT 保住其中 8,813 條，全畫面 P 只保住 1,152 條。這輪初期歷史遮罩加上 P 後，保留數回到 8,813。於是這段橫搖繼續放在每輪驗收裡，和背心的遠、近景一起重播。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "《公主嫁到》那段橫搖又回來了。用原片選出 8,825 條大位移軌跡，VT 保住其中 8,813 條，全畫面 P 只保住 1,152 條。這輪初期歷史遮罩加上 P 後，保留數回到 8,813。於是這段橫搖繼續放在每輪驗收裡，和背心的遠、近景一起重播。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401816eabb6f8f90884acaf",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我接受了 Probe 46 的 R 畫質，接著要看完整耗時。那次三個場景都以 1080p 呈現，量到 50 fps。P 是在每景開播前由裝置先算好，R 遮罩也由離線產生。改成播放中才算 P，約只有 37 fps，VT 算完的中間幀也有將近一半趕不上顯示。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我接受了 Probe 46 的 R 畫質，接著要看完整耗時。那次三個場景都以 1080p 呈現，量到 50 fps。P 是在每景開播前由裝置先算好，R 遮罩也由離線產生。改成播放中才算 P，約只有 37 fps，VT 算完的中間幀也有將近一半趕不上顯示。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181faa9aad7a6dfaa4281",
+            "type": "text",
+            "richText": [
+              {
+                "text": "即時版便繼續拆運算。R 的運算網格每邊縮到三分之一，細紋強度仍在原解析度量測。P 只算會影響遮罩的圖塊，並和完整 P 核對可能被取用的像素。Probe 69 在每景預播 6.5 秒、停用驗證讀回的實測中，背心遠景是 47.50 fps，近景和橫搖達到 50 fps，這一版的即時遮罩與稀疏 P 隨後整合進正式播放器。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "即時版便繼續拆運算。R 的運算網格每邊縮到三分之一，細紋強度仍在原解析度量測。P 只算會影響遮罩的圖塊，並和完整 P 核對可能被取用的像素。Probe 69 在每景預播 6.5 秒、停用驗證讀回的實測中，背心遠景是 47.50 fps，近景和橫搖達到 50 fps，這一版的即時遮罩與稀疏 P 隨後整合進正式播放器。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181b98e1ed767f0f01cdf",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-vest-regional-mask-comparison.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-vest-regional-mask-comparison.png",
+            "caption": [
+              {
+                "text": "Probe 69 的背心遠、近景。左欄是原幀，中欄是已驗收的 R，右欄是即時候選 R。綠色顯示混入 P 的權重。圖中時間為測試片段內時間。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:82756daa-b2c1-4b6a-9c74-7a5e5c76611b:syncnext-vest-regional-mask-comparison.png",
+            "assetPath": "content/blog-assets/41ac1b36c40181cf8261fc89174bcaef/41ec1b36c40181b98e1ed767f0f01cdf-syncnext-vest-regional-mask-comparison.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401814baf87de569aa50e11",
+            "type": "text",
+            "richText": [
+              {
+                "text": "之後把 R 使用的 CPU 光流換成 Metal 實作的雙向 LK 光流。Probe 85 在客廳 A15 跑了兩輪一分鐘的 GPU 測試，系統全程回報正常溫度。兩輪各有 1,500 張中間幀帶著 R 上屏。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "之後把 R 使用的 CPU 光流換成 Metal 實作的雙向 LK 光流。Probe 85 在客廳 A15 跑了兩輪一分鐘的 GPU 測試，系統全程回報正常溫度。兩輪各有 1,500 張中間幀帶著 R 上屏。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401818aaad6efd18bddca18",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "熱機後，R 也要趕得上",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "熱機後，R 也要趕得上",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181dbb936ffb9fb3c2623",
+            "type": "text",
+            "richText": [
+              {
+                "text": "客廳 A15 播了 13 分 42 秒背心原片，接回《公主嫁到》所在的 78 秒片段。tvOS 回報的熱狀態維持在 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "serious",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，持續開著 P＋R 時只剩 28.17 fps。另一輪用同樣的預播流程，在接片前停下 P＋R 的工作、保留 VT session，量到 49.96 fps。兩輪都確認 4K 已縮到 1080p。P、R 的運算會搶走 VT 需要的時間，完整結果也會在準備好時錯過顯示期限。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "客廳 A15 播了 13 分 42 秒背心原片，接回《公主嫁到》所在的 78 秒片段。tvOS 回報的熱狀態維持在 serious，持續開著 P＋R 時只剩 28.17 fps。另一輪用同樣的預播流程，在接片前停下 P＋R 的工作、保留 VT session，量到 49.96 fps。兩輪都確認 4K 已縮到 1080p。P、R 的運算會搶走 VT 需要的時間，完整結果也會在準備好時錯過顯示期限。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181f7b59df907de6d4b21",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-hot-playback-fps.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-hot-playback-fps.png",
+            "caption": [
+              {
+                "text": "客廳 A15 在 serious 熱狀態下的 78 秒對照，依逐秒上屏收據重繪。持續計算 P＋R 的版本約十秒後降回 25 fps。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:0c19d45d-7168-4350-bf2f-ef935e225051:syncnext-hot-playback-fps.png",
+            "assetPath": "content/blog-assets/41ac1b36c40181cf8261fc89174bcaef/41ec1b36c40181f7b59df907de6d4b21-syncnext-hot-playback-fps.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401813687a6f9c2b7ef12d9",
+            "type": "text",
+            "richText": [
+              {
+                "text": "後續測試分開記下原幀、VT 中間幀和含 R 結果的中間幀，並逐秒對齊熱狀態。到獨立的 Probe 95，同為 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "serious",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 的兩分鐘背心對照，平均上屏由舊 R 的 47.58 提到 49.88 fps，低於 46 fps 的秒數從 14 降到 0。兩版都完成 R 的 1,939 對背心畫格中，把光流和遮罩重疊的 GPU 時間只算一次，平均每對從 23.04 ms 降到 3.13 ms。《公主嫁到》所在片段也改善，仍有三秒低於 46 fps。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "後續測試分開記下原幀、VT 中間幀和含 R 結果的中間幀，並逐秒對齊熱狀態。到獨立的 Probe 95，同為 serious 的兩分鐘背心對照，平均上屏由舊 R 的 47.58 提到 49.88 fps，低於 46 fps 的秒數從 14 降到 0。兩版都完成 R 的 1,939 對背心畫格中，把光流和遮罩重疊的 GPU 時間只算一次，平均每對從 23.04 ms 降到 3.13 ms。《公主嫁到》所在片段也改善，仍有三秒低於 46 fps。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c4018163ad16e4d0d7f69359",
+            "type": "text",
+            "richText": [
+              {
+                "text": "R95 又改了權重的估計方式。它在每個 8×8 格子取四組亮度與四鄰差分，快速描述當前細紋。輸入還包括沿光流搬來的歷史亮度偏差、細節變淡與偏差幅度，以及兩端紋理強度、兩端差異和移動速度。四層的小決策樹用這些訊號，判斷這一格使用 P 是否值得。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "R95 又改了權重的估計方式。它在每個 8×8 格子取四組亮度與四鄰差分，快速描述當前細紋。輸入還包括沿光流搬來的歷史亮度偏差、細節變淡與偏差幅度，以及兩端紋理強度、兩端差異和移動速度。四層的小決策樹用這些訊號，判斷這一格使用 P 是否值得。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181668ce0c72d984e88a0",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這棵樹先在離線開發片段比較純 VT 與完整 P，把亮度、細節的持續偏差改善量當作訓練目標，再凍結參數。即時播放時，R95 先根據當前原幀與過去已完成的 VT 觀測選擇權重，乘上運動可信度，再展開成 1080p 灰階遮罩，交給稀疏 P 決定要算哪些圖塊。當前 VT 只更新後續歷史。離線漏判分解顯示，41:39 珠簾裡可由 P 改善的收益，多落在預估收益不足的格子。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這棵樹先在離線開發片段比較純 VT 與完整 P，把亮度、細節的持續偏差改善量當作訓練目標，再凍結參數。即時播放時，R95 先根據當前原幀與過去已完成的 VT 觀測選擇權重，乘上運動可信度，再展開成 1080p 灰階遮罩，交給稀疏 P 決定要算哪些圖塊。當前 VT 只更新後續歷史。離線漏判分解顯示，41:39 珠簾裡可由 P 改善的收益，多落在預估收益不足的格子。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181eea9f3e4c79abf4b52",
+            "type": "text",
+            "richText": [
+              {
+                "text": "然後，第 13 集 41:39 的背景珠簾又把遮罩的漏判露了出來。R95 只覆蓋珠簾區的 8.8%。R96 分開觀察水平、垂直細紋，把過去幾張 VT 反覆偏離原片的位置提高權重。原片自身變動越大，就降低那部分的觀測權重，再重新分配 P 的圖塊預算。離線重播裡，41:39 的覆蓋提高到 43.0%，41:40 的改善仍然很小。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "然後，第 13 集 41:39 的背景珠簾又把遮罩的漏判露了出來。R95 只覆蓋珠簾區的 8.8%。R96 分開觀察水平、垂直細紋，把過去幾張 VT 反覆偏離原片的位置提高權重。原片自身變動越大，就降低那部分的觀測權重，再重新分配 P 的圖塊預算。離線重播裡，41:39 的覆蓋提高到 43.0%，41:40 的改善仍然很小。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181f1b90de9c3970da186",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這輪獨立 Probe 的 R96，先把方向性證據換成額外權重，與 R95 逐點取較大值，再按每個 P 圖塊實際支援範圍的平均權重排序。這一幀能保留多少圖塊，由同一幀 R95 實際啟動的 FFT 圖塊數決定。會喚起未保留圖塊的像素就清零。這是在同一幀的圖塊總量內換選區，局部權重因此可能降低。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這輪獨立 Probe 的 R96，先把方向性證據換成額外權重，與 R95 逐點取較大值，再按每個 P 圖塊實際支援範圍的平均權重排序。這一幀能保留多少圖塊，由同一幀 R95 實際啟動的 FFT 圖塊數決定。會喚起未保留圖塊的像素就清零。這是在同一幀的圖塊總量內換選區，局部權重因此可能降低。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181a68967c79e4c5f2f35",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-r95-r96-curtain-masks.jpg",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-r95-r96-curtain-masks.jpg",
+            "caption": [
+              {
+                "text": "《公公出宮》第 13 集 41:39、41:40 的珠簾選區。紫色越強代表混入 P 的權重越高，綠框是預先固定的評分區。圖為 R95、R96 的離線遮罩對照。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:ea17c47b-6d2e-409e-873f-00a2a8d1387e:syncnext-r95-r96-curtain-masks.jpg",
+            "assetPath": "content/blog-assets/41ac1b36c40181cf8261fc89174bcaef/41ec1b36c40181a68967c79e4c5f2f35-syncnext-r95-r96-curtain-masks.jpg",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181e394d2e030b3c1c3ca",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我再要求做獨立的 GPU 預熱。每場先讓客廳 A15 連續維持 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "serious",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 至少 45 秒，等最後一個 GPU 命令完成才開始播放。十二場主測只比較兩版在相同原片時間都處於這個熱狀態的完整秒。背心共 120 個配對秒，R95 平均 49.86 fps，R96 為 49.22 fps。三段素材合計 281 個配對秒，R95 全部達到 46 fps，R96 有六秒低於 46 fps，其中四秒在背心、兩秒在《公主嫁到》。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我再要求做獨立的 GPU 預熱。每場先讓客廳 A15 連續維持 serious 至少 45 秒，等最後一個 GPU 命令完成才開始播放。十二場主測只比較兩版在相同原片時間都處於這個熱狀態的完整秒。背心共 120 個配對秒，R95 平均 49.86 fps，R96 為 49.22 fps。三段素材合計 281 個配對秒，R95 全部達到 46 fps，R96 有六秒低於 46 fps，其中四秒在背心、兩秒在《公主嫁到》。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40181228b3dfa6ca6275bcc",
+            "type": "text",
+            "richText": [
+              {
+                "text": "再讀回客廳實際上屏的畫格，41:39 珠簾那一秒的 25 張中間幀都能逐張配對。R95 到 R96，細節殘差從 1.212 降到 0.861。下一秒配對到 23 張，只從 1.877 降到 1.838。另一次 R96 在《公主嫁到》橫搖後崩潰，後來重跑同一段 78 秒，兩版都播完，指定橫搖的 59 張中間幀也都帶著 R 上屏。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "再讀回客廳實際上屏的畫格，41:39 珠簾那一秒的 25 張中間幀都能逐張配對。R95 到 R96，細節殘差從 1.212 降到 0.861。下一秒配對到 23 張，只從 1.877 降到 1.838。另一次 R96 在《公主嫁到》橫搖後崩潰，後來重跑同一段 78 秒，兩版都播完，指定橫搖的 59 張中間幀也都帶著 R 上屏。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c4018004b7bad143f5a8ef3c",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Probe 97 沿用 R96 的遮罩，修了取消 GPU 工作時的崩潰。舊流程先登記 Metal 完成回呼，才檢查能否提交。恢復播放時如果剛好拒絕新工作，錯誤處理和回呼就可能各交付一次結果。把登記和提交放進同一個加鎖區段後，客廳 A15 連做 32 次拒絕提交測試，完成回呼都是零次。十場熱機播放裡，紋理增強因掉速暫停了三次，三次都恢復。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Probe 97 沿用 R96 的遮罩，修了取消 GPU 工作時的崩潰。舊流程先登記 Metal 完成回呼，才檢查能否提交。恢復播放時如果剛好拒絕新工作，錯誤處理和回呼就可能各交付一次結果。把登記和提交放進同一個加鎖區段後，客廳 A15 連做 32 次拒絕提交測試，完成回呼都是零次。十場熱機播放裡，紋理增強因掉速暫停了三次，三次都恢復。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c40180daa187c03657a8c8f9",
+            "type": "text",
+            "richText": [
+              {
+                "text": "11 月 20 日 20:19，R97 的紋理處理和插幀恢復機制整合進 Syncnext 播放器。用播放器的渲染程式在 M2 Ultra 重播背心遠景、近景、庭院橫搖和珠簾，614 張 1080p 遮罩逐像素吻合凍結的參照。這輪重播使用事先錄好的 VT 中間幀。前面十場的即時補幀與上屏數據，來自客廳的獨立 Probe 97。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "11 月 20 日 20:19，R97 的紋理處理和插幀恢復機制整合進 Syncnext 播放器。用播放器的渲染程式在 M2 Ultra 重播背心遠景、近景、庭院橫搖和珠簾，614 張 1080p 遮罩逐像素吻合凍結的參照。這輪重播使用事先錄好的 VT 中間幀。前面十場的即時補幀與上屏數據，來自客廳的獨立 Probe 97。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c4018122be26cbfb1f98e754",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "結語",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "結語",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41ec1b36c401819b8f46d822e55f3e40",
+            "type": "text",
+            "richText": [
+              {
+                "text": "走到 VT＋P＋R，Syncnext 依然是一個以 VideoToolbox 為主的插幀系統。VT 負責整體運動和中間幀，P＋R 的工作是改善 VT 插幀結果中的局部缺陷。P 重建細紋的亮度與對比，R 決定在哪裡、以多少權重混入 P，讓細節修正配合 VT 的運動表現。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "走到 VT＋P＋R，Syncnext 依然是一個以 VideoToolbox 為主的插幀系統。VT 負責整體運動和中間幀，P＋R 的工作是改善 VT 插幀結果中的局部缺陷。P 重建細紋的亮度與對比，R 決定在哪裡、以多少權重混入 P，讓細節修正配合 VT 的運動表現。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "410c1b36c4018135a06dc0c82c79915b",
       "slug": "trackly-back-tap-setup-410c1b36",
@@ -42,7 +2896,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:24:33.119Z",
+        "syncedAt": "2026-11-20T14:10:01.002Z",
         "blocks": [
           {
             "id": "96e7dfdf58784bc5816c65e39e0e599b",
@@ -416,7 +3270,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:24:33.484Z",
+        "syncedAt": "2026-11-20T14:10:02.209Z",
         "blocks": [
           {
             "id": "1ed2e29cca8a4795b3c4258af9902830",
@@ -781,7 +3635,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:24:42.346Z",
+        "syncedAt": "2026-11-20T14:10:02.616Z",
         "blocks": [
           {
             "id": "384d26859dc84ef7bca80c7ca3abd64b",
@@ -2518,7 +5372,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:24:50.859Z",
+        "syncedAt": "2026-11-20T14:10:03.620Z",
         "blocks": [
           {
             "id": "9ba762b19de342d18628dc9399c70bf0",
@@ -5635,7 +8489,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:25:28.190Z",
+        "syncedAt": "2026-11-20T14:10:05.498Z",
         "blocks": [
           {
             "id": "3fdc1b36c40180e8b534e061c3b1cfa2",
@@ -6471,7 +9325,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:25:30.816Z",
+        "syncedAt": "2026-11-20T14:10:06.493Z",
         "blocks": [
           {
             "id": "3fbc1b36c40180579f01d99c30f0353a",
@@ -6884,7 +9738,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:25:31.159Z",
+        "syncedAt": "2026-11-20T14:10:06.873Z",
         "blocks": [
           {
             "id": "3fac1b36c40180a28146c3b1c2f731b5",
@@ -8128,7 +10982,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:25:33.436Z",
+        "syncedAt": "2026-11-20T14:10:08.134Z",
         "blocks": [
           {
             "id": "cb3df8ac876443f1a78aa70a415e11dc",
@@ -8743,7 +11597,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:56:45.744Z",
+        "syncedAt": "2026-11-20T14:10:10.767Z",
         "blocks": [
           {
             "id": "4fa0a3ed8cfc4e839b88e86cbac50200",
@@ -10061,7 +12915,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:25:43.502Z",
+        "syncedAt": "2026-11-20T14:10:14.731Z",
         "blocks": [
           {
             "id": "1dbb2abe68894e338264b1ecf6eba671",
@@ -10686,7 +13540,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:25:43.920Z",
+        "syncedAt": "2026-11-20T14:10:16.268Z",
         "blocks": [
           {
             "id": "8b9773492bb84438806dc6a9e9865d74",
@@ -13434,7 +16288,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:25:44.287Z",
+        "syncedAt": "2026-11-20T14:10:18.491Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -14857,7 +17711,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:25:49.591Z",
+        "syncedAt": "2026-11-20T14:10:20.211Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -17862,7 +20716,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:26:13.902Z",
+        "syncedAt": "2026-11-20T14:10:24.311Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -18540,7 +21394,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:26:14.313Z",
+        "syncedAt": "2026-11-20T14:10:26.107Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -19248,7 +22102,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:26:14.726Z",
+        "syncedAt": "2026-11-20T14:10:27.366Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -20899,7 +23753,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:26:21.870Z",
+        "syncedAt": "2026-11-20T14:10:29.021Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -21652,7 +24506,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:26:22.211Z",
+        "syncedAt": "2026-11-20T14:10:30.193Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -22003,7 +24857,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:26:22.584Z",
+        "syncedAt": "2026-11-20T14:10:30.945Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -24350,7 +27204,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:26:22.977Z",
+        "syncedAt": "2026-11-20T14:10:33.621Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -25373,7 +28227,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:26:33.423Z",
+        "syncedAt": "2026-11-20T14:10:35.103Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -27726,7 +30580,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:26:54.515Z",
+        "syncedAt": "2026-11-20T14:10:37.519Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -28913,7 +31767,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:26:57.443Z",
+        "syncedAt": "2026-11-20T14:10:38.689Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -29507,7 +32361,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:27:10.814Z",
+        "syncedAt": "2026-11-20T14:10:39.679Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -31709,7 +34563,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:27:11.170Z",
+        "syncedAt": "2026-11-20T14:10:40.657Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -32438,7 +35292,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:27:11.509Z",
+        "syncedAt": "2026-11-20T14:10:42.009Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -33212,7 +36066,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:27:11.845Z",
+        "syncedAt": "2026-11-20T14:10:42.784Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -34362,7 +37216,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:27:27.527Z",
+        "syncedAt": "2026-11-20T14:10:43.846Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -35092,7 +37946,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:27:27.868Z",
+        "syncedAt": "2026-11-20T14:10:44.758Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -35968,7 +38822,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:27:28.213Z",
+        "syncedAt": "2026-11-20T14:10:45.694Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -37354,7 +40208,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:27:28.576Z",
+        "syncedAt": "2026-11-20T14:10:46.461Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -40807,7 +43661,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:27:36.666Z",
+        "syncedAt": "2026-11-20T14:10:49.519Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -42659,7 +45513,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:27:37.039Z",
+        "syncedAt": "2026-11-20T14:10:50.632Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -43320,7 +46174,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:27:41.361Z",
+        "syncedAt": "2026-11-20T14:10:51.646Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -43942,7 +46796,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:27:47.651Z",
+        "syncedAt": "2026-11-20T14:10:52.617Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -44714,7 +47568,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:27:48.032Z",
+        "syncedAt": "2026-11-20T14:10:53.556Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -47667,7 +50521,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:28:47.883Z",
+        "syncedAt": "2026-11-20T14:10:56.515Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -48791,7 +51645,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:28:54.633Z",
+        "syncedAt": "2026-11-20T14:10:57.736Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -49175,7 +52029,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:28:57.250Z",
+        "syncedAt": "2026-11-20T14:10:58.970Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -51988,7 +54842,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:30:10.817Z",
+        "syncedAt": "2026-11-20T14:11:01.370Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -52222,7 +55076,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:30:14.423Z",
+        "syncedAt": "2026-11-20T14:11:02.010Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -52993,7 +55847,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-06T22:30:20.719Z",
+        "syncedAt": "2026-11-20T14:11:03.395Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",

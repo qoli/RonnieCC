@@ -1008,6 +1008,12 @@ html[data-theme="dark"] .theme-toggle span::after {
   white-space: pre;
 }
 
+.blog-equation {
+  max-width: 100%;
+  overflow-x: auto;
+  padding-block: 0.5em;
+}
+
 .blog-table-wrap {
   max-width: 100%;
   overflow-x: auto;

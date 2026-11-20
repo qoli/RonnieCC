@@ -1,5 +1,6 @@
 import { mkdir, rm, copyFile, readdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
+import katex from "katex";
 import {
   applySeo as renderSeo,
   breadcrumbJsonLd,
@@ -714,11 +715,16 @@ function blogList(posts: BlogPost[], language: Language): string {
     .join("");
 }
 
+function renderEquation(source: string, displayMode: boolean): string {
+  return katex.renderToString(source, { displayMode, output: "mathml", throwOnError: false });
+}
+
 function renderRichText(segments: BlogRichText[] = []): string {
   return segments
     .map((segment) => {
       let text = escapeHtml(segment.text).replaceAll("\n", "<br>");
       const annotations = segment.annotations || [];
+      if (annotations.includes("e")) text = renderEquation(segment.text, false);
       if (annotations.includes("c")) text = `<code>${text}</code>`;
       if (annotations.includes("b")) text = `<strong>${text}</strong>`;
       if (annotations.includes("i")) text = `<em>${text}</em>`;
@@ -864,6 +870,8 @@ function renderBlogBlock(block: BlogBlock, rootPath: string, notionUrl: string, 
   const children = renderBlogChildren(block, rootPath, notionUrl, usedIds);
 
   switch (block.type) {
+    case "equation":
+      return `<div class="blog-equation">${renderEquation(block.plainText || "", true)}</div>${children}`;
     case "header":
       return text ? `<h2 id="${escapeAttr(uniqueHeadingId(block.plainText || "", usedIds))}">${text}</h2>${children}` : children;
     case "sub_header":
