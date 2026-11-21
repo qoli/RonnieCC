@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-11-20T14:11:06.599Z",
+  "generatedAt": "2026-11-21T07:19:01.040Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,364 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "41fc1b36c40181959f52d60142fad0ce",
+      "slug": "tvos-subtitle-button-display-inline-41fc1b36",
+      "seoSlug": "tvos-subtitle-button-display-inline",
+      "legacySlugs": [
+        "syncnext-的字幕按鈕去哪了-在-tvos-26-上實測-displayinline-41fc1b36"
+      ],
+      "title": "Syncnext 的字幕按鈕去哪了？在 tvOS 26 上實測 .displayInline",
+      "tag": "tvOS,UIKit,Player",
+      "writtenDate": "2026-11-21",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/tvos-subtitle-button-display-inline-41fc1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/syncnext-%E7%9A%84%E5%AD%97%E5%B9%95%E6%8C%89%E9%88%95%E5%8E%BB%E5%93%AA%E4%BA%86-%E5%9C%A8-tvos-26-%E4%B8%8A%E5%AF%A6%E6%B8%AC-displayinline-41fc1b36c40181959f52d60142fad0ce?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-11-21T07:04:04.920Z",
+      "lastEditedTime": "2026-11-21T07:05:57.469Z",
+      "socialImage": {
+        "url": "https://ronniewong.cc/social/blog/tvos-subtitle-button-display-inline-41fc1b36-c6492200dcbe.png",
+        "width": 1200,
+        "height": 630,
+        "alt": "Syncnext 的字幕按鈕去哪了？在 tvOS 26 上實測 .displayInline — Ronnie Wong"
+      },
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-11-21T07:16:53.647Z",
+        "blocks": [
+          {
+            "id": "41fc1b36c401811ba3b7c97b15a4e3bf",
+            "type": "text",
+            "richText": [
+              {
+                "text": "有位 Syncnext 用戶回報，每次打開影片，播放控制列都找不到字幕按鈕。後來他發現，給字幕選單裡的兩個分組加上 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": ".displayInline",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，按鈕就回來了。我手上只有一次播放的日誌，於是照他的線索，在播放器裡重做這個對照。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "有位 Syncnext 用戶回報，每次打開影片，播放控制列都找不到字幕按鈕。後來他發現，給字幕選單裡的兩個分組加上 .displayInline，按鈕就回來了。我手上只有一次播放的日誌，於是照他的線索，在播放器裡重做這個對照。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41fc1b36c40181ebbd23c2136aee5463",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Syncnext 把字幕入口放在 AVKit 的原生播放控制列上，圖示是一個帶引號的對話框。打開後有「內嵌字幕」和「網路字幕」兩個子選單。照 UIKit 的定義，",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": ".displayInline",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 會把子選單的項目直接排進上一層。用戶看到的變化卻發生得更早，還沒打開選單，控制列上就已經多了一顆按鈕。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Apple 的 displayInline 文件",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://developer.apple.com/documentation/uikit/uimenu/options-swift.struct/displayinline"
+              }
+            ],
+            "plainText": "Syncnext 把字幕入口放在 AVKit 的原生播放控制列上，圖示是一個帶引號的對話框。打開後有「內嵌字幕」和「網路字幕」兩個子選單。照 UIKit 的定義，.displayInline 會把子選單的項目直接排進上一層。用戶看到的變化卻發生得更早，還沒打開選單，控制列上就已經多了一顆按鈕。Apple 的 displayInline 文件",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41fc1b36c40181c292e5c9e78997cc24",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "在 26.2，選單讀得到，按鈕卻看不到",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在 26.2，選單讀得到，按鈕卻看不到",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41fc1b36c401816fbb29d37fff35aeaa",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我在 tvOS 26.2（23K51）的第三代 Apple TV 4K 模擬器裡，用 Syncnext 的原生播放路徑（",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "nativeAVPlayer",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "）播放一段三分鐘的 HLS 影片。字幕入口和影片都固定，只改兩個條件。控制列上那顆獨立的資訊按鈕，可以保留或移除；兩個字幕分組，可以維持一般子選單，或一起加上 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": ".displayInline",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。兩兩搭配，剛好四組。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我在 tvOS 26.2（23K51）的第三代 Apple TV 4K 模擬器裡，用 Syncnext 的原生播放路徑（nativeAVPlayer）播放一段三分鐘的 HLS 影片。字幕入口和影片都固定，只改兩個條件。控制列上那顆獨立的資訊按鈕，可以保留或移除；兩個字幕分組，可以維持一般子選單，或一起加上 .displayInline。兩兩搭配，剛好四組。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41fc1b36c4018105a27bffdba3413c51",
+            "type": "text",
+            "richText": [
+              {
+                "text": "四組都能從 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "AVPlayerViewController.transportBarCustomMenuItems",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 讀回字幕選單，底下兩個分組也都有項目。看實際畫面，差別就出來了。用一般子選單時，喇叭右邊緊接著就是波形圖示；加上 inline，中間多了字幕對話框。把資訊按鈕移除，再試一次，結果一樣。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "四組都能從 AVPlayerViewController.transportBarCustomMenuItems 讀回字幕選單，底下兩個分組也都有項目。看實際畫面，差別就出來了。用一般子選單時，喇叭右邊緊接著就是波形圖示；加上 inline，中間多了字幕對話框。把資訊按鈕移除，再試一次，結果一樣。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41fc1b36c40181d290caf68d1691aaee",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-tvos-26-2-subtitle-controls.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-tvos-26-2-subtitle-controls.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:a1af6deb-9dc8-4256-b3ac-6756d6c5598f:syncnext-tvos-26-2-subtitle-controls.png",
+            "assetPath": "content/blog-assets/41fc1b36c40181959f52d60142fad0ce/41fc1b36c40181d290caf68d1691aaee-syncnext-tvos-26-2-subtitle-controls.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41fc1b36c4018191bbb8e42c44ae4e04",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "書房的 Apple TV，四組都打得開",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "書房的 Apple TV，四組都打得開",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41fc1b36c401811dbb42e14b2c9f72e8",
+            "type": "text",
+            "richText": [
+              {
+                "text": "接著把同一段 HLS 和同樣的四組設定搬到書房。這台是第一代 Apple TV 4K，跑 tvOS 26.6.1（23L781）。這次四組都看得到字幕按鈕，用遙控器按下去也都打得開。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "接著把同一段 HLS 和同樣的四組設定搬到書房。這台是第一代 Apple TV 4K，跑 tvOS 26.6.1（23L781）。這次四組都看得到字幕按鈕，用遙控器按下去也都打得開。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41fc1b36c4018194af35c73cbd7a829b",
+            "type": "text",
+            "richText": [
+              {
+                "text": "一般模式打開後，畫面列出「內嵌字幕 ›」和「網路字幕 ›」兩個入口；加上 inline，「關閉字幕」就直接出現在第一層。這輪實機驗證到打開選單為止，沒有測字幕軌切換。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "一般模式打開後，畫面列出「內嵌字幕 ›」和「網路字幕 ›」兩個入口；加上 inline，「關閉字幕」就直接出現在第一層。這輪實機驗證到打開選單為止，沒有測字幕軌切換。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41fc1b36c4018143b3b3d4db56cbeafe",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-tvos-26-6-1-subtitle-menus.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-tvos-26-6-1-subtitle-menus.png",
+            "caption": [],
+            "language": "",
+            "source": "attachment:ee3e376f-5be5-4ace-be76-8e17067f5f41:syncnext-tvos-26-6-1-subtitle-menus.png",
+            "assetPath": "content/blog-assets/41fc1b36c40181959f52d60142fad0ce/41fc1b36c4018143b3b3d4db56cbeafe-syncnext-tvos-26-6-1-subtitle-menus.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "41fc1b36c4018105bb87e19edbc6cea1",
+            "type": "text",
+            "richText": [
+              {
+                "text": "目前 Syncnext 保留 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "version.majorVersion == 26",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 這個條件，讓兩個字幕分組在 tvOS 26 使用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": ".displayInline",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。它在 26.2 模擬器上讓按鈕出現，在書房電視上則少了一層選單。兩輪之間，系統版本、硬體世代和模擬器／實機環境都變了。要把 26.6.1 當成移除這行的分界，還缺同一機型跨版本的對照。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "目前 Syncnext 保留 version.majorVersion == 26 這個條件，讓兩個字幕分組在 tvOS 26 使用 .displayInline。它在 26.2 模擬器上讓按鈕出現，在書房電視上則少了一層選單。兩輪之間，系統版本、硬體世代和模擬器／實機環境都變了。要把 26.6.1 當成移除這行的分界，還缺同一機型跨版本的對照。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "41ac1b36c40181cf8261fc89174bcaef",
       "slug": "syncnext-tvos-frame-interpolation-41ac1b36",
@@ -39,7 +397,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:09:59.717Z",
+        "syncedAt": "2026-11-21T07:16:55.799Z",
         "blocks": [
           {
             "id": "41ac1b36c40181d082ede9f4d07b65f5",
@@ -2896,7 +3254,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:01.002Z",
+        "syncedAt": "2026-11-21T07:17:03.143Z",
         "blocks": [
           {
             "id": "96e7dfdf58784bc5816c65e39e0e599b",
@@ -3270,7 +3628,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:02.209Z",
+        "syncedAt": "2026-11-21T07:17:03.242Z",
         "blocks": [
           {
             "id": "1ed2e29cca8a4795b3c4258af9902830",
@@ -3635,7 +3993,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:02.616Z",
+        "syncedAt": "2026-11-21T07:17:05.986Z",
         "blocks": [
           {
             "id": "384d26859dc84ef7bca80c7ca3abd64b",
@@ -5372,7 +5730,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:03.620Z",
+        "syncedAt": "2026-11-21T07:17:08.103Z",
         "blocks": [
           {
             "id": "9ba762b19de342d18628dc9399c70bf0",
@@ -8489,7 +8847,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:05.498Z",
+        "syncedAt": "2026-11-21T07:17:19.214Z",
         "blocks": [
           {
             "id": "3fdc1b36c40180e8b534e061c3b1cfa2",
@@ -9325,7 +9683,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:06.493Z",
+        "syncedAt": "2026-11-21T07:17:20.205Z",
         "blocks": [
           {
             "id": "3fbc1b36c40180579f01d99c30f0353a",
@@ -9738,7 +10096,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:06.873Z",
+        "syncedAt": "2026-11-21T07:17:20.344Z",
         "blocks": [
           {
             "id": "3fac1b36c40180a28146c3b1c2f731b5",
@@ -10982,7 +11340,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:08.134Z",
+        "syncedAt": "2026-11-21T07:17:21.217Z",
         "blocks": [
           {
             "id": "cb3df8ac876443f1a78aa70a415e11dc",
@@ -11597,7 +11955,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:10.767Z",
+        "syncedAt": "2026-11-21T07:17:21.355Z",
         "blocks": [
           {
             "id": "4fa0a3ed8cfc4e839b88e86cbac50200",
@@ -12915,7 +13273,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:14.731Z",
+        "syncedAt": "2026-11-21T07:17:24.393Z",
         "blocks": [
           {
             "id": "1dbb2abe68894e338264b1ecf6eba671",
@@ -13540,7 +13898,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:16.268Z",
+        "syncedAt": "2026-11-21T07:17:24.543Z",
         "blocks": [
           {
             "id": "8b9773492bb84438806dc6a9e9865d74",
@@ -16288,7 +16646,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:18.491Z",
+        "syncedAt": "2026-11-21T07:17:24.858Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -17711,7 +18069,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:20.211Z",
+        "syncedAt": "2026-11-21T07:17:26.870Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -20716,7 +21074,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:24.311Z",
+        "syncedAt": "2026-11-21T07:17:33.832Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -21394,7 +21752,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:26.107Z",
+        "syncedAt": "2026-11-21T07:17:34.070Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -22102,7 +22460,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:27.366Z",
+        "syncedAt": "2026-11-21T07:17:34.224Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -23753,7 +24111,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:29.021Z",
+        "syncedAt": "2026-11-21T07:17:37.557Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -24506,7 +24864,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:30.193Z",
+        "syncedAt": "2026-11-21T07:17:37.759Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -24857,7 +25215,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:30.945Z",
+        "syncedAt": "2026-11-21T07:17:37.901Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -27204,7 +27562,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:33.621Z",
+        "syncedAt": "2026-11-21T07:17:38.107Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -28227,7 +28585,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:35.103Z",
+        "syncedAt": "2026-11-21T07:17:40.872Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -30580,7 +30938,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:37.519Z",
+        "syncedAt": "2026-11-21T07:17:45.770Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -31767,7 +32125,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:38.689Z",
+        "syncedAt": "2026-11-21T07:17:46.883Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -32361,7 +32719,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:39.679Z",
+        "syncedAt": "2026-11-21T07:17:50.582Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -34563,7 +34921,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:40.657Z",
+        "syncedAt": "2026-11-21T07:17:50.812Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -35292,7 +35650,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:42.009Z",
+        "syncedAt": "2026-11-21T07:17:50.957Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -36066,7 +36424,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:42.784Z",
+        "syncedAt": "2026-11-21T07:17:51.117Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -37216,7 +37574,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:43.846Z",
+        "syncedAt": "2026-11-21T07:17:55.051Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -37946,7 +38304,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:44.758Z",
+        "syncedAt": "2026-11-21T07:17:55.185Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -38822,7 +39180,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:45.694Z",
+        "syncedAt": "2026-11-21T07:17:55.322Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -40208,7 +40566,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:46.461Z",
+        "syncedAt": "2026-11-21T07:17:55.530Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -43661,7 +44019,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:49.519Z",
+        "syncedAt": "2026-11-21T07:17:56.952Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -45513,7 +45871,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:50.632Z",
+        "syncedAt": "2026-11-21T07:17:57.155Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -46174,7 +46532,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:51.646Z",
+        "syncedAt": "2026-11-21T07:17:58.697Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -46796,7 +47154,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:52.617Z",
+        "syncedAt": "2026-11-21T07:18:00.500Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -47568,7 +47926,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:53.556Z",
+        "syncedAt": "2026-11-21T07:18:00.641Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -50521,7 +50879,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:56.515Z",
+        "syncedAt": "2026-11-21T07:18:18.578Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -51645,7 +52003,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:57.736Z",
+        "syncedAt": "2026-11-21T07:18:20.900Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -52029,7 +52387,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:10:58.970Z",
+        "syncedAt": "2026-11-21T07:18:21.730Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -54842,7 +55200,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:11:01.370Z",
+        "syncedAt": "2026-11-21T07:18:46.170Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -55076,7 +55434,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:11:02.010Z",
+        "syncedAt": "2026-11-21T07:18:47.156Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -55847,7 +56205,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-20T14:11:03.395Z",
+        "syncedAt": "2026-11-21T07:18:48.861Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
