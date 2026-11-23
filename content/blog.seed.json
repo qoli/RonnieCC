@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-11-21T07:19:01.040Z",
+  "generatedAt": "2026-11-23T13:58:52.329Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -8,6 +8,1027 @@
     "sourceUrl": "https://www.notion.so/qoli/60ac1b36c401837598a501cc8b7ea241?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link"
   },
   "posts": [
+    {
+      "id": "421c1b36c401814ba575d21cb567e4d1",
+      "slug": "syncnext-frame-interpolation-performance-421c1b36",
+      "seoSlug": "syncnext-frame-interpolation-performance",
+      "legacySlugs": [
+        "syncnext-插幀開發日誌-part-2-50-fps-的上屏期限-421c1b36"
+      ],
+      "title": "Syncnext 插幀開發日誌 Part 2｜50 fps 的上屏期限",
+      "tag": "tvOS,Player,Video",
+      "writtenDate": "2026-11-23",
+      "year": "2026",
+      "public": true,
+      "subsites": [],
+      "publishTargets": [
+        "ronniecc"
+      ],
+      "canonical": {
+        "site": "ronniecc",
+        "url": "https://ronniewong.cc/blog/syncnext-frame-interpolation-performance-421c1b36/"
+      },
+      "notionUrl": "https://www.notion.so/qoli/syncnext-%E6%8F%92%E5%B9%80%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C-part-2-50-fps-%E7%9A%84%E4%B8%8A%E5%B1%8F%E6%9C%9F%E9%99%90-421c1b36c401814ba575d21cb567e4d1?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
+      "createdTime": "2026-11-23T13:27:21.051Z",
+      "lastEditedTime": "2026-11-23T13:45:37.620Z",
+      "socialImage": {
+        "url": "https://ronniewong.cc/social/blog/syncnext-frame-interpolation-performance-421c1b36-8ddca8b1299c.png",
+        "width": 1200,
+        "height": 630,
+        "alt": "Syncnext 插幀開發日誌 Part 2｜50 fps 的上屏期限 — Ronnie Wong"
+      },
+      "content": {
+        "source": "notion-v3-page-blocks",
+        "syncedAt": "2026-11-23T13:46:49.383Z",
+        "blocks": [
+          {
+            "id": "421c1b36c4018151ba5bceaa5c055974",
+            "type": "text",
+            "richText": [
+              {
+                "text": "《公主嫁到》那段橫搖，這次被我放在一段 15 分鐘測試片的最後。播到 14:40.900，有一張補過紋理的中間幀提早了約 221 毫秒算好。前後兩張中間幀都有上屏紀錄，唯獨這張缺了選幀與上屏回執。要查它在哪一步落下，得先知道每張幀何時算好、何時送去顯示，以及電視實際顯示了哪張。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "《公主嫁到》那段橫搖，這次被我放在一段 15 分鐘測試片的最後。播到 14:40.900，有一張補過紋理的中間幀提早了約 221 毫秒算好。前後兩張中間幀都有上屏紀錄，唯獨這張缺了選幀與上屏回執。要查它在哪一步落下，得先知道每張幀何時算好、何時送去顯示，以及電視實際顯示了哪張。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181e9b4e0cd1797d5fd66",
+            "type": "text",
+            "richText": [
+              {
+                "text": "上一篇從同一段橫搖寫到背心閃爍。最後用 VideoToolbox（VT）產生完整的中間幀，再由 P 重建細紋亮度，R 遮罩決定哪些位置要混入 P。這一篇接著寫，我怎麼把這套處理放進 Apple TV 的即時播放。實機用的是客廳第三代 Apple TV 4K，搭載 A15。",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Part 1｜從《公主嫁到》的那段橫搖開始到閃爍修復",
+                "annotations": [
+                  "a"
+                ],
+                "href": "https://ronniewong.cc/blog/syncnext-tvos-frame-interpolation-41ac1b36/"
+              }
+            ],
+            "plainText": "上一篇從同一段橫搖寫到背心閃爍。最後用 VideoToolbox（VT）產生完整的中間幀，再由 P 重建細紋亮度，R 遮罩決定哪些位置要混入 P。這一篇接著寫，我怎麼把這套處理放進 Apple TV 的即時播放。實機用的是客廳第三代 Apple TV 4K，搭載 A15。Part 1｜從《公主嫁到》的那段橫搖開始到閃爍修復",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181399942d26501e802c1",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "25 fps 的 40 毫秒",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "25 fps 的 40 毫秒",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c401817c9b3ace6814d9fd85",
+            "type": "text",
+            "richText": [
+              {
+                "text": "25 fps 的片源每 40 毫秒就有一對新的相鄰原幀可做插幀。補上一張後，電視以 50 fps 呈現，每 20 毫秒顯示一張。播放器最多向前預讀 290 毫秒的已解碼畫格。這段預讀裡真正能用來吸收波動的，是最新一張",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "已算完的 VT 中間幀",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "領先播放時鐘多久。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "25 fps 的片源每 40 毫秒就有一對新的相鄰原幀可做插幀。補上一張後，電視以 50 fps 呈現，每 20 毫秒顯示一張。播放器最多向前預讀 290 毫秒的已解碼畫格。這段預讀裡真正能用來吸收波動的，是最新一張已算完的 VT 中間幀領先播放時鐘多久。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181448988cff296edbb36",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我先用獨立的測試程式 Probe 47 把 P 拆出來量。在客廳跑了五回合，1080p 純 P 的 GPU 中位數從 34.48 降到 31.98 毫秒。從開始編碼到收到完成通知，優化後的第 95 百分位仍有 39.57 毫秒。這次只跑 P，播放時還要算 VT、更新 R、合成畫面並顯示。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我先用獨立的測試程式 Probe 47 把 P 拆出來量。在客廳跑了五回合，1080p 純 P 的 GPU 中位數從 34.48 降到 31.98 毫秒。從開始編碼到收到完成通知，優化後的第 95 百分位仍有 39.57 毫秒。這次只跑 P，播放時還要算 VT、更新 R、合成畫面並顯示。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181929f84c30bedd5b6f1",
+            "type": "text",
+            "richText": [
+              {
+                "text": "後來的即時版讓 R 先選出需要修紋理的區域。P 只對會影響這一對遮罩的 32 × 32 圖塊做 FFT，連合成時雙線性取樣會碰到的鄰塊也一併算進去。R 的歷史按畫格順序更新，這一對更新完就可以往下一對走，同時讓 P 處理這一對。播放時間到了，如果紋理增強還沒備好，先顯示已有的 VT 中間幀。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "後來的即時版讓 R 先選出需要修紋理的區域。P 只對會影響這一對遮罩的 32 × 32 圖塊做 FFT，連合成時雙線性取樣會碰到的鄰塊也一併算進去。R 的歷史按畫格順序更新，這一對更新完就可以往下一對走，同時讓 P 處理這一對。播放時間到了，如果紋理增強還沒備好，先顯示已有的 VT 中間幀。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181838321ef613e2cf436",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "R 遮罩省下多少 GPU 時間",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "R 遮罩省下多少 GPU 時間",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c401813cbf5afceef5ce9479",
+            "type": "text",
+            "richText": [
+              {
+                "text": "R 每一對幀都要更新，最後留下來的三項改動都省在重複工作上。GPU 在工作組裡保留圖塊分數，免得每輪找排名門檻時又讀一次貼圖。清空兩個診斷計數器的工作移到 CPU，等上一對 GPU 寫完才清。統計遮罩時，則讓同一個執行緒一起讀相鄰兩行。四個場景共 614 張 1080p 遮罩，逐像素核對都與參照相同。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "R 每一對幀都要更新，最後留下來的三項改動都省在重複工作上。GPU 在工作組裡保留圖塊分數，免得每輪找排名門檻時又讀一次貼圖。清空兩個診斷計數器的工作移到 CPU，等上一對 GPU 寫完才清。統計遮罩時，則讓同一個執行緒一起讀相鄰兩行。四個場景共 614 張 1080p 遮罩，逐像素核對都與參照相同。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181518bbcf6adbc12a4ce",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Probe 100.5 在 Apple TV 上把背心原片的 214 秒和橫搖的 78 秒接起來播。先跑對照再跑候選，第二輪交換順序。四趟計分期間，tvOS 都回報 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "serious",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Probe 100.5 在 Apple TV 上把背心原片的 214 秒和橫搖的 78 秒接起來播。先跑對照再跑候選，第二輪交換順序。四趟計分期間，tvOS 都回報 serious。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181099e5adc7517da96c1",
+            "type": "table",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [
+              "GQjG",
+              "IwuV",
+              "]Gsm"
+            ],
+            "tableHasColumnHeader": true,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "421c1b36c401817592fdf6cfa24d71f9",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "GQjG": [
+                    {
+                      "text": "292 秒連播",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "IwuV": [
+                    {
+                      "text": "低於 46 fps，對照 → 優化",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "]Gsm": [
+                    {
+                      "text": "實際上屏的紋理增強幀，對照 → 優化",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "421c1b36c40181f69e1ec9add1308e08",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "GQjG": [
+                    {
+                      "text": "第一輪，先跑對照",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "IwuV": [
+                    {
+                      "text": "4 → 0 秒",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "]Gsm": [
+                    {
+                      "text": "7,045 → 7,284 張",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "421c1b36c40181beb089c51d53f4f9b1",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "GQjG": [
+                    {
+                      "text": "第二輪，先跑優化版",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "IwuV": [
+                    {
+                      "text": "25 → 21 秒",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "]Gsm": [
+                    {
+                      "text": "6,248 → 6,489 張",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "421c1b36c401818bae0fc6aefa31af3f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "兩輪逐對比，R 的 GPU 耗時中位數分別省了 1.66 和 1.52 毫秒。第二輪的優化版仍在背心段連續 17 秒低於 46 fps。低幀秒裡，單是原生 VT 的每對耗時中位數就到了 42.37 毫秒，加上縮放是 46.32 毫秒。遮罩的三項改動進了播放器，背心段的結果也讓我繼續拆 VT 前面的等待。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "兩輪逐對比，R 的 GPU 耗時中位數分別省了 1.66 和 1.52 毫秒。第二輪的優化版仍在背心段連續 17 秒低於 46 fps。低幀秒裡，單是原生 VT 的每對耗時中位數就到了 42.37 毫秒，加上縮放是 46.32 毫秒。遮罩的三項改動進了播放器，背心段的結果也讓我繼續拆 VT 前面的等待。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c4018182813ae659c9617e88",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "趁上一對 VT 在跑，先縮下一張 4K",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "趁上一對 VT 在跑，先縮下一張 4K",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c401819082cdccc81bfe9886",
+            "type": "text",
+            "richText": [
+              {
+                "text": "在 15 分鐘測試片中，前 822 秒是 1080p 背心，最後 78 秒換成 4K 的《公主嫁到》。我先在 Probe 105 試過兩段都提前轉換像素。橫搖確實多備好了幾張增強幀，背心卻有 8 秒低於 46 fps。兩場的熱歷程不同，無法把那 8 秒歸因於提前轉換。1080p 背心也觸發了 1,797 次提前轉換，於是我把實驗縮到有 4K 降採樣的地方。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在 15 分鐘測試片中，前 822 秒是 1080p 背心，最後 78 秒換成 4K 的《公主嫁到》。我先在 Probe 105 試過兩段都提前轉換像素。橫搖確實多備好了幾張增強幀，背心卻有 8 秒低於 46 fps。兩場的熱歷程不同，無法把那 8 秒歸因於提前轉換。1080p 背心也觸發了 1,797 次提前轉換，於是我把實驗縮到有 4K 降採樣的地方。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c401818987c3c2d9d333a636",
+            "type": "text",
+            "richText": [
+              {
+                "text": "Probe 106 固定預讀 290 毫秒和原有的 P、R。只有下一張是 4K、需要縮到 1080p，而且上一對原生 VT 還在工作時，才提前做這張的縮放。到了真正要轉換像素的那刻，還會再確認上一對 VT 沒結束。兩場各播同一段 15 分鐘原片。背心段兩場都沒有低於 46 fps，播到上次失速的那八秒時，兩場的熱狀態都已回到 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "nominal",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。最後 78 秒橫搖則全程都是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "serious",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。候選版只在末段觸發了 74 次提前縮放，逐對確認都與上一對 VT 有重疊。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "Probe 106 固定預讀 290 毫秒和原有的 P、R。只有下一張是 4K、需要縮到 1080p，而且上一對原生 VT 還在工作時，才提前做這張的縮放。到了真正要轉換像素的那刻，還會再確認上一對 VT 沒結束。兩場各播同一段 15 分鐘原片。背心段兩場都沒有低於 46 fps，播到上次失速的那八秒時，兩場的熱狀態都已回到 nominal。最後 78 秒橫搖則全程都是 serious。候選版只在末段觸發了 74 次提前縮放，逐對確認都與上一對 VT 有重疊。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c401813797a9f75d3709155b",
+            "type": "table",
+            "richText": [],
+            "plainText": "",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [
+              "bij=",
+              "I{VR",
+              "QcRO"
+            ],
+            "tableHasColumnHeader": true,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": [
+              {
+                "id": "421c1b36c401819b9dbac4e63ed2aedd",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "I{VR": [
+                    {
+                      "text": "串行縮放",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "QcRO": [
+                    {
+                      "text": "4K 提前縮放",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "bij=": [
+                    {
+                      "text": "《公主嫁到》末段",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "421c1b36c401814abfd6ef4b4d313856",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "I{VR": [
+                    {
+                      "text": "130.59 ms",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "QcRO": [
+                    {
+                      "text": "0.55 ms",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "bij=": [
+                    {
+                      "text": "14:40 這一秒等候開始縮放的中位數",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "421c1b36c4018108b199f75a89823e3e",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "I{VR": [
+                    {
+                      "text": "1 張",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "QcRO": [
+                    {
+                      "text": "4 張",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "bij=": [
+                    {
+                      "text": "14:40 開始時已備好的紋理增強幀",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "421c1b36c40181449f89d3920bfd603b",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "I{VR": [
+                    {
+                      "text": "25＋25",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "QcRO": [
+                    {
+                      "text": "25＋24",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "bij=": [
+                    {
+                      "text": "14:40 這一秒實際顯示的原幀＋紋理增強幀",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "421c1b36c4018111a133ed3d2039d422",
+                "type": "table_row",
+                "richText": [],
+                "plainText": "",
+                "caption": [],
+                "language": "",
+                "source": "",
+                "assetPath": "",
+                "tableColumns": [],
+                "tableHasColumnHeader": false,
+                "tableHasRowHeader": false,
+                "tableCells": {
+                  "I{VR": [
+                    {
+                      "text": "1,911 張",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "QcRO": [
+                    {
+                      "text": "1,943 張",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ],
+                  "bij=": [
+                    {
+                      "text": "78 秒實際顯示的紋理增強幀",
+                      "annotations": [],
+                      "href": ""
+                    }
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "421c1b36c401815890cee0db26b6e0da",
+            "type": "text",
+            "richText": [
+              {
+                "text": "14:40 一開頭備好的四張後來都上了屏。開頭提到的 14:40.900 是另一張，缺少回執的原因當時還沒找到。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "14:40 一開頭備好的四張後來都上了屏。開頭提到的 14:40.900 是另一張，缺少回執的原因當時還沒找到。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181b69761c272912425bf",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-probe-106-ready-vs-presented.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-probe-106-ready-vs-presented.png",
+            "caption": [
+              {
+                "text": "Probe 106。14:40 起點，提前縮放組備好 4 張紋理增強幀，串行組備好 1 張。這一秒的實際上屏則分別是 24 張和 25 張。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:746ad44e-af54-426a-b9ab-faae0a48ce02:syncnext-probe-106-ready-vs-presented.png",
+            "assetPath": "content/blog-assets/421c1b36c401814ba575d21cb567e4d1/421c1b36c40181b69761c272912425bf-syncnext-probe-106-ready-vs-presented.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181b3adbcf5cfed32e224",
+            "type": "text",
+            "richText": [
+              {
+                "text": "這一版併進 App 時，我把量測也帶了進去。逐秒日誌用 Metal 的實際呈現回執數原幀、純 VT 中間幀和加了紋理的中間幀，同時記下縮放等待、VT 耗時、正在等上屏的增強幀，以及 VT 領先播放時鐘多少。即使關了覆蓋面板，這些數字也會寫到 HTTP 日誌。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "這一版併進 App 時，我把量測也帶了進去。逐秒日誌用 Metal 的實際呈現回執數原幀、純 VT 中間幀和加了紋理的中間幀，同時記下縮放等待、VT 耗時、正在等上屏的增強幀，以及 VT 領先播放時鐘多少。即使關了覆蓋面板，這些數字也會寫到 HTTP 日誌。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181e2a715c2694187ce38",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "熱態下，有些 P 可以提早省掉",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "熱態下，有些 P 可以提早省掉",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c401816aa4b6f21f6b6e6037",
+            "type": "text",
+            "richText": [
+              {
+                "text": "回到客廳用正式播放器看《公公出宮》第 28 集，我遇到一次失速。切到純 VT 前，累計上屏 33,280 張原幀和 26,756 張中間幀。這次只有累計值，失速從哪一段開始、當時 VT 還有多少餘量，都缺少逐秒紀錄。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "回到客廳用正式播放器看《公公出宮》第 28 集，我遇到一次失速。切到純 VT 前，累計上屏 33,280 張原幀和 26,756 張中間幀。這次只有累計值，失速從哪一段開始、當時 VT 還有多少餘量，都缺少逐秒紀錄。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c4018142ad8ef06bf3e3cd6f",
+            "type": "text",
+            "richText": [
+              {
+                "text": "較早另一場熱機播放中，有一秒原生 VT 最慢的一對花了 40.62 毫秒，平均 28.52 毫秒。當時已備好的 VT 中間幀還領先約 226 毫秒，電視在那一秒照樣顯示了 50 張。我想處理的情況是 VT 接連幾對都趕不上片源，讓已備好的畫格一點點被用掉。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "較早另一場熱機播放中，有一秒原生 VT 最慢的一對花了 40.62 毫秒，平均 28.52 毫秒。當時已備好的 VT 中間幀還領先約 226 毫秒，電視在那一秒照樣顯示了 50 張。我想處理的情況是 VT 接連幾對都趕不上片源，讓已備好的畫格一點點被用掉。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181e8a3b3f824dac836b2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "我把判斷放在 R 更新完歷史、準備提交 P 的地方。系統到了 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "serious",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": " 或 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "critical",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "、VT 餘量連續下降至少兩次，而且累計少了半個來源幀間隔（25 fps 時是 20 毫秒），才去估算這次 P 要多久。估時採最近一秒至少三筆 P 耗時的中位數，從開始編碼量到完成，包括排隊。估計趕不及，就省下這一對的 P，這一對仍可用已就緒的 VT 中間幀。R 的歷史已經更新，下一對能接著算。離線重播時刻意跳過 P，後續四景的 614 張 R 遮罩仍與參照逐像素一致。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "我把判斷放在 R 更新完歷史、準備提交 P 的地方。系統到了 serious 或 critical、VT 餘量連續下降至少兩次，而且累計少了半個來源幀間隔（25 fps 時是 20 毫秒），才去估算這次 P 要多久。估時採最近一秒至少三筆 P 耗時的中位數，從開始編碼量到完成，包括排隊。估計趕不及，就省下這一對的 P，這一對仍可用已就緒的 VT 中間幀。R 的歷史已經更新，下一對能接著算。離線重播時刻意跳過 P，後續四景的 614 張 R 遮罩仍與參照逐像素一致。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181089f6bdb0054faecd2",
+            "type": "text",
+            "richText": [
+              {
+                "text": "build 602 播放《公公出宮》第 35 集時，第一次略過發生在 16:28.14。離上屏只剩 22.49 毫秒，估計 P 需要 29.01 毫秒。這場的 2,502 個有效秒窗（41 分 42 秒）全程都是 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "serious",
+                "annotations": [
+                  "c"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，平均 49.41 fps，44 秒低於 46 fps。全場略過了 121 對 P，集中在 16 個秒窗，其中 15 秒低於 46 fps。最長一段連續達到 46 fps 的 15 分 24 秒裡，一次也沒略過。全場另有 10 次暫停紋理增強、退回純 VT 再試跑恢復的紀錄。這次量到了省下多少次 P，失速時間是否縮短，仍缺同一片段、相近熱態下的開關對照。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "build 602 播放《公公出宮》第 35 集時，第一次略過發生在 16:28.14。離上屏只剩 22.49 毫秒，估計 P 需要 29.01 毫秒。這場的 2,502 個有效秒窗（41 分 42 秒）全程都是 serious，平均 49.41 fps，44 秒低於 46 fps。全場略過了 121 對 P，集中在 16 個秒窗，其中 15 秒低於 46 fps。最長一段連續達到 46 fps 的 15 分 24 秒裡，一次也沒略過。全場另有 10 次暫停紋理增強、退回純 VT 再試跑恢復的紀錄。這次量到了省下多少次 P，失速時間是否縮短，仍缺同一片段、相近熱態下的開關對照。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181b89795dbc0aca9ebf4",
+            "type": "image",
+            "richText": [
+              {
+                "text": "syncnext-build-602-hot-playback-and-p-skips.png",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "syncnext-build-602-hot-playback-and-p-skips.png",
+            "caption": [
+              {
+                "text": "build 602 的單場熱態長播。略過 P 的 16 個秒窗裡，有 15 個低於 46 fps。圖中的時間對齊可以看出策略在哪些時點觸發。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "language": "",
+            "source": "attachment:fdd31458-733b-409e-9347-aa176c96a659:syncnext-build-602-hot-playback-and-p-skips.png",
+            "assetPath": "content/blog-assets/421c1b36c401814ba575d21cb567e4d1/421c1b36c40181b89795dbc0aca9ebf4-syncnext-build-602-hot-playback-and-p-skips.png",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c4018184a5cdf0e6dd4c69c7",
+            "type": "sub_header",
+            "richText": [
+              {
+                "text": "結語",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "結語",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181909c97fa63024e4363",
+            "type": "text",
+            "richText": [
+              {
+                "text": "做到這裡，我暫時找不到能讓 P + R 的抗閃爍處理再少做一些運算、又保住現有畫質的改法。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "做到這裡，我暫時找不到能讓 P + R 的抗閃爍處理再少做一些運算、又保住現有畫質的改法。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c40181a9806cf1d28ff081da",
+            "type": "text",
+            "richText": [
+              {
+                "text": "以我目前看過的片源來說，VT 加上亮度補償，大約九成場景就夠用了。遇到會閃的片源，往往看得出後期銳化的痕跡。我打算在「高風險紋理處理」旁加一則使用提示。開了插幀後，如果看到衣料這類細紋反覆變淡又恢復，再按需開啟這項處理。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "以我目前看過的片源來說，VT 加上亮度補償，大約九成場景就夠用了。遇到會閃的片源，往往看得出後期銳化的痕跡。我打算在「高風險紋理處理」旁加一則使用提示。開了插幀後，如果看到衣料這類細紋反覆變淡又恢復，再按需開啟這項處理。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "421c1b36c4018189ad21dac8482fc614",
+            "type": "text",
+            "richText": [
+              {
+                "text": "要再往前，我得先把閃爍量得更準。背心的菱格已經能看出原幀和中間幀之間的細節起伏，接下來要讓指標更準確地指出哪些地方值得處理。這樣才有機會進一步縮小 P 和 R 的運算範圍，並確認省下的工作沒有讓閃爍回來。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "要再往前，我得先把閃爍量得更準。背心的菱格已經能看出原幀和中間幀之間的細節起伏，接下來要讓指標更準確地指出哪些地方值得處理。這樣才有機會進一步縮小 P 和 R 的運算範圍，並確認省下的工作沒有讓閃爍回來。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          }
+        ]
+      }
+    },
     {
       "id": "41fc1b36c40181959f52d60142fad0ce",
       "slug": "tvos-subtitle-button-display-inline-41fc1b36",
@@ -39,7 +1060,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:16:53.647Z",
+        "syncedAt": "2026-11-23T13:46:57.209Z",
         "blocks": [
           {
             "id": "41fc1b36c401811ba3b7c97b15a4e3bf",
@@ -397,7 +1418,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:16:55.799Z",
+        "syncedAt": "2026-11-23T13:47:04.016Z",
         "blocks": [
           {
             "id": "41ac1b36c40181d082ede9f4d07b65f5",
@@ -3254,7 +4275,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:03.143Z",
+        "syncedAt": "2026-11-23T13:47:39.145Z",
         "blocks": [
           {
             "id": "96e7dfdf58784bc5816c65e39e0e599b",
@@ -3628,7 +4649,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:03.242Z",
+        "syncedAt": "2026-11-23T13:47:39.672Z",
         "blocks": [
           {
             "id": "1ed2e29cca8a4795b3c4258af9902830",
@@ -3993,7 +5014,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:05.986Z",
+        "syncedAt": "2026-11-23T13:47:59.067Z",
         "blocks": [
           {
             "id": "384d26859dc84ef7bca80c7ca3abd64b",
@@ -5730,7 +6751,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:08.103Z",
+        "syncedAt": "2026-11-23T13:48:23.190Z",
         "blocks": [
           {
             "id": "9ba762b19de342d18628dc9399c70bf0",
@@ -8847,7 +9868,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:19.214Z",
+        "syncedAt": "2026-11-23T13:49:53.882Z",
         "blocks": [
           {
             "id": "3fdc1b36c40180e8b534e061c3b1cfa2",
@@ -9683,7 +10704,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:20.205Z",
+        "syncedAt": "2026-11-23T13:49:59.127Z",
         "blocks": [
           {
             "id": "3fbc1b36c40180579f01d99c30f0353a",
@@ -10096,7 +11117,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:20.344Z",
+        "syncedAt": "2026-11-23T13:49:59.651Z",
         "blocks": [
           {
             "id": "3fac1b36c40180a28146c3b1c2f731b5",
@@ -11340,7 +12361,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:21.217Z",
+        "syncedAt": "2026-11-23T13:50:03.317Z",
         "blocks": [
           {
             "id": "cb3df8ac876443f1a78aa70a415e11dc",
@@ -11955,7 +12976,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:21.355Z",
+        "syncedAt": "2026-11-23T13:50:03.844Z",
         "blocks": [
           {
             "id": "4fa0a3ed8cfc4e839b88e86cbac50200",
@@ -13273,7 +14294,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:24.393Z",
+        "syncedAt": "2026-11-23T13:50:25.860Z",
         "blocks": [
           {
             "id": "1dbb2abe68894e338264b1ecf6eba671",
@@ -13898,7 +14919,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:24.543Z",
+        "syncedAt": "2026-11-23T13:50:27.433Z",
         "blocks": [
           {
             "id": "8b9773492bb84438806dc6a9e9865d74",
@@ -16646,7 +17667,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:24.858Z",
+        "syncedAt": "2026-11-23T13:50:27.958Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -18069,7 +19090,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:26.870Z",
+        "syncedAt": "2026-11-23T13:50:38.443Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -21074,7 +22095,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:33.832Z",
+        "syncedAt": "2026-11-23T13:51:40.840Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -21752,7 +22773,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:34.070Z",
+        "syncedAt": "2026-11-23T13:51:41.881Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -22460,7 +23481,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:34.224Z",
+        "syncedAt": "2026-11-23T13:51:42.408Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -24111,7 +25132,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:37.557Z",
+        "syncedAt": "2026-11-23T13:51:51.841Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -24864,7 +25885,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:37.759Z",
+        "syncedAt": "2026-11-23T13:51:52.364Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -25215,7 +26236,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:37.901Z",
+        "syncedAt": "2026-11-23T13:51:52.887Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -27562,7 +28583,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:38.107Z",
+        "syncedAt": "2026-11-23T13:51:53.416Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -28585,7 +29606,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:40.872Z",
+        "syncedAt": "2026-11-23T13:52:21.199Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -30938,7 +31959,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:45.770Z",
+        "syncedAt": "2026-11-23T13:53:25.690Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -32125,7 +33146,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:46.883Z",
+        "syncedAt": "2026-11-23T13:53:34.602Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -32719,7 +33740,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:50.582Z",
+        "syncedAt": "2026-11-23T13:53:54.608Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -34921,7 +35942,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:50.812Z",
+        "syncedAt": "2026-11-23T13:53:56.154Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -35650,7 +36671,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:50.957Z",
+        "syncedAt": "2026-11-23T13:53:56.616Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -36424,7 +37445,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:51.117Z",
+        "syncedAt": "2026-11-23T13:53:57.141Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -37574,7 +38595,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:55.051Z",
+        "syncedAt": "2026-11-23T13:54:22.308Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -38304,7 +39325,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:55.185Z",
+        "syncedAt": "2026-11-23T13:54:23.352Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -39180,7 +40201,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:55.322Z",
+        "syncedAt": "2026-11-23T13:54:23.876Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -40566,7 +41587,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:55.530Z",
+        "syncedAt": "2026-11-23T13:54:24.401Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -44019,7 +45040,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:56.952Z",
+        "syncedAt": "2026-11-23T13:54:33.923Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -45871,7 +46892,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:57.155Z",
+        "syncedAt": "2026-11-23T13:54:34.891Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -46532,7 +47553,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:17:58.697Z",
+        "syncedAt": "2026-11-23T13:54:38.555Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -47154,7 +48175,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:18:00.500Z",
+        "syncedAt": "2026-11-23T13:54:47.020Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -47926,7 +48947,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:18:00.641Z",
+        "syncedAt": "2026-11-23T13:54:47.468Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -50879,7 +51900,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:18:18.578Z",
+        "syncedAt": "2026-11-23T13:56:08.735Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -52003,7 +53024,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:18:20.900Z",
+        "syncedAt": "2026-11-23T13:56:14.581Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -52387,7 +53408,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:18:21.730Z",
+        "syncedAt": "2026-11-23T13:56:17.191Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -55200,7 +56221,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:18:46.170Z",
+        "syncedAt": "2026-11-23T13:57:41.092Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -55434,7 +56455,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:18:47.156Z",
+        "syncedAt": "2026-11-23T13:57:44.675Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -56205,7 +57226,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-21T07:18:48.861Z",
+        "syncedAt": "2026-11-23T13:57:49.910Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
