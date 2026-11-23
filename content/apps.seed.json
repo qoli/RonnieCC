@@ -31,14 +31,32 @@
       "images": [
         {
           "id": "iphone",
-          "previewLight": "assets/apps/adict/preview-iphone.png",
+          "previewLight": "assets/apps/adict/preview-iphone-1428.webp",
+          "responsive": {
+            "sizes": "(max-width: 720px) calc(100vw - 48px), calc((min(1200px, 100vw - 48px) - 16px) * 714 / 1942)",
+            "variants": [
+              {"src": "assets/apps/adict/preview-iphone-360.webp", "width": 360},
+              {"src": "assets/apps/adict/preview-iphone-684.webp", "width": 684},
+              {"src": "assets/apps/adict/preview-iphone-960.webp", "width": 960},
+              {"src": "assets/apps/adict/preview-iphone-1428.webp", "width": 1428}
+            ]
+          },
           "alt": "aDict dictionary lookup on iPhone",
           "width": 714,
           "height": 914
         },
         {
           "id": "mac",
-          "previewLight": "assets/apps/adict/preview.png",
+          "previewLight": "assets/apps/adict/preview-1600.webp",
+          "responsive": {
+            "sizes": "(max-width: 720px) calc(100vw - 48px), calc((min(1200px, 100vw - 48px) - 16px) * 1228 / 1942)",
+            "variants": [
+              {"src": "assets/apps/adict/preview-360.webp", "width": 360},
+              {"src": "assets/apps/adict/preview-684.webp", "width": 684},
+              {"src": "assets/apps/adict/preview-1280.webp", "width": 1280},
+              {"src": "assets/apps/adict/preview-1600.webp", "width": 1600}
+            ]
+          },
           "alt": "aDict dictionary lookup on Mac",
           "width": 1228,
           "height": 914
@@ -64,7 +82,16 @@
       "images": [
         {
           "id": "mac",
-          "previewLight": "assets/apps/swiftchat/preview.png",
+          "previewLight": "assets/apps/swiftchat/preview-2400.webp",
+          "responsive": {
+            "sizes": "min(1200px, 100vw - 48px)",
+            "variants": [
+              {"src": "assets/apps/swiftchat/preview-360.webp", "width": 360},
+              {"src": "assets/apps/swiftchat/preview-684.webp", "width": 684},
+              {"src": "assets/apps/swiftchat/preview-1200.webp", "width": 1200},
+              {"src": "assets/apps/swiftchat/preview-2400.webp", "width": 2400}
+            ]
+          },
           "alt": "SwiftChat conversation on Mac",
           "width": 1538,
           "height": 914,
@@ -86,14 +113,32 @@
       "images": [
         {
           "id": "records",
-          "previewLight": "assets/apps/trackly/preview-records.png",
+          "previewLight": "assets/apps/trackly/preview-records-1428.webp",
+          "responsive": {
+            "sizes": "(max-width: 720px) calc(100vw - 48px), calc((min(1200px, 100vw - 48px) - 16px) / 2)",
+            "variants": [
+              {"src": "assets/apps/trackly/preview-records-360.webp", "width": 360},
+              {"src": "assets/apps/trackly/preview-records-684.webp", "width": 684},
+              {"src": "assets/apps/trackly/preview-records-1200.webp", "width": 1200},
+              {"src": "assets/apps/trackly/preview-records-1428.webp", "width": 1428}
+            ]
+          },
           "alt": "Trackly expense records on iPhone",
           "width": 714,
           "height": 914
         },
         {
           "id": "overview",
-          "previewLight": "assets/apps/trackly/preview-overview.png",
+          "previewLight": "assets/apps/trackly/preview-overview-1428.webp",
+          "responsive": {
+            "sizes": "(max-width: 720px) calc(100vw - 48px), calc((min(1200px, 100vw - 48px) - 16px) / 2)",
+            "variants": [
+              {"src": "assets/apps/trackly/preview-overview-360.webp", "width": 360},
+              {"src": "assets/apps/trackly/preview-overview-684.webp", "width": 684},
+              {"src": "assets/apps/trackly/preview-overview-1200.webp", "width": 1200},
+              {"src": "assets/apps/trackly/preview-overview-1428.webp", "width": 1428}
+            ]
+          },
           "alt": "Trackly spending overview on iPhone",
           "width": 714,
           "height": 914

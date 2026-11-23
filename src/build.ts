@@ -78,6 +78,10 @@ type AppShowcaseImage = {
   id: string;
   previewLight: string;
   previewDark?: string;
+  responsive?: {
+    sizes: string;
+    variants: { src: string; width: number }[];
+  };
   alt: string;
   width: number;
   height: number;
@@ -1108,11 +1112,19 @@ function appShowcase(app: ShowcaseApp, language: Language, assetPrefix: string, 
   return app.showcase.images.map((media, imageIndex) => {
     const layoutClass = media.layout === "full" ? " app-feature-full" : "";
     const lightClass = media.previewDark ? " app-preview-light" : "";
-    const loading = appIndex === 0 && imageIndex === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
+    const first = appIndex === 0 && imageIndex === 0;
+    const loading = first ? 'fetchpriority="high"' : 'loading="lazy"';
+    const responsive = media.responsive;
+    let sourceAttributes = "";
+    if (responsive) {
+      const srcset = responsive.variants.map(({ src, width }) => `${assetPrefix}${src} ${width}w`).join(", ");
+      const sizes = first ? responsive.sizes : `auto, ${responsive.sizes}`;
+      sourceAttributes = ` srcset="${escapeAttr(srcset)}" sizes="${escapeAttr(sizes)}"`;
+    }
     return `<article class="app-feature${layoutClass}" data-app-id="${escapeAttr(app.id)}" data-image-id="${escapeAttr(media.id)}" style="--preview-width: ${media.width}">
           <a class="app-feature-link" href="${escapeAttr(app.externalUrl)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeAttr(language === "en" ? labelEn : labelMix)}" data-apps-label-mix="${escapeAttr(labelMix)}" data-apps-label-en="${escapeAttr(labelEn)}">
             <div class="app-feature-media">
-              <img class="app-preview${lightClass}" src="${escapeAttr(assetPrefix + media.previewLight)}" alt="${escapeAttr(media.alt)}" width="${media.width}" height="${media.height}" ${loading} decoding="async">${media.previewDark ? `
+              <img class="app-preview${lightClass}" src="${escapeAttr(assetPrefix + media.previewLight)}"${sourceAttributes} alt="${escapeAttr(media.alt)}" width="${media.width}" height="${media.height}" ${loading} decoding="async">${media.previewDark ? `
               <img class="app-preview app-preview-dark" src="${escapeAttr(assetPrefix + media.previewDark)}" alt="${escapeAttr(media.alt)}" width="${media.width}" height="${media.height}" loading="lazy" decoding="async">` : ""}
             </div>
             <div class="app-feature-caption">
