@@ -1,6 +1,6 @@
 {
   "contractVersion": 1,
-  "generatedAt": "2026-11-23T13:58:52.329Z",
+  "generatedAt": "2026-11-27T22:05:50.908Z",
   "source": {
     "databaseId": "60ac1b36c401837598a501cc8b7ea241",
     "collectionId": "0bdc1b36c401828b875a87505f6c4363",
@@ -39,7 +39,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:46:49.383Z",
+        "syncedAt": "2026-11-27T21:59:42.919Z",
         "blocks": [
           {
             "id": "421c1b36c4018151ba5bceaa5c055974",
@@ -1060,7 +1060,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:46:57.209Z",
+        "syncedAt": "2026-11-27T21:59:47.531Z",
         "blocks": [
           {
             "id": "41fc1b36c401811ba3b7c97b15a4e3bf",
@@ -1418,7 +1418,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:47:04.016Z",
+        "syncedAt": "2026-11-27T21:59:51.376Z",
         "blocks": [
           {
             "id": "41ac1b36c40181d082ede9f4d07b65f5",
@@ -4275,7 +4275,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:47:39.145Z",
+        "syncedAt": "2026-11-27T22:00:10.468Z",
         "blocks": [
           {
             "id": "96e7dfdf58784bc5816c65e39e0e599b",
@@ -4649,7 +4649,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:47:39.672Z",
+        "syncedAt": "2026-11-27T22:00:10.751Z",
         "blocks": [
           {
             "id": "1ed2e29cca8a4795b3c4258af9902830",
@@ -5014,7 +5014,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:47:59.067Z",
+        "syncedAt": "2026-11-27T22:00:18.325Z",
         "blocks": [
           {
             "id": "384d26859dc84ef7bca80c7ca3abd64b",
@@ -6751,7 +6751,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:48:23.190Z",
+        "syncedAt": "2026-11-27T22:00:26.408Z",
         "blocks": [
           {
             "id": "9ba762b19de342d18628dc9399c70bf0",
@@ -9868,7 +9868,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:49:53.882Z",
+        "syncedAt": "2026-11-27T22:00:58.113Z",
         "blocks": [
           {
             "id": "3fdc1b36c40180e8b534e061c3b1cfa2",
@@ -10704,7 +10704,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:49:59.127Z",
+        "syncedAt": "2026-11-27T22:01:00.405Z",
         "blocks": [
           {
             "id": "3fbc1b36c40180579f01d99c30f0353a",
@@ -11117,7 +11117,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:49:59.651Z",
+        "syncedAt": "2026-11-27T22:01:00.695Z",
         "blocks": [
           {
             "id": "3fac1b36c40180a28146c3b1c2f731b5",
@@ -12361,7 +12361,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:50:03.317Z",
+        "syncedAt": "2026-11-27T22:01:02.870Z",
         "blocks": [
           {
             "id": "cb3df8ac876443f1a78aa70a415e11dc",
@@ -12967,7 +12967,7 @@
       },
       "notionUrl": "https://www.notion.so/qoli/trackly-%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8-%E6%88%AA%E5%9C%96%E5%B0%B1%E8%83%BD%E8%A8%98%E5%B8%B3-iphone-3f8c1b36c4018125aba4eba430ea485a?v=e90c1b36c401831d99bf08f10dcbae9b&source=copy_link",
       "createdTime": "2026-10-13T07:50:02.549Z",
-      "lastEditedTime": "2026-11-06T22:40:47.756Z",
+      "lastEditedTime": "2026-11-27T20:59:44.394Z",
       "socialImage": {
         "url": "https://ronniewong.cc/social/blog/trackly-iphone-screenshot-expense-guide-3f8c1b36-5d1e32ec33a0.png",
         "width": 1200,
@@ -12976,7 +12976,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:50:03.844Z",
+        "syncedAt": "2026-11-27T22:01:03.199Z",
         "blocks": [
           {
             "id": "4fa0a3ed8cfc4e839b88e86cbac50200",
@@ -13339,12 +13339,12 @@
             "type": "sub_header",
             "richText": [
               {
-                "text": "第二步｜加入 Trackly 記帳捷徑",
+                "text": "第二步｜從 Trackly 安裝記帳捷徑",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "第二步｜加入 Trackly 記帳捷徑",
+            "plainText": "第二步｜從 Trackly 安裝記帳捷徑",
             "caption": [],
             "language": "",
             "source": "",
@@ -13381,24 +13381,12 @@
             "type": "numbered_list",
             "richText": [
               {
-                "text": "依 iPhone 的 iOS 版本選擇執行捷徑。要從動作按鈕啟動記帳時，再加入 ",
-                "annotations": [],
-                "href": ""
-              },
-              {
-                "text": "Trackly Action",
-                "annotations": [
-                  "b"
-                ],
-                "href": ""
-              },
-              {
-                "text": "。",
+                "text": "在記帳主畫面點右上角「⋯」，進入「概覽」，再於「功能」區塊點選「教學與捷徑」。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "依 iPhone 的 iOS 版本選擇執行捷徑。要從動作按鈕啟動記帳時，再加入 Trackly Action。",
+            "plainText": "在記帳主畫面點右上角「⋯」，進入「概覽」，再於「功能」區塊點選「教學與捷徑」。",
             "caption": [],
             "language": "",
             "source": "",
@@ -13414,12 +13402,36 @@
             "type": "numbered_list",
             "richText": [
               {
-                "text": "在 Apple「捷徑」的加入頁面點「加入捷徑」。",
+                "text": "在「安裝捷徑」區塊，點選適合目前 iOS 版本的記帳捷徑：iOS 27 或更新版本使用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Modern",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "；較早版本使用 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Classic",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "在 Apple「捷徑」的加入頁面點「加入捷徑」。",
+            "plainText": "在「安裝捷徑」區塊，點選適合目前 iOS 版本的記帳捷徑：iOS 27 或更新版本使用 Trackly Modern；較早版本使用 Trackly Classic。",
             "caption": [],
             "language": "",
             "source": "",
@@ -13432,41 +13444,57 @@
           },
           {
             "id": "a39d3be4ec534597b760f94a8f63e332",
+            "type": "numbered_list",
+            "richText": [
+              {
+                "text": "在分享面板選擇以 Apple「捷徑」App 開啟，再依畫面指示完成加入。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "在分享面板選擇以 Apple「捷徑」App 開啟，再依畫面指示完成加入。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "425c1b36c40181369246e05556771ac9",
             "type": "text",
             "richText": [
               {
-                "text": "Trackly iOS 26",
-                "annotations": [
-                  "a"
-                ],
-                "href": "https://www.icloud.com/shortcuts/9c7db4daa488467f8738d4d67d4cd0e8"
-              },
-              {
-                "text": " · ",
+                "text": "若要從動作按鈕啟動記帳，請回到 Trackly 的同一頁，點「安裝 Trackly Action」，用相同方式加入。",
                 "annotations": [],
                 "href": ""
-              },
-              {
-                "text": "Trackly iOS 27",
-                "annotations": [
-                  "a"
-                ],
-                "href": "https://www.icloud.com/shortcuts/28d3adf4ebb041e2b0273c03e9ea71d4"
-              },
-              {
-                "text": " · ",
-                "annotations": [],
-                "href": ""
-              },
-              {
-                "text": "Trackly Action（動作按鈕）",
-                "annotations": [
-                  "a"
-                ],
-                "href": "https://www.icloud.com/shortcuts/c4ac0acaa9f8464abc2c04203875c461"
               }
             ],
-            "plainText": "Trackly iOS 26 · Trackly iOS 27 · Trackly Action（動作按鈕）",
+            "plainText": "若要從動作按鈕啟動記帳，請回到 Trackly 的同一頁，點「安裝 Trackly Action」，用相同方式加入。",
+            "caption": [],
+            "language": "",
+            "source": "",
+            "assetPath": "",
+            "tableColumns": [],
+            "tableHasColumnHeader": false,
+            "tableHasRowHeader": false,
+            "tableCells": {},
+            "children": []
+          },
+          {
+            "id": "425c1b36c4018183a09efa8aa001f393",
+            "type": "text",
+            "richText": [
+              {
+                "text": "首次設定時，也可以在新手引導的「初始化設定」點「安裝捷徑」，進入同一個安裝頁面。",
+                "annotations": [],
+                "href": ""
+              }
+            ],
+            "plainText": "首次設定時，也可以在新手引導的「初始化設定」點「安裝捷徑」，進入同一個安裝頁面。",
             "caption": [],
             "language": "",
             "source": "",
@@ -13561,12 +13589,12 @@
             "type": "numbered_list",
             "richText": [
               {
-                "text": "啟動你加入的 ",
+                "text": "啟動你從 Trackly 安裝的 ",
                 "annotations": [],
                 "href": ""
               },
               {
-                "text": "Trackly iOS 26",
+                "text": "Trackly Modern",
                 "annotations": [
                   "b"
                 ],
@@ -13578,7 +13606,7 @@
                 "href": ""
               },
               {
-                "text": "Trackly iOS 27",
+                "text": "Trackly Classic",
                 "annotations": [
                   "b"
                 ],
@@ -13590,7 +13618,7 @@
                 "href": ""
               }
             ],
-            "plainText": "啟動你加入的 Trackly iOS 26 或 Trackly iOS 27。",
+            "plainText": "啟動你從 Trackly 安裝的 Trackly Modern 或 Trackly Classic。",
             "caption": [],
             "language": "",
             "source": "",
@@ -13844,12 +13872,24 @@
             "type": "text",
             "richText": [
               {
-                "text": "配備動作按鈕的 iPhone 可以長按按鈕啟動記帳。",
+                "text": "配備動作按鈕的 iPhone 可以長按按鈕啟動記帳。請先依第二步從 Trackly 安裝 ",
+                "annotations": [],
+                "href": ""
+              },
+              {
+                "text": "Trackly Action",
+                "annotations": [
+                  "b"
+                ],
+                "href": ""
+              },
+              {
+                "text": "，再進行以下設定。",
                 "annotations": [],
                 "href": ""
               }
             ],
-            "plainText": "配備動作按鈕的 iPhone 可以長按按鈕啟動記帳。",
+            "plainText": "配備動作按鈕的 iPhone 可以長按按鈕啟動記帳。請先依第二步從 Trackly 安裝 Trackly Action，再進行以下設定。",
             "caption": [],
             "language": "",
             "source": "",
@@ -14294,7 +14334,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:50:25.860Z",
+        "syncedAt": "2026-11-27T22:01:11.125Z",
         "blocks": [
           {
             "id": "1dbb2abe68894e338264b1ecf6eba671",
@@ -14919,7 +14959,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:50:27.433Z",
+        "syncedAt": "2026-11-27T22:01:11.464Z",
         "blocks": [
           {
             "id": "8b9773492bb84438806dc6a9e9865d74",
@@ -17667,7 +17707,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:50:27.958Z",
+        "syncedAt": "2026-11-27T22:01:11.827Z",
         "blocks": [
           {
             "id": "bba69330c91d43f982ea08b86347bb76",
@@ -19090,7 +19130,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:50:38.443Z",
+        "syncedAt": "2026-11-27T22:01:16.528Z",
         "blocks": [
           {
             "id": "3cdc1b36c40180d0b7b2e4147333d6c6",
@@ -22095,7 +22135,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:51:40.840Z",
+        "syncedAt": "2026-11-27T22:01:36.666Z",
         "blocks": [
           {
             "id": "3cac1b36c40180619f78d96033725575",
@@ -22773,7 +22813,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:51:41.881Z",
+        "syncedAt": "2026-11-27T22:01:37.012Z",
         "blocks": [
           {
             "id": "55ff165b12fd4ed78978288ae6d25770",
@@ -23481,7 +23521,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:51:42.408Z",
+        "syncedAt": "2026-11-27T22:01:37.313Z",
         "blocks": [
           {
             "id": "9fb8cdc0b75b4837915376c9cae023f9",
@@ -25132,7 +25172,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:51:51.841Z",
+        "syncedAt": "2026-11-27T22:01:45.613Z",
         "blocks": [
           {
             "id": "3a4c1b36c4018198a0d4eba2ba4165e6",
@@ -25885,7 +25925,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:51:52.364Z",
+        "syncedAt": "2026-11-27T22:01:45.944Z",
         "blocks": [
           {
             "id": "3a4c1b36c401816a9cfdfc345b4fd700",
@@ -26236,7 +26276,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:51:52.887Z",
+        "syncedAt": "2026-11-27T22:01:46.232Z",
         "blocks": [
           {
             "id": "369c1b36c40180299d79ed271c7c6bd7",
@@ -28583,7 +28623,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:51:53.416Z",
+        "syncedAt": "2026-11-27T22:01:46.732Z",
         "blocks": [
           {
             "id": "368c1b36c401811ea7c9dbb51a9edd08",
@@ -29606,7 +29646,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:52:21.199Z",
+        "syncedAt": "2026-11-27T22:01:55.754Z",
         "blocks": [
           {
             "id": "8cfd774698924c3798da0aa56e97f485",
@@ -31959,7 +31999,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:53:25.690Z",
+        "syncedAt": "2026-11-27T22:02:15.337Z",
         "blocks": [
           {
             "id": "917cb89a655f474c88c4b5f9e8aa69c6",
@@ -33146,7 +33186,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:53:34.602Z",
+        "syncedAt": "2026-11-27T22:02:18.614Z",
         "blocks": [
           {
             "id": "35fc1b36c401808b8e25fe04bb80fbd2",
@@ -33740,7 +33780,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:53:54.608Z",
+        "syncedAt": "2026-11-27T22:02:29.940Z",
         "blocks": [
           {
             "id": "487f5e5774514e7199909c83e8fc38b4",
@@ -35942,7 +35982,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:53:56.154Z",
+        "syncedAt": "2026-11-27T22:02:30.464Z",
         "blocks": [
           {
             "id": "357c1b36c401818ca5f4e668d4e79996",
@@ -36671,7 +36711,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:53:56.616Z",
+        "syncedAt": "2026-11-27T22:02:30.794Z",
         "blocks": [
           {
             "id": "356c1b36c4018170a861ee3636ec8bde",
@@ -37445,7 +37485,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:53:57.141Z",
+        "syncedAt": "2026-11-27T22:02:31.266Z",
         "blocks": [
           {
             "id": "34ec1b36c40181ebaeeecce23847453b",
@@ -38595,7 +38635,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:54:22.308Z",
+        "syncedAt": "2026-11-27T22:02:44.920Z",
         "blocks": [
           {
             "id": "34ec1b36c4018169a1cffcb71e969672",
@@ -39325,7 +39365,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:54:23.352Z",
+        "syncedAt": "2026-11-27T22:02:45.324Z",
         "blocks": [
           {
             "id": "2f6c1b36c40181bdac39dee0c460c219",
@@ -40201,7 +40241,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:54:23.876Z",
+        "syncedAt": "2026-11-27T22:02:45.668Z",
         "blocks": [
           {
             "id": "2e8c1b36c40181e9b854c343ddba12ac",
@@ -41587,7 +41627,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:54:24.401Z",
+        "syncedAt": "2026-11-27T22:02:46.008Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018012a4f5cf122823d1c1",
@@ -45040,7 +45080,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:54:33.923Z",
+        "syncedAt": "2026-11-27T22:02:50.764Z",
         "blocks": [
           {
             "id": "2b6c1b36c401800eb1b0f2b4fd46830d",
@@ -46892,7 +46932,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:54:34.891Z",
+        "syncedAt": "2026-11-27T22:02:51.170Z",
         "blocks": [
           {
             "id": "10fc1b36c401805883b2c04ff906ae2e",
@@ -47553,7 +47593,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:54:38.555Z",
+        "syncedAt": "2026-11-27T22:02:54.809Z",
         "blocks": [
           {
             "id": "2e2c1b36c4018078b24dee2bca966cfa",
@@ -48175,7 +48215,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:54:47.020Z",
+        "syncedAt": "2026-11-27T22:02:59.564Z",
         "blocks": [
           {
             "id": "34ec1b36c4018186886feb94826878f9",
@@ -48947,7 +48987,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:54:47.468Z",
+        "syncedAt": "2026-11-27T22:03:00.007Z",
         "blocks": [
           {
             "id": "7abd44e4805e4a6a924a260e93781778",
@@ -51900,7 +51940,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:56:08.735Z",
+        "syncedAt": "2026-11-27T22:03:55.258Z",
         "blocks": [
           {
             "id": "c5dc1b36c4018255860701f3efb04fa3",
@@ -53024,7 +53064,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:56:14.581Z",
+        "syncedAt": "2026-11-27T22:04:01.342Z",
         "blocks": [
           {
             "id": "e76c1b36c4018383918a018504fcf69b",
@@ -53408,7 +53448,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:56:17.191Z",
+        "syncedAt": "2026-11-27T22:04:03.756Z",
         "blocks": [
           {
             "id": "f25c1b36c4018263a314817936ce9d89",
@@ -56221,7 +56261,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:57:41.092Z",
+        "syncedAt": "2026-11-27T22:05:10.982Z",
         "blocks": [
           {
             "id": "144c1b36c4018251b5cd01ea1ad928ec",
@@ -56455,7 +56495,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:57:44.675Z",
+        "syncedAt": "2026-11-27T22:05:14.006Z",
         "blocks": [
           {
             "id": "5a5c1b36c40182fba40201c3305a19b6",
@@ -57226,7 +57266,7 @@
       },
       "content": {
         "source": "notion-v3-page-blocks",
-        "syncedAt": "2026-11-23T13:57:49.910Z",
+        "syncedAt": "2026-11-27T22:05:18.896Z",
         "blocks": [
           {
             "id": "bfcc1b36c40182b089b701cd9976a189",
